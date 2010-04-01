@@ -3,8 +3,8 @@ def_graphic_ext=
 img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
-kileversion=2.1 beta2
-lastDocument=note20100330.tex
+kileversion=2.0
+lastDocument=VariationUVW.tex
 masterDocument=
 name=DailyNote
 pkg_extIsRegExp=false
@@ -24,6 +24,15 @@ highlight=LaTeX
 line=110
 open=true
 order=3
+
+[item:VariationUVW.tex]
+archive=true
+column=190
+encoding=UTF-8
+highlight=LaTeX
+line=114
+open=true
+order=5
 
 [item:citation.bib]
 archive=true
@@ -135,19 +144,19 @@ order=3
 
 [item:note20100330.tex]
 archive=true
-column=213
+column=3
 encoding=UTF-8
 highlight=LaTeX
-line=1
+line=3
 open=true
 order=2
 
 [item:renorm.tex]
 archive=true
-column=0
+column=14
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=82
 open=true
 order=1
 

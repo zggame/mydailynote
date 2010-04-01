@@ -1,4 +1,4 @@
-This is pdfeTeXk, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2009.11.12)  1 APR 2010 09:49
+This is pdfeTeXk, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2009.11.12)  1 APR 2010 10:27
 entering extended mode
  Source specials enabled.
 **DailyNote.tex
@@ -380,7 +380,7 @@ Overfull \hbox (296.23117pt too wide) in paragraph at lines 1--1
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\@ifnextchar' on input line 1.
 
-) [31] (./DailyNote.bbl
+[31]) (./DailyNote.bbl
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
@@ -404,4 +404,4 @@ Here is how much of TeX's memory you used:
  580 hyphenation exceptions out of 1000
  41i,21n,44p,1429b,349s stack positions out of 1500i,500n,5000p,200000b,5000s
 
-Output written on DailyNote.dvi (33 pages, 247444 bytes).
+Output written on DailyNote.dvi (33 pages, 247480 bytes).

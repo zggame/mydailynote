@@ -1,0 +1,25 @@
+\subsection{Spherical harmonic and Fourier transformation}
+From (34.3) of \cite{landau}, we have
+\begin{equation}
+e^{i\vk\cdot\vr}=4\pi\sum_{l=0}^{\infty}\sum_{m=-l}^{l}i^l{}j_l(kr)Y^*_{lm}(\hat{k})Y_{lm}(\hat{r})
+\end{equation}
+We find the the Fourier tansformation in 3D of the spherical harmonic function does not change $(lm)$,
+\begin{equation}
+\int{d\hat{k}e^{i\vk\cdot\vr}Y_{lm}(\hat{k})}=4\pi{}i^l{}j_l(kr)Y_{lm}(\hat{r})
+\end{equation} 
+And 
+\begin{equation*}
+\Psi(\vr)=\sum_{l=0}^{\infty}\sum_{m=-l}^{l}\int{dk}\psi_{lm}{(k)}\int{d\hat{k}e^{i\vk\cdot\vr}Y_{lm}(\hat{k})}=4\pi{}\sum_{l=0}^{\infty}\sum_{m=-l}^{l}i^l{}Y_{lm}(\hat{r})\int{dk}\psi_{lm}{(k)}j_l(kr)
+\end{equation*}
+So the $(lm)$ component of real-space relates only to the $(lm)$ component of k-space 
+\begin{equation}
+\psi_{lm}(r)=4\pi{}i^l{}\int{dk}\psi_{lm}{(k)}j_l(kr)
+\end{equation}
+
+
+\subsection{Shizhong's comment\label{subsec:20091207}}
+He think besides open-channel affects close-channel in statistics, there is also the statistical effect from close-channel to open-channel.  And finally, one can include both coherently. Numerically, one can do these two things iterately and maybe find the many-body result. There are also kinetical interaction and the full treatment involve the $2\times2$.   
+
+\textit{My thinking:The assumption that close-channel molecule is large and close-to-threshhold, actually increases the statistical effect of close-channel to open-channel because close-channel is then denser in k-space.  	}
+
+He has doubts to characterize the close-channel bound-state with one single parameter $a_s$, but he agrees that this might be OK for a model.  I think it is fine given the condition that close-channel is close-to-threshold and very large.  

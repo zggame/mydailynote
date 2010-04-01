@@ -1,0 +1,35 @@
+\subsection{More on Semi-Cooper Problem}
+
+$v(p)$ in Eq. \eqref{eq:kSch} can be renormalized.  From there, using the similar argument, it can be written as $v(p=0)=v_0$. 
+\begin{equation}
+ \chi_\vk=\frac{-\Gamma_\vk}{\epsilon_\vk+\abs{E}}
+\end{equation}
+with
+\begin{equation}
+ \Gamma_\vk=\int{d\vp{}v(\vp)\chi_{\vk+\vp}=v(p=0)\int{d\vp\chi{\vk+\vp}}=v(p=0)\chi(r=0)}
+\end{equation}
+If $\Gamma_\vk$ can take as weakly-dependant on \vk, $\chi_\vk$ can be inverted into the real space,
+\footnote{
+ Here we use the formula 
+\begin{equation}
+\begin{split}
+\int^\infty_0{dk\frac{k\sin{kr}}{k^2+k_0^2}}&=\nth{4i}\int^{\infty}_{-\infty}{dk\frac{k}{k^2+k_0^2}\br{e^{ikr}-e^{-ikr}}}=\nth{4i}\int^{\infty}_{-\infty}{dk\frac{k\br{e^{ikr}}}{k^2+k_0^2}}-\nth{4i}\int^{\infty}_{-\infty}{dk\frac{k\br{e^{-ikr}}}{k^2+k_0^2}}\\
+&=\frac{\pi}{4}e^{-k_0r}+\frac{\pi}{4}e^{-k_0r}=\frac{\pi}{2}e^{-k_0r} 
+\end{split}
+\end{equation}
+Here we close the first integration from up and the second from below in the complex plane.   
+}
+   
+
+\begin{equation}
+\begin{split}
+ \chi(r)&=\int{d\vk\chi_\vk{}e^{ikr}}=\frac{4\pi}{r}\int^\infty_0{dk\chi_\vk{}k\sin{kr}}\\
+&=\frac{4\pi}{r}\frac{2m}{h^2}(-\Gamma)\int^\infty_0{dk\frac{k\sin{kr}}{k^2+k_0^2}}=(-\Gamma)\frac{4\pi^2m}{h^2}\frac{e^{-k_0r}}{r}
+\end{split}
+\end{equation}
+Where 
+\begin{equation}
+ \abs{E}=\frac{h^2}{2m}k_0^2
+\end{equation}
+Similarly, we can introduce the quatities with bar for those with filled Fermi-sea. 
+  

@@ -1,0 +1,9 @@
+#!/bin/bash
+if [ -z $1 ]; then cd ~/mydailynote; file="DailyNote"; else file=$1; fi
+latex $file
+if [ ! $? -eq 0 ]; then exit $?; fi;
+bibtex $file
+if [ ! $? -eq 0 ]; then exit $?; fi;
+latex $file
+latex -src $file
+xdvi -unique -editor gedit $file

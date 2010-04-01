@@ -1,0 +1,6 @@
+\subsection{}
+One way to try the iteration Shizhong suggested yesterday (sec. \ref{subsec:20091207}), is still using the old u,v,w scheme, but have either v or w fixed at a time. There should be solution besides the single-channel solution ($w=0$)  due to Pauli exclusion between two channels even without any coupling. 
+
+If we take the the shift of the energy, then maybe we can incorporate it into the single-pole approximation of Green's function approach. (?, I still have not get it clear the relation between abonormal Green's function with the simple Green's function in two-body.) 
+\subsection{Tony's Comment}
+Tony agrees that the coupling lows the energy while the Pauli exclusion between channel descreases the energy saving.  

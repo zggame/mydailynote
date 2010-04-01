@@ -1,0 +1,42 @@
+\subsection{Variation method with close-channel restricted}
+
+We start with three hyperfine species a, b, c, where a is the common species in two channel.  And the Hamiltonian is written in the form 
+\begin{equation}
+\begin{split}
+ H=&\sum_\vk\epsilon^a_\vk{}a^+_\vk{}a^{}_\vk+\sum_\vk\epsilon^b_\vk{}b^+_\vk{}b^{}_\vk+\sum_\vk\epsilon^c_\vk{}c^+_\vk{}c^{}_\vk\\
+  &+\nth{2}\sum_{\vk\vk'}U_{\vk\vk'}a^+_\vk{}b^+_{-\vk}{}b^{}_{-\vk'}a^{}_{\vk'}
+	+\nth{2}\sum_{\vk\vk'}V_{\vk\vk'}a^+_\vk{}c^+_{-\vk}{}c^{}_{-\vk'}a^{}_{\vk'}\\
+ &+\nth{2}\sum_{\vk\vk'}Y_{\vk\vk'}a^+_\vk{}b^+_{-\vk}{}c^{}_{-\vk'}a^{}_{\vk'}
+	+\nth{2}\sum_{\vk\vk'}Y^*_{\vk\vk'}a^+_{\vk'}{}c^+_{-\vk'}{}b^{}_{-\vk}a^{}_{\vk}
+\end{split} 
+\end{equation}
+By the Hermition condition we have 
+\begin{equation}
+ U_{\vk'\vk}=U^*_{\vk\vk'},\qquad{} V_{\vk'\vk}=V^*_{\vk\vk'}
+\end{equation}
+Here (a,b) is the open channel while (a,c) is the close channel.  We start from the ansatz as 
+\begin{equation}
+ \ket{\Psi}=\prod_\vk\br{u_\vk+v_\vk{}a^\dg_\vk{}b^\dg_{-\vk}+w\phi_\vk{}u_\vk{}a^\dg_\vk{}b^\dg_{-\vk}}\ket{0}
+\end{equation}
+Where $\ket{\phi}=\sum\phi_\vk{}a^\dg_\vk{}c^\dg_{-\vk}\ket{0}$ is the normalized close-channel bound state in resoance.  $\sum\abs{\phi_k}^2=1$ and $H^{close}\ket{\phi}=E\ket{\phi}$, $H^{close}=\sum_\vk\epsilon^a_\vk{}a^\dg_\vk{}a^{}_\vk+\sum_\vk\epsilon^c_\vk{}c^\dg_\vk{}c^{}_\vk+\nth{2}\sum_{\vk\vk'}V_{\vk\vk'}a^\dg_\vk{}c^\dg_{-\vk}{}c^{}_{-\vk'}a^{}_{\vk'}$.
+Here we require $\abs{u_\vk}^2+\abs{v_\vk}^2+\abs{wu_\vk\phi_\vk}^2=1$ for simple normalization.  For all the interaction term, there are two types of contribution,
+for example, 
+\begin{equation*}
+\av{U_{\vk\vk'}a^\dg_\vk{}b^\dg_{-\vk}{}b^{}_{-\vk'}a^{}_{\vk'}}
+=\sum_{\vk}U_{\vk\vk}\abs{v_\vk}^2+\sum_{\vk\neq\vk'}U_{\vk\vk'}v^{}_{\vk'}u^*_{\vk'}u^{}_\vk{}v^*_\vk
+\end{equation*}
+The first term is the Hatree term and the second term is more interesting pairing term. 
+
+
+And the free energy is 
+\begin{equation}
+ \begin{split}
+  &F\equiv\av{H-\mu{}N}\\
+    =&\sum(\xi^a_\vk+\xi^b_\vk)\abs{v_\vk}^2+\sum(\xi^a_\vk+\xi^c_\vk)\abs{w}^2\abs{u_\vk}^2\abs{\phi_vk}^2)\\
+    &+\nth2\sum_{\vk}U_{\vk\vk}\abs{v_\vk}^2+\nth2\sum_{\vk\neq\vk'}U_{\vk\vk'}v^{}_{\vk'}u^*_{\vk'}u^{}_\vk{}v^*_\vk\\
+    &+\nth2\sum_{\vk}V_{\vk\vk}\abs{u_\vk\phi_\vk{}w}^2
+      +\nth2\sum_{\vk\neq\vk'}V_{\vk\vk'}\phi^{}_{\vk'}\phi^*_\vk\abs{u^{}_{\vk'}u^{}_\vk{}w}^2
+ \end{split}
+\end{equation}
+
+ I drops the first term as this in some sense just shift the chemical potentials as it only relates to the density.  

@@ -1,0 +1,53 @@
+\section{On the possibility to rewrite the BCS hamiltonian in terms of Cooper pair operators}
+Let us introduce the free pair hamiltonian defined as $\wt{H_0}=\sum{2\epsilon_\vk\beta^+_\vk\beta^{}_\vk}$.
+This free pair hamiltonian and the free electron hamiltonian $H_0$ seems to act in the same way on n-pair states. Indeed, eq. \eqref{eq:4beta} gives $H_0$ acting on two pairs as 
+\begin{equation}
+\begin{split}
+H_0\beta^+_{\vp_1}\beta^{}_{\vp_2}\ket{F_0}&=\br{\com{H_0}{\beta^+_{\vp_1}}+{\beta^+_{\vp_1}}{H_0}}\beta^{}_{\vp_2}\ket{F_0}\\
+&=\br{2\epsilon_{\vp_1}+2\epsilon_{\vp_2}}\beta^+_{\vp_1}\beta^{+}_{\vp_2}\ket{F_0}
+\end{split}
+\end{equation}
+In the case of $\wt{H_0}$, the same procedure gives with eq \eqref{eq:4beta} replaced by $\com{\wt{H_0}}{\beta^+_{\vp_1}}=2\epsilon_\vp\beta^+_\vp-\sum2\epsilon_\vk\beta^+_\vk{}\D_{\vk\vp}$
+\begin{equation}
+\br{\wt{H_0}-H_0}\beta^+_{\vp_1}\beta^{+}_{\vp_2}\ket{F_0}=-\sum2\epsilon_\vk\beta^+_\vk{}\D_{\vk\vp_1}\beta^{+}_{\vp_2}\ket{F_0}
+\end{equation}
+Due to eq \eqref{eq:D}, the RHS of the above equation reduces to zero for $\vp_1\neq\vp_2$.  Since this condition is fulfilled for the 2-pair state of interest in order for $\beta^+_{\vp_1}\beta^{+}_{\vp_2}\ket{F_0}$ to differ from zero  due to the Pauli exclusion principle, we are tempted to conclude that $H_0$ can be replaced by $\wt{H_0}$.
+
+We can be even more tempted to make such a replacement once we note that $\wt{H}=\wt{H_0}+V_{BCS}$ takes a very compact form in term of Cooper pair operators. Indeed, we get using eq \eqref{eq:bbeta}.
+
+\begin{equation}
+\begin{split}
+\wt{H}&=\sum_\vk\br{2\epsilon_\vk\beta^+_\vk+\sum_{\vk'}\beta^+_{\vp'}v_{\vp'\vp}}\beta^+_\vk\\	&=\sum_{ij}B^+_iB^{}_j\sum_\vk\mbr{2\epsilon_\vk\avt{i}{\vk}+\sum_{\vk'}\avt{i}{\vk'}v_{\vk'\vk}}\avt{\vk}{j}
+\end{split}
+\end{equation}
+Since due to eq \eqref{eq:sch}, the bracket reduces to $E_i\avt{i}{\vk}$, the summation over $\vk$, performed through closure relation leads to 
+\begin{equation}
+\wt{H}=\sum{}E_iB^+_iB^{}_i
+\end{equation}
+In spite of the fact that $H_0$ and $\wt{H_0}$ act in a similar way on n-pair state, the replacement of $H_0$ by $\wt{H_0}$ introduce spurious Pauli blocking which ultimately affect all matrix elements.  To see it, we can note that
+
+\begin{equation}
+\begin{split}
+\com{\wt{H_0}}{\beta^+_{\vp}}&=\sum2\epsilon_\vk\beta^+_\vk\com{\beta^{}_\vk}{\beta^+_\vp}\\
+	&=2\epsilon_\vp\beta^+_\vp-\sum2\epsilon_\vk\beta^+_\vk{}\D_{\vk\vp}
+\end{split}
+\end{equation}
+the first term in the RHS being the value of $\com{{H_0}}{\beta^+_{\vp}}$. Turning to Cooper pair operators, this leads to 
+\begin{equation}
+\com{\wt{H}}{B^+_i}=\com{{H}}{B^+_i}+W^+_i
+\end{equation}
+where $W^+_i=-\sum2\epsilon_\vk\beta^+_\vk{}\D_{\vk\vp}\avt{\vp}{i}$.  This additional operator $w^+_i$ in the commutator generates an additional contribution to the interaction scattering which then reads
+\begin{equation}
+\wt\chi\fmtrx{n}{j}{m}{i}=\chi\fmtrx{n}{j}{m}{i}-2\sum_{\vk\vp}2\epsilon_\vk{\avt{m}{\vk}\avt{n}{\vp}\avt{\vp}{j}\avt{\vp}{i}v_{\vk\vp}}
+\end{equation}
+
+If we now use the expression of $\chi\fmtrx{n}{j}{m}{i}$ given in eq \eqref{eq:bchi}, we find that the interaction scattering associated to $\wt{H}$ takes a quite compact form. Using eqs (\ref{eq:blambda},\ref{eq:sch}), we find
+\begin{equation}
+\begin{split}
+\wt\chi\fmtrx{n}{j}{m}{i}&=-\sum_{\vk}\br{\sum_\vp\avt{m}{\vp}v_{\vp\vk}+2\epsilon_\vk\avt{m}{\vk}}\avt{n}{\vp}\avt{\vp}{j}\avt{\vp}{i}v_{\vk\vp}\\
+&=-\br{E_m+E_n}\lambda\fmtrx{n}{j}{m}{i}
+\end{split}
+\end{equation}
+Although somewhat nicer than the explicit expression of the interaction scattering $\chi\fmtrx{n}{j}{m}{i}$ given in eq \eqref{eq:sch}, it is however clear that the replacement of $H_0$ by  $\wt{H_0}$ brings spurious terms in the calculation.
+
+All this once more show that the system hamiltonian written in terms of fermion operators cannnot be rewritten in terms of coboson operators, even when the potential is as simple as the BCS potential. 

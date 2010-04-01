@@ -1,0 +1,19 @@
+\section{note of 2009.09.18}
+\subsection{Continuing on the Decoupling of Four-Operator Term}
+Back to AGD\cite{Abrikosov}, the Hamiltonian used there has the same $r$ for four operators in the interaction terms, such as $\nth{2}\sum_{\alpha\beta\gamma\delta}\int{d}\vr_1{d}\vr\psi^\dagger_\alpha\br{\vr}\psi^\dagger_\beta\br{\vr}\lambda_{\alpha\beta\gamma\delta}\psi_\gamma\br{\vr}\psi_\delta\br{\vr}$, this indeed simplifies quite a bit.  But the justification of it is not that clear to me and to this problem.  
+\emph{Tony's comment:  It is common to use contact interaction in place of the real one. And it works for many purpose, but one needs to be careful when pushing to higher order correction with this. }
+
+The key is comparing the four-operator terms with the two-operator term in equation \eqref{eq:zhang536}.  For large $\vr_1-\vr_2$, the two-operator term is actually small because the shor-range of interaction $U(\vr_1-\vr_2)$, and the four-operator can be at least in the same order by taking $\vr'$ around $\vr_1$ ($\vr_2$). And the normal Green's function $G_{1}(\vr_1-\vr_2)=\av{\psi^\dagger_{1}\br{\vr'}\psi_1\br{\vr_2}}$ relates to abnormal one.  And the third term in equation \eqref{eq:decouple} is approximately $-\int{d}\vr'U_{2113}\br{\vr_1-\vr'}F_{31}(\vr_1-\vr')G_{1}\br{\vr'-\vr_2}\approx{}-\br{\int{d}\vr'U_{2113}\br{\vr_1-\vr'}F_{31}(\vr_1-\vr')}G_{1}\br{\vr_1-\vr_2}=\Gamma_{32}G_{1}\br{\vr_1-\vr_2}$ if  assuming $G_{1}$ varies slowly in the range of $a$. Here 
+\begin{equation}
+\Gamma_{32}=\Gamma_{32}(\vr_1)\equiv-\br{\int{d}\vr'U_{2113}\br{\vr_1-\vr'}F_{31}(\vr_1-\vr')}
+\end{equation}
+In the integration above, only the small $r$ is relavant, and we can supply the $F_{31}$ with the two-body quantities. 
+\emph{This is a bit odd. Can this be reconciled with the simple BCS, where, the integration is over the shell around Fermi energy. } Actually, this is the same as AGD, where they define the $\Delta^2=\lambda^2\abs{F^+(r\rightarrow0+)}$ (34.16 in \cite{Abrikosov}). 
+
+In simple BCS, $G(r)=\sum{\exp\mbr{-i\vk\cdot\vr}}\abs{v_k}^2$, $v_k$ is like a step function and it oscillates fast for $r\ll{1/k_F}$ and $G(r)\approx0$.  Similarly, $F(k)=v_ku^*_k$, $v_k$ centres around $k_F$ with width $\Delta$, so its Fourier transformation $F(r)$ goes to 0 when $r\ll{\hbar{v_F}/\Delta}$.  On the other hand, $F(r)$ is demonstrated that $F(r)$ decays exponentially in the scale of Pippard coherent length $\xi={\hbar{v_F}/\pi\Delta}$, (5.4.36 in \cite{Leggett}) these two are consistent with each other.  
+
+
+\subsection{Tony's Comment}
+He still feels puzzled by the fact that I cannot reduce the k-space equations with the 2-body quantities such as s-wave scattering length and maybe close-channel interaction strength, ...  He wants me to write them up what is wrong there.  
+
+He does not think the time-differential of abnormal Green's function gives simply $2\mu$. 

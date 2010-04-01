@@ -1,0 +1,25 @@
+\section{note of 2009.09.10}
+\subsection{}
+If we start from real space of pair wave function.  There is no obvious $\Delta$, i.e. gap.  Or we can define it as the $\sum{{U_{\vk,\vk'}}F_\vk'}$  and it is relative slowly-varied in k-space because of the slow-change of $U_{\vk,\vk'}$.
+
+\subsection{Pair-Wave-Function in Real Space}
+
+How should pair wave function $F(r)$ looks like?  Let us look in two extremes. In BCS, it falls exponentially  with Piccard Coherence length (Eq. 2.62 in \cite{ZhangThesis},\cite{Leggett}) which should be larger than $1/\vk_F$; while in BEC, it also falls exponentially but with a  characteristic length  smaller than $1/\vk_F$.  And in principle, between potential range $r_0$ and this characteristic length, or $1/\vk_F$ if it is smaller, it has the s-wave scattering like wave-function, $\nth{r}\br{1-\frac{r}{a_s}}$ charactered by $a_s$, which is determined by two-body physics.   
+
+\subsection{What is the Difference between the Many-body Motion of Equation and the Two-Body Schr\"odinger Equation\label{subsec:twoR}}
+The equation 5.37 in \cite{ZhangThesis} is the same as the two-body equation.  We know in k-space, the difference is that the Fermi sea is filled for many-body case; in real space, two-body limit means that density approaches 0, so many-body means that potential is modified in the $1/\vk_F$ scale and beyond. So maybe we can breaks the length scale by $\lvk$.  For equation 5.36 \eqref{eq:zhang536} in \cite{ZhangThesis}, we can throw away those two four-operator terms for $r<\lvk$ and must keep them for $r>\lvk$.  For $r>\lvk$, we can choose $r'$ within the range of either $r_1$ or $r_2$, and this might be sufficient to include the many-body physics into the problem.
+
+In Abrikosov's Green function treatment over BCS, it is exactly these four-operator terms work toward the gap equation.  By breaking r into two regions, I might reconcile the two-body solution with the many-body one.  
+
+This complication however prevents a simple Fourier transformation of the equations as there are two different equations for different regions of r.  
+
+One obvious problem is whether the original Abrikosov treatment can be solved directly in real space and therefore can be used here.  The short r region certainly can be solved in real space and real space indeed is more suitable for solving.  But the long r region, i.e. the many-body, is easier to solve in k-space.  
+
+One possible method may be using the Psudopotential $\Delta$ instead, just as in Bogolubov-deGennes equation.  
+
+One odd thing about Shizhong's treatment is this two-operator term, that emerges only because of the equal-time of $\Psi_\alpha(t)\Psi_\beta(t)$.  They do not show in Abrikosov's treatment and needs more careful investigation.  
+
+\subsection{Meet Tony}
+Tony has some doubts on Abrikosov's treatment over BCS (\cite{Abrikosov}).  He is not convinced by their throwing the Coulomb interaction and other terms.  But this is also true in the variation method.   Anyway, he agrees that the four-operators thrown away by Shizhong might be important for my problem.  I should explore my idea in \ref{subsec:twoR}. 
+
+My goal is to find out when we take the Pauli principle in the close-channel, open-channel due to the common species seriously, what kind of correction, no matter how small it is, I can get.  In most approach, Pauli principle does not matter as close-channel is treated as independently condensate and no Pauli principle on this.  

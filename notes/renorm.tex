@@ -1,0 +1,95 @@
+\section{Bare Gap Equation}
+%\tableofcontents
+We start from a general Hamiltonian, (As usual, the particle number is relaxed and we use grand ensemble.)
+\begin{equation}\label{eq:Hamiltonian}
+\begin{split}
+H-\mu N&=\sum_\alpha\int{d}\vr\psi^\dagger_\alpha\br{\vr}\br{-\hm\nabla^2-\mu_\alpha+\eta_\alpha}\psi_\alpha\br{\vr}\\
+&+\nth{2}\sum_{\alpha\beta\gamma\delta}\int{d}\vr_1{d}\vr_2\psi^\dagger_\alpha\br{\vr_1}\psi^\dagger_\beta\br{\vr_2}U_{\alpha\beta\gamma\delta}\br{\vr_1-\vr_2}\psi_\gamma\br{\vr_2}\psi_\delta\br{\vr_1}
+\end{split}
+\end{equation}
+where $\eta_\alpha$ is the Zeeman energy of species $\alpha$ and $\mu_\alpha$ is chemical potential. In the three-species two-channel problem, $\alpha=(a,b,c)$, where $(a,b)$ is the open channel and $(c,b)$ is the close channel. There are four different interaction terms,  $U_{abba}$, $V_{cbbc}$ and $Y_{abbc}$ ($Y^*_{cbba}$). As $a$ and $c$ can interchange, their chemical potential is the same, $\mu_a=\mu_c$ Here we work with the finite-temperature Matsubara formalism. We can define the normal and abnormal Green's functions.
+\begin{equation}
+\begin{split}
+G_\alpha(\vr_1-\vr_2,\tau_1-\tau_2)&=-\avtu{\psi_\alpha(\vr_1,\tau_1)\psi^+_\alpha(\vr_2,\tau_2)}\\
+	&=-\avtu{\psi_\alpha(\vr_1-\vr_2,\tau_1-\tau_2)\psi^+_\alpha(0,0)}\\
+F^+(\vr_1-\vr_2,\tau_1-\tau_2)&=-\avtu{\psi^+_a(\vr_1,\tau_1)\psi^+_b(\vr_2,\tau_2)}\\
+R^+(\vr_1-\vr_2,\tau_1-\tau_2)&=-\avtu{\psi^+_c(\vr_1,\tau_1)\psi^+_b(\vr_2,\tau_2)}	
+\end{split}
+\end{equation}
+Using the relation $\pdiff{}{\tau}\chi(\tau)=\mbr{H-\mu N,\chi(\tau)}$,  we can obtain their equations of motion
+\begin{multline}
+\br{-\pdiff{}{\tau}+\hm\nabla^2+\mu_b}G_b(x,\tau)-\nth2\int{dr}\mbr{U(r-x)F(r-x,0)+Y(r-x)R(r-x,0)}F^+(r,\tau)\\
+	-\nth2\int{dr}\mbr{V(r-x)R(r-x,0)+Y^*(r-x)F(r-x,0)}R^+(r,\tau)=\delta(\tau)\delta(x)\\
+\br{-\pdiff{}{\tau}-\hm\nabla^2-\mu_a}F^+(x,\tau)-\nth2\int{dr}\mbr{U(r-x)F(r-x,0)+Y(r-x)R(r-x,0)}G_b(r,\tau)=0\\
+\br{-\pdiff{}{\tau}-\hm\nabla^2-\mu_a+\eta}R^+(x,\tau)-\nth2\int{dr}\mbr{V(r-x)R(r-x,0)+Y^*(r-x)F(r-x,0)}G_b(r,\tau)=0	
+\end{multline}
+Here we take $\eta_a=\eta_b=0$ and $\eta_c=\eta$.  As in the normal BCS approach, we neglect Hatree terms as $\int{dr}U(x-r)n(r)F(x,\tau)$ because such terms can be absorbed into the chemical potential.  These equations can be solved with Fourier transformation
+\begin{align*}
+f(x,\tau)&=\nth{\beta}\sum{}e^{-i\tau{p_n}}\int{dk}\frac{V}{(2\pi)^3}e^{ikx}f(k,ip_n)\\
+f(k,ip_n)&=\int^\beta_0e^{i\tau{p_n}}\int{dx}e^{-ikx}f(x,\tau)	
+\end{align*}
+\begin{equation}\label{eq:eomk}
+\begin{split}
+\br{ip_n-\hm{k^2}+\mu_b}G_b(k,ip_n)+{\Delta^F_{-k}}^*F^+(k,ip_n)+{\Delta^R_{-k}}^*R^+(k,ip_n)&=1\\
+\br{ip_n+\hm{k^2}-\mu_a}F^+(k,ip_n)+\Delta^F_{k}G_b(k,ip_n)&=0\\
+\br{ip_n+\hm{k^2}+\eta-\mu_a}R^+(k,ip_n)+\Delta^R_{k}G_b(k,ip_n)&=0
+\end{split}
+\end{equation} 
+where 
+\begin{equation}\begin{split}\label{eq:gap}
+\Delta^F_k&=-\nth2\int{dx}e^{-ikx}\mbr{U(x)F^+(x,\tau=0)+Y^*(x)R^+(x,\tau=0)}\\
+	&=-\nth2\sum\mbr{U(p+k)F^+(-p,\tau=0)+Y^*(p+k)R^+(-p,\tau=0)}\\
+\Delta^R_k&=-\nth2\int{dx}e^{-ikx}\mbr{V(x)R^+(x,\tau=0)+Y(x)F^+(x,\tau=0)}\\
+	&=-\nth2\sum\mbr{V(p+k)R^+(-p,\tau=0)+Y(p+k)F^+(-p,\tau=0)}
+\end{split}\end{equation}
+Equation \eqref{eq:eomk} is a simple algebra equation and can be solved easily.  Here combine the kinetic energy with the chemical potential as $\xi_k=\hm{k^2}-\mu$.
+\begin{equation}\begin{split}
+G_b(k,ip_n)&=\nth{A_k(ip_n)}\br{ip_n+\xi^a_k}\br{ip_n+\xi^a_k+\eta}\\
+F^+(k,ip_n)&=-\nth{A_k(ip_n)}\Delta^F_k\br{ip_n+\xi^a_k+\eta}\\
+R^+(k,ip_n)&=-\nth{A_k(ip_n)}\Delta^R_k\br{ip_n+\xi^a_k}
+\end{split}\end{equation}
+where 
+\begin{equation}\label{eq:A}
+A_k(ip_n)=\br{ip_n-\xi^b_k}\br{ip_n+\xi^a_k}\br{ip_n+\xi^a_k+\eta}-{\Delta^F_k}^2\br{ip_n+\xi^a_k+\eta}-{\Delta^R_k}^2\br{ip_n+\xi^a_k}
+\end{equation}
+Now the root for $A(z)=0$ gives the pole of Green's function and the excitation spectrum of the system.      This equation does have analytic solution as a third order algebraic equation. There are three different roots, corresponding three different types of excitation? Unlike in single-channel problem, where there is second-order equation and two roots degenerate ($\pm{E_k}$). However the roots are extremely tedious and serves little practical usage.  One simple observation is that for large $k$, the last two terms in \eqref{eq:A} can be neglected and therefore the pole is close to $\xi^a$,$-\xi^b$ (degenerate with $\xi^a$), and $\xi^c=\eta+\xi^a$.  In principle, we can sum the solution over $p_n$ to get the quantities at $\tau=0$ which is in the gap equation \eqref{eq:gap}. 
+\[F(k,\tau=0)=\nth{\beta}\sum_{p_n}F(k,ip_n)\] And the poles of $A(z)=0$ determines this quantity.
+\footnote{
+$F(k,\tau=0)$ summation can be found using $\oint{F(k,z)n_F(z)\frac{dz}{2\pi{i}}}=0$, where $n_F(z)=\nth{e^{\beta{z}}+1}$ is the Fermi distribution function with poles $p_n=i(2n+1)\pi/\beta$. The residual associated with the poles of $F(k,z)$ gives $F(k,\tau=0)$.  
+} 
+
+\section{Renormalization with Two-Channel T-Matrix}
+One observation is that both abnormal Green's functions approach ${\Delta}/{2\epsilon}$ for large $k$ ($\epsilon=\hm{k^2}$).  This fact makes it possible to renormalize the gap equation in the similar fashion as in \cite{Leggett}.  
+
+Formally, the gap equation \eqref{eq:gap} can be written in matrix form
+\begin{equation}\label{eq:gapMatrix}
+\begin{pmatrix}\Delta^F\\\Delta^R\end{pmatrix}=\begin{pmatrix}U&Y\\Y^*&V\end{pmatrix}\begin{pmatrix}F\\R\end{pmatrix}
+\end{equation}
+ or in a more compact way, 
+\begin{equation}\label{eq:mgap}\Delta=UF\end{equation}
+Note that there is really summation over $k$ between U and F.
+For two-body system, we have 
+\begin{equation}\label{eq:TU}T=U+TGU=(1+TG)U\end{equation}
+notice $T=\br{\begin{smallmatrix}T^{oo}&T^{oc}\\T^{co}&T^{cc}\end{smallmatrix}},U,G=\br{\begin{smallmatrix}1/2\epsilon&0\\0&1/(2\epsilon+\eta)\end{smallmatrix}}$ are $2\times2$ matrices. Apply $(1+TG)$ on both side of gap equation \eqref{eq:mgap}.
+\[(1+TG)\Delta=TF\]
+and 
+\begin{equation}
+\Delta=T(F-G\Delta)
+\end{equation}
+or in more elaborate form
+\begin{equation}\label{eq:renomal}
+\begin{pmatrix}\Delta^F\\\Delta^R\end{pmatrix}=\begin{pmatrix}T^{oo}&T^{oc}\\T^{co}&T^{cc}\end{pmatrix}
+\begin{pmatrix}\sum{F-\frac{\Delta^F}{2\epsilon}}\\\sum{R--\frac{\Delta^R}{2\epsilon+\eta}}\end{pmatrix}
+\end{equation}
+Now the summation of $k$ is inside the last vector. T matrix is just four numbers which can be related to 0-energy scattering, therefore experiments.   And the summation has no divergence at high k.  
+
+%The equation obtained previously does not converges for a constant contact-type interaction.  However, it can be renormalized in the similar fashion as in \cite{Leggett}. 
+
+Several problems present here 
+\begin{itemize}
+	\item How is T-matrix related to the familiar quantities in literature?  $T^{oo}$ is probably directly related to open-channel s-wave scattering length $a_s$.  More subtle is $T^{co}$, $T^{oc}$.  How does that related the observed quantities?
+	
+	\item Although equation \eqref{eq:renomal} is well-behaving without any divergence, F(,R) lacks the simple form in the single channel case.  How to simplify it is not clear.  
+	\item So far, two channels are treated equally.  However, two channels are quite different in reality, especially the close-channel.  In two-body problem, it can be treated as only 1-dimensional, just the bound-state close to threshold. One only needs to determine its normalization.  How to consider that in the many-body solution and simplify the gap equation? 
+	\item The high-k is related to the short-range behavior of the system.  And the free-particle type $k$ corresponding the free particles, not include the feature of the short-range bound state feature of the close-channel.  That should be remedy somehow to simplify the computation and make progress. 
+\end{itemize}

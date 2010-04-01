@@ -1,0 +1,30 @@
+\section{note of 2009.10.06}
+\subsection{Two-Body}
+One confusing point for two-channel is: 1. two particles has no interaction when they are far away.  No matter there is any chemical potential shift or the Zeeman energy shift.  This is comparing to two non-interacting free-moving particles. 2.  The close-channel always has the shift due to the Zeeman energy difference, comparing 0-energy, i.e., free-moving particle in open-channel.  
+
+The 2nd point is correct.  
+
+\subsection{}
+Let us review the two-body problem treatment by Leggett\cite{Leggett}.  We have the equations:
+\begin{subequations}\begin{align}
+\hm\dpdiff{}{r}\chi^o+U\,\chi^o+f\,\chi^c&=E\, \chi^o\label{eq:openTwo}\\
+\hm\dpdiff{}{r}\chi^c+V\,\chi^o+f\,\chi^o&=E\, \chi^c\label{eq:closeTwo}
+\end{align}\end{subequations}
+And the s-wave non-interaction scattering equation 
+\begin{equation}\label{eq:bareSwave}
+\hm\dpdiff{}{r}\bar\chi^o+U\,\bar\chi^o=0
+\end{equation}
+Take $E$ in \eqref{eq:bareSwave} as 0 for the s-wave equation for $a^0_s$. Multiply equation \eqref{eq:bareSwave} with $\chi^o$ and equation \eqref{eq:openTwo} with $\bar\chi$, integrate their difference from 0 to $r_c$ where is outside the potential. 
+\[\hm\int_0^{r_c}dr\br{\bar\chi{\chi^o}^{''}-\bar\chi^{''}\chi^o}+\int_0^{r_c}dr\;f\chi^c\bar\chi=\int_0^{r_c}dr\;E\chi^o\bar\chi\]
+We take $E=0$ and the first term in the integral can be taken as $\left.\bar\chi{\chi^o}'-\bar\chi'\chi^o\right|_0^{r_c}$, $\chi=0$ at 0 and $\bar\chi=1-\frac{r}{a^0_s}$ $\chi^o=1-\frac{r}{a_s}$ at $r_c$ barring the normalization.  Put all these together,
+\[\hm\mbr{-\nth{a_s}\br{1-\frac{r}{a^0_s}}+\nth{a^0_s}\br{1-\frac{r}{a_s}}}+\int_0^{r_c}dr\;f\chi^c\bar\chi=0\]
+\begin{equation}\label{eq:as}
+\nth{a_s^0}-\nth{a_s}+\kappa=0
+\end{equation}  
+where 
+\begin{equation}\label{eq:kappa}
+\kappa=\frac{2m}{\hbar^2}\int_0^{\infty}dr\;f\chi^c\bar\chi
+\end{equation}
+as the $f$ is short-range, so we can extend $r_c$ to $\infty$.
+
+From above, especially equation \eqref{eq:as} and \eqref{eq:kappa}, we can see that what exactly $\chi^c$ does not really matter.  What really matter is that it varies in large extend and provides a way to vary $\kappa$, therefore modify $a_s$.   

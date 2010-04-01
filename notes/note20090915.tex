@@ -1,0 +1,27 @@
+\section{note of 2009.09.15}
+\subsection{Several Equations in Shizhong's Thesis\label{subsec:zhangEq090915}}
+Equation 5.35 of \cite{ZhangThesis}, the Hamiltonian
+\begin{equation}\label{eq:zhang535}
+\begin{split}
+\mathcal{H}&=\sum_\alpha\int{d}\vr\psi^\dagger_\alpha\br{\vr}\br{-\hm\nabla^2-\mu_\alpha+E_\alpha}\psi_\alpha\br{\vr}\\
+&+\nth{2}\sum_{\alpha\beta\gamma\delta}\int{d}\vr_1{d}\vr_2\psi^\dagger_\alpha\br{\vr_1}\psi^\dagger_\beta\br{\vr_2}U_{\alpha\beta\gamma\delta}\br{\vr_1-\vr_2}\psi_\gamma\br{\vr_2}\psi_\delta\br{\vr_1}
+\end{split}
+\end{equation}
+
+Equation 5.36, the equation of motion of the equal-time abnormal green's function, $\psi_\alpha\br{\vr_1,t}\psi_\beta\br{\vr_2,t}$:
+\begin{equation}\label{eq:zhang536}
+\begin{split}
+&i\hbar\pdiff{\psi_\alpha\br{\vr_1,t}\psi_\beta\br{\vr_2,t}}{t}\\
+=&\br{-\hm\nabla_1^2-\mu_\alpha+E_\alpha-\hm\nabla_2^2-\mu_\beta+E_\beta}\psi_\alpha\br{\vr_1,t}\psi_\beta\br{\vr_2,t}\\
+&+\sum_{\gamma\delta}U_{\alpha\beta\delta\gamma}\br{\vr_1-\vr_2}\psi_\gamma\br{\vr_1}\psi_\delta\br{\vr_2}\\
+&+\sum_{\beta'\gamma\delta}\int{d}\vr'U_{\alpha\beta'\gamma\delta}\br{\vr_1-\vr'}\psi^\dagger_{\beta'}\br{\vr'}\psi_\gamma\br{\vr'}\psi_\delta\br{\vr_1}\psi_\beta\br{\vr_2}\\
+&+\sum_{\beta'\gamma\delta}\int{d}\vr'U_{\beta\beta'\gamma\delta}\br{\vr_2-\vr'}\psi^\dagger_{\beta'}\br{\vr'}\psi_\gamma\br{\vr'}\psi_\alpha\br{\vr_1}\psi_\delta\br{\vr_2}
+\end{split}
+\end{equation}
+
+I have verified this equation and all the subscripts are correct. (See the paper notebook) It uses the fact that 
+\begin{equation}
+U_{\alpha\beta\delta\gamma}\br{\vr_1,\vr_2}=U_{\beta\alpha\gamma\delta}\br{\vr_2,\vr_1}
+\end{equation}
+Equation \eqref{eq:zhang536} is similar as the equations in AGD \cite{Abrikosov}, which is for non-equal-time quantities, but with several difference.  There is no two-operator term there, and there is only one four operator term because there are two terms for differentiation in the equal-time quantities. In another respect, for abnormal Green's function $F_{\alpha\beta}(\vr_1,t_1,\vr_2,t_2)=\psi_\alpha\br{\vr_1,t_1}\psi_\beta\br{\vr_2,t_2}$,  the one worked out in AGD is for $t=t_2-t_1$ while  the equal-time one here is more close to the central position $t=\br{t_1+t_2}/2$. \textbf{(I am not very sure about this.)}
+

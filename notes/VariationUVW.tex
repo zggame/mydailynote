@@ -116,3 +116,60 @@ With the renomalized gap equation,.
 and the number equation, should give us three parameters in the problems: $\Delta^{U,V}$ and $\mu$.  The close-channel infomation is incorporated into the $T$-matrix.  The problem is more about the computation difficulty as there is no simple analytic solution for $F^{o,c}$, therefore, eq. (\ref{eq:renomal1}) cannot be done easily.
 
 What happened in the broad-resonance limit? Or very BEC/BCS end? 
+
+\subsection{T-matrix}
+Follow \cite{JacksonNarrow}, the bare interaction $V$ should have the form \footnote{notice the some change of notation}
+\begin{equation}
+V(r)=\frac{V_s(r)+3V_t(r)}{4}+\mbr{V_t(r)-V_s(r)}\mathbf{S_1}\cdot\mathbf{S_2}
+\end{equation}
+we can establish the T-matrix from $V$.
+\begin{equation}
+ {\fmtrx{T_{cc}}{T_{co}}{T_{oc}}{T_{oo}}}^{-1}={\fmtrx{V_{cc}}{V_{co}}{V_{oc}}{V_{oo}}}^{-1}-{\fmtrx{G_{c}}{0}{0}{G_{o}}}
+\end{equation}
+For 0-temperature, pair propagators $G_o$ and $G_c$ are
+\begin{equation}
+ G_o(\omega,\vK,\vq)=\nth{\omega+i\delta-\frac{K^2}{4m}-\frac{q^2}{m}}
+\end{equation}
+\begin{equation}
+ G_c(\omega,\vK,\vq,B)=\nth{\omega+i\delta-E_{th}(B)-\frac{K^2}{4m}-\frac{q^2}{m}}
+\end{equation}
+where $E_{th}(B)$ is the detuning, depending on magnatic field $B$. Here we can break it down into two steps. First, introduce 
+ \begin{equation}
+ {\fmtrx{U_{cc}}{U_{co}}{U_{oc}}{U_{oo}}}^{-1}={\fmtrx{V_{cc}}{V_{co}}{V_{oc}}{V_{oo}}}^{-1}-{\fmtrx{G^{vac}}{0}{0}{G^{vac}}}
+\end{equation}
+where $G^{vac}(q)=(i\delta-q^2/m)^{-1}$ is the vacuum pair propagator ignoring the hyperfine splitting at $\omega=0$ and no center momentum $\vK$.  Furthermore, when the close-channel resonnant state is close to threshold and well-seperated from other discrete levels, the effective interaction is separable.  So 
+\begin{equation}
+ U(\vq',\vq)=\frac{4\pi}{m}\mbr{\frac{a_s+3a_t}{4}+(a_t-a_s)\mathbf{S_1}\cdot\mathbf{S_2}}g(q')g(q)
+\end{equation}
+$g(q)\rightarrow0$ for $qr_C\rightarrow\infty$ where $r_C$ is the interaction range.  But This can be projected to the hyperfine-spin space and therefore two-channel.  
+\begin{equation}
+ {\fmtrx{U_{cc}}{U_{co}}{U_{oc}}{U_{oo}}}=
+\frac{4\pi}{m}\mbr{\fmtrx{\frac{c_7a_s+a_t}{1+c_7}}{\frac{a_t-a_s}{\sqrt{1+c_7}\sqrt{1+c_9}}}
+{\frac{a_t-a_s}{\sqrt{1+c_7}\sqrt{1+c_9}}}{\frac{c_9a_s+a_t}{1+c_9}}}
+\end{equation}
+For example, $\ket{9/2,-9/2}$, $\ket{9/2,-7/2}$, $\ket{7/2,-7/2}$ of ${}^{40}K$ at resonance $B=201.6$, $c_7=14.9$ and $c_9=0.059$ Note that both $c_7$ and $c_9$ depends on B.  
+
+The second step deals with the influence of $B$ in the theshold $E_{th}$ as well as the energy dependence of $G$. 
+ \begin{equation}
+  {\fmtrx{T_{cc}}{T_{co}}{T_{oc}}{T_{oo}}}^{-1}={\fmtrx{U_{cc}}{U_{co}}{U_{oc}}{U_{oo}}}^{-1}-{\fmtrx{\Delta{}G_c}{0}{0}{\Delta{}G_o}}
+\end{equation}
+where $\Delta{}G_{o/c}=G_{o,c}(\omega,\vK,\vq,B)-G^{vac}(q)$.  Using the seperable properties of $U$, we can concentrate the $\vq$ dependence on two quantities and this leaves us a simple two-by-two algebra matrix equation.  
+\begin{equation}
+\Pi_{o,c}(\omega,\vK,B)=\int\frac{d^3q}{(2\pi)^3}\Delta{}G_{o,c}g^2(q)                  
+\end{equation}
+where for the contact interaction with $r_C=0$, we find $\Pi_o(\omega,\vK)=-im^{3/2}\sqrt{\omega-K^2/(4m)}$ and $\Pi_c(\omega,\vK,B)=\Pi_o(\omega-E_{th}(B),\vK)$
+Especially, for $\omega=0$ and no central mometum $\vK$, $\Pi_o=0$ and $\Pi_c=\sqrt{-E_th(B)}$
+\begin{gather}\label{eq:T}
+ T_{cc}=\frac{U_{cc}}{1-U_{cc}\Pi_c}\\
+T_{oc}=T_{co}=\frac{U_{oc}}{1-U_{cc}\Pi_c}\\
+T_{oo}=U_{oo}+\frac{U_{oc}^2\Pi_c}{1-U_{cc}\Pi_c}
+\end{gather}
+comparing this with the commonly used formula 
+\begin{equation}
+ T_{oo}=\frac{4\pi{}a_{bg}}{m}\br{1-\frac{\Delta{}B}{B-B_0}}
+\end{equation}
+We find the resonance position $B_0$ satisfies
+\begin{equation}
+ 1-U_{cc}(B_0)\Pi_c(B_0)=0
+\end{equation}
+And other quantities, such as $a_s$, $a_t$ can be expressed with the experimental quantities. 

@@ -1,0 +1,176 @@
+\subsection{Variation method with the u,v,w}
+We start with three hyperfine species a, b, c, where a is the common species in two channel. (a,b) is the open channel while (a,c) is the close channel. And the Hamiltonian is written in the form 
+\begin{equation}
+\begin{split}
+ H=&\sum_\vk\epsilon^a_\vk{}a^+_\vk{}a^{}_\vk+\sum_\vk\epsilon^b_\vk{}b^+_\vk{}b^{}_\vk+\sum_\vk\epsilon^c_\vk{}c^+_\vk{}c^{}_\vk\\
+  &+\nth{2}\sum_{\vk\vk'}U_{\vk\vk'}a^+_\vk{}b^+_{-\vk}{}b^{}_{-\vk'}a^{}_{\vk'}
+	+\nth{2}\sum_{\vk\vk'}V_{\vk\vk'}a^+_\vk{}c^+_{-\vk}{}c^{}_{-\vk'}a^{}_{\vk'}\\
+ &+\nth{2}\sum_{\vk\vk'}Y_{\vk\vk'}a^+_\vk{}b^+_{-\vk}{}c^{}_{-\vk'}a^{}_{\vk'}
+	+\nth{2}\sum_{\vk\vk'}Y^*_{\vk\vk'}a^+_{\vk'}{}c^+_{-\vk'}{}b^{}_{-\vk}a^{}_{\vk}
+\end{split} 
+\end{equation}
+By the Hermition condition we have 
+\begin{equation}
+ U_{\vk'\vk}=U^*_{\vk\vk'},\qquad{} V_{\vk'\vk}=V^*_{\vk\vk'}
+\end{equation}
+  We start from the ansatz as 
+\begin{equation}\label{eq:ansatz}
+ \ket{\Psi}=\prod_\vk\br{u_\vk+v_\vk{}a^\dg_\vk{}b^\dg_{-\vk}+w_\vk{}a^\dg_\vk{}c^\dg_{-\vk}}\ket{0}
+\end{equation}
+Here we require $\abs{u_\vk}^2+\abs{v_\vk}^2+\abs{w_\vk}^2=1$ for normalization.  For all the interaction term, there are two types of contribution,
+for example, 
+\begin{equation*}
+\av{U_{\vk\vk'}a^\dg_\vk{}b^\dg_{-\vk}{}b^{}_{-\vk'}a^{}_{\vk'}}
+=\sum_{\vk}U_{\vk\vk}\abs{v_\vk}^2+\sum_{\vk\neq\vk'}U_{\vk\vk'}v^{}_{\vk'}u^*_{\vk'}u^{}_\vk{}v^*_\vk
+\end{equation*}
+The first term is the Hatree term and the second term is more interesting pairing term.
+
+
+
+And the free energy is 
+\begin{equation}
+ \begin{split}
+  &F\equiv\av{H-\mu{}N}\\
+    =&\sum(\xi^a_\vk+\xi^b_\vk)\abs{v_\vk}^2+\sum(\xi^a_\vk+\xi^c_\vk)\abs{w_\vk}^2\\
+    &+\nth2\sum_{\vk}U_{\vk\vk}\abs{v_\vk}^2+\nth2\sum_{\vk\neq\vk'}U_{\vk\vk'}v^{}_{\vk'}u^*_{\vk'}u^{}_\vk{}v^*_\vk\\
+    &+\nth2\sum_{\vk}V_{\vk\vk}\abs{w_\vk}^2
+      +\nth2\sum_{\vk\neq\vk'}V_{\vk\vk'}w^{}_{\vk'}u^*_{\vk'}u^{}_\vk{}w^*_\vk\\
+    &+\nth2\sum_{\vk}Y_{\vk\vk}w^{}_{\vk}v^*_\vk{}
+      +\nth2\sum_{\vk\neq\vk'}Y_{\vk\vk'}w^{}_{\vk'}{u^{*}_{\vk'}}v^*_\vk{}u^{}_\vk\\
+    &+\nth2\sum_{\vk}Y^*_{\vk\vk}w^*_{\vk}v^{}_{\vk}{}
+      +\nth2\sum_{\vk\neq\vk'}Y^*_{\vk\vk'}w^*_{\vk}{u^{}_{\vk}}v^{}_{\vk'}{}u^{*}_{\vk'}
+ \end{split}
+\end{equation}
+Where 
+\begin{equation*}
+ \xi^a_\vk=\epsilon^a_\vk-\mu^a,\qquad\xi^b_\vk=\epsilon^b_\vk-\mu^b,\qquad\xi^c_\vk=\epsilon^c_\vk-\mu^b
+\end{equation*}
+The chemical potential is added to make sure the $n_a=n_b+n_c=\nth{2}n$.
+ I drop the Hatree term as this in some sense just shift the chemical potentials as it only relates to the density.  (\emph{Not sure still valid in the two-channel problems, especially for the close-channel.})  Also, I ignore the summation on the second only goes through $\vk\neq\vk'$ as the correction is in the higher order. 
+ 
+Now introduce the parameters $\theta_\vk$, $\phi_\vk$ to include the normalization condition.  
+\begin{equation}
+ u_{\vk}=\cos\theta_\vk,\qquad{} v_{\vk}=\sin\theta_\vk\cos\phi_\vk,\qquad{}
+ w_{\vk}=\sin\theta_\vk\sin\phi_\vk
+\end{equation}
+We take them as real quantities as those that minimize the free energy are real.(?) Now the free energy can be written as 
+
+\begin{equation}
+ \begin{split}
+  F=&\sum\xi^{ab}_\vk\sin^2{\theta_\vk}\cos^2\phi_\vk+\sum\xi^{ac}_\vk\sin^2{\theta_\vk}\sin^2\phi_vk\\
+    &+\nth2\sum_{\vk\vk'}U_{\vk\vk'}\cos\theta_{\vk'}\sin\theta_{\vk'}\cos\phi_{\vk'}\cos\theta_\vk{}\sin\theta_\vk\cos\phi_\vk\\
+    &+\nth2\sum_{\vk\vk'}V_{\vk\vk'}\cos\theta_{\vk'}\sin\theta_{\vk'}\sin\phi_{\vk'}\cos\theta_\vk{}\sin\theta_\vk\sin\phi_\vk\\
+    &+\nth2\sum_{\vk\vk'}Y_{\vk\vk'}\cos\theta_{\vk'}\sin\theta_{\vk'}\cos\phi_{\vk'}\cos\theta_\vk{}\sin\theta_\vk\sin\phi_\vk\\
+    &+\nth2\sum_{\vk\vk'}Y^*_{\vk\vk'}\cos\theta_{\vk'}\sin\theta_{\vk'}\sin\phi_{\vk'}\cos\theta_\vk{}\sin\theta_\vk\cos\phi_\vk\\
+    =&\nth4\sum_\vk\xi^{ab}_\vk(1-\cos2\theta_\vk)(1+\cos2\phi_\vk)+\nth4\sum_\vk\xi^{ac}_\vk(1-\cos2\theta_\vk)(1-\cos2\phi_\vk)\\
+    &+\nth{8}\sum_{\vk\vk'}U\sin2\theta_\vk\cos\phi_\vk\sin2\theta_{\vk'}\cos\phi_{\vk'}+\nth{8}\sum_{\vk\vk'}V\sin2\theta_\vk\sin\phi_\vk\sin2\theta_{\vk'}\sin\phi_{\vk'}    \\
+    &+\nth{4}\sum_{\vk\vk'}Y\sin2\theta_\vk\cos\phi_\vk\sin2\theta_{\vk'}\sin\phi_{\vk'}    
+ \end{split}
+\end{equation}
+We assume that $Y=Y^*$. From the above equation, we can differentiate it with respect to $\theta_\vk$ and $\phi_\vk$ and set the derivative as 0, therefore minimize free energy. 
+\begin{align}
+0=&\pdiff{F}{\theta_\vk}\notag\\
+ =&\nth{2}\sin2\theta_\vk\mbr{\xi^{ab}_\vk(1+\cos2\phi_\vk)+\xi^{ac}_\vk(1-\cos2\phi_\vk)}\notag\\
+ &+\nth2\sum_{\vk'}\cos2\theta_\vk\sin2\theta_{\vk'}\mbr{U\cos\phi_\vk\cos\phi_{\vk'}+V\sin\phi_\vk\sin\phi_{\vk'}+Y\sin(\phi_{\vk'}+\phi_\vk)}\\
+ 0=&\pdiff{F}{\phi_\vk}\notag\\
+ =&-\nth{2}(\xi^{ab}_\vk-\xi^{ac}_\vk)\sin2\phi_\vk(1-\cos2\theta_\vk)\notag\\
+ &-\nth4\sum_{\vk'}\sin2\theta_\vk\sin2\theta_{\vk'}\mbr{U\sin\phi_\vk\cos\phi_{\vk'}-V\cos\phi_\vk\sin\phi_{\vk'}-Y\cos(\phi_{\vk'}+\phi_\vk)}
+\end{align}
+  These two set of equations (for each $\vk$, but decoupled) fully determine the wave-function. 
+We introduce two quantities:
+\begin{align}
+\Delta_\vk^U&=\sum_{\vk'}\sin2\theta_{\vk'}(U_{\vk\vk'}\cos\phi_{\vk'}+Y_{\vk\vk'}\sin\phi_{\vk'})\label{eq:gap1}\\
+\Delta_\vk^V&=\sum_{\vk'}\sin2\theta_{\vk'}(V_{\vk\vk'}\sin\phi_{\vk'}+Y_{\vk\vk'}\cos\phi_{\vk'})\label{eq:gap2}
+\end{align} 
+As we can see eqs.(\ref{eq:gap1},\ref{eq:gap2}) is indeed very similar to the structure of two-body Schr\"{o}‌dinger equation.
+If we ‌introduce the Zeeman energy detuning between two channels
+\begin{equation}
+\eta=\xi^{ab}-\xi^{ac}
+\end{equation}
+These equations can be written into a more compact form
+\begin{align}
+\tan2\theta_\vk&=-\frac{\cos\phi_\vk\Delta^U_\vk+\sin\phi_\vk\Delta^V_\vk}{2\xi^{ab}_\vk+2\eta\cos^2\phi_\vk}\label{eq:tan1}\\
+\tan\theta_\vk&=-\frac{\sin\phi_\vk\Delta^U_\vk-\cos\phi_\vk\Delta^V_\vk}{2\eta\sin2\phi_\vk}\label{eq:tan2}
+\end{align} 
+
+
+Furthermore, when $k\rightarrow\infty$, from eq. (\ref{eq:tan1}), we see that $\theta\rightarrow0$ as $1/\xi$;  and from eq. (\ref{eq:tan2}), we see that $\sin\phi_\vk\Delta^U=\cos\phi_\vk\Delta^V$ as we assume $\Delta$ varies slowly over $\vk$.  We have 
+\begin{align*}
+\cos^2\phi_\vk&=\frac{{\Delta^U}^2}{{\Delta^V}^2+{\Delta^U}^2}\\
+\sin^2\phi_\vk&=\frac{{\Delta^V}^2}{{\Delta^V}^2+{\Delta^U}^2}
+\end{align*}
+And 
+\[\tan2\theta_\vk=-\frac{({{\Delta^V}^2+{\Delta^U}^2})^{1/2}}{2\xi^{ab}_\vk}\]
+
+Eqs. (\ref{eq:gap1},\ref{eq:gap2}) are similar as those derived from the Green's function method in the eq. (\ref{eq:gapMatrix}), and should be able to renormalized in the similar fashion $\Delta=T(F-G\Delta)$, where in our notation $({F^o,F^c})=(\cos\theta_\vk\sin\theta_\vk\cos\phi_\vk,\cos\theta_\vk\sin\theta_\vk\sin\phi_\vk)$.  The problem, however, is that the eqs. (\ref{eq:tan1},\ref{eq:tan2}) does not present a simple analytic solution about $\theta$ and $\phi$ in terms of $\Delta$ and therefore the gap equations cannot be written into a simple renormalized  equation although they are implicit functions of $\Delta$.
+ It is a rather cumbersome process to calculate the integration in renormalized gap equations.  Furthermore, information of the close-channel is close to a simple one-level bound-state is not fully incorporated and the equation might be simpler and has a nicer form if I can manage to do that.  
+
+\subsection{more thoughts}
+From eqs. (\ref{eq:gap1},\ref{eq:gap2}), $\Delta^{U,V}_\vk$ varies slowly with $k$ if interaction depends on momentum weakly, at least for low momentum.  Therefore, in the renomalization, they can be taken as constants.  In that case, eqs. (\ref{eq:tan1},\ref{eq:tan2}) determine $\theta_k(\xi_k,\Delta^U,\Delta^V)$ and $\phi_k(\xi_k,\Delta^U,\Delta^V)$, which in turn give two-body wave-function $F^{o,c}_k(\xi_k,\Delta^U,\Delta^V)$.  
+With the renomalized gap equation,.  
+\begin{equation}\label{eq:renomal1}
+\begin{pmatrix}\Delta^U\\\Delta^V\end{pmatrix}=\begin{pmatrix}T_{oo}&T_{oc}\\T_{co}&T_{cc}\end{pmatrix}
+\begin{pmatrix}\sum{F^o-\frac{\Delta^U}{2\epsilon}}\\\sum{F^c-\frac{\Delta^V}{2\epsilon+\eta}}\end{pmatrix}
+\end{equation}
+and the number equation, should give us three parameters in the problems: $\Delta^{U,V}$ and $\mu$.  The close-channel infomation is incorporated into the $T$-matrix.  The problem is more about the computation difficulty as there is no simple analytic solution for $F^{o,c}$, therefore, eq. (\ref{eq:renomal1}) cannot be done easily.
+
+What happened in the broad-resonance limit? Or very BEC/BCS end? 
+
+\subsection{T-matrix}
+Follow \cite{JacksonNarrow}, the bare interaction $V$ should have the form \footnote{notice the some change of notation}
+\begin{equation}
+V(r)=\frac{V_s(r)+3V_t(r)}{4}+\mbr{V_t(r)-V_s(r)}\mathbf{S_1}\cdot\mathbf{S_2}
+\end{equation}
+we can establish the T-matrix from $V$.
+\begin{equation}
+ {\fmtrx{T_{cc}}{T_{co}}{T_{oc}}{T_{oo}}}^{-1}={\fmtrx{V_{cc}}{V_{co}}{V_{oc}}{V_{oo}}}^{-1}-{\fmtrx{G_{c}}{0}{0}{G_{o}}}
+\end{equation}
+For 0-temperature, pair propagators $G_o$ and $G_c$ are
+\begin{equation}
+ G_o(\omega,\vK,\vq)=\nth{\omega+i\delta-\frac{K^2}{4m}-\frac{q^2}{m}}
+\end{equation}
+\begin{equation}
+ G_c(\omega,\vK,\vq,B)=\nth{\omega+i\delta-\eta(B)-\frac{K^2}{4m}-\frac{q^2}{m}}
+\end{equation}
+where $E_{th}(B)$ is the detuning, depending on magnatic field $B$. Here we can break it down into two steps. First, introduce 
+ \begin{equation}
+ {\fmtrx{U_{cc}}{U_{co}}{U_{oc}}{U_{oo}}}^{-1}={\fmtrx{V_{cc}}{V_{co}}{V_{oc}}{V_{oo}}}^{-1}-{\fmtrx{G^{vac}}{0}{0}{G^{vac}}}
+\end{equation}
+where $G^{vac}(q)=(i\delta-q^2/m)^{-1}$ is the vacuum pair propagator ignoring the hyperfine splitting at $\omega=0$ and no center momentum $\vK$.  Furthermore, when the close-channel resonnant state is close to threshold and well-seperated from other discrete levels, the effective interaction is separable.  So 
+\begin{equation}
+ U(\vq',\vq)=\frac{4\pi}{m}\mbr{\frac{a_s+3a_t}{4}+(a_t-a_s)\mathbf{S_1}\cdot\mathbf{S_2}}g(q')g(q)
+\end{equation}
+$g(q)\rightarrow0$ for $qr_C\rightarrow\infty$ where $r_C$ is the interaction range.  But This can be projected to the hyperfine-spin space and therefore two-channel.  
+\begin{equation}
+ {\fmtrx{U_{cc}}{U_{co}}{U_{oc}}{U_{oo}}}=
+\frac{4\pi}{m}\mbr{\fmtrx{\frac{c_7a_s+a_t}{1+c_7}}{\frac{a_t-a_s}{\sqrt{1+c_7}\sqrt{1+c_9}}}
+{\frac{a_t-a_s}{\sqrt{1+c_7}\sqrt{1+c_9}}}{\frac{c_9a_s+a_t}{1+c_9}}}
+\end{equation}
+For example, $\ket{9/2,-9/2}$, $\ket{9/2,-7/2}$, $\ket{7/2,-7/2}$ of ${}^{40}K$ at resonance $B=201.6$, $c_7=14.9$ and $c_9=0.059$ Note that both $c_7$ and $c_9$ depends on B.  
+
+The second step deals with the influence of $B$ in the theshold $E_{th}$ as well as the energy dependence of $G$. 
+ \begin{equation}
+  {\fmtrx{T_{cc}}{T_{co}}{T_{oc}}{T_{oo}}}^{-1}={\fmtrx{U_{cc}}{U_{co}}{U_{oc}}{U_{oo}}}^{-1}-{\fmtrx{\Delta{}G_c}{0}{0}{\Delta{}G_o}}
+\end{equation}
+where $\Delta{}G_{o/c}=G_{o,c}(\omega,\vK,\vq,B)-G^{vac}(q)$.  Using the seperable properties of $U$, we can concentrate the $\vq$ dependence on two quantities and this leaves us a simple two-by-two algebra matrix equation.  
+\begin{equation}
+\Pi_{o,c}(\omega,\vK,B)=\int\frac{d^3q}{(2\pi)^3}\Delta{}G_{o,c}g^2(q)                  
+\end{equation}
+where for the contact interaction with $r_C=0$, we find $\Pi_o(\omega,\vK)=-im^{3/2}\sqrt{\omega-K^2/(4m)}$ and $\Pi_c(\omega,\vK,B)=\Pi_o(\omega-E_{th}(B),\vK)$
+Especially, for $\omega=0$ and no central mometum $\vK$, $\Pi_o=0$ and $\Pi_c=\sqrt{-\eta(B)}$
+\begin{gather}\label{eq:T}
+ T_{cc}=\frac{U_{cc}}{1-U_{cc}\Pi_c}\\
+T_{oc}=T_{co}=\frac{U_{oc}}{1-U_{cc}\Pi_c}\\
+T_{oo}=U_{oo}+\frac{U_{oc}^2\Pi_c}{1-U_{cc}\Pi_c}
+\end{gather}
+comparing this with the commonly used formula 
+\begin{equation}
+ T_{oo}=\frac{4\pi{}a_{bg}}{m}\br{1-\frac{\Delta{}B}{B-B_0}}
+\end{equation}
+We find the resonance position $B_0$ satisfies
+\begin{equation}
+ 1-U_{cc}(B_0)\Pi_c(B_0)=0
+\end{equation}
+And other quantities, such as $a_s$, $a_t$ can be expressed with the experimental quantities. 
+
+However, it is still not clear to me how to really map broad ($\Delta\mu\Delta{}B\gg\frac{k_F}{a_{bg}}$)/narrow resonance into the many-body eq.(\ref{eq:renomal1}) in a calculable sense.  

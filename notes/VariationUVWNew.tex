@@ -173,4 +173,31 @@ We find the resonance position $B_0$ satisfies
 \end{equation}
 And other quantities, such as $a_s$, $a_t$ can be expressed with the experimental quantities. 
 
-However, it is still not clear to me how to really map broad ($\Delta\mu\Delta{}B\gg\frac{k_F}{a_{bg}}$)/narrow resonance into the many-body eq.(\ref{eq:renomal1}) in a calculable sense.  
+However, it is still not clear to me how to really map broad /narrow resonance into the many-body eq.(\ref{eq:renomal1}) in a calculable sense.  The criteria of broad resonance as in \cite{JacksonNarrow} is   
+\begin{equation}\label{eq:broadCriteria}
+\Delta\mu\Delta{}B\gg\frac{k_F}{ma_{bg}}
+\end{equation}
+
+
+\subsection{rescale with Fermi momemtum/energy}
+If we rescale renormalized gap equation eq. \ref{eq:renomal1} and the number equation with the Fermi momentum/energy, we have 
+\begin{equation}\label{eq:renormal2}
+\begin{pmatrix}\widetilde\Delta^U\\\widetilde\Delta^V\end{pmatrix}=
+8\pi{a}{k_F}\begin{pmatrix}1&T_{oc}/T_{oo}\\T_{co}/T_{oo}&T_{cc}/T_{oo}\end{pmatrix}
+\int\widetilde{k}^2d\widetilde{k}
+\begin{pmatrix}
+\nth{2}\sin2\theta_{k}\cos\phi_k-\frac{\widetilde\Delta^U}{2\widetilde\epsilon}\\
+\nth{2}\sin2\theta_{k}\sin\phi_k-\frac{\widetilde\Delta^U}{2\widetilde\epsilon+\widetilde{\eta}}
+\end{pmatrix}
+\end{equation}
+and rescaled number equation
+\begin{equation}
+ \int\widetilde{k}^2\sin^2\theta_kd\widetilde{k}=\nth{3}
+\end{equation}
+We can find the criteria of broad resonance (eq. \ref{eq:broadCriteria}) becomes 
+\begin{equation}
+ ak_F\widetilde{\eta}\gg1 
+\end{equation}
+Here we use $a=a_{bg}(1+\Delta_B/(B-B_0)$,  ignoring constant $1$ around the resonance, and also use the fact that rougly $\eta=\Delta\mu(B-B_0)$. At the broad limit, term $\frac{\widetilde\Delta^U}{2\widetilde\epsilon+\widetilde{\eta}}$ of the second integration in eq. \ref{eq:renormal2} gives a negligible contribution when $\sin2\theta_k$ is substantial.  So a simple solution is to put $\cos\phi_k\approx1$ while $\sin\phi_k\approx0$ for where $\sin2\theta_k$ is substantial (i.e. the particle is concentrated in open-channel).  Therefore, we reduce the two-channel problems into one-channel problem, omitting the close-channel. Here, we can see the interplaying between fermi energy and the two-body quantities, whether eq. \ref{eq:renormal2} can be reduced to a single-channel problem is due to the size of $\widetilde{\eta}$, which is determined by the ratio of the deturning and Fermi energy.  
+
+Here, the broad resonance, we can find the correction of the one-channel solution.  However, in the narrow resonance, we probably can start from the BEC/BCS extreme to find quantitative results. 

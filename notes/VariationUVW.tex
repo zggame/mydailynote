@@ -105,12 +105,11 @@ And
 Eqs. (\ref{eq:gap1},\ref{eq:gap2}) are similar as those derived from the Green's function method in the eq. (\ref{eq:gapMatrix}), and should be able to renormalized in the similar fashion $\Delta=T(F-G\Delta)$, where in our notation $({F^o,F^c})=(\cos\theta_\vk\sin\theta_\vk\cos\phi_\vk,\cos\theta_\vk\sin\theta_\vk\sin\phi_\vk)$.  The problem, however, is that the eqs. (\ref{eq:tan1},\ref{eq:tan2}) does not present a simple analytic solution about $\theta$ and $\phi$ in terms of $\Delta$ and therefore the gap equations cannot be written into a simple renormalized  equation although they are implicit functions of $\Delta$.
  It is a rather cumbersome process to calculate the integration in renormalized gap equations.  Furthermore, information of the close-channel is close to a simple one-level bound-state is not fully incorporated and the equation might be simpler and has a nicer form if I can manage to do that.  
 
-Another point as pointed out before is  the $2\times2$ T-matrix, which should relate to $a_s$ of both side, in the open channel, it should be the background one.  The tuning parameter of the resonance should be in $G$.  What exactly is the off-diagonal elements in T and how do they work in two-body problem?  This needs to be worked out explicitly for clear compaing.    
 \subsection{more thoughts}
 From eqs. (\ref{eq:gap1},\ref{eq:gap2}), $\Delta^{U,V}_\vk$ varies slowly with $k$ if interaction depends on momentum weakly, at least for low momentum.  Therefore, in the renomalization, they can be taken as constants.  In that case, eqs. (\ref{eq:tan1},\ref{eq:tan2}) determine $\theta_k(\xi_k,\Delta^U,\Delta^V)$ and $\phi_k(\xi_k,\Delta^U,\Delta^V)$, which in turn give two-body wave-function $F^{o,c}_k(\xi_k,\Delta^U,\Delta^V)$.  
 With the renomalized gap equation,.  
 \begin{equation}\label{eq:renomal1}
-\begin{pmatrix}\Delta^U\\\Delta^V\end{pmatrix}=\begin{pmatrix}T^{oo}&T^{oc}\\T^{co}&T^{cc}\end{pmatrix}
+\begin{pmatrix}\Delta^U\\\Delta^V\end{pmatrix}=\begin{pmatrix}T_{oo}&T_{oc}\\T_{co}&T_{cc}\end{pmatrix}
 \begin{pmatrix}\sum{F^o-\frac{\Delta^U}{2\epsilon}}\\\sum{F^c-\frac{\Delta^V}{2\epsilon+\eta}}\end{pmatrix}
 \end{equation}
 and the number equation, should give us three parameters in the problems: $\Delta^{U,V}$ and $\mu$.  The close-channel infomation is incorporated into the $T$-matrix.  The problem is more about the computation difficulty as there is no simple analytic solution for $F^{o,c}$, therefore, eq. (\ref{eq:renomal1}) cannot be done easily.
@@ -131,7 +130,7 @@ For 0-temperature, pair propagators $G_o$ and $G_c$ are
  G_o(\omega,\vK,\vq)=\nth{\omega+i\delta-\frac{K^2}{4m}-\frac{q^2}{m}}
 \end{equation}
 \begin{equation}
- G_c(\omega,\vK,\vq,B)=\nth{\omega+i\delta-E_{th}(B)-\frac{K^2}{4m}-\frac{q^2}{m}}
+ G_c(\omega,\vK,\vq,B)=\nth{\omega+i\delta-\eta(B)-\frac{K^2}{4m}-\frac{q^2}{m}}
 \end{equation}
 where $E_{th}(B)$ is the detuning, depending on magnatic field $B$. Here we can break it down into two steps. First, introduce 
  \begin{equation}
@@ -158,7 +157,7 @@ where $\Delta{}G_{o/c}=G_{o,c}(\omega,\vK,\vq,B)-G^{vac}(q)$.  Using the seperab
 \Pi_{o,c}(\omega,\vK,B)=\int\frac{d^3q}{(2\pi)^3}\Delta{}G_{o,c}g^2(q)                  
 \end{equation}
 where for the contact interaction with $r_C=0$, we find $\Pi_o(\omega,\vK)=-im^{3/2}\sqrt{\omega-K^2/(4m)}$ and $\Pi_c(\omega,\vK,B)=\Pi_o(\omega-E_{th}(B),\vK)$
-Especially, for $\omega=0$ and no central mometum $\vK$, $\Pi_o=0$ and $\Pi_c=\sqrt{-E_th(B)}$
+Especially, for $\omega=0$ and no central mometum $\vK$, $\Pi_o=0$ and $\Pi_c=\sqrt{-\eta(B)}$
 \begin{gather}\label{eq:T}
  T_{cc}=\frac{U_{cc}}{1-U_{cc}\Pi_c}\\
 T_{oc}=T_{co}=\frac{U_{oc}}{1-U_{cc}\Pi_c}\\
@@ -173,3 +172,30 @@ We find the resonance position $B_0$ satisfies
  1-U_{cc}(B_0)\Pi_c(B_0)=0
 \end{equation}
 And other quantities, such as $a_s$, $a_t$ can be expressed with the experimental quantities. 
+
+However, it is still not clear to me how to really map broad /narrow resonance into the many-body eq.(\ref{eq:renomal1}) in a calculable sense.  The criteria of broad resonance as in \cite{JacksonNarrow} is   
+\begin{equation}\label{eq:broadCriteria}
+\Delta\mu\Delta{}B\gg\frac{k_F}{ma_{bg}}
+\end{equation}
+
+
+\subsection{rescale with Fermi momemtum/energy}
+If we rescale renormalized gap equation eq. \ref{eq:renomal1} and the number equation with the Fermi momentum/energy, we have 
+\begin{equation}\label{eq:renormal2}
+\begin{pmatrix}\widetilde\Delta^U\\\widetilde\Delta^V\end{pmatrix}=
+8\pi{a}{k_F}\begin{pmatrix}1&T_{oc}/T_{oo}\\T_{co}/T_{oo}&T_{cc}/T_{oo}\end{pmatrix}
+\int\widetilde{k}^2d\widetilde{k}
+\begin{pmatrix}
+\nth{2}\sin2\theta_{k}\cos\phi_k-\frac{\widetilde\Delta^U}{2\widetilde\epsilon}\\
+\nth{2}\sin2\theta_{k}\sin\phi_k-\frac{\widetilde\Delta^U}{2\widetilde\epsilon+\widetilde{\eta}}
+\end{pmatrix}
+\end{equation}
+and rescaled number equation
+\begin{equation}
+ \int\widetilde{k}^2\sin^2\theta_kd\widetilde{k}=\nth{3}
+\end{equation}
+We can find the criteria of broad resonance (eq. \ref{eq:broadCriteria}) becomes 
+\begin{equation}
+ ak_F\widetilde{\eta}\gg1 
+\end{equation}
+Here we use $a=a_{bg}(1+\Delta_B/(B-B_0)$,  ignoring constant $1$ around the resonance, and also use the fact that rougly $\eta=\Delta\mu(B-B_0)$. At the broad limit, term $\frac{\widetilde\Delta^U}{2\widetilde\epsilon+\widetilde{\eta}}$ of the second integration in eq. \ref{eq:renormal2} gives a negligible contribution when $\sin2\theta_k$ is substantial.  So a simple solution is to put $\cos\phi_k\approx1$ while $\sin\phi_k\approx0$ for where $\sin2\theta_k$ is substantial (i.e. the particle is concentrated in open-channel).  Therefore, we reduce the two-channel problems into one-channel problem, omitting the close-channel. Here, we can see the interplaying between fermi energy and the two-body quantities, whether eq. \ref{eq:renormal2} can be reduced to a single-channel problem is due to the size of $\widetilde{\eta}$, which is determined by the ratio of the deturning and Fermi energy.  

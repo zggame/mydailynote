@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/mydailynote
+cd ~/svn/notes
 svn update
 svn add *.tex
 echo "office">today.txt

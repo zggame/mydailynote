@@ -4,8 +4,8 @@ Version=2
 
 [SessionInfo]
 ActiveTab=2
-FrameCount=4
-ActiveFrame=1
+FrameCount=5
+ActiveFrame=4
 
 [Frame0]
 Columns=1
@@ -39,8 +39,8 @@ TopSubLine=41
 [Frame1]
 Columns=1
 Rows=1
-Flags=2
-ShowCmd=3
+Flags=0
+ShowCmd=1
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -53,16 +53,16 @@ Class=CLatexEdit
 Document=DailyNote.tex
 
 [Frame1_Row0]
-cyCur=394
+cyCur=231
 cyMin=10
 
 [Frame1_Col0]
-cxCur=957
+cxCur=816
 cxMin=10
 
 [Frame1_View0,0]
-Cursor.row=100
-Cursor.column=0
+Cursor.row=116
+Cursor.column=20
 TopSubLine=90
 
 [Frame2]
@@ -122,4 +122,33 @@ cxMin=10
 Cursor.row=941
 Cursor.column=0
 TopSubLine=1050
+
+[Frame4]
+Columns=1
+Rows=1
+Flags=2
+ShowCmd=3
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-8
+MaxPos.y=-30
+NormalPos.left=100
+NormalPos.top=100
+NormalPos.right=1399
+NormalPos.bottom=460
+Class=CLatexEdit
+Document=note20100502.tex
+
+[Frame4_Row0]
+cyCur=803
+cyMin=10
+
+[Frame4_Col0]
+cxCur=1453
+cxMin=10
+
+[Frame4_View0,0]
+Cursor.row=7
+Cursor.column=89
+TopSubLine=0
 

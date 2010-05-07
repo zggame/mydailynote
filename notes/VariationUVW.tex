@@ -1,4 +1,4 @@
-\subsection{Variation method with the u,v,w}
+\subsection{Variation method with the u,v,w\label{sec:variation}}
 We start with three hyperfine species a, b, c, where a is the common species in two channel. (a,b) is the open channel while (a,c) is the close channel. And the Hamiltonian is written in the form 
 \begin{equation}
 \begin{split}
@@ -186,8 +186,8 @@ If we rescale renormalized gap equation eq. \ref{eq:renomal1} and the number equ
 8\pi({a}{k_F})\begin{pmatrix}1&T_{oc}/T_{oo}\\T_{co}/T_{oo}&T_{cc}/T_{oo}\end{pmatrix}
 \int\widetilde{k}^2d\widetilde{k}
 \begin{pmatrix}
-\nth{2}\sin2\theta_{k}\cos\phi_k-\frac{\widetilde\Delta^U}{2\widetilde\epsilon}\\
-\nth{2}\sin2\theta_{k}\sin\phi_k-\frac{\widetilde\Delta^U}{2\widetilde\epsilon+\widetilde{\eta}}
+\nth{2}\sin2\theta_{k}\cos\phi_k-\frac{\widetilde\Delta^U}{2\widetilde\epsilon_k}\\
+\nth{2}\sin2\theta_{k}\sin\phi_k-\frac{\widetilde\Delta^V}{2\widetilde\epsilon_k+\widetilde{\eta}}
 \end{pmatrix}
 \end{equation}
 and rescaled number equation
@@ -198,9 +198,12 @@ We can find the criteria of broad resonance (eq. \ref{eq:broadCriteria}) becomes
 \begin{equation}
  ak_F\widetilde{\eta}\gg1 \;\text{or}\; (ak_F)\eta\gg\epsilon_F
 \end{equation}
-Here we use $a=a_{bg}(1+\Delta_B/(B-B_0)$,  ignoring constant $1$ around the resonance, and also use the fact that rougly $\eta=\Delta\mu(B-B_0)$. (Note that the combination $a\eta$ does not depend on B, although they depend on B separately.)   At the broad limit, term $\frac{\widetilde\Delta^U}{2\widetilde\epsilon+\widetilde{\eta}}$ of the second integration in eq. \ref{eq:renormal2} gives a negligible contribution when $\sin2\theta_k$ is substantial.  So a simple solution is to put $\cos\phi_k\approx1$ while $\sin\phi_k\approx0$ for where $\sin2\theta_k$ is substantial (i.e. the particle is concentrated in open-channel).  Therefore, we reduce the two-channel problems into one-channel problem, omitting the close-channel. Here, we can see the interplaying between fermi energy and the two-body quantities, whether eq. \ref{eq:renormal2} can be reduced to a single-channel problem is due to the size of $\widetilde{\eta}$, which is determined by the ratio of the deturning and Fermi energy.  Every other quantities are two-body quantities. 
+Here we use $a=a_{bg}(1+\Delta_B/(B-B_0))$,  ignoring constant $1$ around the resonance, and also use the fact that rougly $\eta=\Delta\mu(B-B_0)$. (Note that the combination $a\eta$ does not depend on B, although they depend on B separately.)   At the broad limit, term $\frac{\widetilde\Delta^U}{2\widetilde\epsilon+\widetilde{\eta}}$ of the second integration in eq. \ref{eq:renormal2} gives a negligible contribution when $\sin2\theta_k$ is substantial.  So a simple solution is to put $\cos\phi_k\approx1$ while $\sin\phi_k\approx0$ for where $\sin2\theta_k$ is substantial (i.e. the particle is concentrated in open-channel).  Therefore, we reduce the two-channel problems into one-channel problem, omitting the close-channel. Here, we can see the interplaying between fermi energy and the two-body quantities, whether eq. \ref{eq:renormal2} can be reduced to a single-channel problem is due to the size of $\widetilde{\eta}$, which is determined by the ratio of the deturning and Fermi energy.  Every other quantities are two-body quantities. 
+
+Looking closely, there are two possibilities to have large $\tilde\eta$, by have a broad resonance, this works in any detuning, $\eta$; or by a large detuning, no matter broad/narrow.    The second case gives us the extremes as in BEC/BCS.  In the BCS side, it is like no resonance; in the BEC side, it would be mostly close-channel molecules.  This is prbably not the most interesting situation however.  More interesting case would be not the extreme large detuning, still close to resonance enough, where, the molecule is not completely dominated by close-channel.  Here in some sense, the corresponding two-body $T$-matrix is for $T(\omega,\eta)=\frac{4\pi}{m}\nth{\nth{a}+r_{eff}k^2}$ where $\omega\sim{}\epsilon_F\gg\delta_c$. The normal contact interaction assumption with $T(0,\eta)$ breaks down here.  In the other sense, a narrow resonance is intrinsically not at extremes. 
 
 
-Looking closely, there are two possibilities to have large $\tilde\eta$, by have a broad resonance, this works in any detuning, $\eta$; or by a large detuning, no matter broad/narrow.    The second case gives us the extremes as in BEC/BCS.  In the BCS side, it is like no resonance; in the BEC side, it would be mostly close-channel molecules.  This is prbably not the most interesting situation however.  More interesting case would be not the extreme large detuning, still close to resonance enough, where, the molecule is not completely dominated by close-channel.  Here in some sense, the corresponding two-body $T$-matrix is for $T(\omega,\eta)=\frac{4\pi}{m}\nth{\nth{a}+r_{eff}k^2}$ where $\omega\sim{}\epsilon_F\gg\delta_c$. The normal contact interaction assumption with $T(0,\eta)$ breaks down here.  
-
-
+\subsection{BEC/BCS Extreme}
+Now it is nice to reduce the broad resonance of two-channel into one-channel.  It is nice to find out some result for the BCS/BEC extreme in the narrow limit. 
+\subsubsection{BEC side}
+At this side, we presume that $\mu\ll-\epsilon_F<0$ (this can be checked in the end). From eq. (\ref{eq:tan1}), $\tan2\theta_\vk$ is always small because $\xi_\vk=\epsilon_\vk+|\mu|\gg\epsilon_F,\Delta^{U,V}$.  So does the $\sin2\theta_\vk\approx\tan2\theta_\vk$ in the gap eq. (\ref{eq:renormal2}) and the integrand is dominated by the second term $-\Delta/(2\epsilon_\vk)$ when $\epsilon_k\leq|\mu|$.  The two equations reduce to the same   

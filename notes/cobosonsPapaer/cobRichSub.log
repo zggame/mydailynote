@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=latex 2010.4.28)  17 MAY 2010 23:21
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=latex 2010.4.28)  18 MAY 2010 09:27
 entering extended mode
 **cobRichSub.tex
 (C:\zggame\notes\cobosonsPapaer\cobRichSub.tex
@@ -266,83 +266,72 @@ Underfull \hbox (badness 1728) in paragraph at lines 523--524
 [][]\OT1/cmr/m/n/10 We now add two pairs to the frozen sea $[]$.
  []
 
-
-Overfull \hbox (21.77469pt too wide) detected at line 560
-[] \OT1/cmr/m/n/10 = 2\OML/cmm/m/it/10 V[]w[][][] [] \OT1/cmr/m/n/10 = [] \O
-ML/cmm/m/it/10  [] [][] []
- []
-
 File: twoPair.eps Graphic file (type eps)
 <twoPair.eps> [5]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 594.
+ on input line 595.
 
 
-Overfull \hbox (48.48221pt too wide) detected at line 601
-[] \OT1/cmr/m/n/10 = [] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 614--618
+Underfull \hbox (badness 10000) in paragraph at lines 619--623
 [][]\OT1/cmr/m/n/10 The above equa-tion read-ily shows that
  []
 
 
-Overfull \hbox (3.34654pt too wide) in paragraph at lines 686--686
+Overfull \hbox (3.34654pt too wide) in paragraph at lines 694--694
 [] 
  []
 
 File: threePair.eps Graphic file (type eps)
 <threePair.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 714--721
-[][]\OT1/cmr/m/n/10 If we now come back to Eq.[], sub-tract
+Underfull \hbox (badness 4647) in paragraph at lines 716--723
+[][]\OT1/cmr/m/n/10 If we now use Eq. (38[]) for $[]$ and
  []
 
 
-Overfull \hbox (24.4728pt too wide) in alignment at lines 722--734
- [][][] []
+Underfull \hbox (badness 10000) in paragraph at lines 716--723
+\OT1/cmr/m/n/10 Eq. (41[]) for $[]$ into [], sub-tract
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 734--741
-\OT1/cmr/m/n/10 as $[] \OML/cmm/m/it/10 = []$ \OT1/cmr/m/n/10 pro-
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 723.
+
+
+Overfull \hbox (24.4728pt too wide) in alignment at lines 724--736
+ [][][] []
  []
 
 [7]
-Overfull \hbox (2.35944pt too wide) detected at line 856
+Overfull \hbox (2.35944pt too wide) detected at line 854
 [] \OMS/cmsy/m/n/10  []
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 871--873
+Underfull \hbox (badness 1210) in paragraph at lines 869--871
 [][]\OT1/cmr/m/n/10 Eq.(45) shows that, in or-der to pos-si-bly re-place
  []
 
 [8]
-Underfull \hbox (badness 1087) in paragraph at lines 1043--1048
+Underfull \hbox (badness 1087) in paragraph at lines 1041--1046
  [][]\OT1/cmr/m/n/9 M. Combescot, O. Betbeder-Matibet, and F. Du-bin,
  []
 
-Class revtex4-1 Info: Total figure: Column(730pt), Page(730pt) on input line 10
-60.
-Class revtex4-1 Info: Total table: Column(0pt), Page(0pt) on input line 1060.
-Class revtex4-1 Info: Total video: Column(0pt), Page(0pt) on input line 1060.
-Class revtex4-1 Info: Total text: Column(10697pt), Page(304pt) on input line 10
-60.
-[9] (C:\zggame\notes\cobosonsPapaer\cobRichSub.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
-
-
- ) 
+Class revtex4-1 Info: Total figure: Column(677pt), Page(677pt) on input line 10
+58.
+Class revtex4-1 Info: Total table: Column(0pt), Page(0pt) on input line 1058.
+Class revtex4-1 Info: Total video: Column(0pt), Page(0pt) on input line 1058.
+Class revtex4-1 Info: Total text: Column(10657pt), Page(304pt) on input line 10
+58.
+[9] (C:\zggame\notes\cobosonsPapaer\cobRichSub.aux) ) 
 Here is how much of TeX's memory you used:
- 4307 strings out of 495270
- 59460 string characters out of 3179662
- 159506 words of memory out of 3000000
- 7516 multiletter control sequences out of 15000+200000
+ 4310 strings out of 495270
+ 59495 string characters out of 3179662
+ 161506 words of memory out of 3000000
+ 7519 multiletter control sequences out of 15000+200000
  10558 words of font info for 37 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  44i,22n,45p,850b,380s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on cobRichSub.dvi (9 pages, 89008 bytes).
+Output written on cobRichSub.dvi (9 pages, 89992 bytes).

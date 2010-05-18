@@ -591,23 +591,29 @@ _2}\beta^{\dagger}_{\mathbf{k} _2}-\frac{Vw_{\mathbf{k} _2}^2}{2\epsilon_{%
 _1}-R_2\right)}\beta^\dagger\left|F_0\right>  
 \end{multline}
 the last term coming from the exchange interaction part $\left|\omega_{\mathbf{k} _1\mathbf{k} _2}\right>$
-To go further, we split $\left(2\epsilon_{\mathbf{k} _1}-R_1\right)
-^{-1}\left(2\epsilon_{\mathbf{k} _1}-R_2\right) ^{-1}$ as $\left[%
-\left(2\epsilon_{\mathbf{k} _1}-R_1\right) ^{-1}-\left(2\epsilon_{\mathbf{k}
-_1}-R_2\right) ^{-1}\right] /\left(R_1-R_2\right) $ provided that $R_1\neq{}%
-R_2$, a condition that we can always enforce since the unique requirement is to have $R_1+R_2=E_2$. This allows us to write the last term of \eqref{eq:SchTwo2} as $\delta_{{\mathbf{k} _2}{\mathbf{k} _1}}\frac{2V}{R_1-R_2}[B^{\dagger}_{\mathbf{k} _1}(R_1)-B^{\dagger}_{\mathbf{k} _1}(R_2)]\beta^\dagger\left|F_0\right>  $ provided that $w^2_{{\mathbf{k} }}=w_{{\mathbf{k} }}$. By taking sums over $\mathbf{k} _1$ and $\mathbf{k} _2$, Eq. %
-\eqref{eq:SchTwo2} then gives 
+
+To go further, we rewrite the last term using 
+\begin{equation}
+\frac{1}{\left(2\epsilon_{\mathbf{k} _1}-R_1\right)
+\left(2\epsilon_{\mathbf{k} _1}-R_2\right)}=\left[
+\frac{1}{\left(2\epsilon_{\mathbf{k} _1}-R_1\right)}-\frac{1}{\left(2\epsilon_{\mathbf{k}
+_1}-R_2\right) }\right]\frac1{\left(R_1-R_2\right) } 
+\end{equation}
+
+Provided that $R_1\neq{}R_2$
+a condition that we can always enforce since the unique requirement is to have $R_1+R_2=E_2$. For $w^2_{{\mathbf{k} }}=w_{{\mathbf{k} }}$, the last term of Eq. \eqref{eq:SchTwo2} as $\delta_{{\mathbf{k} _2}{\mathbf{k} _1}}\frac{2V}{R_1-R_2}[B^{\dagger}_{\mathbf{k} _1}(R_1)-B^{\dagger}_{\mathbf{k} _1}(R_2)]\beta^\dagger\left|F_0\right>  $. By taking sums over $\mathbf{k} _1$ and $\mathbf{k} _2$, Eq. %
+\eqref{eq:SchTwo2} then yields 
 \begin{multline}  \label{eq:SchTwo3}
 (H-E_2)B^{\dagger}(R_1)B^{\dagger}(R_2)\left|F_0\right>   = \\
-\left\{B^{\dagger}(R_1)\left(1-V\sum\frac{w_{\mathbf{k} }^2}{2\epsilon_{%
-\mathbf{k} }-R_2}+\frac{2V}{R_1-R_2}\right) +(1\leftrightarrow2)\right\}  \\
+\left\{B^{\dagger}(R_1)\left[1-V\sum\frac{w_{\mathbf{k} }^2}{2\epsilon_{%
+\mathbf{k} }-R_2}+\frac{2V}{R_1-R_2}\right] +(1\leftrightarrow2)\right\}  \\
 \beta^{\dagger}\left|F_0\right>  
 \end{multline}
 
 
 The above equation readily shows that $B^{\dagger}(R_1)B^{\dagger}(R_2)%
-\left|F_0\right>  $ is the two-pair eigenstate of the hamiltonian $H$ with the energy $%
-E _2=R_1+R_2$ provided that $\left(R_1,R_2\right) $ fulfill two
+\left|F_0\right>  $ is the two-pair eigenstate of the hamiltonian $H$ with  energy $%
+E _2=R_1+R_2$ provided that the bracket in the above equations is zero, i.e., $\left(R_1,R_2\right) $ fulfill two
 equations, known as Richardson's equations for two pairs 
 \begin{equation}
 1=V\sum\frac{w_{\mathbf{k} }^2}{2\epsilon_{\mathbf{k} }-R_1}+\frac{2V}{R_1-R_2}%

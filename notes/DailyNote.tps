@@ -4,8 +4,8 @@ Version=2
 
 [SessionInfo]
 ActiveTab=2
-FrameCount=5
-ActiveFrame=4
+FrameCount=7
+ActiveFrame=6
 
 [Frame0]
 Columns=1
@@ -61,8 +61,8 @@ cxCur=816
 cxMin=10
 
 [Frame1_View0,0]
-Cursor.row=116
-Cursor.column=20
+Cursor.row=0
+Cursor.column=0
 TopSubLine=90
 
 [Frame2]
@@ -126,8 +126,8 @@ TopSubLine=1050
 [Frame4]
 Columns=1
 Rows=1
-Flags=2
-ShowCmd=3
+Flags=0
+ShowCmd=1
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -140,15 +140,73 @@ Class=CLatexEdit
 Document=note20100502.tex
 
 [Frame4_Row0]
-cyCur=803
+cyCur=301
 cyMin=10
 
 [Frame4_Col0]
-cxCur=1453
+cxCur=1262
 cxMin=10
 
 [Frame4_View0,0]
-Cursor.row=7
-Cursor.column=89
+Cursor.row=0
+Cursor.column=0
 TopSubLine=0
+
+[Frame5]
+Columns=1
+Rows=1
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-8
+MaxPos.y=-30
+NormalPos.left=125
+NormalPos.top=125
+NormalPos.right=1349
+NormalPos.bottom=699
+Class=CLatexEdit
+Document=VariationUVW.tex
+
+[Frame5_Row0]
+cyCur=515
+cyMin=10
+
+[Frame5_Col0]
+cxCur=1187
+cxMin=10
+
+[Frame5_View0,0]
+Cursor.row=200
+Cursor.column=545
+TopSubLine=226
+
+[Frame6]
+Columns=1
+Rows=1
+Flags=2
+ShowCmd=3
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-8
+MaxPos.y=-30
+NormalPos.left=150
+NormalPos.top=150
+NormalPos.right=1374
+NormalPos.bottom=724
+Class=CLatexEdit
+Document=subNote.tex
+
+[Frame6_Row0]
+cyCur=514
+cyMin=10
+
+[Frame6_Col0]
+cxCur=1453
+cxMin=10
+
+[Frame6_View0,0]
+Cursor.row=35
+Cursor.column=0
+TopSubLine=12
 

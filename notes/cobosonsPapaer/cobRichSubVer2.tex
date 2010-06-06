@@ -460,7 +460,7 @@ This means that the $v_{\mathbf{k} ^{\prime}\mathbf{k} }$ prefactors in Eq.%
 $N_0$ being the number of pairs in the frozen sea, so that this state is a many-body state already, but in the most simple sense since the Fermi sea $%
 \left|F_0\right> $ is just there to block states by the Pauli exclusion
 principle. This Fermi sea mainly brings a finite density of state for all the
-states above it, a point crucial to have a bound state whatever the weakness of the attracting BCS potential.
+states above it, a point crucial to have a bound state in 3D whatever the weakness of the attracting BCS potential.
 
 By choosing the zero energy such
 that $H_0\left|F_0\right> =0$, Eqs.(\ref{eq:betaH},\ref{eq:vbeta}) allows us to write the hamiltonian $H=H_0+V_{BCS}$
@@ -474,7 +474,7 @@ H\beta^{\dagger}_\vk\left|F_0\right>  =\left[H,\beta^{\dagger}_\vk\right]
 Due to the $v_{\mathbf{k} \mathbf{p} }$ factor included
 in the $\gamma^{\dagger}_{\mathbf{k} }$ part of $V^{\dagger}_\vk$, 
  $v_{\mathbf{k} \mathbf{p} }a^{\dagger}_{\mathbf{p} }a^{}_{%
-\mathbf{p} }\left|F_0\right>=v_{\mathbf{k} \mathbf{p} }b^{\dagger}_{-\mathbf{p} }b^{}_{-\mathbf{p} }\left|F_0\right>=0$,
+\mathbf{p} }\left|F_0\right>=v_{\mathbf{k} \mathbf{p} }b^{\dagger}_{-\mathbf{p} }b^{}_{-\mathbf{p} }\left|F_0\right>=0$;
  therefore 
 \begin{equation}\label{eq:Vk0}
 V^{\dagger}_\vk\left|F_0\right> =0
@@ -490,7 +490,7 @@ the two sides of the above equation, with $E_1$ yet undefined, but assumed to be
 
 To go further and possibly obtain the one-pair eigenstate of the hamiltonian $H$
 in a compact analytical form, it is necessary to approximate the BCS potential by a separable potential $v_{\mathbf{k} \mathbf{p} }=-V\,w_\vk{}w_\vp$.
-We then have  
+The operator $\gamma^\dagger_\vk$ then reduces to  
 \begin{equation}\gamma^{\dagger}_\vk=-V\,w_\vk\beta^{\dagger}
 \end{equation} 
 where $\beta^\dagger$ is given by
@@ -534,7 +534,7 @@ _2}\left|F_0\right>\\
 &\quad\:   +\left|V_{\mathbf{k} _1\mathbf{k} _2}\right>+\left|W_{\mathbf{k} _1\mathbf{k} _2}\right>  
 \end{split}%
 \end{equation}
-The last two terms come from interactions. Eq. (\ref{eq:vpotbeta}) readily gives $\left|V_{\mathbf{k} _1\mathbf{k} _2}\right> $ as 
+The last two terms come from interactions between the four fermions of the two pairs.  The first term of Eq. (\ref{eq:vbeta}) readily gives $\left|V_{\mathbf{k} _1\mathbf{k} _2}\right> $ as 
 \begin{equation}
 \begin{split}
 \left|V_{\mathbf{k} _1\mathbf{k} _2}\right>& =\left(\gamma^{\dagger}_{\mathbf{%
@@ -544,14 +544,13 @@ _2}\beta^{\dagger}_{\mathbf{k} _1}\right) \left|F_0\right> \\
 _2}\beta^{\dagger}_{\mathbf{k} _1}\right)\beta^\dagger \left|F_0\right>  
 \end{split}
 \end{equation}
-while  $\left|W_{\mathbf{k} _1\mathbf{k} _2}\right> $ appears as 
+The second term of Eq. (\ref{eq:vbeta}) yields
 \begin{equation}
 \left|W_{\mathbf{k} _1\mathbf{k} _2}\right> =\left(V^{\dagger}_{\mathbf{%
 k} _1}\beta^{\dagger}_{\mathbf{k} _2}+\beta^{\dagger}_{\mathbf{k}
 _1}V^{\dagger}_{\mathbf{k} _2}\right) \left|F_0\right> 
 \end{equation}
-To calculate it, we use the fact that $V^{\dagger}_{\mathbf{k}}$ acting on the frozen sea $\left|F_0\right>$ gives zero (see Eq. (\ref{eq:Vk0})).  Eqs. (\ref{eq:vBeta},\ref{eq:interactSc}) then yield  $\left|W_{%
-\mathbf{k} _1\mathbf{k} _2}\right> $ as 
+To calculate it, we again use commutators.  Since  $V^{\dagger}_{\mathbf{k}}$ acting on the frozen sea $\left|F_0\right>$ gives zero (see Eq. (\ref{eq:Vk0})), we find from Eqs. (\ref{eq:vBeta},\ref{eq:interactSc}) 
 \begin{equation}\label{eq:omega2}
 \begin{split}
 \left|W_{\mathbf{k} _1\mathbf{k} _2}\right>&=\sum_{\mathbf{p} ^{\prime}_1\mathbf{p}
@@ -562,6 +561,7 @@ To calculate it, we use the fact that $V^{\dagger}_{\mathbf{k}}$ acting on the f
 \mathbf{k} _1} \beta^{\dagger}\left|F_0\right> 
 \end{split}
 \end{equation}
+
 The interaction part of $H$ acting on two free pairs is  visualized by
 the diagram of Fig. \ref{fig:twoP}. In $\left|V_{\mathbf{k} _1\mathbf{k} _2}\right>$, one pair stays unchanged while the other pair suffers a BCS interaction. In $\left|W_{\mathbf{k} _1\mathbf{k} _2}\right>$, the two pairs exchange an electron and then one pair interacts.   These diagrams evidence the fact that,
 due to the (1x1) structure of the BCS potential,  two pairs 
@@ -586,17 +586,21 @@ _2}-R_2\right) $. This yields
 \begin{multline}  \label{eq:SchTwo2}
 (H-E _2)B^{\dagger}_{\mathbf{k} _1}(R_1)B^{\dagger}_{\mathbf{k}
 _2}(R_2)\left|F_0\right>   = \\
-\left\{B^{\dagger}_{\mathbf{k} _1}(R_1)\left(w_{\mathbf{k}
+\left\{B^{\dagger}_{\mathbf{k} _1}(R_1)\left[w_{\mathbf{k}
 _2}\beta^{\dagger}_{\mathbf{k} _2}-\frac{Vw_{\mathbf{k} _2}^2}{2\epsilon_{%
-\mathbf{k} _2}-R_2}\beta^{\dagger}\right)+(1\leftrightarrow2)\right\}
+\mathbf{k} _2}-R_2}\beta^{\dagger}\right]+(1\leftrightarrow2)\right\}
 \left|F_0\right>  \\
-+2V\delta_{{\mathbf{k} _1}{\mathbf{k} _2}}\frac{w^3_{{\mathbf{k} _1}}\beta^\dagger_{{\mathbf{k} _1}}}{\left(2%
++2V\left[\delta_{{\mathbf{k} _1}{\mathbf{k} _2}}\frac{w^3_{{\mathbf{k} _1}}}{\left(2%
 \epsilon_{\mathbf{k} _1}-R_1\right) \left(2\epsilon_{\mathbf{k}
-_1}-R_2\right)}\beta^\dagger\left|F_0\right>  
+_1}-R_2\right)}\beta^\dagger_{{\mathbf{k} _1}}\right]\beta^\dagger\left|F_0\right>  
 \end{multline}
 the last term coming from the exchange interaction part $\left|W_{\mathbf{k} _1\mathbf{k} _2}\right>$
 
-To go further, we rewrite the last term using 
+To go further, we sum over $(\vk_1,\vk_2)$.  The first bracket readily gives 
+\begin{equation}\label{eq:1-v}
+\left(1-V\sum\frac{w_{\mathbf{k} }^2}{2\epsilon_{\mathbf{k} }-R_2}\right)\beta^\dagger
+\end{equation}
+To caluculate the second braket, we use
 \begin{equation}\label{eq:inverse}
 \begin{split}
 &\frac{1}{\left(2\epsilon_{\mathbf{k} _1}-R_1\right)
@@ -605,9 +609,14 @@ To go further, we rewrite the last term using
 _1}-R_2\right) }\right]\frac1{\left(R_1-R_2\right) } 
 \end{split}
 \end{equation}
-Provided that $R_1\neq{}R_2$,
-a condition that we can always enforce since the unique requirement is to have $R_1+R_2=E_2$. For $w^2_{{\mathbf{k} }}=w_{{\mathbf{k} }}$, the last term of Eq. \eqref{eq:SchTwo2} then reads as $\delta_{{\mathbf{k} _2}{\mathbf{k} _1}}\frac{2V}{R_1-R_2}[B^{\dagger}_{\mathbf{k} _1}(R_1)-B^{\dagger}_{\mathbf{k} _1}(R_2)]\beta^\dagger\left|F_0\right>  $. By taking sums over $\mathbf{k} _1$ and $\mathbf{k} _2$, Eq. %
-\eqref{eq:SchTwo2} then yields 
+which is valid, provided that $R_1\neq{}R_2$,
+a condition that we can always enforce since the unique requirement is to have $R_1+R_2=E_2$. For $w^2_{{\mathbf{k} }}=w_{{\mathbf{k} }}$, we then find 
+\begin{multline}\label{eq:deltakk}
+\sum_{{\mathbf{k} _1}{\mathbf{k} _2}}\delta_{{\mathbf{k} _1}{\mathbf{k} _2}}\frac{w^3_{{\mathbf{k} _1}}}{\left(2%
+\epsilon_{\mathbf{k} _1}-R_1\right) \left(2\epsilon_{\mathbf{k}
+_1}-R_2\right)}\beta^\dagger_{{\mathbf{k} _1}}\\=\frac1{\left(R_1-R_2\right) }[B^\dagger(R_1)-B^\dagger(R_2)]
+\end{multline}
+ Eq. \eqref{eq:SchTwo2} then yields 
 \begin{multline}  \label{eq:SchTwo3}
 (H-E_2)B^{\dagger}(R_1)B^{\dagger}(R_2)\left|F_0\right>   = \\
 \left\{B^{\dagger}(R_1)\left[1-V\sum\frac{w_{\mathbf{k} }^2}{2\epsilon_{%
@@ -616,7 +625,7 @@ a condition that we can always enforce since the unique requirement is to have $
 \end{multline}
 
 
-The above equation readily shows that $B^{\dagger}(R_1)B^{\dagger}(R_2)%
+The above equation evidences that $B^{\dagger}(R_1)B^{\dagger}(R_2)%
 \left|F_0\right>  $ is the two-pair eigenstate of the hamiltonian $H$ with  energy $%
 E _2=R_1+R_2$ provided that the bracket in the above equations is zero, i.e., $\left(R_1,R_2\right) $ fulfill two
 equations, known as Richardson's equations for two pairs 
@@ -628,7 +637,7 @@ equations, known as Richardson's equations for two pairs
 \subsection{Three pairs}
 
 We now turn to three pairs in order to see how these equations develop for an
-increasing number of pairs: two usually is not generic, while three most often is.  And indeed, we will here see that when $H$ acts on three pairs, one among the three pairs stays unchanged.   This is a great step toward understanding why the $N$ dependence of the $N$-pair ground state energy is in $N(N-1)$ only, with no term in $N(N-1)(N-2)$ and higher, as our low density result extrapolated to the high density BCS regime seems to indicate.  
+increasing number of pairs: two usually is not generic, while three most often is.  In the present case, we will here see that when $H$ acts on three pairs, one among the three pairs stays unchanged.   This is the step toward understanding why the $N$ dependence of the $N$-pair ground state energy is in $N(N-1)$ only, with no term in $N(N-1)(N-2)$ and higher, as the validity of our low density result extrapolated to the high density BCS regime, seems to indicate.  
 
 
 We start with 
@@ -673,8 +682,8 @@ _1}V^{\dagger}_{\mathbf{k} _2}\beta^{\dagger}_{\mathbf{k} _3}+\beta^{%
 \dagger}_{\mathbf{k} _1}\beta^{\dagger}_{\mathbf{k} _2}V^{\dagger}_{\mathbf{k%
 } _3}\right) \left|F_0\right>  
 \end{equation}
-To calculate them, we again use $V^{\dagger}_\vk\left|F_0\right>  =0$. Using
-Eq. \eqref{eq:vBeta}, $\left|W_{\mathbf{k} _1\mathbf{k} _2\mathbf{k} _3}\right>$ ends by taking  a more symmetrical form 
+To calculate them, we again use commutators and the fact that $V^{\dagger}_\vk\left|F_0\right>  =0$. 
+Eq. \eqref{eq:vBeta} allows us to rewrite  $\left|W_{\mathbf{k} _1\mathbf{k} _2\mathbf{k} _3}\right>$   a more symmetrical form as
 \begin{equation}  \label{eq:vThree2}
 \begin{split}
 &\left\{\left[V^{\dagger}_{\mathbf{k} _1},\beta^{\dagger}_{\mathbf{k} _2}%
@@ -693,11 +702,10 @@ _2}\right\} \left|F_0\right>
 \end{split}%
 \end{equation}
 
-The interaction part of Eq. (\ref{eq:SchThree2}) $\left|V_{\mathbf{k} _1\mathbf{k} _2%
+The interaction part of Eq. (\ref{eq:SchThree2}), namely $\left|V_{\mathbf{k} _1\mathbf{k} _2%
 \mathbf{k} _3}\right>+\left|W_{\mathbf{k} _1\mathbf{k} _2\mathbf{k} _3}\right> $ is represented by the diagrams of Fig.\ref{fig:threeP}. $\left|V_{\mathbf{k} _1\mathbf{k} _2
 \mathbf{k} _3}\right>$ has interactions inside a single pair, two pairs
-staying unchanged. $\left|W_{\mathbf{k} _1\mathbf{k} _2\mathbf{k} _3}\right> $ contains processes in which the pair suffering the potential exchanges one of its electrons with a second pair, the third pair staying unchanged.  \normalsize	As given in Eqs. (\ref{eq:vThree},\ref{eq:vThree2}), there also are two  contributions similar to the one
-visualized in Fig. \ref{fig:threeP}, obtained by circular permutation.
+staying unchanged. $\left|W_{\mathbf{k} _1\mathbf{k} _2\mathbf{k} _3}\right> $ contains processes in which the pair suffering the potential exchanges one of its electrons with a second pair, the third pair staying unchanged.  There  are three similar  contributions, obtained by circular permutation.
 \begin{figure}[htb]
    \includegraphics[width=0.4\textwidth]{threePair.eps}
 \caption{Shiva diagram for the interaction part $\left|V_{\mathbf{k} _1\mathbf{k} _2%
@@ -709,41 +717,38 @@ Using Eq. \eqref{eq:interactSc} for the interaction scattering, we end with
 \begin{equation}\label{eq:omega3}
 \left|W_{\mathbf{k} _1\mathbf{k} _2\mathbf{k} _3}\right>= 2V(\delta_{\mathbf{k} _1\mathbf{k} _2}w_{\mathbf{k} _1}\beta^{\dagger}_{\mathbf{k} _1}\beta^{\dagger}_{\mathbf{k} _3}+ \text{2 perm.})\beta^{\dagger}\left|F_0\right>
 \end{equation}
-Note the similarity with Eq. (\ref{eq:omega2}) for $\left|W_{\mathbf{k} _1\mathbf{k} _2}\right> $
+which has close similarity with  $\left|W_{\mathbf{k} _1\mathbf{k} _2}\right> $ given in Eq. (\ref{eq:omega2}). 
 
 
 
-If we now use Eq. (\ref{eq:vThree}) for $\left|V_{\mathbf{k} _1\mathbf{k} _2\mathbf{k} _3}\right>$  and Eq. (\ref{eq:omega3}) for $\left|W_{\mathbf{k} _1\mathbf{k} _2\mathbf{k} _3}\right> $ into \eqref{eq:SchThree2}, subtract $E
+To go furtheer, we insert Eq. (\ref{eq:vThree}) for $\left|V_{\mathbf{k} _1\mathbf{k} _2\mathbf{k} _3}\right>$  and Eq. (\ref{eq:omega3}) for $\left|W_{\mathbf{k} _1\mathbf{k} _2\mathbf{k} _3}\right> $ into \eqref{eq:SchThree2}, subtract $E
 _3\beta^{\dagger}_{\mathbf{k} _1}\beta^{\dagger}_{\mathbf{k}
 _2}\beta^{\dagger}_{\mathbf{k} _3}\left|F_0\right>  $ to both sides, with $%
-E _3$ written as $R_1+R_2+R_3$, and multiply the resulting equation
+E _3$ written as $R_1+R_2+R_3$, and we multiply the resulting equation
 by $w_{\mathbf{k} _1}w_{\mathbf{k} _2}w_{\mathbf{k} _3}/\left(2\epsilon_{%
 \mathbf{k} _1}-R_1\right) \left(2\epsilon_{\mathbf{k} _2}-R_2\right)
-\left(2\epsilon_{\mathbf{k} _3}-R_3\right) $, we end with
+\left(2\epsilon_{\mathbf{k} _3}-R_3\right) $. This yields
 
 \begin{eqnarray}  \label{eq:SchThree3}
 &&(H-E _3)B^{\dagger}_{\mathbf{k} _1}(R_1)B^{\dagger}_{\mathbf{k}
-_2}(R_2)B^{\dagger}_{\mathbf{k} _3}(R_3)\left|F_0\right>  \hspace{3cm}\nonumber\\
+_2}(R_2)B^{\dagger}_{\mathbf{k} _3}(R_3)\left|F_0\right>  \nonumber\\
 &=& \Bigl\{B^{\dagger}_{\mathbf{k} _1}(R_1)B^{\dagger}_{\mathbf{k}
-_2}(R_2)\bigl(w_{\mathbf{k} _3}\beta^{\dagger}_{\mathbf{k} _3}-\frac{Vw_{%
-\mathbf{k} _3}^2}{2\epsilon_{\mathbf{k} _2}-R_3}\beta^{\dagger}\bigr) \hspace{1cm}\nonumber\\
-&&+\text{2 perm.} \Bigr\}\left|F_0\right> \hspace{1cm}\nonumber\\
-&&+2V\Bigl\{B^{\dagger}_{\mathbf{k} _3}(R_3)\frac{\delta_{\mathbf{k} _1\mathbf{%
+_2}(R_2)\left[w_{\mathbf{k} _3}\beta^{\dagger}_{\mathbf{k} _3}-\frac{Vw_{%
+\mathbf{k} _3}^2}{2\epsilon_{\mathbf{k} _2}-R_3}\beta^{\dagger}\right] \nonumber\\
+&&+\text{2 perm.} \Bigr\}\left|F_0\right> \nonumber\\
+&&+2V\Bigl\{B^{\dagger}_{\mathbf{k} _3}(R_3)\left[\frac{\delta_{\mathbf{k} _1\mathbf{%
 k} _2}w^3_{\mathbf{k} _1}}{\left(2\epsilon_{\mathbf{k} _1}-R_1\right)
-\left(2\epsilon_{\mathbf{k} _1}-R_2\right) }\beta^{\dagger}_{\mathbf{k} _1}\hspace{1cm}\nonumber\\
+\left(2\epsilon_{\mathbf{k} _1}-R_2\right) }\beta^{\dagger}_{\mathbf{k} _1}\right]\nonumber\\
 &&\qquad+\text{2 perm.}\Bigr\} 
-\beta^{\dagger}\left|F_0\right> \hspace{1cm} 
+\beta^{\dagger}\left|F_0\right> 
 \end{eqnarray}
-In the last term, we again use Eq. (\ref{eq:inverse}), provided that $R_1\neq{}%
-R_2$ and do the same for the two other products. By summing over $%
-\left(\mathbf{k} _1,\mathbf{k} _2,\mathbf{k} _3\right) $, we end with
-
+We then sum $\left(\mathbf{k} _1,\mathbf{k} _2,\mathbf{k} _3\right) $, and calculate the sums of the two brackets as for two pairs. Eqs. (\ref{eq:1-v}) and (\ref{eq:deltakk}) then yield
 \begin{multline}  \label{eq:SchThree4}
 (H-E _3)B^{\dagger}(R_1)B^{\dagger}(R_2)B^{\dagger}(R_3)\left|F_0%
 \right>  = \\
 \{B^{\dagger}(R_2)B^{\dagger}(R_3) \\
-\left(1-V\sum\frac{w_{\mathbf{k} _1}^2}{2\epsilon_{\mathbf{k} _1}-R_1}-\frac{2V%
-}{R_1-R_2}+\frac{2V}{R_3-R_1}\right)  \\
+\left[1-V\sum\frac{w_{\mathbf{k} _1}^2}{2\epsilon_{\mathbf{k} _1}-R_1}-\frac{2V%
+}{R_1-R_2}+\frac{2V}{R_3-R_1}\right]  \\
 +\text{2 perm.}\}\beta^{\dagger}\left|F_0\right>  
 \end{multline}
 
@@ -802,10 +807,10 @@ _{i+1}}\cdots \beta^{\dagger}_{\mathbf{k}_{N}}\left|F_0\right>\\
 \left[H,\beta^{\dagger}_{\mathbf{k} _N}\right] \left|F_0\right>
 \end{split}
 \end{equation}
-Using Eqs. (\ref{eq:betaH},\ref{eq:vbeta}), we replace $\left[H,\beta^{\dagger}_{\mathbf{k} _i}\right]$ by $2\epsilon_{\vk_i}\beta^{\dagger}_{\vk_i}+\gamma^{\dagger}_{\vk_i}+V^{\dagger}_{\vk_i}$.  The first two contributions commute with the other $\beta^\dagger_\vk$'s, so that, when inserted into the above equation, they yield
+Eqs. (\ref{eq:betaH},\ref{eq:vbeta}) allow us to replace $\left[H,\beta^{\dagger}_{\mathbf{k} _i}\right]$ by $2\epsilon_{\vk_i}\beta^{\dagger}_{\vk_i}+\gamma^{\dagger}_{\vk_i}+V^{\dagger}_{\vk_i}$.  The first two contributions commute with the other $\beta^\dagger_\vk$'s, so that, when inserted into the above equation, they yield
 \begin{equation}
 2\left(\epsilon_{\mathbf{k} _1}+\cdots+\epsilon_{\mathbf{k} _N}\right)
-\prod^N_{i=1}\beta^{\dagger}_{\mathbf{k} _i}\left|F_0\right>+\left|{V}_{\mathbf{k} _1\cdots\mathbf{k} _3}\right> 
+\prod^N_{i=1}\beta^{\dagger}_{\mathbf{k} _i}\left|F_0\right>+\left|{V}_{\mathbf{k} _1\cdots\mathbf{k} _N}\right> 
 \end{equation}
 where the direct interaction part is given by 
 \begin{equation}  
@@ -825,7 +830,7 @@ _{j+1}}\cdots \beta^{\dagger}_{\mathbf{k}_{N}}\left|F_0\right>\\
 \left[V^{\dagger}_{\mathbf{k} _{i}},\beta^{\dagger}_{\mathbf{k} _N}\right] \left|F_0\right>
 \end{split}
 \end{equation}
- $\left[V^{\dagger}_{\mathbf{k} _{i}},\beta^{\dagger}_{\mathbf{k} _j}\right]$ makes the scattering of $(\mathbf{k} _{i},\mathbf{k} _{j})$ pairs by exchange interaction, so that the above term generate all exchange interaction between the $\mathbf{k} _{i}$ pair and the $\mathbf{k} _{j}$ pair with $i<j\leq{N}$.  When inserted into Eq. (\ref{eq:HN}), we find all possible exchange interactions between $(\mathbf{k} _{i},\mathbf{k} _{j})$ pairs, so that the set of terms with creation potential gives
+ $\left[V^{\dagger}_{\mathbf{k} _{i}},\beta^{\dagger}_{\mathbf{k} _j}\right]$ makes appear the  exchange interaction scattering between $\vk_i$ pair and the $\vk_j$ pair, so that the above term generate the exchange interaction between the $\mathbf{k} _{i}$ pair and all the $\mathbf{k} _{j}$ pairs with  $i<j\leq{N}$.  When inserted into Eq. (\ref{eq:HN}), we find all possible exchange interactions between fermion pairs, so that the set of terms with creation potential ultimately gives
 \begin{equation}  
 \left|W_{\mathbf{k} _1\cdots\mathbf{k} _N}\right>=\sum_{\vp^{\prime}_1\mathbf{p} ^{\prime}_2}\beta^{\dagger}_{\mathbf{p}
 ^{\prime}_1}\beta^{\dagger}_{\mathbf{p} ^{\prime}_2} \sum_{i<j}\chi\left(\begin{smallmatrix}\vp'_2&\vk_j\\\vp'_1&\vk_i%
@@ -844,17 +849,18 @@ which also reads in a compact form as
 
 \begin{equation}\label{eq:HN2}
 \begin{split}
-&H\beta^{\dagger}_{\mathbf{k} _1}\cdots\beta^{\dagger}_{\mathbf{k}
+&(H-E_N)\beta^{\dagger}_{\mathbf{k} _1}\cdots\beta^{\dagger}_{\mathbf{k}
 _N}\left|F_0\right> \\
 &=[(2\epsilon_{\vk_1}-R_1)+\cdots+(2\epsilon_{\vk_2}-R_N)]\beta^\dagger_{\vk_1}\cdots\beta^\dagger_{\vk_N}\left|F_0\right>  \\
 &\quad-V\beta^\dagger \sum_{i}w_{\vk_i}\beta^\dagger_{\vk_j}\prod_{m\neq{}i}\beta^{\dagger}_{\mathbf{k} _m} \left|F_0\right>  \\
 &\quad+2V\beta^\dagger\sum_{i<j}\delta_{\vk_i\vk_j}w_{\vk_j}\beta^\dagger_{\vk_j}\prod_{m\neq(i,j)}\beta^{\dagger}_{\mathbf{k} _m} \left|F_0\right>  
 \end{split}
 \end{equation}
-To go further, we multiply both sides of the equation by $w_{\vk_1}\cdots{}w_{\vk_N}/(2\epsilon_{\vk_1}-R_1)\cdots(2\epsilon_{\vk_1}-R_1)$ and we sum over $\vk_1\cdots\vk_N$.  the LHS readily gives
+To go further, we do as before; we multiply both sides of the equation by $w_{\vk_1}\cdots{}w_{\vk_N}/(2\epsilon_{\vk_1}-R_1)\cdots(2\epsilon_{\vk_N}-R_N)$ and we sum over $(\vk_1\cdots\vk_N)$.  
+
+The LHS readily gives
 \begin{equation}
-(H-E _3)B^{\dagger}_{\mathbf{k} _1}(R_1)B^{\dagger}_{\mathbf{k}
-_2}(R_2)B^{\dagger}_{\mathbf{k} _3}(R_3)\left|F_0\right> 
+(H-E _N)B^{\dagger}_{\mathbf{k} _1}(R_1)\cdots{}B^{\dagger}_{\mathbf{k} _N}(R_3)\left|F_0\right> 
 \end{equation}
 the first in the RHS, which comes from the free pair kinetic energy yields
 \begin{equation}
@@ -863,36 +869,30 @@ the first in the RHS, which comes from the free pair kinetic energy yields
 &=\beta^\dagger\sum_{i=1}^N\prod_{m\neq{i}}B^\dagger(R_m)\left|F_0\right> 
 \end{split}
 \end{equation}
-We now turn to the first interaction term, generated by direct process within one pair.  It readily reads to 
+The first interaction term, induced by direct processes within one pair, readily leads to 
 \begin{equation}
 \begin{split}
 \beta^\dagger\sum_{i=1}^N(-V\sum_{\vk_i}\frac{w_{\mathbf{k} _i}^2}{2\epsilon_{\mathbf{k} _i}-R_i})\prod_{m\neq{i}}B^\dagger(R_m)\left|F_0\right> 
 \end{split}
 \end{equation}
-Here again, contribution from the exchange interaction process are less straight-forward to write down readily.  However, the procedure we have used for $N=3$ greatly helps.  The most ???? way is to start with one term, let us say 
+
+While contribution coming from exchange interaction processes appear as
 \begin{equation}
 \begin{split}
-2V\beta^\dagger[\sum_{\vk_1\vk_2}\delta_{\vk_1\vk_2}w_{\vk_2}\beta^\dagger_{\vk_2}\frac{w_{\mathbf{k} _1}}{2\epsilon_{\mathbf{k} _1}-R_1}\frac{w_{\mathbf{k} _2}}{2\epsilon_{\mathbf{k} _2}-R_2})]\\B^\dagger(R_3)\cdots{}B^\dagger(R_N)\left|F_0\right> 
+2V\beta^\dagger\left[\sum_{\vk_1\vk_2}\delta_{\vk_1\vk_2}\frac{w^3_{\mathbf{k} _1}}{(2\epsilon_{\mathbf{k} _1}-R_1)(2\epsilon_{\mathbf{k} _2}-R_2)}\beta^\dagger_{\vk_1}\right]\\B^\dagger(R_3)\cdots{}B^\dagger(R_N)\left|F_0\right> 
 \end{split}
 \end{equation}
-Eq. (\ref{eq:inverse}) allows to rewrite the bracket as 
-\begin{equation}
-[B^\dagger(R_1)-B^\dagger(R_2)]/(R_1-R_2)
-\end{equation}
-It becomes easy to see that the set of exchange interaction terms finally reads as 
-\begin{equation}
-\beta^\dagger\sum_{i=1}^N\frac{-2V}{R_i-R_j}\prod_{m=1}^NB^\dagger(R_m)\left|F_0\right> 
-\end{equation}
-By collecting all the terms, it is then easy to show that 
+By using the expression of the bracket given in Eq. (\ref{eq:deltakk}),we end with  
 \begin{multline}  
 (H-E _N)B^{\dagger}(R_1)\cdots{}B^{\dagger}(R_N)\left|F_0%
 \right>  = \\
-\beta^\dagger\sum_{i=1}^N[1-V\sum_\vk\frac{w_{\mathbf{k} }^2}{2\epsilon_{\mathbf{k}}-R_i}-\sum_{j\neq{}i}\frac{2V%
-}{R_i-R_j}]\sum_{m\neq{i}}B^{\dagger}(R_m)\left|F_0\right>  
+\beta^\dagger\sum_{i=1}^N\left[1-V\sum_\vk\frac{w_{\mathbf{k} }^2}{2\epsilon_{\mathbf{k}}-R_i}-\sum_{j\neq{}i}\frac{2V%
+}{R_i-R_j}\right]\\
+\sum_{m\neq{i}}B^{\dagger}(R_m)\left|F_0\right>  
 \end{multline}
-from which we readily conclude that $B^{\dagger}(R_1)\cdots{}B^{\dagger}(R_N)\left|F_0\right> $ is $N$-pair equation of the hamiltonian $H$, with energy $E_N=R_1+\cdots+R_N$ provided that all the brackets in the above equation cancel. These are just the $N$ Richardson's equations as written in Eq. (\ref{eq:SchThreeN}). 
+This evidences that $B^{\dagger}(R_1)\cdots{}B^{\dagger}(R_N)\left|F_0\right> $ is $N$-pair equation of the hamiltonian $H$, with energy $E_N=R_1+\cdots+R_N$ provided that all the brackets in the above equation cancel. These are just the $N$ Richardson's equations as written in Eq. (\ref{eq:SchThreeN}). 
 
-\subsection{Physical understanding}
+\section{Physical understanding}
 
 This  derivation of the Richardson's equations has the main advantage to
 possibly trace back the parts in these equations which are directly linked

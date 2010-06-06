@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=latex 2010.4.28)  19 MAY 2010 00:23
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=latex 2010.4.28)  26 MAY 2010 21:56
 entering extended mode
 **cobRichSub.tex
-(C:\zggame\notes\cobosonsPapaer\cobRichSub.tex
+("D:\zggame\dropbox\My Dropbox\notes\cobosonsPapaer\cobRichSub.tex"
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
@@ -229,7 +229,7 @@ Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 48.
 Class revtex4-1 Info: cite was not loaded (OK!) on input line 48.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 48.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 48.
- (C:\zggame\notes\cobosonsPapaer\cobRichSub.aux)
+ ("D:\zggame\dropbox\My Dropbox\notes\cobosonsPapaer\cobRichSub.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
@@ -259,99 +259,80 @@ File: chi1.eps Graphic file (type eps)
  <chi1.eps> [3]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 371.
+ on input line 377.
 
 [4]
-Underfull \hbox (badness 1728) in paragraph at lines 524--525
-[][]\OT1/cmr/m/n/10 We now add two pairs to the frozen sea $[]$.
+File: twoPair.eps Graphic file (type eps)
+ <twoPair.eps>
+Overfull \hbox (2.71379pt too wide) detected at line 574
+[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 V [] [] []
  []
 
-File: twoPair.eps Graphic file (type eps)
-<twoPair.eps> [5]
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 596.
+Underfull \hbox (badness 10000) in paragraph at lines 596--602
+[] \OML/cmm/m/it/10 = []$ \OT1/cmr/m/n/10 pro-vided
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 619--623
+Underfull \hbox (badness 1424) in paragraph at lines 596--602
+\OT1/cmr/m/n/10 This al-lows us to write the last term of [] as
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 610--614
 [][]\OT1/cmr/m/n/10 The above equa-tion read-ily shows that
  []
 
 
-Overfull \hbox (3.34654pt too wide) in paragraph at lines 694--694
+Overfull \hbox (3.34654pt too wide) in paragraph at lines 682--682
 [] 
  []
 
 File: threePair.eps Graphic file (type eps)
 <threePair.eps>
-Underfull \hbox (badness 4416) in paragraph at lines 716--723
-[][]\OT1/cmr/m/n/10 If we now use Eq. (38[]) for $[]$ and
+Underfull \hbox (badness 10000) in paragraph at lines 710--717
+[][]\OT1/cmr/m/n/10 If we now come back to Eq.[], sub-tract
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 716--723
-\OT1/cmr/m/n/10 Eq. (41[]) for $[]$ into [], sub-tract
- []
-
-[6]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 723.
-
-
-Overfull \hbox (24.4728pt too wide) in alignment at lines 724--736
+Overfull \hbox (24.4728pt too wide) in alignment at lines 718--730
  [][][] []
  []
 
-[7]
-Overfull \hbox (9.61852pt too wide) detected at line 892
- []$[]\OML/cmm/m/it/10 [] []\OT1/cmr/m/n/10 [1 \OMS/cmsy/m/n/10   \OML/cmm/m/i
-t/10 V [] [] \OMS/cmsy/m/n/10   [] []\OT1/cmr/m/n/10 ] [] \OML/cmm/m/it/10 B[]\
-OT1/cmr/m/n/10 (\OML/cmm/m/it/10 R[]\OT1/cmr/m/n/10 ) []$ []  
+
+Underfull \hbox (badness 10000) in paragraph at lines 730--737
+\OT1/cmr/m/n/10 as $[] \OML/cmm/m/it/10 = []$ \OT1/cmr/m/n/10 pro-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 892--894
-[]\OT1/cmr/m/n/10 from which we read-ily con-clude that
- []
-
-
-Underfull \hbox (badness 5592) in paragraph at lines 892--894
-\OML/cmm/m/it/10 B[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 R[]\OT1/cmr/m/n/10 ) [] [
-]\OML/cmm/m/it/10 B[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 R[]\OT1/cmr/m/n/10 ) []$
- is $\OML/cmm/m/it/10 N$\OT1/cmr/m/n/10 -pair equa-tion of the
- []
-
-[8]
-Overfull \hbox (2.35944pt too wide) detected at line 959
+[6] [7]
+Overfull \hbox (2.35944pt too wide) detected at line 852
 [] \OMS/cmsy/m/n/10  []
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 974--976
+Underfull \hbox (badness 1210) in paragraph at lines 867--869
 [][]\OT1/cmr/m/n/10 Eq.(45) shows that, in or-der to pos-si-bly re-place
  []
 
-[9]
-Underfull \hbox (badness 1087) in paragraph at lines 1146--1151
+[8]
+Underfull \hbox (badness 1087) in paragraph at lines 1039--1044
  [][]\OT1/cmr/m/n/9 M. Combescot, O. Betbeder-Matibet, and F. Du-bin,
  []
 
-[10]
-Class revtex4-1 Info: Total figure: Column(677pt), Page(677pt) on input line 11
-63.
-Class revtex4-1 Info: Total table: Column(0pt), Page(0pt) on input line 1163.
-Class revtex4-1 Info: Total video: Column(0pt), Page(0pt) on input line 1163.
-Class revtex4-1 Info: Total text: Column(12126pt), Page(304pt) on input line 11
-63.
- [11] (C:\zggame\notes\cobosonsPapaer\cobRichSub.aux) ) 
+Class revtex4-1 Info: Total figure: Column(730pt), Page(730pt) on input line 10
+56.
+Class revtex4-1 Info: Total table: Column(0pt), Page(0pt) on input line 1056.
+Class revtex4-1 Info: Total video: Column(0pt), Page(0pt) on input line 1056.
+Class revtex4-1 Info: Total text: Column(10598pt), Page(303pt) on input line 10
+56.
+[9] ("D:\zggame\dropbox\My Dropbox\notes\cobosonsPapaer\cobRichSub.aux") ) 
 Here is how much of TeX's memory you used:
- 4315 strings out of 495270
- 59539 string characters out of 3179662
- 162506 words of memory out of 3000000
- 7524 multiletter control sequences out of 15000+200000
+ 4305 strings out of 495270
+ 59575 string characters out of 3179662
+ 160506 words of memory out of 3000000
+ 7514 multiletter control sequences out of 15000+200000
  10558 words of font info for 37 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,22n,45p,854b,380s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,22n,45p,850b,380s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on cobRichSub.dvi (11 pages, 102400 bytes).
+Output written on cobRichSub.dvi (9 pages, 90284 bytes).

@@ -1,0 +1,8 @@
+result/JY1.task1-Jang.txt 		||QBSH2	||JY1||Task1a||key/MIRquery.list||48|| JY1 Task1 (query against truth midi)(Roger Jang's data)	|| simplekey
+result/JY1.task1-ThinkIT.txt   		||QBSH	||JY1||Task1b||key/ThinkITqueryRenamed.list||key/ThinkITmidRenamed.list|| JY1 Task1 (query against truth midi)(ThinkIT data)  ||fileKey||key/ThinkITqueryRenamed.list
+result/JY1.task2.txt		||QBSH3	||JY1||Task2||key/Task2.querylist||48|| JY1 Task2 (query against humming wav) (Roger Jang's data)	|| simplekey2
+result/JY1.task1-Ioacas.txt   		||QBSH	||JY1||Task1c||key/IOACASquery.list||key/IOACASmidi.list|| JY1 Task1 (query against truth midi)(IOACAS 2nd data)  ||fileKey||key/IOACASquery.list
+result/HAFR.task1-ThinkIT.txt   		||QBSH	||HAFR||Task1b||key/ThinkITqueryRenamed.list||key/ThinkITmidRenamed.list|| HAFR Task1 (query against truth midi)(ThinkIT data)  ||fileKey||key/ThinkITqueryRenamed.list
+result/HAFR.task1-Jang.txt 		||QBSH2	||HAFR||Task1a||key/MIRquery.list||48|| HAFR Task1 (query against truth midi)(Roger Jang's data)	|| simplekey
+result/HAFR.task2.txt		||QBSH3	||HAFR||Task2||key/Task2.querylist||48|| HAFR Task2 (query against humming wav) (Roger Jang's data)	|| simplekey2
+result/HAFR.task1-Ioacas.txt   		||QBSH	||HAFR||Task1c||key/IOACASquery.list||key/IOACASmidi.list|| HAFR Task1 (query against truth midi)(IOACAS 2nd data)  ||fileKey||key/IOACASquery.list

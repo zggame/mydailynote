@@ -1,0 +1,9 @@
+result/QBT/CSJ/results.QBT.onset.txt		||QBT2	||CSJ||Task1b||result/QBT/QbtQuery.list||result/QBT/QbtGT.list|| CSJ Task1 (symbolic input) (Show Hsiao's data)			||filekey2||result/QBT/QBTanswer.txt
+result/QBT/CSJ/results.MIR.onset.txt		||QBT	||CSJ||Task1a||result/QBT/MirQuery.list||result/QBT/MirGT.list|| CSJ Task1 (symbolic input) (Roger Jang's data)			||filekey||result/QBT/MIRqueryWave.list
+result/QBT/CSJ/results.MIR.wav.txt		||QBT	||CSJ||Task2||result/QBT/MirQuery.list||result/QBT/MirGT.list|| CSJ Task1 (wave input) (Roger Jang's data)				||filekey||result/QBT/MIRqueryWave.list
+result/QBT/HAFR/result.MIR.onset.txt		||QBT	||HAFR||Task1a||result/QBT/MirQuery.list||result/QBT/MirGT.list|| HAFR Task1 (symbolic input) (Roger Jang's data)			||filekey||result/QBT/MIRqueryWave.list
+result/QBT/HAFR/result.QBT.onset.txt		||QBT	||HAFR||Task1b||result/QBT/QbtQuery.list||result/QBT/QbtGT.list|| HAFR Task1 (symbolic input) (Show Hsiao's data)			||filekey||result/QBT/QBTanswer.txt
+result/QBT/HAFR/result.MIR.wav.txt		||QBT	||HAFR||Task2||result/QBT/MirQuery.list||result/QBT/MirGT.list|| HAFR Task1 (wave input) (Roger Jang's data)				||filekey||result/QBT/MIRqueryWave.list
+result/QBT/HL/MIR/onsetanswerOnset.txt		||QBT	||HL||Task1a||result/QBT/MirQuery.list||result/QBT/MirGT.list|| HL Task1 (symbolic input) (Roger Jang's data)			|| filekey||result/QBT/MIRqueryWave.list
+result/QBT/HL/QBT/onsetanswerOnset.txt		||QBT	||HL||Task1b||result/QBT/QbtQuery.list||result/QBT/QbtGT.list|| HL  Task1 (symbolic input) (Show Hsiao's data)			|| filekey||result/QBT/QBTanswer.txt
+result/QBT/HL/MIR/wavanswerWAV.txt		||QBT	||HL||Task2||result/QBT/MirQuery.list||result/QBT/MirGT.list|| HL Task1 (wave input) (Roger Jang's data)				||filekey||result/QBT/MIRqueryWave.list

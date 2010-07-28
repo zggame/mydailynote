@@ -1,4 +1,8 @@
-
+/**
+ * Evaluate a single result file with parameters from query String.  
+ * @author gzhu1
+ *
+ */
 
 
 public interface EvalFile {

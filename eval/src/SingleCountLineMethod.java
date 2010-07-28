@@ -1,3 +1,10 @@
+/**
+ * Line method that return the score by the first hit.  
+ * 
+ * @author gzhu1
+ *
+ */
+
 public class SingleCountLineMethod implements LineMethod {
 	private Score scoreMethod;
 

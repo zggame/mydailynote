@@ -4,6 +4,11 @@ import java.io.FileReader;
 import java.util.Scanner;
 
 
+/**
+ * Dummy implementation for test.
+ * @author gzhu1
+ *
+ */
 public class SimpleEvalFile implements EvalFile {
 
 	@Override

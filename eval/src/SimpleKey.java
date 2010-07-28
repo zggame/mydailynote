@@ -10,7 +10,15 @@ import java.util.regex.Pattern;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-
+/**
+ * Generate the answer from the filename. 
+ * For example a filename "***035.wav" means the 35th answer.
+ * It also needs a file with a list of all query files and 
+ * a file with a list of all answer files.  
+ * All these files are mapped with internal IDs  
+ * @author gzhu1
+ *
+ */
 
 
 public class SimpleKey implements Keys {

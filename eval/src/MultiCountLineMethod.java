@@ -1,4 +1,10 @@
-
+/**
+ * Line method that return the score by sum all hits.  
+ * For example, if there are 5 hits in the 10 return results,
+ * total would be the sum of the scores of all 5 hits. 
+ * @author gzhu1
+ *
+ */
 public class MultiCountLineMethod implements LineMethod {
 
 	private Score scoreMethod;

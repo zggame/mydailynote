@@ -1,0 +1,820 @@
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0001.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0001.onset: 0001,0031,6647,0014,0226,0556,0006,0022,1297,2487
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0002.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0002.onset: 0001,7909,6647,1717,0014,1088,4706,0637,4584,0031
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0003.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0003.onset: 0017,1894,0007,0825,0824,6641,0023,0021,0026,0672
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0004.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0004.onset: 0007,0021,0017,6156,0026,0825,0824,8374,2733,7887
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0005.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0005.onset: 0007,0021,8374,1894,2733,2618,6156,0017,6641,1559
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0006.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0006.onset: 0007,0021,2487,8374,2733,1223,0824,0825,1628,1265
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0007.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0007.onset: 0009,0672,0017,0023,0226,0888,0020,0014,2618,2487
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0008.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0008.onset: 0672,0009,0017,2487,0023,6272,8374,1894,2733,4584
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0009.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0009.onset: 0014,4584,4878,4482,6272,2487,1918,0572,0226,5688
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0010.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0010.onset: 1088,0015,5270,0637,0317,7895,5688,0556,0006,1297
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0011.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0011.onset: 0017,6272,0014,6287,5270,0252,8374,7895,4482,7887
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0012.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0012.onset: 0017,6272,0014,5270,6287,0824,0825,6647,0015,7895
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0013.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0013.onset: 0017,6272,0824,0825,0023,0672,0021,5270,0014,2487
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0014.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0014.onset: 0017,6272,0023,5270,0825,0824,2487,7936,0672,0007
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0015.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0015.onset: 0017,0023,0824,0825,0014,0672,0021,0009,0252,0007
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0016.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0016.onset: 0017,0023,0021,0824,0825,0007,0330,0014,0252,0031
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0017.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0017.onset: 0020,0864,1849,0001,2707,2184,0022,0028,1432,2607
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0018.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0018.onset: 0020,4821,0864,2868,1432,0022,0028,0001,2707,2607
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0019.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0019.onset: 0021,2487,7936,0007,0252,5688,2733,1559,8374,0031
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0020.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0020.onset: 0021,0007,0017,0252,0023,7936,1223,1894,0001,1559
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0021.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0021.onset: 0021,0007,0017,6288,1628,1223,7936,0252,0023,2487
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0022.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0022.onset: 0021,0007,1909,0017,1628,4364,8374,6288,4706,7887
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0023.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0023.onset: 1894,0022,4821,1918,2733,2487,8374,0001,1849,7936
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0024.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0024.onset: 1894,1918,1201,4821,2487,6647,1849,6287,0014,1088
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0025.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0025.onset: 0022,1559,2487,8374,2733,6156,7936,7909,4821,5688
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0026.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0026.onset: 0023,0017,6272,5688,0252,0021,0014,0020,2184,1265
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0027.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0027.onset: 0023,7936,0017,0252,1559,6272,0001,0024,6287,0330
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0028.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0028.onset: 0023,0017,8374,2184,6272,2733,1894,0001,5270,0252
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0029.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0029.onset: 0023,0017,7936,0021,0252,0007,6156,0014,2184,1559
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0030.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0030.onset: 0024,0001,1297,0317,0015,4912,0028,0252,1223,1959
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0031.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0031.onset: 0024,8374,5688,1223,7936,1297,1524,0330,0370,1088
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0032.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0032.onset: 0024,0021,1297,1524,0330,1223,5688,8374,7936,2487
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0033.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0033.onset: 8626,2868,0028,0024,1297,7895,0020,0556,0006,1223
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0034.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0034.onset: 0025,4706,4821,1918,6689,1833,2184,0439,0313,2487
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0035.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0035.onset: 0025,0439,4821,2397,2487,1814,1369,0864,5797,2733
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0036.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0036.onset: 4364,0026,7909,2184,8374,5651,6913,1295,0023,0017
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0037.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0037.onset: 4364,5651,0026,0017,1295,0022,0023,6288,1559,2184
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0038.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0038.onset: 0031,0001,0006,0556,6647,0317,7895,2707,0028,4706
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0039.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0039.onset: 0031,0006,0556,0001,6647,7895,2733,0317,6090,2184
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0040.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0040.onset: 0031,6647,0001,3974,6156,6287,7895,4482,0028,4473
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0041.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0041.onset: 0031,6647,0001,7895,2707,0556,0006,0317,0028,5270
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0042.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0042.onset: 0031,0006,0556,0001,0317,7895,6647,4160,0028,4706
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0043.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0043.onset: 0031,6647,0001,0006,0556,7909,6288,4160,8374,0317
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0044.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0044.onset: 0169,0864,1369,2397,0028,5797,1380,4821,1959,1601
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0045.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0045.onset: 0169,0028,0864,5797,2397,1369,0020,4821,2618,8626
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0046.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0046.onset: 0169,0864,2397,0028,4821,1369,5797,0572,1601,1959
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0047.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0047.onset: 0190,8645,2881,0572,0918,4482,0020,0028,2868,0007
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0048.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0048.onset: 0226,6272,4878,8645,0637,6156,0918,7895,0317,6647
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0049.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0049.onset: 0226,6272,8645,0918,0888,0252,4878,0637,5688,6689
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0050.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0050.onset: 0226,8645,4878,6272,0888,0252,1524,1297,0918,0637
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0051.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0051.onset: 0226,8645,4878,6272,0918,6090,8626,5688,6026,0637
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0052.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0052.onset: 0226,8645,0918,6272,1833,0888,6090,4878,4482,0252
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0053.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0053.onset: 0226,8645,0252,0918,6272,4878,0022,6647,7895,6026
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0054.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0054.onset: 0226,6272,0252,6090,0888,8645,5688,0918,4482,1833
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0055.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0055.onset: 0226,8645,6272,0918,6090,0888,5688,1833,1524,0252
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0056.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0056.onset: 0252,0556,0006,7895,0317,1088,0637,4160,1297,1778
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0057.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0057.onset: 0252,0317,0637,0556,0006,7895,2618,6287,0001,1524
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0058.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0058.onset: 0252,7895,6272,0023,0017,0006,0556,0637,0317,1524
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0059.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0059.onset: 0313,1265,1362,7909,6272,6689,1559,2177,8626,6156
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0060.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0060.onset: 0313,1265,2868,8626,0888,2564,2177,7300,2253,1896
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0061.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0061.onset: 0313,1265,2868,0672,8626,1559,0888,0023,6156,1896
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0062.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0062.onset: 0313,1265,7909,1362,2177,7887,3974,6689,5278,1091
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0063.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0063.onset: 0313,7909,2487,1265,6156,1362,2564,6272,7887,2177
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0064.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0064.onset: 0313,1265,1362,8374,6272,7909,6689,1559,4584,6287
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0065.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0065.onset: 0317,0637,0006,0556,1088,7895,0028,5688,5270,0020
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0066.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0066.onset: 0317,0637,0006,0556,7895,1088,0252,0028,1524,6090
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0067.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0067.onset: 0317,0637,1088,0006,0556,4482,5688,0028,5270,7895
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0068.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0068.onset: 0317,0637,0006,0556,1088,7895,5270,0028,1524,6090
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0069.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0069.onset: 0825,0824,0330,0017,0317,1524,6090,0637,7895,0252
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0070.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0070.onset: 0017,6288,0023,0021,6090,1628,0226,1297,1230,2487
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0071.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0071.onset: 0825,0824,0330,0024,6641,0007,0026,1524,7936,0021
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0072.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0072.onset: 0330,0825,0824,0017,1524,0317,0637,0370,6090,7895
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0073.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0073.onset: 0330,0017,0317,0824,0825,4709,6647,0637,7895,4160
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0074.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0074.onset: 0824,0825,0317,0017,0637,7895,0330,1524,0023,0556
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0075.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0075.onset: 1628,0028,2618,1201,0001,1195,0020,0015,6288,1088
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0076.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0076.onset: 0370,1265,0824,0825,0022,1833,2184,4706,1894,0864
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0077.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0077.onset: 0370,1265,0023,0020,0313,0001,0022,0330,0007,2733
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0078.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0078.onset: 0421,0028,0169,2618,1407,2397,1896,4771,1959,2152
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0079.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0079.onset: 1407,0421,0028,0169,5278,2618,2152,5880,0190,2483
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0080.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0080.onset: 0031,6647,0001,2733,1918,4821,0007,2184,1894,4473
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0081.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0081.onset: 6647,4706,0031,0007,0001,4482,2184,2733,8374,4473
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0082.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0082.onset: 6647,0031,0001,8374,7900,2733,2881,6689,6156,2707
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0083.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0083.onset: 4706,6647,0001,1894,7909,5688,0031,4473,8374,2184
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0084.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0084.onset: 0006,0556,0317,7895,0031,1524,4160,6090,0637,0252
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0085.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0085.onset: 0006,0556,0317,7895,0637,1088,4160,7936,0031,1524
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0086.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0086.onset: 0556,0006,7895,0317,0637,4160,5312,2172,1524,5688
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0087.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0087.onset: 0637,7895,0317,1088,0006,0556,0015,1297,6090,1524
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0088.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0088.onset: 0637,0317,7895,5688,0006,0556,1088,6272,0015,1524
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0089.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0089.onset: 0637,7895,0317,0556,0006,1088,1297,0015,1524,0252
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0090.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0090.onset: 0637,0317,5688,7895,0006,0015,0556,1088,4160,4482
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0091.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0091.onset: 0672,0009,0017,0023,1230,0014,0824,0825,0888,2733
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0092.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0092.onset: 0672,0009,8374,0017,6156,2733,6272,0023,3974,6647
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0093.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0093.onset: 0825,0824,0330,8645,7936,4709,0370,2487,6026,6689
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0094.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0094.onset: 0825,0824,0017,0330,6272,0007,0021,1524,7936,4709
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0095.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0095.onset: 0017,1230,1909,0009,0020,0672,0824,0825,6272,7936
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0096.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0096.onset: 0825,0824,0330,4709,2483,0021,7936,8645,0017,6026
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0097.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0097.onset: 0864,4821,2397,0169,0020,0028,1849,8626,1959,2868
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0098.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0098.onset: 2397,0169,0864,4821,0028,5797,0020,1380,8626,2868
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0099.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0099.onset: 4821,0864,2397,8626,0169,2868,2707,0020,1201,1392
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0100.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0100.onset: 6287,4912,7283,6641,7936,0001,3974,0015,1088,7887
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0101.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0101.onset: 7895,1297,0022,0317,5880,0637,1524,1088,0572,8626
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0102.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0102.onset: 6156,1297,0637,0317,1959,5688,1559,7895,2733,0023
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0103.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0103.onset: 7895,0006,0556,0637,0317,0918,1088,2172,0015,5270
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0104.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0104.onset: 0918,0317,7895,0637,5270,4482,0556,0006,1088,0015
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0105.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0105.onset: 7895,0317,0637,0556,0006,0918,1088,0252,0015,5688
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0106.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0106.onset: 0317,7895,0637,4482,0556,0006,1088,0015,0252,0918
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0107.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0107.onset: 0317,7895,0637,0918,6272,5270,1088,4482,0015,0556
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0108.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0108.onset: 0317,7895,0637,1088,0015,0556,0006,5270,0252,8645
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0109.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0109.onset: 7895,0317,0637,0556,0006,0918,0572,1088,6090,0015
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0110.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0110.onset: 0946,0028,4912,1195,2184,2868,8626,2487,1223,7283
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0111.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0111.onset: 0946,1195,0028,8626,2868,2618,5688,1628,4912,1223
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0112.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0112.onset: 0637,0317,8645,4878,0031,6090,0949,7895,0226,1524
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0113.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0113.onset: 5688,1297,0637,0317,6272,1201,1088,6287,7895,0252
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0114.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0114.onset: 1054,1814,5067,6913,1091,5278,0025,1407,2177,7300
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0115.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0115.onset: 1062,6026,0028,1492,2618,2397,1195,2868,0169,1407
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0116.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0116.onset: 0028,1062,1492,6026,0015,2397,6272,1088,1380,0169
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0117.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0117.onset: 1062,1297,0028,2618,6026,1492,4912,5688,2607,2483
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0118.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0118.onset: 1088,0015,5270,7895,5688,0637,4473,4160,0317,6272
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0119.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0119.onset: 0015,1088,7895,5270,0317,5688,4160,0637,0556,0006
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0120.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0120.onset: 1088,0015,5270,0637,7895,0317,0556,0006,6647,0252
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0121.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0121.onset: 0015,1088,5270,7895,0317,0637,5688,7936,0001,0252
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0122.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0122.onset: 2253,1091,5278,0949,4364,7300,2177,2868,7887,5067
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0123.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0123.onset: 1407,5278,1091,6913,2868,8626,5880,4364,7909,0949
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0124.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0124.onset: 5312,1109,4482,6026,1524,1195,6090,1492,1778,0226
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0125.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0125.onset: 1109,5312,4482,1195,1492,1524,5688,1778,6026,0006
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0126.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0126.onset: 5312,1109,4482,1524,1778,1492,0006,0556,6090,6026
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0127.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0127.onset: 4912,5312,4482,1109,1195,6026,6689,1833,5688,1524
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0128.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0128.onset: 1195,1894,2152,1833,0021,0001,1295,0007,6287,0031
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0129.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0129.onset: 1195,5312,2184,5651,1295,1894,5688,7887,2152,1109
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0130.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0130.onset: 1195,2184,4584,4706,2177,1894,3974,7300,1201,0031
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0131.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0131.onset: 1201,0252,7895,0031,2707,0637,0317,4584,1088,0226
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0132.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0132.onset: 1201,0252,7895,0226,1088,0015,0001,0031,0637,0317
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0133.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0133.onset: 1223,7909,0001,0031,2184,6647,8626,1392,2487,8374
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0134.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0134.onset: 1223,7909,1628,5688,0031,6647,6287,1730,2733,0001
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0135.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0135.onset: 1223,7909,8374,5688,4706,8626,6272,6288,0031,2184
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0136.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0136.onset: 1223,7909,0031,0021,1230,2564,2184,2868,0001,4706
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0137.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0137.onset: 1223,7909,4706,0001,0031,2184,1362,0021,2733,1894
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0138.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0138.onset: 1223,7909,4706,0031,1230,0330,2184,0001,1894,8374
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0139.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0139.onset: 1628,6288,6647,0001,7887,1230,0007,0031,0021,1717
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0140.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0140.onset: 7887,1628,6288,8374,2487,2733,0031,0022,0001,7909
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0141.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0141.onset: 7887,6288,1628,1230,2607,0022,2868,8626,6647,2733
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0142.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0142.onset: 1265,1833,6689,2733,0022,0226,4709,0001,6156,0918
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0143.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0143.onset: 1265,0226,6156,8645,0022,2733,6272,0824,0825,0313
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0144.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0144.onset: 1265,0226,6689,0022,8645,0001,1833,0370,0888,0313
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0145.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0145.onset: 1265,7887,0330,1833,0313,0022,0824,0825,0226,0918
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0146.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0146.onset: 1265,0226,6689,1833,0330,0313,0888,0001,8645,0023
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0147.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0147.onset: 1265,0918,6689,4878,1833,2733,8374,0313,0226,0022
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0148.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0148.onset: 1265,0226,0022,1833,6026,1492,6689,0023,0313,0001
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0149.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0149.onset: 5651,0556,0006,4482,0252,8645,2707,1295,7895,0031
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0150.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0150.onset: 1297,2487,7936,0556,0006,5688,0022,0317,7895,1559
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0151.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0151.onset: 1297,7936,7895,0317,0006,0556,0252,1088,0031,2707
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0152.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0152.onset: 1297,2487,7936,2707,0572,1559,0022,6156,6647,5688
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0153.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0153.onset: 1362,3974,1223,6287,8645,1717,4709,1833,2407,4482
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0154.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0154.onset: 1223,1362,1559,1730,1894,8645,6287,5651,6156,2407
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0155.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0155.onset: 1362,1628,1223,8645,1730,2618,4709,6288,0252,6287
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0156.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0156.onset: 1362,5688,4473,1223,6287,6689,1201,1559,4709,1730
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0157.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0157.onset: 1362,5688,0021,6287,1223,1201,3974,4473,2407,8374
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0158.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0158.onset: 1362,0330,1223,6272,1628,2483,1230,6288,5688,0226
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0159.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0159.onset: 1362,7936,1223,6288,1730,8374,6287,1559,0252,6156
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0160.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0160.onset: 1362,0252,3974,1894,0226,6287,5688,4709,2618,7895
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0161.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0161.onset: 2407,8626,7900,2868,1223,2487,1833,2618,1730,6287
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0162.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0162.onset: 0169,2397,4821,8626,5797,0864,0028,0020,1849,1369
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0163.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0163.onset: 5797,1369,0169,0864,2397,0028,1380,4821,6090,5688
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0164.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0164.onset: 5797,1369,0169,0864,1959,1380,0028,4821,0020,2397
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0165.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0165.onset: 1380,2868,0864,1959,8374,2253,0020,0001,8626,1894
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0166.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0166.onset: 1380,4364,1432,4473,0001,2253,7887,1230,0020,2184
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0167.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0167.onset: 0022,1392,1492,5688,6026,1297,1959,4821,0226,1559
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0168.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0168.onset: 4821,7895,6026,1492,0006,0556,0252,4482,5688,1894
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0169.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0169.onset: 1407,5880,2184,1223,7909,2397,4706,4821,1849,2177
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0170.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0170.onset: 1407,5880,7909,3974,2487,0022,4706,6287,6026,6647
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0171.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0171.onset: 1407,5880,1814,2177,7300,7909,2868,5278,2607,6026
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0172.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0172.onset: 1407,5880,7909,1223,0226,8078,1959,1492,1730,6026
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0173.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0173.onset: 5880,1407,7909,6026,1492,2487,4706,4821,1297,2177
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0174.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0174.onset: 6026,1492,1833,6689,4878,0918,5688,4912,1109,5312
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0175.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0175.onset: 6026,1492,1833,1559,6689,1524,1297,0226,2868,6090
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0176.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0176.onset: 6026,1492,0918,1833,5688,3974,5880,4482,6689,1392
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0177.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0177.onset: 6026,1492,1833,0918,5688,4482,1265,1392,4709,7290
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0178.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0178.onset: 6026,1492,6689,1109,8645,5312,2881,1524,6090,4482
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0179.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0179.onset: 1524,6090,0006,0556,7895,0637,0317,0252,1959,1088
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0180.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0180.onset: 6090,1524,5688,8645,7936,0006,0556,7895,6272,0918
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0181.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0181.onset: 6090,1524,6272,7895,0637,0317,5312,6026,0006,0556
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0182.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0182.onset: 6090,1524,0317,5688,0637,6272,5312,8645,7895,4160
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0183.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0183.onset: 1559,1297,5688,7936,6156,2733,1088,0015,6287,0006
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0184.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0184.onset: 1559,6156,7936,6287,0023,5688,3974,0022,2733,1297
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0185.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0185.onset: 0022,8374,0001,6647,2733,1894,0031,7909,2487,1628
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0186.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0186.onset: 1559,7936,6156,0023,5688,6287,2733,0330,1297,8374
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0187.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0187.onset: 1601,4584,4912,2707,0252,0556,0006,0572,1201,4482
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0188.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0188.onset: 2868,0439,1918,4821,8626,1959,1392,5880,4584,2177
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0189.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0189.onset: 1628,6288,7887,4584,0001,0021,0439,1717,0007,0022
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0190.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0190.onset: 6288,1628,4584,2487,7887,1230,0031,0001,1730,1717
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0191.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0191.onset: 6288,1628,4584,7887,1230,0001,4706,2487,1717,0021
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0192.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0192.onset: 7887,1730,6287,7895,0556,0006,5688,7936,6272,3974
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0193.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0193.onset: 1730,7936,7887,6287,7909,5688,1559,1223,6272,6156
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0194.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0194.onset: 5688,8374,7936,6287,7887,1559,1730,0252,2733,1628
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0195.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0195.onset: 6287,1559,1730,2152,1894,3974,0001,0031,5880,1717
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0196.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0196.onset: 6913,5067,0439,5713,1054,7909,1814,5880,8078,4584
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0197.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0197.onset: 5067,6913,7909,1814,2487,7887,4584,2177,0022,1201
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0198.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0198.onset: 1849,4771,0020,4821,0028,1195,2397,0169,0190,2881
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0199.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0199.onset: 1849,3974,1730,4221,1833,4706,2707,6689,4473,1628
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0200.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0200.onset: 0169,2618,0028,1849,0020,4821,0864,1369,1407,2397
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0201.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0201.onset: 1849,4821,0020,6287,7909,1730,0864,4433,3974,2397
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0202.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0202.onset: 1849,4221,1833,1730,6689,7300,0864,3974,2397,5880
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0203.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0203.onset: 0022,7895,1894,6156,1559,0001,2487,0017,0031,0556
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0204.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0204.onset: 6287,0001,0022,2487,1894,1559,0017,0023,0020,2733
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0205.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0205.onset: 6287,0006,7895,1894,0556,0022,7936,1088,0001,0031
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0206.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0206.onset: 6287,0020,0022,1894,0023,0017,1559,0252,7895,0021
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0207.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0207.onset: 1894,0022,2487,6287,1559,0017,0015,1088,0001,0023
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0208.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0208.onset: 1909,2564,0017,0007,1230,0023,0330,1223,1894,0021
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0209.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0209.onset: 1909,1628,2564,1230,1195,6288,1717,0023,0021,1894
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0210.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0210.onset: 1915,0026,4821,4706,1265,0022,4584,2177,2733,0007
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0211.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0211.onset: 1915,5067,4364,6913,0026,1201,4584,0949,1265,2184
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0212.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0212.onset: 1959,8626,2868,0021,0022,7887,2881,5688,2487,7300
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0213.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0213.onset: 1959,0022,1407,7909,1297,8374,0001,2152,2733,0031
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0214.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0214.onset: 1959,8626,8374,2868,4482,1833,4821,4584,2483,0370
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0215.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0215.onset: 1894,2487,0001,2152,0031,1195,0020,0252,6647,4821
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0216.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0216.onset: 2152,1894,0001,2707,0252,0031,2618,4706,6647,1088
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0217.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0217.onset: 2152,4706,0031,0001,8626,2707,1223,2184,6647,6287
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0218.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0218.onset: 2152,1894,0252,2707,0031,4821,7895,0001,1918,1195
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0219.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0219.onset: 2152,1297,2487,0556,0006,7895,4482,0572,1894,0252
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0220.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0220.onset: 7300,2177,4706,2184,6647,2868,8626,2707,2733,7909
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0221.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0221.onset: 2177,7300,2868,2733,2184,6647,8374,4706,4584,0864
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0222.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0222.onset: 2177,7300,4706,2184,6647,2868,2707,0439,7909,8626
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0223.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0223.onset: 2184,4706,0001,6647,2733,7909,2707,0023,1730,1088
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0224.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0224.onset: 7909,2184,6647,1730,0001,2733,0031,4706,0023,6287
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0225.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0225.onset: 4706,2184,7909,6647,6689,3974,2733,0001,0031,8374
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0226.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0226.onset: 6647,7909,2184,0001,2733,0031,2152,4706,1223,0023
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0227.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0227.onset: 0888,1833,2253,1959,1091,1814,7909,5278,2407,4821
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0228.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0228.onset: 4878,4221,7528,0572,2293,0918,8645,4912,0226,2881
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0229.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0229.onset: 4221,2293,1524,4912,2618,0572,5312,1109,6090,0020
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0230.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0230.onset: 4821,2397,1407,0864,7909,2177,7300,0169,5880,6913
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0231.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0231.onset: 2407,4473,7900,4709,1915,1559,4706,8374,0020,1230
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0232.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0232.onset: 2407,6689,1717,1833,0020,7900,1223,0001,1628,3974
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0233.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0233.onset: 2407,1717,7900,0020,1833,6689,0888,1230,0330,1265
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0234.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0234.onset: 2407,6689,0001,1833,0007,4912,1265,0313,7272,1909
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0235.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0235.onset: 2483,2618,1959,6272,7895,0226,0031,2487,1297,7936
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0236.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0236.onset: 2618,0031,7936,2483,0022,1297,7895,1559,1088,1959
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0237.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0237.onset: 7887,2607,6287,5713,2707,0014,0022,0864,4584,1894
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0238.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0238.onset: 2564,5880,1628,6288,7909,1195,1909,1717,1230,0021
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0239.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0239.onset: 2607,0864,2868,1201,8626,0021,1195,0028,1894,5688
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0240.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0240.onset: 2607,5688,2868,1088,0015,6287,8626,0317,0637,6689
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0241.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0241.onset: 2607,6288,0028,5688,4584,0864,1628,1195,7936,1088
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0242.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0242.onset: 2607,2868,0028,8626,1195,6287,2184,0637,0317,0864
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0243.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0243.onset: 1195,1717,0252,0031,6288,1628,0637,0317,7895,0556
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0244.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0244.onset: 2618,0028,1195,8645,4878,8626,1230,2868,2483,2607
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0245.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0245.onset: 1778,0252,0015,1088,0014,1717,4584,0572,7895,0556
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0246.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0246.onset: 2618,2868,4584,0028,1195,1959,0572,1524,0014,4821
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0247.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0247.onset: 1088,7895,0252,0001,1778,2618,0572,0028,1717,0015
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0248.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0248.onset: 2707,1297,4482,1195,4821,4584,0888,1778,0014,0020
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0249.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0249.onset: 2707,1201,4482,0226,0572,2618,8645,1524,4706,0317
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0250.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0250.onset: 2707,4821,0572,0864,2618,1524,0028,5688,0317,6090
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0251.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0251.onset: 4482,2618,0317,8645,2707,0637,0226,0252,5312,6272
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0252.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0252.onset: 4482,4821,0572,2707,1201,2618,1524,0317,0637,2868
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0253.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0253.onset: 8374,2487,2733,1894,0022,1265,6272,0001,1295,2184
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0254.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0254.onset: 2733,0001,6647,1295,8374,0022,6287,0031,2184,7909
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0255.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0255.onset: 2733,8374,7909,0001,0022,3974,6156,7936,7887,2184
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0256.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0256.onset: 2868,8626,2618,0028,0313,1959,5688,0864,1392,2881
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0257.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0257.onset: 2868,8626,0028,0020,2607,8645,1959,6272,4821,6689
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0258.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0258.onset: 2868,8626,0028,2253,0572,1959,2184,1230,2618,4821
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0259.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0259.onset: 2868,8626,0028,6288,1223,4706,0572,1230,2618,1392
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0260.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0260.onset: 2881,8626,1524,6090,0572,0031,2868,0028,0190,1109
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0261.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0261.onset: 2881,2618,2707,0031,1524,0572,6090,0190,8626,4878
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0262.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0262.onset: 2881,4878,0572,8645,0190,1223,1959,6689,6090,0022
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0263.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0263.onset: 2881,0001,0031,0021,8626,2868,3974,0020,1392,1223
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0264.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0264.onset: 2881,4878,0190,5880,2707,0572,2618,8626,1392,0031
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0265.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0265.onset: 3974,6287,5688,2707,4706,0023,1223,7909,4473,1730
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0266.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0266.onset: 3974,6287,5688,2707,5651,0026,0001,1559,6156,1833
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0267.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0267.onset: 0006,0556,0317,4160,7895,1088,0637,1524,0031,6090
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0268.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0268.onset: 0006,0556,0317,7895,4160,1088,0031,0637,1524,0252
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0269.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0269.onset: 0006,0556,0317,7895,4160,6090,1524,0637,1088,5270
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0270.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0270.onset: 0006,0556,0317,7895,1088,1524,0637,0031,0252,6090
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0271.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0271.onset: 4221,3974,4878,7936,1559,1362,0918,6287,0017,0007
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0272.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0272.onset: 4221,3974,2407,0025,4364,8374,1265,2483,6689,1833
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0273.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0273.onset: 0370,8374,1265,1894,0024,1380,0022,2733,1915,4364
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0274.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0274.onset: 4364,1894,0022,1392,7936,2487,8374,2733,0313,0021
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0275.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0275.onset: 4364,1909,0017,1894,2487,0021,0022,8374,2733,1392
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0276.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0276.onset: 4364,0007,1909,0021,2487,1894,0022,8374,0017,5713
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0277.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0277.onset: 4364,0007,1230,0021,0017,0023,1909,7900,1601,1392
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0278.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0278.onset: 4364,1909,1230,0021,6913,0007,0017,7272,5067,1894
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0279.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0279.onset: 4364,1909,0017,2487,0023,0021,1230,2564,1894,2733
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0280.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0280.onset: 0672,0009,0017,0023,0825,0824,0014,0021,6272,0007
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0281.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0281.onset: 0672,0009,0017,0023,6272,8645,8374,2881,2487,0824
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0282.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0282.onset: 4473,5270,1088,1730,6647,6287,0001,0317,0015,3974
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0283.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0283.onset: 1088,4473,5270,0556,0006,7895,6647,0317,0001,0637
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0284.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0284.onset: 4482,6641,0918,4584,6287,1492,6272,0014,0026,4878
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0285.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0285.onset: 4482,0556,0006,1297,6287,1559,7895,1778,1492,2172
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0286.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0286.onset: 4482,0556,0006,7895,4584,6287,0014,0252,0317,5270
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0287.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0287.onset: 4482,4584,6026,1492,1559,5688,6287,6272,1195,0014
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0288.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0288.onset: 4584,4706,8374,2707,1918,1201,0014,1628,2152,0949
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0289.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0289.onset: 4584,2707,0001,4821,0572,1088,2487,0014,0015,1392
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0290.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0290.onset: 4706,6647,2184,2707,4821,0001,7909,0031,2733,4473
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0291.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0291.onset: 4706,2184,4821,6647,2733,1201,7909,0031,0001,2707
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0292.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0292.onset: 4706,6647,2184,0001,0031,2707,7909,8374,4821,2733
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0293.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0293.onset: 4706,2184,6647,4473,2707,0001,0031,7909,4821,8374
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0294.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0294.onset: 4706,2184,2707,6647,0001,7909,4821,8374,0031,2733
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0295.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0295.onset: 4709,6287,0637,1959,2618,1524,0317,2487,6689,1362
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0296.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0296.onset: 4709,6287,2487,0637,1730,0007,7887,0317,0024,0226
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0297.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0297.onset: 4709,0317,0637,0868,4473,2407,0913,1730,2868,1524
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0298.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0298.onset: 4709,6287,0637,0317,6090,1362,2487,7895,1524,0252
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0299.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0299.onset: 4771,0026,2881,1915,0190,4709,6090,1362,1524,0824
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0300.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0300.onset: 2397,0864,4821,0169,0020,0028,8626,2707,2868,1849
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0301.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0301.onset: 0864,4821,2397,0169,0028,1849,0020,8626,2868,5270
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0302.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0302.onset: 0169,2397,0864,1369,0020,4821,5797,2868,1959,0028
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0303.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0303.onset: 2397,0864,4821,0169,0020,0028,2868,2707,2618,8626
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0304.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0304.onset: 0226,0888,4878,2618,6287,0028,1559,4912,1297,0572
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0305.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0305.onset: 6287,1088,5688,4584,0226,0015,0028,4221,6689,0637
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0306.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0306.onset: 0556,0006,6287,2487,0252,4706,1524,4584,7895,5688
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0307.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0307.onset: 5067,6913,1054,1915,7909,0025,4364,7300,2177,0949
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0308.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0308.onset: 5067,6913,0949,1915,5713,4364,4584,1054,8626,0025
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0309.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0309.onset: 5067,6913,1054,1392,0949,4364,2177,4584,0313,1814
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0310.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0310.onset: 0015,1088,5270,7895,5688,7936,0317,0637,1297,0252
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0311.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0311.onset: 0015,1088,5270,5688,0317,7895,2487,4584,0637,0006
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0312.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0312.onset: 2253,1407,0949,2177,2707,2184,2868,7300,8626,5278
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0313.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0313.onset: 1109,5312,0006,1959,0556,1524,1492,0317,1778,0637
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0314.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0314.onset: 5651,1295,1894,2733,2707,0007,2172,0252,8374,6156
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0315.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0315.onset: 5651,7900,8645,1295,0014,1195,7887,1297,1894,1717
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0316.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0316.onset: 1295,2184,5651,1894,1195,2177,1559,0014,4706,0007
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0317.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0317.onset: 5688,0028,1297,0317,0006,0556,8626,0637,1524,1959
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0318.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0318.onset: 5688,1559,0317,1297,0637,0015,1088,6272,6287,7895
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0319.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0319.onset: 5688,1297,1088,0317,0556,0006,0637,0015,6026,4160
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0320.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0320.onset: 1223,7909,2184,2564,4706,0001,1392,0020,6287,8374
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0321.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0321.onset: 1223,1265,5713,1362,4771,7909,6287,3974,0023,5880
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0322.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0322.onset: 0021,8374,0007,1894,2487,5688,6156,0252,7936,0001
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0323.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0323.onset: 0021,0017,0023,0252,1223,0007,1717,0001,1894,0009
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0324.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0324.onset: 0021,0007,0023,0017,8374,0252,0001,1894,6156,1223
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0325.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0325.onset: 0021,0007,0017,1909,1628,2564,1896,0023,1223,6288
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0326.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0326.onset: 0021,0007,5688,1894,0017,7936,2733,1295,0023,8645
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0327.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0327.onset: 1407,5880,7909,4706,3974,2397,2177,2733,4821,7300
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0328.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0328.onset: 5880,1407,7909,8374,2184,6026,1492,1297,5688,6287
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0329.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0329.onset: 6026,1492,5688,1297,7936,1559,6641,6156,6272,1959
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0330.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0330.onset: 1492,6026,5688,6272,1559,1297,1195,0572,6156,7936
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0331.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0331.onset: 5688,6026,1492,1297,0317,0637,1524,5312,0006,0556
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0332.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0332.onset: 3974,1223,2733,2184,0031,8645,0022,7300,0864,1201
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0333.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0333.onset: 6090,1524,7895,5312,0637,0317,0252,5688,1109,0006
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0334.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0334.onset: 1524,6090,0317,0637,7895,8645,1088,0015,0226,6156
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0335.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0335.onset: 7895,1524,0317,0637,6272,0252,0226,0918,0006,0556
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0336.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0336.onset: 6156,1559,6287,0022,7936,0021,5688,1297,1959,8374
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0337.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0337.onset: 8374,2733,0001,0022,1894,7909,2184,1265,0023,4706
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0338.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0338.onset: 6156,1297,1559,7936,6287,0022,6272,0015,0023,5270
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0339.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0339.onset: 6272,7895,0637,0556,0006,4160,6647,0317,0001,0252
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0340.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0340.onset: 6272,0637,7895,0317,0226,1524,0252,0006,0556,6287
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0341.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0341.onset: 6272,7895,0001,6647,0637,1088,0015,0252,0317,0022
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0342.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0342.onset: 8645,6272,0226,2487,0252,1265,4584,0031,0021,7887
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0343.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0343.onset: 6287,1559,6156,1730,0001,2487,7887,6647,0022,5688
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0344.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0344.onset: 6287,1894,0001,6647,3974,0022,1918,7909,0023,0031
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0345.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0345.onset: 0252,7936,3974,1730,0913,4709,0001,6287,0031,2152
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0346.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0346.onset: 6287,7909,3974,1730,0001,0864,4706,6272,2152,4473
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0347.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0347.onset: 1628,6288,4584,2487,1894,7887,1230,0001,1730,0022
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0348.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0348.onset: 6288,1628,1730,7887,4584,0020,1894,2733,1849,2707
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0349.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0349.onset: 1628,6288,7887,1717,2487,1730,1230,0001,0028,2483
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0350.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0350.onset: 6288,1628,1730,7887,1230,0001,0031,8374,1295,1717
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0351.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0351.onset: 1628,6288,0001,1730,7887,1717,8374,2487,0864,1362
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0352.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0352.onset: 0001,6272,6647,4482,1201,8645,6090,6156,1088,1524
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0353.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0353.onset: 1201,0001,0252,7895,6287,6647,2707,1088,0015,0637
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0354.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0354.onset: 6647,0031,0001,4473,4706,4821,2184,1201,2707,1833
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0355.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0355.onset: 6647,4473,0031,0001,4706,2184,2707,1201,8374,4584
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0356.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0356.onset: 6689,1833,1088,4821,0015,1295,1894,0637,4473,0021
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0357.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0357.onset: 1833,6689,3974,7909,2868,4706,2177,2407,4821,5651
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0358.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0358.onset: 6689,1833,1201,3974,4473,2707,4706,4821,2607,0021
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0359.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0359.onset: 6689,1833,2707,1201,1195,0226,3974,6026,2868,0888
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0360.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0360.onset: 1814,1054,6913,5067,5278,2177,7909,2564,1091,0025
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0361.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0361.onset: 6913,1054,1814,5067,0025,5278,1091,7909,2177,7300
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0362.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0362.onset: 6913,5067,1814,1054,7300,7909,0439,2177,0025,8078
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0363.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0363.onset: 7272,5797,5713,1380,4364,1369,0226,1717,1362,7936
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0364.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0364.onset: 7272,0007,1362,2483,7900,4771,8374,1717,1265,0868
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0365.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0365.onset: 2618,1195,0031,0028,1959,6288,8626,2868,7909,0572
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0366.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0366.onset: 2618,0028,1628,0031,6647,8626,1959,0001,0572,0317
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0367.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0367.onset: 2618,0028,8626,1717,1959,2868,6647,1524,7909,0001
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0368.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0368.onset: 2868,8626,5688,0028,0317,1959,1297,2618,0572,0006
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0369.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0369.onset: 2868,8626,1959,0028,4912,8645,2483,0014,4821,0572
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0370.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0370.onset: 8626,1959,0028,2868,6647,5688,2618,0637,0317,6272
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0371.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0371.onset: 2618,0028,8626,2868,5688,1959,1230,6272,6647,6288
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0372.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0372.onset: 1959,2868,8626,0028,4821,0317,1833,8645,6647,0031
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0373.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0373.onset: 2868,8626,0028,1959,6288,2618,6647,0317,2483,0637
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0374.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0374.onset: 2177,7300,2184,4706,2707,8374,8626,2868,7909,2733
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0375.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0375.onset: 2177,7300,8374,7909,2184,4706,2733,2868,8626,0439
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0376.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0376.onset: 7300,2177,2184,8374,4706,7909,8626,2868,2707,6647
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0377.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0377.onset: 7300,2177,4706,7909,8374,2184,2868,2733,2253,0864
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0378.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0378.onset: 7528,2293,2618,1392,4878,6272,0572,4221,2868,8645
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0379.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0379.onset: 1392,4221,2293,0572,7528,6090,1524,2868,2881,0226
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0380.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0380.onset: 4221,2293,1201,7528,2881,0572,1392,1109,5312,0868
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0381.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0381.onset: 2733,8374,6287,7909,2177,7300,6647,7887,1730,2184
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0382.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0382.onset: 1894,2487,0020,7909,2733,0022,1088,0015,3974,6647
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0383.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0383.onset: 7895,0556,0006,0637,4160,0317,0252,1088,2487,6272
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0384.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0384.onset: 7895,4160,0556,0006,5688,0317,0572,0637,1088,6647
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0385.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0385.onset: 7895,0556,0006,0317,0637,4160,5688,6090,1088,0015
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0386.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0386.onset: 7900,1230,1894,8374,6288,0021,7887,4364,4473,4706
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0387.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0387.onset: 7900,8374,0007,0022,4364,0021,0001,2733,7909,0031
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0388.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0388.onset: 7909,2733,6647,2184,0001,8374,1407,4706,0023,3974
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0389.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0389.onset: 7909,2733,8374,6647,0001,4473,2177,2184,0020,2707
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0390.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0390.onset: 1559,7936,6156,1297,2733,0252,1362,2618,6287,1730
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0391.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0391.onset: 1559,6156,5688,7936,1297,1088,0015,0637,2483,1492
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0392.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0392.onset: 2564,8078,7909,1730,4473,5880,1909,1407,4364,1717
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0393.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0393.onset: 2564,8078,1407,1628,7909,1909,1297,4771,5880,1230
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0394.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0394.onset: 2564,8078,4771,1909,7909,1628,6156,1195,0021,1223
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0395.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0395.onset: 2564,8078,1909,1628,6272,7909,2707,1195,4771,6288
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0396.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0396.onset: 2564,1717,1909,1195,8078,4771,6288,1230,1628,2707
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0397.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0397.onset: 6647,0031,0001,7909,2184,4473,1201,6689,2707,0026
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0398.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0398.onset: 2733,0022,1894,8374,1559,6287,1265,0026,7909,6156
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0399.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0399.onset: 8374,2733,7909,1559,0001,0022,3974,1894,6156,5688
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0400.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0400.onset: 0022,8374,2733,1894,0001,1088,6287,5270,5688,2487
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0401.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0401.onset: 8374,2733,6156,1559,1894,0001,0022,5688,7909,4706
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0402.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0402.onset: 2868,8626,0028,2618,0864,0020,1195,2881,8645,0572
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0403.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0403.onset: 2868,8626,0028,2618,0864,4878,0020,1959,0572,8645
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0404.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0404.onset: 2868,8626,0028,0572,1230,0868,0020,0888,6689,0313
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0405.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0405.onset: 8645,4878,0824,0825,1833,6689,0226,6272,0330,0317
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0406.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0406.onset: 8645,4878,1833,0226,6272,6689,4160,2868,6090,5688
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0407.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0407.onset: 8645,6272,0825,0824,0226,4878,0317,0918,6090,0819
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0408.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0408.onset: 8645,6090,0226,0317,4878,7895,0637,1524,6272,4709
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0409.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0409.onset: 8645,0226,6272,4878,0918,5688,4912,1265,6689,6026
+./qbt1 /data/raid3/collections/tapping/QBT_symbolic/Onset_query/0410.onset /data/raid3/collections/tapping/QBT_symbolic/Midi/
+/data/raid3/collections/tapping/QBT_symbolic/Onset_query/0410.onset: 8645,4878,6272,0226,6689,1833,7887,6026,0825,0824

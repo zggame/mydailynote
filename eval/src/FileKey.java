@@ -9,7 +9,16 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 
-
+/**
+ * Generate the key according to the key file.  
+ * A key file is a file with lots of lines such as below:
+ * "/query/t283298.wav   345.mid"
+ * It also needs a file with a list of all query files and 
+ * a file with a list of all answer files.  
+ * All these files are mapped with internal IDs 
+ * @author gzhu1
+ *
+ */
 
 public class FileKey implements Keys {
 

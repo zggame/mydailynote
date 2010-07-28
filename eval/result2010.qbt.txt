@@ -1,0 +1,3 @@
+result/qbt/HAFR.task1-MIR.txt.new		||QBT	||HAFR||Task1a||key/qbt/MIRqueryOnset.list||key/qbt/MIRmidi.list|| HAFR Task1 (symbolic input) (Roger Jang's data)			||filekey||key/qbt/MIRqueryOnset.list
+result/qbt/HAFR.task1-QBT.txt.new		||QBT	||HAFR||Task1b||key/qbt/QBTonset.list||key/qbt/QBTmidi.list|| HAFR Task1 (symbolic input) (Show Hsiao's data)			||filekey||key/qbt/QBTonset.list
+result/qbt/HAFR.task2.txt		||QBT	||HAFR||Task2||key/qbt/MIRqueryWave.list||key/qbt/MIRmidi.list|| HAFR Task1 (wave input) (Roger Jang's data)				||filekey||key/qbt/MIRqueryWave.list

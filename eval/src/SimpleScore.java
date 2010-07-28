@@ -1,4 +1,8 @@
-
+/**
+ * Simple 0/1 score.  1 For hit and 0 otherwise.
+ * @author gzhu1
+ *
+ */
 public class SimpleScore implements Score {
 
 	@Override

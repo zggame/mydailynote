@@ -1,0 +1,155 @@
+QBSH2_YF1-beginning_Task1a
+Single Count (Simple Score Method):0.947
+Single Count (MRR method):0.915
+total count:4431
+note:
+JY1 Task1 (query against truth midi)(Roger Jang's data)file:result/YF1-beginning.task1-Jang.txt
+
+
+QBSH_YF1-beginning_Task1b
+Single Count (Simple Score Method):0.445
+Single Count (MRR method):0.423
+total count:355
+note:
+JY1 Task1 (query against truth midi)(ThinkIT data)file:result/YF1-beginning.task1-ThinkIT.txt
+
+
+QBSH_YF1-beginning_Task1c
+Single Count (Simple Score Method):0.290
+Single Count (MRR method):0.218
+total count:404
+note:
+JY1 Task1 (query against truth midi)(IOACAS 2nd data)file:result/YF1-beginning.task1-Ioacas.txt
+
+
+QBSH3_YF1-beginning_Task2
+Multi Count (Simple Score Method):8.741
+total count:2040
+note:
+JY1 Task2 (query against humming wav) (Roger Jang's data)file:result/YF1-beginning.task2.txt
+
+
+QBSH2_YF1-anywhere_Task1a
+Single Count (Simple Score Method):0.912
+Single Count (MRR method):0.871
+total count:4431
+note:
+JY1 Task1 (query against truth midi)(Roger Jang's data)file:result/YF1-anywhere.task1-Jang.txt
+
+
+QBSH_YF1-anywhere_Task1b
+Single Count (Simple Score Method):0.904
+Single Count (MRR method):0.844
+total count:355
+note:
+JY1 Task1 (query against truth midi)(ThinkIT data)file:result/YF1-anywhere.task1-ThinkIT.txt
+
+
+QBSH_YF1-anywhere_Task1c
+Single Count (Simple Score Method):0.436
+Single Count (MRR method):0.329
+total count:404
+note:
+JY1 Task1 (query against truth midi)(IOACAS 2nd data)file:result/YF1-anywhere.task1-Ioacas.txt
+
+
+QBSH3_YF1-anywhere_Task2
+Multi Count (Simple Score Method):8.741
+total count:2040
+note:
+JY1 Task2 (query against humming wav) (Roger Jang's data)file:result/YF1-anywhere.task2.txt
+
+
+QBSH2_JY1_Task1a
+Single Count (Simple Score Method):0.967
+Single Count (MRR method):0.947
+total count:4431
+note:
+JY1 Task1 (query against truth midi)(Roger Jang's data)file:result/JY1.task1-Jang.txt
+
+
+QBSH_JY1_Task1b
+Single Count (Simple Score Method):0.434
+Single Count (MRR method):0.416
+total count:355
+note:
+JY1 Task1 (query against truth midi)(ThinkIT data)file:result/JY1.task1-ThinkIT.txt
+
+
+QBSH_JY1_Task1c
+Single Count (Simple Score Method):0.134
+Single Count (MRR method):0.084
+total count:404
+note:
+JY1 Task1 (query against truth midi)(IOACAS 2nd data)file:result/JY1.task1-Ioacas.txt
+
+
+QBSH3_JY1_Task2
+Multi Count (Simple Score Method):9.135
+total count:2040
+note:
+JY1 Task2 (query against humming wav) (Roger Jang's data)file:result/JY1.task2.txt
+
+
+QBSH2_JY2_Task1a
+Single Count (Simple Score Method):0.956
+Single Count (MRR method):0.926
+total count:4431
+note:
+JY2 Task1 (query against truth midi)(Roger Jang's data)file:result/JY2.task1-Jang.txt
+
+
+QBSH_JY2_Task1b
+Single Count (Simple Score Method):0.490
+Single Count (MRR method):0.469
+total count:355
+note:
+JY2 Task1 (query against truth midi)(ThinkIT data)file:result/JY2.task1-ThinkIT.txt
+
+
+QBSH_JY2_Task1c
+Single Count (Simple Score Method):0.181
+Single Count (MRR method):0.112
+total count:404
+note:
+JY2 Task1 (query against truth midi)(IOACAS 2nd data)file:result/JY2.task1-Ioacas.txt
+
+
+QBSH3_JY2_Task2
+Multi Count (Simple Score Method):9.073
+total count:2040
+note:
+JY2 Task2 (query against humming wav) (Roger Jang's data)file:result/JY2.task2.txt
+
+
+QBSH_HAFR_Task1b
+Single Count (Simple Score Method):0.806
+Single Count (MRR method):0.704
+total count:355
+note:
+HAFR Task1 (query against truth midi)(ThinkIT data)file:result/HAFR.task1-ThinkIT.txt
+
+
+QBSH2_HAFR_Task1a
+Single Count (Simple Score Method):0.771
+Single Count (MRR method):0.665
+total count:4408
+note:
+HAFR Task1 (query against truth midi)(Roger Jang's data)file:result/HAFR.task1-Jang.txt
+
+
+QBSH_HAFR_Task1c
+Single Count (Simple Score Method):0.594
+Single Count (MRR method):0.459
+total count:404
+note:
+HAFR Task1 (query against truth midi)(IOACAS 2nd data)file:result/HAFR.task1-Ioacas.txt
+
+
+QBSH3_HAFR_Task2
+Multi Count (Simple Score Method):6.979
+total count:2020
+note:
+HAFR Task2 (query against humming wav) (Roger Jang's data)file:result/HAFR.task2.txt
+
+

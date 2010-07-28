@@ -97,7 +97,11 @@ public class SimpleKey implements Keys {
 
 	@Override
 	public int getQueryId(String query) {
-		return queryIdMap.get(twoLevelName(query));
+		Integer id=queryIdMap.get(twoLevelName(query));
+		if (id==null){
+			id=queryIdMap.get(twoLevelName(query.replace("\\", "/")));
+		};
+		return id;
 	}
 
 	@Override

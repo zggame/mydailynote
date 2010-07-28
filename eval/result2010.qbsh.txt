@@ -1,3 +1,10 @@
+result/YF1-beginning.task1-Jang.txt 		||QBSH2	||YF1-beginning||Task1a||result/YF1-beginning.task1-Jang.txt ||48|| JY1 Task1 (query against truth midi)(Roger Jang's data)	|| simplekey
+result/YF1-beginning.task1-ThinkIT.txt   		||QBSH	||YF1-beginning||Task1b||key/ThinkITqueryRenamed.list||key/ThinkITmidRenamed.list|| JY1 Task1 (query against truth midi)(ThinkIT data)  ||fileKey||key/ThinkITqueryRenamed.list
+result/YF1-beginning.task1-Ioacas.txt   		||QBSH	||YF1-beginning||Task1c||key/IOACASquery.list||key/IOACASmidi.list|| JY1 Task1 (query against truth midi)(IOACAS 2nd data)  ||fileKey||key/IOACASquery.list
+result/YF1-beginning.task2.txt		||QBSH3	||YF1-beginning||Task2||key/task2.querylist||48|| JY1 Task2 (query against humming wav) (Roger Jang's data)	|| simplekey2
+result/YF1-anywhere.task1-ThinkIT.txt   		||QBSH	||YF1-anywhere||Task1b||key/ThinkITqueryRenamed.list||key/ThinkITmidRenamed.list|| JY1 Task1 (query against truth midi)(ThinkIT data)  ||fileKey||key/ThinkITqueryRenamed.list
+result/YF1-anywhere.task1-Ioacas.txt   		||QBSH	||YF1-anywhere||Task1c||key/IOACASquery.list||key/IOACASmidi.list|| JY1 Task1 (query against truth midi)(IOACAS 2nd data)  ||fileKey||key/IOACASquery.list
+result/YF1-anywhere.task2.txt		||QBSH3	||YF1-anywhere||Task2||key/task2.querylist||48|| JY1 Task2 (query against humming wav) (Roger Jang's data)	|| simplekey2
 result/JY1.task1-Jang.txt 		||QBSH2	||JY1||Task1a||result/JY1.task1-Jang.txt ||48|| JY1 Task1 (query against truth midi)(Roger Jang's data)	|| simplekey
 result/JY1.task1-ThinkIT.txt   		||QBSH	||JY1||Task1b||key/ThinkITqueryRenamed.list||key/ThinkITmidRenamed.list|| JY1 Task1 (query against truth midi)(ThinkIT data)  ||fileKey||key/ThinkITqueryRenamed.list
 result/JY1.task1-Ioacas.txt   		||QBSH	||JY1||Task1c||key/IOACASquery.list||key/IOACASmidi.list|| JY1 Task1 (query against truth midi)(IOACAS 2nd data)  ||fileKey||key/IOACASquery.list

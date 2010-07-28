@@ -7,9 +7,21 @@ import java.util.Scanner;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+/**
+ * Evaluation for QBSH/QBT
+ * 
+ * @author gzhu1
+ *
+ */
 public class Eval {
 
 	/**
+	 * Starting method for the evaluation 
+	 * Running Command:Eval resultFile outputFile
+	 * Example Eval result2010.qbsh.txt output.txt
+	 * 
+	 * Careful about the format in the resultFile.  
+	 * It also generates all the detailed result files in the main directory. 
 	 * @param args
 	 */
 

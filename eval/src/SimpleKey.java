@@ -48,9 +48,9 @@ public class SimpleKey implements Keys {
 
 			
 			while ((line=file.readLine())!=null){
-				Scanner sfile=new Scanner(line);
-				String name=sfile.next();
-				queryIdMap.put(twoLevelName(name), queryNumber);queryNumber++;
+				//Scanner sfile=new Scanner(line);
+				//String name=sfile.next();
+				queryIdMap.put(twoLevelName(line), queryNumber);queryNumber++;
 			}
 			
 			 answerNumber=Integer.parseInt(s.next());

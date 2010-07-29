@@ -29,6 +29,14 @@ note:
 JY1 Task2 (query against humming wav) (Roger Jang's data)file:result/YF1-beginning.task2.txt
 
 
+QBSH2_YF1-anywhere_Task1a
+Single Count (Simple Score Method):0.912
+Single Count (MRR method):0.871
+total count:4431
+note:
+JY1 Task1 (query against truth midi)(Roger Jang's data)file:result/YF1-anywhere.task1-Jang.txt
+
+
 QBSH_YF1-anywhere_Task1b
 Single Count (Simple Score Method):0.904
 Single Count (MRR method):0.844

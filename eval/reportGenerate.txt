@@ -114,3 +114,56 @@ QBSH3_JY2_Task2_query_Multi Count (Simple Score method).txt
 QBSH3_YF1-beginning_Task2_query_Multi Count (Simple Score method).txt
 QBSH3_YF1-anywhere_Task2_query_Multi Count (Simple Score method).txt
 ###################################
+############################################################
+########QBT#################################
+###########Task1a#####################
+report/QbtTask1aSimpleByGroup.csv
+HAFR	
+QBT_HAFR_Task1a_group_Single Count (Simple Score Method).txt
+########################################
+report/QbtTask1aMrrByGroup.csv
+HAFR	
+QBT_HAFR_Task1a_group_Single Count (MRR method).txt
+########################################
+report/QbtTask1aSimpleByQuery.csv
+HAFR	
+QBT_HAFR_Task1a_query_Single Count (Simple Score Method).txt
+########################################
+report/QbtTask1aMrrByQuery.csv
+HAFR	
+QBT_HAFR_Task1a_query_Single Count (MRR method).txt
+########################################
+###########Task1b#####################
+report/QbtTask1bSimpleByGroup.csv
+HAFR	
+QBT_HAFR_Task1b_group_Single Count (Simple Score Method).txt
+########################################
+report/QbtTask1bMrrByGroup.csv
+HAFR	
+QBT_HAFR_Task1b_group_Single Count (MRR method).txt
+########################################
+report/QbtTask1bSimpleByQuery.csv
+HAFR	
+QBT_HAFR_Task1b_query_Single Count (Simple Score Method).txt
+########################################
+report/QbtTask1bMrrByQuery.csv
+HAFR	
+QBT_HAFR_Task1b_query_Single Count (MRR method).txt
+########################################
+###########Task2#####################
+report/QbtTask2SimpleByGroup.csv
+HAFR	
+QBT_HAFR_Task2_group_Single Count (Simple Score Method).txt
+########################################
+report/QbtTask2MrrByGroup.csv
+HAFR	
+QBT_HAFR_Task2_group_Single Count (MRR method).txt
+########################################
+report/QbtTask2SimpleByQuery.csv
+HAFR	
+QBT_HAFR_Task2_query_Single Count (Simple Score Method).txt
+########################################
+report/QbtTask2MrrByQuery.csv
+HAFR	
+QBT_HAFR_Task2_query_Single Count (MRR method).txt
+########################################

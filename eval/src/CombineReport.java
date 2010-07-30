@@ -5,11 +5,17 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.logging.Logger;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 
 public class CombineReport {
 
-	/**
+	private static Log log = LogFactory.getLog(CombineReport.class);
+
+	/**Combine the reports from individual algorithms into one nice formatted csv file. 
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -58,9 +64,11 @@ public class CombineReport {
 				for (int i=0;i<fileCount;i++){
 					inputs[i].close();
 				}
+				log.info("Finish generating report: "+outputLine);
 				do{
 					outputLine=reader.readLine();
 				}while ((outputLine!=null) &&(outputLine.startsWith("##")));
+				
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

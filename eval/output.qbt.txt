@@ -22,3 +22,27 @@ note:
 HAFR Task1 (wave input) (Roger Jang's data)file:result/qbt/HAFR.task2.txt
 
 
+QBT_ML_Task1a
+Single Count (Simple Score Method):0.876
+Single Count (MRR method):0.798
+total count:890
+note:
+ML Task1 (symbolic input) (Roger Jang's data)file:result/qbt/ML.task1-MIR.txt
+
+
+QBT_ML_Task1b
+Single Count (Simple Score Method):0.851
+Single Count (MRR method):0.711
+total count:410
+note:
+ML Task1 (symbolic input) (Show Hsiao's data)file:result/qbt/ML.task1-QBT.txt
+
+
+QBT_ML_Task2
+Single Count (Simple Score Method):0.872
+Single Count (MRR method):0.781
+total count:890
+note:
+ML Task1 (wave input) (Roger Jang's data)file:result/qbt/ML.task2.txt
+
+

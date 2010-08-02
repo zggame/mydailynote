@@ -9,11 +9,11 @@ QBSH2_YF1-anywhere_Task1a_group_Single Count (MRR method).txt
 ###################################
 report/QbshTask1aSimpleByGroup.csv
 HAFR1	||	JY1	||	JY2	||	YF1	||	YF2
-QBSH2_HAFR_Task1a_group_Single Count (Simple Score method).txt
-QBSH2_JY1_Task1a_group_Single Count (Simple Score method).txt
-QBSH2_JY2_Task1a_group_Single Count (Simple Score method).txt
-QBSH2_YF1-beginning_Task1a_group_Single Count (Simple Score method).txt
-QBSH2_YF1-anywhere_Task1a_group_Single Count (Simple Score method).txt
+QBSH2_HAFR_Task1a_group_Single Count (Simple Score Method).txt
+QBSH2_JY1_Task1a_group_Single Count (Simple Score Method).txt
+QBSH2_JY2_Task1a_group_Single Count (Simple Score Method).txt
+QBSH2_YF1-beginning_Task1a_group_Single Count (Simple Score Method).txt
+QBSH2_YF1-anywhere_Task1a_group_Single Count (Simple Score Method).txt
 ###################################
 report/QbshTask1aMrrByQuery.csv
 HAFR1	||	JY1	||	JY2	||	YF1	||	YF2
@@ -25,11 +25,11 @@ QBSH2_YF1-anywhere_Task1a_query_Single Count (MRR method).txt
 ###################################
 report/QbshTask1aSimpleByQuery.csv
 HAFR1	||	JY1	||	JY2	||	YF1	||	YF2
-QBSH2_HAFR_Task1a_query_Single Count (Simple Score method).txt
-QBSH2_JY1_Task1a_query_Single Count (Simple Score method).txt
-QBSH2_JY2_Task1a_query_Single Count (Simple Score method).txt
-QBSH2_YF1-beginning_Task1a_query_Single Count (Simple Score method).txt
-QBSH2_YF1-anywhere_Task1a_query_Single Count (Simple Score method).txt
+QBSH2_HAFR_Task1a_query_Single Count (Simple Score Method).txt
+QBSH2_JY1_Task1a_query_Single Count (Simple Score Method).txt
+QBSH2_JY2_Task1a_query_Single Count (Simple Score Method).txt
+QBSH2_YF1-beginning_Task1a_query_Single Count (Simple Score Method).txt
+QBSH2_YF1-anywhere_Task1a_query_Single Count (Simple Score Method).txt
 ###################################
 #####Task1b#############
 report/QbshTask1bMrrByGroup.csv
@@ -42,11 +42,11 @@ QBSH_YF1-anywhere_Task1b_group_Single Count (MRR method).txt
 ###################################
 report/QbshTask1bSimpleByGroup.csv
 HAFR1	||	JY1	||	JY2	||	YF1	||	YF2
-QBSH_HAFR_Task1b_group_Single Count (Simple Score method).txt
-QBSH_JY1_Task1b_group_Single Count (Simple Score method).txt
-QBSH_JY2_Task1b_group_Single Count (Simple Score method).txt
-QBSH_YF1-beginning_Task1b_group_Single Count (Simple Score method).txt
-QBSH_YF1-anywhere_Task1b_group_Single Count (Simple Score method).txt
+QBSH_HAFR_Task1b_group_Single Count (Simple Score Method).txt
+QBSH_JY1_Task1b_group_Single Count (Simple Score Method).txt
+QBSH_JY2_Task1b_group_Single Count (Simple Score Method).txt
+QBSH_YF1-beginning_Task1b_group_Single Count (Simple Score Method).txt
+QBSH_YF1-anywhere_Task1b_group_Single Count (Simple Score Method).txt
 ###################################
 report/QbshTask1bMrrByQuery.csv
 HAFR1	||	JY1	||	JY2	||	YF1	||	YF2
@@ -58,11 +58,11 @@ QBSH_YF1-anywhere_Task1b_query_Single Count (MRR method).txt
 ###################################
 report/QbshTask1bSimpleByQuery.csv
 HAFR1	||	JY1	||	JY2	||	YF1	||	YF2
-QBSH_HAFR_Task1b_query_Single Count (Simple Score method).txt
-QBSH_JY1_Task1b_query_Single Count (Simple Score method).txt
-QBSH_JY2_Task1b_query_Single Count (Simple Score method).txt
-QBSH_YF1-beginning_Task1b_query_Single Count (Simple Score method).txt
-QBSH_YF1-anywhere_Task1b_query_Single Count (Simple Score method).txt
+QBSH_HAFR_Task1b_query_Single Count (Simple Score Method).txt
+QBSH_JY1_Task1b_query_Single Count (Simple Score Method).txt
+QBSH_JY2_Task1b_query_Single Count (Simple Score Method).txt
+QBSH_YF1-beginning_Task1b_query_Single Count (Simple Score Method).txt
+QBSH_YF1-anywhere_Task1b_query_Single Count (Simple Score Method).txt
 ###################################
 #####Task1c#############
 report/QbshTask1cMrrByGroup.csv
@@ -75,11 +75,11 @@ QBSH_YF1-anywhere_Task1c_group_Single Count (MRR method).txt
 ###################################
 report/QbshTask1cSimpleByGroup.csv
 HAFR1	||	JY1	||	JY2	||	YF1	||	YF2
-QBSH_HAFR_Task1c_group_Single Count (Simple Score method).txt
-QBSH_JY1_Task1c_group_Single Count (Simple Score method).txt
-QBSH_JY2_Task1c_group_Single Count (Simple Score method).txt
-QBSH_YF1-beginning_Task1c_group_Single Count (Simple Score method).txt
-QBSH_YF1-anywhere_Task1c_group_Single Count (Simple Score method).txt
+QBSH_HAFR_Task1c_group_Single Count (Simple Score Method).txt
+QBSH_JY1_Task1c_group_Single Count (Simple Score Method).txt
+QBSH_JY2_Task1c_group_Single Count (Simple Score Method).txt
+QBSH_YF1-beginning_Task1c_group_Single Count (Simple Score Method).txt
+QBSH_YF1-anywhere_Task1c_group_Single Count (Simple Score Method).txt
 ###################################
 report/QbshTask1cMrrByQuery.csv
 HAFR1	||	JY1	||	JY2	||	YF1	||	YF2
@@ -91,79 +91,91 @@ QBSH_YF1-anywhere_Task1c_query_Single Count (MRR method).txt
 ###################################
 report/QbshTask1cSimpleByQuery.csv
 HAFR1	||	JY1	||	JY2	||	YF1	||	YF2
-QBSH_HAFR_Task1c_query_Single Count (Simple Score method).txt
-QBSH_JY1_Task1c_query_Single Count (Simple Score method).txt
-QBSH_JY2_Task1c_query_Single Count (Simple Score method).txt
-QBSH_YF1-beginning_Task1c_query_Single Count (Simple Score method).txt
-QBSH_YF1-anywhere_Task1c_query_Single Count (Simple Score method).txt
+QBSH_HAFR_Task1c_query_Single Count (Simple Score Method).txt
+QBSH_JY1_Task1c_query_Single Count (Simple Score Method).txt
+QBSH_JY2_Task1c_query_Single Count (Simple Score Method).txt
+QBSH_YF1-beginning_Task1c_query_Single Count (Simple Score Method).txt
+QBSH_YF1-anywhere_Task1c_query_Single Count (Simple Score Method).txt
 ###################################
 #####Task2#############
 report/QbshTask2Group.csv
 HAFR1	||	JY1	||	JY2	||	YF1	||	YF2
-QBSH3_HAFR_Task2_group_Multi Count (Simple Score method).txt
-QBSH3_JY1_Task2_group_Multi Count (Simple Score method).txt
-QBSH3_JY2_Task2_group_Multi Count (Simple Score method).txt
-QBSH3_YF1-beginning_Task2_group_Multi Count (Simple Score method).txt
-QBSH3_YF1-anywhere_Task2_group_Multi Count (Simple Score method).txt
+QBSH3_HAFR_Task2_group_Multi Count (Simple Score Method).txt
+QBSH3_JY1_Task2_group_Multi Count (Simple Score Method).txt
+QBSH3_JY2_Task2_group_Multi Count (Simple Score Method).txt
+QBSH3_YF1-beginning_Task2_group_Multi Count (Simple Score Method).txt
+QBSH3_YF1-anywhere_Task2_group_Multi Count (Simple Score Method).txt
 ###################################
 report/QbshTask2Query.csv
 HAFR1	||	JY1	||	JY2	||	YF1	||	YF2
-QBSH3_HAFR_Task2_query_Multi Count (Simple Score method).txt
-QBSH3_JY1_Task2_query_Multi Count (Simple Score method).txt
-QBSH3_JY2_Task2_query_Multi Count (Simple Score method).txt
-QBSH3_YF1-beginning_Task2_query_Multi Count (Simple Score method).txt
-QBSH3_YF1-anywhere_Task2_query_Multi Count (Simple Score method).txt
+QBSH3_HAFR_Task2_query_Multi Count (Simple Score Method).txt
+QBSH3_JY1_Task2_query_Multi Count (Simple Score Method).txt
+QBSH3_JY2_Task2_query_Multi Count (Simple Score Method).txt
+QBSH3_YF1-beginning_Task2_query_Multi Count (Simple Score Method).txt
+QBSH3_YF1-anywhere_Task2_query_Multi Count (Simple Score Method).txt
 ###################################
 ############################################################
 ########QBT#################################
 ###########Task1a#####################
 report/QbtTask1aSimpleByGroup.csv
-HAFR	
+HAFR	||ML
 QBT_HAFR_Task1a_group_Single Count (Simple Score Method).txt
+QBT_ML_Task1a_group_Single Count (Simple Score Method).txt
 ########################################
 report/QbtTask1aMrrByGroup.csv
-HAFR	
+HAFR	||ML	
 QBT_HAFR_Task1a_group_Single Count (MRR method).txt
+QBT_ML_Task1a_group_Single Count (MRR method).txt
 ########################################
 report/QbtTask1aSimpleByQuery.csv
-HAFR	
+HAFR	||ML	
 QBT_HAFR_Task1a_query_Single Count (Simple Score Method).txt
+QBT_ML_Task1a_query_Single Count (Simple Score Method).txt
 ########################################
 report/QbtTask1aMrrByQuery.csv
-HAFR	
+HAFR	||ML	
 QBT_HAFR_Task1a_query_Single Count (MRR method).txt
+QBT_ML_Task1a_query_Single Count (MRR method).txt
 ########################################
 ###########Task1b#####################
 report/QbtTask1bSimpleByGroup.csv
-HAFR	
+HAFR	||ML
 QBT_HAFR_Task1b_group_Single Count (Simple Score Method).txt
+QBT_ML_Task1b_group_Single Count (Simple Score Method).txt
 ########################################
 report/QbtTask1bMrrByGroup.csv
-HAFR	
+HAFR	||ML	
 QBT_HAFR_Task1b_group_Single Count (MRR method).txt
+QBT_ML_Task1b_group_Single Count (MRR method).txt
 ########################################
 report/QbtTask1bSimpleByQuery.csv
-HAFR	
+HAFR	||ML	
 QBT_HAFR_Task1b_query_Single Count (Simple Score Method).txt
+QBT_ML_Task1b_query_Single Count (Simple Score Method).txt
 ########################################
 report/QbtTask1bMrrByQuery.csv
-HAFR	
+HAFR	||ML	
 QBT_HAFR_Task1b_query_Single Count (MRR method).txt
+QBT_ML_Task1b_query_Single Count (MRR method).txt
 ########################################
 ###########Task2#####################
 report/QbtTask2SimpleByGroup.csv
-HAFR	
+HAFR	||ML
 QBT_HAFR_Task2_group_Single Count (Simple Score Method).txt
+QBT_ML_Task2_group_Single Count (Simple Score Method).txt
 ########################################
 report/QbtTask2MrrByGroup.csv
-HAFR	
+HAFR	||ML	
 QBT_HAFR_Task2_group_Single Count (MRR method).txt
+QBT_ML_Task2_group_Single Count (MRR method).txt
 ########################################
 report/QbtTask2SimpleByQuery.csv
-HAFR	
+HAFR	||ML	
 QBT_HAFR_Task2_query_Single Count (Simple Score Method).txt
+QBT_ML_Task2_query_Single Count (Simple Score Method).txt
 ########################################
 report/QbtTask2MrrByQuery.csv
-HAFR	
+HAFR	||ML	
 QBT_HAFR_Task2_query_Single Count (MRR method).txt
+QBT_ML_Task2_query_Single Count (MRR method).txt
 ########################################

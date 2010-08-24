@@ -8,4 +8,30 @@ Looked from the Lehmann representation's definition,  the denominator of the Gre
 How to describe the fact that the kernel of the state in real space (within the potential range) 
 
 \subsection{}
-Let us think about hydrogen atoms, one proton plus one electron.  In the momentum space, an individual proton or electron has momentum $\vk$ in the central of mass framework plus momentum of the central of mass  $\vK$.  The real equilibrium at $T=0K$ is the solid.  But at temperature of  gas phase, the phase space is much larger and momentum extends to much higher region, little or no overlap in momentum space fore two electrons (protons).  In another word, they are in the opposite of the degenerate region we often think about the fermi gas.  Within the atom size, (real space), a proton has very high probability to have an electron around as the molecule wave function.  $\av{n_{e}(x)n_{p}(x+y)}$ decays quickly with increasing $y$.  Similarly for the electron.  This is the meaning of molecule gas in real-space.  How does this translate into momentum space? \be
+Let us think about hydrogen atoms, one proton plus one electron.  In the momentum space, an individual proton or electron has momentum $\vk$ in the central of mass framework plus momentum of the central of mass  $\vK$.  The real equilibrium at $T=0K$ is the solid.  But at temperature of  gas phase, the phase space is much larger and momentum extends to much higher region, little or no overlap in momentum space fore two electrons (protons).  In another word, they are in the opposite of the degenerate region we often think about the fermi gas.  Within the atom size, (real space), a proton has very high probability to have an electron around as the molecule wave function.  $\av{n_{e}(x)n_{p}(x+y)}$ decays quickly with increasing $y$.  Similarly for the electron.  This is the meaning of molecule gas in real-space.  How does this translate into momentum space? 
+
+In the momentum space, the center of mass momentum should be small comparing to the typical internal momentum scale.  Therefore, on the lowest order, we can probably takes it as 0, if use the simple Hatree-Fork, the lowest cast is the BEC of the modified-two-body-ground-state. 	
+
+
+Maybe we can transform the ansatz into the real space and do something.  There are two contributions for the two-body density matrix mentioned before $\av{F_{k}F_{k'}}$ and simple $\av{n_{k}n_{k'}}$.  
+
+
+\subsection{}
+What happens for BCS ansatz for a background with BEC molecule occupied.  This somehow artificially takes care of the Pauli-blocking from close-channel to open-channel. For BCS state
+\begin{equation}
+\ket{\Psi}=\prod(u_{k}+v_{k}a^\dg_{\vk}b^{\dg}_{-\vk})\ket{F_{0}}
+\end{equation}
+Now the $\ket{F_{0}}$ is not the vacuum or filled fermi-sea as usual, but vacuum filled with close-channel molecules
+\begin{equation}\label{eq:100816F0}
+\ket{F_{0}}=\prod(f_{k}a^{\dg}_{\vk}c^{\dg}_{-\vk})\ket{0}
+\end{equation}
+If taking $f_{k}$ as given, we can probably solve ansatz as usual and it is interesting to see what the result turns out to be.  
+\emph{Eq. (\ref{eq:100816F0}) is not correct. } It  completely blocks the available states.  The correct one might be :
+\begin{equation}
+\ket{F_{0}}=\br{\sum{c_{k}a^{\dg}_{\vk}c^{\dg}_{-\vk}}}^{N}\ket{0}	
+\end{equation}
+On the other hand, this is pretty much the same as EPS state in He-3
+\begin{equation}
+\ket{\Psi}=\prod(u_{k}+v_{k}a^\dg_{\vk}b^{\dg}_{-\vk})\prod(u'_{k}+v'_{k}a^\dg_{\vk}c^{\dg}_{-\vk})\ket{0}
+\end{equation}
+However, this state would  not be properly normalized with condition $u_{k}^{2}+v_{k}^{2}=1$ and $u' {}_{k}^{2}+v' {}_{k}^{2}=1$ as in he four species case or p-state in He-3.   

@@ -8,9 +8,12 @@ A close-look at Eq. (\ref{eq:100816:BcsBlock}) shows that this is one term of th
 The expansion of the above equation includes infinite number of different $\ket{F_{0}}$ with different particle-numbers and composition.  So there are a few questions in mind:
 
 \begin{itemize}
-\item Is the coherent nature of them important?
-\item If it is easier to handle Eq. (\ref{eq:100816:BcsBlock}), how the distribution of different particle-numbers plays in the problem?  What kind of the distribution is it? 
-\item For $N>1$, the renormalization is complicated as in the coboson handling.  How to treat them? 
+\item Is the coherent nature of them important?\\
+It seems that the coherent nature of different close-channel state is not essential for the energy of traditional BCS free energy of open-channel.  But it is essential for the close-channel part of the energy to give the close-channel bound-state.  
+\item If it is easier to handle Eq. (\ref{eq:100816:BcsBlock}), how the distribution of different particle-numbers plays in the problem?  What kind of the distribution is it? \\
+If we can take the BEC of close-channel molecule more seriously, it seems that the single-pair components dominate as long as the molecule is small.  
+\item For $N>1$, the renormalization is complicated as in the coboson handling.  How to treat them? \\
+If single-pair indeed dominates, maybe we can skip the multi-pair part.  
 \end{itemize}
 
 Or we can expand Eq. (\ref{eq:100816:F0N}) further to something like 
@@ -22,3 +25,5 @@ The above equation is easier in terms of the renormalization.
 
 \subsection{}
 When the close-channel bound-state, which might or might not be the eigenstate of the bare close-channel potential, is relatively small comparing to the inter-particle distance, one can image that an expansion of close-channel component as described above over \eef{eq:ansatz} takes a much large range in k-space ($1/a^{c}$).   So, if we are interesting only in the momentum range up-to or not too much larger than fermi momentum, \eef{eq:100823:F0N} is dominated by the one-pair term.  
+
+On the other hand, expansion of \eef{eq:ansatz} also generated terms with 0 close-channel pair.  Is that term important? Probably not, as there are lots and lots of 1-pair term while only 1 zero-pair term.  

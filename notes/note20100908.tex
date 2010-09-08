@@ -1,0 +1,85 @@
+\subsection{Pauli Exclusion}
+The Pauli exclusion effects in the problem can be roughly separated into several.  
+
+First, the Pauli exclusion within the open channel.  This is taken care of fully by the BCS ansatz, where the fermion operator description include all the Pauli exclusion.  
+
+Second, the Pauli exclusion within the close channel.  This probably fits the description of normal coboson as the exciton \cite{CobosonPhysicsReports} because the close-channel bound state is much smaller than the average particle distance and therefore can be treated in perturbative way.  However, one remaining problem is whether the close-channel wave-function is modified due to many-body effects and how if it is.  A first-order guess is that the modification started at the low-k region within the order of Fermi momentum $k_{F}$.  
+
+ Third and unique for the three-species problem is the Pauli exclusion between two channels.  This can works in either direction.  We can treat all three at the same time consistently as in sec. \ref{sec:variation}, however, the algebra becomes messy quickly and hard to get a clear solution from it.  The next best thing is to find out the effect one at a time, so a qualitative picture can be drawn from that.   A Born–Oppenheimer-like idea is to take it one-by-one.    A BCS-type ansatz is believed to be at least qualitatively valid for the open-channel. So we assume the existing of the close-channel  component and ask the question how BCS-ansatz in open-channel is affected by it.  So the question is \emph{how is BCS  (crossover) in  partially blocked Fermi Hilbert space}? 
+ 
+ First thing to ask is what the partially blocked Hilbert space mean?  To be more specific, we use the following to define it.  Instead a normal vacuum with nothing, the new vacuum has close-channel bound state in it.  Furthermore, we assume a Gross-Pitaevskii like for it.  So 
+ \begin{equation}\label{eq:100908:F0N}
+\ket{F_{0}}=\br{\sum{\alpha_{k}a^{\dg}_{\vk}c^{\dg}_{-\vk}}}^{N}\ket{0}	
+\end{equation}
+One observation in two-body Feschbach resonance is that the close-channel bound-state that resonates is generally much smaller than the inter-particle distance.  \emph{Assuming that this carries to the many-body situation},  $\alpha_{k}$ varies slowly within the occupied region of open-channel particles  that is smaller than $k_{F}$ or in the order of $k_{F}$.  If assume that cut-off momentum for the open-channel is $k_{c}$, (i.e. there is almost no population in open channel beyond $k_{c}$)we also have 
+\begin{equation}\label{eq:100908:sumkc}
+\sum_{k<k_{c}}{\abs{\alpha_{k}}^{2}}\ll1
+\end{equation}
+In the other hand, the close-channel is more concentrated in the real-space and more spreader in k-space.  
+
+Another observation is that within $k_{c}$, expansion of \eef{eq:100908:F0N} is dominated by the terms that only have zero or one-term within $k_{c}$ because of \eef{eq:100908:sumkc}. (\emph{???})  Therefore, for Pauli exclusion impact of close-channel to open-channel, where $k$ is essentially cut off at $k_{c}$,  we can essentially consider an alternative vacuum 
+ \begin{equation}\label{eq:100908:vacuum2}
+\widetilde{\ket{F_{0}}}=\br{\sum_{k<k_{c}}{\alpha_{k}a^{\dg}_{\vk}c^{\dg}_{-\vk}}}\ket{0}	
+\end{equation}
+We drop the $\widetilde{ }$ afterward for simplification in notation.  
+
+\subsection{BCS within vaccum as \eef{eq:100908:vacuum2}}
+We adopted a slightly different scheme of renormalization for crossover problem.   Instead introduce $T$ matrix, or s-wave scattering length, we cut the momentum space at $k_{c}$.  The full two-channel hamiltonian is
+\begin{equation}\tag{\ref{eq:uvw:hamiltonian}}
+\begin{split}
+ H=&\sum_\vk\epsilon^a_\vk{}a^+_\vk{}a^{}_\vk+\sum_\vk\epsilon^b_\vk{}b^+_\vk{}b^{}_\vk+\sum_\vk\epsilon^c_\vk{}c^+_\vk{}c^{}_\vk\\
+  &+\nth{2}\sum_{\vk\vk'}U_{\vk\vk'}a^+_\vk{}b^+_{-\vk}{}b^{}_{-\vk'}a^{}_{\vk'}
+	+\nth{2}\sum_{\vk\vk'}V_{\vk\vk'}a^+_\vk{}c^+_{-\vk}{}c^{}_{-\vk'}a^{}_{\vk'}\\
+ &+\nth{2}\sum_{\vk\vk'}Y_{\vk\vk'}a^+_\vk{}b^+_{-\vk}{}c^{}_{-\vk'}a^{}_{\vk'}
+	+\nth{2}\sum_{\vk\vk'}Y^*_{\vk\vk'}a^+_{\vk'}{}c^+_{-\vk'}{}b^{}_{-\vk}a^{}_{\vk}
+\end{split} 
+\end{equation}
+Here we study the effect of Pauli exclusion from the close-channel to open-channel.  So we  neglect the inter-channel interaction as well as the close-channel part.  The simplified hamiltonian is 
+\begin{equation}\label{eq:20100908:hamiltonian}
+ H=\sum_\vk\epsilon^{ab}_\vk{}b^+_{-\vk}{}b^{}_{-\vk}+\nth{2}\sum_{\vk\vk'}U_{\vk\vk'}a^+_\vk{}b^+_{-\vk}{}b^{}_{-\vk'}a^{}_{\vk'}
+\end{equation}
+  The ansatz is 
+\begin{equation}
+\ket{\Psi}=\prod_{k}(u_{k}+v_{k}a^{\dg}_{k}b^{\dg}_{-k})\br{\sum_{p}{\alpha_{p}a^{\dg}_{\vp}c^{\dg}_{-\vp}}}\ket{0}\equiv\sum_{\vp}\alpha_{\vp}\ket{\Psi_{\vp}}
+\end{equation}
+and 
+\begin{equation}
+\ket{\Psi_{\vp}}=\prod_{k}(u_{k}+v_{k}a^{\dg}_{k}b^{\dg}_{-k})\br{a^{\dg}_{\vp}c^{\dg}_{-\vp}}\ket{0}
+=\prod_{\vk\neq{\vp}}(u_{\vk}+v_{\vk}a^{\dg}_{\vk}b^{\dg}_{-\vk})u_{\vp}a^{\dg}_{\vp}c^{\dg}_{-\vp}\ket{0}
+\end{equation}
+It is easy to derive the properties of $\ket{\Psi_{\vp}}$. 
+\begin{gather}
+\avt{\Psi_{\vp}}{\Psi_{\vp^{\prime}}}=\delta_{\vp\vp^{\prime}}\abs{u_{\vp}}^{2}\\
+\avs{\Psi_{\vp}}{\sum_{k}\epsilon^{ab}_{k}b^{\dg}_{-k}b^{}_{-k}}{\Psi_{\vp^{\prime}}}
+=\delta_{\vp\vp^{\prime}}\sum_{\vk\neq\vp}\abs{u_{\vp}}^{2}\epsilon^{ab}_{\vk}\abs{v_{\vk}}^{2}
+=\delta_{\vp\vp^{\prime}}\abs{u_{\vp}}^{2}(\sum_{\vk}\epsilon^{ab}_{\vk}\abs{v_{\vk}}^{2}-\epsilon^{ab}_{\vp}\abs{v_{\vp}}^{2})\\
+\begin{split}
+\avs{\Psi_{\vp}}{\sum_{\vk\vk'}U_{\vk\vk'}a^+_\vk{}b^+_{-\vk}{}b^{}_{-\vk'}a^{}_{\vk'}}{\Psi_{\vp^{\prime}}}
+=\delta_{\vp\vp^{\prime}}\abs{u_{\vp}}^{2}\sum_{\vk\neq\vp,\vk^{\prime}\neq\vp}U_{\vk\vk^{\prime}}F^{*}_{\vk}F_{\vk^{\prime}}\\
+=\delta_{\vp\vp^{\prime}}\abs{u_{\vp}}^{2}(\sum_{\vk\vk^{\prime}}
+	U_{\vk\vk^{\prime}}F^{*}_{\vk}F_{\vk^{\prime}}-\sum_{\vk}U_{\vk\vp}F^{*}_{\vk}F_{\vp}-\sum_{\vk}U_{\vp\vk}F^{*}_{\vp}F_{\vk}+U_{\vp\vp}F^{*}_{\vp}F_{\vp})
+\end{split}
+\end{gather}
+where $F_{\vk}=u_{\vk}v_{\vk}$. And for ansatz $\ket{\Psi}$
+\begin{gather}
+\avt{\Psi}{\Psi}=\sum\abs{u_{\vp}}^{2}\abs{\alpha_{\vp}}^{2}\equiv{C^{-1}}\label{eq:20100908:C}\\
+\avs{\Psi}{\sum_{k}\epsilon^{ab}_{k}b^{\dg}_{-k}b^{}_{-k}}{\Psi}
+=(\sum\abs{u_{\vp}}^{2}\abs{\alpha_{\vp}}^{2})(\sum_{\vk}\epsilon^{ab}_{\vk}\abs{v_{\vk}}^{2})
+	-\sum\abs{u_{\vp}}^{2}\abs{\alpha_{\vp}}^{2}\abs{v_{\vp}}^{2}\epsilon^{ab}_{\vp}\\
+	\begin{split}
+&\avs{\Psi}{\sum_{\vk\vk'}U_{\vk\vk'}a^+_\vk{}b^+_{-\vk}{}b^{}_{-\vk'}a^{}_{\vk'}}{\Psi}\\
+=&(\sum\abs{u_{\vp}}^{2}\abs{\alpha_{\vp}}^{2})(\sum_{\vk\vk^{\prime}}
+	U_{\vk\vk^{\prime}}F^{*}_{\vk}F_{\vk^{\prime}})-\sum_{\vp}\abs{u_{\vp}}^{2}\abs{\alpha_{\vp}}^{2}\mbr{\sum_{\vk}(U_{\vk\vp}F^{*}_{\vk}F_{\vp}+U_{\vp\vk}F^{*}_{\vp}F_{\vk})-U_{\vp\vp}F^{*}_{\vp}F_{\vp}}
+	\end{split}
+\end{gather}
+So the expection of free envery is (assuming $\epsilon_{k}$ is already reduced by chemical potential $\mu$)
+\begin{equation}
+\begin{split}
+F=&\frac{\avs{\Psi}{H-\mu{N}}{\Psi}}{\avt{\Psi}{\Psi}}\\
+ =&\sum_{\vk}\epsilon^{ab}_{\vk}\abs{v_{\vp}}^{2}(1-C\abs{u_{\vk}}^{2}\abs{\alpha_{\vk}}^{2})\\
+ &\,+\nth{2}\sum_{\vk\vk^{\prime}}	U_{\vk\vk^{\prime}}F^{*}_{\vk}F_{\vk^{\prime}}
+ 	(1-C\abs{u_{\vk}}^{2}\abs{\alpha_{\vk}}^{2}-C\abs{u_{\vk^{\prime}}}^{2}\abs{\alpha_{\vk^{\prime}}}^{2}
+		+C\delta_{\vk\vk^{\prime}}\abs{u_{\vk}}^{2}\abs{\alpha_{\vk}}^{2})
+ \end{split}
+\end{equation}
+where $C$ is defined in \eef{eq:20100908:C}.

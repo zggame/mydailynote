@@ -34,7 +34,8 @@
 \newcommand{\kp}{\ensuremath{\ket{\Psi}}}
 
 \newcommand{\av}[1]{\ensuremath{\bigl<{#1}\bigr>}}
-\newcommand{\avv}[2][\nu]{\av{#1{\lvert{#2}\rvert}#1}}
+\newcommand{\avs}[3] {\av{#1{\lvert{#2}\rvert}#3}}
+\newcommand{\avv}[2][\nu] {\avs{#1}{#2}{#1}}
 \newcommand{\avt}[2]{\av{{#1}|{#2}}}
 \newcommand{\avtu}[1]{\av{T_\tau#1}}
 

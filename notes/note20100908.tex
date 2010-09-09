@@ -1,11 +1,11 @@
-\subsection{Pauli Exclusion}
+\subsection{Pauli Exclusion\label{sec:20100908:idea}}
 The Pauli exclusion effects in the problem can be roughly separated into several.  
 
 First, the Pauli exclusion within the open channel.  This is taken care of fully by the BCS ansatz, where the fermion operator description include all the Pauli exclusion.  
 
 Second, the Pauli exclusion within the close channel.  This probably fits the description of normal coboson as the exciton \cite{CobosonPhysicsReports} because the close-channel bound state is much smaller than the average particle distance and therefore can be treated in perturbative way.  However, one remaining problem is whether the close-channel wave-function is modified due to many-body effects and how if it is.  A first-order guess is that the modification started at the low-k region within the order of Fermi momentum $k_{F}$.  
 
- Third and unique for the three-species problem is the Pauli exclusion between two channels.  This can works in either direction.  We can treat all three at the same time consistently as in sec. \ref{sec:variation}, however, the algebra becomes messy quickly and hard to get a clear solution from it.  The next best thing is to find out the effect one at a time, so a qualitative picture can be drawn from that.   A Born–Oppenheimer-like idea is to take it one-by-one.    A BCS-type ansatz is believed to be at least qualitatively valid for the open-channel. So we assume the existing of the close-channel  component and ask the question how BCS-ansatz in open-channel is affected by it.  So the question is \emph{how is BCS  (crossover) in  partially blocked Fermi Hilbert space}? 
+ Third and Fourth are unique for the three-species problem is the Pauli exclusion between two channels.  This can works in either direction.  So there are two sub-questions:  how the open channel BCS like state modified the close-channel relatively tight-bound state; how the close-channel bound state affects the formation of BCS ansatz in open-channel.  We can treat all three at the same time consistently as in sec. \ref{sec:variation}, however, the algebra becomes messy quickly and hard to get a clear solution from it.  The next best thing is to find out the effect one at a time, so a qualitative picture can be drawn from that.   A Born–Oppenheimer-like idea is to take them one-by-one.    A BCS-type ansatz is believed to be at least qualitatively valid for the open-channel. So we assume the existing of the close-channel  component and ask the question how BCS-ansatz in open-channel is affected by it.  So the question is \emph{what BCS  (crossover) is in  partially blocked Fermi Hilbert space}? 
  
  First thing to ask is what the partially blocked Hilbert space mean?  To be more specific, we use the following to define it.  Instead a normal vacuum with nothing, the new vacuum has close-channel bound state in it.  Furthermore, we assume a Gross-Pitaevskii like for it.  So 
  \begin{equation}\label{eq:100908:F0N}
@@ -23,7 +23,7 @@ Another observation is that within $k_{c}$, expansion of \eef{eq:100908:F0N} is 
 \end{equation}
 We drop the $\widetilde{ }$ afterward for simplification in notation.  
 
-\subsection{BCS within vaccum as \eef{eq:100908:vacuum2}}
+\subsection{BCS within vaccum as \eef{eq:100908:vacuum2}\label{sec:20100908:cal}}
 We adopted a slightly different scheme of renormalization for crossover problem.   Instead introduce $T$ matrix, or s-wave scattering length, we cut the momentum space at $k_{c}$.  The full two-channel hamiltonian is
 \begin{equation}\tag{\ref{eq:uvw:hamiltonian}}
 \begin{split}
@@ -76,10 +76,10 @@ So the expection of free envery is (assuming $\epsilon_{k}$ is already reduced b
 \begin{equation}
 \begin{split}
 F=&\frac{\avs{\Psi}{H-\mu{N}}{\Psi}}{\avt{\Psi}{\Psi}}\\
- =&\sum_{\vk}\epsilon^{ab}_{\vk}\abs{v_{\vp}}^{2}(1-C\abs{u_{\vk}}^{2}\abs{\alpha_{\vk}}^{2})\\
+ =&\sum_{\vk}\epsilon^{ab}_{\vk}\abs{v_{\vk}}^{2}(1-C\abs{u_{\vk}}^{2}\abs{\alpha_{\vk}}^{2})\\
  &\,+\nth{2}\sum_{\vk\vk^{\prime}}	U_{\vk\vk^{\prime}}F^{*}_{\vk}F_{\vk^{\prime}}
  	(1-C\abs{u_{\vk}}^{2}\abs{\alpha_{\vk}}^{2}-C\abs{u_{\vk^{\prime}}}^{2}\abs{\alpha_{\vk^{\prime}}}^{2}
 		+C\delta_{\vk\vk^{\prime}}\abs{u_{\vk}}^{2}\abs{\alpha_{\vk}}^{2})
  \end{split}
 \end{equation}
-where $C$ is defined in \eef{eq:20100908:C}.
+where $C$ is defined in \eef{eq:20100908:C}.  The correction term is tiny,  because physically, only one out of many many available k-state is blocked.  

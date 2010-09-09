@@ -1,0 +1,50 @@
+\subsection{}
+Some arguments in last section \ref{sec:20100908:idea} seems incorrect, at least the argument that in close-channel zero-blocked  or one-pair-blocked within $k_{c}$ dominated multi-pair-blocked situation for open-channel BCS ansatz seems incorrect.  Therefore the argument in the following section \ref{sec:20100908:cal} becomes more or less irrelevant.  Nevertheless, the observation that close-channel bound state is relatively small in real space and therefore much extended in k-space is still useful.  Looked back \eef{eq:uvw:F}, (ignored Hatree terms)
+\begin{equation}\tag{\ref{eq:uvw:F}}
+ \begin{split}
+  &F\equiv\av{H-\mu{}N}\\
+    =&\sum(\xi^{ab}_\vk)\abs{v_\vk}^2+\nth2\sum_{\vk\neq\vk'}U_{\vk\vk'}v^{}_{\vk'}u^*_{\vk'}u^{}_\vk{}v^*_\vk\\
+    &+\sum(\xi^{ac}_\vk)\abs{w_\vk}^2
+      +\nth2\sum_{\vk\neq\vk'}V_{\vk\vk'}w^{}_{\vk'}u^*_{\vk'}u^{}_\vk{}w^*_\vk\\
+    &  +\nth2\sum_{\vk\neq\vk'}Y_{\vk\vk'}w^{}_{\vk'}{u^{*}_{\vk'}}v^*_\vk{}u^{}_\vk
+        +\nth2\sum_{\vk\neq\vk'}Y^*_{\vk\vk'}w^*_{\vk}{u^{}_{\vk}}v^{}_{\vk'}{}u^{*}_{\vk'}
+ \end{split}
+\end{equation}
+It is useful to recognize that $w_{\vk}$ (or maybe $G_{\vk}=u_{\vk}w_{\vk}$) is always small. Changing  $w_{\vk}$ into $G_{\vk}$ in term $\sum(\xi^{ac}_\vk)\abs{w_\vk}^2$ introduces two problems:  First, the $w_{\vk}$ is finite, but it is small and error is probably small too;  second, within $k_{c}$, $v_{\vk}$ is substantial and therefore reduce the $u_{\vk}$ and makes $G_{\vk}$ much smaller than $w_{\vk}$, the error introduced here is probably also small because $w_{\vk}$ is small within $k_{c}$ and therefore the summation is small comparing to the term itself.  
+So we have the free energy as 
+\begin{equation}\label{eq:20100909:F}
+ \begin{split}
+    F=&\sum(\xi^{ab}_\vk)\abs{v_\vk}^2+\nth2\sum_{\vk\neq\vk'}U_{\vk\vk'}F^{}_{\vk'}F^*_\vk\\
+    &+\sum(\xi^{ac}_\vk)\abs{G_\vk}^2
+      +\nth2\sum_{\vk\neq\vk'}V_{\vk\vk'}G^{}_{\vk'}G^*_\vk\\
+    &  +\nth2\sum_{\vk\neq\vk'}Y_{\vk\vk'}G^{}_{\vk'}F^*_\vk{}
+        +\nth2\sum_{\vk\neq\vk'}Y^*_{\vk\vk'}G^*_{\vk}F^{}_{\vk'}
+ \end{split}
+\end{equation}
+Take $F_{\vk}$ and $G_{\vk}$ as variables, first we express $v_{\vk}$ in term of them.  We have  $\abs{u_\vk}^2+\abs{v_\vk}^2+\abs{w_\vk}^2=1$, here we replace  $w_{\vk}$  with  $G_{\vk}$  again.  We have 
+\[
+\begin{split}
+v_{\vk}^2=&\nth{2}(1-G_{\vk}^{2}+\sqrt{(1-G_{\vk}^{2})^{2}-4F_{\vk}^{2}})\qquad (\epsilon_{\vk}<\mu)\\
+	=&\nth{2}(1-G_{\vk}^{2}-\sqrt{(1-G_{\vk}^{2})^{2}-4F_{\vk}^{2}})\qquad (\epsilon_{\vk}\geq\mu)
+\end{split}
+\]
+In BEC side ($\mu<0$), only the second form exists. (This sign problem is not important anyway as we can freely add a overall phase to $F_{\vk}$ or $u,v$, as mostly we just deal with the square of these quantities. ).   Just put the second case into the free energy \eef{eq:20100909:F}, take derivative over $F_{\vk}$, (take it as real, not complex) we find 
+\begin{equation}\label{eq:20100909:fEq}
+\epsilon^{ab}_{\vk}(\frac{2F_{\vk}}{\sqrt{(1-G_{\vk}^{2})^{2}-4F_{\vk}^{2}}})+\sum_{\vk'}(U_{\vk\vk'}F_{\vk'}+Y_{\vk\vk'}G_{\vk'})=0
+\end{equation}
+Define the normal gap parameters 
+\begin{equation}\label{eq:20100909:gap}
+\Delta^{F}_{\vk}=-\sum_{\vk'}(U_{\vk\vk'}F_{\vk'}+Y_{\vk\vk'}G_{\vk'})
+\end{equation}
+And we find
+\begin{equation}
+F_{\vk}=\frac{(1-G_{\vk}^{2})\Delta^{F}_{\vk}}{2\sqrt{(\epsilon^{ab}_{\vk}-\mu)^{2}+\Delta^{F}_{\vk}{}^{2}}}
+\end{equation}
+For low-k ($k<k_{c}$), both $U_{\vk\vk'}$ and $Y_{\vk\vk'}$ varies slowly, so $\Delta^{F}_{\vk}$ varies slowly and we can drop subscript $\vk$ and treat it as constant.  \eef{eq:20100909:fEq} describe the many-body effects when comparing with the two-body Schr\"{o}dinger equation.  $(1-G^{2})$ gives the pauli exclusion from the close-channel, the square root takes into account the pauli exclusion within open-channel.  
+
+\eef{eq:20100909:gap} cannot be renormalized due to the extra factor $(1-G_{\vk}^{2})$.  A close look reveal that it does not reduce to normal \sch equation due to this extra factor.  This is puzzling.  It might be caused by replace $w_{\vk}$ with $G_{\vk}$.  Another possibility is that the coupled equation cannot be renormalized in this way, it has to be renormalized in the two-channel fashion, for the diagonalized  basis.  
+
+\subsection{Tony's comment}
+Tony takes \eef{eq:20100909:gap} as renormalized density of states.  From there, the two-body problem is also modified for this renormalized DoS. 
+
+He suggested me to take $u_{\vk}$ as single-channel result for $G_{\vk}$.   

@@ -55,11 +55,45 @@ He encourage me to think about whether close-channel is significantly modified w
 He also stress that I need to keep an eye on things thrown away in approximation,  whether they are in the order of kept terms.  
 
 \subsection{}
-The difference between $w_{\vk}$ and $G_{\vk}$ are introduced because of the grand-canonical nature of the ansatz?  In BCS side, this introduce really small error as $\Delta{N}$ can be shown are small.  Does that hold in BEC end?
+The difference between $w_{\vk}$ and $G_{\vk}$ are introduced because of the grand-canonical nature of the ansatz?  In BCS side, this introduce really small error as $\delta{N}$ can be shown are small.  Does that hold in BEC end?
 \begin{equation}
-\Delta{N}=\av{N-N^{2}}=\sum{\abs{v_{\vk}}^{2}-\abs{v_{\vk}}^{4}}=\sum{\abs{F_{\vk}}^{2}}
+\delta{N}^{2}=\av{N^{2}}-\bar{N}^{2}=\sum{\abs{v_{\vk}}^{2}-\abs{v_{\vk}}^{4}}=\sum{\abs{F_{\vk}}^{2}}
 	=\sum{\abs{\frac{\Delta}{2E}}^{2}}
 \end{equation}
 This is extremely small for the BCS-side, but not the case in BEC-end.  (\emph{Interesting problem!})
 
 One thing potentially useful is that to distinguish the region within $k_{c}$ and without where $G_{\vk}$ ($w_{\vk}$) is small comparing to open-channel or not.  
+
+\subsection{}
+Solve $u_{\vk}$, $v_{\vk}$, $w_{\vk}$ with $F_{\vk}$ and $G_{\vk}$ (treat everything as real)
+\begin{gather}
+u^{2}_{\vk}+v^{2}_{\vk}+w^{2}_{\vk}=1\\
+u_{\vk}v_{\vk}=F_{\vk}\\
+u_{\vk}w_{\vk}=G_{\vk}
+\end{gather}
+Take the root that $u_{\vk}$ goes in the same direction as $F_{\vk}$
+\begin{equation}
+\begin{split}
+u^{2}=&\frac{1}{2} \left(1+\sqrt{1-4 F^2-4 G^2}\right)\\
+v^{2}=&\frac{2 F^2}{1+\sqrt{1-4 F^2-4 G^2}}\\
+w^{2}=&\frac{2 G^2}{1+\sqrt{1-4 F^2-4 G^2}}
+\end{split}
+\end{equation}
+Derivatives over $F_{\vk}$ are
+\begin{equation}
+\begin{split}
+\pdiff{u^{2}}{F}=&-\frac{2 F}{\sqrt{1-4 F^2-4 G^2}}\\
+\pdiff{v^{2}}{F}=&\frac{2 F}{\sqrt{1-4 F^2-4 G^2}}-\frac{8 F G^2}{\sqrt{1-4 F^2-4 G^2} \left(1+\sqrt{1-4 F^2-4 G^2}\right)^2}\\
+\pdiff{w^{2}}{F}=&\frac{8 F G^2}{\sqrt{1-4 F^2-4 G^2} \left(1+\sqrt{1-4 F^2-4 G^2}\right)^2}
+=\frac{F G^2 \left(1-\sqrt{1-4 F^2-4 G^2}\right)^2}{2\sqrt{1-4 F^2-4 G^2} (F^2 + G^2)^2}
+\end{split}
+\end{equation}
+Similarly, the derivative over $G_{\vk}$ can be obtained by exchange $F_{\vk}$ ($v_{\vk}$) and $G_{\vk}$ ($w_{\vk}$).
+\begin{equation}
+\begin{split}
+\pdiff{u^{2}}{G}=&-\frac{2 G}{\sqrt{1-4 F^2-4 G^2}}\\
+\pdiff{w^{2}}{G}=&\frac{8 F ^{2}G}{\sqrt{1-4 F^2-4 G^2} \left(1+\sqrt{1-4 F^2-4 G^2}\right)^2}
+=\frac{F^{2}G \left(1-\sqrt{1-4 F^2-4 G^2}\right)^2}{2\sqrt{1-4 F^2-4 G^2} (F^2 + G^2)^2}\\
+\pdiff{v^{2}}{G}=&\frac{2 G}{\sqrt{1-4 F^2-4 G^2}}-\frac{8 F ^{2}G}{\sqrt{1-4 F^2-4 G^2} \left(1+\sqrt{1-4 F^2-4 G^2}\right)^2}
+\end{split}
+\end{equation}

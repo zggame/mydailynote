@@ -54,7 +54,7 @@ He encourage me to think about whether close-channel is significantly modified w
 
 He also stress that I need to keep an eye on things thrown away in approximation,  whether they are in the order of kept terms.  
 
-\subsection{}
+\subsection{\label{sec:20100915:deltaN}}\
 The difference between $w_{\vk}$ and $G_{\vk}$ are introduced because of the grand-canonical nature of the ansatz?  In BCS side, this introduce really small error as $\delta{N}$ can be shown are small.  Does that hold in BEC end?
 \begin{equation}
 \delta{N}^{2}=\av{N^{2}}-\bar{N}^{2}=\sum{\abs{v_{\vk}}^{2}-\abs{v_{\vk}}^{4}}=\sum{\abs{F_{\vk}}^{2}}
@@ -98,10 +98,12 @@ Similarly, the derivative over $G_{\vk}$ can be obtained by exchange $F_{\vk}$ (
 \end{split}
 \end{equation}
 The gap equations are 
-\begin{equation}\label{eq:20100909:fullgap}
-\begin{split}
-\frac{2F_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} \epsilon^{ab}_{\vk}+\frac{8 F_{\vk} G_{\vk}^2}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2} \left(1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)^2}\eta+U_{\vk\vk'}F_{\vk'}+Y_{\vk\vk'}G_{\vk'}&=0\\
-\frac{2G_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} \epsilon^{ac}_{\vk}-\frac{8 F_{\vk}^{2} G_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2} \left(1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)^2}\eta+V_{\vk\vk'}G_{\vk'}+Y_{\vk\vk'}F_{\vk'}&=0
-\end{split}
-\end{equation}
+\begin{subequations}\label{eq:20100909:fullgap}
+\begin{gather}
+\frac{2F_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} \epsilon^{ab}_{\vk}+\frac{8 F_{\vk} G_{\vk}^2}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2} \left(1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)^2}\eta+U_{\vk\vk'}F_{\vk'}+Y_{\vk\vk'}G_{\vk'}=0
+\label{eq:20100909:fullgapa}\\
+\frac{2G_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} \epsilon^{ac}_{\vk}-\frac{8 F_{\vk}^{2} G_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2} \left(1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)^2}\eta+V_{\vk\vk'}G_{\vk'}+Y_{\vk\vk'}F_{\vk'}=0
+\label{eq:20100909:fullgapb}
+\end{gather}
+\end{subequations}
 where $\eta=\epsilon^{ac}_{\vk}-\epsilon^{ab}_{\vk}$ is the bare Zeeman energy difference and is large than most energy scale, $E_{F}$.  It should be in the order of binding energy of the close-channel bound state.    

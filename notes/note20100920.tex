@@ -1,0 +1,32 @@
+\subsection{}
+The quasi-two-body problem of $\tilde{t_{0}}$ in \eef{eq:20100915:t0} becomes the central point of the problem. This is problem the lowest order correction factor $\sqrt{1-4 G_{\vk}^2}$ as the many-body correction  in \eef{eq:20100915:renormGap}  can be taken out and is probably small.      It is very useful to find the explicit relationship between the $t_{0}$ of normal DoS and $\tilde{t_{0}}$ of  reduced DoS.  It seems that the other way to describe the partially blocked state (sec. \ref{sec:20100908:idea}) is to have a reduced DoS.  
+
+Is this equivalent to the one I constructed before?
+
+In the momentum space representatives, what is narrow vs broad resonance?
+
+\subsection{Fano's approach}
+I read Fano's paper\cite{Fano} again.  He took the basis of the discrete close-channel and the open-channel scattering state (not free-k state).  He shows explicitly how the phase shift $\Delta(k)$ changes by $\pi/2$ not by sweeping through the shifting, but for different energy $k(E)$.  This is interesting and probably more convenient  to the narrow/broad resonance as it shows how much the scattering nature changes from attractive to repulsive over certain energy scale $F(E)$ in his notation, and the many-body state becomes problematic naturally if $F(E)$ smaller or comparable to fermi energy (narrow resonance).
+
+\subsection{Tony's comment}
+In two-body problem, $t_{0}$ is to integrate away the high-momentum part (comparing to $1/r_{0}$).  Also the Pauli exclusion should happens only in low-k region.  
+
+\subsection{One odd things for two-body Feshbach resonance formula}
+In \cite{Leggett},  one have (eq. 4.A.16)
+\begin{equation}\label{eq:20100920:leggett}
+a^{-1}_{s}-a^{-1}_{bg}=\frac{2m_{r}g^{2}/\hbar^{2}}{\tilde\delta}\int^{\infty}_{0}dr\int_{0}^{\infty}{dr'}\chi_{0}(r)K(r,r')\chi(r')\equiv{}\Gamma(\tilde\delta)/\tilde{\delta}a_{bg}
+\end{equation}
+and (eq. 4.A.18) if assume $\Gamma(\tilde\delta)$ is not singular at $\kappa=\Gamma(\kappa)$
+\begin{equation}\label{eq:20100920:messiah}
+a^{-1}_{s}-a^{-1}_{bg}=\kappa/\tilde{\delta}a_{bg}
+\end{equation}
+ This seems is at odd to \cite{Messiah}, (Eq. XIX.74 and XIX.9),
+\begin{equation}
+T_{a\rightarrow{b}}=T^{(1)}_{a\rightarrow{b}}+\avs{\chi_{b}^{(-)}}{W_{1}}{\psi_{a}^{(+)}}
+\end{equation}
+If we take $T=4\pi\hbar^{2}a/m$, we get the $a_{s}$ instead of $a_{s}^{-1}$ in the previous formula.  
+Both formulas are derived from the ``radial Wronskian'' (eq. XIX.9, XIX.12 and proof in \cite{Messiah}), which is independent of renormalization.  And indeed, they are different because they take different normalization;  formal take $\chi(r)=1-r/a_{s}$, while the latter takes the normal $r\Psi^{(+)}(\vk)=e^{i\vk\cdot\vr}+f^{(+)}(\Omega)\frac{e^{-ikr}}{r}$.  At $k\longrightarrow0$, $r\Psi^{(+)}\longrightarrow{r+f^{(+)}}$.  So these two formula are indeed equivalent, because 
+\[
+\avs{\chi_{b}^{(-)}}{W_{1}}{\psi_{a}^{(+)}}=a_{s}a_{bg}(\Gamma(\tilde\delta)/\tilde{\delta}a_{bg})
+\]
+Now the question is whether the assumption that $\Gamma(\tilde\delta)$ regular at $\kappa$ is correct, i.e. whether $\Gamma$ is a non-singular or $a_{s}\Gamma()$ is at $\kappa$. (Only one of them can be as $a_{s}\rightarrow\infty$ at $\tilde\delta=\kappa$)  It seems that $\Gamma$ is regular as $\xi(r)=1-r/a_{s}$ in \eef{eq:20100920:leggett} is regular while $\xi=a-r$ in \eef{eq:20100920:messiah} is singular.  

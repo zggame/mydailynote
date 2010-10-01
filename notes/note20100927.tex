@@ -9,7 +9,14 @@ Four species case can fall into narrow resonance in  the second sense.  \cite{Na
 \cite{GurarieNarrow} treats the problem in two-channel (molecule+fermi).  The criteria for narrowness is similar.  There are couple of points not clear to me.   
 \begin{itemize}
 \item Two channels are treated separately, more in He3-A fashion.  The ansatz I used is more in He3-B fashion where two channels are mixed at the very beginning.   According to \cite{He3B}, in He3 He3-B wave-function has lower energy.  What is the case here?
-\item The hamilton has no direct interaction in open-channel, which contributes little in resonance.  But it does play some role.  How does that work for my model?
+
+The very procedure to integrate the Fermionic degree of freedom first and look for stable point for bosonic degree of freedom.  How does that affect anything? 
+
+\item The hamilton has no direct interaction in open-channel, which contributes little in resonance.  But it does play some role.  How does that work for my model? 
+
+This smear the open-channel momentum distribution, and further introduce the close-channel component from the coupling before close-channel bound state is energetic favorable.  
+
+\item The claim that the small factor $\gamma=1/(r_{0}k_{F})$ is a little worrisome as a BCS state is non-analytic for any small factor, therefore, the expansion might not cover the BCS-type state, which we are seeking.  
 \end{itemize}
 They use path integral, which I do not quite understand.  But I feel I do need to crack it.  
 
@@ -23,3 +30,8 @@ As \cite{GurarieNarrow}, we can discuss the extreme narrow limit.  This limit me
 \end{gather}
 \end{subequations}
 The second equation is effectively decoupled from the first one and is identical to the isolated close-channel two-body \sch equation. 
+
+\subsection{}
+We can somehow estimated the \eef{eq:20100915:t0} correction on $\tilde{K}$.  We have 
+\[\sqrt{1-4G_{\vk}^{2}}=1-2G_{\vk}^{2}\]
+When close channel is significant $G_{\vk}\sim{n^{1/2}\phi_{0}}$, this is probably proportional to $n^{1/2}1/E_{0}$ where $E_{0}$ is the binding energy for close-channel bound state measured from continuum of close-channel.  The summation should be over $1/r_{c}$ where $r_{c}$ is the real potential size.  ????

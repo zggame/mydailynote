@@ -1,7 +1,7 @@
 \subsection{Single channel problem}
 From \eef{eq:20100909:fullgap}, the single-channel equation is 
 \begin{equation}
-\frac{2F_{\vk}}{\sqrt{1-4 F_{\vk}^2}} \epsilon^{ab}_{\vk}+U_{\vk\vk'}F_{\vk'}=0
+\frac{2F_{\vk}}{\sqrt{1-4 F_{\vk}^2}} \xi^{ab}_{\vk}+U_{\vk\vk'}F_{\vk'}=0
 \end{equation}
 The factor $\nth{\sqrt{1-4 F_{\vk}^2}}$ gives the many-body correction comparing to two-body \sch equation.  This factor is significant when $F_{\vk}$ is large.  In BCS, this is near Fermi surface;  in BEC, all $F_{\vk}$ is small, and therefore, the equation is closer to \sch  equation.  This is understandable because that there are much less overlapping for BEC, where molecule (overlapping) is small.  
 
@@ -15,48 +15,48 @@ In the first equation of \eef{eq:20100909:fullgap}, inter-channel interaction $Y
 Key seems still in the two-body problem in this exact same representation and then we can renormalize it.  This serves two purpose: renormalize the high-k divergence and provide the comparison of two-body quantity $a_{s}$.
 
 \subsection{}
-It is energetically very disadvantageous to diviate from the resonant bound state, furthermore, it is very small in k-space as the bound-state is relatively small.  Therefore, as the first order approximation, we drop the second term and the denominator in the first term of the second equation (close-channel) of \eef{eq:20100909:fullgap}\footnote{ This is certainly OK for he BEC end where $F_{k}\ll1$ all the time.  It is more subtle when $F_{k}$ is close to maximum $\nth2$, this happens around Fermi energy in BCS limit, but the approximation is still OK for other places. So at least for bulk of the region of $G_{\vk}$ satisfies \eef{eq:20100915:gapb}}.  In the first equation, we drop the factor $\left(1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)^2$ in the second term for easier calculation, (no strong reason yet), the second term is relatively minor comparing to the first. We write down the approximated equations
+It is energetically very disadvantageous to diviate from the resonant bound state, furthermore, it is very small in k-space as the bound-state is relatively small.  Therefore, as the first order approximation, we drop the second term and the denominator in the first term of the second equation (close-channel) of \eef{eq:20100909:fullgap}\footnote{ This is certainly OK for he BEC end where $F_{k}\ll1$ all the time.  It is less satisfactory, might be problematic,  when $F_{k}$ is close to maximum $\nth2$, this happens around Fermi energy in BCS limit, but the approximation is still OK for other places. So at least for bulk of the region of $G_{\vk}$ satisfies \eef{eq:20100915:gapb}}.  In the first equation, we drop the factor $\left(1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)^2$ in the second term for easier calculation, (no strong reason yet), the second term is relatively minor comparing to the first. We write down the approximated equations
 \begin{subequations}\label{eq:20100915:gap}
 \begin{gather}\label{eq:20100915:gapa}
-\frac{2F_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} (\epsilon^{ab}_{\vk}+  G_{\vk}^2\eta)+U_{\vk\vk'}F_{\vk'}+Y_{\vk\vk'}G_{\vk'}=0\\
+\frac{2F_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} (\xi^{ab}_{\vk}+  G_{\vk}^2\eta)+U_{\vk\vk'}F_{\vk'}+Y_{\vk\vk'}G_{\vk'}=0\\
 \label{eq:20100915:gapb}
-{2G_{\vk}}(\epsilon^{ab}_{\vk}+\eta)+V_{\vk\vk'}G_{\vk'}+Y_{\vk\vk'}F_{\vk'}=0
+{2G_{\vk}}(\xi^{ab}_{\vk}+\eta)+V_{\vk\vk'}G_{\vk'}+Y_{\vk\vk'}F_{\vk'}=0
 \end{gather}
 \end{subequations}
 If $G_{\vk}=\alpha\phi^{0}_{\vk}$ as $\phi_{\vk}^{0}$ is the solution for the isolated close-channel \sch.  
-\[
+\begin{equation}\label{eq:20100915:twobody}
 {2\phi^{0}_{\vk}}(\epsilon_{\vk})+V_{\vk\vk'}\phi^{0}_{\vk'}=-E^{0}\phi^{0}_{\vk'}
-\]
+\end{equation}
 \eef{eq:20100915:gapb} becomes
 \begin{equation}
-G_{\vk}=\frac{Y_{\vk\vk'}F_{\vk'}}{2(E^{0}-\eta)}
+G_{\vk}=\frac{Y_{\vk\vk'}F_{\vk'}}{2(E^{0}-\eta+\mu)}
 \end{equation}
 Plug this back into the last term of \eef{eq:20100915:gapa}, we have 
 \begin{equation}
-\frac{2F_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} (\epsilon^{ab}_{\vk}+  G_{\vk}^2\eta)+U_{\vk\vk'}F_{\vk'}+\frac{Y_{\vk\vk'}Y_{\vk'\vk''}}{2(E^{0}-\eta)}F_{\vk''}=0
+\frac{2F_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} (\xi^{ab}_{\vk}+  G_{\vk}^2\eta)+U_{\vk\vk'}F_{\vk'}+\frac{Y_{\vk\vk'}Y_{\vk'\vk''}}{2(E^{0}-\eta+\mu)}F_{\vk''}=0
 \end{equation}
 Now considering the last two terms has weak dependecy in low k, we can set 
 \begin{equation}\label{eq:20100915:gap1}
-\frac{2F_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} (\epsilon^{ab}_{\vk}+  G_{\vk}^2\eta)\equiv\Delta_{\vk}=-(U_{\vk\vk'}F_{\vk'}+\frac{Y_{\vk\vk'}Y_{\vk'\vk''}}{2(E^{0}-\eta)}F_{\vk''})
+\frac{2F_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} (\xi^{ab}_{\vk}+  G_{\vk}^2\eta)\equiv\Delta_{\vk}=-(U_{\vk\vk'}F_{\vk'}+\frac{Y_{\vk\vk'}Y_{\vk'\vk''}}{2(E^{0}-\eta+\mu)}F_{\vk''})
 \end{equation}
 We can express $F_{\vk}$ according to $\Delta_{\vk}$,  (ignore the higher order of $G_{\vk}$)
 \begin{equation}
-F_{\vk}=\frac{\Delta_{\vk}}2\sqrt{\frac{(1-4G_{\vk}^{2})}{(\epsilon_{\vk}^{2}+\Delta_{\vk}^{2}+2G_{\vk}^{2}\eta\epsilon_{\vk})}}
+F_{\vk}=\frac{\Delta_{\vk}}2\sqrt{\frac{(1-4G_{\vk}^{2})}{(\xi_{\vk}^{2}+\Delta_{\vk}^{2}+2G_{\vk}^{2}\eta\xi_{\vk})}}
 \end{equation}
 Put it back into the second half of gap equation (\ref{eq:20100915:gap1}), 
 \[
-\Delta_{\vk}=-\sum_{\vk'}\br{U_{\vk\vk'}+\frac{Y_{\vk\vk''}Y_{\vk''\vk'}}{2(E^{0}-\eta)}}\frac{\Delta_{\vk'}}2\sqrt{\frac{(1-4G_{\vk'}^{2})}{(\epsilon_{\vk'}^{2}+\Delta_{\vk'}^{2}+2G_{\vk'}^{2}\eta\epsilon_{\vk'})}}
+\Delta_{\vk}=-\sum_{\vk'}\br{U_{\vk\vk'}+\frac{Y_{\vk\vk''}Y_{\vk''\vk'}}{2(E^{0}-\eta+\mu)}}\frac{\Delta_{\vk'}}2\sqrt{\frac{(1-4G_{\vk'}^{2})}{(\xi_{\vk'}^{2}+\Delta_{\vk'}^{2}+2G_{\vk'}^{2}\eta\xi_{\vk'})}}
 \]
 At low k, $\Delta_{\vk}$ has weak dependency on k and we can take $\Delta_{\vk'}$ out of the summation,  then go through the same procedure as in \cite{Leggett,Fetter} to renormalize the equation
 \begin{equation}\label{eq:20100915:renormGap}
 \nth{\tilde{t_{0}}}=-\sum_{\vk'}\sqrt{(1-4G_{\vk'}^{2})}
-\br{\nth{\epsilon_{\vk'}}-\nth{\sqrt{(\epsilon_{\vk'}^{2}+\Delta^{2}+2G_{\vk'}^{2}\eta\epsilon_{\vk'})}}}
+\br{\nth{\epsilon_{\vk'}}-\nth{\sqrt{(\xi_{\vk'}^{2}+\Delta^{2}+2G_{\vk'}^{2}\eta\xi_{\vk'})}}}
 \end{equation}
 Noted that $t_{0}$ is the zero-energy scattering amplitude for a reduced density of energy by factor $\sqrt{(1-4G_{\vk'}^{2})}$.  
 \begin{gather}
 \tilde{t_{0}}=\br{1-\tilde{U}\tilde{ K}}^{-1}\tilde{U}\label{eq:20100915:t0}\\
-\tilde{U}_{\vk\vk'}=\nth{2} \br{U_{\vk\vk'}+\frac{Y_{\vk\vk''}Y_{\vk''\vk'}}{2(E^{0}-\eta)}}\label{eq:20100915:tu}\\
-\tilde{K}=\frac{\sqrt{1-4G_{\vk}^{2}}}{\epsilon_{\vk}}\delta_{\vk\vk'}
+\tilde{U}_{\vk\vk'}=\nth{2} \br{U_{\vk\vk'}+\frac{Y_{\vk\vk''}Y_{\vk''\vk'}}{2(E^{0}-\eta+\mu)}}\label{eq:20100915:tu}\\
+\tilde{K}=\frac{\sqrt{1-4G_{\vk}^{2}}}{\epsilon_{\vk}}\delta_{\vk\vk'}\label{eq:20100915:tk}
 \end{gather}
 This is a little odd as the two-body quantity $t_{0}$ is affected by the many-body quantity $G_{\vk}$.  Nevertheless, it seems OK to simply use the two-body close-channel bound-state wave function as $G_{\vk}$ for the lowest order approximation.   Of course, in higher order, especially, the BCS case, the open-channel is significantly different from the two-body solution and therefore the weight is significantly different, from \eef{eq:20100915:gapb}, this affect the weight of close-channel $G_{\vk}$.  Unlike the many-body equation \eef{eq:20100915:renormGap}, where only low-k is interesting and therefore $G_{\vk}$ can be regarded as constant and small, the summation should go all the way to high-k.  As \eef{eq:20100915:tu}, $\tilde{U}$ is the unmodified, the resonance position is probably not modified, but the width of resonance is changed.  
 

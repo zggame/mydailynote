@@ -1,2 +1,12 @@
 \subsection{}
 \index{Feshbach Resonance!Narrow}
+One key ideas to hide all detail in high-energy (not clear yet) into some constant by renormalization.  All coupling are short-range (within potential range $r_{c}$), and we should hide it.  On the other hand, the detuning $\delta=E^{0}-\eta$ is not necessarily in this high-energy region for narrow resonance as it might smaller than Fermi energy.  In \eef{eq:20100915:tu}, detuning $\delta=E^{0}-\eta$ can get so large in part of fermi sea that $\tilde{U}$ becomes small.  We need to figure out a way to renormalize out the k-denpendence in $U_{\vk\vk'}$ and $Y_{\vk\vk'}$ but keep detuning around.  
+
+\eef{eq:20100915:gap} is very similar to two-body \sch equation in zero energy.  However, the narrow resonance is probably more relevant with two-body \sch equation in finite energy.  How to bring it in?
+
+\subsection{Chemical potential}
+\emph{Chemical potential is determined in different ways between narrow or broad resonance.  }In broad case, it is determined mostly by open-channel \eef{eq:20100915:gapa}; in narrow case, chemical potential is determined by close-channel, where the close-channel bound-state level sits relative to Fermi sea.  In the extreme narrow case (without open-channel interaction as \cite{GurarieNarrow}), the level is exactly where chemical potential sits, cutting Fermi sea, depleting everything above in open-channel and putting them into close-channel.   
+
+By correcting all equations in previous few sections and put the chemical potential $\mu$ in the proper position, we can see the narrow/broad resonance even in the four species case.  In Eq. (\ref{eq:20100915:t0}-\ref{eq:20100915:tk}), there are two many-body effects: $\sqrt{1-4G_{\vk}^{2}}$ from three-species Pauli exclusion; chemical potential in detuning term $E^{0}-\eta+\mu$, which is common in either three or four-species case.  And the later reduces to $\mu=0$ \footnote{In BEC side, $\mu<0$ and is controlled by mostly two-body attraction.  But that is not proper for real two-body limit, which should be $mu=0$.}in zero-density which is two-body case. 
+
+Imaging we start fairly far away from resonance (BCS side, $\delta=\eta-E^{0}>0$), and increase the density, in the beginning, $\mu$ is negligible, and inter-channel coupling term $\frac{Y_{\vk\vk''}Y_{\vk''\vk'}}{2(E^{0}-\eta+\mu)} $ is small; as $\mu$  increases, $-\delta+\mu$ gets closer and closer to zero, and this terms increases until the part of the Fermi sea gets into resonance.  

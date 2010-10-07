@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{graphicx}% Include figure files
+\usepackage{epstopdf}
+\usepackage{subfig}
+
+%\usepackage{setspace}\doublespace
+\author{Guojun Zhu}
+\title{Narrow Feshbach Resonance}
+\input{newCommand}
+\renewcommand{\emph}[1]{\textbf{#1}}
+\begin{document}
+\maketitle
+
+%\tableofcontents
+\numberwithin{equation}{section}
+\section{}
+ The full two-channel hamiltonian is
+\begin{equation}\label{eq:uvw:hamiltonian}
+\begin{split}
+ H=&\sum_\vk\epsilon^a_\vk{}a^+_\vk{}a^{}_\vk+\sum_\vk\epsilon^b_\vk{}b^+_\vk{}b^{}_\vk+\sum_\vk\epsilon^c_\vk{}c^+_\vk{}c^{}_\vk\\
+  &+\nth{2}\sum_{\vk\vk'}U_{\vk\vk'}a^+_\vk{}b^+_{-\vk}{}b^{}_{-\vk'}a^{}_{\vk'}
+	+\nth{2}\sum_{\vk\vk'}V_{\vk\vk'}a^+_\vk{}c^+_{-\vk}{}c^{}_{-\vk'}a^{}_{\vk'}\\
+ &+\nth{2}\sum_{\vk\vk'}Y_{\vk\vk'}a^+_\vk{}b^+_{-\vk}{}c^{}_{-\vk'}a^{}_{\vk'}
+	+\nth{2}\sum_{\vk\vk'}Y^*_{\vk\vk'}a^+_{\vk'}{}c^+_{-\vk'}{}b^{}_{-\vk}a^{}_{\vk}
+\end{split} 
+\end{equation}
+ We start from the ansatz as 
+\begin{equation}\label{eq:ansatz}
+ \ket{\Psi}=\prod_\vk\br{u_\vk+v_\vk{}a^\dg_\vk{}b^\dg_{-\vk}+w_\vk{}a^\dg_\vk{}c^\dg_{-\vk}}\ket{0}
+\end{equation}
+The free energy is 
+\begin{equation}\label{eq:uvw:F}
+ \begin{split}
+  &F\equiv\av{H-\mu{}N}\\
+    =&\sum(\xi^{ab}_\vk)\abs{v_\vk}^2+\nth2\sum_{\vk\neq\vk'}U_{\vk\vk'}v^{}_{\vk'}u^*_{\vk'}u^{}_\vk{}v^*_\vk\\
+    &+\sum(\xi^{ac}_\vk)\abs{w_\vk}^2
+      +\nth2\sum_{\vk\neq\vk'}V_{\vk\vk'}w^{}_{\vk'}u^*_{\vk'}u^{}_\vk{}w^*_\vk\\
+    &  +\nth2\sum_{\vk\neq\vk'}Y_{\vk\vk'}w^{}_{\vk'}{u^{*}_{\vk'}}v^*_\vk{}u^{}_\vk
+        +\nth2\sum_{\vk\neq\vk'}Y^*_{\vk\vk'}w^*_{\vk}{u^{}_{\vk}}v^{}_{\vk'}{}u^{*}_{\vk'}
+ \end{split}
+\end{equation}
+Where 
+\begin{equation*}
+ \xi^{ab}_\vk=\epsilon^a_\vk+\epsilon^b_\vk-2\mu,\qquad
+  \xi^{ac}_\vk=\epsilon^a_\vk+\epsilon^c_\vk-2\mu
+ \end{equation*}
+%\section{}
+%\input{twoBodyDensityMatrixRichardson}
+%\input{VariationUVW}
+%\section{note of 2009.12.07}
+%\input{note20091207}
+\input{note20100909}
+\input{note20100915}
+\input{note20100927}
+
+
+\bibliography{citation}
+\bibliographystyle{amsplain}
+
+
+\end{document}

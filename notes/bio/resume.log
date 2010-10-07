@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.8.2)  30 SEP 2010 14:20
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.8.2)  6 OCT 2010 20:45
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -68,6 +68,10 @@ Package: `setspace' 6.7 <2000/12/01>
 ) (/usr/local/texlive/2009/texmf-dist/tex/latex/mdwtools/mdwlist.sty
 Package: mdwlist 1996/05/02 1.1 Various list-related things
 )
+
+LaTeX Warning: Unused global option(s):
+    [9.5pt].
+
 (./resume.aux)
 \openout1 = `resume.aux'.
 
@@ -91,15 +95,15 @@ LaTeX Font Info:    ... okay on input line 26.
 * paper: 614.295pt, 794.96999pt (class default)
 * layout: 614.295pt, 794.96999pt
 * switch(es): 
-* h-part:(L,W,R)=(21.68121pt, 570.93257pt, 21.68121pt)
-* v-part:(T,H,B)=(7.22743pt, 773.28879pt, 14.45377pt)
+* h-part:(L,W,R)=(28.90755pt, 563.70624pt, 21.68121pt)
+* v-part:(T,H,B)=(28.90755pt, 744.38123pt, 21.68121pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=570.93257pt
+* \textwidth=563.70624pt
 * \textheight=737.15378pt
-* \oddsidemargin=-50.58878pt
-* \evensidemargin=-50.58878pt
-* \topmargin=-102.04256pt
+* \oddsidemargin=-43.36244pt
+* \evensidemargin=-43.36244pt
+* \topmargin=-80.36244pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \footskip=30.0pt
@@ -125,10 +129,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/usr/local/texlive/2009/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./resume.aux) ) 
 Here is how much of TeX's memory you used:
- 771 strings out of 493773
- 10637 string characters out of 3145347
- 70111 words of memory out of 3000000
- 4117 multiletter control sequences out of 15000+200000
+ 772 strings out of 493773
+ 10646 string characters out of 3145347
+ 70118 words of memory out of 3000000
+ 4118 multiletter control sequences out of 15000+200000
  5206 words of font info for 19 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  23i,4n,19p,237b,146s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -139,7 +143,7 @@ m/cmr10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr7.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 10.pfb>
-Output written on resume.pdf (1 page, 86935 bytes).
+Output written on resume.pdf (1 page, 86865 bytes).
 PDF statistics:
  30 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

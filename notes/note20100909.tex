@@ -60,23 +60,25 @@ The difference between $w_{\vk}$ and $G_{\vk}$ are introduced because of the gra
 \delta{N}^{2}=\av{N^{2}}-\bar{N}^{2}=\sum{\abs{v_{\vk}}^{2}-\abs{v_{\vk}}^{4}}=\sum{\abs{F_{\vk}}^{2}}
 	=\sum{\abs{\frac{\Delta}{2E}}^{2}}
 \end{equation}
-This is extremely small for the BCS-side, but not the case in BEC-end.  (\emph{Interesting problem!})
+This is extremely small for the BCS-side, but not the case in BEC-end.  (\emph{Interesting problem!})  \footnote{See Tony's comment on Sec. \ref{sec:20100915:tony}.}
 
-One thing potentially useful is that to distinguish the region within $k_{c}$ and without where $G_{\vk}$ ($w_{\vk}$) is small comparing to open-channel or not.  
 
-\subsection{Excact Gap Equations in Variation Method}
+One thing potentially useful is that to distinguish the region within $k_{c}$ and without where $G_{\vk}$ ($w_{\vk}$) is small comparing to open-channel or not.
+\subsection{Exact Gap Equations in Variation Method}
 Solve $u_{\vk}$, $v_{\vk}$, $w_{\vk}$ with $F_{\vk}$ and $G_{\vk}$ (treat everything as real)
 \begin{gather}
 u_{\vk}^2+v^{2}_{\vk}+w^{2}_{\vk}=1\\
 u_{\vk}v_{\vk}=F_{\vk}\\
 u_{\vk}w_{\vk}=G_{\vk}
 \end{gather}
-Take the root that $u_{\vk}$ goes in the same direction as $F_{\vk}$  (\emph{this is true for the whole region of BEC case, or $k>\mu$ in BCS case}, )
+Take the root that $u_{\vk}$ goes in the same direction as $F_{\vk}$ \footnote{\label{foot:20100909:sgn} This is true for the whole region of BEC case, or for $k$ is large in BCS case, $\sgn_{k}=1$. In BCS case, when $k$ is small, $\sgn_{k}=-1$.  In single-channel case $\sgn_{k}=\sgn(\epsilon_{k}-\mu)$, however, in two-channel, this is more delicate.  This is very important in \eef {eq:20100909:number}}
 \begin{equation}
 \begin{split}
-u_{\vk}^2=&\frac{1}{2} \left(1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)\\
-v^{2}_{\vk}=&\frac{2 F_{\vk}^2}{1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}}\\
-w^{2}_{\vk}=&\frac{2 G_{\vk}^2}{1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}}
+u_{\vk}^2=&\frac{1}{2} \left(1+\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)\\
+v^{2}_{\vk}=&\frac{2 F_{\vk}^2}{1+\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}}
+=\frac{ F_{\vk}^2}{2( F_{\vk}^2+ G_{\vk}^2)} \left(1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)\\\
+w^{2}_{\vk}=&\frac{2 G_{\vk}^2}{1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}}
+=\frac{G_{\vk}^2}{2( F_{\vk}^2+ G_{\vk}^2)} \left(1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)
 \end{split}
 \end{equation}
 Derivatives over $F_{\vk}$ are
@@ -106,4 +108,9 @@ The gap equations are
 \label{eq:20100909:fullgapb}
 \end{gather}
 \end{subequations}
-where $\eta=\epsilon^{ac}_{\vk}-\epsilon^{ab}_{\vk}$ is the bare Zeeman energy difference and is large than most energy scale, $E_{F}$.  It should be in the order of binding energy of the close-channel bound state.    
+where $\eta=\epsilon^{ac}_{\vk}-\epsilon^{ab}_{\vk}$ is the bare Zeeman energy difference and is large than most energy scale, $E_{F}$.  It should be in the order of binding energy of the close-channel bound state.   
+
+The number equation is (see footnote (\ref{foot:20100909:sgn}) for $\sgn_{k}$)
+\begin{equation}\label{eq:20100909:number}
+N=\sum_{\vk}(v_{\vk}^{2}+w_{\vk}^{2})=\sum_{\vk}\frac{1}{2} \left(1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)
+\end{equation} 

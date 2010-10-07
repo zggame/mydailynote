@@ -25,7 +25,7 @@ It is energetically very disadvantageous to diviate from the resonant bound stat
 \end{subequations}
 If $G_{\vk}=\alpha\phi^{0}_{\vk}$ as $\phi_{\vk}^{0}$ is the solution for the isolated close-channel \sch.  
 \begin{equation}\label{eq:20100915:twobody}
-{2\phi^{0}_{\vk}}(\epsilon_{\vk})+V_{\vk\vk'}\phi^{0}_{\vk'}=-E^{0}\phi^{0}_{\vk'}
+{2\phi^{0}_{\vk}}(\epsilon_{\vk})+V_{\vk\vk'}\phi^{0}_{\vk'}=-2E^{0}\phi^{0}_{\vk'}
 \end{equation}
 \eef{eq:20100915:gapb} becomes
 \begin{equation}
@@ -37,20 +37,20 @@ Plug this back into the last term of \eef{eq:20100915:gapa}, we have
 \end{equation}
 Now considering the last two terms has weak dependecy in low k, we can set 
 \begin{equation}\label{eq:20100915:gap1}
-\frac{2F_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} (\xi^{ab}_{\vk}+  G_{\vk}^2\eta)\equiv\Delta_{\vk}=-(U_{\vk\vk'}F_{\vk'}+\frac{Y_{\vk\vk'}Y_{\vk'\vk''}}{2(E^{0}-\eta+\mu)}F_{\vk''})
+\frac{2F_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} \xi^{ab}_{\vk}+  G_{\vk}^2\eta)\equiv\Delta_{\vk}=-(U_{\vk\vk'}F_{\vk'}+\frac{Y_{\vk\vk'}Y_{\vk'\vk''}}{2(E^{0}-\eta+\mu)}F_{\vk''}
 \end{equation}
 We can express $F_{\vk}$ according to $\Delta_{\vk}$,  (ignore the higher order of $G_{\vk}$)
 \begin{equation}
-F_{\vk}=\frac{\Delta_{\vk}}2\sqrt{\frac{(1-4G_{\vk}^{2})}{(\xi_{\vk}^{2}+\Delta_{\vk}^{2}+2G_{\vk}^{2}\eta\xi_{\vk})}}
+F_{\vk}=\frac{\Delta_{\vk}}2\sqrt{\frac{(1-4G_{\vk}^{2})}{(\xi^{ab}_{\vk}+  G_{\vk}^2\eta)^{2}+\Delta_{\vk}^{2}}}
 \end{equation}
 Put it back into the second half of gap equation (\ref{eq:20100915:gap1}), 
 \begin{equation}\label{eq:20100915:onechannel}
-\Delta_{\vk}=-\sum_{\vk'}\br{U_{\vk\vk'}+\frac{Y_{\vk\vk''}Y_{\vk''\vk'}}{2(E^{0}-\eta+\mu)}}\frac{\Delta_{\vk'}}2\sqrt{\frac{(1-4G_{\vk'}^{2})}{(\xi_{\vk'}^{2}+\Delta_{\vk'}^{2}+2G_{\vk'}^{2}\eta\xi_{\vk'})}}
+\Delta_{\vk}=-\sum_{\vk'}\br{U_{\vk\vk'}+\frac{Y_{\vk\vk''}Y_{\vk''\vk'}}{2(E^{0}-\eta+\mu)}}\frac{\Delta_{\vk}}2\sqrt{\frac{(1-4G_{\vk}^{2})}{(\xi^{ab}_{\vk}+  G_{\vk}^2\eta)^{2}+\Delta_{\vk}^{2}}}
 \end{equation}
 At low k, $\Delta_{\vk}$ has weak dependency on k and we can take $\Delta_{\vk'}$ out of the summation,  then go through the same procedure as in \cite{Leggett,Fetter} to renormalize the equation
 \begin{equation}\label{eq:20100915:renormGap}
-\nth{\tilde{t_{0}}(\mu)}=-\sum_{\vk'}\sqrt{(1-4G_{\vk'}^{2})}
-\br{\nth{\epsilon_{\vk'}}-\nth{\sqrt{(\xi_{\vk'}^{2}+\Delta^{2}+2G_{\vk'}^{2}\eta\xi_{\vk'})}}}
+\nth{\tilde{t_{0}}(\mu)}=\sum_{\vk'}\sqrt{(1-4G_{\vk'}^{2})}
+\br{\nth{\epsilon_{\vk'}}-\nth{\sqrt{{(\xi^{ab}_{\vk}+  G_{\vk}^2\eta)^{2}+\Delta_{\vk}^{2}}}}}
 \end{equation}
 Noted that $\tilde{t_{0}}(\mu)$ is the zero-energy scattering amplitude for a reduced density of energy by factor $\sqrt{(1-4G_{\vk'}^{2})}$.  
 \begin{gather}
@@ -62,7 +62,8 @@ This is a little odd as the two-body quantity $t_{0}$ is affected by the many-bo
 
 
 
-\subsection{Tony's comment}
+\subsection{Tony's comment\label{sec:20100915:tony}}
 Tony suggested that in \eef{eq:20100915:renormGap} we only need to care about the $G_{\vk'}$ where the difference in summation is substantial.  
 
 He mentioned that in normal BEC, below $T_{C}$ the fluctuation of paritcle is very large for gand cannonical emsemble.  That might have to do with the problem in Sec \ref{sec:20100915:deltaN}.
+Hementioned a paper \cite{Politzer} about it.  In atomic BEC, fluctuation is large for grand-canonical ensemble.  

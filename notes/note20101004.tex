@@ -10,3 +10,47 @@ One key ideas to hide all detail in high-energy (not clear yet) into some consta
 By correcting all equations in previous few sections and put the chemical potential $\mu$ in the proper position, we can see the narrow/broad resonance even in the four species case.  In Eq. (\ref{eq:20100915:t0}-\ref{eq:20100915:tk}), there are two many-body effects: $\sqrt{1-4G_{\vk}^{2}}$ from three-species Pauli exclusion; chemical potential in detuning term $E^{0}-\eta+\mu$, which is common in either three or four-species case.  And the later reduces to $\mu=0$ \footnote{In BEC side, $\mu<0$ and is controlled by mostly two-body attraction.  But that is not proper for real two-body limit, which should be $mu=0$.}in zero-density which is two-body case. 
 
 Imaging we start fairly far away from resonance (BCS side, $\delta=\eta-E^{0}>0$), and increase the density, in the beginning, $\mu$ is negligible, and inter-channel coupling term $\frac{Y_{\vk\vk''}Y_{\vk''\vk'}}{2(E^{0}-\eta+\mu)} $ is small; as $\mu$  increases, $-\delta+\mu$ gets closer and closer to zero, and this terms increases until the part of the Fermi sea gets into resonance.  
+
+\subsection{Renormalization of gap equation}
+There are more than one options to renormalize gap equation \eef{eq:20100915:onechannel}.  The part that needs to be renormalized out is  high energy summation of $\sqrt{\frac{(1-4G_{\vk'}^{2})}{(\xi_{\vk'}^{2}+\Delta_{\vk'}^{2}+2G_{\vk'}^{2}\eta\xi_{\vk'})}}$, it approaches $\nth{\epsilon_{\vk}}$ in high energy.  Several sightly different physical quantities have the summation of the same high energy limit.  
+\begin{enumerate}
+\item The process used in Eq. (\ref{eq:20100915:t0}-\ref{eq:20100915:tk}).  This leads to the zero energy T-matrix of reduced DoS $\sqrt{(1-4G_{\vk'}^{2})}$, with chemical potential in the detuning.  
+\begin{equation}\tag{\ref{eq:20100915:renormGap}}
+\nth{\tilde{t_{0}}(\mu)}=-\sum_{\vk'}\sqrt{(1-4G_{\vk'}^{2})}
+\br{\nth{\epsilon_{\vk'}}-\nth{\sqrt{(\xi_{\vk'}^{2}+\Delta^{2}+2G_{\vk'}^{2}\eta\xi_{\vk'})}}}
+\end{equation}
+\begin{gather}
+\tilde{t_{0}}(\mu)=\br{1-\tilde{U}\tilde{ K}}^{-1}\tilde{U}\tag{\ref{eq:20100915:t0}}\\
+\tilde{U}_{\vk\vk'}=\nth{2} \br{U_{\vk\vk'}+\frac{Y_{\vk\vk''}Y_{\vk''\vk'}}{2(E^{0}-\eta+\mu)}}\tag{\ref{eq:20100915:tu}}\\
+\tilde{K}=\frac{\sqrt{1-4G_{\vk}^{2}}}{\epsilon_{\vk}}\delta_{\vk\vk'}\tag{\ref{eq:20100915:tk}}
+\end{gather}
+\item We can also notice that $G_{\vk}\rightarrow0$ at high energy.  So we can simply takes the normal zero-energy T-matrix with detuning related to chemical potential.  
+\begin{equation}\label{eq:20101004:renormGap1}
+\nth{{t_{0}}(\mu)}=-\sum_{\vk'}
+\br{\nth{\epsilon_{\vk'}}-\frac{\sqrt{(1-4G_{\vk'}^{2})}}{\sqrt{(\xi_{\vk'}^{2}+\Delta^{2}+2G_{\vk'}^{2}\eta\xi_{\vk'})}}}
+\end{equation} 
+\begin{gather}
+{t_{0}}(\mu)=\br{1-\tilde{U}\tilde{ K}}^{-1}\tilde{U}\label{eq:20101004:t01}\\
+\tilde{U}_{\vk\vk'}=\nth{2} \br{U_{\vk\vk'}+\frac{Y_{\vk\vk''}Y_{\vk''\vk'}}{2(E^{0}-\eta+\mu)}}\label{eq:20101004:tu1}\\
+{K}=\nth{\epsilon_{\vk}}\delta_{\vk\vk'}\label{eq:20101004:tk1}
+\end{gather}
+\item  Alternatively, we notice that $\xi_{\vk}=\epsilon_{\vk}-\mu$, high energy limit can also be written as 
+$\nth{\epsilon_{\vk}-\mu}$.  This leads to the T-matrix at energy $\mu$, the same detuning as before.  
+\begin{equation}\label{eq:20101004:renormGap2}
+\nth{{t_{\mu}}(\mu)}=-\sum_{\vk'}
+\br{\nth{\epsilon_{\vk'}-\mu}-\frac{\sqrt{(1-4G_{\vk'}^{2})}}{\sqrt{(\xi_{\vk'}^{2}+\Delta^{2}+2G_{\vk'}^{2}\eta\xi_{\vk'})}}}
+\end{equation} 
+\begin{gather}
+{t_{0}}(\mu)=\br{1-\tilde{U}\tilde{ K}}^{-1}\tilde{U}\label{eq:20101004:t02}\\
+\tilde{U}_{\vk\vk'}=\nth{2} \br{U_{\vk\vk'}+\frac{Y_{\vk\vk''}Y_{\vk''\vk'}}{2(E^{0}-\eta+\mu)}}\label{eq:20101004:tu2}\\
+{K}=\nth{\epsilon_{\vk}-\mu}\delta_{\vk\vk'}\label{eq:20101004:tk2}
+\end{gather}
+The advantage of this is that introduce the effective range $r_{0}$ for finite energy T-matrix. 
+\end{enumerate}
+
+\subsection{}
+It seems that numerous Gap equations above has the Pauli-exclusion factor $\sqrt{(1-4G_{\vk'}^{2})}$.  Generally, 
+\begin{equation}
+G_{k=0}^{2}\sim{\frac{N_{close}}{N_{0}}\frac{r_{close}^{3}}{a_{0}^{3}}}
+\end{equation}
+where $r_{close}$ is close-channel molecule size, $N_{0}$ is the total number of fermions, $N_{close}$ is the number in close-channel, $a_{0}$ is the average particle distance.  This quantity is related the detail of close-channel bound-state.  We should relate it to some experimental available quantities.  

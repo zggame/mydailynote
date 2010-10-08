@@ -79,3 +79,26 @@ For number equation \eef{eq:20100909:number}, more approximation can be made in 
 N_{open}=\sum_{\vk}{}^{'}\frac{1}{2} \left(1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)-G_{\vk}^{2}
 \end{equation} 
 Here the summation only goes up to the order of $E_{F}$
+
+\subsection{summary}
+Now all summation goes in order of Fermi energy $E_F$, so we can replace close-channel component $G_k$ with $G_0=G_{k=0}$
+\begin{equation}
+F_{\vk}=\frac{\Delta_{\vk}}2\sqrt{\frac{(1-4G_{0}^{2})}{(\epsilon^{ab}_{\vk}-2\mu+  G_{0}^2\eta)^{2}+\Delta_{\vk}^{2}}}
+\end{equation}
+Gap equation 
+\begin{equation}
+\nth{{t_{0}}(\mu)}=\sum_{\vk}
+\br{\nth{\epsilon_{\vk}}-\frac{\sqrt{(1-4G_{0}^{2})}}{\sqrt{{(\epsilon^{ab}_{\vk}-2\mu+  G_{0}^2\eta)^{2}+\Delta_{\vk}^{2}}}}}
+\end{equation} 
+\begin{gather}
+{t_{0}}(\mu)=\br{1-\tilde{U}\tilde{ K}}^{-1}\tilde{U}\label{eq:20101004:t011}\\
+\tilde{U}_{\vk\vk'}=\nth{2} \br{U_{\vk\vk'}+\frac{Y_{\vk\vk''}Y_{\vk''\vk'}}{2(E^{0}-\eta+\mu)}}\label{eq:20101004:tu11}\\
+{K}=\nth{\epsilon_{\vk}}\delta_{\vk\vk'}\label{eq:20101004:tk11}
+\end{gather}
+Here Eqs. (\ref{eq:20101004:t011}-\ref{eq:20101004:tk11}) follows the same two-body formula for zero-energy T-matrix element.  However, the detuning is shifted by a many-body quantity $\mu$ that should be determined by solving gap equation with number equation.  
+And number equation
+
+\subsection{Tony's comment}
+Upon hearing my argument about chemical potential and scenarios in Fig. \ref{fig:NarrowFR}. He thought it is like impurities in semiconductor band, its level with the band and affect the chemical potential. He suggested me to check text from Kettel.  
+
+He also mentioned about three-species and four-species.  In four-species two species flip and needs two powers and in three-species case only one flips, so one power.  Therefore four-species are probably narrower.  

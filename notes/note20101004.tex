@@ -23,10 +23,10 @@ Imaging we start fairly far away from resonance (BCS side, $\delta=\eta-E^{0}>0$
 \subsection{Renormalization of gap equation}
 There are more than one options to renormalize gap equation \eef{eq:20100915:onechannel}.  The part that needs to be renormalized out is  high energy summation of $\sqrt{\frac{(1-4G_{\vk'}^{2})}{{(\xi^{ab}_{\vk}+  G_{\vk}^2\eta)^{2}+\Delta_{\vk}^{2}}}}$, it approaches $\nth{\epsilon_{\vk}}$ in high energy.  Several sightly different physical quantities have the summation of the same high energy limit.  
 \begin{enumerate}
-\item The process used in Eq. (\ref{eq:20100915:t0}-\ref{eq:20100915:tk}).  This leads to the zero energy T-matrix of reduced DoS $\sqrt{(1-4G_{\vk'}^{2})}$, with chemical potential in the detuning.  
+\item The process used in Eq. (\ref{eq:20100915:t0}-\ref{eq:20100915:tk}).  This leads to the zero energy T-matrix of reduced DoS with factor $\sqrt{(1-4G_{\vk'}^{2})}$, with chemical potential in the detuning.  
 \begin{equation}\tag{\ref{eq:20100915:renormGap}}
-\nth{\tilde{t_{0}}(\mu)}=\sum_{\vk'}\sqrt{(1-4G_{\vk'}^{2})}
-\br{\nth{\epsilon_{\vk'}}-\nth{\sqrt{{(\xi^{ab}_{\vk}+  G_{\vk}^2\eta)^{2}+\Delta_{\vk}^{2}}}}}
+\nth{\tilde{t_{0}}(\mu)}=\sum_{\vk}\sqrt{(1-4G_{\vk}^{2})}
+\br{\nth{\epsilon_{\vk}}-\nth{\sqrt{{(\xi^{ab}_{\vk}+  G_{\vk}^2\eta)^{2}+\Delta_{\vk}^{2}}}}}
 \end{equation}
 \begin{gather}
 \tilde{t_{0}}(\mu)=\br{1-\tilde{U}\tilde{ K}}^{-1}\tilde{U}\tag{\ref{eq:20100915:t0}}\\
@@ -35,14 +35,15 @@ There are more than one options to renormalize gap equation \eef{eq:20100915:one
 \end{gather}
 \item We can also notice that $G_{\vk}\rightarrow0$ at high energy.  So we can simply takes the normal zero-energy T-matrix with detuning related to chemical potential.  
 \begin{equation}\label{eq:20101004:renormGap1}
-\nth{{t_{0}}(\mu)}=\sum_{\vk'}
-\br{\nth{\epsilon_{\vk'}}-\frac{\sqrt{(1-4G_{\vk'}^{2})}}{\sqrt{{(\xi^{ab}_{\vk}+  G_{\vk}^2\eta)^{2}+\Delta_{\vk}^{2}}}}}
+\nth{{t_{0}}(\mu)}=\sum_{\vk}
+\br{\nth{\epsilon_{\vk}}-\frac{\sqrt{(1-4G_{\vk}^{2})}}{\sqrt{{(\xi^{ab}_{\vk}+  G_{\vk}^2\eta)^{2}+\Delta_{\vk}^{2}}}}}
 \end{equation} 
 \begin{gather}
 {t_{0}}(\mu)=\br{1-\tilde{U}\tilde{ K}}^{-1}\tilde{U}\label{eq:20101004:t01}\\
 \tilde{U}_{\vk\vk'}=\nth{2} \br{U_{\vk\vk'}+\frac{Y_{\vk\vk''}Y_{\vk''\vk'}}{2(E^{0}-\eta+\mu)}}\label{eq:20101004:tu1}\\
 {K}=\nth{\epsilon_{\vk}}\delta_{\vk\vk'}\label{eq:20101004:tk1}
 \end{gather}
+Here Eqs. (\ref{eq:20101004:t01}-\ref{eq:20101004:tk1}) follows the same two-body formula for zero-energy T-matrix element.  However, the detuning is shifted by a many-body quantity $\mu$ that should be determined by solving gap equation with numberequation.    
 
 \item  Alternatively, we notice that $\xi_{\vk}=\epsilon_{\vk}-\mu$, high energy limit can also be written as 
 $\nth{\epsilon_{\vk}-\mu}$.  This leads to the T-matrix at energy $\mu$, the same detuning as before.  
@@ -75,6 +76,6 @@ After $\delta$ drops below zero (Fig. \ref{fig:narrowFR:belowSea}), chemical pot
 \subsection{Number equation}
 For number equation \eef{eq:20100909:number}, more approximation can be made in Feshbach resonance.  Close-channel component $G_{k}$ is much extended in k-space due to the tight-binding, and $F_{k}$ is significant up to the order of Fermi energy $E_{F}$.  It seems OK to assume that most weight of close-channel lies beyond $E_{F}$, so when $\epsilon_{k}\gg{E_{F}}$, the integrand becomes simply $G_{k}^{2}$, the summation gives $N_{close}$.  Therefore we have 
 \begin{equation}\label{eq:20100909:number}
-N_{open}=\sum_{\vk}{}'\frac{1}{2} \left(1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)-G_{\vk}^{2}
+N_{open}=\sum_{\vk}{}^{'}\frac{1}{2} \left(1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)-G_{\vk}^{2}
 \end{equation} 
 Here the summation only goes up to the order of $E_{F}$

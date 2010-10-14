@@ -1,0 +1,43 @@
+\subsection{number equation}
+Put \eef{eq:20100915:F} into number equation \eef{eq:20100909:number}, we have\footnote{Here we drop $\sgn_{k}$ as $(\epsilon^{ab}_{\vk}-2\mu+  G_{0}^2\eta)$ takes care of the sign}
+\begin{equation}\label{eq:20101011:number}
+N=\sum{1-\sqrt{1-4G_{k}^{2}}\frac{(\epsilon^{ab}_{\vk}-2\mu+  G_{\vk}^2\eta)}{{\sqrt{{(\epsilon^{ab}_{\vk}-2\mu+  G_{\vk}^2\eta)^{2}+\Delta^{2}}}}}}
+\end{equation}
+This equation also requires to take into account that $G_{k}$ approaches 0 at high momentum to be convergent.  
+\subsection{typical energy scale}
+I calculated $^{6}\text{Li}$'s Fermi energy for density $10^{15}\text{cm}^{-3}$, it is $5\times10^{-28}J$, for Bohr magneton $\mu_{B}=9.27\times10^{-24}\text{J T}^{-1}$, it corresponds magnetic field $B=0.5\times10^{-4}\text{T}=0.5\text{G}$.
+
+\subsection{more on $G_{k}$ and $\eta$}
+$\phi^{0}$ the w.f. of two-body close-channel bound state varies in different Feshbach resonance and is a case-specific quantity.  Its property can be lumped into the general two-body Feshbach resonance formula and usually does not matter.  It does matter in narrow resonance problem.  However, this can be simplified if it is a high-energy bound-state, that mostly is outside the potential.  Therefore, most weight of $\phi^{0}$ follows the simple form 
+\[
+\phi^{0}(r)=C\frac{e^{-\kappa{r}}}{r}
+\]
+ where $\frac{\hbar^{2}\kappa^{2}}{2m}=E^{0}$ and $\kappa>0$.  $C^{2}=\frac{\kappa}{2\pi}$.  Convert it into k-space
+ \begin{equation}\label{eq:20101011:phi}
+\phi^{0}_k=\nth{(2\pi)^{\frac32}}\int{d^{3}\vr\phi^{0}(r)e^{-i\vk\cdot\vr}}=\nth{\pi}\frac{\kappa}{k^{2}+\kappa^{2}}
+\end{equation}
+Now we can estimated $G_{k}^{2}\eta$. $G_{k}=\alpha\phi^{0}_{k}$ where 
+\[|\alpha|^{2}<n\sim{E_{F}^{3/2}}\]
+\[
+\abs{\phi^{0}_{k}}^{2}=\nth{\pi^{2}\kappa^{3}}\sim\nth{(E^{0})^{3/2}}
+\]
+And $\eta\sim{E^{0}}$, So 
+\[
+G_{k}^{2}\eta<G_{k=0}^{2}\eta<E_{F}(\frac{E_{F}}{E^{0}})^{1/2}
+\]
+And we have $E_{F}\ll{E^{0}}$, so this term is much smaller than $\mu\sim{E_{F}}$ in BCS side. For now, we just omit this term.  Considering $G_{k}^{2}\ll1$, we can expand $\sqrt{1-4G_{k}^{2}}$ in \eef{eq:20101011:number} and \eef{eq:20101004:gapS} 
+\begin{gather}
+\nth{{t_{0}}(\mu)}=\sum_{\vk}
+\br{\nth{\epsilon_{\vk}}-\frac{1}{\sqrt{{(\epsilon^{ab}_{\vk}-2\mu)^{2}+\Delta_{\vk}^{2}}}}
++\frac{2\alpha^{2}|\phi^{0}_{k}|^{2}}{\sqrt{{(\epsilon^{ab}_{\vk}-2\mu)^{2}+\Delta_{\vk}^{2}}}}}
+\\
+N=\sum{1-\frac{(\epsilon^{ab}_{\vk}-2\mu)}{{\sqrt{{(\epsilon^{ab}_{\vk}-2\mu)^{2}+\Delta^{2}}}}}
++2\alpha^{2}|\phi^{0}_{k}|^{2}\frac{(\epsilon^{ab}_{\vk}-2\mu)}{{\sqrt{{(\epsilon^{ab}_{\vk}-2\mu)^{2}+\Delta^{2}}}}}}
+\end{gather}
+Here $\phi^{0}_{k}$ takes the form in \eef{eq:20101011:phi} and we have an extra quantity $\kappa$ ($E^{0}$), also, we have 
+\begin{equation}
+\Delta_{\vk}=U_{\vk\vk'}F_{\vk'}+Y_{\vk\vk'}G_{\vk'}\approx\alpha{Y_{\vk\vk'}\phi^{0}_{\vk'}}
+\end{equation}
+\[\Delta^{2}\approx\alpha^{2}(\Delta^{2})|_{\text{very BEC end}}
+\]
+Here we can see that $\Delta$ saturates in BEC end where close-channel dominates.  

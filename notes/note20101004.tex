@@ -58,7 +58,7 @@ $\nth{\epsilon_{\vk}-\mu}$.  This leads to the T-matrix at energy $\mu$, the sam
 \end{gather}
 The advantage of this is that introduce the effective range $r_{0}$ for finite energy T-matrix. 
 \end{enumerate}
-
+\emph{Note that Eqs. (\ref{eq:20101004:renormGap1}, \ref{eq:20101004:renormGap2}) cannot take the approximation of $G_{k}\approx{G_{0}}$ because that leads the summation diverged.  One has to take a more realistic $G_{k}$ that approach 0 at high momentum.  }
 \subsection{Pauli exclusion factor  $\sqrt{(1-4G_{\vk'}^{2})}$ }
 It seems that numerous Gap equations above has the Pauli-exclusion factor $\sqrt{(1-4G_{\vk'}^{2})}$.  Generally, 
 \begin{equation}
@@ -75,7 +75,7 @@ After $\delta$ drops below zero (Fig. \ref{fig:narrowFR:belowSea}), chemical pot
 
 \subsection{Number equation}
 For number equation \eef{eq:20100909:number}, more approximation can be made in Feshbach resonance.  Close-channel component $G_{k}$ is much extended in k-space due to the tight-binding, and $F_{k}$ is significant up to the order of Fermi energy $E_{F}$.  It seems OK to assume that most weight of close-channel lies beyond $E_{F}$, so when $\epsilon_{k}\gg{E_{F}}$, the integrand becomes simply $G_{k}^{2}$, the summation gives $N_{close}$.  Therefore we have 
-\begin{equation}\label{eq:20100909:number}
+\begin{equation}\label{eq:20101004:number}
 N_{open}=\sum_{\vk}{}^{'}\frac{1}{2} \left(1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)-G_{\vk}^{2}
 \end{equation} 
 Here the summation only goes up to the order of $E_{F}$
@@ -83,12 +83,12 @@ Here the summation only goes up to the order of $E_{F}$
 \subsection{summary}
 Now all summation goes in order of Fermi energy $E_F$, so we can replace close-channel component $G_k$ with $G_0=G_{k=0}$
 \begin{equation}
-F_{\vk}=\frac{\Delta_{\vk}}2\sqrt{\frac{(1-4G_{0}^{2})}{(\epsilon^{ab}_{\vk}-2\mu+  G_{0}^2\eta)^{2}+\Delta_{\vk}^{2}}}
+F_{\vk}=\frac{\Delta_{\vk}}2\sqrt{\frac{(1-4G_{\vk}^{2})}{(\epsilon^{ab}_{\vk}-2\mu+  G_{\vk}^2\eta)^{2}+\Delta_{\vk}^{2}}}
 \end{equation}
 Gap equation 
-\begin{equation}
+\begin{equation}\label{eq:20101004:gapS}
 \nth{{t_{0}}(\mu)}=\sum_{\vk}
-\br{\nth{\epsilon_{\vk}}-\frac{\sqrt{(1-4G_{0}^{2})}}{\sqrt{{(\epsilon^{ab}_{\vk}-2\mu+  G_{0}^2\eta)^{2}+\Delta_{\vk}^{2}}}}}
+\br{\nth{\epsilon_{\vk}}-\frac{\sqrt{(1-4G_{\vk}^{2})}}{\sqrt{{(\epsilon^{ab}_{\vk}-2\mu+  G_{\vk}^2\eta)^{2}+\Delta_{\vk}^{2}}}}}
 \end{equation} 
 \begin{gather}
 {t_{0}}(\mu)=\br{1-\tilde{U}\tilde{ K}}^{-1}\tilde{U}\label{eq:20101004:t011}\\
@@ -97,9 +97,12 @@ Gap equation
 \end{gather}
 Here Eqs. (\ref{eq:20101004:t011}-\ref{eq:20101004:tk11}) follows the same two-body formula for zero-energy T-matrix element.  However, the detuning is shifted by a many-body quantity $\mu$ that should be determined by solving gap equation with number equation.  
 And number equation
+\begin{equation}\tag{\ref{eq:20100909:number}}
+N=\sum_{\vk}\frac{1}{2} \left(1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)
+\end{equation} 
 
 \subsection{Tony's comment}
-Upon hearing my argument about chemical potential and scenarios in Fig. \ref{fig:NarrowFR}. He thought it is like impurities in semiconductor band, its level with the band and affect the chemical potential. He suggested me to check text from Kettel.  
+Upon hearing my argument about chemical potential and scenarios in Fig. \ref{fig:narrowFR}. He thought it is like impurities in semiconductor band, its level with the band and affect the chemical potential. He suggested me to check text from Kettel.  
 
 He also mentioned about three-species and four-species.  In four-species two species flip and needs two powers and in three-species case only one flips, so one power.  Therefore four-species are probably narrower.  
 
@@ -108,4 +111,4 @@ In the full region, $\eta$ should be close to the binding-energy of the close-ch
 
 $G_0=\alpha\phi_0$, where $\phi_0$ is normlized w.f. of two-body close-channel bound-state, strictly two-body.  Also, it is different from case to case. Its Pauli exclusion effect only shows up in many-body physics. It is determined by the real size of close-channel bound-state and therefore relates to binding energy $E^0$.  
 
-For the same $a_s$ or $t_0$, $G_0$ or $eta$ can take different value for different resonance.  Maybe we can take it as a different exogenous parameter. But we still need to find a way to estimate/deduce it from measurable quantities.  It is possible that they only relate to many-body quantities (same number for different densities maybe?)  because they are pertinent in many-body physics.
+For the same $a_s$ or $t_0$, $G_0$ or $\eta$ can take different value for different resonance.  Maybe we can take it as a different exogenous parameter. But we still need to find a way to estimate/deduce it from measurable quantities.  It is possible that they only relate to many-body quantities (same number for different densities maybe?)  because they are pertinent in many-body physics.

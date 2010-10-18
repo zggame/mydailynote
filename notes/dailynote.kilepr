@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.0
-lastDocument=note20100506.tex
+lastDocument=note20101011.tex
 masterDocument=
 name=DailyNote
 pkg_extIsRegExp=false
@@ -58,33 +58,23 @@ ReadWrite=true
 
 [item:DailyNote.tex]
 archive=true
-column=28
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=98
+line=155
 mode=LaTeX
-open=true
+open=false
 order=0
 
 [item:VariationUVW.tex]
 archive=true
-column=0
+column=252
 encoding=UTF-8
 highlight=LaTeX
-line=104
+line=105
 mode=LaTeX
 open=false
 order=1
-
-[item:VariationUVWNew.tex]
-archive=true
-column=0
-encoding=UTF-8
-highlight=LaTeX
-line=0
-mode=LaTeX
-open=false
-order=2
 
 [item:citation.bib]
 archive=true
@@ -94,7 +84,7 @@ highlight=BibTeX
 line=230
 mode=
 open=false
-order=4
+order=2
 
 [item:dailynote.kilepr]
 archive=true
@@ -108,13 +98,13 @@ order=-1
 
 [item:newCommand.tex]
 archive=true
-column=0
+column=41
 encoding=UTF-8
 highlight=LaTeX
 line=0
 mode=LaTeX
 open=false
-order=6
+order=3
 
 [item:note20090909.tex]
 archive=true
@@ -134,13 +124,13 @@ highlight=LaTeX
 line=12
 mode=
 open=false
-order=2
+order=5
 
 [item:note20090913.tex]
 archive=true
 column=0
 encoding=
-highlight=
+highlight=LaTeX
 line=0
 mode=
 open=false
@@ -148,13 +138,13 @@ order=-1
 
 [item:note20091025.tex]
 archive=true
-column=6619252
-encoding=
-highlight=
+column=521
+encoding=UTF-8
+highlight=LaTeX
 line=0
 mode=
 open=false
-order=-1
+order=6
 
 [item:note20091029.tex]
 archive=true
@@ -164,7 +154,7 @@ highlight=LaTeX
 line=38
 mode=
 open=false
-order=0
+order=7
 
 [item:note20091115.tex]
 archive=true
@@ -174,7 +164,7 @@ highlight=LaTeX
 line=34
 mode=
 open=false
-order=-1
+order=8
 
 [item:note20091203.tex]
 archive=true
@@ -184,7 +174,7 @@ highlight=LaTeX
 line=79
 mode=
 open=false
-order=1
+order=9
 
 [item:note20091207.tex]
 archive=true
@@ -194,7 +184,7 @@ highlight=LaTeX
 line=14
 mode=
 open=false
-order=2
+order=10
 
 [item:note20091208.tex]
 archive=true
@@ -204,7 +194,7 @@ highlight=LaTeX
 line=5
 mode=
 open=false
-order=3
+order=11
 
 [item:note20100330.tex]
 archive=true
@@ -214,7 +204,7 @@ highlight=LaTeX
 line=3
 mode=
 open=false
-order=2
+order=12
 
 [item:note20100506.tex]
 archive=true
@@ -222,8 +212,26 @@ column=302
 encoding=UTF-8
 highlight=LaTeX
 line=4
-open=true
+open=false
 order=1
+
+[item:note20101011.tex]
+archive=true
+column=12
+encoding=UTF-8
+highlight=LaTeX
+line=40
+open=true
+order=0
+
+[item:note20101018.tex]
+archive=true
+column=66
+encoding=UTF-8
+highlight=LaTeX
+line=0
+open=false
+order=16
 
 [item:renorm.tex]
 archive=true
@@ -233,7 +241,7 @@ highlight=LaTeX
 line=82
 mode=
 open=false
-order=1
+order=13
 
 [item:twoBodyDensityMatrixRichardson.tex]
 archive=true
@@ -243,7 +251,7 @@ highlight=LaTeX
 line=0
 mode=LaTeX
 open=false
-order=1
+order=14
 
 [view-settings,view=0,item:DailyNote.tex]
 CursorColumn=15

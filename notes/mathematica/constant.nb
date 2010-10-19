@@ -1,0 +1,1833 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     79956,       1824]
+NotebookOptionsPosition[     74682,       1679]
+NotebookOutlinePosition[     75198,       1701]
+CellTagsIndexPosition[     75112,       1696]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"\n", 
+  RowBox[{"<<", "PhysicalConstants`"}]}]], "Input",
+ CellChangeTimes->{
+  3.491148442974988*^9, {3.4911485160026407`*^9, 3.4911485445521507`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"LinkOpen", "::", "\<\"linke\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Could not find \
+MathLink executable.\\\"\\), \\\"MT\\\"]\\)\[NoBreak]\"\>"}]], "Message", \
+"MSG",
+ CellChangeTimes->{3.491148545334255*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"JLink`InstallJava", "::", "\<\"launch\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"The Java runtime could not \
+be launched.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.491148545358529*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"JLink`Java", "::", "\<\"init\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Java is not running. You \
+must call InstallJava[] to start the Java runtime.\\\\\\\"\\\", \
+\\\"MT\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.4911485453874826`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PacletManager`PacletManager", "::", "\<\"fail\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"The PacletManager could not \
+start. Certain operations will not function correctly in this session unless \
+the PacletManager can run. It will attempt to restart when needed, unless you \
+set PacletManagerEnabled[] = False.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], \
+"Message", "MSG",
+ CellChangeTimes->{3.49114854542209*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Meter", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Meter\\\"\\), \\\"MT\\\"]\
+\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple contexts \\\\\
+\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \\\
+\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485454547653`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"LinkOpen", "::", "\<\"linke\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Could not find \
+MathLink executable.\\\"\\), \\\"MT\\\"]\\)\[NoBreak]\"\>"}]], "Message", \
+"MSG",
+ CellChangeTimes->{3.491148545538848*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"JLink`InstallJava", "::", "\<\"launch\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"The Java runtime could not \
+be launched.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message", "MSG",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{3.491148545589978*^9, 3.491149616460746*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"JLink`Java", "::", "\<\"init\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Java is not running. You \
+must call InstallJava[] to start the Java runtime.\\\\\\\"\\\", \
+\\\"MT\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.491148545638854*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PacletManager`PacletManager", "::", "\<\"fail\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"The PacletManager could not \
+start. Certain operations will not function correctly in this session unless \
+the PacletManager can run. It will attempt to restart when needed, unless you \
+set PacletManagerEnabled[] = False.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], \
+"Message", "MSG",
+ CellChangeTimes->{3.49114854567211*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Kilogram", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Kilogram\\\"\\), \\\"MT\\\
+\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple contexts \
+\\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148545706195*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"LinkOpen", "::", "\<\"linke\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Could not find \
+MathLink executable.\\\"\\), \\\"MT\\\"]\\)\[NoBreak]\"\>"}]], "Message", \
+"MSG",
+ CellChangeTimes->{3.491148545790126*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"General", "::", "\<\"stop\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Further output of \\\\\\\"\\\
+\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(LinkOpen :: \\\"linke\\\"\
+\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" will be \
+suppressed during this calculation.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], \
+"Message", "MSG",
+ CellChangeTimes->{3.4911485458280077`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"JLink`InstallJava", "::", "\<\"launch\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"The Java runtime could not \
+be launched.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.491148545855905*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"General", "::", "\<\"stop\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Further output of \\\\\\\"\\\
+\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(JLink`InstallJava :: \
+\\\"launch\\\"\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" \
+will be suppressed during this calculation.\\\\\\\"\\\", \
+\\\"MT\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.491148545890914*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"JLink`Java", "::", "\<\"init\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Java is not running. You \
+must call InstallJava[] to start the Java runtime.\\\\\\\"\\\", \
+\\\"MT\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.491148545923883*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"General", "::", "\<\"stop\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Further output of \\\\\\\"\\\
+\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(JLink`Java :: \
+\\\"init\\\"\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" will \
+be suppressed during this calculation.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], \
+"Message", "MSG",
+ CellChangeTimes->{3.4911485459569387`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PacletManager`PacletManager", "::", "\<\"fail\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"The PacletManager could not \
+start. Certain operations will not function correctly in this session unless \
+the PacletManager can run. It will attempt to restart when needed, unless you \
+set PacletManagerEnabled[] = False.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], \
+"Message", "MSG",
+ CellChangeTimes->{3.49114854599069*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"General", "::", "\<\"stop\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Further output of \\\\\\\"\\\
+\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(PacletManager`\
+PacletManager :: \\\"fail\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" will be suppressed \
+during this calculation.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.491148546023858*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Ampere", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Ampere\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.49114854607952*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Kelvin", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Kelvin\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148546160577*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Mole", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Mole\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148546254396*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Candela", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Candela\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148546326209*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Second", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Second\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148546409749*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Pascal", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Pascal\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485465288067`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Joule", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Joule\\\"\\), \\\"MT\\\"]\
+\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple contexts \\\\\
+\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \\\
+\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148546625194*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Watt", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Watt\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.49114854671084*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Coulomb", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Coulomb\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485467970457`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Volt", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Volt\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485468906527`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Ohm", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Ohm\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148546962448*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Siemens", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Siemens\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148547051318*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Farad", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Farad\\\"\\), \\\"MT\\\"]\
+\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple contexts \\\\\
+\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \\\
+\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485471353416`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Weber", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Weber\\\"\\), \\\"MT\\\"]\
+\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple contexts \\\\\
+\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \\\
+\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485472177887`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Henry", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Henry\\\"\\), \\\"MT\\\"]\
+\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple contexts \\\\\
+\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \\\
+\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148547305511*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Tesla", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Tesla\\\"\\), \\\"MT\\\"]\
+\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple contexts \\\\\
+\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \\\
+\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148547381213*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Lumen", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Lumen\\\"\\), \\\"MT\\\"]\
+\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple contexts \\\\\
+\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \\\
+\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485474732447`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Lux", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Lux\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148547550427*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Hertz", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Hertz\\\"\\), \\\"MT\\\"]\
+\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple contexts \\\\\
+\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \\\
+\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148547643209*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Becquerel", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Becquerel\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148547721225*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"GrayDose", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"GrayDose\\\"\\), \\\"MT\\\
+\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple contexts \
+\\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148547802272*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Newton", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Newton\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148547891264*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Amp", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Amp\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"Units`\\\", \
+\\\"Miscellaneous`SIUnits`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Units`\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485480295467`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AccelerationDueToGravity", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"AccelerationDueToGravity\\\
+\"\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in \
+multiple contexts \\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\
+\\({\\\"PhysicalConstants`\\\", \\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148548171197*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AgeOfUniverse", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"AgeOfUniverse\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148548256855*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AvogadroConstant", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"AvogadroConstant\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148548338876*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"BohrRadius", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"BohrRadius\\\"\\), \\\"MT\
+\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple contexts \
+\\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148548427457*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"BoltzmannConstant", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"BoltzmannConstant\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148548516118*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ClassicalElectronRadius", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"ClassicalElectronRadius\\\
+\"\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in \
+multiple contexts \\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\
+\\({\\\"PhysicalConstants`\\\", \\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148548616714*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CosmicBackgroundTemperature", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"\
+CosmicBackgroundTemperature\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148548700083*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DeuteronMagneticMoment", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"DeuteronMagneticMoment\\\"\
+\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in \
+multiple contexts \\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\
+\\({\\\"PhysicalConstants`\\\", \\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148548790985*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DeuteronMass", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"DeuteronMass\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485488798447`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"EarthMass", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"EarthMass\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148548957353*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"EarthRadius", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"EarthRadius\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485490388412`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ElectronCharge", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"ElectronCharge\\\"\\), \\\
+\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148549127515*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ElectronComptonWavelength", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"ElectronComptonWavelength\
+\\\"\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in \
+multiple contexts \\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\
+\\({\\\"PhysicalConstants`\\\", \\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148549210082*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ElectronGFactor", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"ElectronGFactor\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485493031473`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ElectronMagneticMoment", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"ElectronMagneticMoment\\\"\
+\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in \
+multiple contexts \\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\
+\\({\\\"PhysicalConstants`\\\", \\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485493955917`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ElectronMass", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"ElectronMass\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\", \\\"Global`\\\"}\\), \\\"MT\\\"]\\)\
+\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in context \
+\\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148549473936*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"FaradayConstant", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"FaradayConstant\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.49114854958304*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"FineStructureConstant", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"FineStructureConstant\\\"\
+\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in \
+multiple contexts \\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\
+\\({\\\"PhysicalConstants`\\\", \\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148549666222*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"GalacticUnit", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"GalacticUnit\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148549758945*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"GravitationalConstant", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"GravitationalConstant\\\"\
+\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in \
+multiple contexts \\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\
+\\({\\\"PhysicalConstants`\\\", \\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148549855274*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"HubbleConstant", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"HubbleConstant\\\"\\), \\\
+\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148549928178*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"IcePoint", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"IcePoint\\\"\\), \\\"MT\\\
+\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple contexts \
+\\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148550024221*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MagneticFluxQuantum", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"MagneticFluxQuantum\\\"\\)\
+, \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148550098865*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MolarGasConstant", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"MolarGasConstant\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148550179295*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MolarVolume", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"MolarVolume\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485502665043`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MuonGFactor", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"MuonGFactor\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148550348454*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MuonMagneticMoment", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"MuonMagneticMoment\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148550441847*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MuonMass", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"MuonMass\\\"\\), \\\"MT\\\
+\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple contexts \
+\\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148550530472*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NeutronComptonWavelength", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"NeutronComptonWavelength\\\
+\"\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in \
+multiple contexts \\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\
+\\({\\\"PhysicalConstants`\\\", \\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148550622669*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NeutronMagneticMoment", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"NeutronMagneticMoment\\\"\
+\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in \
+multiple contexts \\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\
+\\({\\\"PhysicalConstants`\\\", \\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148550697517*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NeutronMass", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"NeutronMass\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485507896*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PlanckConstant", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PlanckConstant\\\"\\), \\\
+\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.49114855086578*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PlanckConstantReduced", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PlanckConstantReduced\\\"\
+\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in \
+multiple contexts \\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\
+\\({\\\"PhysicalConstants`\\\", \\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485509561863`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PlanckMass", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PlanckMass\\\"\\), \\\"MT\
+\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple contexts \
+\\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148551032929*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ProtonComptonWavelength", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"ProtonComptonWavelength\\\
+\"\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in \
+multiple contexts \\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\
+\\({\\\"PhysicalConstants`\\\", \\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148551116634*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ProtonMagneticMoment", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"ProtonMagneticMoment\\\"\\\
+), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485512077923`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ProtonMass", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"ProtonMass\\\"\\), \\\"MT\
+\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple contexts \
+\\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148551290077*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"QuantizedHallConductance", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"QuantizedHallConductance\\\
+\"\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in \
+multiple contexts \\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\
+\\({\\\"PhysicalConstants`\\\", \\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148551371738*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RydbergConstant", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"RydbergConstant\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.49114855145203*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SackurTetrodeConstant", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"SackurTetrodeConstant\\\"\
+\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in \
+multiple contexts \\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\
+\\({\\\"PhysicalConstants`\\\", \\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148551542839*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SolarConstant", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"SolarConstant\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485516194563`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SolarLuminosity", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"SolarLuminosity\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148551710742*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SolarRadius", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"SolarRadius\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148551787225*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SolarSchwarzschildRadius", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"SolarSchwarzschildRadius\\\
+\"\\), \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in \
+multiple contexts \\\\\\\"\\\", \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\
+\\({\\\"PhysicalConstants`\\\", \\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148551874816*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SpeedOfLight", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"SpeedOfLight\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148551965111*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SpeedOfSound", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"SpeedOfSound\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148552061558*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"StefanConstant", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"StefanConstant\\\"\\), \\\
+\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.49114855214153*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ThomsonCrossSection", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"ThomsonCrossSection\\\"\\)\
+, \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148552233254*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"VacuumPermeability", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"VacuumPermeability\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148552312664*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"VacuumPermittivity", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"VacuumPermittivity\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.4911485523947887`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"WeakMixingAngle", "::", "\<\"shdw\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Symbol \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"WeakMixingAngle\\\"\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" appears in multiple \
+contexts \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\({\\\"PhysicalConstants`\\\", \
+\\\"Miscellaneous`PhysicalConstants`\\\"}\\), \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\"; definitions in \
+context \\\\\\\"\\\", \
+\\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"PhysicalConstants`\\\"\\),\
+ \\\"MT\\\"]\\)\[NoBreak]\\!\\(\\*StyleBox[\\\"\\\\\\\" may shadow or be \
+shadowed by other definitions.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{3.491148552477314*^9}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"mp", "=", 
+  RowBox[{"ProtonMass", "^", "2"}]}]], "Input",
+ CellChangeTimes->{{3.491148566465167*^9, 3.4911485696159678`*^9}, {
+  3.491148621495111*^9, 3.491148648420138*^9}}],
+
+Cell[BoxData[
+ RowBox[{"2.7976631405605605`*^-54", " ", 
+  SuperscriptBox["Kilogram", "2"]}]], "Output",
+ CellChangeTimes->{3.491148570320491*^9, 3.49114862228353*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"hbar", "=", "PlanckConstantReduced"}]], "Input",
+ CellChangeTimes->{{3.491148601745693*^9, 3.491148612088066*^9}, {
+  3.491148642427642*^9, 3.491148644099534*^9}}],
+
+Cell[BoxData[
+ RowBox[{"1.054571628251774`*^-34", " ", "Joule", " ", "Second"}]], "Output",
+ CellChangeTimes->{3.4911486124504967`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"kb", "=", "BoltzmannConstant"}], ";", 
+  RowBox[{"me", "=", "ElectronMass"}], ";"}]], "Input",
+ CellChangeTimes->{{3.491148629446692*^9, 3.491148630487986*^9}, {
+  3.491148753175399*^9, 3.491148760246273*^9}, {3.491148920978133*^9, 
+  3.491148951469516*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"nAv", "=", "AvogadroConstant"}]], "Input",
+ CellChangeTimes->{{3.491148958533618*^9, 3.491148986617053*^9}}],
+
+Cell[BoxData[
+ FractionBox["6.02214179`*^23", "Mole"]], "Output",
+ CellChangeTimes->{3.491148988222543*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"EF", "[", 
+   RowBox[{"n_", ",", "m_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"hbar", "^", "2"}], "/", 
+    RowBox[{"(", 
+     RowBox[{"2", "m"}], ")"}]}], "*", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"3", 
+      RowBox[{"Pi", "^", "2"}], "n"}], ")"}], "^", 
+    RowBox[{"(", 
+     RowBox[{"2", "/", "3"}], ")"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.49114900329126*^9, 3.491149055356842*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EF", "[", 
+  RowBox[{"nAv", ",", "me"}], "]"}]], "Input",
+ CellChangeTimes->{{3.49114905910028*^9, 3.491149071373921*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"4.1662735152019957`*^-22", " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     FractionBox["1", "Mole"], ")"}], 
+    RowBox[{"2", "/", "3"}]]}], "Kilogram"]], "Output",
+ CellChangeTimes->{3.491149071884674*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", "/", "kb"}]], "Input",
+ CellChangeTimes->{{3.4911490798135767`*^9, 3.491149082135507*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"30.176165633255135`", " ", "Kelvin", " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     FractionBox["1", "Mole"], ")"}], 
+    RowBox[{"2", "/", "3"}]]}], 
+  RowBox[{"Joule", " ", "Kilogram"}]]], "Output",
+ CellChangeTimes->{3.491149084805711*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "AvogadroConstant"}]], "Input",
+ CellChangeTimes->{{3.491149245987959*^9, 3.49114925238463*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"LinkOpen", "::", "\<\"linke\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(\\*StyleBox[\\!\\(\\\"Could not find \
+MathLink executable.\\\"\\), \\\"MT\\\"]\\)\[NoBreak]\"\>"}]], "Message", \
+"MSG",
+ CellChangeTimes->{3.4911492528644*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"JLink`InstallJava", "::", "\<\"launch\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"The Java runtime could not \
+be launched.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.491149252887641*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"JLink`Java", "::", "\<\"init\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"Java is not running. You \
+must call InstallJava[] to start the Java runtime.\\\\\\\"\\\", \
+\\\"MT\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.4911492529216003`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PacletManager", "::", "\<\"fail\"\>"}], 
+  RowBox[{
+  ":", " "}], "\<\"\\!\\(\\*StyleBox[\\\"\\\\\\\"The PacletManager could not \
+start. Certain operations will not function correctly in this session unless \
+the PacletManager can run. It will attempt to restart when needed, unless you \
+set PacletManagerEnabled[] = False.\\\\\\\"\\\", \\\"MT\\\"]\\)\"\>"}]], \
+"Message", "MSG",
+ CellChangeTimes->{3.491149252954961*^9}],
+
+Cell[BoxData[
+ StyleBox["\<\"AvogadroConstant is the number of molecules in one mole or \
+gram molecular weight of a substance.\"\>", "MSG"]], "Print", "PrintUsage",
+ CellChangeTimes->{3.491149253147636*^9},
+ CellTags->"Info3491131252-2397863"]
+}, Open  ]]
+},
+WindowSize->{640, 750},
+WindowMargins->{{Automatic, 61}, {Automatic, 36}},
+ShowSelection->True,
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3491131252-2397863"->{
+  Cell[74422, 1672, 244, 4, 60, "Print",
+   CellTags->"Info3491131252-2397863"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3491131252-2397863", 75007, 1690}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 176, 4, 43, "Input"],
+Cell[746, 28, 281, 7, 23, "Message"],
+Cell[1030, 37, 280, 6, 21, "Message"],
+Cell[1313, 45, 311, 7, 23, "Message"],
+Cell[1627, 54, 472, 9, 77, "Message"],
+Cell[2102, 65, 795, 15, 58, "Message"],
+Cell[2900, 82, 281, 7, 23, "Message"],
+Cell[3184, 91, 352, 8, 21, "Message"],
+Cell[3539, 101, 309, 7, 23, "Message"],
+Cell[3851, 110, 472, 9, 77, "Message"],
+Cell[4326, 121, 801, 16, 59, "Message"],
+Cell[5130, 139, 281, 7, 23, "Message"],
+Cell[5414, 148, 445, 9, 23, "Message"],
+Cell[5862, 159, 280, 6, 21, "Message"],
+Cell[6145, 167, 453, 9, 23, "Message"],
+Cell[6601, 178, 309, 7, 23, "Message"],
+Cell[6913, 187, 446, 9, 23, "Message"],
+Cell[7362, 198, 472, 9, 77, "Message"],
+Cell[7837, 209, 461, 9, 41, "Message"],
+Cell[8301, 220, 796, 16, 59, "Message"],
+Cell[9100, 238, 797, 16, 58, "Message"],
+Cell[9900, 256, 793, 16, 58, "Message"],
+Cell[10696, 274, 799, 16, 58, "Message"],
+Cell[11498, 292, 797, 16, 58, "Message"],
+Cell[12298, 310, 799, 16, 58, "Message"],
+Cell[13100, 328, 793, 15, 58, "Message"],
+Cell[13896, 345, 792, 16, 58, "Message"],
+Cell[14691, 363, 801, 16, 58, "Message"],
+Cell[15495, 381, 795, 16, 58, "Message"],
+Cell[16293, 399, 791, 16, 58, "Message"],
+Cell[17087, 417, 799, 16, 58, "Message"],
+Cell[17889, 435, 795, 15, 58, "Message"],
+Cell[18687, 452, 795, 15, 58, "Message"],
+Cell[19485, 469, 793, 15, 59, "Message"],
+Cell[20281, 486, 793, 15, 58, "Message"],
+Cell[21077, 503, 795, 15, 58, "Message"],
+Cell[21875, 520, 791, 16, 58, "Message"],
+Cell[22669, 538, 793, 15, 58, "Message"],
+Cell[23465, 555, 803, 16, 59, "Message"],
+Cell[24271, 573, 801, 16, 59, "Message"],
+Cell[25075, 591, 797, 16, 58, "Message"],
+Cell[25875, 609, 793, 16, 59, "Message"],
+Cell[26671, 627, 865, 15, 77, "Message"],
+Cell[27539, 644, 845, 16, 59, "Message"],
+Cell[28387, 662, 851, 16, 77, "Message"],
+Cell[29241, 680, 839, 16, 59, "Message"],
+Cell[30083, 698, 853, 16, 76, "Message"],
+Cell[30939, 716, 863, 15, 76, "Message"],
+Cell[31805, 733, 875, 17, 77, "Message"],
+Cell[32683, 752, 861, 15, 77, "Message"],
+Cell[33547, 769, 845, 16, 59, "Message"],
+Cell[34395, 787, 837, 16, 59, "Message"],
+Cell[35235, 805, 843, 16, 59, "Message"],
+Cell[36081, 823, 847, 16, 59, "Message"],
+Cell[36931, 841, 867, 15, 77, "Message"],
+Cell[37801, 858, 851, 16, 59, "Message"],
+Cell[38655, 876, 863, 15, 77, "Message"],
+Cell[39521, 893, 860, 16, 59, "Message"],
+Cell[40384, 911, 848, 16, 77, "Message"],
+Cell[41235, 929, 859, 15, 76, "Message"],
+Cell[42097, 946, 843, 16, 59, "Message"],
+Cell[42943, 964, 859, 15, 76, "Message"],
+Cell[43805, 981, 847, 16, 59, "Message"],
+Cell[44655, 999, 835, 16, 59, "Message"],
+Cell[45493, 1017, 857, 16, 77, "Message"],
+Cell[46353, 1035, 851, 16, 76, "Message"],
+Cell[47207, 1053, 843, 16, 59, "Message"],
+Cell[48053, 1071, 841, 16, 59, "Message"],
+Cell[48897, 1089, 855, 16, 77, "Message"],
+Cell[49755, 1107, 835, 16, 59, "Message"],
+Cell[50593, 1125, 865, 15, 77, "Message"],
+Cell[51461, 1142, 859, 15, 77, "Message"],
+Cell[52323, 1159, 839, 16, 59, "Message"],
+Cell[53165, 1177, 846, 16, 59, "Message"],
+Cell[54014, 1195, 861, 15, 76, "Message"],
+Cell[54878, 1212, 839, 16, 59, "Message"],
+Cell[55720, 1230, 863, 15, 77, "Message"],
+Cell[56586, 1247, 861, 16, 77, "Message"],
+Cell[57450, 1265, 839, 16, 59, "Message"],
+Cell[58292, 1283, 865, 15, 76, "Message"],
+Cell[59160, 1300, 848, 16, 77, "Message"],
+Cell[60011, 1318, 859, 15, 76, "Message"],
+Cell[60873, 1335, 847, 16, 59, "Message"],
+Cell[61723, 1353, 849, 16, 59, "Message"],
+Cell[62575, 1371, 841, 16, 59, "Message"],
+Cell[63419, 1389, 865, 15, 76, "Message"],
+Cell[64287, 1406, 843, 16, 59, "Message"],
+Cell[65133, 1424, 843, 16, 59, "Message"],
+Cell[65979, 1442, 846, 16, 59, "Message"],
+Cell[66828, 1460, 857, 16, 76, "Message"],
+Cell[67688, 1478, 855, 16, 77, "Message"],
+Cell[68546, 1496, 857, 16, 77, "Message"],
+Cell[69406, 1514, 849, 16, 77, "Message"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[70292, 1535, 199, 4, 21, "Input"],
+Cell[70494, 1541, 167, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[70698, 1549, 187, 3, 27, "Input"],
+Cell[70888, 1554, 135, 2, 30, "Output"]
+}, Open  ]],
+Cell[71038, 1559, 293, 6, 27, "Input"],
+Cell[CellGroupData[{
+Cell[71356, 1569, 132, 2, 27, "Input"],
+Cell[71491, 1573, 107, 2, 50, "Output"]
+}, Open  ]],
+Cell[71613, 1578, 445, 15, 27, "Input"],
+Cell[CellGroupData[{
+Cell[72083, 1597, 146, 3, 27, "Input"],
+Cell[72232, 1602, 245, 7, 61, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[72514, 1614, 118, 2, 27, "Input"],
+Cell[72635, 1618, 282, 8, 61, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[72954, 1631, 124, 2, 27, "Input"],
+Cell[73081, 1635, 279, 7, 23, "Message"],
+Cell[73363, 1644, 280, 6, 21, "Message"],
+Cell[73646, 1652, 311, 7, 23, "Message"],
+Cell[73960, 1661, 459, 9, 77, "Message"],
+Cell[74422, 1672, 244, 4, 60, "Print",
+ CellTags->"Info3491131252-2397863"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

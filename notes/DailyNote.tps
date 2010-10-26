@@ -14,11 +14,11 @@ NormalPos.top=32
 NormalPos.right=1322
 NormalPos.bottom=707
 Class=LaTeXView
-Document=note20100901.tex
+Document=note20101018.tex
 
 [Frame0_View0,0]
 TopLine=0
-Cursor=0
+Cursor=2893
 
 [Frame1]
 Flags=0
@@ -32,11 +32,11 @@ NormalPos.top=32
 NormalPos.right=1322
 NormalPos.bottom=707
 Class=LaTeXView
-Document=note20100908.tex
+Document=note20100927.tex
 
 [Frame1_View0,0]
-TopLine=0
-Cursor=0
+TopLine=27
+Cursor=3183
 
 [Frame2]
 Flags=0
@@ -50,7 +50,7 @@ NormalPos.top=32
 NormalPos.right=1322
 NormalPos.bottom=707
 Class=LaTeXView
-Document=note20100909.tex
+Document=note20100901.tex
 
 [Frame2_View0,0]
 TopLine=0
@@ -68,7 +68,7 @@ NormalPos.top=32
 NormalPos.right=1322
 NormalPos.bottom=707
 Class=LaTeXView
-Document=note20100920.tex
+Document=note20101011.tex
 
 [Frame3_View0,0]
 TopLine=0
@@ -86,7 +86,7 @@ NormalPos.top=32
 NormalPos.right=1322
 NormalPos.bottom=707
 Class=LaTeXView
-Document=note20100927.tex
+Document=note20101004.tex
 
 [Frame4_View0,0]
 TopLine=0
@@ -104,7 +104,7 @@ NormalPos.top=32
 NormalPos.right=1322
 NormalPos.bottom=707
 Class=LaTeXView
-Document=note20101004.tex
+Document=note20100920.tex
 
 [Frame5_View0,0]
 TopLine=0
@@ -122,7 +122,7 @@ NormalPos.top=32
 NormalPos.right=1322
 NormalPos.bottom=707
 Class=LaTeXView
-Document=note20101011.tex
+Document=note20100909.tex
 
 [Frame6_View0,0]
 TopLine=0
@@ -140,11 +140,11 @@ NormalPos.top=32
 NormalPos.right=1322
 NormalPos.bottom=707
 Class=LaTeXView
-Document=note20101018.tex
+Document=note20100908.tex
 
 [Frame7_View0,0]
 TopLine=0
-Cursor=2222
+Cursor=0
 
 [SessionInfo]
 FrameCount=8

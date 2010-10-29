@@ -67,13 +67,13 @@ One thing potentially useful is that to distinguish the region within $k_{c}$ an
 
 
 \subsection{Exact Gap Equations in Variation Method}
-Solve $u_{\vk}$, $v_{\vk}$, $w_{\vk}$ with $F_{\vk}$ and $G_{\vk}$ (treat everything as real)
+Introduce the new parameter $F_{\vk}$ and $G_{\vk}$,  solve $u_{\vk}$, $v_{\vk}$, $w_{\vk}$ with $F_{\vk}$ and $G_{\vk}$ (treat everything as real)
 \begin{gather}
 u_{\vk}^2+v^{2}_{\vk}+w^{2}_{\vk}=1\\
 u_{\vk}v_{\vk}=F_{\vk}\\
 u_{\vk}w_{\vk}=G_{\vk}
 \end{gather}
-One complication is that $u_\vk$ is a monotonic function of $k$ while $F_\vk$ is not in BCS/BCS-like situation.  So we need to be careful when take the square root.  So we introduce $\sgn_k$ for such purpose.  \footnote{\label{foot:20100909:sgn} $\sgn_k=1$  for the whole region of BEC case, or for $k$ is large in BCS case. In BCS case, when $k$ is small, $\sgn_{k}=-1$.  In single-channel case $\sgn_{k}=\sgn(\epsilon_{k}-\mu)$, the turning point is at chemical potential $\mu$.  However, in two-channel, this is more delicate.  The turning point is close to chemical potenial, but has a shift. It is $\sgn_k=\sgn(\epsilon^{ab}_{\vk}-2\mu+  G_{\vk}^2\eta)$.  This is very important in \eef {eq:20100909:number}}
+One complication is that $u_\vk$ is a monotonic function of $k$ while $F_\vk$ is not in BCS/BCS-like situation.  So we need to be careful when take the square root.  We introduce $\sgn_k$ for such purpose.  \footnote{\label{foot:20100909:sgn} $\sgn_k=1$  for the whole region of BEC case, or for $k$ is large in BCS case. In BCS case, when $k$ is small, $\sgn_{k}=-1$.  In single-channel case $\sgn_{k}=\sgn(\epsilon_{k}-\mu)$, the turning point is at chemical potential $\mu$.  However, in two-channel, this is more delicate.  The turning point is close to chemical potenial, but with a shift. It is $\sgn_k=\sgn(\epsilon^{ab}_{\vk}-2\mu+  G_{\vk}^2\eta)$.  This is very important in \eef {eq:20100909:number}}
 \begin{equation}
 \begin{split}
 u_{\vk}^2=&\frac{1}{2} \left(1+\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)\\
@@ -83,7 +83,7 @@ w^{2}_{\vk}=&\frac{2 G_{\vk}^2}{1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}}
 =\frac{G_{\vk}^2}{2( F_{\vk}^2+ G_{\vk}^2)} \left(1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)
 \end{split}
 \end{equation}
-Below, we adopt $\sgn_k=1$. (This works for BEC and most part of BCS.) Derivatives over $F_{\vk}$ are
+Below, we adopt $\sgn_k=1$. (This works for BEC and most part of BCS; and in final equation, the sign function is taken care of automatically.  It is easy to verify we arrive at the same number equation in the other case where $\sgn_{k}=-1$. ) Derivatives over $F_{\vk}$ are
 \begin{equation}
 \begin{split}
 \pdiff{u_{\vk}^2}{F_\vk}=&-\frac{2 F_\vk}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}}\\
@@ -110,7 +110,7 @@ The gap equations are
 \label{eq:20100909:fullgapb}
 \end{gather}
 \end{subequations}
-where $\eta=\epsilon^{ac}_{\vk}-\epsilon^{ab}_{\vk}$ is the bare Zeeman energy difference and is large than most energy scale, $E_{F}$.  It should be in the order of binding energy of the close-channel bound state.   
+where $\eta=\epsilon^{ac}_{\vk}-\epsilon^{ab}_{\vk}$ is the bare Zeeman energy difference and is large than most energy scale, such as $E_{F}$.  It should be in the order of binding energy of the close-channel bound state.   
 
 The number equation is (see footnote (\ref{foot:20100909:sgn}) for $\sgn_{k}$)
 \begin{equation}\label{eq:20100909:number}

@@ -6,6 +6,32 @@ Tony comment on the relation of $\Delta$ and $\alpha$.  If we use the \eef{eq:20
 \begin{equation}\label{eq:20101025:fr}
 F(\vr)=\frac{m\Delta}{4\pi\hbar^{2}}\frac{1-r/a_{s}}{r}
 \end{equation}
-we have the pre-factor $\frac{m\Delta}{4\pi\hbar^{2}}$ for the normalization and with \cite{Leggett} (Eq. (4.A.17)), we can express the relation between $\Delta$ and $\alpha$.  (assume $\kappa$ varies slowly with detuning)hj
 
-In the very BEC end(close-channel dominated), gap $\Delta$ is not very meaningful, but bound nevertheless in this situation, different from single-channel case.  However, this does not contrsdict Eq. (50) in \cite{shizhongUniv} or $\Delta=4\epsilon_F/\sqrt{3\pi{}k_Fa_s}$.  This formula is only for very loosely-bound state where open-channel still domincates $\mu=-B_0=-\hbar^2/ma_s^2$. Further into the region where close-channel start to dominate, chemical potential follows close-channel bound-state  level instead of the above fomula. 
+we have the pre-factor $\frac{m\Delta}{4\pi\hbar^{2}}$ for the normalization and with \cite{Leggett} (Eq. (4.A.17)), we can express the relation between $\Delta$ and $\alpha$.  (assume $\kappa$ varies slowly with detuning)
+
+\subsection{}
+Normalization of $F_\vk$ is fixed by $u_\vk^2+v_\vk^2+w_\vk^2=1$ and number equation.  \eef{eq:20101025:fr} is normalized to numbers of pairs, $\int{F(r)^2dr}$ is an extensive quantity.  
+
+From \eef{eq:20101025:fr}, use $\kappa$ in (4.A.17) in \cite{Leggett} 
+\begin{equation}
+\kappa\equiv-\frac{2m_{r}a_{bg}g^{2}}{\hbar^{2}}\int^{\infty}_{0}dr\int^{\infty}_{0}dr'\chi_{0}(r)K(rr')\chi_{{\tilde\delta=\kappa}}(r')
+\end{equation}
+within which $\chi=1-r/a_{s}$.  
+Multiply \eef{eq:20100915:GF} with $\phi^{0}$ (normalized to 1)and square it
+\begin{equation}
+|\alpha|^{2}=\frac{\abs{\avs{\phi^{0}}{Y}{F}}^{2}}{4(\tilde\delta-\mu)^{2}}
+\end{equation}
+If we take the expectation only relates to short-range of either wave-function and is not sensitive to the position of resonance, we can replace it with $\kappa$,  (considering difference of normalization from \eef{eq:20101025:fr})
+\begin{equation}
+|\alpha|^{2}=V\frac{m\kappa}{32\pi^{2}\hbar^{2}a_{bg}}\nth{(\delta+\kappa-\mu)^{2}}\Delta^{2}
+\end{equation}
+At BEC extreme, $\Delta$ saturates and short-range normalization does not change.  However, this contradicted with the idea that $\alpha$ also saturates. The reason is that normalization of short-range $F(r)$ actually decreases toward BEC end.  So the above formula only works for very BEC end where $|\alpha|^{2}$ close to N.   
+
+For density not very large, $E_{F}\ll\kappa$ and close to resonance, we have $(\delta+\kappa-\mu)\approx\kappa$ and we have 
+\begin{equation}
+\frac{|\alpha|^{2}}{N}\sim\frac{\Delta^{2}}{E_{F}^{3/2}\delta_{c}^{1/2}}
+\end{equation}
+$\delta_{c}=\kappa^{2}/(\hbar^{2}/ma_{bg}^{2})$ is defined in \cite{Leggett}.
+
+
+In the very BEC end(close-channel dominated), gap $\Delta$ is not very meaningful, but bound nevertheless in this situation, different from single-channel case.  However, this does not contrsdict Eq. (50) in \cite{shizhongUniv} or $\Delta=4\epsilon_F/\sqrt{3\pi{}k_Fa_s}$.  This formula is only for very loosely-bound state where open-channel still domincates $\mu=-B_0=-\hbar^2/ma_s^2$. Further into the region where close-channel start to dominate, chemical potential follows close-channel bound-state  level instead of the above fomula. >>>>>>> .r210

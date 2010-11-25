@@ -1,16 +1,23 @@
-This is pdfeTeXk, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2009.11.12)  1 APR 2010 11:39
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.11.12)  19 NOV 2010 09:40
 entering extended mode
- Source specials enabled.
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
 **BCSAnsatzmarch8.tex
 (./BCSAnsatzmarch8.tex
-LaTeX2e <2003/12/01>
-Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, b
-ahasa, basque, bulgarian, catalan, croatian, czech, danish, dutch, esperanto, e
-stonian, finnish, greek, icelandic, irish, italian, latin, magyar, norsk, polis
-h, portuges, romanian, russian, serbian, slovak, slovene, spanish, swedish, tur
-kish, ukrainian, nohyphenation, loaded.
-(/usr/share/texmf/tex/latex/revtex4/revtex4.cls
-Document Class: revtex4 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for do
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, farsi, finnish, french,
+ galician, german, ngerman, swissgerman, monogreek, greek, hungarian, icelandic
+, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, oriya, panja
+bi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji, lao, lati
+n, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, polish, portu
+guese, romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedis
+h, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/revtex4/revtex4.cls
+Document Class: revtex4 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for do
 cumentation)
  Copyright (c) 2001 The American Physical Society.
  mailto:revtex@aps.org
@@ -35,9 +42,9 @@ ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
 \pagegrid@col=\count82
 Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
 ly upper/lower case changing (DPC)]. on input line 3682.
-(/usr/share/texmf/tex/latex/url/url.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
-Package: url 2004/03/15  ver 3.1  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 \c@affil=\count83
 \absbox=\box31
@@ -52,39 +59,39 @@ Package: url 2004/03/15  ver 3.1  Verb mode for urls, etc.
 \c@figure=\count90
 \c@table=\count91
 
-(/usr/share/texmf/tex/latex/natbib/natbib.sty
-Package: natbib 2003/06/06 7.1 (PWD)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2009/11/07 8.31a (PWD, AO)
 \bibhang=\skip43
 \bibsep=\skip44
-LaTeX Info: Redefining \cite on input line 518.
+LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count92
 )
 \widetext@top=\box32
 \widetext@bot=\box33
 
-(/usr/share/texmf/tex/latex/revtex4/revsymb.sty
-Package: revsymb 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documenta
+(/usr/local/texlive/2010/texmf-dist/tex/latex/revtex4/revsymb.sty
+Package: revsymb 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documenta
 tion)
 LaTeX Info: Redefining \REV@mathfrak on input line 118.
 ))
-(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
 \ex@=\dimen102
 ))
-(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen103
 )
-(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count93
@@ -125,38 +132,40 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(/usr/share/texmf/tex/latex/revtex4/aps.rtx
-File: aps.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentatio
+(/usr/local/texlive/2010/texmf-dist/tex/latex/revtex4/aps.rtx
+File: aps.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentatio
 n)
 )
-(/usr/share/texmf/tex/latex/revtex4/12pt.rtx
-File: 12pt.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentati
+(/usr/local/texlive/2010/texmf-dist/tex/latex/revtex4/12pt.rtx
+File: 12pt.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentati
 on)
 )
-(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks21
 )
-(/usr/share/texmf/tex/latex/graphics/graphics.sty
-Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texmf/tex/latex/graphics/graphics.cfg
-File: graphics.cfg 2005/02/03 v1.3 graphics configuration of teTeX/TeXLive
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: dvips.def on input line 80.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texmf/tex/latex/graphics/dvips.def
-File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/09/14 v0.05b Graphics/color for pdfTeX
+\Gread@gobject=\count105
 ))
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
-) (./BCSAnsatzmarch8.aux)
+)
+(./BCSAnsatzmarch8.aux)
 \openout1 = `BCSAnsatzmarch8.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
@@ -175,17 +184,114 @@ Class revtex4 Info: Patching LaTeX tabular. on input line 38.
 Class revtex4 Info: cite was not loaded (OK!) on input line 38.
 Class revtex4 Info: multicol was not loaded (OK!) on input line 38.
 
-[1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]
-File: BcsWF.eps Graphic file (type eps)
- <BcsWF.eps>
-[16] [17] [18] (./BCSAnsatzmarch8.aux) ) 
-Here is how much of TeX's memory you used:
- 2672 strings out of 94501
- 31635 string characters out of 1176788
- 99270 words of memory out of 1000000
- 5856 multiletter control sequences out of 10000+50000
- 11425 words of font info for 40 fonts, out of 500000 for 2000
- 580 hyphenation exceptions out of 1000
- 32i,17n,24p,1422b,282s stack positions out of 1500i,500n,5000p,200000b,5000s
+(/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count106
+\scratchdimen=\dimen113
+\scratchbox=\box36
+\nofMPsegments=\count107
+\nofMParguments=\count108
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count109
+\MPscratchDim=\dimen114
+\MPnumerator=\count110
+\everyMPtoPDFconversion=\toks23
+) (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2010/04/01 v0.9 Utility functions of pdfTeX for LuaTeX (HO)
 
-Output written on BCSAnsatzmarch8.dvi (18 pages, 65940 bytes).
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2010/02/22 v3.7 Keyval support for LaTeX options (HO)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2010/03/01 v1.9 Key value parser (HO)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2010/01/28 v1.3 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 436.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+[1{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]
+Package epstopdf Info: Source file: <BcsWF.eps>
+(epstopdf)                    date: 2010-04-28 22:41:42
+(epstopdf)                    size: 35534 bytes
+(epstopdf)             Output file: <BcsWF-eps-converted-to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=BcsWF-eps-converted-to.pdf 
+BcsWF.eps>
+(epstopdf)             \includegraphics on input line 580.
+runsystem(epstopdf --outfile=BcsWF-eps-converted-to.pdf BcsWF.eps)...executed.
+
+Package epstopdf Info: Result file: <BcsWF-eps-converted-to.pdf>
+(epstopdf)                    date: 2010-11-19 09:40:40
+(epstopdf)                    size: 18399 bytes.
+
+<BcsWF-eps-converted-to.pdf, id=67, 409.53pt x 310.15875pt>
+File: BcsWF-eps-converted-to.pdf Graphic file (type pdf)
+
+<use BcsWF-eps-converted-to.pdf> [16] [17 <./BcsWF-eps-converted-to.pdf>]
+[18] (./BCSAnsatzmarch8.aux) ) 
+Here is how much of TeX's memory you used:
+ 3583 strings out of 493738
+ 46175 string characters out of 3143022
+ 122903 words of memory out of 3000000
+ 6840 multiletter control sequences out of 15000+200000
+ 11425 words of font info for 40 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 37i,17n,24p,1422b,256s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2010/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmbx6.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmex10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi6.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr6.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r8.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.
+pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+>
+Output written on BCSAnsatzmarch8.pdf (18 pages, 262040 bytes).
+PDF statistics:
+ 133 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+

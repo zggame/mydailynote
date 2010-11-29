@@ -1,6 +1,5 @@
 \documentclass[epj]{svjour}
-%\documentclass[aps,prb,superscriptaddress,showpacs,preprint]{revtex4-1}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{subfig}
@@ -53,8 +52,8 @@
 
 
 
-\abstract{We propose a many-body formalism for Cooper pairs  which has similarities  to the one we recently developed for  composite boson excitons (coboson in short). Its Shiva diagram representation evidences that  $N$ Cooper pairs differ from $N$ single pairs through electron exchange only: no direct coupling exists due to the very peculiar form of the reduced BCS potential. As a first application, we here use this formalism to derive Richardson's equations for the exact eigenstates of $N$ Cooper pairs. This gives hints on
-why  $N(N-1)$ dependence of the $N$-pair ground state energy we recently obtained by solving Richardson's equations analytically in the low density limit, stays valid up to the dense regime, no higher order dependence exists even under large overlap, a surprising result hard to accept at first. We also briefly question the BCS wave
+\abstract{We propose a many-body formalism for Cooper pairs  which has similarities  to the one we recently developed for  composite boson excitons (coboson in short). Its Shiva diagram representation evidences that  $N$ Cooper pairs differ from $N$ single pairs through electron exchange only: no direct coupling exists due to the very peculiar form of the reduced BCS potential. As a first application, we here use this formalism to derive Richardson's equations for the exact eigenstates of $N$ Cooper pairs. This derivation gives hints on
+why  $N(N-1)$ dependence of the $N$-pair ground state energy we recently obtained by solving Richardson's equations analytically in the low density limit, stays valid up to the dense regime. No higher order dependence exists  under large overlap, a surprising result hard to accept at first. We also briefly question the BCS wave
 function ansatz compared to Richardson's exact form, in the light of our understanding of coboson many-body effects. }
 \date{\today}
 \maketitle
@@ -73,19 +72,19 @@ blocking from the dilute to the dense regime of pairs.
 
 Five years after the BCS milestone paper\cite{BCS} on superconductivity, Richardson succeeded to solve this N-body problem formally\cite{Richardson1,Richardson2,Richardson1968,Richardson3} (see also reference \cite{gaudin,Ushveridze}) . He showed that 
 the exact eigenstates of the Schr\"{o}dinger equation for an arbitrary number $N$ of pairs interacting through the reduced BCS potential can be expressed in terms
-of $N$ parameters, $R_{1}$,... $R_{N}$ which are solutions of $N$ coupled
+of $N$ parameters, $R_{1}$,... $R_{N}$, which are solutions of $N$ coupled
 non-linear equations, the energy of these $N$ pairs reading as $E
 _{N}=R_{1}+...+R_{N}$. Although this exact form is definitely very smart, to
-use it in practice is not that easy: Except in the infinite $N$ limit for which the BCS energy has been recovered \cite{Richardson3}, the equations giving $R_{1}$,... $R_{N}$  do not have, up to now, analytical solution for arbitrary $N$ and arbitrary interaction strength. The only existing approaches are numerical\cite{Duk,ortiz,delft}. This probably is why Richardson's solution has not had so far the
+use it in practice is not that easy: except in the infinite $N$ limit for which the BCS energy has been recovered \cite{Richardson3}, the equations giving $R_{1}$,... $R_{N}$  do not have, up to now, analytical solution for arbitrary $N$ and arbitrary interaction strength. The only existing approaches are numerical\cite{Duk,ortiz,delft}. This probably is why Richardson's solution has not had so far the
 attention it deserves compared to the standard BCS approximating solution. Nowadays, these equations 
-are commonly addressed numerically to study superconducting granules having small number of pairs\cite{Duk,delft2001,sierra2000,schechter2001}. 
+are commonly addressed numerically to study superconducting granules having a small number of pairs\cite{Duk,delft2001,sierra2000,schechter2001}. 
 
 Two years ago, we decided to tackle again these Richardson's equations because we wanted to reveal the deep connection which has to exist between two well-known problems, namely the
 one-pair problem solved by Cooper and the many-pair problem considered by Bardeen, Cooper and Schrieffer. 
-These two problems have intrinsic similarities: In
+These two problems have intrinsic similarities: in
 both cases, there is a ``frozen'' core of non-interacting electrons. Above this core, there is
 a potential layer with attraction between up and
-down spin electrons having opposite momenta. In the one-pair problem, this layer contains one electron pair 
+down spin electrons with opposite momenta. In the one-pair problem, this layer contains one electron pair 
 only, while in the standard BCS configuration, the potential
 layer is half-filled - a symmetrical potential 
 on both sides of the Fermi level just corresponds to fill half the layer.
@@ -100,12 +99,12 @@ This procedure can also be
 seen as a simple but well-defined toy model to tackle the BEC-BCS crossover
 since, by changing the number of pairs, we change their overlap. 
 An overlap change has already been considered by Eagles \cite{Eagle}, 
-and also by Leggett \cite{LeggettCrossover}, through the change of the interaction strength between pairs. In their approach, the number of pairs is fixed, so that Pauli blocking does not change when the overlap changes while it increases when the pair number increases as we here do. Consequently, the two types of overlap change do not involve the same physics. This is why to change the overlap by changing the pair number at constant potential is a relevant problem, complementary to the one studied in the past by Eagles and by Leggett. We wish to mention that Ortiz and Dukelsky have applied Richardson's approach to the BEC-BCS crossover problem with a different perspective, the overlap being varied by changing the interaction strength\cite{crossoverRich}, along Eagles' and  Leggett's idea.  Some interesting comparisons between the BCS ansatz and Richardson's solution also follow from their work.  
+and also by Leggett \cite{LeggettCrossover}, through the change of the interaction strength between pairs. In their approaches, the number of pairs is fixed, so that Pauli blocking does not change when the overlap changes while it increases when the pair number increases as we here do. Consequently, the two types of overlap change do not involve the same physics. This is why to change the overlap by changing the pair number at constant potential is a relevant problem, complementary to the one studied in the past by Eagles and by Leggett. We wish to mention that Ortiz and Dukelsky have applied Richardson's approach to the BEC-BCS crossover problem with a different perspective, the overlap being varied by changing the interaction strength\cite{crossoverRich}, along Eagles' and  Leggett's idea.  Some interesting comparisons between the BCS ansatz and Richardson's solution also follow from their work.  
 
 
 Since the Richardson's procedure allows one to fix the pair number and vary 
 this number at will from one to half filling, we seriously reconsidered 
-solving these equations analytically in order to better understand how superconductivity develops from a collection of single pairs through the $N$ dependence of their ground state energy. By turning to the dimensionless form of Richardson's equations, we succeeded to solve these equations analytically at the lowest order in density, follow density on the single pair scale\cite{moth}. 
+solving these equations analytically in order to better understand how superconductivity develops from a collection of single pairs through the $N$ dependence of their ground state energy. By turning to the dimensionless form of Richardson's equations, we succeeded to solve these equations analytically at the lowest order in density, following density on the single pair scale\cite{moth}. 
 Indeed, these equations do have a small dimensionless parameter which is the inverse of the number of pairs $N_{c}$ from which overlap between noninteracting single pairs would start. 
 This allowed us to demonstrate that, for $N$ arbitrary large but $N/N_{c}$ still small, 
 the energy of $N$ Cooper pairs reads, at lowest order in $1/ N_{c}$, as
@@ -118,7 +117,7 @@ $\epsilon _{F_{0}}$ is the Fermi level energy of the frozen sea.  \\$\epsilon _{
 2\Omega \exp \left( -2/\rho _{0}V\right) $ is the single pair binding
 energy for a small potential amplitude $V$ (weak-coupling limit). $\rho
 _{0} $ is the density of states within the potential
-layer, taken as constant, which linearly increases with sample size. $N_{c }=\rho _{0}\epsilon _{c} $ while $N_{\Omega }=\rho _{0}\Omega $ is the number of free pair states in the potential
+layer, taken as constant, and linearly increases with sample size. $N_{c }=\rho _{0}\epsilon _{c} $ while $N_{\Omega }=\rho _{0}\Omega $ is the number of free pair states in the potential
 layer, $\Omega $ being the layer extension.
 
 A $N(N-1)$ dependence in the energy of $N$ pairs suggests an interaction treated at the  lowest order in density. In spite of it, the above result fully agrees with the textbook energy obtained in the dense BCS configuration. In other words, all higher order terms in the $N$ dependence of the energy seem to cancel exactly, even under strong overlap.  Indeed, the first term of Eq.\eqref{eq:eN} is
@@ -147,7 +146,7 @@ As the Pauli exclusion principle is said to play a key role in superconductivity
 
 The main purpose of the present work is to settle such a formalism. The physics being fully determined by the Hamiltonian, the major difference between an exciton gas and a set of Cooper pairs of course lies in the potential. Excitons interact via the Coulomb potential between its carriers. For Cooper pairs, we here take the usual ``reduced" BCS potential without questioning it. While its relevance has been proved in many physical effects, its main advantage surely is its simplicity which makes it ``solvable'' - even more than originally thought by Bardeen, Cooper and Schrieffer, as seen from Richardson's works and the quite recent analytical solution we found to his equations\cite{Richardson1,Ushveridze,ortiz}.
  
-  Coulomb potential is long-range, the BCS potential, taken as separable, is short range. This can be a reason for Cooper pairs to stay bound at large densities while excitons break through a Mott transition when the density increases. However, to our opinion, the crucial difference between excitons and Cooper pairs lies in the fact that usual Wannier excitons  are made of fermion pairs having two degrees of freedom while the electrons which interact by the BCS potential have opposite momenta, so that electron pairs have one degree of freedom only.  Actually, there also are excitons made of pairs with one degree of freedom: Frenkel excitons. Those exist in organic materials while Wannier excitons are found in inorganic materials. The latter are made from a free electron and a free hole, attracted by intraband Coulomb processes. By contrast, Frenkel excitons are made of atomic excitations on ion sites which are delocalized into exciton by Coulomb processes between atomic levels.  It is worth noting that we have found the same  $N(N-1)$ dependence for the hamiltonian mean value taken between $N$ ground state Frenkel excitons \cite{frenkel}, while Wannier excitons have been shown to also have terms in $N(N-1)(N-2)$ and higher\cite{monicOdil}.
+  Coulomb potential is long-range; the BCS potential, taken as separable, is short-range. This can be a reason for Cooper pairs to stay bound at large densities while excitons break through a Mott transition when the density increases. However, to our opinion, the crucial difference between excitons and Cooper pairs lies in the fact that usual Wannier excitons  are made of fermion pairs having two degrees of freedom while the electrons which interact by the BCS potential have opposite momenta, so that electron pairs have one degree of freedom only.  Actually, there also are excitons made of pairs with one degree of freedom: Frenkel excitons. Those exist in organic materials while Wannier excitons are found in inorganic materials. The latter are made from a free electron and a free hole, attracted by intraband Coulomb processes. By contrast, Frenkel excitons are made of atomic excitations on ion sites which are delocalized into exciton by Coulomb processes between atomic levels.  It is worth noting that we have found the same  $N(N-1)$ dependence for the hamiltonian mean value taken between $N$ ground state Frenkel excitons \cite{frenkel}, while Wannier excitons have been shown to also have terms in $N(N-1)(N-2)$ and higher\cite{monicOdil}.
 
 
 
@@ -185,7 +184,7 @@ In the last section, we conclude.
 
 \section{Commutation technique for free fermion pairs making Cooper pairs\label{sec:beta}}
 
-In our recent works on the many-body physics of composite bosons - essentially concentrated on semiconductor excitons - we have
+In our recent work on the many-body physics of composite bosons - essentially concentrated on semiconductor excitons - we have
 proposed a ``commutation technique'' which allows an exact treatment of Pauli blocking between the fermionic components of these composite
 bosons (cobosons in short). They appear through dimensionless ``Pauli scatterings'' which describe fermion
 exchanges in the absence of fermion interaction. These dimensionless
@@ -209,7 +208,7 @@ momentum
  In the case of Cooper pairs, $a^{\dagger}_{\mathbf{k} }$ creates a  up-spin electron with momentum $\mathbf{k}$ while $b^{\dagger}_{\mathbf{-k} }$ creates a down-spin electron with momentum $\mathbf{-k}$. These $\beta^{\dagger}_\vk$ pairs have one degree of freedom
 only, namely $\mathbf{k}$. This has to be  contrasted to the
 most general fermion pairs $a^{\dagger}_{\mathbf{k} _1}b^{\dagger}_{\mathbf{k%
-} _2}$, such as Wannier exciton pairs, which have two. $\beta^{\dagger}_\vk$ pairs  considered here have  some similarity to Frenkel exciton pairs \cite{frenkel}, where the index $\mathbf{k}$ being then replaced by the excited ion index $n$. 
+} _2}$, such as Wannier exciton pairs, which have two. $\beta^{\dagger}_\vk$ pairs  considered here have  some similarities to Frenkel exciton pairs \cite{frenkel}, where the index $\mathbf{k}$ being then replaced by the excited ion index $n$. 
 
 It is straightforward to show that the creation operators of these free fermion pairs commute 
 \begin{equation}  \label{eq:bCom}
@@ -238,7 +237,7 @@ where the ``deviation-from-boson operator'' of two zero-momentum free fermion pa
 \end{equation}
 This operator which would be  zero for fermion pairs  taken as
 elementary bosons, allows us to generate the dimensionless Pauli scatterings for fermion
-exchanges between composite bosons in the absence of fermion interaction. Following our works on excitons\cite%
+exchanges between composite bosons in the absence of fermion interaction. Following our work on excitons\cite%
 {CobosonPhysicsReports}, these are formally defined through 
 \begin{equation}\label{eq:dbeta}
 \left[\mathit{D} _{\mathbf{k} ^{\prime}_1\mathbf{k} ^{}_1},\beta^{\dagger}_{%
@@ -385,7 +384,7 @@ This interaction scattering is visualized by the diagram of Fig. (\ref{fig:chi})
 exchange an electron. As for any exchange, this brings a minus sign. In a
 second step, the electrons of one of the two pairs, $\mathbf{p}' _1$ or ${\mathbf{p}}' _2$,  interact via the reduced BCS
 potential. It is clear that, since this potential has a ($1\times1$)
-structure within the pair subspace, the scattering between two pairs can only result, as ahead said, from
+structure within the pair subspace, the scattering between two pairs can only result, as forementioned, from
 electron exchange between pairs, i.e., Pauli blocking. This diagram evidences it.
 
 It is worth noting that electron exchange and electron interaction do not play a symmetrical role in this interaction scattering. Indeed, process in which the interaction takes place before the exchange - instead of after as in Fig. (\ref{fig:chi}) - would lead to
@@ -414,7 +413,7 @@ This means that the $v_{\mathbf{k} ^{\prime}\mathbf{k} }$ prefactors in Eq.%
 $N_0$ being the number of pairs in the frozen sea, so that this state is a many-body state already, but in the most simple sense since the $N_0$ pairs of the Fermi sea $%
 \left|F_0\right> $ are just there to block states by the Pauli exclusion
 principle. This Fermi sea mainly brings a finite density of state for all
-states above it, a crucial point to have a bound state in 3D whatever the weakness of the attracting BCS potential.
+states above it, a crucial point to have a bound state in 3D, no matter how weak the attracting BCS potential is.
 
 By choosing the zero energy such
 that $H_0\left|F_0\right> =0$, Eqs.(\ref{eq:betaH},\ref{eq:vbeta}) gives the hamiltonian $H=H_0+V_{BCS}$
@@ -660,7 +659,7 @@ _2}\right\} \left|F_0\right>
 The interaction part of Eq. (\ref{eq:SchThree2}), namely $\left|V_{\mathbf{k} _1\mathbf{k} _2%
 \mathbf{k} _3}\right>+\left|W_{\mathbf{k} _1\mathbf{k} _2\mathbf{k} _3}\right> $, is represented by the diagrams of Fig. (\ref{fig:threeP}). \\$\left|V_{\mathbf{k} _1\mathbf{k} _2
 \mathbf{k} _3}\right>$ has interactions inside a single pair, two pairs
-staying unchanged. $\left|W_{\mathbf{k} _1\mathbf{k} _2\mathbf{k} _3}\right> $ contains processes in which the pair suffering the potential exchanges one of its electrons with a second pair, the third pair staying unchanged.  There  are two similar  contributions, obtained by circular permutations.
+staying unchanged. $\left|W_{\mathbf{k} _1\mathbf{k} _2\mathbf{k} _3}\right> $ contains processes in which the pair suffering the potential exchanges one of its electrons with a second pair, leaving the third pair unchanged.  There  are two similar  contributions, obtained by circular permutations.
 \begin{figure}[htb]
    \includegraphics[width=0.4\textwidth]{threePair.eps}
 \caption{Shiva diagram for the interaction part $\left|V_{\mathbf{k} _1\mathbf{k} _2
@@ -728,10 +727,10 @@ provided that $\left(R_1,R_2, R_3\right) $ fulfill the three equations,
 The above commutation technique can be easily extended to $N$ pairs. As nicely
 visualized by the diagrams of Figs. (\ref{fig:twoP}, \ref{fig:threeP}), the
 effect of the BCS potential on these $N$ pairs splits into direct and exchange processes:
-In the direct set, one pair is affected by the ($1\times1$) scattering while the other $N-1
+in the direct set, one pair is affected by the ($1\times1$) scattering while the other $N-1
 $ pairs stay unchanged. In the exchange set, this pair, before interaction, also 
 exchanges one of its electrons with another pair, the remaining $N-2$
-pairs staying unchanged. This understanding shows that an increase of pair number above two, does not really change the structure of the equations
+pairs staying unchanged. This understanding shows that the increase of pair number above two does not really change the structure of the equations
 since $N-2$ pairs stay unchanged, the pair which exchanges its fermions with the
 pair suffering the interaction being just one among $(N-1)$ pairs.
 
@@ -788,7 +787,7 @@ _{j+1}}\cdots \beta^{\dagger}_{\mathbf{k}_{N}}\left|F_0\right>\\
 \left[V^{\dagger}_{\mathbf{k} _{i}},\beta^{\dagger}_{\mathbf{k} _N}\right] \left|F_0\right>
 \end{split}
 \end{equation}
- $\left[V^{\dagger}_{\mathbf{k} _{i}},\beta^{\dagger}_{\mathbf{k} _j}\right]$ makes appear the  exchange interaction scattering between the $\vk_i$ and $\vk_j$ pairs, so that the above term generate the exchange interaction scatterings between the $\mathbf{k} _{i}$ pair and all the $\mathbf{k} _{j}$ pairs with  $i<j\leq{N}$.  When inserted into Eq. (\ref{eq:HN}), we find all possible exchange interactions between fermion pairs, so that the set of terms with creation potential ultimately gives
+ $\left[V^{\dagger}_{\mathbf{k} _{i}},\beta^{\dagger}_{\mathbf{k} _j}\right]$ makes appear the  exchange interaction scattering between the $\vk_i$ and $\vk_j$ pairs, so that the above term generates the exchange interaction scatterings between the $\mathbf{k} _{i}$ pair and all the $\mathbf{k} _{j}$ pairs with  $i<j\leq{N}$.  When inserted into Eq. (\ref{eq:HN}), we find all possible exchange interactions between fermion pairs, so that the set of terms with creation potential ultimately gives
 \begin{equation}  
 \left|W_{\mathbf{k} _1\cdots\mathbf{k} _N}\right>=\sum_{\vp^{\prime}_1\mathbf{p} ^{\prime}_2}\beta^{\dagger}_{\mathbf{p}
 ^{\prime}_1}\beta^{\dagger}_{\mathbf{p} ^{\prime}_2} \sum_{i<j}\chi\left(\begin{smallmatrix}\vp'_2&\vk_j\\\vp'_1&\vk_i%
@@ -804,7 +803,7 @@ which also reads in a compact form as
 \left|W_{\mathbf{k} _1\cdots\mathbf{k} _N}\right>=2V\beta^\dagger\left[ \sum_{i<j}\delta_{\vk_i\vk_j}w_{\vk_j}\beta^\dagger_{\vk_j}\prod_{m\neq(i,j)}\beta^{\dagger}_{\mathbf{k} _m} \right]\left|F_0\right>  
 \end{equation}
 
-All this leads for $E_N$ written as $R_1+...+R_N$ to
+All these lead $E_N$ written as $R_1+...+R_N$ to
 
 
 \begin{equation}\label{eq:HN2}
@@ -848,7 +847,7 @@ By using  Eq. (\ref{eq:deltakk}) for the above bracket, we end with
 }{R_i-R_j}\right]\\
 \sum_{m\neq{i}}B^{\dagger}(R_m)\left|F_0\right>  
 \end{multline}
-This evidences that $B^{\dagger}(R_1)\cdots{}B^{\dagger}(R_N)\left|F_0\right> $ is $N$-pair eigenstate of the hamiltonian $H$, with energy $E_N=R_1+\cdots+R_N$ provided that all the brackets in the above equation cancel. These just are the $N$ Richardson's equations written in Eq.(49).
+This evidences that $B^{\dagger}(R_1)\cdots{}B^{\dagger}(R_N)\left|F_0\right> $ is $N$-pair eigenstate of the hamiltonian $H$, with energy $E_N=R_1+\cdots+R_N$, provided that all the brackets in the above equation cancel. These just are the $N$ Richardson's equations written in Eq.(49).
 \section{Physical understanding\label{sec:understanding}}
 
 \subsection{Richardson equations and the Pauli exclusion principle}
@@ -883,7 +882,7 @@ from the energy of $N$ independent pairs.
 
 An important feature of the ground state energy $E _N$ for $N$ pairs that
 this  derivation possibly explains, is the fact that the
-part of $E_N$ coming from interaction, namely $E _N-N%
+part of $E_N$  from interaction, namely $E _N-N%
 E _1$, depends on $N$ as $N(N-1)$ only, with no higher order dependence. Indeed, Eq. \eqref{eq:eN}  also reads
 \begin{equation}  \label{eq:en}
 E _N=NE _1+N(N-1)\left(\frac{1}{\rho_0} +\frac{\epsilon_c}{%
@@ -924,7 +923,7 @@ which is similar to Eq.(\ref{eq:vBeta}). When used into Eq.(\ref{eq:HB3}), this 
 \end{equation}
 As in Eq.(\ref{eq:vThree2}), one out of the three excitons seems to stay outside in the scattering process.
 
-Here comes the crucial difference between Wannier excitons and Cooper pairs. Wannier exciton, made of $a^\dagger_{\vk_1}b^\dagger_{\vk_2}$ pairs, have two degrees of freedom. As a direct consequence,  two electrons and two holes can be associated in two different ways to form two excitons. It is possible to show \cite{CobosonPhysicsReports} that
+Here comes the crucial difference between Wannier excitons and Cooper pairs. A Wannier exciton, made of $a^\dagger_{\vk_1}b^\dagger_{\vk_2}$ pairs, has two degrees of freedom. As a direct consequence,  two electrons and two holes can be associated in two different ways to form two excitons. It is possible to show \cite{CobosonPhysicsReports} that
 \begin{equation}\label{eq:BB}
 B^\dagger_iB^\dagger_j=-\sum\lambda\left(\begin{smallmatrix}n&j\\m&i\end{smallmatrix}%
 \right)  B^{\dagger}_{m}B^{\dagger}_{n}
@@ -943,7 +942,7 @@ The fact that, in the first term of the RHS of Eq.(67), the $B^\dagger_{i_3}$ ex
 \sum{}B^\dagger_mB^\dagger_pB^\dagger_q\left\{\lambda\left(\begin{smallmatrix}q&n\\p&i_3\end{smallmatrix}\right)
 +\lambda\left(\begin{smallmatrix}p&n\\q&i_3\end{smallmatrix}\right)\right\} \xi\left(\begin{smallmatrix}n&i_3\\m&i_1\end{smallmatrix}\right)
 \end{equation}
-This shows that the $(i_1,i_2,i_3)$ excitons can actually be involved in $3\times3$ connected diagram, as shown in Fig. (\ref{fig:threeExciton}).
+This shows that the $(i_1,i_2,i_3)$ excitons can actually be involved in a $3\times3$ connected diagram, as shown in Fig. (\ref{fig:threeExciton}).
 
  
 \begin{figure}[htb]
@@ -952,7 +951,7 @@ This shows that the $(i_1,i_2,i_3)$ excitons can actually be involved in $3\time
  \end{figure}
 
 
-Let us return to the $\beta^\dagger_\vk$ pairs making Cooper pairs. Since the $\vk$ electron with up spin is associated to the $-\vk$ electron with down spin only, an equation similar to Eq.(\ref{eq:BB}) does not exist.  As a result the $\vk_3$ pair in Eq.(\ref{eq:vThree2}) cannot be mixed with the $\vk'_2$ pair as in Eq.(\ref{eq:3BLambdaXi}) to generate $3\times3$ connected diagram, as the one of Fig. (\ref{fig:threeExciton}).
+Let us return to the $\beta^\dagger_\vk$ pairs making Cooper pairs. Since the $\vk$ electron with up spin is associated to the $-\vk$ electron with down spin only, an equation similar to Eq.(\ref{eq:BB}) does not exist.  As a result the $\vk_3$ pair in Eq.(\ref{eq:vThree2}) cannot be mixed with the $\vk'_2$ pair as in Eq.(\ref{eq:3BLambdaXi}) to generate a $3\times3$ connected diagram, as the one of Fig. (\ref{fig:threeExciton}).
 
 
 \subsection{Richardson's exact eigenstate versus BCS ansatz}
@@ -965,12 +964,12 @@ B^{\dagger}(R_1)\cdots{}B^{\dagger}(R_N)\left|F_0\right>
 with $B^{\dagger}(R)$ given by Eq.\eqref{eq:B}. The fact that, by
 construction, all the $R_i$'s are different in order for the $1/(R_i-R_j)$ factors in the Richardson's equations not to diverge, strongly questions the standard
 BCS ansatz for the $N$-pair wave function since this ansatz reduces to $\left(B^{\dagger}\right)
-^N\left|F_0\right> $ when projected into the $N$-pair subspace. In this ansatz,  \emph{all} the pairs are taken as condensed into the same state. This is fine for elementary bosons but harder to accept for composite bosons. Pauli blocking between pairs  makes each added pair necessarily different from the previous ones. (???????????????????? insert)
+^N\left|F_0\right> $ when projected into the $N$-pair subspace. In this ansatz,  \emph{all} the pairs are taken as condensed into the same state. This is fine for elementary bosons, but hard to accept for composite bosons. Pauli blocking between pairs  makes each added pair necessarily different from the previous ones. This de facto enforces the effective parts of the $B^{\dagger}$ operators in the $(B^{\dagger})^{N}\left|F_0\right>$ state to be all different.  However, since Pauli blocking is a kind of dimensionless ``interaction'', there is no reason to enforce the composite bosons into the same combination of the pair state. ``Pauli interaction'' is more likely to destroy the $\left(B^{\dagger}\right)^N$ harmony and to make the $N$-pair state into $B^{\dagger}(R_{1})\cdots{}B^{\dagger}(R_{N})\left|F_0\right>$ with all $R_{i}$'s different, as in the Richardson's solution. 
 
-There were in the past, several discussions about differences and similarities between BCS ansatz and Richardson's exact solution, or more generally a Bethe ansatz like $\prod_iB^\dagger_i\left|0\right>$ from various perspectives and physical situation \cite{bang,hasegawa,Roman2002}.  Most discussions on the ground state actually  focus on recovering the correct energy or some other physical quantities, such as integrals of motion (\cite{ortiz}), not the wave function itself, more difficult to experimentally evidence. However, this wave function is strongly attached to the picture people commonly have of superconductivity. This is why a correct wave function is of importance for physical understanding, at least.
+There were in the past, several discussions about differences and similarities between BCS ansatz and Richardson's exact solution, or more generally a Bethe ansatz like $\prod_iB^\dagger_i\left|0\right>$ from various perspectives and physical situation \cite{bang,hasegawa,Roman2002}.  Most discussions on the ground state actually  focus on recovering the correct energy or some other physical quantities, such as integrals of motion (\cite{ortiz}), not the wave function itself, more difficult to evidence. However, this wave function is strongly attached to the picture people commonly have of superconductivity. This is why a correct wave function is of importance for physical understanding, at least.
 
 To discuss this problem, let us again start with two pairs. In
-a previous work\cite{combescotBCS}, we have shown, that the Richardson's parameters for two pairs read as $R_1=R_{2}^{*}=R+iR^{\prime}$ with $R$
+a previous work\cite{combescotBCS}, we have shown that the Richardson's parameters for two pairs read as $R_1=R_{2}^{*}=R+iR^{\prime}$ with $R$
 and $R^{\prime}$ real. In the
 large sample limit, i.e. for $1/\rho_0$ small,  the dominant terms of $R$ and $R'$ are $R\approx\epsilon_c+1/%
 \rho_0+\epsilon_c/\rho_0\Omega$ and $R^{\prime}\approx\sqrt{2\epsilon_c/\rho_0}$. By writing $B^{\dagger}(R_1)$ as $\left[B^{\dagger}(R)+B^{\dagger}(R_1)-B^{\dagger}(R)\right]$ and similarly for  $B^{\dagger}(R_2)$, 
@@ -1008,12 +1007,12 @@ crucial to support the overall picture of
 superconductivity commonly in mind, with all the pairs in the same state, ``as an army of
 little soldiers, all walking similarly''.  This picture actually seems a rather naive extrapolation to composite bosons, of the standard Bose-Einstein condensation demonstrated in the case of  \emph{elementary} bosons. 
 More work on the validity of the BCS 
-ansatz in the thermodynamical limit in the context of the coboson nature of Cooper pairs, seems a necessity to more deeply understand some unrevealed aspects of basic superconductivity as the ones at the origin of Eq.(1) for the $N$-pair ground state energy. The coboson many-body formalism we have here constructed, should appear as quite valuable because it gives a fresh view to this famous field, its Shiva diagram representation helping to support physical understanding.
+ansatz in the thermodynamical limit in the context of the coboson nature of Cooper pairs, seems a necessity to more deeply understand some unrevealed aspects of basic superconductivity as the ones at the origin of Eq.(1) for the $N$-pair ground state energy. The coboson many-body formalism we have here constructed, should appear as quite valuable because it gives a fresh view to this famous field, with its Shiva diagram representation helping to support physical understanding.
  
 
 \section{Conclusion}
 
-We have constructed a coboson formalism for free electron pairs on which Cooper pairs are made. It has similarity with the one we have constructed for composite boson excitons. This formalism evidences that the scatterings of two zero-momentum electron pairs in the reduced BCS potential, are mediated by the Pauli exclusion principle. No direct interactive process exists
+We have constructed a coboson formalism for free electron pairs on which Cooper pairs are made. It has similarity with the one we have constructed for composite boson excitons. This formalism evidences that the scatterings of two zero-momentum electron pairs in the reduced BCS potential, are mediated by the Pauli exclusion principle. No direct interaction process exists
 
 
 As a first application, we here rederive Richardson's equations for the exact eigenstates of $N$ Cooper pairs. This 
@@ -1023,7 +1022,7 @@ particular, we clearly see that $N$ pairs differ from $N$ independent
 pairs, due to Pauli blocking only. This Pauli blocking
 enforces the $R_i$ parameters of Richardson's equations to be all different. 
 As a direct consequence, the exact wave function of $N$ interacting pairs is 
-definitely different from the BCS ansatz, although the $N$-pair energy this ansatz provides, is the correct one in the large sample limit. 
+definitely different from the BCS ansatz, although the $N$-pair energy of ansatz is the correct one in the large sample limit. 
 
 The diagrammatic
 representation of our derivation also shows that, because electron pairs

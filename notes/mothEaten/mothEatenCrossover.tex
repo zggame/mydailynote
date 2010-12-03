@@ -17,11 +17,47 @@
 \maketitle
 
 \section{The system}
-We consider $N$ fermion pairs $(\alpha,\beta)$ valid by the hamiltonian
+We consider $N$ fermion pairs $(\alpha,\beta)$ governed by the hamiltonian
 \begin{equation}
 H=H_{0}+V
 \end{equation}
+where $H_0$ is the kinetic energy 
+\begin{equation}
+H_0=\sum_{\vk}\epsilon_\vk(a^\dagger_\vk{}a^{}_\vk+b^\dagger_\vk{}b^{}_\vk)
+\label{eq:}
+\end{equation}
+and $V$ is interaction
+\begin{equation}
+V=-v\sum_{\vk\vk'}\omega_{\vk'}\omega_\vk\beta^\dagger_{\vk'}{}\beta^{}_\vk
+\label{eq:}
+\end{equation}
+and $\beta^\dagger_{\vk}=a^\dagger_{\vk}b^\dagger_{-\vk}$ creates a zero momentum pair while $\omega_\vk=1$ for $0<\epsilon_\vk<\Omega$ and zero otherwise.  
 \section{One pair}
+The single pair energy $E_1$ follows from Cooper equation
+\begin{equation}
+1=v\sum_{\vk}\frac{\omega_\vk}{2\epsilon_\vk-E_1}\equiv{}v\,S(E_1)
+\label{eq:}
+\end{equation}
+\subsection{2D systems}
+In 2D, the density of state is constant, so that 
+\begin{equation}
+S^{(\text{2D})}(E<0)=\rho\int_0^{\Omega}\frac{d\epsilon}{2\epsilon-E}=\frac{\rho}{2}\ln\left(\frac{2\Omega-E}{-E}\right)
+\label{eq:}
+\end{equation}
+$S^{(\text{2D})}(E)$ diverges when $E\rightarrow{}0_{-}$ while it goes to zero as $\rho\Omega/(-E)$ when $E$ goes to $-\infty$. A bound state with $E_1<0$, tus exists no matter how weak $v$ is. It is given by 
+\begin{equation}
+E_1^{(\text{2D})}=-\frac{2\sigma}{1-\sigma}\Omega
+\label{eq:}
+\end{equation}
+where $\sigma=e^{-2/\rho{v}}$
+\subsection{3D systems}
+In 3D, the density of states increases as $\sqrt{\epsilon}$. Let us write it as 
+\begin{equation}
+\rho(\epsilon)=\rho\sqrt{\epsilon/\Omega}
+\label{eq:}
+\end{equation}
+where $\rho$ is the density of state at the potential threshold. We then have
+
 \section{N pairs}
 %\tableofcontents
 \numberwithin{equation}{section}

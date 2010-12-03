@@ -13,9 +13,11 @@
 \title{Moth-eaten effect on BEC-BCS pairing}
 \input{../newCommand}
 \renewcommand{\emph}[1]{\textbf{#1}}
+\newcommand{\td}{{\ensuremath{{(2D)}}}}
+\newcommand{\sd}{{\ensuremath{{(3D)}}}}
 \begin{document}
 \maketitle
-
+\numberwithin{equation}{section}
 \section{The system}
 We consider $N$ fermion pairs $(\alpha,\beta)$ governed by the hamiltonian
 \begin{equation}
@@ -59,9 +61,45 @@ In 3D, the density of states increases as $\sqrt{\epsilon}$. Let us write it as
 where $\rho$ is the density of state at the potential threshold. We then have
 
 \section{N pairs}
-%\tableofcontents
-\numberwithin{equation}{section}
+Richardson \cite{Richardson1} and Gaudin \cite{gaudin} have shown that the energy of N fermion pairs interacting through the BCS reduced potential is exactly given by $E_N=R_1+\cdots+R_N$ where the $R_i$'s follow from $N$ coupled nonlinear equations
+\begin{equation}
+ 1=v\sum_\vk\frac{w_\vk}{2\epsilon_\vk-R_i}+\sum_{j\neq{}i}\frac{2v}{R_i-R_j}\qquad\text{for}\;i=(1,\cdots,N)
+\end{equation}
+\subsection{2D systems}
+We have shown that when the density of states is constant, as in standard BCS superconductivity set also in 2D systems, a compact form of $E_N$ can be derived. It leads to 
+\begin{equation}
+ E^(2D)_N=N\,E^{2D}_1+\frac{N(N-1)}{\rho}\frac{1+\sigma}{1-\sigma}
+\end{equation}
+within under extensive terms in $(N/\rho)^n$ with $n\leq2$
 
+This gives the condensation energy in $N$ pairs, i.e., the difference between the $N$-pair energy without and with potention, as 
+\begin{equation}\label{eq:E2D}
+\begin{split}
+ \mathcal{E}^{(2D)}_N&=E_N^{\td}(v=0)-E_N^\td\equiv{}N\epsilon_N^\td\\
+&=N(1-\frac{N-1}{N_\Omega})\frac{2\sigma}{1-\sigma}\Omega
+\end{split}
+\end{equation}
+where $N_\Omega=\rho\Omega$ is the number of states in the potential layer. 
+
+The condensation energy per pair $\epsilon^\td_N=\mathcal{E}^\td_N/N$ thus decreases linearly with N. This decrease is due to a moth-eaten effect induced by Pauli blocking on the number empty states feeling the potential and thus available to from the $N$-pair bound state.  In the limit of a number of pairs filling the potential layer, $N=N_\Omega$, the condensation energy reduceds to 
+\begin{equation}
+ \mathcal{E}^\td_{N_\Omega}=\Omega[\frac{2\sigma}{1-\sigma}]
+\end{equation}
+so that the condensation energy per pair tends to zero as $\epsilon^\td_{N_\Omega}=[2\sigma/(1-\sigma)]/\rho$ in the large sample limit: for $N=N_\Omega$, the system has no more freedom to construct a lower energy ground state, the condensation energy per pair thus have to cancel.  
+\subsection{3D system}
+A similar compact expression of the $N$-pair energy has not been derived so far in the case of a $\sqrt{\epsilon}$ density of states. Let us first qualitatively understand the behavior of the $N$ pair energy when $N$ increases. 
+
+It is clear that the same moth eaten effect must bring the condensation energy per pair down to zero when $N$ approach $N_\Omega$, this effect fundamentally linked to the Pauli exclusion principle being unaffected by an increase of space dimensionality. 
+
+\subsubsection{}
+For potential $v$ lower than the threshold value $v_{th}(1)=1/\rho$ for the existence of one-pair bound state, $\mathcal{E}_N^\sd$ is equal to zero for $N=1$ and also for $N=N_\Omega$.  It is however clear that $\mathcal{E}_N^\sd$ cannot stay equal to zero for all $N$ between $1$ and $N_\Omega$ because for $N$ equal to a praction of $N_\Omega$, the density of states is essentially constant.  So that we can at least freeze a fraction of the $N$ electrons as in standard BCS superconductivity with a frozen core: a finite condensation thus exists no matter how weak $v$ is. 
+%\tableofcontents
+
+We can have a lower boundary of this condensation energy per pair by freezing $N_0$ of these $N$ electrons.  The remaining $N-N_0$ pairs enjoy the potential attraction in a region where the density of state stays finite, between $\rho\sqrt{\epsilon_{F_0}/\Omega}$ and $\rho$.  The condensation energy of these $(N-N_0$ pairs would then read according to Eq. (\ref{eq:E2D})
+\begin{equation}\label{eq:E2D}
+ \overline{\mathcal{E}}_{N-N_0}=(N-N_0)(1-\frac{N-N_0-1}{N_\Omega})\frac{2\bar\sigma}{1-\bar\sigma}\Omega
+\end{equation}
+where $\bar{\sigma}=e^{-2/{\bar{\rho}v}}$ with $\bar\rho$ being average density of states in the potential layer above the frozen core. This gives a condensation energy per pair equal to $\overline{\mathcal{E}}_{N-N_0}/N$.  By taking $\bar\rho$ as independant of $N_0$, we find that this condensation energy per pair is maximized at $N-N_0=N_\Omega/2$, which of course implies to have $N$ larger than $N_\Omega/2$. 
 \bibliography{../citation}
 %\bibliographystyle{apsrmp4-1long}
 \bibliographystyle{apalike}

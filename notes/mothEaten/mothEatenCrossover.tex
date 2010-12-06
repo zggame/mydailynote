@@ -19,10 +19,13 @@
 \begin{document}
 \maketitle
 \numberwithin{equation}{section}
+\begin{abstract}
+We study the evolution of solution to reduced BCS hamiltonian from single pair to infinite amount of pairs in thermodynamic limit.  We observed that absolutely amount of energy-saving due to pairing decreases while pair number increases because the phase space for each additional pair gets smaller (moth-eaten effect).  However, comparing to the increase of kinetic energy, this decrease is smaller at first and only dominates in the very end when total number of particles is close to the total available state.  
+\end{abstract}
 \section{Introduction}
-It is well-known that in 3D, a weak attractive potential cannot sustain a bound-state.  In 1956, Cooper demonstrated that with a frozen Fermi sea, a pair of electrons of opposite spin can form a bound-state comparing to the Fermi energy no matter how weak the attraction is\cite{Cooper}.  This is indeed a many-body state as Fermi sea, a fundamentally many-body phenomena,  is essential for the two-body ``bound state''.   The next year, Bardeen, Cooper and Schrieffer constructed a many-body ansatz which is an extension of this ``bound state'' and showed that this ansatz gives an intricate many-body state with lower energy than free Fermi gas with arbitrarily weak attraction\cite{BCS} for the same reduced BCS hamiltonian.  They used a particle-number non-conserved ansatz in a grand-canonical ensemble.  Nevertheless, the reduced BCS model also has a frozen Fermi sea in the core. Later,   Gallinskii et. al. showed that the frozen Fermi sea is not necessary and the same type of ansatz worked with a renomalized attraction measured by scattering amplitude\cite{}.   Furthermore, Eagles\cite{Eagles}, Leggett\cite{LeggettCrossover}, Nozi\`{e}res and Schmitt-Rink\cite{Nozieres} extended the BCS pairing idea and bridged BCS pairing and molecular BEC. There they used the model without a frozen Fermi sea as core and employed the full k-space.  All these lead to an interesting question that how the solution for the same hamiltonian evolves from one-pair, where there might be no bound state, to infinite number of pairs, where a many-body solution always exists.  Nevertherless, the particle non-conserved nature of the BCS ansatz makes it quite difficult to put both sides into the same footing.  
+It is well-known that in 3D, a weak attractive potential cannot sustain a bound-state.  In 1956, Cooper demonstrated that with a frozen Fermi sea, a pair of electrons of opposite spin can form a bound-state comparing to the Fermi energy no matter how weak the attraction is\cite{Cooper}.  This is indeed a many-body state as Fermi sea, a fundamentally many-body phenomena,  is essential for the two-body ``bound state''.   The next year, Bardeen, Cooper and Schrieffer constructed a many-body ansatz which is an extension of this ``bound state'' and showed that this ansatz gives an intricate many-body state with lower energy than free Fermi gas with arbitrarily weak attraction\cite{BCS} for the same reduced BCS hamiltonian.  They used a particle-number non-conserved ansatz in a grand-canonical ensemble.  Nevertheless, the reduced BCS model also has a frozen Fermi sea in the core. Later,   Gallinskii et. al. showed that the frozen Fermi sea is not necessary and the same type of ansatz worked with a renomalized attraction measured by scattering amplitude\cite{?}.   Furthermore, Eagles\cite{Eagle}, Leggett\cite{LeggettCrossover}, Nozi\`{e}res and Schmitt-Rink\cite{Nozieres} extended the BCS pairing idea and bridged BCS pairing and molecular BEC. There they used the model without a frozen Fermi sea as core and employed the full k-space.  All these lead to an interesting question that how the solution for the same hamiltonian evolves from one-pair, where there might be no bound state, to infinite number of pairs, where a many-body solution always exists.  Nevertheless, the particle non-conserved nature of the BCS ansatz makes it quite difficult to put both sides into the same footing.  
 
-Five years after BCS, Richardson showed that a number-conserved eigenstate exists for reduced BCS Hamiltonian and it gives the same energy as BCS ansatz in thermaldynamic limit\cite{Richardson1,Richarson2,Richardson3,Richardson1968,gaudin}.  In the model, a frozen Fermi sea also exists in order to provide a constant density of states.  Since 2000, we developed a new theory for composite bosons (cobosons for short) formed by fermion pairs\cite{CobosonPhysicsReports} for electron excitons.   Recently, we applied it into superconductivity and it was proved to be useful.  We rederived Richardson-Gaudin equations with coboson framework\cite{CobosonBcsRich}. We also studied Richardson equations in details \cite{CombescotCooper,twoCooperPair}.  Richardson-Gaudin solution, as a number-conserved one, is just suitable to investigate the question we raised in previous paragraph.  
+Five years after BCS, Richardson showed that a number-conserved eigenstate exists for reduced BCS Hamiltonian and it gives the same energy as BCS ansatz in thermodynamic limit\cite{Richardson1,Richardson2,Richardson3,Richardson1968,gaudin}.  In the model, a frozen Fermi sea also exists in order to provide a constant density of states.  Since 2000, we developed a new theory for composite bosons (cobosons for short) formed by fermion pairs\cite{CobosonPhysicsReports} for electron excitons.   Recently, we applied it into superconductivity and it was proved to be useful.  We rederived Richardson-Gaudin equations with coboson framework\cite{CobosonBcsRich}. We also studied Richardson equations in details \cite{CombescotCooper,combescotBCS}.  Richardson-Gaudin solution, as a number-conserved one, is just suitable to investigate the question we raised in previous paragraph.  
 
 We illustrate our model in sec. \ref{sec:model}.  In sec. \ref{sec:onePair}, we study the one-pair problems in detail for both 2D and 3D.  We discussed the N-pairs problems, and make some conjecture about their connection with one-pair solution  in sec. \ref{sec:NPair}.  And we will attempt 2-pair Richardson-Gaudin equations and put the conjection into the solid ground in sec \ref{sec:twoPair}.  And we will offer some final thought in sec. \ref{sec:conclusion}.
 \section{The system\label{sec:model}}
@@ -200,7 +203,7 @@ The exact energy of two fermion pairs in the BCS potential gives in Eq. (\ref{eq
 	\label{fig:3dCondChange}
 \end{figure}
 
-We have been able to solve these coupled equations analytically in the case of a constant density of states\cite{twoCooperPair}.  Using this work, we find the for 2D systems with $w_\vk=1$ for $0<\epsilon_k<\Omega$, the energy difference between two correlated pairs and two independent pairs reads in the larger sample limit, as 
+We have been able to solve these coupled equations analytically in the case of a constant density of states\cite{combescotBCS}.  Using this work, we find the for 2D systems with $w_\vk=1$ for $0<\epsilon_k<\Omega$, the energy difference between two correlated pairs and two independent pairs reads in the larger sample limit, as 
 \begin{equation}
 E^{\td}_2-2E_1^{\td}=\frac{2}{\rho}\frac{1+\sigma}{1-\sigma}+\text{O}(\frac{1}{\rho^2})
 \label{eq:}
@@ -209,10 +212,12 @@ the $2/\rho$ part of this difference is the kinetic energy cost to add one pair 
 
 We are here interested in finding the solution of these two equations when free density of states is not constant but varies as $\rho\sqrt{\epsilon/\Omega}$.  Since the solution of these equations for $N=1$, i.e., without the $2v/(R_1-R_2)$ terms in Eq. (\ref{eq:richardsonEq}), dramatically depends on the value of $v$, with no ground state, i.e., negative solution, when $v$ is smaller than $v_{\text{th}}(1)=1\rho$, we are led to consider the three cases $v\rho>1$, $v\rho<1$ and $v\rho=1$ separately. 
 
-Actually, a property of the $R_i$'s we have found in our previous work, is still valid whatever $\rho{}v$ is, namely the fact that $R_1$ and $R_2$ are both complex with $R_1=R_2^*$ is order to have $R_1+R_2=E_2$ real.  Let us first reproduce the argument in completeness. 
+Actually, a property of the $R_i$'s we have found in our previous work (see sec. IIIB of ref. \cite{combescotBCS}), is still valid whatever $\rho{}v$ is, namely the fact that $R_1$ and $R_2$ are both complex with $R_1=R_2^*$.% in order to have $R_1+R_2=E_2$ real.  
+%Let us first reproduce the argument in completeness. 
 
-\subsection{$(R_1,R_2)$ are complex conjugate}
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+%\subsection{$(R_1,R_2)$ are complex conjugate}
+%Let us write $R_{1,2}=R\pm{}iR'$, and we need to show that $R$ and $R'$ are real.  First, we notice that $R$ must be real as $2R=E_{2}=R_{1}+R_{2}$ is the energy of the Hamiltonian, which is hermition operator, and must be real. 
+
 \subsection{Solution in $v\rho=1$}
 Let us start with the threshold case $v=v_{\text{th}}(1)$, i.e., $v\rho=1$.  We then have $S(E=0)=1$, so that the Richardson-Gaudin equations also read, for $R_1=R+iR'$
 \begin{equation}
@@ -231,7 +236,7 @@ where $R'$ such that
 R'^2\sum{}\frac{w_\vk}{(2\epsilon_\vk-R)^2+R'^2}=1
 \label{eq:R'}
 \end{equation}
-in the large sample limit, i.e., the dominate term of the $\rho$ dependence of $R$ wehn $1/\rho$ goes to zero. 
+in the large sample limit, i.e., the dominate term of the $\rho$ dependence of $R$ when $1/\rho$ goes to zero. 
 
 By combining these two equation, we get
 \begin{equation}
@@ -246,10 +251,11 @@ A possible trick to solve these equations is to note that $\sum_\vk{}w_\vk=N_\Om
 \end{gather}
 This readily shows that if $R$ and $R'$ were finite when $\rho\rightarrow\infty$, i.e., these queation cannot be fulfilled because we 
 
+
 \section{conclusion\label{sec:conclusion}}
 
 \bibliography{../citation}
 %\bibliographystyle{apsrmp4-1long}
-\bibliographystyle{apalike}
+\bibliographystyle{plain}
 
 \end{document}

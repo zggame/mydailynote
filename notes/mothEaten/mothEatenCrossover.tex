@@ -1,4 +1,5 @@
-\documentclass{article}
+%\documentclass[aps,prb,superscriptaddress,showpacs,reprint]{revtex4-1}
+\documentclass[aps,prb,showpacs,reprint]{revtex4-1}
 \usepackage{fullpage}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -7,20 +8,26 @@
 \usepackage{graphicx}% Include figure files
 \usepackage{epstopdf}
 \usepackage{subfig}
-
+\begin{document}
 %\usepackage{setspace}\doublespace
-\author{Monique Combescot \and Guojun Zhu}
-\title{Moth-eaten effect on BEC-BCS pairing}
+\title{Competition between BCS-pairing and moth eaten effect in BEC-BCS crossover}
+\author{Guojun Zhu}
+\affiliation{Department of Physics, University of Illinois at Urbana-Champaign, 1110 W Green St, Urbana, IL, 61801}
+\author{Monique Combescot}
+\affiliation{Institut des NanoSciences de Paris, Universite Pierre et Marie Curie, CNRS, Tour 22, 4 place Jussieu, 75005 Paris }
+\affiliation{Department of Physics, University of Illinois at Urbana-Champaign, 1110 W Green St, Urbana, IL, 61801}
+
 \input{../newCommand}
 \newcommand{\td}{{\ensuremath{{\text{(2D)}}}}}
 \newcommand{\sd}{{\ensuremath{{\text{(3D)}}}}}
 \newcommand{\Arctg}{\ensuremath{\text{Arctg}}}
-\begin{document}
-\maketitle
+
+
 \numberwithin{equation}{section}
 \begin{abstract}
 We study the evolution of solution to reduced BCS hamiltonian from single pair to infinite amount of pairs in thermodynamic limit.  We observe that absolutely amount of energy-saving due to pairing decreases while pair number increases because the phase space for each additional pair gets smaller (moth-eaten effect).  However, comparing to the increase of kinetic energy as free Fermi gas, this decrease is smaller at first and only dominates  when total number of particles is close to the total available states.  
 \end{abstract}
+\maketitle
 \section{Introduction}
 It is well-known that in 3D, a weak attractive potential cannot sustain a bound-state.  In 1956, Cooper demonstrated that with a frozen Fermi sea, a pair of electrons of opposite spin can form a bound-state comparing to the Fermi energy no matter how weak the attraction is\cite{Cooper}.  This is indeed a many-body state as Fermi sea, a fundamentally many-body phenomena,  is essential for the two-body ``bound state''.   The next year, Bardeen, Cooper and Schrieffer constructed a many-body ansatz which is an extension of this ``bound state'' and showed that this ansatz gives an intricate many-body state with lower energy than free Fermi gas with arbitrarily weak attraction\cite{BCS} for the same reduced BCS hamiltonian.  They used a particle-number non-conserved ansatz in a grand-canonical ensemble.  Nevertheless, the reduced BCS model also has a frozen Fermi sea in the core. Later,   Gor'kov and Melik-Barkhudarov showed that the frozen Fermi sea is not necessary and the same idea works with a renomalized attraction measured by low energy scattering amplitude\cite{Gorkov}.   Furthermore, Eagles\cite{Eagle}, Leggett\cite{LeggettCrossover}, Nozi\`{e}res and Schmitt-Rink\cite{Nozieres} extended the BCS pairing idea and bridged Cooper pairing and molecular BEC. There they used the model without a frozen Fermi sea as core and employed the full k-space.  All these lead to an interesting question that how the solution for the same hamiltonian evolves from one-pair, where there might be no bound state, to infinite number of pairs, where a many-body bound solution always exists.  Nevertheless, the particle non-conserved nature of the BCS ansatz makes it inherently many-body, which is quite difficult to connect to one-pair solution.  
 
@@ -108,9 +115,9 @@ E_1^\sd\approx-\frac{2}{3}\frac{v}{v_\text{th}^{\text{(1)}}}\Omega
 
 \section{N pairs\label{sec:NPair}}
 Richardson \cite{Richardson1} and Gaudin \cite{gaudin} have shown that the energy of N fermion pairs interacting through the BCS reduced potential \emph{with $N_0$ in the frozen Fermi sea core} is exactly given by $E_N=R_1+\cdots+R_N$ where the $R_i$'s follow from $N$ coupled nonlinear equations 
-\begin{equation}
- 1=v\sum_\vk\frac{w_\vk}{2\epsilon_\vk-R_i}+\sum_{j\neq{}i}\frac{2v}{R_i-R_j}\qquad\text{for}\;i=(1,\cdots,N)
-\end{equation}
+\begin{multline}
+ 1=v\sum_\vk\frac{w_\vk}{2\epsilon_\vk-R_i}+\sum_{j\neq{}i}\frac{2v}{R_i-R_j}\\\text{for}\;i=(1,\cdots,N)
+\end{multline}
 \subsection{2D systems}
 We have shown that when the density of states is constant, as in standard BCS superconductivity set also in 2D systems, a compact form of $E_N$ can be derived. It leads to 
 \begin{equation}
@@ -153,7 +160,7 @@ For potential $v$ lower than the threshold value $v_{th}(1)=1/\rho$ for the exis
 
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[width=0.30\textwidth]{potential.eps}
+		\includegraphics[width=0.20\textwidth]{potential.eps}
 	\caption{Imaginary Frozen Core for Many Pairs in 3D}
 	\label{fig:potential}
 \end{figure}
@@ -203,7 +210,10 @@ The exact energy of two fermion pairs in the BCS potential gives in Eq. (\ref{eq
 
 We add and subtract these two equations, and use the single pair equation Eq. (\ref{eq:onePair})
 \begin{gather}
-0=(R_1-E_1)\sum_{\vk}\frac{w_\vk}{(2\epsilon_\vk-R_1)(2\epsilon_\vk-E_1)}+(R_2-E_1)\sum_{\vk}\frac{w_\vk}{(2\epsilon_\vk-R_2)(2\epsilon_\vk-E_1)}\label{eq:2PairPlus}\\
+\begin{split}
+0=&(R_1-E_1)\sum_{\vk}\frac{w_\vk}{(2\epsilon_\vk-R_1)(2\epsilon_\vk-E_1)}\\
+&+(R_2-E_1)\sum_{\vk}\frac{w_\vk}{(2\epsilon_\vk-R_2)(2\epsilon_\vk-E_1)}\label{eq:2PairPlus}
+\end{split}\\
 -\frac{4}{(R_1-R_2)^2}=\sum_{\vk}\frac{w_\vk}{(2\epsilon_\vk-R_1)(2\epsilon_\vk-R_2)}\label{eq:2PairMinus}
 \end{gather}
 
@@ -223,6 +233,60 @@ We notice that a property of the $R_i$'s we have found in our previous work (see
 %\subsection{$(R_1,R_2)$ are complex conjugate}
 %Let us write $R_{1,2}=R\pm{}iR'$, and we need to show that $R$ and $R'$ are real.  First, we notice that $R$ must be real as $2R=E_{2}=R_{1}+R_{2}$ is the energy of the Hamiltonian, which is hermition operator, and must be real. 
 
+\subsection{Solution in $v\rho>1$}
+In this case, especially when $v\rho\ll1$, i.e., $E_1$ is finite. We expect $R_1+R_2\approx2E_1$, when $L^3\rightarrow\infty$, i.e., $\rho\rightarrow\infty$.  
+
+Eq. (\ref{eq:2PairPlus}) gives 
+\begin{equation*}
+0\approx(R_1+R_2-2E_1)\sum\frac{w_\vk}{(2\epsilon_\vk-E_1)^2}
+\label{eq:}
+\end{equation*}
+which confirms  $R_1+R_2\approx2E_1$.
+
+At lowest order $R_1\approx{}R_2\approx{}E_1$.  Eq. (\ref{eq:2PairMinus}) gives 
+\begin{equation}
+-\frac{4}{(R_1-R_2)^2}=\sum_{\vk}\frac{w_\vk}{(2\epsilon_\vk-E_1)^2}=I_1
+\label{eq:}
+\end{equation}
+where 
+\begin{equation}
+\begin{split}
+I_n&=\sum_{\vk}\frac{w_\vk}{(2\epsilon_\vk-E_1)^{n+1}}\\
+	&=\frac{\rho}{\Omega}\int^1_0\frac{\sqrt{x}dx}{(2x-E_1/\Omega)^{(n+1)}}\\
+	&\equiv\frac{\rho}{\Omega}g_n(E_1/\Omega)
+\end{split}
+\label{eq:}
+\end{equation}
+And this gives 
+\begin{equation}
+R_1-R_2\approx{}i\frac{\Omega}{\sqrt{\rho\Omega{}g_1(E_1/\Omega)}}
+\label{eq:}
+\end{equation}
+
+We come back to Eq. (\ref{eq:2PairPlus}), and keep two terms
+\begin{equation}
+\begin{split}
+0=&(R_1-E_1)\sum{\frac{w_\vk}{(2\epsilon_\vk-E_1)}}\\
+&\left(\frac{1}{2\epsilon_\vk-E_1}+\frac{1}{2\epsilon_\vk-R_1}-\frac{1}{2\epsilon_\vk-E_1}\right)\\
+&+(R_1\leftrightarrow{}R_2)\\
+\approx&(R_1-E_1+R_2-E_1)I_1\\
+&+\left[(R_1-E_1)^2+(R_2-E_1)^2\right]I_2\\
+=&(R_1-E_1+R_2-E_1)I_1\\
+&+\left[(R_1+R_2-E_1)^2+(R_2-R_1)^2\right]\frac{I_2}{2}
+\end{split}
+\label{eq:}
+\end{equation}
+This lead to 
+\begin{equation}
+R_1-E_1+R_2-E_1\approx-\frac{I_2}{2I_1}(R_2-R_1)^2=\frac{2I_2}{I_1^2}
+\label{eq:}
+\end{equation}
+So we can write energy of two pairs as
+\begin{equation}
+R_1+R_2=2E_1+2\frac{\Omega}{\rho}\frac{g_2(E_1/\Omega)}{g_1^2(E_1/\Omega)}
+\label{eq:}
+\end{equation}
+If we assume $g_n(E_1/\Omega)$ is in order of 1, we see the increase of binding energy (moth-eaten effect) is in order of $O(\frac{1}{\rho})$.  On the other hand, increase in energy of free Fermi gas is in the order of density of state, which is in order of $\rho^{-\frac{2}{3}}$, which is far larger than increase before.  Therefore, the condensation energy increases. This can be understand more intuitively as such: a tight-binding state occupies large momentum-space with very small weight on each level. Therefore, Pauli blocking when introducing an extra pair is quite small as the occupation is much smaller than 1. Therefore, it is better energetically to put two pairs both in a state very like the original single-pair bound state than simply put the second pair in the next highest k-level as free Fermi gas.   
 \subsection{Solution in $v\rho=1$}
 Let us start with the threshold case $v=v_{\text{th}}(1)$, i.e., $v\rho=1$.  We then have $S(E=0)=1$, so that the Richardson-Gaudin equations also read, for $R_1=R+iR'$
 \begin{equation}
@@ -258,56 +322,6 @@ This readily shows that if $R$ and $R'$ were finite when $\rho\rightarrow\infty$
 ................................
 
 
-\subsection{Solution in $v\rho>1$}
-In this case, especially when $v\rho\ll1$, i.e., $E_1$ is finite. We expect $R_1+R_2\approx2E_1$, when $L^3\rightarrow\infty$, i.e., $\rho\rightarrow\infty$.  
-
-Eq. (\ref{eq:2PairPlus}) gives 
-\begin{equation*}
-0\approx(R_1+R_2-2E_1)\sum\frac{w_\vk}{(2\epsilon_\vk-E_1)^2}
-\label{eq:}
-\end{equation*}
-which confirms  $R_1+R_2\approx2E_1$.
-
-At lowest order $R_1\approx{}R_2\approx{}E_1$.  Eq. (\ref{eq:2PairMinus}) gives 
-\begin{equation}
--\frac{4}{(R_1-R_2)^2}=\sum_{\vk}\frac{w_\vk}{(2\epsilon_\vk-E_1)^2}=I_1
-\label{eq:}
-\end{equation}
-where 
-\begin{equation}
-\begin{split}
-I_n&=\sum_{\vk}\frac{w_\vk}{(2\epsilon_\vk-E_1)^{n+1}}\\
-	&=\frac{\rho}{\Omega}\int^1_0\frac{\sqrt{x}dx}{(2x-E_1/\Omega)^{(n+1)}}\\
-	&\equiv\frac{\rho}{\Omega}g_n(E_1/\Omega)
-\end{split}
-\label{eq:}
-\end{equation}
-And this gives 
-\begin{equation}
-R_1-R_2\approx{}i\frac{\Omega}{\sqrt{\rho\Omega{}g_1(E_1/\Omega)}}
-\label{eq:}
-\end{equation}
-
-We come back to Eq. (\ref{eq:2PairPlus}), and keep two terms
-\begin{equation}
-\begin{split}
-0=&(R_1-E_1)\sum{\frac{w_\vk}{(2\epsilon_\vk-E_1)}}\left(\frac{1}{2\epsilon_\vk-E_1}+\frac{1}{2\epsilon_\vk-R_1}-\frac{1}{2\epsilon_\vk-E_1}\right)+(R_1\leftrightarrow{}R_2)\\
-\approx&(R_1-E_1+R_2-E_1)I_1+\left[(R_1-E_1)^2+(R_2-E_1)^2\right]I_2\\
-=&(R_1-E_1+R_2-E_1)I_1+\left[(R_1+R_2-E_1)^2+(R_2-R_1)^2\right]\frac{I_2}{2}
-\end{split}
-\label{eq:}
-\end{equation}
-This lead to 
-\begin{equation}
-R_1-E_1+R_2-E_1\approx-\frac{I_2}{2I_1}(R_2-R_1)^2=\frac{2I_2}{I_1^2}
-\label{eq:}
-\end{equation}
-So we can write energy of two pairs as
-\begin{equation}
-R_1+R_2=2E_1+2\frac{\Omega}{\rho}\frac{g_2(E_1/\Omega)}{g_1^2(E_1/\Omega)}
-\label{eq:}
-\end{equation}
-If we assume $g_n(E_1/\Omega)$ is in order of 1, we see the increase of binding energy (moth-eaten effect) is in order of $O(\frac{1}{\rho})$.  On the other hand, increase in energy of free Fermi gas is in the order of density of state, which is in order of $\rho^{-\frac{2}{3}}$, which is far larger than increase before.  Therefore, the condensation energy increases. This can be understand more intuitively as such: a tight-binding state occupies large momentum-space with very small weight on each level. Therefore, Pauli blocking when introducing an extra pair is quite small as the occupation is much smaller than 1. Therefore, it is better energetically to put two pairs both in a state very like the original single-pair bound state than simply put the second pair in the next highest k-level as free Fermi gas.   
 
 \section{Conclusion\label{sec:conclusion}}
 The upper energy cutoff $\Omega$ for the phase space in our model seems quite arbitrary.  After all, real system has no such cutoff and they have infinite amount of high-momentum states to use.   It seems a little dubious that condensation energy vanishes when all states below $\Omega$ is filled.  On the other hand, this fact can be interpret in such way:  energy cutoff $\Omega$ is introduced because we take potential as constant and ignore the fall-off of the potential in high energy.  The amplitude of potential defines an energy scale, which in turn defines a region in phase space.  Beyond this space, potential is too small and does not affect the distribution of fermions and fermions pack themselves just as free gas, therefore equivalently gives zero condensation-energy. 

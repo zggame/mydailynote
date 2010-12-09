@@ -12,7 +12,6 @@
 \author{Monique Combescot \and Guojun Zhu}
 \title{Moth-eaten effect on BEC-BCS pairing}
 \input{../newCommand}
-\renewcommand{\emph}[1]{\textbf{#1}}
 \newcommand{\td}{{\ensuremath{{\text{(2D)}}}}}
 \newcommand{\sd}{{\ensuremath{{\text{(3D)}}}}}
 \newcommand{\Arctg}{\ensuremath{\text{Arctg}}}
@@ -20,16 +19,16 @@
 \maketitle
 \numberwithin{equation}{section}
 \begin{abstract}
-We study the evolution of solution to reduced BCS hamiltonian from single pair to infinite amount of pairs in thermodynamic limit.  We observed that absolutely amount of energy-saving due to pairing decreases while pair number increases because the phase space for each additional pair gets smaller (moth-eaten effect).  However, comparing to the increase of kinetic energy, this decrease is smaller at first and only dominates in the very end when total number of particles is close to the total available state.  
+We study the evolution of solution to reduced BCS hamiltonian from single pair to infinite amount of pairs in thermodynamic limit.  We observe that absolutely amount of energy-saving due to pairing decreases while pair number increases because the phase space for each additional pair gets smaller (moth-eaten effect).  However, comparing to the increase of kinetic energy as free Fermi gas, this decrease is smaller at first and only dominates  when total number of particles is close to the total available states.  
 \end{abstract}
 \section{Introduction}
-It is well-known that in 3D, a weak attractive potential cannot sustain a bound-state.  In 1956, Cooper demonstrated that with a frozen Fermi sea, a pair of electrons of opposite spin can form a bound-state comparing to the Fermi energy no matter how weak the attraction is\cite{Cooper}.  This is indeed a many-body state as Fermi sea, a fundamentally many-body phenomena,  is essential for the two-body ``bound state''.   The next year, Bardeen, Cooper and Schrieffer constructed a many-body ansatz which is an extension of this ``bound state'' and showed that this ansatz gives an intricate many-body state with lower energy than free Fermi gas with arbitrarily weak attraction\cite{BCS} for the same reduced BCS hamiltonian.  They used a particle-number non-conserved ansatz in a grand-canonical ensemble.  Nevertheless, the reduced BCS model also has a frozen Fermi sea in the core. Later,   Gallinskii et. al. showed that the frozen Fermi sea is not necessary and the same type of ansatz worked with a renomalized attraction measured by scattering amplitude\cite{?}.   Furthermore, Eagles\cite{Eagle}, Leggett\cite{LeggettCrossover}, Nozi\`{e}res and Schmitt-Rink\cite{Nozieres} extended the BCS pairing idea and bridged BCS pairing and molecular BEC. There they used the model without a frozen Fermi sea as core and employed the full k-space.  All these lead to an interesting question that how the solution for the same hamiltonian evolves from one-pair, where there might be no bound state, to infinite number of pairs, where a many-body solution always exists.  Nevertheless, the particle non-conserved nature of the BCS ansatz makes it quite difficult to put both sides into the same footing.  
+It is well-known that in 3D, a weak attractive potential cannot sustain a bound-state.  In 1956, Cooper demonstrated that with a frozen Fermi sea, a pair of electrons of opposite spin can form a bound-state comparing to the Fermi energy no matter how weak the attraction is\cite{Cooper}.  This is indeed a many-body state as Fermi sea, a fundamentally many-body phenomena,  is essential for the two-body ``bound state''.   The next year, Bardeen, Cooper and Schrieffer constructed a many-body ansatz which is an extension of this ``bound state'' and showed that this ansatz gives an intricate many-body state with lower energy than free Fermi gas with arbitrarily weak attraction\cite{BCS} for the same reduced BCS hamiltonian.  They used a particle-number non-conserved ansatz in a grand-canonical ensemble.  Nevertheless, the reduced BCS model also has a frozen Fermi sea in the core. Later,   Gor'kov and Melik-Barkhudarov showed that the frozen Fermi sea is not necessary and the same idea works with a renomalized attraction measured by low energy scattering amplitude\cite{Gorkov}.   Furthermore, Eagles\cite{Eagle}, Leggett\cite{LeggettCrossover}, Nozi\`{e}res and Schmitt-Rink\cite{Nozieres} extended the BCS pairing idea and bridged Cooper pairing and molecular BEC. There they used the model without a frozen Fermi sea as core and employed the full k-space.  All these lead to an interesting question that how the solution for the same hamiltonian evolves from one-pair, where there might be no bound state, to infinite number of pairs, where a many-body bound solution always exists.  Nevertheless, the particle non-conserved nature of the BCS ansatz makes it inherently many-body, which is quite difficult to connect to one-pair solution.  
 
-Five years after BCS, Richardson showed that a number-conserved eigenstate exists for reduced BCS Hamiltonian and it gives the same energy as BCS ansatz in thermodynamic limit\cite{Richardson1,Richardson2,Richardson3,Richardson1968,gaudin}.  In the model, a frozen Fermi sea also exists in order to provide a constant density of states.  Since 2000, we developed a new theory for composite bosons (cobosons for short) formed by fermion pairs\cite{CobosonPhysicsReports} for electron excitons.   Recently, we applied it into superconductivity and it was proved to be useful.  We rederived Richardson-Gaudin equations with coboson framework\cite{CobosonBcsRich}. We also studied Richardson equations in details \cite{CombescotCooper,combescotBCS}.  Richardson-Gaudin solution, as a number-conserved one, is just suitable to investigate the question we raised in previous paragraph.  
+Five years after BCS, Richardson showed that a number-conserved eigenstate exists for the reduced BCS Hamiltonian and it gives the same energy as BCS ansatz in thermodynamic limit\cite{Richardson1,Richardson2,Richardson3,Richardson1968,gaudin}.  In the model, a frozen Fermi sea also exists in order to provide a constant density of states.  Since 2000, we developed a new theory for composite bosons (cobosons for short) formed by fermion pairs for electron excitons\cite{CobosonPhysicsReports}.   Recently, we applied it into superconductivity and it was proved to be useful.  We rederived Richardson-Gaudin equations with coboson framework\cite{CobosonBcsRich}. We also studied Richardson equations in details \cite{CombescotCooper,combescotBCS}.  Richardson-Gaudin solution, as a number-conserved one, is  suitable to investigate the question we raised in previously.  
 
-We illustrate our model in sec. \ref{sec:model}.  In sec. \ref{sec:onePair}, we study the one-pair problems in detail for both 2D and 3D.  We discussed the N-pairs problems, and make some conjecture about their connection with one-pair solution  in sec. \ref{sec:NPair}.  And we will attempt 2-pair Richardson-Gaudin equations and put the conjection into the solid ground in sec \ref{sec:twoPair}.  And we will offer some final thought in sec. \ref{sec:conclusion}.
+We illustrate our model in sec. \ref{sec:model}.  In sec. \ref{sec:onePair}, we study the one-pair problems in detail for both 2D and 3D.  We discussed the N-pairs problems, and make some conjecture about their connection with one-pair solution  in sec. \ref{sec:NPair}.  And we will attempt 2-pair Richardson-Gaudin equations and put the conjecture into the solid ground in sec \ref{sec:twoPair}.  And we will offer some final thought in sec. \ref{sec:conclusion}.
 \section{The system\label{sec:model}}
-We consider $N$ fermion pairs $(\alpha,\beta)$ governed by the hamiltonian
+We consider $N$ fermion pairs governed by the hamiltonian
 \begin{equation}
 H=H_{0}+V
 \end{equation}
@@ -43,12 +42,12 @@ and $V$ is interaction
 V=-v\sum_{\vk\vk'}\omega_{\vk'}\omega_\vk\beta^\dagger_{\vk'}{}\beta^{}_\vk
 \label{eq:VBcs}
 \end{equation}
-and $\beta^\dagger_{\vk}=a^\dagger_{\vk}b^\dagger_{-\vk}$ creates a zero momentum pair while $\omega_\vk=1$ for $0<\epsilon_\vk<\Omega$ and zero otherwise.  
+and $\beta^\dagger_{\vk}=a^\dagger_{\vk}b^\dagger_{-\vk}$ creates a zero momentum pair while $\omega_\vk=1$ for $0<\epsilon_\vk<\Omega$ and zero otherwise.  This is the famous BCS reduced pairing hamiltonian. However, we do not assume a frozen Fermi sea inside, instead, the attraction starts from zero to cutoff $\Omega$.  Therefore, here $\Omega$ bears no direct relation to Debye energy as in original BCS model. 
 \section{One pair\label{sec:onePair}}
-The single pair energy $E_1$ follows from Cooper equation
+Single pair problem is fairly straightforward and fully solvable.  The single pair energy $E_1$ follows from Cooper equation
 \begin{equation}
 1=v\sum_{\vk}\frac{\omega_\vk}{2\epsilon_\vk-E_1}\equiv{}v\,S(E_1)
-\label{eq:}
+\label{eq:onePair}
 \end{equation}
 \subsection{2D systems}
 In 2D, the density of state is constant, so that 
@@ -78,7 +77,7 @@ In 3D, the density of states increases as $\sqrt{\epsilon}$. Let us write it as
 \rho(\epsilon)=\rho\sqrt{\epsilon/\Omega}
 \label{eq:}
 \end{equation}
-where $\rho$ is the density of state at the potential threshold. We then have
+where $\rho$ is the density of state at the potential threshold and it has a volume factor in it. In thermodynamic limit, it goes to infinity in order of $O(volume)$.  We then have
 \begin{equation}
 \begin{split}
 S^\sd(E<0)&=\rho\int_0^\infty{}d\epsilon\frac{\sqrt{\epsilon/\Omega}}{2\epsilon-E}\\
@@ -95,7 +94,7 @@ S^\sd(E<0)&=\rho\int_0^\infty{}d\epsilon\frac{\sqrt{\epsilon/\Omega}}{2\epsilon-
 
 $S^\sd(E)$ goes to $\rho$ when $E\rightarrow0_-$ while it goes to zero as $\frac{2}{3}\rho\Omega/(-E)$ when $E$ goes to $-\infty$. 
 
-A bound state with $E_1<0$ thus exists for $v$ larger than the threshold value for $N=1$ pair $v_{\text{th}}=1/\rho$.  For a potential just above threshold, the single pair energy in 3D tens to zero as 
+A bound state with $E_1<0$ thus exists for $v$ larger than the threshold value for $N=1$ pair $v_{\text{th}}=1/\rho$.  For a potential just above threshold, the single pair energy in 3D tends to zero as 
 \begin{equation}
 E_1^\sd\approx-\frac{8}{\pi^2}\left(1-\frac{v_{\text{th}}(N=1)}{v}\right)^2\Omega
 \label{eq:}
@@ -108,7 +107,7 @@ E_1^\sd\approx-\frac{2}{3}\frac{v}{v_\text{th}^{\text{(1)}}}\Omega
 
 
 \section{N pairs\label{sec:NPair}}
-Richardson \cite{Richardson1} and Gaudin \cite{gaudin} have shown that the energy of N fermion pairs interacting through the BCS reduced potential is exactly given by $E_N=R_1+\cdots+R_N$ where the $R_i$'s follow from $N$ coupled nonlinear equations
+Richardson \cite{Richardson1} and Gaudin \cite{gaudin} have shown that the energy of N fermion pairs interacting through the BCS reduced potential \emph{with $N_0$ in the frozen Fermi sea core} is exactly given by $E_N=R_1+\cdots+R_N$ where the $R_i$'s follow from $N$ coupled nonlinear equations 
 \begin{equation}
  1=v\sum_\vk\frac{w_\vk}{2\epsilon_\vk-R_i}+\sum_{j\neq{}i}\frac{2v}{R_i-R_j}\qquad\text{for}\;i=(1,\cdots,N)
 \end{equation}
@@ -150,7 +149,7 @@ A similar compact expression of the $N$-pair energy has not been derived so far 
 It is clear that the same moth eaten effect must bring the condensation energy per pair down to zero when $N$ approach $N_\Omega$, this effect fundamentally linked to the Pauli exclusion principle being unaffected by an increase of space dimensionality. 
 
 \subsubsection{}
-For potential $v$ lower than the threshold value $v_{th}(1)=1/\rho$ for the existence of one-pair bound state, $\mathcal{E}_N^\sd$ is equal to zero for $N=1$ and also for $N=N_\Omega$.  It is however clear that $\mathcal{E}_N^\sd$ cannot stay equal to zero for all $N$ between $1$ and $N_\Omega$ because for $N$ equal to a praction of $N_\Omega$, the density of states is essentially constant.  So that we can at least freeze a fraction of the $N$ electrons as in standard BCS superconductivity with a frozen core: a finite condensation thus exists no matter how weak $v$ is. 
+For potential $v$ lower than the threshold value $v_{th}(1)=1/\rho$ for the existence of one-pair bound state, $\mathcal{E}_N^\sd$ is equal to zero for $N=1$ and also for $N=N_\Omega$.  It is however clear that $\mathcal{E}_N^\sd$ cannot stay equal to zero for all $N$ between $1$ and $N_\Omega$ because for $N$ equal to a fraction of $N_\Omega$, the density of states is essentially constant.  So that we can at least freeze a fraction of the $N$ electrons as in standard BCS superconductivity with a frozen core: a finite condensation thus exists no matter how weak $v$ is. 
 
 \begin{figure}[htbp]
 	\centering
@@ -159,13 +158,13 @@ For potential $v$ lower than the threshold value $v_{th}(1)=1/\rho$ for the exis
 	\label{fig:potential}
 \end{figure}
 
-We can have a lower boundary of this condensation energy per pair by freezing $N_0$ of these $N$ electrons.  The remaining $N-N_0$ pairs enjoy the potential attraction in a region where the/852 density of state stays finite, between $\rho\sqrt{\epsilon_{F_0}/\Omega}$ and $\rho$.  The condensation energy of these $(N-N_0$ pairs would then read according to Eq. (\ref{eq:E2D})
+We can have a lower boundary of this condensation energy per pair by freezing $N_0$ of these $N$ electrons.  The remaining $N-N_0$ pairs enjoy the potential attraction in a region where the density of state stays finite, between $\rho\sqrt{\epsilon_{F_0}/\Omega}$ and $\rho$.  The condensation energy of these $(N-N_0)$ pairs would then read according to Eq. (\ref{eq:E2D})
 \begin{equation}\label{eq:E2D}
  \overline{\mathcal{E}}_{N-N_0}=(N-N_0)(1-\frac{N-N_0-1}{N_\Omega})\frac{2\bar\sigma}{1-\bar\sigma}\Omega
 \end{equation}
 where $\bar{\sigma}=e^{-2/{\bar{\rho}v}}$ with $\bar\rho$ being average density of states in the potential layer above the frozen core. This gives a condensation energy per pair equal to $\overline{\mathcal{E}}_{N-N_0}/N$.  By taking $\bar\rho$ as independent of $N_0$, we find that this condensation energy per pair is maximized at $N-N_0=N_\Omega/2$, which of course implies to have $N$ larger than $N_\Omega/2$.
 
-This argument actually shows that, even if $N$ is not as large as $N_\Omega/2$, but still a sizable faction of the total number of pair state $N_\Omega$ feeling the potential,  a BCS-like collective effect develops which produces a non-zero condensation energy no matter how weak the potential is, i.e., even for $v\ll{}v_\text{th}(1)$. 
+This argument actually shows that, even if $N$ is not as large as $N_\Omega/2$, but still a sizable faction of the total number of pair state $N_\Omega$ feeling the potential,  a BCS-like collective effect  produces a non-zero condensation energy no matter how weak the potential is, i.e., even for $v\ll{}v_\text{th}(1)$. 
 
 As a result, the threshold potential for the appearance of a $N$-pair bound state must decrease with $N$, down to eventually zero with $N$ is a sizable fraction of the total number of pairs $N_\Omega$ in the potential layer. 
 
@@ -177,7 +176,7 @@ As a result, the threshold potential for the appearance of a $N$-pair bound stat
 \end{figure}
 
 \subsubsection{}
-For $v$ just larger than the threshold value $v_{\text{th}}(1)=1/\rho$ for the appearance of ground state in case of only one pair, it is clear by continuity, that the condensation energy per pair $\epsilon^sd_N$, must first increases with $N$ and then decreases due to the moth-eaten effect which must end by controlling the behavior of $\epsilon_N$ when $N$ approaches $N_\Omega$.  Although fully reasonable, the fact that the behavior of $\epsilon^\sd_N$ must continuous and thus first increases when $v$ gets above $v_{\text{th}}(1)$ is a mathematical argument, not a physical argument. 
+For $v$ just larger than the threshold value $v_{\text{th}}(1)=1/\rho$ for the appearance of ground state in case of only one pair, it is clear by continuity, that the condensation energy per pair $\epsilon^\sd_N$, must first increases with $N$ and then decreases due to the moth-eaten effect which must end by controlling the behavior of $\epsilon_N$ when $N$ approaches $N_\Omega$.  Although fully reasonable, the fact that the behavior of $\epsilon^\sd_N$ must continuous and thus first increases when $v$ gets above $v_{\text{th}}(1)$ is a mathematical argument, not a physical argument. 
 
 It is actually possible to guess the physical origin of the condensation energy increase when $N$ departs from 1.  For that, we have to remember that the ``condensation energy is difference of two energies which go to increase with $N$ due to Pauli blocking.  The question then is to understand why, for small $N$, the free pair energy increases faster than the correlated pair energy.  When on free pair is added at the energy level $\epsilon$, the kinetic energy increases by $1/\rho(\epsilon)$.  As a result, in 3D systems with density of states $\sqrt{\epsilon}$, the free pair energy increase, when going from $N$ to $N+1$ pairs, is larger when the Pauli exclusion principle blocks a low energy then a state high in the band.  If we now turn to correlated pairs, we must note that theses are made of all pairs in the potential layer. When increasing their number from $N$ to $N+1$, we blocks a very small fraction of each of the states between $0$ and $\Omega$, so that the energy cost must be far less than when blocking a single low energy state.  Consequently the energy difference when adding one free pair on one correlated must increase with $N$ is small. By contrast when $N$ gets larger, the cost in energy $1/\rho(\epsilon)$ to add one free pair is eventually constant and equal to the cost to block any of the $\vk$ states making the correlated pair.  We are then left with the moth-eaten effect on the bound state itself which tends to decrease the condensation energy. 
 
@@ -185,6 +184,12 @@ This understanding is supported by the monotonous decrease of the condensation e
 
 In order to establish this qualitative understanding on strong grounds, let us consider $N=2$ pairs. This limiting case gives the trend of the $N$ dependence of the condensation energy since it actually contains the physics which drives this $N$ dependence, namely Pauli blocking.  
 
+\begin{figure}[htb]
+	\centering
+		\includegraphics{3dCondChange.eps}
+	\caption{Condensation energy change with number of pairs in 3D}
+	\label{fig:3dCondChange}
+\end{figure}
 
 \section{Condensation energy in two pairs\label{sec:twoPair}}
 The exact energy of two fermion pairs in the BCS potential gives in Eq. (\ref{eq:VBcs}) has been shown to read $E_2=R_1+R_2$ with $(R_1,R_2)$ solution of the two Richardson-Gaudin equations
@@ -196,23 +201,23 @@ The exact energy of two fermion pairs in the BCS potential gives in Eq. (\ref{eq
 \label{eq:richardsonEq}
 \end{equation}
 
-\begin{figure}[htb]
-	\centering
-		\includegraphics{3dCondChange.eps}
-	\caption{Condensation energy change with number of pairs in 3D}
-	\label{fig:3dCondChange}
-\end{figure}
+We add and subtract these two equations, and use the single pair equation Eq. (\ref{eq:onePair})
+\begin{gather}
+0=(R_1-E_1)\sum_{\vk}\frac{w_\vk}{(2\epsilon_\vk-R_1)(2\epsilon_\vk-E_1)}+(R_2-E_1)\sum_{\vk}\frac{w_\vk}{(2\epsilon_\vk-R_2)(2\epsilon_\vk-E_1)}\label{eq:2PairPlus}\\
+-\frac{4}{(R_1-R_2)^2}=\sum_{\vk}\frac{w_\vk}{(2\epsilon_\vk-R_1)(2\epsilon_\vk-R_2)}\label{eq:2PairMinus}
+\end{gather}
+
 
 We have been able to solve these coupled equations analytically in the case of a constant density of states\cite{combescotBCS}.  Using this work, we find the for 2D systems with $w_\vk=1$ for $0<\epsilon_k<\Omega$, the energy difference between two correlated pairs and two independent pairs reads in the larger sample limit, as 
 \begin{equation}
 E^{\td}_2-2E_1^{\td}=\frac{2}{\rho}\frac{1+\sigma}{1-\sigma}+\text{O}(\frac{1}{\rho^2})
 \label{eq:}
 \end{equation}
-the $2/\rho$ part of this difference is the kinetic energy cost to add one pair while $2[2\sigma/(1-\rho)]$ is the energy in the binding energy of two pairs induced by the moth-eaten effect. This result far easier to obtain than the one for arbitrary $N$, not only gives the trend induced by Pauli blocking on the energy of $N$ correlated pairs, but also allow to obtain this energy exactly through a rule of the thumb that we have learned valid for all exciton problems we have studied up to now -excitons also are composite bosons with a many-body physics driven by Pauli blocking.  This rule says that, in the thermodynamical limit, i.e., large volume but $N\\rho$ constant, the result for $N$ is the result in 2 multiplied by $N-1$.  In the present case, this gives the energy change per pair, $[E^{\td}_N-NE^{\td}_1]/N$, as $[(N-1)/\rho](1+\sigma)/(1-\sigma)$ in agreement with the result we have found through far more complicated calculation than the ones for just $N=2$.
+the $2/\rho$ part of this difference is the kinetic energy cost to add one pair while $2[2\sigma/(1-\rho)]$ is the energy in the binding energy of two pairs induced by the moth-eaten effect. This result far easier to obtain than the one for arbitrary $N$, not only gives the trend induced by Pauli blocking on the energy of $N$ correlated pairs, but also allow to obtain this energy exactly through a rule of the thumb that we have learned valid for all exciton problems we have studied up to now - excitons also are composite bosons with a many-body physics driven by Pauli blocking.  This rule says that, in the thermodynamical limit, i.e., large volume but $N/\rho$ constant, the result for $N$ is the result in 2 multiplied by $N-1$.  In the present case, this gives the energy change per pair, $[E^{\td}_N-NE^{\td}_1]/N$, as $[(N-1)/\rho](1+\sigma)/(1-\sigma)$ in agreement with the result we have found through far more complicated calculation than the ones for just $N=2$.
 
-We are here interested in finding the solution of these two equations when free density of states is not constant but varies as $\rho\sqrt{\epsilon/\Omega}$.  Since the solution of these equations for $N=1$, i.e., without the $2v/(R_1-R_2)$ terms in Eq. (\ref{eq:richardsonEq}), dramatically depends on the value of $v$, with no ground state, i.e., negative solution, when $v$ is smaller than $v_{\text{th}}(1)=1\rho$, we are led to consider the three cases $v\rho>1$, $v\rho<1$ and $v\rho=1$ separately. 
+We are here interested in finding the solution of these two equations when free density of states is not constant but varies as $\rho\sqrt{\epsilon/\Omega}$.  Since the solution of these equations for $N=1$, i.e., without the $2v/(R_1-R_2)$ terms in Eq. (\ref{eq:richardsonEq}), dramatically depends on the value of $v$, with no ground state, i.e., negative solution, when $v$ is smaller than $v_{\text{th}}(1)=1/\rho$, we are led to consider the three cases $v\rho>1$, $v\rho<1$ and $v\rho=1$ separately. 
 
-Actually, a property of the $R_i$'s we have found in our previous work (see sec. IIIB of ref. \cite{combescotBCS}), is still valid whatever $\rho{}v$ is, namely the fact that $R_1$ and $R_2$ are both complex with $R_1=R_2^*$.% in order to have $R_1+R_2=E_2$ real.  
+We notice that a property of the $R_i$'s we have found in our previous work (see sec. IIIB of ref. \cite{combescotBCS}), is still valid whatever $\rho{}v$ is, namely the fact that $R_1$ and $R_2$ are both complex with $R_1=R_2^*$.% in order to have $R_1+R_2=E_2$ real.  
 %Let us first reproduce the argument in completeness. 
 
 %\subsection{$(R_1,R_2)$ are complex conjugate}
@@ -249,13 +254,73 @@ A possible trick to solve these equations is to note that $\sum_\vk{}w_\vk=N_\Om
 \sum{}w_\vk\left[\frac{1}{(2\epsilon_\vk-R)^2+R'^2}-\frac{1}{N_\Omega{}R'^2}\right]=0\\
 \sum{}w_\vk\left[\frac{2\epsilon_\vk-R}{(2\epsilon_\vk-R)^2+R'^2}-\frac{1}{N_\Omega{}R}\right]=0
 \end{gather}
-This readily shows that if $R$ and $R'$ were finite when $\rho\rightarrow\infty$, i.e., these queation cannot be fulfilled because we 
+This readily shows that if $R$ and $R'$ were finite when $\rho\rightarrow\infty$, i.e., these questions cannot be fulfilled because we 
+................................
 
 
-\section{conclusion\label{sec:conclusion}}
+\subsection{Solution in $v\rho>1$}
+In this case, especially when $v\rho\ll1$, i.e., $E_1$ is finite. We expect $R_1+R_2\approx2E_1$, when $L^3\rightarrow\infty$, i.e., $\rho\rightarrow\infty$.  
 
-\bibliography{../citation}
+Eq. (\ref{eq:2PairPlus}) gives 
+\begin{equation*}
+0\approx(R_1+R_2-2E_1)\sum\frac{w_\vk}{(2\epsilon_\vk-E_1)^2}
+\label{eq:}
+\end{equation*}
+which confirms  $R_1+R_2\approx2E_1$.
+
+At lowest order $R_1\approx{}R_2\approx{}E_1$.  Eq. (\ref{eq:2PairMinus}) gives 
+\begin{equation}
+-\frac{4}{(R_1-R_2)^2}=\sum_{\vk}\frac{w_\vk}{(2\epsilon_\vk-E_1)^2}=I_1
+\label{eq:}
+\end{equation}
+where 
+\begin{equation}
+\begin{split}
+I_n&=\sum_{\vk}\frac{w_\vk}{(2\epsilon_\vk-E_1)^{n+1}}\\
+	&=\frac{\rho}{\Omega}\int^1_0\frac{\sqrt{x}dx}{(2x-E_1/\Omega)^{(n+1)}}\\
+	&\equiv\frac{\rho}{\Omega}g_n(E_1/\Omega)
+\end{split}
+\label{eq:}
+\end{equation}
+And this gives 
+\begin{equation}
+R_1-R_2\approx{}i\frac{\Omega}{\sqrt{\rho\Omega{}g_1(E_1/\Omega)}}
+\label{eq:}
+\end{equation}
+
+We come back to Eq. (\ref{eq:2PairPlus}), and keep two terms
+\begin{equation}
+\begin{split}
+0=&(R_1-E_1)\sum{\frac{w_\vk}{(2\epsilon_\vk-E_1)}}\left(\frac{1}{2\epsilon_\vk-E_1}+\frac{1}{2\epsilon_\vk-R_1}-\frac{1}{2\epsilon_\vk-E_1}\right)+(R_1\leftrightarrow{}R_2)\\
+\approx&(R_1-E_1+R_2-E_1)I_1+\left[(R_1-E_1)^2+(R_2-E_1)^2\right]I_2\\
+=&(R_1-E_1+R_2-E_1)I_1+\left[(R_1+R_2-E_1)^2+(R_2-R_1)^2\right]\frac{I_2}{2}
+\end{split}
+\label{eq:}
+\end{equation}
+This lead to 
+\begin{equation}
+R_1-E_1+R_2-E_1\approx-\frac{I_2}{2I_1}(R_2-R_1)^2=\frac{2I_2}{I_1^2}
+\label{eq:}
+\end{equation}
+So we can write energy of two pairs as
+\begin{equation}
+R_1+R_2=2E_1+2\frac{\Omega}{\rho}\frac{g_2(E_1/\Omega)}{g_1^2(E_1/\Omega)}
+\label{eq:}
+\end{equation}
+If we assume $g_n(E_1/\Omega)$ is in order of 1, we see the increase of binding energy (moth-eaten effect) is in order of $O(\frac{1}{\rho})$.  On the other hand, increase in energy of free Fermi gas is in the order of density of state, which is in order of $\rho^{-\frac{2}{3}}$, which is far larger than increase before.  Therefore, the condensation energy increases. This can be understand more intuitively as such: a tight-binding state occupies large momentum-space with very small weight on each level. Therefore, Pauli blocking when introducing an extra pair is quite small as the occupation is much smaller than 1. Therefore, it is better energetically to put two pairs both in a state very like the original single-pair bound state than simply put the second pair in the next highest k-level as free Fermi gas.   
+
+\section{Conclusion\label{sec:conclusion}}
+The upper energy cutoff $\Omega$ for the phase space in our model seems quite arbitrary.  After all, real system has no such cutoff and they have infinite amount of high-momentum states to use.   It seems a little dubious that condensation energy vanishes when all states below $\Omega$ is filled.  On the other hand, this fact can be interpret in such way:  energy cutoff $\Omega$ is introduced because we take potential as constant and ignore the fall-off of the potential in high energy.  The amplitude of potential defines an energy scale, which in turn defines a region in phase space.  Beyond this space, potential is too small and does not affect the distribution of fermions and fermions pack themselves just as free gas, therefore equivalently gives zero condensation-energy. 
+
+We present an analysis about the transition from one-pair and many-pair with the same hamiltonian within Richardson-Gaudin equations framework.  We observe that condensation energy increases in the beginning and decreases toward the full filling. When attraction is small enough, there is no bound state for single pair, but later, fermions formed a many-body bound state and lower the system energy, when fermion number further increases, system gets back into the normal state as free Fermi gas.  By utilizing Richardson-Gaudin equations in canonical ensemble, we illustrate the intricacy of the many-body state of superconductivity.  
+
+One of us (M.C.) wishes to thank the University of Illinois at
+Urbana-Champaign, and Tony Leggett in particular, for enlightening discussions during her invitations at
+the Institute for Condensed Matter Physics where most of the present work has been
+performed. 
+
 %\bibliographystyle{apsrmp4-1long}
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
+\bibliography{../citation}
 
 \end{document}

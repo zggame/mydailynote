@@ -33,7 +33,8 @@ We study the evolution of solution to reduced BCS hamiltonian from single pair t
 \section{Introduction}
 It was known for a long time that a 3D system having a weak attractive potential cannot sustain a bound-state.  In 1956, Cooper showed that in the presence of a frozen Fermi sea, a pair of electrons with opposite spin can form a bound-state of zero total momentum  no matter how weak the attraction is\cite{Cooper}.  This state actually is indeed a many-body state because the  Fermi sea, even if it does not interact through the reduced BCS potential,  is essential for the formation of ``two-body'' bound state.   The next year, Bardeen, Cooper and Schrieffer introduced a many-body ansatz which is an extension of this single pair ``bound state'' and showed that this ansatz gives an intricate many-body state with lower energy than free Fermi gas with arbitrarily weak attraction\cite{BCS} for the same reduced BCS hamiltonian.  They used a particle-number non-conserved ansatz in a grand-canonical ensemble.  Nevertheless, the reduced BCS model also has a frozen Fermi sea in the core. Later,   Gor'kov and Melik-Barkhudarov showed that the frozen Fermi sea is not necessary and the same idea works with a renomalized attraction measured by low energy scattering amplitude\cite{Gorkov}.   Furthermore, Eagles\cite{Eagle}, Leggett\cite{LeggettCrossover}, Nozi\`{e}res and Schmitt-Rink\cite{Nozieres} extended the BCS pairing idea and bridged Cooper pairing and molecular BEC. There they used the model without a frozen Fermi sea as core and employed the full k-space.  All these lead to an interesting question that how the solution for the same hamiltonian evolves from one-pair, where there might be no bound state, to infinite number of pairs, where a many-body bound solution always exists.  Nevertheless, the particle non-conserved nature of the BCS ansatz makes it inherently many-body, which is quite difficult to connect to one-pair solution.  
 
-Five years after BCS, Richardson showed that a number-conserved eigenstate exists for the reduced BCS Hamiltonian and it gives the same energy as BCS ansatz in thermodynamic limit\cite{Richardson1,Richardson2,Richardson3,Richardson1968,gaudin}.  In the model, a frozen Fermi sea also exists in order to provide a constant density of states.  Since 2000, we developed a new theory for composite bosons (cobosons for short) formed by fermion pairs for electron excitons\cite{CobosonPhysicsReports}.   Recently, we applied it into superconductivity and it was proved to be useful.  We rederived Richardson-Gaudin equations with coboson framework\cite{CobosonBcsRich}. We also studied Richardson equations in details \cite{CombescotCooper,combescotBCS}.  Richardson-Gaudin solution, as a number-conserved one, is  suitable to investigate the question we raised in previously.  
+Five years after BCS, Richardson showed that a number-conserved eigenstate exists for the reduced BCS Hamiltonian and it gives the same energy as BCS ansatz in thermodynamic limit\cite{Richardson1,Richardson2,Richardson3,Richardson1968,gaudin}.  In the model, a frozen Fermi sea also exists in order to provide a constant density of states.  Since 2000, we developed a new theoretical framework for composite bosons (cobosons for short) formed by fermion pairs for electron excitons\cite{CobosonPhysicsReports}.   Recently, we applied it into superconductivity and it was proved to be useful.  We rederived Richardson-Gaudin equations with coboson framework\cite{CobosonBcsRich}. We also studied Richardson equations in details \cite{CombescotCooper,combescotBCS}.  Richardson-Gaudin solution, as a number-conserved one, is  particular suitable to investigate the question we raised.  
+
 
 We illustrate our model in sec. \ref{sec:model}.  In sec. \ref{sec:onePair}, we study the one-pair problems in detail for both 2D and 3D.  We discussed the N-pairs problems, and make some conjecture about their connection with one-pair solution  in sec. \ref{sec:NPair}.  And we will attempt 2-pair Richardson-Gaudin equations and put the conjecture into the solid ground in sec \ref{sec:twoPair}.  And we will offer some final thought in sec. \ref{sec:conclusion}.
 \section{The system\label{sec:model}}
@@ -51,7 +52,7 @@ and while the interaction $V$ is taken as
 V=-v\sum_{\vk\vk'}w_{\vk'}w_\vk\beta^\dagger_{\vk'}{}\beta^{}_\vk
 \label{eq:VBcs}
 \end{equation}
- $\beta^\dagger_{\vk}=a^\dagger_{\vk}b^\dagger_{-\vk}$ creates a zero momentum pair with $w_\vk=1$ for $0<\epsilon_\vk<\Omega$ and zero otherwise.  The $V$ is taken as being the famous BCS reduced pairing hamiltonian without questioning here its validity.  We just consider that the system does not have an inside frozen Fermi sea. So attraction starts from zero to a sharp cutoff $\Omega$.  Therefore, here $\Omega$ bears no direct relation to Debye energy as in original BCS model. We will relate it latter to another physical quantity, namely, the scattering length. \comm{It has a quite implicit relation to scattering length. Are we going to include this relation in the paper?}
+ $\beta^\dagger_{\vk}=a^\dagger_{\vk}b^\dagger_{-\vk}$ creates a zero momentum pair with $w_\vk=1$ for $0<\epsilon_\vk<\Omega$ and zero otherwise.  The $V$ is taken as being the famous BCS reduced pairing hamiltonian without questioning here its validity.  We just consider that the system does not have an inside frozen Fermi sea. So attraction starts from zero to a sharp cutoff $\Omega$.  Therefore, here $\Omega$ bears no direct relation to Debye energy as in original BCS model. We will relate it latter to another physical quantity, namely, the scattering length (see sec. \ref{sec:scatter}). \comm{It has a quite implicit relation to scattering length. Are we going to include this relation in the paper?}
 \section{One pair\label{sec:onePair}}
 Let us start with a single pair. It is fairly straightforward to show that the single pair energy $E_1$ follows from the Cooper equation
 \begin{equation}
@@ -100,12 +101,12 @@ $S^\sd(E)$ goes to $\rho$ when $E\rightarrow0_-$ while it goes to zero as $\frac
 A bound state with $E_1<0$ thus exists for $v$ larger than a threshold value for a single pair, $N=1$, given by  $v_{\text{th}}(N=1)=1/\rho$.  For a potential just above threshold, the single pair energy in 3D tends to zero as 
 \begin{equation}
 E_1^\sd\approx-\frac{8}{\pi^2}\left(1-\frac{1}{\rho{}v}\right)^2\Omega
-\label{eq:}
+\label{eq:E3Dsmall}
 \end{equation}
 while for a potential far above threshold $E_1^\sd$ behaves as 
 \begin{equation}
 E_1^\sd\approx-\frac{2}{3}\rho{v}\Omega
-\label{eq:}
+\label{eq:E3Dlarge}
 \end{equation}
 
 
@@ -191,7 +192,7 @@ In order to establish this qualitative understanding on strong grounds, let us c
 
 \begin{figure}[htb]
 	\centering
-		\includegraphics{3dCondChange.eps}
+		\includegraphics[width=0.8\columnwidth]{3dCondChange.eps}
 	\caption{Condensation energy change with number of pairs in 3D}
 	\label{fig:3dCondChange}
 \end{figure}
@@ -247,6 +248,32 @@ I_n&=\sum_{\vk}\frac{w_\vk}{(2\epsilon_\vk-E_1)^{n+1}}\\
 \end{split}
 \label{eq:}
 \end{equation}
+\footnote{
+For function $g_{n}(E_{1}/\Omega)$, $E_{1}/\Omega<0$ and $|E_{1}|\ll\Omega$.  So $g_{n}(E_{1}/\Omega)$ is not actually in order 1.  Let us look into more details.  
+\begin{equation}
+\begin{split}
+g_{n}(-2a)=&\int_{0}^{1}\frac{\sqrt{x}dx}{(2x+2a)}\\
+       =&2^{-(n+1)}a^{-n+\frac{1}{2}}\int^{a}_{0}\frac{\sqrt{y}}{(y+1)^{n+1}}dy\\
+       \propto&2^{-(n+1)}a^{-n+\frac{1}{2}}a^{\frac{3}{2}}\\
+       =&2^{-(n+1)}a^{-n+{2}}
+\end{split}
+\end{equation}
+Where the approximation used the fact that $a$ is a small negative quantity. And comparing this to Eq. (\ref{eq:I12}), we find that 
+\begin{equation}
+\begin{split}
+R_{1}+R_{2}-2E_{1}=&\frac{I_{2}}{I_{1}}\\
+\approx&\frac{\Omega^{3}}{4\rho|E_{1}|^{2}}
+\end{split}
+\end{equation}
+This gives even higher order dependency for large binding energy because $E_{1}\propto\rho$ (Eq. \ref{eq:E3Dlarge}).
+
+
+
+}
+
+
+
+
 To go further, we use Eq. (\ref{eq:2PairMinus}). It gives 
 \begin{equation}
 -\frac{4}{(R_1-R_2)^2}\approx\sum_{\vk}\frac{w_\vk}{(2\epsilon_\vk-E_1)^2}=I_1
@@ -276,7 +303,7 @@ We can rewrite this equation as
 =&(R_1-E_1+R_2-E_1)I_1\\
 &+\left[(R_1+R_2-E_1)^2+(R_2-R_1)^2\right]\frac{I_2}{2}
 \end{split}
-\label{eq:}
+\label{eq:I12}
 \end{equation}
 which reduces  to 
 \begin{equation}
@@ -334,9 +361,51 @@ One of us (M.C.) wishes to thank the University of Illinois at
 Urbana-Champaign, and Tony Leggett in particular, for enlightening discussions during her invitations at
 the Institute for Condensed Matter Physics where most of the present work has been
 performed. 
+ 
+ 
+\appendix
+\section{Scattering amplitude and scattering length for our model \label{sec:scatter}}
+In dilute system or short-range potential, low-energy property of the potential can be described with scattering amplitude\cite{Pethick,Fetter}, more specifically, s-wave scattering length $a_{s}$ is routinely used to describe the potential in atomic physics, where most problems is only about very low energy and low density.  So it is interesting to find the scattering amplitude and s-wave scattering length for our model potential (Eq. (\ref{eq:VBcs})). We notice that our model is actually very similar as the one-channel model used by Gurarie and Radzihovsky (sec. 3 and sec. 4.1 of Ref. \cite{GurarieNarrow}). 
 
+Scattering amplitude, or, T-matrix can be written as 
+\begin{equation}
+\frac{4\pi}{m}f_{\vk\vk'}=T_{\vk\vk'}=[(1-U\Pi)^{-1}U]_{\vk\vk'}
+\end{equation}
+where $\Pi(\vq,\epsilon)$ is the propagator of a pair.  For central potential, we can separate them into different partial wave. Especially for the s-wave, it is easy to show 
+\begin{equation}
+T^{0}_{kk}=\frac{u^{0}_{kk}}{1-u^{(0)}_{kk}\Pi^{(0)}(\epsilon)}
+\end{equation}
+Here 
+\begin{equation}
+\begin{split}
+\Pi^{(0)}(\epsilon)=&\int\frac{d^{3}\vq}{{(2\pi)}^{3}}\frac{w_{k}}{\epsilon-q^{2}/m+i0}\\
+=&-\frac{m}{2\pi^{2}}{\Lambda}+\frac{m\sqrt{\epsilon{m}}}{2\pi^{2}}\arctan\frac{\Lambda}{\sqrt{\epsilon{m}}}\\
+&-i\frac{m^{3/2}}{4\pi}\sqrt{\epsilon}
+\end{split}
+\end{equation}
+Where $\Lambda$ is the cutoff in momentum, $\Lambda^{2}/(2m)\equiv\Omega$. The second term is small compared to the first term when the cutoff is large, so we will ignore it.  In our model, $u^{0}_{kk}=-vw_{k}w_{k'}$, And we find the scattering amplitude 
+\begin{equation}
+f_{s}(\vk\vk')=-\frac{1}{-\frac{4\pi}{mv}+\frac{2\Lambda}{\pi}+ik}
+\end{equation}
+and s-wave scattering length is 
+\begin{equation}
+\begin{split}
+a(v)=&\left(-\frac{4\pi}{mv}+\frac{2\Lambda}{\pi}\right)^{-1}\equiv\frac{m}{4\pi}v_{R}\\
+     =&\frac{m}{4\pi}\frac{-v}{1-v/v_{c}}
+     \end{split}
+\end{equation}
+where $v_{R}$ can be called renormalized coupling and 
+\begin{equation}
+v_{c}=\frac{2\pi^{2}}{\Lambda{m}}
+\end{equation}
+We can find that, for large attractive, $a$ is small positive and increase as attractive decrease, it diverges at $v=v_{c}$ and which is the same as our threshold $v^{\text{th}}(1)$.  When $v$ gets even smaller, there is no bound-state and $a$ becomes large negative and its absolute value decease as $v$ decrease until $a(v=0)=0$. 
+$a(v)$ can also be written as
+\begin{equation}
+a(v)=\frac{\pi}{2\Lambda}\left(1-\frac{2\pi^{2}}{mv\Lambda}\right)^{-1}
+\end{equation}
+This can be easily related to binding energy Eq. (\ref{eq:E3Dsmall}) by $E_{b}=-1/(ma^{2})$ when close to threshold. 
 %\bibliographystyle{apsrmp4-1long}
-\bibliographystyle{unsrt}
+%\bibliographystyle{unsrt}
 \bibliography{../citation}
 
 \end{document}

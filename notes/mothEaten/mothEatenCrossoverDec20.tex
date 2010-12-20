@@ -25,7 +25,95 @@
 
 \address[upmc]{Institut des NanoSciences de Paris, Universite Pierre et Marie Curie, CNRS, Tour 22, 4 place Jussieu, 75005 Paris }
 %\cortext[cor1]{+1-217-3335224}
-\input{../newCommand}
+%\input{../newCommand}
+\newcommand{\vk}{\ensuremath{\mathbf{k}}}
+\newcommand{\vK}{\ensuremath{\mathbf{K}}}
+\providecommand{\vr}{\ensuremath{\mathbf{r}}}
+%\newcommand{\vec}[1]{\ensuremath{\mathbf{#1}}}
+
+\newcommand{\gk}{\ensuremath{{g}(\mathbf{k})}}
+
+\newcommand{\vp}{\ensuremath{\mathbf{p}}}
+\newcommand{\gp}{\ensuremath{{g}(\mathbf{p})}}
+
+\newcommand{\vq}{\ensuremath{\mathbf{q}}}
+
+\newcommand{\Fo}{\ensuremath{\mathbf{F_0}}}
+
+
+\newcommand{\E}{\ensuremath{\mathbf{E}}}
+\newcommand{\A}{\ensuremath{\mathbf{A}}}
+\newcommand{\J}{\ensuremath{\mathcal{J}}}
+
+\newcommand{\ket}[1]{\ensuremath{\left|#1\right>}}
+\newcommand{\bra}[1]{\ensuremath{\left<#1\right|}}
+
+\newcommand{\twoe}{\ensuremath{2\epsilon_\vk-\E_1}}
+
+\newcommand{\nth}[1]{\ensuremath{\frac{1}{#1}}}
+
+\newcommand{\br}[1]{\ensuremath{\left(#1\right)}}
+\newcommand{\mbr}[1]{\ensuremath{\left[#1\right]}}
+\newcommand{\bbr}[1]{\ensuremath{\left\{#1\right\}}}
+
+
+\newcommand{\tk}{\ensuremath{\tilde{k}}}
+
+\newcommand{\kp}{\ensuremath{\ket{\Psi}}}
+
+\newcommand{\av}[1]{\ensuremath{\bigl<{#1}\bigr>}}
+\newcommand{\avs}[3] {\av{#1{\lvert{#2}\rvert}#3}}
+\newcommand{\avv}[2][\nu] {\avs{#1}{#2}{#1}}
+\newcommand{\avt}[2]{\av{{#1}|{#2}}}
+\newcommand{\avtu}[1]{\av{T_\tau#1}}
+
+\newcommand{\Bop}{\ensuremath{\mathbf{B_0^+}}}
+\newcommand{\Bmp}{\ensuremath{\mathbf{B_m^+}}}
+\newcommand{\Bnp}{\ensuremath{\mathbf{B_n^+}}}
+\newcommand{\Bo}{\ensuremath{\mathbf{B_0}}}
+\newcommand{\Bopn}{\ensuremath{\mathbf{{B_0^+}^n}}}
+\newcommand{\Bon}{\ensuremath{\mathbf{{B_0}^n}}}
+
+
+\newcommand{\zmatrix}{\ensuremath{\br{\begin{smallmatrix}0&0\\0&0\end{smallmatrix}}}}
+\newcommand{\fmtrx}[4]{\ensuremath{\br{\begin{smallmatrix}#1&#2\\#3&#4\end{smallmatrix}}}}
+\newcommand{\smtrx}[6]{\ensuremath{\br{\begin{smallmatrix}#1&#2\\#3&#4\\#5&#6\end{smallmatrix}}}}
+
+\newcommand{\vz}{\ensuremath{v^{\beta\alpha}_{\vk,\vk}}}
+%\newcommand{\fz}{
+
+\providecommand{\abs}[1]{\ensuremath{\lvert{#1}\rvert}}
+
+\newcommand{\sg}[1][1]{\ensuremath{\sigma_\frac{#1}{2}}}
+
+\newcommand{\rhof}{\ensuremath{\rho(\ef)}}
+\newcommand{\omt}{\ensuremath{\tilde{\Omega}}}
+\newcommand{\cht}{\ensuremath{\tilde{\chi_0}}}
+\newcommand{\Atl}{\ensuremath{\abs{A}^{2l}}}
+\newcommand{\ef}{\ensuremath{\epsilon_F}}
+
+\newcommand{\lca}{\ensuremath{\ln\br{1+\frac{\cht}{\alpha}}}}
+
+\newcommand{\com}[2]{\ensuremath{\mbr{#1,#2}}}
+\newcommand{\D}{\ensuremath{\mathit{D}}}
+\newcommand{\dg}{\ensuremath{\dagger}}
+
+\providecommand{\lvk}{\ensuremath{1/\vk_F}}
+\providecommand{\hm}{\ensuremath{\frac{\hbar^2}}{2m}}
+\providecommand{\pdiff}[2]{\ensuremath{\frac{\partial{#1}}{\partial{#2}}}}
+\providecommand{\dpdiff}[2]{\ensuremath{\frac{\partial^2{#1}}{\partial{{#2}^2}}}}
+
+\providecommand{\H}{\ensuremath{\mathcal{H}}}
+\providecommand{\wt}[1]{\widetilde{#1}}
+
+\providecommand{\eef}[1]{Eq. (\ref{#1})}
+
+\providecommand{\sch}{{Schr\"{o}dinger }}
+
+\providecommand{\sgn}{\ensuremath{\text{sgn}}}
+
+
+\providecommand{\comm}[1]{\textit{\scriptsize \uwave{(#1)}}}
 \newcommand{\td}{{\ensuremath{{\text{(2D)}}}}}
 \newcommand{\sd}{{\ensuremath{{\text{(3D)}}}}}
 \newcommand{\Arctg}{\ensuremath{\text{Arctg}}}
@@ -376,7 +464,103 @@ This can be easily related to binding energy Eq. (\ref{eq:E3Dsmall}) by $E_{b}=-
 %\bibliographystyle{apsrmp4-1long}
 %\bibliographystyle{unsrt}
 %\bibliographystyle{elsarticle-num}
-\bibliographystyle{model1a-num-names}
-\bibliography{../citation}
+%\bibliographystyle{model1a-num-names}
+%\bibliography{../citation}
+\begin{thebibliography}{18}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Cooper(1956)}]{Cooper}
+\bibinfo{author}{L.~N. Cooper}, \bibinfo{journal}{Phys. Rev.}
+  \bibinfo{volume}{104} (\bibinfo{year}{1956}) \bibinfo{pages}{1189--1190}.
+%Type = Article
+\bibitem[{Bardeen et~al.(1957)Bardeen, Cooper, and Schrieffer}]{BCS}
+\bibinfo{author}{J.~Bardeen}, \bibinfo{author}{L.~N. Cooper},
+  \bibinfo{author}{J.~R. Schrieffer}, \bibinfo{journal}{Phys. Rev.}
+  \bibinfo{volume}{106} (\bibinfo{year}{1957}) \bibinfo{pages}{162}.
+%Type = Article
+\bibitem[{{Gor'kov} and Melik-Barkhudarov(1962)}]{Gorkov}
+\bibinfo{author}{L.~P. {Gor'kov}}, \bibinfo{author}{T.~K. Melik-Barkhudarov},
+  \bibinfo{journal}{Sov. Phys. JETP} \bibinfo{volume}{13}
+  (\bibinfo{year}{1962}).
+%Type = Article
+\bibitem[{Eagles(1969)}]{Eagle}
+\bibinfo{author}{D.~M. Eagles}, \bibinfo{journal}{Phys. Rev.}
+  \bibinfo{volume}{186} (\bibinfo{year}{1969}) \bibinfo{pages}{456--463}.
+%Type = Inproceedings
+\bibitem[{Leggett(1980)}]{LeggettCrossover}
+\bibinfo{author}{A.~J. Leggett}, in: \bibinfo{booktitle}{Proceedings of the
+  XVIth Karpacz Winter School of Theoretical Physics, Karpacz, Poland},
+  \bibinfo{publisher}{Springer-Verlag}, \bibinfo{year}{1980}, pp.
+  \bibinfo{pages}{13--27}.
+%Type = Article
+\bibitem[{Nozi\`{e}res and Schmitt-Rink(1985)}]{Nozieres}
+\bibinfo{author}{P.~Nozi\`{e}res}, \bibinfo{author}{S.~Schmitt-Rink},
+  \bibinfo{journal}{Journal of Low Temperature Physics} \bibinfo{volume}{59}
+  (\bibinfo{year}{1985}) \bibinfo{pages}{195--211}.
+  \bibinfo{note}{10.1007/BF00683774}.
+%Type = Article
+\bibitem[{Richardson(1963)}]{Richardson1}
+\bibinfo{author}{R.~W. Richardson}, \bibinfo{journal}{physics letters}
+  \bibinfo{volume}{3} (\bibinfo{year}{1963}) \bibinfo{pages}{277--279}.
+%Type = Article
+\bibitem[{Richardson and Sherman(1964)}]{Richardson2}
+\bibinfo{author}{R.~W. Richardson}, \bibinfo{author}{N.~Sherman},
+  \bibinfo{journal}{Nucl. Phys.} \bibinfo{volume}{52} (\bibinfo{year}{1964})
+  \bibinfo{pages}{221--238}.
+%Type = Article
+\bibitem[{Richardson(1977)}]{Richardson3}
+\bibinfo{author}{R.~W. Richardson}, \bibinfo{journal}{Journal of Mathematical
+  Physics} \bibinfo{volume}{18} (\bibinfo{year}{1977}) \bibinfo{pages}{1802}.
+%Type = Article
+\bibitem[{Richardson(1968)}]{Richardson1968}
+\bibinfo{author}{R.~W. Richardson}, \bibinfo{journal}{Journal of Mathematical
+  Physics} \bibinfo{volume}{9} (\bibinfo{year}{1968}) \bibinfo{pages}{1327}.
+%Type = Book
+\bibitem[{Gaudin(1995)}]{gaudin}
+\bibinfo{author}{M.~Gaudin}, \bibinfo{title}{{\'{E}tats Propres et Valeurs
+  Propres de l'Hamiltonien d'Appariement}}, \bibinfo{publisher}{Les
+  \'{E}ditions de Physique, France}, \bibinfo{year}{1995}.
+%Type = Article
+\bibitem[{Combescot et~al.(2008)Combescot, Betbeder-Matibet, and
+  Dubin}]{CobosonPhysicsReports}
+\bibinfo{author}{M.~Combescot}, \bibinfo{author}{O.~Betbeder-Matibet},
+  \bibinfo{author}{F.~Dubin}, \bibinfo{journal}{Physics Reports}
+  \bibinfo{volume}{463} (\bibinfo{year}{2008}) \bibinfo{pages}{215}.
+%Type = Article
+\bibitem[{{Combescot} and {Zhu}(2010)}]{CobosonBcsRich}
+\bibinfo{author}{M.~{Combescot}}, \bibinfo{author}{G.~{Zhu}},
+  \bibinfo{journal}{Eur.Phys.J.B,}  (\bibinfo{year}{2010}). \bibinfo{note}{To
+  be published}.
+%Type = Unpublished
+\bibitem[{Pogosov and Combescot(2009)}]{CombescotCooper}
+\bibinfo{author}{W.~V. Pogosov}, \bibinfo{author}{M.~Combescot},
+  \bibinfo{title}{A striking understanding of cooper pair energy},
+  \bibinfo{year}{2009}. \bibinfo{note}{To be published}.
+%Type = Article
+\bibitem[{Pogosov et~al.(2010)Pogosov, Combescot, and Crouzeix}]{combescotBCS}
+\bibinfo{author}{W.~V. Pogosov}, \bibinfo{author}{M.~Combescot},
+  \bibinfo{author}{M.~Crouzeix}, \bibinfo{journal}{Phys. Rev. B}
+  \bibinfo{volume}{81} (\bibinfo{year}{2010}) \bibinfo{pages}{174514}.
+%Type = Book
+\bibitem[{Pethick and Smith(2001)}]{Pethick}
+\bibinfo{author}{C.~J. Pethick}, \bibinfo{author}{H.~Smith},
+  \bibinfo{title}{{Bose-{E}instein Condensation in Dilute Gases}},
+  \bibinfo{publisher}{Cambridge University Press}, \bibinfo{year}{2001}.
+%Type = Book
+\bibitem[{Fetter and Walecka(1971)}]{Fetter}
+\bibinfo{author}{A.~L. Fetter}, \bibinfo{author}{J.~D. Walecka},
+  \bibinfo{title}{{Quantum Theory of Many-Particle Systems}},
+  \bibinfo{publisher}{Dover Publications, Inc. (Original Publisher:
+  McGraw-Hill)}, \bibinfo{edition}{dover} edition, \bibinfo{year}{1971}.
+%Type = Article
+\bibitem[{Gurarie and Radzihovsky(2007)}]{GurarieNarrow}
+\bibinfo{author}{V.~Gurarie}, \bibinfo{author}{L.~Radzihovsky},
+  \bibinfo{journal}{Annals of Physics} \bibinfo{volume}{322}
+  (\bibinfo{year}{2007}) \bibinfo{pages}{2 -- 119}. \bibinfo{note}{January
+  Special Issue 2007}.
+
+\end{thebibliography}
 
 \end{document}

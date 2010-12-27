@@ -25,7 +25,6 @@
 
 \address[upmc]{Institut des NanoSciences de Paris, Universite Pierre et Marie Curie, CNRS, Tour 22, 4 place Jussieu, 75005 Paris }
 %\cortext[cor1]{+1-217-3335224}
-%\input{../newCommand}
 \newcommand{\vk}{\ensuremath{\mathbf{k}}}
 \newcommand{\vK}{\ensuremath{\mathbf{K}}}
 \providecommand{\vr}{\ensuremath{\mathbf{r}}}
@@ -134,7 +133,7 @@ It was known for a long time that a 3D system having a weak attractive potential
 
 Five years after BCS, Richardson showed that a number-conserved eigenstate exists for the reduced BCS Hamiltonian and it gives the same energy as BCS ansatz in thermodynamic limit\cite{Richardson1,Richardson2,Richardson3,Richardson1968,gaudin}.  In the model, a frozen Fermi sea also exists in order to provide a constant density of states.  Since 2000, we developed a new theoretical framework for composite bosons (cobosons for short) formed by fermion pairs for electron excitons\cite{CobosonPhysicsReports}.   Recently, we applied it into superconductivity and it was proved to be useful.  We rederived Richardson-Gaudin equations with coboson framework\cite{CobosonBcsRich}. We also studied Richardson equations in details \cite{CombescotCooper,combescotBCS}.  Richardson-Gaudin solution, as a number-conserved one, is  particular suitable to investigate the question we raised.  
 
-During the increase of pairs for the system, Pauli exclusion shows in two different places roughly speaking.  (i) Pairing (binding) happens in more restricted phase space, and therefore the energy saving by potential becomes less.  This is the moth-eaten effect we discussed in exciton context extensively\cite{CobosonPhysicsReports}.  (ii) On the other hand, in free fermion gas, the extra fermions also cost more energy due to Pauli exclusion.  Of course, these two effects must be solved in a self-consistent fashion.  Nevertheless, it is useful to comparing them in order to build some intuition on the problem.  In a 3D system with strong attraction, we can estimate the first effects from our previous work in exciton, the energy decrease is in order of $N\frac{a^3}{V}$, where $N$ is the total number of pairs, $a$ is the average size of pair in two-body Schr\"{o}ndinger equation, and $V$ is the volume of the system. The second effect is in order $1/\rho(\epsilon_F)$, where $\rho(\epsilon)\sim\sqrt{\epsilon}$ is the density of the state, $\epsilon_F\sim\left(\frac{N}{V}\right)^{2/3}$. So the new pair would cost energy in ordr of $\left(\frac{V}{N}\right)^{2/3}$. When $N$ is small, (ii) dominates (i), so, the condensation energy, the difference between the system energy with potential and without potential (as free gas), increases.  And when $N$ gets larger and larger, (ii) increases not as fast as (i) and finally (i) dominates and condensation energy decreases. 
+It is illuminating to image the additional pair was added to the system of few tightly-bound pairs.   Pauli exclusion would show in two different places roughly speaking.  (i) Pairing (binding) happens in more restricted phase space, and therefore the energy saving by potential becomes less than the previous pair, which enjoy larger phase space.  This is the moth-eaten effect we discussed in exciton context extensively\cite{CobosonPhysicsReports}.  (ii) On the other hand, in free fermion gas where there is no attraction, the extra fermions has to piled in the next k-level and also cost more energy due to Pauli exclusion.  Of course, these two effects must be solved in a self-consistent fashion.  We will do that in sec. \ref{sec:twoPair}.  Nevertheless, it is useful to separate them in order to build some intuition on the problem.  In a 3D system with strong attraction, we can estimate the first effects from our previous work in exciton, the energy decrease is in order of $N\frac{a^3}{V}$, where $N$ is the total number of pairs, $a$ is the average size of pair in two-body Schr\"{o}ndinger equation, and $V$ is the volume of the system. The second effect is in order $1/\rho(\epsilon_F)$, where $\rho(\epsilon)\sim\sqrt{\epsilon}$ is the density of the state, $\epsilon_F\sim\left(\frac{N}{V}\right)^{2/3}$. So the new pair would cost energy in ordr of $\left(\frac{V}{N}\right)^{2/3}$. When $N$ is small, (ii) dominates (i). Therefore, the condensation energy, the difference between the system energy with potential and without potential (as free gas), increases.  And when $N$ gets larger and larger, (ii) increases not as fast as (i) and finally (i) dominates and condensation energy decreases.    This argument is somewhat hand-waving, yet the intuition here proves to be quite close to truth.  We will set them in solid ground in the following parts of the paper. 
 
 We illustrate our model in sec. \ref{sec:model}.  In sec. \ref{sec:onePair}, we study the one-pair problems in detail for both 2D and 3D.  We discussed the N-pairs problems, and make some conjecture about their connection with one-pair solution  in sec. \ref{sec:NPair}.  And we will attempt 2-pair Richardson-Gaudin equations and put the conjecture into the solid ground in sec \ref{sec:twoPair}.  And we will offer some final thought in sec. \ref{sec:conclusion}.
 \section{The model\label{sec:model}}
@@ -461,11 +460,8 @@ $a(v)$ can also be written as
 a(v)=\frac{\pi}{2\Lambda}\left(1-\frac{2\pi^{2}}{mv\Lambda}\right)^{-1}
 \end{equation}
 This can be easily related to binding energy Eq. (\ref{eq:E3Dsmall}) by $E_{b}=-1/(ma^{2})$ when close to threshold. 
-%\bibliographystyle{apsrmp4-1long}
-%\bibliographystyle{unsrt}
-%\bibliographystyle{elsarticle-num}
-%\bibliographystyle{model1a-num-names}
-%\bibliography{../citation}
+
+
 \begin{thebibliography}{18}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\bibinfo}[2]{#2}
@@ -483,7 +479,7 @@ This can be easily related to binding energy Eq. (\ref{eq:E3Dsmall}) by $E_{b}=-
 \bibitem[{{Gor'kov} and Melik-Barkhudarov(1962)}]{Gorkov}
 \bibinfo{author}{L.~P. {Gor'kov}}, \bibinfo{author}{T.~K. Melik-Barkhudarov},
   \bibinfo{journal}{Sov. Phys. JETP} \bibinfo{volume}{13}
-  (\bibinfo{year}{1962}).
+  (\bibinfo{year}{1962}) \bibinfo{pages}{1018--1022}.
 %Type = Article
 \bibitem[{Eagles(1969)}]{Eagle}
 \bibinfo{author}{D.~M. Eagles}, \bibinfo{journal}{Phys. Rev.}

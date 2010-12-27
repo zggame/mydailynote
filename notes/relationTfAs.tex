@@ -1,0 +1,14 @@
+\subsection{Note about scale of $a_{s}$, $f$ and $T$}
+\begin{itemize}
+\item $a_{s}=-\lim_{k\rightarrow0}f_{k}$, so $a_{s}$ scales as $f_{k}$;
+\item In a collision problem, the scattering wave-function has asymptotic form
+\begin{equation}\label{eq:relation:Psi}
+\Psi^{\prime}\sim{}e^{{i\vk\cdot\vr}}+f_{\vk}(\Omega)\frac{e^{ikr}}{r}
+\end{equation}
+It is easy to see that $f_{\vk}$ has the dimension of length.
+\item $T$-matrix has the same dimension as interaction $V$.  However, $T_{{\vk\vk'}}=\avs{\phi_\vk(\vr)}{T}{\phi_\vk'(\vr)}$, the matrix element has dimension of $\text{energy}\cdot\text{volume}$ if we use the normalization as Eq. \eqref{eq:relation:Psi}, which is quite common in scattering theory. And this is consistent with 
+\begin{equation}
+T_{\vk\vk'}=\frac{4\pi\hbar^{2}}{m}f_{\vk\vk'}
+\end{equation}
+ \item  All these quantities are two-body quantities.  (T can be used for many-body as well, but here we use it in two-body sense.) Their value should not depend on volume.  There seems to be some dependence because $\ket{\phi_{vk}(\vr)}$ only normalized in box-normalization, but the overall result should not depend on volume with a realistic potential.  
+\end{itemize}

@@ -1,0 +1,40 @@
+\section{Scattering amplitude and scattering length for our model \label{sec:scatter}}
+In dilute system or short-range potential, low-energy property of the potential can be described with scattering amplitude\cite{Pethick,Fetter}, more specifically, s-wave scattering length $a_{s}$ is routinely used to describe the potential in atomic physics, where most problems is only about very low energy and low density.  So it is interesting to find the scattering amplitude and s-wave scattering length for our model potential. We notice that our model is actually very similar as the one-channel model used by Gurarie and Radzihovsky (sec. 3 and sec. 4.1 of Ref. \cite{GurarieNarrow}). 
+
+Scattering amplitude, or, T-matrix can be written as 
+\begin{equation}
+-\frac{4\pi}{mL^3}f_{\vk\vk'}=T_{\vk\vk'}=[\frac{U}{(1-U\Pi)}]_{\vk\vk'}
+\end{equation}
+where $\Pi$ is the propagator of a pair.  In a translation invariant system with central potential, all quantities depend $\vk$ and $\vk'$ only through $\vk-\vk'$ and we can separate the solution into different partial wave. Especially for the s-wave, the complicated  integral becomes a simple number,
+\begin{equation}
+T^{0}_{k}=\frac{u^{0}_{k}}{1-u^{(0)}_{k}\Pi^{(0)}(\epsilon_k)}
+\end{equation}
+Here 
+\begin{equation}
+\begin{split}
+\Pi^{(0)}(\epsilon)=&\int\frac{d^{3}\vq}{{(2\pi)}^{3}}\frac{w_{k}}{\epsilon-q^{2}/m+i0}\\
+=&-\frac{m}{2\pi^{2}}{\Lambda}+\frac{m\sqrt{\epsilon{m}}}{2\pi^{2}}\arctan\frac{\Lambda}{\sqrt{\epsilon{m}}}\\
+&-i\frac{m^{3/2}}{4\pi}\sqrt{\epsilon}
+\end{split}
+\end{equation}
+Where $\Lambda$ is the cutoff in momentum, $\Lambda^{2}/(2m)\equiv\Omega$. The second term is small compared to the first term when the cutoff is large, so we will ignore it.  In our model, $u^{0}_{k}=-vw_{k}$, And we find the scattering amplitude 
+\begin{equation}
+f_{s}(k)=-\frac{1}{-\frac{4\pi}{mv}+\frac{2\Lambda}{\pi}+ik}
+\end{equation}
+and s-wave scattering length is its limit at zero energy. 
+\begin{equation}
+\begin{split}
+a(v)=&\left(-\frac{4\pi}{mv}+\frac{2\Lambda}{\pi}\right)^{-1}\equiv\frac{m}{4\pi}v_{R}\\
+     =&\frac{m}{4\pi}\frac{-v}{1-v/v_{c}}
+     \end{split}
+\end{equation}
+where $v_{R}$ can be called renormalized coupling and 
+\begin{equation}
+v_{c}=\frac{2\pi^{2}}{\Lambda{m}}
+\end{equation}
+We find that, for large attractive, i.e., for $v$ large and position, $a\approx\frac{m}{4\pi}v_c$ is small positive as $\Lambda$ is large and increases as attraction decrease, it diverges at $v=v_{c}$ and which is the same as our threshold $v^{\text{th}}(1)$.  When $v$ gets even smaller, there is no bound-state and $a$ becomes large negative and its absolute value decease as $v$ decrease until $a(v=0)=0$. 
+$a(v)$ can also be written as
+\begin{equation}
+a(v)=\frac{\pi}{2\Lambda}\left(1-\frac{2\pi^{2}}{mv\Lambda}\right)^{-1}
+\end{equation}
+This can be easily related to binding energy by $E_{b}=-1/(ma^{2})$ when close to threshold. 

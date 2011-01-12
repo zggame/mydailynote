@@ -1,9 +1,31 @@
 \section{Scattering amplitude and scattering length for our model \label{sec:scatter}}
-In dilute system or short-range potential, low-energy property of the potential can be described with scattering amplitude\cite{Pethick,Fetter}, more specifically, s-wave scattering length $a_{s}$ is routinely used to describe the potential in atomic physics, where most problems is only about very low energy and low density.  So it is interesting to find the scattering amplitude and s-wave scattering length for our model potential. We notice that our model is actually very similar as the one-channel model used by Gurarie and Radzihovsky (sec. 3 and sec. 4.1 of Ref. \cite{GurarieNarrow}). 
+In dilute system or short-range potential, low-energy property of the potential can be described with scattering amplitude\cite{Pethick,Fetter}, more specifically, s-wave scattering length $a_{s}$ is routinely used to describe the potential in atomic physics, where most problems is only about very low energy and low density.  So it is interesting to find the scattering amplitude and s-wave scattering length for our model potential. We notice that our model is actually very similar as the one-channel model used by Gurarie and Radzihovsky (sec. 3 and sec. 4.1 of Ref. \cite{GurarieNarrow}).  We try to follow treatment from \cite{Messiah,GurarieNarrow}
 
-Scattering amplitude, or, T-matrix can be written as 
+Here we consider a reduced two-identical-particle problem (only considering relative coordinate, center of mass is in free movement).  We will use the non-reduced mass.  The \sch equation is 
 \begin{equation}
--\frac{4\pi}{mL^3}f_{\vk\vk'}=T_{\vk\vk'}=[\frac{U}{(1-U\Pi)}]_{\vk\vk'}
+-\frac{\hbar^{2}}{4m}\nabla^{2}\Psi+U(\vr)\Psi=E\Psi
+\end{equation}
+For a scattering problem, we are seeking for a solution with asymptotic form:
+\begin{equation}
+\Psi\xrightarrow{r\rightarrow0}e^{i\vk_{a}\cdot\vr}+f_{\vk_{a}}^{(+)}(\Omega_{b})\frac{e^{ik_{a}r}}{r}
+\end{equation}
+Where $f_{\vk_{a}}^{(+)}(\Omega_{b})$ is the scattering amplitude.  It is easy to see that scattering amplitude has unit of length.  The first part $\varphi_{a}=e^{i\vk_{a}\cdot\vr}$ is the free wave.  \emph{Notice that both wave functions  do not normalize to 1.  Instead, They normalize to volume $V_{0}$ in box-normalization or $\delta$ for infinite volume.}
+
+With such a normalization of wave function, we have (see XIX.9, XIX.15 and their proofs in \cite{Messiah}, note it use the reduced mass instead)
+\begin{equation}
+\avs{\varphi_{b}^{}}{U}{\Psi_{a}^{(+)}}=-\frac{4\pi\hbar^{2}}{m}f_{a}^{(+)}(\Omega_{b})
+\end{equation}
+We define  T-matrix  as 
+\begin{equation}
+T_{a\rightarrow{b}}=\avs{\varphi_{b}^{}}{T}{\varphi_{a}^{}}\equiv\avs{\varphi_{b}^{}}{U}{\Psi_{a}^{(+)}}
+\end{equation}
+And it relates to scattering amplitude as 
+\begin{equation}
+T_{a\rightarrow{b}}=-\frac{4\pi\hbar^{2}}{m}f_{a}^{(+)}(\Omega_{b})
+\end{equation}
+
+\begin{equation}
+T_{\vk\vk'}=[\frac{U}{(1-U\Pi)}]_{\vk\vk'}
 \end{equation}
 where $\Pi$ is the propagator of a pair.  In a translation invariant system with central potential, all quantities depend $\vk$ and $\vk'$ only through $\vk-\vk'$ and we can separate the solution into different partial wave. Especially for the s-wave, the complicated  integral becomes a simple number,
 \begin{equation}

@@ -1,62 +1,110 @@
 \section{Scattering amplitude and scattering length for our model \label{sec:scatter}}
 In dilute system or short-range potential, low-energy property of the potential can be described with scattering amplitude\cite{Pethick,Fetter}, more specifically, s-wave scattering length $a_{s}$ is routinely used to describe the potential in atomic physics, where most problems is only about very low energy and low density.  So it is interesting to find the scattering amplitude and s-wave scattering length for our model potential. We notice that our model is actually very similar as the one-channel model used by Gurarie and Radzihovsky (sec. 3 and sec. 4.1 of Ref. \cite{GurarieNarrow}).  We try to follow treatment from \cite{Messiah,GurarieNarrow}
 
-Here we consider a reduced two-identical-particle problem (only considering relative coordinate, center of mass is in free movement).  We will use the non-reduced mass.  The \sch equation is 
+Here we consider a reduced two-identical-particle problem (only considering relative coordinate, center of mass is decoupled for a central potential).  We will use the non-reduced mass.  The \sch equation is 
 \begin{equation}
--\frac{\hbar^{2}}{4m}\nabla^{2}\Psi+U(\vr)\Psi=E\Psi
+-\frac{\hbar^{2}}{m}\nabla^{2}\psi+U(\vr)\psi=E\psi
 \end{equation}
 For a scattering problem, we are seeking for a solution with asymptotic form:
 \begin{equation}
-\Psi\xrightarrow{r\rightarrow0}e^{i\vk_{a}\cdot\vr}+f_{\vk_{a}}^{(+)}(\Omega_{b})\frac{e^{ik_{a}r}}{r}
+\psi\xrightarrow{r\rightarrow0}\nth{\sqrt{V_{0}}}\br{e^{i\vk_{a}\cdot\vr}+f_{\vk_{a}}^{(+)}(\Omega_{b})\frac{e^{ik_{a}r}}{r}}
 \end{equation}
-Where $f_{\vk_{a}}^{(+)}(\Omega_{b})$ is the scattering amplitude.  It is easy to see that scattering amplitude has unit of length.  The first part $\varphi_{a}=e^{i\vk_{a}\cdot\vr}$ is the free wave.  \emph{Notice that both wave functions  do not normalize to 1.  Instead, They normalize to volume $V_{0}$ in box-normalization or $\delta$ for infinite volume.}
+Where $V_{0}$ is the volume and $f_{\vk_{a}}^{(+)}(\Omega_{b})$ is the scattering amplitude.  It is easy to see that scattering amplitude has unit of length.  The first part $\varphi_{a}=e^{i\vk_{a}\cdot\vr}$ is the free wave.  \emph{Notice that the free wave functions  ($\varphi_\vk$) normalizes to 1 in box normalization.  Most book has no prefactor of volume and therefore normalize to volume $V_{0}$}
 
-With such a normalization of wave function, we have (see XIX.9, XIX.15 and their proofs in \cite{Messiah}, note it use the reduced mass instead)
-\begin{equation}
-\avs{\varphi_{b}^{}}{U}{\Psi_{a}^{(+)}}=-\frac{4\pi\hbar^{2}}{m}f_{a}^{(+)}(\Omega_{b})
+With such  normalization of wave functions, we have (see XIX.9, XIX.15 and their proofs in \cite{Messiah}, note it use the reduced mass instead)
+\begin{equation}\label{eq:scattering:f}
+\avs{\varphi_{b}^{}}{U}{\psi_{a}^{(+)}}=-\frac{4\pi\hbar^{2}}{mV_{0}}f_{a}^{(+)}(\Omega_{b})
 \end{equation}
 We define  T-matrix  as 
 \begin{equation}
-T_{a\rightarrow{b}}=\avs{\varphi_{b}^{}}{T}{\varphi_{a}^{}}\equiv\avs{\varphi_{b}^{}}{U}{\Psi_{a}^{(+)}}
+T_{a\rightarrow{b}}=\avs{\varphi_{b}^{}}{T}{\varphi_{a}^{}}\equiv\avs{\varphi_{b}^{}}{U}{\psi_{a}^{(+)}}
 \end{equation}
 And it relates to scattering amplitude as 
-\begin{equation}
-T_{a\rightarrow{b}}=-\frac{4\pi\hbar^{2}}{m}f_{a}^{(+)}(\Omega_{b})
+\begin{equation}\label{eq:scattering:tf}
+T_{a\rightarrow{b}}=-\frac{4\pi\hbar^{2}}{mV_{0}}f_{a}^{(+)}(\Omega_{b})
 \end{equation}
-
+Note that if we use a normalization of 1 for wave function, RHS of Eqs. (\ref{eq:scattering:f},\ref{eq:scattering:tf}) both have a volume $V_0$ in the denominator. We can write down the Lippmann-Schwinger equation 
 \begin{equation}
-T_{\vk\vk'}=[\frac{U}{(1-U\Pi)}]_{\vk\vk'}
+  | \psi^{(\pm)} \rangle = | \varphi \rangle + \frac{1}{E - H_0 \pm i \epsilon} U |\psi^{(\pm)} \rangle. 
+\label{eq:}
 \end{equation}
-where $\Pi$ is the propagator of a pair.  In a translation invariant system with central potential, all quantities depend $\vk$ and $\vk'$ only through $\vk-\vk'$ and we can separate the solution into different partial wave. Especially for the s-wave, the complicated  integral becomes a simple number,
+  and we can find the equation for $T$
+	\begin{equation}
+	T=U+U\frac{1}{E-H_0+i\epsilon}T
+	\label{eq:}
+	\end{equation}
+	
+		\begin{equation}
+	\avs{\vk}T{\vk'}=\avs{\vk}U{\vk'}+\sum_{\vq\vq'}\avs{\vk}U{\vq}\avs{\vq}{\nth{E-H_0+i\epsilon}}{\vq'}\avs{\vq'}T{\vk'}
+	\label{eq:}
+	\end{equation}
+	For a separable potential $U_{\vk\vk'}$, $T_{\vk\vk'}$ has the same dependence on $\vk,\vk'$ as $U_{\vk\vk'}$ because $\frac{1}{E-H_0+i\epsilon}$ is diagonal for $\ket{\vk}=\ket{\varphi_\vk}$ basis.  They differ only by a constant.  
+	\begin{equation}
+	\nth{T_0}T_{\vk\vk'}=\nth{U_0}U_{\vk\vk'}=\xi_\vk\xi^{\prime}_{\vk'}
+	\label{eq:}
+	\end{equation}
+And these two constants relate to each other by formula
 \begin{equation}
-T^{0}_{k}=\frac{u^{0}_{k}}{1-u^{(0)}_{k}\Pi^{(0)}(\epsilon_k)}
+T_{0}(E)=\frac{U_{0}}{1-U_{0}\Pi(E)}
 \end{equation}
-Here 
+\begin{equation}
+\Pi_{0}(E)=\sum_\vq{\xi_{\vq}\nth{E-q^2/m+i\epsilon}\xi^{\prime}_{\vq}}
+\label{eq:}
+\end{equation}
+%We take $\hbar=1$ here.  For our model, $\xi_\vq=1$ for $k<\Lambda$, and 0 otherwise, we have 
+%\begin{equation}
+%\begin{split}
+%\Pi_{0}(E)=&V_{0}\int\frac{d^{3}\vq}{{(2\pi)}^{3}}\frac{w_{k}}{E-q^{2}/m+i\epsilon}\\
+%=&V_{0}\left(-\frac{m}{2\pi^{2}}{\Lambda}+\frac{m\sqrt{E{m}}}{2\pi^{2}}\arctan\frac{\Lambda}{\sqrt{E{m}}}\right.\\
+%&\left.-i\frac{m^{3/2}}{4\pi}\sqrt{E}\right)
+%\end{split}
+%\end{equation} 	
+%\begin{equation}
+%T_{\vk\vk'}=[\frac{U}{(1-U\Pi)}]_{\vk\vk'}
+%\end{equation}
+%where $\Pi$ is the propagator of a pair.  In a translation invariant system with central potential, all quantities depend $\vk$ and $\vk'$ only through $\vk-\vk'$ and we can separate the solution into different partial wave. Especially for the s-wave, the complicated  integral becomes a simple number,
+%\begin{equation}
+%T^{0}_{k}=\frac{U^{0}_{k}}{1-U^{(0)}_{k}\Pi^{(0)}(\epsilon_k)}
+%\end{equation}
+%Here 
+%\begin{equation}
+%\begin{split}
+%\Pi^{(0)}(\epsilon)=&\int\frac{d^{3}\vq}{{(2\pi)}^{3}}\frac{w_{k}}{\epsilon-q^{2}/m+i0}\\
+%=&-\frac{m}{2\pi^{2}}{\Lambda}+\frac{m\sqrt{\epsilon{m}}}{2\pi^{2}}\arctan\frac{\Lambda}{\sqrt{\epsilon{m}}}\\
+%&-i\frac{m^{3/2}}{4\pi}\sqrt{\epsilon}
+%\end{split}
+%\end{equation}
+%Where $\Lambda$ is the cutoff in momentum, $\Lambda^{2}/(m)\equiv\Omega$. 
+ $\Pi_{0}(E)$ can also be expressed with 
+\begin{equation}
+\,S(E)\equiv{}\sum_{\vk}\frac{\omega_\vk}{2\epsilon_\vk-E}
+\end{equation}
+In 3D, we have density of state $\rho(\epsilon)=\frac{V_{0}m^{3/2}}{4\pi^{2}\hbar^{3}}\sqrt{\epsilon}\equiv\rho\sqrt{\epsilon/\Omega}$, where $\rho$ is the density of state at $\Omega$
 \begin{equation}
 \begin{split}
-\Pi^{(0)}(\epsilon)=&\int\frac{d^{3}\vq}{{(2\pi)}^{3}}\frac{w_{k}}{\epsilon-q^{2}/m+i0}\\
-=&-\frac{m}{2\pi^{2}}{\Lambda}+\frac{m\sqrt{\epsilon{m}}}{2\pi^{2}}\arctan\frac{\Lambda}{\sqrt{\epsilon{m}}}\\
-&-i\frac{m^{3/2}}{4\pi}\sqrt{\epsilon}
+\Pi_{0}(E)&=-S(E+i0_{+})\\
+&=-\rho\int_0^{\Omega}{}d\epsilon\frac{\sqrt{\epsilon/\Omega}}{2\epsilon-E-i0_{+}}\\
+&=-\rho(1-\sqrt{\frac{E}{2\Omega}}\Arctg\sqrt{\frac{2\Omega}{E}}+i\pi\sqrt{\frac{E}{4\Omega}})
 \end{split}
-\end{equation}
-Where $\Lambda$ is the cutoff in momentum, $\Lambda^{2}/(2m)\equiv\Omega$. The second term is small compared to the first term when the cutoff is large, so we will ignore it.  In our model, $u^{0}_{k}=-vw_{k}$, And we find the scattering amplitude 
+\end{equation} 	
+The second term is small compared to the first term when the cutoff is large, so we will ignore it. 
+In our model, $U_0=-v$, And we find the scattering amplitude 
 \begin{equation}
-f_{s}(k)=-\frac{1}{-\frac{4\pi}{mv}+\frac{2\Lambda}{\pi}+ik}
+f_{s}(k)=-\frac{1}{-\frac{4\pi\hbar^{2}}{mvV_{0}}+\rho\frac{4\pi\hbar^{2}}{mV_{0}}+ik}
 \end{equation}
 and s-wave scattering length is its limit at zero energy. 
 \begin{equation}
 \begin{split}
-a(v)=&\left(-\frac{4\pi}{mv}+\frac{2\Lambda}{\pi}\right)^{-1}\equiv\frac{m}{4\pi}v_{R}\\
-     =&\frac{m}{4\pi}\frac{-v}{1-v/v_{c}}
-     \end{split}
+a(v)=&\frac{mV_{0}}{4\pi\hbar^{2}}\left(-\frac{v}{1-v\rho}\right)\\
+          \end{split}
 \end{equation}
-where $v_{R}$ can be called renormalized coupling and 
-\begin{equation}
-v_{c}=\frac{2\pi^{2}}{\Lambda{m}}
-\end{equation}
-We find that, for large attractive, i.e., for $v$ large and position, $a\approx\frac{m}{4\pi}v_c$ is small positive as $\Lambda$ is large and increases as attraction decrease, it diverges at $v=v_{c}$ and which is the same as our threshold $v^{\text{th}}(1)$.  When $v$ gets even smaller, there is no bound-state and $a$ becomes large negative and its absolute value decease as $v$ decrease until $a(v=0)=0$. 
-$a(v)$ can also be written as
-\begin{equation}
-a(v)=\frac{\pi}{2\Lambda}\left(1-\frac{2\pi^{2}}{mv\Lambda}\right)^{-1}
-\end{equation}
-This can be easily related to binding energy by $E_{b}=-1/(ma^{2})$ when close to threshold. 
+%where $v_{R}$ can be called renormalized coupling and 
+%\begin{equation}
+%v_{c}=\frac{2\pi^{2}}{\Lambda{m}}
+%\end{equation}
+We find that, for large attractive, i.e., for $v$ large and positive, $a\approx\frac{mV_{0}}{4\pi\hbar^{2}\rho}$ is small positive as $\sqrt\Omega$ factor in $\rho$ is large and increases as attraction decrease, it diverges at $v=1/\rho$ and which is the same as our threshold $v^{\text{th}}(1)$.  When $v$ gets even smaller, there is no bound-state and $a$ becomes large negative and its absolute value decease as $v$ decrease until $a(v=0)=0$. 
+%$a(v)$ can also be written as
+%\begin{equation}
+%a(v)=\frac{\pi}{2\Lambda}\left(1-\frac{2\pi^{2}}{mv\Lambda}\right)^{-1}
+%\end{equation}
+%This can be easily related to binding energy by $E_{b}=-1/(ma^{2})$ when close to threshold. 

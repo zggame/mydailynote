@@ -1,0 +1,79 @@
+\subsection{Fermionic Excitation in Three-Species Hamiltonian}
+Here we try to find the fermionic excitation for three-species system with reduced Hamiltonian via Bogoliubov canonical transformation\cite{Tinkham}
+\begin{equation}\label{eq:threeReducedHamiltonian}
+\begin{split}
+ H=&\sum_\vk\epsilon^a_\vk{}a^+_\vk{}a^{}_\vk+\sum_\vk\epsilon^b_\vk{}b^+_\vk{}b^{}_\vk+\sum_\vk\epsilon^c_\vk{}c^+_\vk{}c^{}_\vk\\
+  &+\nth{2}\sum_{\vk\vk'}U_{\vk\vk'}a^+_\vk{}b^+_{-\vk}{}b^{}_{-\vk'}a^{}_{\vk'}
+	+\nth{2}\sum_{\vk\vk'}V_{\vk\vk'}a^+_\vk{}c^+_{-\vk}{}c^{}_{-\vk'}a^{}_{\vk'}\\
+ &+\nth{2}\sum_{\vk\vk'}Y_{\vk\vk'}a^+_\vk{}b^+_{-\vk}{}c^{}_{-\vk'}a^{}_{\vk'}
+	+\nth{2}\sum_{\vk\vk'}Y^*_{\vk\vk'}a^+_{\vk'}{}c^+_{-\vk'}{}b^{}_{-\vk}a^{}_{\vk}
+\end{split} 
+\end{equation}
+Here $a$, $b$, $c$ are three species where $a$ is the common species between two channels. In principle, each specie has different magnetic moment and $\epsilon^{i}_{\vk}=\hbar^{2}k^{2}/2m+\mu^{i}B$. This hamiltonian is reduced in the sense that it has only zero-central-momentum component.  This is sufficient to find fermionic excitation though.  We first linearize the hamiltonian with the mean-field value. For a superfluid system, we have non-zero mean-field value for anomalous quantities $F^{*}_{\vk}\equiv\av{a^+_\vk{}b^+_{-\vk}{}}$ and $G^{*}_{\vk}\equiv\av{a^+_\vk{}c^+_{-\vk}{}}$ and their complex conjugates. 
+\begin{equation}
+\begin{split}
+ H=&\sum_\vk\epsilon^a_\vk{}a^+_\vk{}a^{}_\vk+\sum_\vk\epsilon^b_\vk{}b^+_\vk{}b^{}_\vk+\sum_\vk\epsilon^c_\vk{}c^+_\vk{}c^{}_\vk\\
+  &+\nth{2}\sum_{\vk\vk'}U_{\vk\vk'}(F_{\vk'}a^+_\vk{}b^+_{-\vk}{}+F^{*}_{\vk}{}b^{}_{-\vk'}a^{}_{\vk'}+F_{\vk}^{*}F_{\vk'})\\
+	&+\nth{2}\sum_{\vk\vk'}V_{\vk\vk'}(G_{\vk'}a^+_\vk{}c^+_{-\vk}{}+G^{*}_{\vk}c^{}_{-\vk'}a^{}_{\vk'}+G_{\vk}^{*}G_{\vk'})\\
+ &+\nth{2}\sum_{\vk\vk'}Y_{\vk\vk'}(G_{\vk'}a^+_\vk{}b^+_{-\vk}{}+F^{*}_{\vk}c^{}_{-\vk'}a^{}_{\vk'}+F_{\vk}^{*}G_{\vk'})\\
+	&+\nth{2}\sum_{\vk\vk'}Y^*_{\vk\vk'}(F_{\vk}a^+_{\vk'}{}c^+_{-\vk'}{}+G^{*}_{\vk'}b^{}_{-\vk}a^{}_{\vk}+G_{\vk}^{*}F_{\vk'})
+\end{split} 
+\end{equation}
+This equation decoupled $\vk$ from all other momentum component.  $H=\sum_{\vk}h_{\vk}$, and each momentum compoennt $h_{\vk}$ can be simplified 
+\begin{equation*}
+\begin{split}
+ h_{\vk}=&\quad\nth{2}\sum_{\vk'}(U_{\vk\vk'}F_{\vk}^{*}F_{\vk'}+V_{\vk\vk'}G_{\vk}^{*}G_{\vk'}
+ +Y_{\vk\vk'}F_{\vk}^{*}G_{\vk'}+Y^*_{\vk\vk'}G_{\vk}^{*}F_{\vk'})\\
+ &+\epsilon^a_\vk{}a^+_\vk{}a^{}_\vk+\epsilon^b_\vk{}b^+_\vk{}b^{}_\vk+\epsilon^c_\vk{}c^+_\vk{}c^{}_\vk\\
+  &+\nth{2}\sum_{\vk'}(U_{\vk\vk'}F_{\vk'}+Y_{\vk\vk'}G_{\vk'})a^+_\vk{}b^+_{-\vk}{}+\nth{2}\sum_{\vk'}(U_{\vk'\vk}F^{*}_{\vk'}+Y^{*}_{\vk'\vk}G_{\vk'})b^{}_{-\vk}a^{}_{\vk}\\
+  &+\nth{2}\sum_{\vk'}(V_{\vk\vk'}G_{\vk'}+Y^{*}_{\vk\vk'}F_{\vk'})a^+_\vk{}c^+_{-\vk}{}+\nth{2}\sum_{\vk'}(V_{\vk'\vk}G^{*}_{\vk'}+Y^{}_{\vk'\vk}F_{\vk'})c^{}_{-\vk}a^{}_{\vk}
+    \end{split} 
+\end{equation*}
+And it can be written as 
+\begin{equation}\label{eq:threeLinearized}
+H=H_{0}+\sum_{\vk}\begin{pmatrix}a^{+}_{\vk}&b^{}_{-\vk}&c^{}_{-\vk}\end{pmatrix}
+M_{\vk}
+  \begin{pmatrix}a^{}_{\vk}\\b^{+}_{-\vk}\\c^{+}_{-\vk}\end{pmatrix}
+\end{equation}
+Where 
+\begin{gather}
+H_{0}=\nth{2}\sum_{\vk'}(U_{\vk\vk'}F_{\vk}^{*}F_{\vk'}+V_{\vk\vk'}G_{\vk}^{*}G_{\vk'}
+ +Y_{\vk\vk'}F_{\vk}^{*}G_{\vk'}+Y^*_{\vk\vk'}G_{\vk}^{*}F_{\vk'})+\sum_{\vk}(\epsilon^{b}_{\vk}+\epsilon^{c}_{\vk})\\
+ \Delta^{F}_{\vk}=\nth{2}\sum_{\vk'}(U_{\vk\vk'}F_{\vk'}+Y_{\vk\vk'}G_{\vk'})\\
+  \Delta^{G}_{\vk}=\nth{2}\sum_{\vk'}(V_{\vk\vk'}G_{\vk'}+Y^{*}_{\vk\vk'}F_{\vk'})\\
+  M_{\vk}=\begin{pmatrix}
+  \epsilon^{a}_{\vk}&\Delta^{F}_{\vk}&\Delta^{G}_{\vk}\\
+  {\Delta^{F}_{\vk}}^{*}&-\epsilon^{b}_{\vk}&0\\
+   {\Delta^{G}_{\vk}}^{*}&0&-\epsilon^{c}_{\vk}\label{eq:canonical:M}\\
+  \end{pmatrix}
+\end{gather}
+$H_{0}$ is a c-number of mean-field value.  And $\Delta^{F,G}$ depends on the mean-field value as well.  We can solve Eq. (\ref{eq:threeLinearized}) by a canonical transformation.  
+\begin{equation}
+  \begin{pmatrix}a^{}_{\vk}\\b^{+}_{-\vk}\\c^{+}_{-\vk}\end{pmatrix}=S_{\vk}  
+  \begin{pmatrix}\alpha^{}_{\vk}\\\beta^{+}_{-\vk}\\\gamma^{+}_{-\vk}\end{pmatrix}
+  \end{equation}
+where $S$ should be a unitary $3\times3$ matrix.  For s-wave pairing in our consideration, there is no pairing between $a^{+}_{\vk}$ and $b^{+}_{\vk}$ (or $c^{+}_{\vk}$), therefore a $3\times3$ matrix is enough to decribe it.  After the transformation, hamiltonian should be able to expressed in number operator of new quasiparticle $\alpha$, $\beta$ and $\gamma$.   
+\begin{equation}\label{eq:canonical:Mt}
+H=H_{0}+\sum_{\vk}
+ \begin{pmatrix}\alpha^{}_{\vk}&\beta^{+}_{-\vk}&\gamma^{+}_{-\vk}\end{pmatrix}
+\widetilde{M_{\vk}}
+   \begin{pmatrix}\alpha^{}_{\vk}\\\beta^{+}_{-\vk}\\\gamma^{+}_{-\vk}\end{pmatrix}
+\end{equation}
+we seek $S$ to make $\widetilde{M}$
+\begin{equation}
+ \widetilde{M_{\vk}}=S^{+}_{\vk}M_{\vk}S_{\vk}=
+ \begin{pmatrix}\epsilon^{\alpha}_{\vk}&0&0\\0&-\epsilon^{\beta}_{\vk}&0\\0&0&-\epsilon^{\gamma}_{\vk}\end{pmatrix}
+ \end{equation}
+Notice that there are extra minus signs for $\beta$ and $\gamma$ because, the Eq. (\ref{eq:canonical:Mt}) has $\beta^{+}\beta$ and $\gamma^{+}\gamma$ which has the opposite sign (with a constant 1) than number operators.  $\epsilon^{i}_{\vk}$ give the fermionic excitation spectrum.  On the other hand, we do not need to write down $S_{\vk}$ explicitly to find them.  They are eigenvalues of matrix $M_{\vk}$ in Eq. (\ref{eq:canonical:M}). 
+
+As every $\vk$ momentum component is decoupled, we can wort on them one at a time.  We drop the subscript $\vk$ when there is no confusion.   The secular equation of $|M-Ix|=0$ is a cubic equation: 
+\begin{equation}
+(\epsilon^{a}-x)(-\epsilon^{b}-x)(-\epsilon^{c}-x)-\abs{\Delta^{F}}^{2}(-\epsilon^{c}-x)-\abs{\Delta^{G}}^{2}(-\epsilon^{b}-x)=0
+\end{equation}
+The exact solution of cubic equation is long and offer little intuition, so we are content to find the perturbation in our limit. For Feshbach resonance, we can take $\epsilon^{a}=\epsilon^{b}=\epsilon^{c}-\eta=\epsilon$.  Equation above can be rewritten in the form:
+\begin{equation}
+(x^{2}-\epsilon^{2}-\abs{\Delta^{F}}^{2})(-\epsilon+\eta-x)-\abs{\Delta^{G}}^{2}(-\epsilon-x)=0
+\end{equation}
+In the case we considered, $\eta$ is the largest energy scale, and it is close to the binding-energy $E_{b}$ of isolated close-channel pair.  
+
+

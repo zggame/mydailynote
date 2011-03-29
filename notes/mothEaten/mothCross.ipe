@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.0.13">
-<info created="D:20110203172506" modified="D:20110210110302"/>
+<ipe version="70010" creator="Ipe 7.0.10">
+<info created="D:20110203172506" modified="D:20110306200448"/>
 <preamble>\DeclareMathSizes{24}{24}{20}{14}</preamble>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
@@ -243,33 +243,25 @@ h
 </path>
 <path stroke="black" pen="fat">
 128.18 508.957 m
-132.486 580.161
-193.734 553.34
+135.565 570.91
+194.011 550.151
 285.205 499.698
 336.403 471.334
 336.403 471.334 s
-</path>
-<path stroke="black" pen="fat">
-336.403 471.334 m
-296.614 483.085
-242.972 498.097
-228.961 472.477
-215.749 471.334
-215.749 471.334 s
 </path>
 <path matrix="0.685535 0 0 0.658854 33.25 166.948" stroke="black" rarrow="normal/normal">
 373.234 484.299 m
 411.104 535.778 l
 </path>
-<text matrix="1 0 0 1 -85.5223 -18.9311" transformations="translations" pos="395.5 546" stroke="black" type="label" width="115.901" height="18.257" depth="4.29" valign="baseline">$\mbox{\fontsize{20}{24}\selectfont $\epsilon^{(3D)}$}$, $\mbox{\fontsize{18}{24}\selectfont $v&lt;v_{th}(1)$}$</text>
-<path stroke="black" rarrow="normal/normal">
+<text matrix="1 0 0 1 -85.5223 -18.9311" transformations="translations" pos="395.5 546" stroke="black" type="label" width="97.291" height="12.896" depth="4.29" valign="baseline">$\mbox{\fontsize{18}{24}\selectfont ${\mathrm{3D}}$}$, $\mbox{\fontsize{18}{24}\selectfont $v&lt;v_{th}(1)$}$</text>
+<path matrix="1 0 0 1 40.2415 -17.2463" stroke="black" rarrow="normal/normal">
 150.1 566.551 m
 199.939 604.78 l
 </path>
-<text matrix="1 0 0 1 -195.285 61.6231" transformations="translations" pos="395.5 546" stroke="black" type="label" width="115.901" height="18.257" depth="4.29" valign="baseline">$\mbox{\fontsize{20}{24}\selectfont $\epsilon^{(3D)}$}$, $\mbox{\fontsize{18}{24}\selectfont $v_{th}(1)&lt;v$}$</text>
-<text matrix="1 0 0 1 -124 83" transformations="translations" pos="522.343 365.455" stroke="black" type="label" width="18.359" height="14.119" depth="0" valign="baseline">$\mbox{\fontsize{20}{24}\selectfont $N$}$</text>
-<text matrix="1 0 0 1 -87 86" transformations="translations" pos="418.869 364.929" stroke="black" type="label" width="26.844" height="14.119" depth="3.1" valign="baseline">$\mbox{\fontsize{20}{24}\selectfont $N_{\Omega}$}$</text>
-<text matrix="1 0 0 1 9 77" transformations="translations" pos="123.677 369.657" stroke="black" type="label" width="9.476" height="13.319" depth="0" valign="baseline">$\mbox{\fontsize{20}{24}\selectfont $1$}$</text>
+<text matrix="1 0 0 1 -154.085 45.3349" transformations="translations" pos="395.5 546" stroke="black" type="label" width="97.291" height="12.896" depth="4.29" valign="baseline">$\mbox{\fontsize{18}{24}\selectfont $\mathrm{3D}$}$, $\mbox{\fontsize{18}{24}\selectfont $v_{th}(1)&lt;v$}$</text>
+<text matrix="1 0 0 1 -124 83" transformations="translations" pos="522.343 365.455" stroke="black" type="label" width="18.359" height="14.119" depth="0" valign="center">$\mbox{\fontsize{20}{24}\selectfont $N$}$</text>
+<text matrix="1 0 0 1 -87 86" transformations="translations" pos="418.869 364.929" stroke="black" type="label" width="26.844" height="14.119" depth="3.1" valign="center">$\mbox{\fontsize{20}{24}\selectfont $N_{\Omega}$}$</text>
+<text matrix="1 0 0 1 9 77" transformations="translations" pos="123.677 369.657" stroke="black" type="label" width="9.476" height="13.319" depth="0" valign="center">$\mbox{\fontsize{20}{24}\selectfont $1$}$</text>
 <text matrix="1 0 0 1 3 86" transformations="translations" pos="110.02 386.99" stroke="black" type="label" width="9.476" height="13.319" depth="0" valign="baseline">$\mbox{\fontsize{20}{24}\selectfont $0$}$</text>
 <text matrix="760.012 0 0 -7026.69 -75127.01 4443491.8" transformations="translations" pos="98.9899 632.283" stroke="black" type="label" width="21.415" height="8.896" depth="3.1" valign="baseline" size="large">$\mbox{\fontsize{20}{24}\selectfont $\epsilon_N$}$</text>
 <path stroke="black" dash="dashed" pen="fat">
@@ -280,10 +272,17 @@ h
 111.071 637.535 m
 111.071 637.535 l
 </path>
-<path matrix="0.685535 0 0 0.658854 49.6589 163.091" stroke="black" rarrow="normal/normal">
-250.788 578.182 m
-272.323 632.283 l
+<path stroke="black" rarrow="normal/normal">
+166.65 576.286 m
+197.524 604.125 l
 </path>
-<text matrix="-0.356431 0 0 1.42857 328.835 -332.746" transformations="translations" pos="269.697 642.788" stroke="black" type="label" width="38.67" height="18.258" depth="0" valign="baseline">$\mbox{\fontsize{20}{24}\selectfont ${\epsilon^{(2D)}}$}$</text>
+<text matrix="-0.356431 0 0 1.42857 296.13 -315.819" transformations="translations" pos="269.697 642.788" stroke="black" type="label" width="20.059" height="11.761" depth="0" valign="baseline">$\mbox{\fontsize{18}{24}\selectfont $\mathrm{2D}$}$</text>
+<path stroke="black" pen="fat">
+336.403 471.334 m
+296.614 483.085
+242.972 498.097
+226.684 475.04 s
+</path>
+<text matrix="1 0 0 1 -201 83" transformations="translations" pos="418.869 364.929" stroke="black" type="label" width="26.031" height="14.171" depth="5.11" valign="center">$\mbox{\fontsize{20}{24}\selectfont $N_{v}^{*}$}$</text>
 </page>
 </ipe>

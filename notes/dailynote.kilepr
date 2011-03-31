@@ -3,8 +3,8 @@ def_graphic_ext=
 img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
-kileversion=2.0.85
-lastDocument=note20101025.tex
+kileversion=2.0
+lastDocument=pathInt.tex
 masterDocument=
 name=DailyNote
 pkg_extIsRegExp=false
@@ -98,13 +98,13 @@ ReadWrite=true
 
 [item:DailyNote.tex]
 archive=true
-column=7
+column=9
 encoding=UTF-8
 highlight=LaTeX
-line=155
+line=185
 mode=LaTeX
-open=false
-order=4
+open=true
+order=1
 
 [item:VariationUVW.tex]
 archive=true
@@ -273,8 +273,8 @@ encoding=UTF-8
 highlight=LaTeX
 line=15
 mode=LaTeX
-open=false
-order=1
+open=true
+order=0
 
 [item:note20101018.tex]
 archive=true
@@ -283,7 +283,7 @@ encoding=UTF-8
 highlight=LaTeX
 line=4
 mode=LaTeX
-open=false
+open=true
 order=2
 
 [item:note20101025.tex]
@@ -295,6 +295,15 @@ line=10
 mode=LaTeX
 open=false
 order=5
+
+[item:pathInt.tex]
+archive=true
+column=158
+encoding=UTF-8
+highlight=LaTeX
+line=164
+open=true
+order=3
 
 [item:renorm.tex]
 archive=true

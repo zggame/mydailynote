@@ -1,4 +1,4 @@
-\subsection{Path integral approach for single channel}
+\subsection{Path integral approach for single channel\label{sec:pathInt}}
 Here we reviewed the path integral approach for the original single-channel BEC-BCS crossover problem. Randeria and the company \cite{RanderiaBEC, Randeria1997, Randeria2008} has studied this problem with path integral and it is proved to be a rather nice tool for the problem.  
 
 We started with an attractive $\delta$-potential in real space.  This is not equivalent to normal reduced pairing potential as in original BCS work.  However, reduced paring potential only couples  particles of the opposite momentum and does not support simple form of Habbard-Stratonovich transformation, which is essential to solve the problem in path integral formulation.   More physically,
@@ -16,7 +16,7 @@ We write down first the Gaussian integral of $\Delta$
 \end{equation}
 Note that we absorb the extra constant of integration into the measure of $D(\bar\Delta,\Delta)$.
 And with a shift of $\Delta(\vr,\tau)\rightarrow\Delta(\vr,\tau)-g\psi(\vr,\tau)\psi(\vr,\tau)$, we have 
-\footnote{$\int{D(\bar\Delta,\Delta)}1$ is only a constant factor on partition function $\mathcal{Z}$ and has no effect on real physical quantity, therefore, we can take it as 1, (equivalently divide the $\mathcal{Z}$ by a constant)}
+\footnote{$\int{D(\bar\Delta,\Delta)}\cdot1$ is only a constant factor on partition function $\mathcal{Z}$ and has no effect on real physical quantity, therefore, we can take it as 1, (equivalently divide the $\mathcal{Z}$ by a constant)}
 \begin{equation}
 \exp\br{g\int{d\tau{}d^{d}r}\psi_{\uparrow}\bar\psi_{\downarrow}\psi_{\downarrow}\psi_{\uparrow}}=
 \int{D(\bar\Delta,\Delta)}\exp\bbr{-\int{d\tau{d^{d}r}}\mbr{\nth{g}\abs{\Delta}^{2}-\br{\bar\Delta\psi_{\downarrow}\psi_{\uparrow}+\Delta\bar\psi_{\uparrow}\bar\psi_{\downarrow}}}}
@@ -58,7 +58,7 @@ The saddle point equation of Eq. (\ref{eq:pathInt:DeltaPF}) gives the mean-field
 \ln\det\hat{A}=\tr\ln\hat{A}
 \end{equation}
 and differential rule of a function like $\tr\ln$
-\begin{equation}
+\begin{equation}\label{eq:pathInt:diffTr}
 \frac{\delta}{\delta\phi_q}\tr\ln(\nG)=\tr(\hat{\mathcal{G}}\frac{\delta}{\delta\phi_q}\nG)
 \end{equation}
 The saddle equation of Eq. (\ref{eq:pathInt:DeltaPF}) (differential with respect to $\Delta$) is
@@ -82,7 +82,7 @@ The summation of Matsubara frequency can be evaluated and we find
 \nth{g}=\nth{L^d}\sum_{\vp}\frac{1-2n_f(E_p)}{2E_p}=\nth{L^d}\sum_{\vp}\frac{\tanh{(E_p/2T)}}{2E_p}
 \label{eq:pathInt:gap}
 \end{equation}
-where $n_F$ is the fermi distribution function.  This is exactly the gap equation obtained from other methods as well.  On the other hand, $\nG$ in Eq. (\ref{eq:pathInt:nG})  is the inverse of fermion-fermion correlation of $\Psi$.  In mean field, $G_{0}$ as Eq. (\ref{eq:pathInt:G0}) can be diagnosed in momentum space with a canonical (Bogoliubov) transformation.  Nevertheless, poles is where  $\omega^2-E_\vp^2=0$ (with a analytic continue of $i\omega_{n}\rightarrow\omega+0^{+}$) as we can see from  Eq. (\ref{eq:pathInt:G0}) and therefore the spectrum of fermionic excitation is $\pm{}E_{p}$.  
+where $n_f(\epsilon)$ is the fermi distribution function.  This is exactly the gap equation obtained from other methods as well.  On the other hand, $\nG$ in Eq. (\ref{eq:pathInt:nG})  is the inverse of fermion-fermion correlation of $\Psi$.  In mean field, $G_{0}$ as Eq. (\ref{eq:pathInt:G0}) can be diagnosed in momentum space with a canonical (Bogoliubov) transformation.  Nevertheless, poles is where  $\omega^2-E_\vp^2=0$ (with a analytic continue of $i\omega_{n}\rightarrow\omega+0^{+}$) as we can see from  Eq. (\ref{eq:pathInt:G0}) and therefore the spectrum of fermionic excitation is $\pm{}E_{p}$.  
 
 And the number equation is $n=-\partial\Omega/\partial\mu$, at the saddle point the thermodynamic potential $\Omega_{0}=S[\Delta_{0}]/\beta$, and we have number equation
 \begin{equation*}
@@ -93,11 +93,11 @@ similarly the summation over the Mastubara frequency can be evaluated and we hav
 n=\nth{L^{d}}\sum_{\vk}\mbr{1-\frac{\epsilon_{\vk}}{E_{\vk}}\tanh{(\frac{E_{\vk}}{2T})}}
 \end{equation}
 
-\subsubsection{Gaussian fluctuation and collective mode}
-Once the mean field value is obtained, we can expand partition function Eq. (\ref{eq:pathInt:DeltaPF}) around it ($\Delta(\vr,\tau)=\Delta_{0}+\eta(\vr,\tau)$). The linear order of  expansion is zero because $\Delta_{0}$ is the saddle point.  The second order gives us the bilinear terms on $\eta$, i.e., correlation of bosonic field $\Delta$ (four-fermion correlation).  Note that here the hamiltonian only has an extreme-short-range ($\delta$) potential, therefore it cannot cover the situation of charged system where long-range Columnb interaction cannot be neglected.  We will discuss this later.  Nevertheless, it can be shown that a more realistic short-range potential only renormalizes some parameters in the following calculation while leaves the qualitative result unmodified.  
+\subsubsection{Gaussian fluctuation and collective mode}\label{sec:collective1}
+Once the mean field value is obtained, we can expand partition function Eq. (\ref{eq:pathInt:DeltaPF}) around it ($\Delta(\vr,\tau)=\Delta_{0}+\eta(\vr,\tau)$). The linear order of  expansion is zero because $\Delta_{0}$ is the saddle point.  The second order gives us the bilinear terms on $\eta$, i.e., correlation of bosonic field $\Delta$ (four-fermion correlation).  Note that here the hamiltonian only has an extreme-short-range ($\delta$) potential, therefore it cannot cover the situation of charged system where long-range Columnb interaction cannot be neglected.  We will discuss this later.  Nevertheless, it is conceivable that a more realistic short-range potential only renormalizes some parameters in the following calculation while leaves the qualitative result unmodified.  
 
 Notice that we can expand the second term in Eq. \ref{eq:pathInt:DeltaPF} for $\hat{G}{}^{-1}=\hat{G}_{0}^{-1}+\hat{K}$
-\begin{equation}
+\begin{equation}\label{eq:pathInt:expand}
 \tr\ln \hat{G}^{-1}=\tr\ln\hat{G_{0}}^{-1}+\tr(\hat{G_{0}}\hat{K})-\nth{2}\tr(\hat{G_{0}}\hat{K}\hat{G_{0}}\hat{K})+\cdots
 \end{equation}
 In our case,
@@ -165,5 +165,17 @@ v_{\vk}^{2}=1-u_{\vk}^{2}=\nth{2}\br{1-\frac{\xi_{\vk}}{E_{\vk}}}
 For low energy modes, where $\omega,\,\abs{\vq}^{2}\ll\min\bbr{E_{\vk}}$ both are much smaller than $\Delta_{0}$, we can expand $M$ with $\omega$ and $\vq$.  
 
 
-
- The above two equations only depend on 
+\subsubsection{Alternative in inverting green function\label{sec:diagonalizeGreen1}}
+In this problem, we have inverse of Gorkov green function Eq. (\ref{eq:pathInt:nG}) and it can be invert easily as Eq. (\ref{eq:pathInt:G0}).   Alternatively, we can use a different approach which proves to be more convenient in late expansion.  First, we can diagonalize $\nG$ with unitary transformation $T$, in momentum space
+\begin{equation}
+\nG=\mtrx{i\omega_{n}-\xi_{k}&\Delta\\\bar\Delta&i\omega_{n}+\xi_{k}}=T^{\dg}BT
+\end{equation}
+It is easy to show that such $T$ and $B$ satisfing above equation are
+\begin{equation}
+T=\mtrx{u_{k}&v_{k}\\-v_{k}^{*}&u_{k}}\qquad{}B=\mtrx{i\omega_{n}+E_{k}&0\\0&i\omega_{n}-E_{k}}
+\end{equation}
+where $u_{k}^{2}(v_{k}^{2})=\nth{2}(1\pm\xi_{k}/E_{k})$ and $E_{k}$ are conventionally defined quantities in BCS theory.   Actually, this transformation is nothing but Bogoliubov canonical transformation, and $B$ matrix simply describes spectrum of fermionic quasi-particles.  Now it is easy to invert $\nG$
+\begin{equation}
+G=T^{\dg}B^{-1}T
+\end{equation}
+Green's function $G$ takes a more conventional form $A/(i\omega_{n}-e_{k})$ without any dependency on frequency in nominator as Eq. (\ref{eq:pathInt:G0}). Matsubara frequency summation over $G_{0}(k)$ in mean-field and $G_{0}(k)G_{0}(k+q)$ in Gaussian order are fairly straight-forward as in text-book.  

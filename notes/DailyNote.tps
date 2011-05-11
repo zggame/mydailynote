@@ -10,15 +10,15 @@ MinPos.y=-1
 MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
-NormalPos.top=32
+NormalPos.top=26
 NormalPos.right=1322
-NormalPos.bottom=643
+NormalPos.bottom=675
 Class=LaTeXView
-Document=pathInt.tex
+Document=pathInt2.tex
 
 [Frame0_View0,0]
-TopLine=35
-Cursor=3427
+TopLine=252
+Cursor=12745
 
 [Frame1]
 Flags=0
@@ -28,15 +28,15 @@ MinPos.y=-1
 MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
-NormalPos.top=32
+NormalPos.top=26
 NormalPos.right=1322
-NormalPos.bottom=643
+NormalPos.bottom=675
 Class=LaTeXView
-Document=pathInt2.tex
+Document=CanonicalTransf.tex
 
 [Frame1_View0,0]
-TopLine=0
-Cursor=0
+TopLine=37
+Cursor=6341
 
 [Frame2]
 Flags=0
@@ -46,15 +46,15 @@ MinPos.y=-1
 MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
-NormalPos.top=32
+NormalPos.top=26
 NormalPos.right=1322
-NormalPos.bottom=643
+NormalPos.bottom=675
 Class=LaTeXView
-Document=newCommand.tex
+Document=pathInt.tex
 
 [Frame2_View0,0]
-TopLine=49
-Cursor=2969
+TopLine=0
+Cursor=3427
 
 [Frame3]
 Flags=0
@@ -64,15 +64,15 @@ MinPos.y=-1
 MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
-NormalPos.top=32
+NormalPos.top=26
 NormalPos.right=1322
-NormalPos.bottom=643
+NormalPos.bottom=675
 Class=LaTeXView
-Document=scattering.tex
+Document=ref.tex
 
 [Frame3_View0,0]
-TopLine=14
-Cursor=1681
+TopLine=0
+Cursor=33
 
 [Frame4]
 Flags=0
@@ -82,14 +82,14 @@ MinPos.y=-1
 MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
-NormalPos.top=32
+NormalPos.top=26
 NormalPos.right=1322
-NormalPos.bottom=643
+NormalPos.bottom=675
 Class=LaTeXView
 Document=DailyNote.tex
 
 [Frame4_View0,0]
-TopLine=155
+TopLine=141
 Cursor=4156
 
 [Frame5]
@@ -100,17 +100,35 @@ MinPos.y=-1
 MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
-NormalPos.top=32
+NormalPos.top=26
 NormalPos.right=1322
-NormalPos.bottom=643
+NormalPos.bottom=675
 Class=LaTeXView
-Document=ref.tex
+Document=scattering.tex
 
 [Frame5_View0,0]
 TopLine=0
-Cursor=33
+Cursor=1681
+
+[Frame6]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1322
+NormalPos.bottom=675
+Class=LaTeXView
+Document=newCommand.tex
+
+[Frame6_View0,0]
+TopLine=43
+Cursor=2969
 
 [SessionInfo]
-FrameCount=6
+FrameCount=7
 ActiveFrame=0
 

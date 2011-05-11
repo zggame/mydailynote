@@ -1,0 +1,62 @@
+\subsection{Simple approach for collective mode}
+With the above arrangement, it is easy to study the collective mode of the system, which corresponding the second order expansion over $D$. We introduce the deviation over $\nG=G_{0}^{-1}+K_{q}$, where $G_{0}$ is described by real constant $D_{1,2}$
+\begin{equation}
+K_\vq=\mtrx{0&\theta_{1\,\vq}&\theta_{2\,\vq}\\\theta_{1\,-\vq}^*&0&0\\\theta_{2\,-\vq}^*&0&0}
+\end{equation}
+Follow the same approach in single-channel (Sec. \ref{sec:collective1}), we need to calculate $\tr(\hat{G_{0}}\hat{K}\hat{G_{0}}\hat{K})$, 
+\begin{equation}
+\tr({G_{0\,k}}{K_{q}}{G}_{0\,k+q}{K_{-q}})=\Theta_{q}^{\dg}M_{q}\Theta_{q}
+\end{equation}
+where 
+\begin{equation}
+\Theta_{q}=\mtrx{\theta^{*}_{1\,\vq}\\\theta^{}_{1\,-\vq}\\\theta^{*}_{2\,\vq}\\\theta^{}_{2\,-\vq}}
+\qquad
+\Theta_{q}^{\dg}=\mtrx{\theta^{}_{1\,\vq}&\theta^{*}_{1\,-\vq}&\theta^{}_{2\,\vq}&\theta^{*}_{2\,-\vq}}
+\end{equation}
+At the lowest order, if we take $L_{\vq}=I$,
+\begin{equation}
+M^{(0)}_{q}=\sum_{\vk}
+\begin{pmatrix}
+-u_{\vk}^{2}u_{\vk+\vq}^{2}f_{1\,q}+v_{\vk}^{2}v_{\vk+\vq}^{2}f_{2\,q}&u_{\vk}v_{\vk}u_{\vk+\vq}v_{\vk+\vq}(f_{2\,q}-f_{1\,q})&0&0\\
+u_{\vk}v_{\vk}u_{\vk+\vq}v_{\vk+\vq}(f_{2\,q}-f_{1\,q})&u_{\vk}^{2}u_{\vk+\vq}^{2}f_{2\,q}-v_{\vk}^{2}v_{\vk+\vq}^{2}f_{1\,q}&0&0\\
+0&0&-u_{\vk}^{2}f_{3\,q}&0\\
+0&0&0&u_{\vk+\vq}^{2}f_{4\,q}
+\end{pmatrix}
+\end{equation}
+where
+\begin{gather}
+f_{1\,q}=\nth{i q_{l}+\xi_{1\,\vk}-\xi_{2\,\vk+\vq}}\\
+f_{2\,q}=\nth{i q_{l}-\xi_{1\,\vk+\vq}+\xi_{2\,\vk}}\\
+f_{3\,q}=\nth{i q_{l}+\xi_{1\,\vk}-\xi_{3\,\vk+\vq}}\\
+f_{4\,q}=\nth{i q_{l}-\xi_{1\,\vk+\vq}+\xi_{3\,\vk}}
+\end{gather}
+The two channels are completely decoupled at this level and the upper quarter is exactly same as single channel case if we ignore the correction over quasi-particle spectrum.   We can also expand each $f_{i\,q}$ to get the first order about $D_{2}/\eta$. (We take $q=0$ for it. See Appendix \ref{sec:expansionM})
+\begin{equation}
+M^{(1a)}=\sum_{\vk}
+\begin{pmatrix}
+(1-\frac{D_{1}^{2}}{2E_{\vk}^{2}})\frac{D_{1}^{2}-D_{2}^{2}}{4E_{\vk}^{2}\eta}
+&-\frac{D_{1}^{2}}{4E_{\vk}^{2}}\frac{D_{1}^{2}-D_{2}^{2}}{4E_{\vk}^{2}\eta}&0&0\\
+-\frac{D_{1}^{2}}{4E_{\vk}^{2}}\frac{D_{1}^{2}-D_{2}^{2}}{4E_{\vk}^{2}\eta}
+&(1-\frac{D_{1}^{2}}{2E_{\vk}^{2}})\frac{D_{1}^{2}-D_{2}^{2}}{4E_{\vk}^{2}\eta}&0&0\\
+0&0&\nth{2}(1+\frac{\xi_{\vk}}{E_{\vk}})\frac{3D_{1}^{2}+D_{2}^{2}}{2\eta(E_{\vk}+\xi_{\vk}+\eta)}&0\\
+0&0&0&\nth{2}(1+\frac{\xi_{\vk}}{E_{\vk}})\frac{3D_{1}^{2}+D_{2}^{2}}{2\eta(E_{\vk}+\xi_{\vk}+\eta)}
+\end{pmatrix}
+\end{equation}
+
+To be consistent, we also need to expand $L_{q}$ to the first order of  $D_{2}/\eta$ as well.  
+\begin{equation}
+\begin{split}
+M^{(1b)}=&\qquad\frac{D_{2}}{\eta}\sum_{\vk}\\
+&\begin{pmatrix}
+-\frac{D_{1}^{2}D_{2}\xi_{\vk}}{4E^{5}_{\vk}}&-\frac{D_{1}^{2}D_{2}\xi_{\vk}}{2E^{5}_{\vk}}
+&\frac{D_{1}\xi_{\vk}}{4E_{\vk}^{3}}&\frac{D_{1}}{2E_{\vk}}(\nth{E_{\vk}+\xi_{\vk}+\eta}+\nth{2E_{\vk}})\\
+-\frac{D_{1}^{2}D_{2}\xi_{\vk}}{4E^{5}_{\vk}}&-\frac{D_{1}^{2}D_{2}\xi_{\vk}}{2E^{5}_{\vk}}
+&\frac{D_{1}}{2E_{\vk}}(\nth{E_{\vk}+\xi_{\vk}+\eta}+\nth{2E_{\vk}})&\frac{D_{1}\xi_{\vk}}{4E_{\vk}^{3}}\\
+\frac{D_{1}\xi_{\vk}}{4E_{\vk}^{3}}&\frac{D_{1}}{2E_{\vk}}(\nth{E_{\vk}+\xi_{\vk}+\eta}+\nth{2E_{\vk}})
+&-\frac{D_{1}^{2}D_{2}}{4E_{\vk}^{3}(E_{\vk}+\xi_{\vk}+\eta)}&0\\
+\frac{D_{1}}{2E_{\vk}}(\nth{E_{\vk}+\xi_{\vk}+\eta}+\nth{2E_{\vk}})&\frac{D_{1}\xi_{\vk}}{4E_{\vk}^{3}}
+&0&-\frac{D_{1}^{2}D_{2}}{4E_{\vk}^{3}(E_{\vk}+\xi_{\vk}+\eta)}\\
+\end{pmatrix}
+\end{split}
+\end{equation}
+The interesting thing here is that if we only takes the first order of $D_{2}/\eta$, the two-channel is still decoupled when we write down the secular equation.  And the correction of the elements at the upper-left corner ($\theta_{1\,\pm{q}}$) is the same and that will gives an small finite value for $\omega_{q}$ at $q=0$. \emph{This conclusion is however problemetic as it violates the f sum rule.  Phase flucturation should be a Goldstone mode without mass.(see Sec. \ref{sec:phaseFluctuation}) }

@@ -1,6 +1,6 @@
-% !TeX root = subNote.tex
+% !TeX root =thesis.tex
 
-\subsection{Path integral approach for two-channel}
+\chapter{Path integral approach for two-channel}
 For two-channel problem, we write down the Hamiltonian as
 \begin{equation}
 \begin{split}
@@ -122,7 +122,7 @@ Comparing Eq. \ref{eq:pathInt2:nG} with Eq. \ref{eq:canonical:M} in Bogoliubov t
 
 
 
-\subsubsection{Diagonalize Green's function, Fermionic mode and Bogoliubov transform\label{sec:diagonalGreen}}
+\section{Diagonalize Green's function, Fermionic mode and Bogoliubov transform\label{sec:diagonalGreen}}
 Here we will use the approach in Sec. \ref{sec:diagonalizeGreen1} for our problem.  In current problem, we need to diagonalize a $3\times3$ matrix Eq. \ref{eq:pathInt2:nG}, in another word, we need to figure out the Bogoliubov canonical transformation and the quasiparticle spectrum for this problem.   This involves solving a cubic equation, and an exact solution exists in principle.  However,  it offers little intuition in write the exact result, instead we content to find the approximated result when spectrum does not change too much from the broad-resonance, where the only effect of close-channel is modifying the effective interaction of open-channel. 
 
 
@@ -183,7 +183,7 @@ G_{k}=T_{\vk}B_{\omega_{n},\vk}^{-1}T_{\vk}^{\dg}+T_{\vk}\delta_{\vk}B_{\omega_{
 From another point, we can interprate the above transform $T_\vk{}L_\vk$ as Bogoliubov canonical transformation and $B$ gives us spectrum of fermionic quasi-particle excitation.  
 %We only need to keep the zeroth order term for $B_{\vk}^{-1}$ for first order expansion.  
 
-\subsubsection{Mean field result}
+\section{Mean field result}
  Use the same techniques as Eq. (\ref{eq:pathInt:diffTr}), we have two equations for $D_{1}$ and $D_{2}$,
  \begin{align}
 \frac{\delta}{\delta{}D_{1}}:&\qquad&
@@ -272,7 +272,7 @@ comparing this to a two-body \sch equation
 where $E_{0}$ is the binding energy of two-body bound state of isolated close-channel.   
 
 
-\subsection{Collective mode}
+\section{Collective mode}
 %\input{collectiveMode1}
 
 \subsubsection{Alternative Approach: Phase fluctuation mode \label{sec:phaseFluctuation}}
@@ -353,7 +353,7 @@ And this determines the velocity of the Anderson-Bogoliubov collective mode.  We
 
 \begin{subappendices}
 
-\subsection{Diagonalize Matrix Eq. (\ref{eq:pathInt2:G2})\label{sec:diagonalize}}
+\section{Diagonalize Matrix Eq. (\ref{eq:pathInt2:G2})\label{sec:diagonalize}}
 We need to find a unitary transformation $L$ to diagonalize matrix 
 \begin{equation*}
 i\omega_{n}I+\mtrx{-E_k&0&u_kD_2\\0&+E_k&v_kD_2\\u_kD_2&v_kD_2&+\xi_k+\eta}
@@ -404,7 +404,7 @@ Here we use $uv=D_{1}/2E$
 
 
 %\subsection{Expansion of $M$ matrix\label{sec:expansionM}}
-\subsection{ Calculate $\pi^{(0)}$ and $\pi^{\perp}$\label{sec:calculatePi}}
+\section{ Calculate $\pi^{(0)}$ and $\pi^{\perp}$\label{sec:calculatePi}}
 Here we will calculate $\pi^{(0)}$ and $\pi^{\perp}$ to the first order of $D_i/\eta$ using the expansion of Green's function in Sec. \ref{sec:diagonalGreen}.
 
 \begin{equation}\label{eq:pathInt2:pi0}

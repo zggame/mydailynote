@@ -1,0 +1,39 @@
+\documentclass{book}
+\usepackage{fullpage}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{graphicx}% Include figure files
+\usepackage{epstopdf}
+\usepackage{subfig}
+\usepackage{appendix}
+%\usepackage{setspace}\doublespace
+\author{Guojun Zhu}
+\title{My Daily Note}
+\input{../newCommand}
+\renewcommand{\emph}[1]{\textbf{#1}}
+\begin{document}
+%\maketitle
+
+%\tableofcontents
+\numberwithin{equation}{section}
+
+
+%\section{}
+%\input{twoBodyDensityMatrixRichardson}
+%\input{VariationUVW}
+%\section{note of 2009.12.07}
+%\input{note20091207}
+%\input{scattering}
+%\input{relationTfAs}
+%\input{CanonicalTransf}
+\chapter{Path integral for one channels}
+\input{../pathInt}
+\chapter{Path integral for two channels}
+\input{../pathInt2}
+\bibliographystyle{amsplain}
+\bibliography{../citation}
+
+
+\end{document}

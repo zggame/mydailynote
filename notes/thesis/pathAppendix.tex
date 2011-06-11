@@ -1,0 +1,172 @@
+% !TeX root =thesis.tex
+
+
+\section{Diagonalize Matrix Eq. (\ref{eq:pathInt2:G2})\label{sec:diagonalize}}
+We need to find a unitary transformation $L$ to diagonalize matrix 
+\begin{equation*}
+i\omega_{n}I+\mtrx{-E_k&0&u _kD_2\\0&+E_k&v_kD_2\\u_kD_2&v_kD_2&+\xi_k+\eta}
+\end{equation*}
+We drops all the $k$ subscripts in this section.  We notice that the first term is proportional to identity matrix and does not change by unitary transformation, we only need to concentrate for the second term.  We rescale all elements with $E$, 
+\begin{equation*}
+R=
+\begin{pmatrix}
+-1&0&y_1\\
+0&1&y_2\\
+y_1&y_2&t
+\end{pmatrix}
+\end{equation*}
+The secular equation is 
+\begin{equation}
+(x^{2}-1)(x-t)-(y_{1}^{2}+y_{2}^{2})x+y_{1}^{2}-y_{2}^{2}=0
+\end{equation}
+We will assume at the zeroth order, the three eigenvalues are $-1$, $1$ and $t$.  ($t$ has weak dependency on energy as $(\xi_{k}+\eta)/E_{k}$, however, at the low energy region of interest, we ignore $\xi_{k}$.) Both $y_{1,2}$ and t are larger than 1, however, we will verify that given condition $y_{i}^{2}\ll{t}$, the correction is indeed small and the expansion is legit.  \emph{Indeed, this approximation is not as bad as it seems to be, close-channel component can still be smaller than open-channel at low-k (in order of $k_{F}$)  due to close-channel bound state is much smaller than inter-particle distance even when total close-channel is more than open-channel.  And here all the quantities are about low-k unless specifically noticed.} 
+We expand the system to the first order of $y_{i}^{2}/{t}$, and find
+\begin{equation}
+\begin{array}{ccc}
+x^{(0)}&\quad{}x^{(1)}&\quad{}Eigenvector\nonumber\\
+-1&-\frac{y_{1}^{2}}{t}&\mtrx{1&\frac{y_{1}y_{2}}{2t}&-\frac{y_{1}}{t}}\\
+1&-\frac{y_{2}^{2}}{t}&\mtrx{-\frac{y_{1}y_{2}}{2t}&1&-\frac{y_{2}}{t}}\\
+t&\frac{y_{1}^{2}+y_{2}^{2}}{2t}&\mtrx{\frac{y_{1}}{t}&\frac{y_{2}}{t}&1}
+\end{array}
+\end{equation}
+Now it is easy to write down the corresponding diagonal matrix and unitary transformation
+\begin{equation}
+B=i\omega_{n}I+E\mtrx{-1-\frac{y_{1}^{2}}{t}&0&0\\0&1-\frac{y_{2}^{2}}{t}&0\\0&0&t+\frac{y_{1}^{2}+y_{2}^{2}}{2t}}
+\end{equation}
+\begin{equation}
+L=\mtrx{1&-\frac{y_{1}y_{2}}{2t}&\frac{y_{1}}{t}\\\frac{y_{1}y_{2}}{2t}&1&\frac{y_{2}}{t}\\-\frac{y_{1}}{t}&-\frac{y_{2}}{t}&1}
+\end{equation}
+Here $L$ is not exactly unitary transformation, it only unitary in the first order of  $y_{i}^{2}/{t}$ (or $D_{i}^{2}/(E\eta)$). We have 
+\[
+B=L^{\dg}RL+o(\frac{y_{i}^{2}}{t})
+\]
+Alternatively, we can write $L$ as 
+\begin{equation}
+L=I+
+\mtrx{0&-\frac{D_{1}D_{2}}{4E^{2}}&u\\
+\frac{D_{1}D_{2}}{4E^{2}}&0&v\\
+-u&v&0
+}\frac{D_{2}}{\eta}
+\end{equation}
+Here we use $uv=D_{1}/2E$
+
+
+\section{Derive mean-field equation \ref{eq:pathInt2:mf}\label{sec:pathInt2:deriveMF}}
+For a $3\times3$ matrix as in Eq. (\ref{eq:pathInt2:nG}), 
+\begin{equation}\tag{\ref{eq:pathInt2:nG}}
+\mathcal{G}^{-1}=\begin{pmatrix}
+i\omega_{n}-\xi_{k}&D_{1}&D_{2}\\
+\bar{D}_{1}&i\omega_{n}+\xi_{k}&0\\
+\bar{D}_{2}&0&i\omega_{n}+\xi_{k}+\eta
+\end{pmatrix}
+\end{equation}
+A general matrix inverted as such, 
+  \begin{equation}
+  \mtrx{A_{11}&A_{12}&A_{13}\\A_{12}^{*}&A_{22}&0\\A_{13}^{*}&0&A_{33}}^{-1}=
+  \nth{|A|}
+  \mtrx{A_{22}A_{33}&-A_{12}A_{33}&-A_{13}A_{22}\\
+  	-A_{12}^{*}A_{33}&A_{11}A_{33}-A_{13}A_{13}^{*}&A_{12}^{*}A_{13}\\
+	-A_{13}^{*}A_{22}&A_{12}A_{13}^{*}&A_{11}A_{22}-A_{12}A_{12}^{*}}
+  \end{equation}
+where $|A|$ is the determined of $A$ matrix.  Here we work in momentum space, in which the system is nicely decoupled at least to the mean-field order.  And we therefore drop all the $k$ subscript in the rest of section.  For Eq. (\ref{eq:pathInt2:nG}),
+\begin{equation}
+|A|=(i\omega_{n}-\epsilon_{1})(i\omega_{n}-\epsilon_{2})(i\omega_{n}-\epsilon_{3})
+\end{equation}
+From Eq. \ref{eq:pathInt2:mf01}, 
+\begin{equation}
+\begin{split}
+\tr\mbr{{G_{0}}\cdot\cmtrx{0&1&0\\0&0&0\\0&0&0}}&=\sum_{\vk\omega_{n}}G_{0\,(21)}
+=\sum_{\vk}\sum_{\omega_{n}}\frac{-D_{1}^{*}(i\omega_{n}+\xi+\eta)}{(i\omega_{n}-\epsilon_{1})(i\omega_{n}-\epsilon_{2})(i\omega_{n}-\epsilon_{3})}\\
+&=\sum_{\vk}D_{1}^{*}\frac{\xi_{1}+\xi+\eta}{(\xi_{1}+\xi_{2})(\xi_{1}+\xi_{3})}\equiv\sum_{\vk}h_{1\,\vk}
+\end{split}
+\end{equation}
+Similarly
+\begin{equation}
+\begin{split}
+\tr\mbr{{G_{0}}\cdot\cmtrx{0&0&1\\0&0&0\\0&0&0}}&=\sum_{\vk\omega_{n}}G_{0\,(31)}
+=\sum_{\vk}D_{2}^{2}\frac{\xi_{1}+\xi}{(\xi_{1}+\xi_{2})(\xi_{1}+\xi_{3})}\equiv\sum_{\vk}h_{2\,\vk}
+\end{split}
+\end{equation}
+And we have 
+ \begin{align*}
+(\tilde{U}^{-1})_{11}\bar{D}_{1}+(\tilde{U}^{-1})_{21}\bar{D}_{2}-\sum_{\vk}h_{1\,\vk}=0\\
+(\tilde{U}^{-1})_{12}\bar{D}_{1}+(\tilde{U}^{-1})_{22}\bar{D}_{2}-\sum_{\vk}h_{2\,\vk}=0
+ \end{align*}
+Invert the interaction matrix $\tilde{U}$ and we have Eq.  \ref{eq:pathInt2:mf}.
+
+
+
+
+
+
+
+
+\section{Calculate $\pi^{(0)}$ and $\pi^{\perp}$\label{sec:calculatePi}}
+Here we will calculate $\pi^{(0)}$ and $\pi^{\perp}$ to the first order of $D_i/\eta$ using the expansion of Green's function in Sec. \ref{sec:diagonalGreen}.
+
+\begin{equation}\label{eq:pathInt2:pi0}
+\begin{split}
+\pi^{(0)}(0)=&\sum_k\tr(\hat{G}_{0\,k}\sigma_3\hat{G}_{0\,k}\sigma_3)\\
+	\approx&\sum_k\tr\big(T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3\big)\\
+	&\quad+\tr\Big(T_{\vk}\delta_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3
+	-T_{\vk}B_{k}^{-1}\delta_{\vk}T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3\\
+	&\qquad+T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T_{\vk}\delta_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3
+	-T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}\delta_{\vk}T_{\vk}^{\dg}\sigma_3\Big)\\
+	=&\sum_k\tr\big(M_{k}\big)+2\tr\Big(\delta_{\vk}M_{k}-\delta_{\vk}M_{k}\Big)
+\end{split}
+\end{equation}
+where 
+\begin{equation}
+M_{k}=T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}
+\end{equation}
+Here we use the cyclical  property of the trace $\tr(AB)=\tr(BA)$.  
+It is straightforward to calculate
+\begin{equation*}
+T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}=
+\begin{pmatrix}
+{\frac{\xi_{\vk}}{E_{\vk}(i\omega_{k}-\xi_{1\,\vk})}}&\frac{D_{1}}{E_{\vk}(i\omega_{k}-\xi_{2\,\vk})}&0\\
+{\frac{D_{1}}{E_{\vk}(i\omega_{k}-\xi_{1\,\vk})}}&-\frac{\xi_{\vk}}{E_{\vk}(i\omega_{k}-\xi_{2\,\vk})}&0\\
+0&0&-\nth{i\omega_{k}-\xi_{3\,\vk}}\\
+\end{pmatrix}
+\end{equation*}
+Now it is easy to calculate the first term
+\begin{equation}
+\begin{split}
+\sum_k\tr\big(M_{k}\big)=&
+\sum_{k}\mbr{
+\frac{2D_{1}^{2}}{E_{\vk}^{2}(i\omega_{k}-\xi_{1\,\vk})(i\omega_{k}-\xi_{2\,\vk})}+
+\br{\frac{\xi_{\vk}^{2}}{E_{\vk}^{2}(i\omega_{k}-\xi_{1\,\vk})^{2}}+\frac{\xi_{\vk}^{2}}{E_{\vk}^{2}(i\omega_{k}-\xi_{2\,\vk})^{2}}
+-\nth{(i\omega_{k}-\xi_{3\,\vk})^{2}}}
+}
+\end{split}
+\end{equation}
+Only root $\xi_{2\,\vk}$ in the first term contributes in Matrubara frequency summation.
+\begin{equation}\label{eq:pathInt2:pi0-1}
+\sum_k\tr\big(M_{k}\big)=\sum_{\vk}\frac{2D_{1}^{2}}{E_{\vk}^{2}(\xi_{1\,\vk}-\xi_{2\,\vk})}
+\approx\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{3}}-(\frac{D_{1}^{2}+D_{2}^{2}}{2\eta})\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{4}}
+\end{equation}
+
+
+For the lowest order of the second term in Eq. \eqref{eq:pathInt2:pi0}, we only need to take the lowest order of $B_{k}$
+\begin{equation}
+B_{k}=\mtrx{i\omega_{k}-E_{\vk}&0&0\\0&i\omega_{k}+E_{\vk}&0\\0&0&i\omega_{k}+\xi_{\vk}+\eta}
+\end{equation}
+It is easy to verify at this approximation
+\begin{equation}\label{eq:pathInt2:pi0-2}
+\tr\Big(\delta_{\vk}M_{k}-\delta_{\vk}M_{k}\Big)=0
+\end{equation}
+Combine Eq. \eqref{eq:pathInt2:pi0-2} and Eq. \eqref{eq:pathInt2:pi0-2}, we have 
+\begin{equation}
+\pi^{(0)}(0)\approx\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{3}}-(\frac{D_{1}^{2}+D_{2}^{2}}{2\eta})\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{4}}
+\end{equation}
+
+and it is actually exact for $\pi^{\perp}(0)$
+\begin{equation}
+\begin{split}
+\pi^{\perp}(0)=&\sum_k\tr(\hat{G}_{0\,k}\hat{G}_{0\,k})\\
+	=&\sum_k\tr\big(T_{\vk}L_{\vk}B_{k}^{-1}L_{\vk}^{\dg}T_{\vk}^{\dg}T_{\vk}L_{\vk}B_{k}^{-1}L_{\vk}^{\dg}T_{\vk}^{\dg}\big)\\
+	=&\sum_k\tr\big(B_{k}^{-1}B_{k}^{-1}\big)\\
+	=&\sum_{\vk,i}(\sum_{\omega_{k}}(i\omega_{k}-\xi_{i})^{-2})\\
+	=&0
+\end{split}
+\end{equation}

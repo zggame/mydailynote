@@ -17,9 +17,22 @@
 \usepackage{epstopdf}
 \usepackage{subfig}
 \usepackage{makeidx}
-\usepackage{appendix}
+\usepackage[page,toc,title,titletoc]{appendix}
+
+
+%\usepackage{comment}
+%%\includecomment{mycomment}
+%\specialcomment{mycommentzhu} {\begingroup\ttfamily\footnotesize}{\endgroup}
+%%\excludecomment{mycomment}
+
+%%adding comment, use the next line for disable comment
+\newcommand{\mycomment}[1]{\textit{#1}}
+%\newcommand{\mycomment}[1]{}
+
 \input{../newcommand}
+
 \begin{document}
+
 
 \title{BCS-BEC Crossover with Feshbach Resonance for Three-Hyperfine-Species Model}
 \author{Guojun zhu}
@@ -29,7 +42,7 @@
 \phdthesis
 \advisor{Anthony Leggett}
 \degreeyear{2011}
-\committee{Professor Gordon Baym\\Professor Brian DeMarco\\Professor Scott Willenbrock\\Professor Anthony Leggett}
+\committee{Professor Gordon Baym\\Professor Brian DeMarco\\Professor Anthony Leggett\\Professor Scott Willenbrock}
 \maketitle
 
 \frontmatter
@@ -66,7 +79,7 @@ This thesis would not be possible without the guidance and patience from my advi
 %% etc.
 
 \tableofcontents
-\listoftables
+%\listoftables
 \listoffigures
 
 %% Create a List of Abbreviations. The left column
@@ -83,11 +96,21 @@ This thesis would not be possible without the guidance and patience from my advi
 
 \begin{symbollist}[0.7in]
 \item[$\psi$] wave function.
+\item[$\phi_{i}$] Bound-state wave functions of  isolated close-channel, especially, $\phi_{0}$ is the one in resonance (\pageref{eq:pathInt2:phi})
+\item[$D_{1,2}$] Order parameters for two-channels. (\pageref{eq:pathInt2:Ddef})
+\item[$h_{1\vk} h_{2\vk}$] (Open, close) psudo-wave-function of two-body correlation (\pageref{eq:pathInt2:h2})
+\item[$a_{s}$, $a_{s}^{(o)}$] (Open channel) s-wave scattering length, (we drop subscript ${}^{(o)}$ when there is no ambuguity) 
+\item[$\eta$] Absolute detuning between two channels, notice that $\eta=0$ is not where $a_{s}$ diverges
+\item[$E_{b}$, $E_{b}^{(i)}$] Binding energy of $i^{th}$ two-body (bound) eigen-wave-function in isolated close-channel.  Superscript ${}^{(i)}$ is dropped when referring the one in resonance. 
+\item[$\kappa$] Momentum scale of the resonant bound-state in isolated close-channel.  $\kappa^{2}/2m=E_{b}$
+\item[$\delta_{c}$] Energy scale of relative detuning from resonance where close-channel take substantial weight
+\item[$a_{0}$] Average particle-particle distance, $a_{0}k_{F}\sim1$
+\item[$k_{F}$] Fermi momentum
 \end{symbollist}
 
 \mainmatter
 \input{intro}
-\chapter{Path-Integral approach}
+%\chapter{Path-Integral approach}
 \section{Path integral for one channels}
 \input{pathInt}
 

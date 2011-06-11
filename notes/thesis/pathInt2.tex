@@ -94,7 +94,7 @@ S(\bar\Delta,\Delta)=\int{dx}
 	\br{\bar\Delta{}A^{-1}\Delta-\tr\ln{G}^{-1}}
 \end{equation}
 This form can be simplified by introducing mixture within two channels.
-\begin{equation}
+\begin{equation}\label{eq:pathInt2:Ddef}
 D\equiv\mtrx{D_{1}\\D_{2}}=Q^{\dg}\Delta
 \end{equation}
 
@@ -150,7 +150,7 @@ We regard the off-diagonal elements as perturbation.  This matrix can then be di
 \begin{equation}
 \begin{split}
 B_{\omega_{n},\vk}&=i\omega_{n}I-
-	\mtrx{\xi_{1}{}_{\vk}&0&0\\0&\xi_{2}{}_{\vk}&0\\0&0&\xi_{3}{}_{\vk}}\\
+	\mtrx{\xi_{1}{}_{\vk}&0&0\\0&-\xi_{2}{}_{\vk}&0\\0&0&-\xi_{3}{}_{\vk}}\\
 	&\approx{}i\omega_{n}I+
 	\mtrx{-E_{\vk}-\frac{D_{1}^{2}}{\eta}&0&0\\
 	0&E_{\vk}-\frac{D_{2}^{2}}{\eta}&0\\0&0&\xi_{\vk}+\eta+\frac{D_{1}^{2}+D_{2}^{2}}{2\eta}}
@@ -160,6 +160,14 @@ B_{\omega_{n},\vk}&=i\omega_{n}I-
 %	&\equiv{}B^{(0)}_{\vk}+B^{(1)}_{\vk}
 \end{split}	
 \end{equation}
+Here we choose the sign of $\xi_{1,2,3}$  to make their lowest order in Feshbach resonance positive.  
+we have 
+\begin{align}
+\xi_{1\vk}&\approx{}E_{\vk}+\frac{D_{1}^{2}}{\eta}&\equiv{}&E_{\vk}+\delta_{1\vk}\\
+\xi_{2\vk}&\approx{}E_{\vk}-\frac{D_{2}^{2}}{\eta}&\equiv{}&E_{\vk}+\delta_{2\vk}\\
+\xi_{3\vk}&\approx{}\xi_{\vk}+\eta-\frac{D_{1}^{2}+D_{2}^{2}}{2\eta}&\equiv{}&\xi_{\vk}+\eta+\delta_{3\vk}
+\end{align}
+
 \begin{equation}\label{eq:pathInt2:L1}
 L_{\vk}\approx{}I+
 \mtrx{0&-\frac{D_{1}{}D_{2}{}}{4E^{2}_{\vk}}&u_{\vk}\\
@@ -182,95 +190,81 @@ G_{k}=T_{\vk}B_{\omega_{n},\vk}^{-1}T_{\vk}^{\dg}+T_{\vk}\delta_{\vk}B_{\omega_{
 
 From another point, we can interprate the above transform $T_\vk{}L_\vk$ as Bogoliubov canonical transformation and $B$ gives us spectrum of fermionic quasi-particle excitation.  
 %We only need to keep the zeroth order term for $B_{\vk}^{-1}$ for first order expansion.  
-
-\section{Mean field result}
- Use the same techniques as Eq. (\ref{eq:pathInt:diffTr}), we have two equations for $D_{1}$ and $D_{2}$,
+\section{Mean field equation (Excct)}
+Use the same techniques as Eq. (\ref{eq:pathInt:diffTr}), we have two equations for $D_{1}$ and $D_{2}$,
  \begin{align}
 \frac{\delta}{\delta{}D_{1}}:&\qquad&
-(\tilde{U}^{-1})_{11}\bar{D}_{1}+(\tilde{U}^{-1})_{21}\bar{D}_{2}-\tr\mbr{{G_{0}}\cdot\cmtrx{0&1&0\\0&0&0\\0&0&0}}=0\\
+(\tilde{U}^{-1})_{11}\bar{D}_{1}+(\tilde{U}^{-1})_{21}\bar{D}_{2}-\tr\mbr{{G_{0}}\cdot\cmtrx{0&1&0\\0&0&0\\0&0&0}}=0
+\label{eq:pathInt2:mf01}\\
 \frac{\delta}{\delta{}D_{2}}:&\qquad&
 (\tilde{U}^{-1})_{12}\bar{D}_{1}+(\tilde{U}^{-1})_{22}\bar{D}_{2}-\tr\mbr{{G_{0}}\cdot\cmtrx{0&0&1\\0&0&0\\0&0&0}}=0
+\label{eq:pathInt2:mf02}
  \end{align}
-
-
- If we take $D$ as real constant\footnote{Actually $D_{2}{_{\vk}}$ cannot be constant at high momentum.  However, for the momentum we are interested, i.e. the momentum lower or in the order of Fermi momentum, it slowly varies.  Therefore fairly it is reasonable to take it as constant.},     we can find the mean field result.  Usting Eq. (\ref{eq:pathInt2:Gexpand}),
  
- \begin{equation}\label{eq:pathInt2:G0}
- \begin{split}
- G_{0}=&
- \begin{pmatrix}
- {g_{1\,\vk}}&
--u_{k}v_{k}{g_{2\,\vk}}&0\\
--u_{k}v_{k}{g_{2\,\vk}}& {g_{3\,\vk}}&0\\
-  0&0&\nth{i\omega_{n}-\xi_{3}{}_{\vk}}
- \end{pmatrix}\\
-&+\frac{D_{2}}{\eta}
-\begin{pmatrix}
-\frac{D_{1}^{2}D_{2}}{4E_{\vk}^{3}}g_{2\,\vk}&\frac{D_{1}D_{2}\xi_{\vk}}{4E_{\vk}^{3}}g_{2\,\vk}&-g_{1\,\vk}+\nth{i\omega_{n}-\xi_{3}{}_{\vk}}\\
-\frac{D_{1}D_{2}\xi_{\vk}}{4E_{\vk}^{3}}g_{2\,\vk}&-\frac{D_{1}^{2}D_{2}}{4E_{\vk}^{3}}g_{2\,\vk}&u_{k}v_{k}{g_{2\,\vk}}\\
--g_{1\,\vk}+\nth{i\omega_{n}-\xi_{3}{}_{\vk}}&u_{k}v_{k}{g_{2\,\vk}}&0
-\end{pmatrix}
-\end{split}
- \end{equation}
-\begin{gather}
-g_{1}{}_{\vk}=\frac{u_{\vk}^{2}}{i\omega_{n}-\xi_{1}{}_{\vk}}+\frac{v_{\vk}^{2}}{i\omega_{n}-\xi_{2}{}_{\vk}}\\
-g_{2}{}_{\vk}=\nth{i\omega_{n}-\xi_{1}{}_{\vk}}-\nth{i\omega_{n}-\xi_{2}{}_{\vk}}\\
-g_{3}{}_{\vk}=\frac{v_{\vk}^{2}}{i\omega_{n}-\xi_{1}{}_{\vk}}+\frac{u_{\vk}^{2}}{i\omega_{n}-\xi_{2}{}_{\vk}}
-\end{gather}
-
- \begin{align}
-\tr\mbr{G_{0}\cdot\cmtrx{0&1&0\\0&0&0\\0&0&0}}&=
-\sum_{\vk}\sum_{\omega_{n}}
-	\mbr{(\nth{i\omega_{n}-\xi_{1}{}_{\vk}}-\nth{i\omega_{n}-\xi_{2}{_{\vk}}})
-	(-\frac{D_{1}}{2E_{\vk}}+\frac{D_{1}D_{2}^{2}\xi_\vk}{4E_{\vk}^{3}\eta})}\\
-	&=\sum_{\vk}(\frac{D_{1}}{2E_{\vk}}-\frac{D_{1}D_{2}^{2}\xi_\vk}{4E_{\vk}^{3}\eta})\\
-\tr\mbr{G_{0}\cdot\cmtrx{0&0&1\\0&0&0\\0&0&0}}&=
-\sum_{\vk}\sum_{\omega_{n}}
-\mbr{\nth{i\omega_{n}-\xi_{3}{}_{\vk}}-
-\frac{u_{\vk}^{2}}{i\omega_{n}-\xi_{1}{}_{\vk}}-\frac{v_{\vk}^{2}}{i\omega_{n}-\xi_{2}{}_{\vk}}}\frac{D_{2}}{\eta}\label{eq:pathInt2:F20}\\
-&=\sum_{\vk}\frac{D_{2}}{\eta}u_{\vk}^2
-  \end{align}
-Here we take the interest only in $T=0$, so we only need to consider the negative frequencies ($\xi_{2\,\vk}$, $\xi_{3\,\vk}$) for summation of Matsubara frequency. Note that the second summation diverges badly in high-momentum. %this is because we take $D_2$ as constant.  It decreases at high-energy in the scale of $\eta$ and needs to be regularize carefully.  
-We notice that this term is controlled by parameter $D_{2}/\eta$, this actually goes back to the fact that we only keep the first order in $L$ expansion (Eq. \eqref{eq:pathInt2:L1}), which is only valid for energy smaller or in order of Fermi energy.  In a more careful study, this term should be like $D_{2}/(\epsilon_{k}+\eta)$, is approximately $D_{2}/\eta$ when the interesting region  is lower or at the Fermi energy.   We can reestablish the $F_{k}\propto1/\epsilon_{k}$ if we retain all terms in the expansion of $L$, i.e. inverting Green's function $G$ exactly.       Indeed it should be just proportional to simple bounded two-body solution of isolated close-channel, $\phi_{0\,\vk}$ at high-momentum, which is not of interest for the many-body problem. 
- Another interesting thing about this term is the $u_\vk$ factor, which is small below chemical potential $\mu$ in BCS side.  This shows the fact that the low momentum is filled mostly by open-channel and close-channel is crowded out.  However, this does not affect close-channel too much as it is much more extended in momentum space and its occupation over each level is low due to the smaller size of close-channel bound state.  With above result, we can rewrite gap equations as 
-\begin{equation*}
-\tilde{U}^{-1}D-\mtrx{\sum_{\vk}(\frac{D_{1}}{2E_{\vk}}-\frac{D_{1}D_{2}^{2}\xi_\vk}{4E_{\vk}^{3}\eta})\\\sum_{\vk}\frac{D_{2}}{\eta}u_{\vk}^2}=0
-\end{equation*}
- We can multiply it with $\tilde{U}$ and we have 
-\begin{equation}\label{eq:pathInt2:meanfield}
-\mtrx{D_1\\D_2}=\mtrx{U&Y\\Y^{*}&V}\sum_{\vk}\mtrx{\frac{D_{1}}{2E_{\vk}}-\frac{D_{1}D_{2}^{2}\xi_\vk}{4E_{\vk}^{3}\eta}\\
-\frac{D_{2}}{\eta}u_{\vk}^2}
+ 
+  If we take $D$ as real constant\footnote{Actually $D_{2}{_{\vk}}$ cannot be constant at high momentum.  However, for the momentum we are interested, i.e. the momentum lower or in the order of Fermi momentum, it slowly varies.  Therefore  it is reasonable to take it as constant.},     we can find the mean field result. Eq. (\ref{eq:pathInt2:nG}) can be inverted to get $G$.  The inversion is quite tedious, but fortunately, we only need two elements of the $G$ matrix ($G_{0\, (21)}$ and $G_{0 \,(31)}$).  The final mean-field equations are (all $D_{i}$'s are taken as real, see Appendix \ref{sec:pathInt2:deriveMF} for detail) 
+  \begin{equation}\label{eq:pathInt2:mf}
+\mtrx{D_1\\D_2}=\mtrx{U&Y\\Y^{*}&V}\sum_{\vk}\mtrx{h_{1\vk}\\h_{2\vk}}
 \end{equation}
- This equation can be renormalized in a very similar fashion as variation method. Notice that the second term in the first component describes the Pauli exclusion between two channels.  
+  where 
+  \begin{gather}
+  h_{1\vk}=D_{1}\frac{\xi_{1\,\vk}+\xi_{\vk}+\eta}{(\xi_{1\,\vk}+\xi_{2\,\vk})(\xi_{1\,\vk}+\xi_{3\,\vk})}\label{eq:pathInt2:h1}\\
+  h_{2\vk}=D_{2}\frac{\xi_{1\,\vk}+\xi_{\vk}}{(\xi_{1\,\vk}+\xi_{2\,\vk})(\xi_{1\,\vk}+\xi_{3\,\vk})}\label{eq:pathInt2:h2}
+  \end{gather}
+At high-momentum, both $h_{\vk}$ behaves as $1/\epsilon_{\vk}$ and therefore diverges for summation in 3D.  However, they can be  renormalized as we recognize the interaction is not really contact and $D_{i\vk}$'s decay at high-momentum.  
 
-\subsection{Renormalizing mean-field equation\label{sec:pathIntRenorm}}
-We define two quantities for the summand in the mean-field equation Eq. \ref{eq:pathInt2:meanfield}.
-\begin{gather}
-F_{1\,\vk}=\frac{D_{1}}{2E_{\vk}}-\frac{D_{1}D_{2}^{2}\xi_\vk}{4E_{\vk}^{3}\eta}\\
-F_{2\,\vk}=\frac{D_{2}}{\eta}u_{\vk}^2\label{eq:pathInt2:F2k}
-\end{gather}
-Considering the argument from last section, we modify equation of $F_2$ to the following,
+It is interesting to look at Eq. \ref{eq:pathInt2:h2} more carefully, at low momentum, $\xi_k<0$ and $h_{2\,\vk}$ is close to 0; at higher momentum where $\epsilon_{\vk}>\mu,D_i$, $\xi_{\vk}\approx\xi_{2\,\vk}$ and $  h_{2\vk}\approx\frac{D_2}{(2\epsilon+\eta)}$, this coincides with two-particle wave function for such range (not too high-momentum);  at very high momentum where $\epsilon_{\vk}>\eta$, $D_2$ can no longer be treated as a constant and decays with energy, its specific form is determined by the specific short-range shape of potential. We expect the high-momentum normalization follows the middle-momentum normalization when comparing to two-body bound state.   Only in the low-momentum, it differs from the two-body wave function and that is where 
+
+If we simply take the lowest order of $xi_{i}$, and ignore the close-channel, it is easy to identify $h_{1\vk}\approx{D_{1}}/(2E_{\vk})$ as $F_{\vk}$ in single channel problem.  Therefore, it has a general behavior at low-energy.  
+
+ 
+\subsection {Renormalization of mean field equation}
+One key assumption of the problem is the potential is short-range, and the two-body bound-states of isolated close-channel $\phi$ are much smaller in size than particle-particle distance.  In the short-range, the specific potential determine the specific shape of the wave-functions, however, at long-wave-length, i.e. low momentum, the behave should be quite universal for these bound states except an overall normalization factor.  At the lowest order $\phi_{0\vk}\sim{A}\nth{\kappa^{2}}$ where $\kappa$ is the momentum scale related to binding energy or tuning, $\kappa^{2}/2m=E_{b}$.  This quantity is actually very small as $\kappa{}a_{0}\ll1$ where $a_{0}$ is the particle-particle distance.  Across the crossover, the internal structure of wave-function does not change much, but the overall normalization does vary along tuning.  However, \emph{it is always small across the region interested even when close-channel weight is large.} 
+ 
+Let us look at $h_{2\vk}$ first, it can be rewritten into such form
+\begin{equation}\label{eq:pathInt2:h2D2}
+ h_{2\vk}\approx\frac{D_{2}}{(\xi_{1\,\vk}+\xi_{3\,\vk})}u_{\vk}^{2}
+\end{equation}
+In three-species many-body problem, the above conclusion is still valid except at low-momentum where Pauli exclusion between two-channel is severe. We can see the ${D_{2}}/{(\xi_{1\,\vk}+\xi_{3\,\vk})}$ is just the same as two-body wave function $\phi_{0}$, while the extra factor $u_{\vk}^{2}$ describes the Pauli exclusion between two channels.  At the low-momentum and BCS, open-channel weight is large, phase space for close-channel is limited, this is shown mathematically as small $u_{\vk}$.   At high-momentum, $u_{\vk}^{2}\approx1$ and close-channel wave-function just follow two-body counterpart with a different normalization factor.  
+We can rewrite the mean-field equations \ref{eq:pathInt2:mf} as 
+\begin{align}
+D_{1}&=\sum{}Uh_{1\vk}+\sum{}Yh_{2\vk}\label{eq:pathInt2:mfopen}\\
+D_{2}&=\sum{}Yh_{1\vk}+\sum{}Vh_{2\vk}\label{eq:pathInt2:mfclose}
+\end{align}
+Let us look at the second equation Eq. \ref{eq:pathInt2:mfclose} first, as discussed before, $h_{2}$ is similar to $\phi^{(0)}$ in two-body wave function. More specifically
 \begin{equation}
-\tilde{F}_{2\,\vk}=\frac{D_{2}}{\eta+2\epsilon_{\vk}}u_{\vk}^2\label{eq:pathInt2:F2kMod}
+h_{2\vk}=\alpha\phi^{(0)}_{\vk}u_{\vk}^{2}+o(\frac{E_{F}}{\eta})
 \end{equation}
-And now $F_2$ has the same behavior at high momentum as $F_1$, actually this is the behavior we expected for $\epsilon_k<\eta$, it falls off even faster beyond energy scale of $\eta$, which is determined by the specific shape of close-channel potential.
-
-We can rewrite the mean-field equation as
-\begin{gather}
-D_{1}=\sum_{\vk}(U F_{1\,\vk}+Y \tilde{F}_{2\,\vk})\label{eq:pathInt2:D2}\\
-D_{2}=\sum_{\vk}(Y^{*} F_{1\,\vk}+V \tilde{F}_{2\,\vk})\label{eq:pathInt2:D2}
-\end{gather}
-Here we see the $F_{1\,\vk}$ and $\tilde{F}_{2}$  both go as $1/\epsilon_{\vk}$  at high-momentum.  %To resolve divergence in the summation of $F_{2\,\vk}$ we restore the momentum dependence on $D_{2\,\vk}$ and therefore $F_{2\,\vk}$.  
-  And we can see $\frac{D_{2}}{\eta}$ is actually a good approximation at low-momentum, where kinetic energy is much smaller than $\eta$.  We can rewrite $\tilde{F}_{2}=\alpha\phi_{0\,\vk}u_{\vk}^{2}$. Eq. (\ref{eq:pathInt2:D2}) can be rewritten as
+ where 
+\begin{equation}\label{eq:pathInt2:phi}
+-E_{b}^{(0)}\phi_{0\,\vp}=\epsilon_{\vp}\phi_{0\,\vp}-\sum_{\vk}V \phi_{0\,\vk}
+\end{equation}
+In the interested region, biding energy $E_{b}^{(0)}$ is always close to absolute detuning $\eta$.   
+Use Eq. \ref{eq:pathInt2:h2D2}, we can write 
 \begin{equation*}
-\eta{}F_{2\,\vp}=\sum_{\vk}(Y^{*} F_{1\,\vk}+V F_{2\,\vk})\label{eq:pathInt2:D2}
+D_{2}\approx{}h_{2\vk}\frac{(\epsilon_{\vk}-2\mu+\eta)}{u_{\vk}^{2}}
 \end{equation*}
-comparing this to a two-body \sch equation
+Combine the above equation with Eq. \ref{eq:pathInt2:mfclose}, we get 
 \begin{equation*}
--E_{0}\phi_{0\,\vp}=\epsilon_{\vp}\phi_{0\,\vp}-\sum_{\vk}V \phi_{0\,\vk}\label{eq:pathInt2:D2}
+h_{2\vk}\frac{(\xi_{1\vk}+\xi_{3\vk})}{u_{\vk}^{2}}=\sum{}Yh_{1\vk}+\sum{}Vh_{2\vk}
 \end{equation*}
-where $E_{0}$ is the binding energy of two-body bound state of isolated close-channel.   
+Multiply both sides with $\phi^{*}$ and integrate over the momentum,
+\begin{equation}
+\alpha\br{-E_{b}+\eta-2\mu-\avs{\phi}{(E_{\vk}-\xi_{\vk})}{\phi}+\avs{\phi}{v_{\vk}^{2}V}{\phi}}=\avs{\phi}{Y}{h_{1}}
+\end{equation}
+Comparing this to the two-body problem, the detuning is shifted by many-body effects ($\mu$ and two average terms on left).  
+\begin{equation}\label{eq:pathInt2:alpha}
+\alpha=\frac{\avs{\phi}{Y}{h_{1}}}{\br{-E_{b}+\eta-2\mu-\lambda}}
+\end{equation}
+\mycomment{It is not clear that whether $\lambda$ depends on energy (momentum), but the dependence should be weak even if it does.  }
+Put the shift on $\alpha$ aside for now and get back to the other equation Eq. \ref{eq:pathInt2:mfopen}.  With the above equation and Eq. \ref{eq:pathInt2:h1}
+\begin{equation*}
+D_{1}=U\ket{h_{1\vk}}+\frac{Y\ket{\phi}\bra{\phi}{Y}}{\br{-E_{b}+\eta-2\mu-\lambda}}u_{\vk}^{2}\ket{{h_{1}}}
+\end{equation*}
+Comparing this with two-body problem, we can see the detuning part (denominator of the second term) is shifted by $2\mu+\lambda$ and there is an extra $u_{\vk}^{2}$ term introduced by many-body effect.  Nevertheless, none of these affect the high-momentum behavior, therefore, the equation can be normalized exactly as in two-body problem by introducing the long-wave-length s-scattering length $a_{s}$.  
 
+
+%\input{oldTwoChannelMeanField}
 
 \section{Collective mode}
 %\input{collectiveMode1}
@@ -348,129 +342,12 @@ And this determines the velocity of the Anderson-Bogoliubov collective mode.  We
 
 
 
-
-
-
 \begin{subappendices}
-
-\section{Diagonalize Matrix Eq. (\ref{eq:pathInt2:G2})\label{sec:diagonalize}}
-We need to find a unitary transformation $L$ to diagonalize matrix 
-\begin{equation*}
-i\omega_{n}I+\mtrx{-E_k&0&u_kD_2\\0&+E_k&v_kD_2\\u_kD_2&v_kD_2&+\xi_k+\eta}
-\end{equation*}
-We drops all the $k$ subscripts in this section.  We notice that the first term is proportional to identity matrix and does not change by unitary transformation, we only need to concentrate for the second term.  We rescale all elements with $E$, 
-\begin{equation*}
-R=
-\begin{pmatrix}
--1&0&y_1\\
-0&1&y_2\\
-y_1&y_2&t
-\end{pmatrix}
-\end{equation*}
-The secular equation is 
-\begin{equation}
-(x^{2}-1)(x-t)-(y_{1}^{2}+y_{2}^{2})x+y_{1}^{2}-y_{2}^{2}=0
-\end{equation}
-We will assume at the zeroth order, the three eigenvalues are $-1$, $1$ and $t$.  Both $y_{1,2}$ and t are larger than 1, however, we will verify that given condition $y_{i}^{2}\ll{t}$, the correction is indeed small and the expansion is legit.  \emph{Indeed, this approximation is not as bad as it seems to be, close-channel component can still be smaller than open-channel at low-k (in order of $k_{F}$)  due to close-channel bound state is much smaller than inter-particle distance even when total close-channel is more than open-channel.  And here all the quantities are about low-k unless specifically noticed.} 
-We expand the system to the first order of $y_{i}^{2}/{t}$, and find
-\begin{equation}
-\begin{array}{ccc}
-x^{(0)}&\quad{}x^{(1)}&\quad{}Eigenvector\nonumber\\
--1&-\frac{y_{1}^{2}}{t}&\mtrx{1&\frac{y_{1}y_{2}}{2t}&-\frac{y_{1}}{t}}\\
-1&-\frac{y_{2}^{2}}{t}&\mtrx{-\frac{y_{1}y_{2}}{2t}&1&-\frac{y_{2}}{t}}\\
-t&\frac{y_{1}^{2}+y_{2}^{2}}{2t}&\mtrx{\frac{y_{1}}{t}&\frac{y_{2}}{t}&1}
-\end{array}
-\end{equation}
-Now it is easy to write down the corresponding diagonal matrix and unitary transformation
-\begin{equation}
-B=i\omega_{n}I+E\mtrx{-1-\frac{y_{1}^{2}}{t}&0&0\\0&1-\frac{y_{2}^{2}}{t}&0\\0&0&t+\frac{y_{1}^{2}+y_{2}^{2}}{2t}}
-\end{equation}
-\begin{equation}
-L=\mtrx{1&-\frac{y_{1}y_{2}}{2t}&\frac{y_{1}}{t}\\\frac{y_{1}y_{2}}{2t}&1&\frac{y_{2}}{t}\\-\frac{y_{1}}{t}&-\frac{y_{2}}{t}&1}
-\end{equation}
-Here $L$ is not exactly unitary transformation, it only unitary in the first order of  $y_{i}^{2}/{t}$ (or $D_{i}^{2}/(E\eta)$). We have 
-\[
-B=L^{\dg}RL+o(\frac{y_{i}^{2}}{t})
-\]
-Alternatively, we can write $L$ as 
-\begin{equation}
-L=I+
-\mtrx{0&-\frac{D_{1}D_{2}}{4E^{2}}&u\\
-\frac{D_{1}D_{2}}{4E^{2}}&0&v\\
--u&v&0
-}\frac{D_{2}}{\eta}
-\end{equation}
-Here we use $uv=D_{1}/2E$
-
-
-%\subsection{Expansion of $M$ matrix\label{sec:expansionM}}
-\section{ Calculate $\pi^{(0)}$ and $\pi^{\perp}$\label{sec:calculatePi}}
-Here we will calculate $\pi^{(0)}$ and $\pi^{\perp}$ to the first order of $D_i/\eta$ using the expansion of Green's function in Sec. \ref{sec:diagonalGreen}.
-
-\begin{equation}\label{eq:pathInt2:pi0}
-\begin{split}
-\pi^{(0)}(0)=&\sum_k\tr(\hat{G}_{0\,k}\sigma_3\hat{G}_{0\,k}\sigma_3)\\
-	\approx&\sum_k\tr\big(T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3\big)\\
-	&\quad+\tr\Big(T_{\vk}\delta_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3
-	-T_{\vk}B_{k}^{-1}\delta_{\vk}T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3\\
-	&\qquad+T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T_{\vk}\delta_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3
-	-T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}\delta_{\vk}T_{\vk}^{\dg}\sigma_3\Big)\\
-	=&\sum_k\tr\big(M_{k}\big)+2\tr\Big(\delta_{\vk}M_{k}-\delta_{\vk}M_{k}\Big)
-\end{split}
-\end{equation}
-where 
-\begin{equation}
-M_{k}=T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}
-\end{equation}
-Here we use the cyclical  property of the trace $\tr(AB)=\tr(BA)$.  
-It is straightforward to calculate
-\begin{equation*}
-T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}=
-\begin{pmatrix}
-{\frac{\xi_{\vk}}{E_{\vk}(i\omega_{k}-\xi_{1\,\vk})}}&\frac{D_{1}}{E_{\vk}(i\omega_{k}-\xi_{2\,\vk})}&0\\
-{\frac{D_{1}}{E_{\vk}(i\omega_{k}-\xi_{1\,\vk})}}&-\frac{\xi_{\vk}}{E_{\vk}(i\omega_{k}-\xi_{2\,\vk})}&0\\
-0&0&-\nth{i\omega_{k}-\xi_{3\,\vk}}\\
-\end{pmatrix}
-\end{equation*}
-Now it is easy to calculate the first term
-\begin{equation}
-\begin{split}
-\sum_k\tr\big(M_{k}\big)=&
-\sum_{k}\mbr{
-\frac{2D_{1}^{2}}{E_{\vk}^{2}(i\omega_{k}-\xi_{1\,\vk})(i\omega_{k}-\xi_{2\,\vk})}+
-\br{\frac{\xi_{\vk}^{2}}{E_{\vk}^{2}(i\omega_{k}-\xi_{1\,\vk})^{2}}+\frac{\xi_{\vk}^{2}}{E_{\vk}^{2}(i\omega_{k}-\xi_{2\,\vk})^{2}}
--\nth{(i\omega_{k}-\xi_{3\,\vk})^{2}}}
-}
-\end{split}
-\end{equation}
-Only root $\xi_{2\,\vk}$ in the first term contributes in Matrubara frequency summation.
-\begin{equation}\label{eq:pathInt2:pi0-1}
-\sum_k\tr\big(M_{k}\big)=\sum_{\vk}\frac{2D_{1}^{2}}{E_{\vk}^{2}(\xi_{1\,\vk}-\xi_{2\,\vk})}
-\approx\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{3}}-(\frac{D_{1}^{2}+D_{2}^{2}}{2\eta})\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{4}}
-\end{equation}
-
-
-For the lowest order of the second term in Eq. \eqref{eq:pathInt2:pi0}, we only need to take the lowest order of $B_{k}$
-\begin{equation}
-B_{k}=\mtrx{i\omega_{k}-E_{\vk}&0&0\\0&i\omega_{k}+E_{\vk}&0\\0&0&i\omega_{k}+\xi_{\vk}+\eta}
-\end{equation}
-It is easy to verify at this approximation
-\begin{equation}\label{eq:pathInt2:pi0-2}
-\tr\Big(\delta_{\vk}M_{k}-\delta_{\vk}M_{k}\Big)=0
-\end{equation}
-Combine Eq. \eqref{eq:pathInt2:pi0-2} and Eq. \eqref{eq:pathInt2:pi0-2}, we have 
-\begin{equation}
-\pi^{(0)}(0)\approx\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{3}}-(\frac{D_{1}^{2}+D_{2}^{2}}{2\eta})\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{4}}
-\end{equation}
-
-and it is actually exact for $\pi^{\perp}(0)$
-\begin{equation}
-\begin{split}
-\pi^{\perp}(0)=&\sum_k\tr(\hat{G}_{0\,k}\hat{G}_{0\,k})\\
-	=&\sum_k\tr\big(T_{\vk}L_{\vk}B_{k}^{-1}L_{\vk}^{\dg}T_{\vk}^{\dg}T_{\vk}L_{\vk}B_{k}^{-1}L_{\vk}^{\dg}T_{\vk}^{\dg}\big)\\
-	=&\sum_k\tr\big(B_{k}^{-1}B_{k}^{-1}\big)\\
-	=&\sum_{\vk,i}(\sum_{\omega_{k}}(i\omega_{k}-\xi_{i})^{-2})\\
-	=&0
-\end{split}
-\end{equation}
+\include{pathAppendix}
 \end{subappendices}
+
+
+
+
+
+

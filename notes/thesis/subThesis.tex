@@ -7,8 +7,18 @@
 \usepackage{graphicx}% Include figure files
 \usepackage{epstopdf}
 \usepackage{subfig}
-\usepackage{appendix}
-%\usepackage{setspace}\doublespace
+\usepackage[page,toc,title,titletoc]{appendix}
+
+
+%\usepackage{comment}
+%%\includecomment{mycomment}
+%\specialcomment{mycommentzhu} {\begingroup\ttfamily\footnotesize}{\endgroup}
+%%\excludecomment{mycomment}
+
+%%adding comment, use the next line for disable comment
+\newcommand{\mycomment}[1]{\textit{#1}}
+%\newcommand{\mycomment}[1]{}
+
 \author{Guojun Zhu}
 \title{My Daily Note}
 \input{../newCommand}
@@ -17,9 +27,9 @@
 %\maketitle
 
 %\tableofcontents
-\numberwithin{equation}{section}
+\numberwithin{equation}{chapter}
 
-
+\tableofcontents
 %\section{}
 %\input{twoBodyDensityMatrixRichardson}
 %\input{VariationUVW}
@@ -28,10 +38,12 @@
 %\input{scattering}
 %\input{relationTfAs}
 %\input{CanonicalTransf}
-\chapter{Path integral for one channels}
-\input{../pathInt}
-\chapter{Path integral for two channels}
-\input{../pathInt2}
+\input{intro}
+%\chapter{Path-Integral approach}
+\section{Path integral for one channels}
+\input{pathInt}
+
+\input{pathInt2}
 \bibliographystyle{amsplain}
 \bibliography{../citation}
 

@@ -96,7 +96,51 @@ Invert the interaction matrix $\tilde{U}$ and we have Eq.  \ref{eq:pathInt2:mf}.
 
 
 
+\section{Wave function for short-range potential}\label{sec:pathInt2:short-range}
+Here we discuss some possible generalization on the wave function for short-range potential.  This topic has been studied by Shizhong Zhang \cite{shizhongUniv}. We will use some similar ideas.  When we have a short-range potential with range $r_{c}$, outside this range, \sch equation is very simple
+\begin{equation}
+-\frac{\hbar^{2}}{2m}\nabla^{2}\psi+U\psi=E\psi
+\end{equation}
+And the equation has a simple solution for s-wave $\psi=A{e^{-\kappa{r}}}/{r}$ ($\kappa$ is imaginary for scattering state), here normalization $A$ is determined  by connecting it with the short-range part of the wave function, $\varphi_0$. 
 
+Let us discuss the bound-state first, $\kappa>0$.  In the momentum space, there is also a universal behavior at low-momentum, where $kr_{c}\ll1$.   
+\begin{equation*}
+\psi_{k}=\nth{(2\pi)^{3/2}}\int{d\vr}(\varphi_{0}+A\frac{e^{-\kappa{r}}}{r})e^{-i\vk\cdot\vr}
+\end{equation*}
+The first part for $\varphi_{0}$ has very little $k$ dependence and the second terms give
+\begin{equation*}
+\psi_{k}=\varphi_{0\,k}+\nth{(2\pi)^{3/2}}\int{d\vr}(A\frac{e^{-\kappa{r}}}{r})e^{-i\vk\cdot\vr}=\varphi_{0\,k}-(\frac{2}{\pi})^{1/2}A\nth{k^{2}+\kappa^{2}}
+\end{equation*}
+
+Furthermore, if the bound-state is the one close to threshold, the most weight is outside $r_{c}$, we can neglect the first term and we have universal behavior at low-momentum while the normalization determined in two-body problem.   
+
+
+
+\section{$\lambda_{1}$ and $\lambda_{2}$\label{sec:pathInt2:lambda}}
+\begin{equation}\tag{\ref{eq:pathInt2:lambda1}}
+\lambda_{1}\equiv\avs{\phi}{(E_{\vk}-\xi_{\vk})}{\phi}-\avs{\phi}{v_{\vk}^{2}V}{\phi}
+\end{equation}
+Use relationship $v_{k}=\frac{E_{\vk}-\xi_{\vk}}{2E_{\vk}}$, we can rewrite the above equation into 
+\begin{equation*}
+\lambda_{1}=\avs{\phi}{v_{\vk}^{2}(2E_{\vk}-V)}{\phi}
+\end{equation*}
+$v_{\vk}$ is close to zero when momentum much higher Fermi momentum, on this region, $E_{\vk}$ is much smaller comparing to potential energy $V$.  So $V\ket{\phi}\approx-\eta\ket{\phi}$, and $\phi\approx\frac{A}{\kappa^{2}}$Therefore, we can estimate this term 
+\begin{equation}
+\lambda_{1}=\frac{A^{2}}{\kappa^{2}}\sum{}v_{\vk}^{2}=n\frac{A^{2}}{\kappa^{2}}\sim{}D_{1}^{2}/\eta
+\end{equation}
+
+
+
+
+
+
+
+\begin{equation}\tag{\ref{eq:pathInt2:lambda2}}
+\lambda_{2}=(1+GT)\frac{Y\ket{\phi}\bra{\phi}{Y}}{\br{-E_{b}+\eta-2\mu-\lambda_{1}}}v_{\vk}^{2}\ket{{h_{1}}}
+\end{equation}
+Here the argument is more or less the same as in $\lambda_{1}$, considering the short-range nature of $Y$, and $v_{k}^{2}$ introduces an extra $nA^{2}/\kappa^{2}\sim{}D_{1}^{2}/\eta$ factor.  
+
+We can see, both of them depends on many-body effect through density.
 
 
 

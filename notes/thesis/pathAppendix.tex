@@ -112,8 +112,7 @@ The first part for $\varphi_{0}$ has very little $k$ dependence and the second t
 \psi_{k}=\varphi_{0\,k}+\nth{(2\pi)^{3/2}}\int{d\vr}(A\frac{e^{-\kappa{r}}}{r})e^{-i\vk\cdot\vr}=\varphi_{0\,k}-(\frac{2}{\pi})^{1/2}A\nth{k^{2}+\kappa^{2}}
 \end{equation*}
 
-Furthermore, if the bound-state is the one close to threshold, the most weight is outside $r_{c}$, we can neglect the first term and we have universal behavior at low-momentum while the normalization determined in two-body problem.   
-
+Furthermore, if the bound-state is the one close to threshold, the most weight is outside $r_{c}$, we can neglect the first term and we have universal behavior at low-momentum while the normalization determined in two-body problem.   When considering many-body physics, the really low momentum, (at order of Fermi energy or below), is modified, but in the medium momentum, (still much smaller than $1/r_{c}$), this universal behavior is preserved.  This is actually the high-momentum behavior ($C/k^{4}$) described in Tan's work about universality\cite{Tan2008-1,Tan2008-2}. 
 
 
 \section{$\lambda_{1}$ and $\lambda_{2}$\label{sec:pathInt2:lambda}}
@@ -140,7 +139,7 @@ $v_{\vk}$ is close to zero when momentum much higher Fermi momentum, on this reg
 \end{equation}
 Here the argument is more or less the same as in $\lambda_{1}$, considering the short-range nature of $Y$, and $v_{k}^{2}$ introduces an extra $nA^{2}/\kappa^{2}\sim{}D_{1}^{2}/\eta$ factor.  
 
-We can see, both of them depends on many-body effect through density.
+We can see, both of them depends on many-body effect through density.  Particularly, they depend on density of open-channel component linearly at the lowest order.  $\lambda_{i}(n_o)=\lambda_{i}^{(0)}n_o$.  When not too close to resonance, $n_o$ is close to total density.  And $\lambda_{i}$ can be measured at different densities,  $\lambda_{i}^{(0)}$ estimated then accordingly. 
 
 
 
@@ -168,9 +167,9 @@ It is straightforward to calculate
 \begin{equation*}
 T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}=
 \begin{pmatrix}
-{\frac{\xi_{\vk}}{E_{\vk}(i\omega_{k}-\xi_{1\,\vk})}}&\frac{D_{1}}{E_{\vk}(i\omega_{k}-\xi_{2\,\vk})}&0\\
-{\frac{D_{1}}{E_{\vk}(i\omega_{k}-\xi_{1\,\vk})}}&-\frac{\xi_{\vk}}{E_{\vk}(i\omega_{k}-\xi_{2\,\vk})}&0\\
-0&0&-\nth{i\omega_{k}-\xi_{3\,\vk}}\\
+{\frac{\xi_{\vk}}{E_{\vk}(i\omega_{k}-\xi_{1\,\vk})}}&\frac{D_{1}}{E_{\vk}(i\omega_{k}+\xi_{2\,\vk})}&0\\
+{\frac{D_{1}}{E_{\vk}(i\omega_{k}-\xi_{1\,\vk})}}&-\frac{\xi_{\vk}}{E_{\vk}(i\omega_{k}+\xi_{2\,\vk})}&0\\
+0&0&-\nth{i\omega_{k}+\xi_{3\,\vk}}\\
 \end{pmatrix}
 \end{equation*}
 Now it is easy to calculate the first term
@@ -178,18 +177,17 @@ Now it is easy to calculate the first term
 \begin{split}
 \sum_k\tr\big(M_{k}\big)=&
 \sum_{k}\mbr{
-\frac{2D_{1}^{2}}{E_{\vk}^{2}(i\omega_{k}-\xi_{1\,\vk})(i\omega_{k}-\xi_{2\,\vk})}+
-\br{\frac{\xi_{\vk}^{2}}{E_{\vk}^{2}(i\omega_{k}-\xi_{1\,\vk})^{2}}+\frac{\xi_{\vk}^{2}}{E_{\vk}^{2}(i\omega_{k}-\xi_{2\,\vk})^{2}}
--\nth{(i\omega_{k}-\xi_{3\,\vk})^{2}}}
+\frac{2D_{1}^{2}}{E_{\vk}^{2}(i\omega_{k}-\xi_{1\,\vk})(i\omega_{k}+\xi_{2\,\vk})}+
+\br{\frac{\xi_{\vk}^{2}}{E_{\vk}^{2}(i\omega_{k}-\xi_{1\,\vk})^{2}}+\frac{\xi_{\vk}^{2}}{E_{\vk}^{2}(i\omega_{k}+\xi_{2\,\vk})^{2}}
+-\nth{(i\omega_{k}+\xi_{3\,\vk})^{2}}}
 }
 \end{split}
 \end{equation}
-Only root $\xi_{2\,\vk}$ in the first term contributes in Matrubara frequency summation.
+Only root $-\xi_{2\,\vk}$ in the first term contributes in Matrubara frequency summation.
 \begin{equation}\label{eq:pathInt2:pi0-1}
-\sum_k\tr\big(M_{k}\big)=\sum_{\vk}\frac{2D_{1}^{2}}{E_{\vk}^{2}(\xi_{1\,\vk}-\xi_{2\,\vk})}
-\approx\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{3}}-(\frac{D_{1}^{2}+D_{2}^{2}}{2\eta})\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{4}}
+\sum_k\tr\big(M_{k}\big)=\sum_{\vk}\frac{2D_{1}^{2}}{E_{\vk}^{2}(\xi_{1\,\vk}+\xi_{2\,\vk})}
+\approx\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{D_{1}^{2}D_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}
 \end{equation}
-
 
 For the lowest order of the second term in Eq. \eqref{eq:pathInt2:pi0}, we only need to take the lowest order of $B_{k}$
 \begin{equation}
@@ -199,10 +197,9 @@ It is easy to verify at this approximation
 \begin{equation}\label{eq:pathInt2:pi0-2}
 \tr\Big(\delta_{\vk}M_{k}-\delta_{\vk}M_{k}\Big)=0
 \end{equation}
-Combine Eq. \eqref{eq:pathInt2:pi0-2} and Eq. \eqref{eq:pathInt2:pi0-2}, we have 
+Combine Eq. \eqref{eq:pathInt2:pi0-1} and Eq. \eqref{eq:pathInt2:pi0-2}, we have 
 \begin{equation}
-\pi^{(0)}(0)\approx\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{3}}-(\frac{D_{1}^{2}+D_{2}^{2}}{2\eta})\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{4}}
-\end{equation}
+\pi^{(0)}(0)\approx\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{D_{1}^{2}D_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}\end{equation}
 
 and it is actually exact for $\pi^{\perp}(0)$
 \begin{equation}

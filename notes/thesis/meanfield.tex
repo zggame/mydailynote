@@ -1,1 +1,227 @@
-\chapter{Mean field approach for two-channel problem }
+\chapter{BCS-type ansatz and variation approach for two-channel problem }
+We can also formulate the two-channel problem  using the trial BCS-type ansatz with two channels in it.  It is not difficult to calculate the the expectation of free energy and  the wave function that optimizes the free energy.  The optimization process gives us the gap equations, which determine the exact wave function with number equation.   %with those common parameters as chemical potential, gap.  
+We will see that this method yields the the mean-field solution consistent with the path-integral approach.  However, this method is mean-field by nature and it is difficult if not impossible to extend it to study the collective excitation of the system.  
+
+Put the hamiltonian \ref{eq:pathInt2:ham2} into momentum space, here we keep the momentum dependence of the interaction coefficients
+\begin{equation}\label{eq:uvw:hamiltonian}
+\begin{split}
+ H=&\sum_\vk\epsilon^a_\vk{}a^+_\vk{}a^{}_\vk+\sum_\vk\epsilon^b_\vk{}b^+_\vk{}b^{}_\vk+\sum_\vk\epsilon^c_\vk{}c^+_\vk{}c^{}_\vk\\
+  &+\sum_{\vk\vk'}U_{\vk\vk'}a^+_\vk{}b^+_{-\vk}{}b^{}_{-\vk'}a^{}_{\vk'}
+	+\sum_{\vk\vk'}V_{\vk\vk'}a^+_\vk{}c^+_{-\vk}{}c^{}_{-\vk'}a^{}_{\vk'}\\
+ &+\sum_{\vk\vk'}Y_{\vk\vk'}a^+_\vk{}b^+_{-\vk}{}c^{}_{-\vk'}a^{}_{\vk'}
+	+\sum_{\vk\vk'}Y^*_{\vk\vk'}a^+_{\vk'}{}c^+_{-\vk'}{}b^{}_{-\vk}a^{}_{\vk}
+\end{split} 
+\end{equation}
+By the Hermition condition we have 
+\begin{equation}
+ U_{\vk'\vk}=U^*_{\vk\vk'},\qquad{} V_{\vk'\vk}=V^*_{\vk\vk'}
+\end{equation}
+  We introduce the BCS-type ansatz 
+\begin{equation}\label{eq:ansatz}
+ \ket{\Psi}=\prod_\vk\br{u_\vk+v_\vk{}a^\dg_\vk{}b^\dg_{-\vk}+w_\vk{}a^\dg_\vk{}c^\dg_{-\vk}}\ket{0}
+\end{equation}
+$\ket{0}$ is the particle vacuum state.  Here we require $\abs{u_\vk}^2+\abs{v_\vk}^2+\abs{w_\vk}^2=1$ for normalization.  This ansatz is closely modeled on BCS ansatz for superconductivity.  An alternative ansatz would be $\prod_\vk(u_\vk+v_\vk{}a^\dg_\vk{}b^\dg_{-\vk})(u^{'}_\vk+w_\vk{}a^\dg_\vk{}c^\dg_{-\vk})\ket{0}$, which is actually the same as Eq. \ref{eq:ansatz} as the cross term vanishes due to the Pauli exclusion of the common species.   Similarly to the original BCS ansatz, this ansatz does not have the fixed particle number.  We  will just require the expected value of number operator matches the total particle number. For all the interaction term, there are two types of contribution,
+for example, 
+\begin{equation*}
+\av{U_{\vk\vk'}a^\dg_\vk{}b^\dg_{-\vk}{}b^{}_{-\vk'}a^{}_{\vk'}}
+=\sum_{\vk}U_{\vk\vk}\abs{v_\vk}^2+\sum_{\vk\neq\vk'}U_{\vk\vk'}v^{}_{\vk'}u^*_{\vk'}u^{}_\vk{}v^*_\vk
+\end{equation*}
+The first term is the Hatree term and the second term is more interesting pairing term.  
+
+
+And the full free energy is 
+\begin{equation}\label{eq:uvw:F}
+ \begin{split}
+  &F\equiv\av{H-\mu{}N}\\
+    =&\sum(\xi^a_\vk+\xi^b_\vk)\abs{v_\vk}^2+\sum(\xi^a_\vk+\xi^c_\vk)\abs{w_\vk}^2\\
+    &+\sum_{\vk}U_{\vk\vk}\abs{v_\vk}^2+\sum_{\vk\neq\vk'}U_{\vk\vk'}v^{}_{\vk'}u^*_{\vk'}u^{}_\vk{}v^*_\vk\\
+    &+\sum_{\vk}V_{\vk\vk}\abs{w_\vk}^2
+      +\sum_{\vk\neq\vk'}V_{\vk\vk'}w^{}_{\vk'}u^*_{\vk'}u^{}_\vk{}w^*_\vk\\
+    &+\sum_{\vk}Y_{\vk\vk}w^{}_{\vk}v^*_\vk{}
+      +\sum_{\vk\neq\vk'}Y_{\vk\vk'}w^{}_{\vk'}{u^{*}_{\vk'}}v^*_\vk{}u^{}_\vk\\
+    &+\sum_{\vk}Y^*_{\vk\vk}w^*_{\vk}v^{}_{\vk}{}
+      +\sum_{\vk\neq\vk'}Y^*_{\vk\vk'}w^*_{\vk}{u^{}_{\vk}}v^{}_{\vk'}{}u^{*}_{\vk'}
+ \end{split}
+\end{equation}
+Where 
+\begin{equation*}
+ \xi^a_\vk=\epsilon^a_\vk-\mu^a,\qquad\xi^b_\vk=\epsilon^b_\vk-\mu^b,\qquad\xi^c_\vk=\epsilon^c_\vk-\mu^b
+\end{equation*}
+The chemical potential is added to make sure the $n_a=n_b+n_c=\nth{2}n$.  In principle, $\mu^{a}$ does not need to be equal to $\mu^{b}$  as there is no exchange/interaction between $(a)$ and $(b,c)$.  Nevertheless, we can set $\mu^{a}=\mu^{b}$ for simplicity and drop the superscript on chemical potential from here on. 
+We will also drop the Hatree terms as they can be absorbed into the chemical potentials as they only relate to the density.  (\emph{Not sure still valid in the two-channel problems, especially for the close-channel.})   In the second summation, we ignore the fact that the summation only go through $\vk\neq\vk'$ as the correction is in the higher order. 
+ 
+ \section{Exact Gap Equations in Variation Method}
+Introduce the new parameter $F_{\vk}$ and $G_{\vk}$, corresponding to the mean field value of anomalous Green function,  (as $h_{1,2}$  in Sec \ref{sec:pathInt2:meanfield}), solve $u_{\vk}$, $v_{\vk}$, $w_{\vk}$ with $F_{\vk}$ and $G_{\vk}$ (treat everything as real\footnote{It is not hard to prove that the parameters that optimize the free energy is real within an overall phase factor. })
+\begin{gather}
+u_{\vk}^2+v^{2}_{\vk}+w^{2}_{\vk}=1\\
+u_{\vk}v_{\vk}=F_{\vk}\\
+u_{\vk}w_{\vk}=G_{\vk}
+\end{gather}
+One complication is that $u_\vk$ is a monotonic function of $k$ while $F_\vk$ is not in BCS/BCS-like situation.  So we need to be careful when take the square root.  We introduce $\sgn_k$ for such purpose.  \footnote{\label{foot:20100909:sgn} $\sgn_k=1$  for the whole region of BEC case, or for $k$ is large in BCS case. In BCS case, when $k$ is small, $\sgn_{k}=-1$.  In single-channel case $\sgn_{k}=\sgn(\epsilon_{k}-\mu)$, the turning point is at chemical potential $\mu$.  However, in two-channel, this is more delicate.  The turning point is close to chemical potenial, but with a shift. It is $\sgn_k=\sgn(\epsilon^{ab}_{\vk}-2\mu+  G_{\vk}^2\eta)$.  This is very important in \eef {eq:20100909:number}}
+\begin{equation}
+\begin{split}
+u_{\vk}^2=&\frac{1}{2} \left(1+\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)\\
+v^{2}_{\vk}=&\frac{2 F_{\vk}^2}{1+\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}}
+=\frac{ F_{\vk}^2}{2( F_{\vk}^2+ G_{\vk}^2)} \left(1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)\\\
+w^{2}_{\vk}=&\frac{2 G_{\vk}^2}{1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}}
+=\frac{G_{\vk}^2}{2( F_{\vk}^2+ G_{\vk}^2)} \left(1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)
+\end{split}
+\end{equation}
+Below, we adopt $\sgn_k=1$. (This works for BEC and most part of BCS; and in final equation, the sign function is taken care of automatically.  It is easy to verify we arrive at the same number equation in the other case where $\sgn_{k}=-1$. ) Derivatives over $F_{\vk}$ are
+\begin{equation}
+\begin{split}
+\pdiff{u_{\vk}^2}{F_\vk}=&-\frac{2 F_\vk}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}}\\
+\pdiff{v_{\vk}^2}{F_\vk}=&\frac{2 F_\vk}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}}-\frac{8 F_{\vk} G_{\vk}^2}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2} \left(1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)^2}\\
+\pdiff{w_{\vk}^2}{F_\vk}=&\frac{8 F_{\vk} G_{\vk}^2}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2} \left(1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)^2}
+=\frac{F_{\vk} G_{\vk}^2 \left(1-\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)^2}{2\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2} (F_{\vk}^2 + G_{\vk}^2)^2}
+\end{split}
+\end{equation}
+Similarly, the derivative over $G_{\vk}$ can be obtained by exchange $F_{\vk}$ ($v_{\vk}$) and $G_{\vk}$ ($w_{\vk}$).
+\begin{equation}
+\begin{split}
+\pdiff{u_{\vk}^2}{G_\vk}=&-\frac{2 G_\vk}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}}\\
+\pdiff{v_{\vk}^2}{G_\vk}=&\frac{8 F_{\vk} ^{2}G_\vk}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2} \left(1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)^2}
+=\frac{F_{\vk}^{2}G_{\vk} \left(1-\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)^2}{2\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2} (F_{\vk}^2 + G_{\vk}^2)^2}\\
+\pdiff{w_{\vk}^2}{G_\vk}=&\frac{2 G_\vk}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}}-\frac{8 F_{\vk} ^{2}G_\vk}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2} \left(1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)^2}
+\end{split}
+\end{equation}
+The gap equations are 
+\begin{subequations}\label{eq:20100909:fullgap}
+\begin{gather}
+\frac{2F_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} \xi^{ab}_{\vk}+\frac{8 F_{\vk} G_{\vk}^2}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2} \left(1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)^2}\eta+U_{\vk\vk'}F_{\vk'}+Y_{\vk\vk'}G_{\vk'}=0
+\label{eq:20100909:fullgapa}\\
+\frac{2G_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} \xi^{ac}_{\vk}-\frac{8 F_{\vk}^{2} G_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2} \left(1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)^2}\eta+V_{\vk\vk'}G_{\vk'}+Y_{\vk\vk'}F_{\vk'}=0
+\label{eq:20100909:fullgapb}
+\end{gather}
+\end{subequations}
+where $\eta=\epsilon^{ac}_{\vk}-\epsilon^{ab}_{\vk}$ is the bare Zeeman energy difference and is large than most energy scale, such as $E_{F}$.  It should be in the order of binding energy of the close-channel bound state.   
+
+The number equation is (see footnote (\ref{foot:20100909:sgn}) for $\sgn_{k}$)
+\begin{equation}\label{eq:20100909:number}
+N=2\sum_{\vk}(v_{\vk}^{2}+w_{\vk}^{2})=\sum_{\vk}\left(1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)
+\end{equation} 
+where N is the number of atoms (twice  the number of pairs)
+
+\section{Approximate close-channel with bound-state level}
+Let us look at \eef{eq:20100909:fullgapb}.  It is energetically very disadvantageous to deviate from the bound state as the binding energy and the difference from the next bound state is much  larger than Fermi energy.     This equation must close to  the solution for the isolated close-channel \sch equation.  
+\begin{equation}\label{eq:20100915:twobody}
+{\phi^{0}_{\vk}}(\epsilon^{\text{pair}}_{\vk})+V_{\vk\vk'}\phi^{0}_{\vk'}=-E^{0}\phi^{0}_{\vk'}
+\end{equation}
+This equation relates region (in k-space) much larger than $k_{F}$.  On the other hand, the open-channel 
+$F_{\vk}$ is only substantial in region around or not too high above  $k_{F}$.  Therefore, as the first order approximation, we takes $F_{\vk}=0$ for this equation. So we can drop the second term and the denominator in the first term ($G_{\vk}\ll1$ all the time) of \eef{eq:20100909:fullgapb}\footnote{ This is certainly OK for he BEC end where $F_{k}\ll1$ all the time.  It is less satisfactory, might be problematic,  when $F_{k}$ is close to maximum $\nth2$, this happens around Fermi energy in BCS limit, but the approximation is still OK for other places. So at least for bulk of the region of $G_{\vk}$ satisfies \eef{eq:20100915:gapb}}.  In  open-channel equation, \eef{eq:20100909:fullgapa}, we drop the factor $\left(1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)^2$ in the second term for easier calculation, (no strong reason yet, but this term can only takes value between 1 and 4, and the second term is relatively minor comparing to the first). We write down the approximated gap equations
+\begin{subequations}\label{eq:20100915:gap}
+\begin{gather}\label{eq:20100915:gapa}
+\frac{2F_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} (\epsilon^{ab}_{\vk}-2\mu+  G_{\vk}^2\eta)+U_{\vk\vk'}F_{\vk'}+Y_{\vk\vk'}G_{\vk'}=0\\
+\label{eq:20100915:gapb}
+{2G_{\vk}}(\epsilon^{ab}_{\vk}-2\mu+\eta)+V_{\vk\vk'}G_{\vk'}+Y_{\vk\vk'}F_{\vk'}=0
+\end{gather}
+\end{subequations}
+Here we express $\xi^{ab}_{\vk}=\epsilon^{ab}_{\vk}-2\mu$, $\epsilon^{ac}_{\vk}=\epsilon^{ab}_{\vk}+\eta$.  And many-body close-channel wave function $G_{\vk}$ is proportional to two-body bound-state wave function $\phi_{\vk}^{0}$,  $G_{\vk}=\alpha\phi^{0}_{\vk}$. 
+\eef{eq:20100915:gapb} becomes
+\begin{equation}\label{eq:20100915:GF}
+G_{\vk}=\frac{Y_{\vk\vk'}F_{\vk'}}{2(E^{0}-\eta+2\mu)}
+\end{equation}
+Plug this back into the last term of \eef{eq:20100915:gapa}, we have 
+\begin{equation}
+\frac{2F_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} (\xi^{ab}_{\vk}+  G_{\vk}^2\eta)+U_{\vk\vk'}F_{\vk'}+\frac{Y_{\vk\vk'}Y_{\vk'\vk''}}{2(E^{0}-\eta+2\mu)}F_{\vk''}=0
+\end{equation}
+Now considering the last two terms has weak dependecy in low k, we can set 
+\begin{equation}\label{eq:20100915:gap1}
+\frac{2F_{\vk}}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}} (\xi^{ab}_{\vk}+  G_{\vk}^2\eta)\equiv\Delta_{\vk}=-(U_{\vk\vk'}F_{\vk'}+\frac{Y_{\vk\vk'}Y_{\vk'\vk''}}{2(E^{0}-\eta+2\mu)}F_{\vk''})
+\end{equation}
+We can express $F_{\vk}$ according to $\Delta_{\vk}$,  (ignore the higher order of $G_{\vk}$)
+\begin{equation}\label{eq:20100915:F}
+F_{\vk}=\frac{\Delta_{\vk}}2\sqrt{\frac{(1-4G_{\vk}^{2})}{(\xi^{ab}_{\vk}+  G_{\vk}^2\eta)^{2}+\Delta_{\vk}^{2}}}
+\end{equation}
+Put it back into the second half of gap equation (\ref{eq:20100915:gap1}), 
+\begin{equation}\label{eq:20100915:onechannel}
+\Delta_{\vk}=-\sum_{\vk'}\br{U_{\vk\vk'}+\frac{Y_{\vk\vk''}Y_{\vk''\vk'}}{2(E^{0}-\eta+2\mu)}}\frac{\Delta_{\vk'}}2\sqrt{\frac{(1-4G_{\vk'}^{2})}{(\xi^{ab}_{\vk'}+  G_{\vk'}^2\eta)^{2}+\Delta_{\vk'}^{2}}}
+\end{equation}
+At low k, $\Delta_{\vk}$ has weak dependency on k and we can take $\Delta_{\vk'}$ out of the summation,  then go through the same procedure as in \cite{Leggett,Fetter} to renormalize the equations. 
+
+\section{Number equation}
+For number equation \eef{eq:20100909:number}, more approximation can be made in Feshbach resonance.  Close-channel component $G_{k}$ is much extended in k-space due to the tight-binding, and $F_{k}$ is significant up to the order of Fermi energy $E_{F}$.  It seems OK to assume that most weight of close-channel lies beyond $E_{F}$, so when $\epsilon_{k}\gg{E_{F}}$, the integrand becomes simply $G_{k}^{2}$, the summation gives $N_{close}$.  Therefore we have 
+\begin{equation}\label{eq:20101004:number}
+N_{open}=\sum_{\vk}{}^{'}\left(1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)-G_{\vk}^{2}
+\end{equation} 
+Here the summation only goes up to the order of $E_{F}$.
+
+
+Put \eef{eq:20100915:F} into number equation \eef{eq:20100909:number}, we have\footnote{Here we drop $\sgn_{k}$ as $(\epsilon^{ab}_{\vk}-2\mu+  G_{0}^2\eta)$ takes care of the sign}
+\begin{equation}\label{eq:20101011:number}
+N=\sum{1-\sqrt{1-4G_{k}^{2}}\frac{(\epsilon^{ab}_{\vk}-2\mu+  G_{\vk}^2\eta)}{{\sqrt{{(\epsilon^{ab}_{\vk}-2\mu+  G_{\vk}^2\eta)^{2}+\Delta^{2}}}}}}
+\end{equation}
+This equation also requires to take into account that $G_{k}$ approaches 0 at high momentum to be convergent.
+\section{summary}
+Now all summation goes in order of Fermi energy $E_F$, so we can replace close-channel component $G_k$ with $G_0=G_{k=0}$
+\begin{equation}
+F_{\vk}=\frac{\Delta}2\sqrt{\frac{(1-4G_{\vk}^{2})}{(\epsilon^{ab}_{\vk}-2\mu+  G_{\vk}^2\eta)^{2}+\Delta^{2}}}
+\end{equation}
+Gap equation 
+\begin{equation}\label{eq:20101004:gapS}
+\nth{{t_{0}}(\mu)}=\sum_{\vk}
+\br{\nth{\epsilon_{\vk}}-\frac{\sqrt{(1-4G_{\vk}^{2})}}{\sqrt{{(\epsilon^{ab}_{\vk}-2\mu+  G_{\vk}^2\eta)^{2}+\Delta^{2}}}}}
+\end{equation} 
+\begin{gather}
+{t_{0}}(\mu)=\br{1-\tilde{U}\tilde{ K}}^{-1}\tilde{U}\label{eq:20101004:t011}\\
+\tilde{U}_{\vk\vk'}=\nth{2} \br{U_{\vk\vk'}+\frac{Y_{\vk\vk''}Y_{\vk''\vk'}}{2(E^{0}-\eta+2\mu)}}\label{eq:20101004:tu11}\\
+{K}=\nth{\epsilon_{\vk}}\delta_{\vk\vk'}\label{eq:20101004:tk11}
+\end{gather}
+Here Eqs. (\ref{eq:20101004:t011}-\ref{eq:20101004:tk11}) follows the same two-body formula for zero-energy T-matrix element.  However, the detuning is shifted by a many-body quantity $\mu$ that should be determined by solving gap equation with number equation.  
+And number equation
+\begin{equation}\tag{\ref{eq:20100909:number}}
+N=\sum_{\vk} \left(1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)
+\end{equation} 
+
+\subsection{$G_0$ and $\eta$}
+In the full region, $\eta$ should be close to the binding-energy of the close-channel bound-state all the time.  The sweep in detuning should always be smaller than $\eta$ in order.  So maybe it is fine to take it as constant of binding energy $E^0$.  However, this quantiy is a two-bdoy quantity and very specific for different case. 
+
+$G_0=\alpha\phi_0$, where $\phi_0$ is normlized wave function of two-body close-channel bound-state, strictly two-body.  Also, it is different from case to case. Its Pauli exclusion effect only shows up in many-body physics. It is determined by the real size of close-channel bound-state and therefore relates to binding energy $E^0$.  
+
+For the same $a_s$ or $t_0$, $G_0$ or $\eta$ can take different value for different resonance.  Maybe we can take it as a different exogenous parameter. But we still need to find a way to estimate/deduce it from measurable quantities.  It is possible that they only relate to many-body quantities (same number for different densities maybe?)  because they are pertinent in many-body physics.
+
+\subsection{more on $G_{k}$ and $\eta$}
+$\phi^{0}$ the w.f. of two-body close-channel bound state varies in different Feshbach resonance and is a case-specific quantity.  Its relevant property is included in the general two-body Feshbach resonance formula's $\Delta{B}$.  However, its other properties does matter in narrow resonance problem.  Fortunately, this can be simplified if it is a close-to-threshold bound-state, that mostly is outside the potential.  Therefore, most weight of $\phi^{0}$ follows the simple form 
+\[
+\phi^{0}(r)=C\frac{e^{-\kappa{r}}}{r}
+\]
+ where $\frac{\hbar^{2}\kappa^{2}}{2m}=E^{0}$ and $\kappa>0$.  $C^{2}=\frac{\kappa}{2\pi}$.  Convert it into k-space
+ \begin{equation}\label{eq:20101011:phi}
+\phi^{0}_k=\nth{(2\pi)^{\frac32}}\int{d^{3}\vr\phi^{0}(r)e^{-i\vk\cdot\vr}}=\nth{\pi}\frac{\kappa}{k^{2}+\kappa^{2}}
+\end{equation}
+Now we can estimated $G_{k}^{2}\eta$. $G_{k}=\alpha\phi^{0}_{k}$ where 
+\[|\alpha|^{2}<n\sim{E_{F}^{3/2}}\]
+\[
+\abs{\phi^{0}_{k=0}}^{2}=\nth{\pi^{2}\kappa^{3}}\sim\nth{(E^{0})^{3/2}}
+\]
+And $\eta\sim{E^{0}}$, So 
+\[
+G_{k}^{2}\eta<G_{k=0}^{2}\eta<E_{F}(\frac{E_{F}}{E^{0}})^{1/2}
+\]
+And we have $E_{F}\ll{E^{0}}$, so this term is much smaller than $\mu\sim{E_{F}}$ in BCS side. For now, we just omit this term.  Considering $G_{k}^{2}\ll1$, we can expand $\sqrt{1-4G_{k}^{2}}$ in \eef{eq:20101011:number} and \eef{eq:20101004:gapS} 
+\begin{gather}
+\nth{{t_{0}}(\mu)}=\sum_{\vk}
+\br{\nth{\epsilon_{\vk}}-\frac{1}{\sqrt{{(\epsilon_{\vk}-2\mu)^{2}+\Delta^{2}}}}
++\frac{2\alpha^{2}|\phi^{0}_{k}|^{2}}{\sqrt{{(\epsilon_{\vk}-2\mu)^{2}+\Delta^{2}}}}}\label{eq:20101011:gapa}
+\\
+N=\sum{1-\frac{(\epsilon_{\vk}-2\mu)}{{\sqrt{{(\epsilon_{\vk}-2\mu)^{2}+\Delta^{2}}}}}
++2\alpha^{2}|\phi^{0}_{k}|^{2}\frac{(\epsilon_{\vk}-2\mu)}{{\sqrt{{(\epsilon_{\vk}-2\mu)^{2}+\Delta^{2}}}}}}
+\label{eq:20101011:gapb}
+\end{gather}
+Here $\phi^{0}_{k}$ takes the form in \eef{eq:20101011:phi} and we have an extra exogenous parameter $\kappa$ ($\approx{}E^{0}$) (which seems to independent of the normal Feshbach resonance formula).
+\begin{equation}
+a_{s}=a_{bg}(1+\frac{\Delta{B}}{B-B_{0}})
+\end{equation}
+This seems to make sense that in Feshbach resonance, what is really matter is the coupling energy, which involves  the integration of $Y_{kk'}$ and $\alpha^{2}\phi^{0}$ ($\alpha^{2}$ is the close-channel weight in two-body physics).  The resonance is strong even when $\alpha^{2}$ is small but if the coupling strength $Y_{kk'}$ is strong.  However, the Pauli exclusion only cares about the wave function or $\alpha$, not coupling strength.   Therefore, we do need one extra parameter to describe this.  
+
+A more convenient choice for $\phi^{0}$ is to normalized to total number N, i.e. $\sum|\phi^{0}_{k}|^{2}=N$.  So $0<|\alpha|^{2}<1$ is the ratio of atoms in close-channel to total number.  For this normalization, we find 
+\begin{equation}
+\phi^{0}_{k}=\sqrt{8pi\kappa\rho}\nth{k^{2}+\kappa^{2}}
+\end{equation}
+
+ \cite{shizhongSumRule} derived  (eq. (25))
+\begin{equation}\label{eq:20101025:fr}
+F(\vr)=\frac{m\Delta}{4\pi\hbar^{2}}\frac{1-r/a_{s}}{r}
+\end{equation}
+
+we have the pre-factor $\frac{m\Delta}{4\pi\hbar^{2}}$ for the normalization and with \cite{Leggett} (Eq. (4.A.17)), we can express the relation between $\Delta$ and $\alpha$.  (assume $\kappa$ varies slowly with detuning)

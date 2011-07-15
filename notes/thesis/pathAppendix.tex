@@ -16,10 +16,10 @@ y_1&y_2&t
 \end{pmatrix}
 \end{equation*}
 The secular equation is 
-\begin{equation}
+\begin{equation}\label{eq:pahtApp:secular}
 (x^{2}-1)(x-t)-(y_{1}^{2}+y_{2}^{2})x+y_{1}^{2}-y_{2}^{2}=0
 \end{equation}
-We will assume at the zeroth order, the three eigenvalues are $-1$, $1$ and $t$.  ($t$ has weak dependency on energy as $(\xi_{k}+\eta)/E_{k}$, however, at the low energy region of interest, we ignore $\xi_{k}$.) Both $y_{1,2}$ and t are larger than 1, however, we will verify that given condition $y_{i}^{2}\ll{t}$, the correction is indeed small and the expansion is legit.  \emph{Indeed, this approximation is not as bad as it seems to be, close-channel component can still be smaller than open-channel at low-k (in order of $k_{F}$)  due to close-channel bound state is much smaller than inter-particle distance even when total close-channel is more than open-channel.  And here all the quantities are about low-k unless specifically noticed.} 
+We will assume at the zeroth order, the three eigenvalues are $-1$, $1$ and $t$.  ($t$ has weak dependency on energy as $(\xi_{k}+\eta)/E_{k}$, however, at the low energy region of interest, we ignore $\xi_{k}$.) Both $y_{1,2}$ and t are larger than 1, however, we will verify that given condition $y_{i}^{2}\ll{t}$, the correction is indeed small and the expansion is legit.(See Sec.\ref{sec:pathApp:consistency})  \emph{Indeed, this approximation is not as bad as it seems to be, close-channel component can still be smaller than open-channel at low-k (in order of $k_{F}$)  due to close-channel bound state is much smaller than inter-particle distance even when total close-channel is more than open-channel.  And here all the quantities are about low-k unless specifically noticed.} 
 We expand the system to the first order of $y_{i}^{2}/{t}$, and find
 \begin{equation}
 \begin{array}{ccc}
@@ -211,3 +211,73 @@ and it is actually exact for $\pi^{\perp}(0)$
 	=&0
 \end{split}
 \end{equation}
+
+
+\section{Check for consistency of expansion\label{sec:pathApp:consistency}}
+In our treatment here, one crucial assumption in expansion is the smallness of $D_{2}/\eta$.  Here we check it.  We have 
+\begin{equation}
+D_{2}=\sum{}Yh_{1\vk}+\sum{}Vh_{2\vk}\tag{\ref{eq:pathInt2:mfclose}}
+\end{equation}
+The first term on the right is relatively small comparing to the second term.  In an estimation we just keep the second term.  Furthermore,  we assume $h_{2\,\vk}=\sqrt{N_{c}}\phi_{0\,\vk}$, where $\phi_{0\,\vk}$ is the normalized wave function of isolated close-channel potential satisfying \sch equation
+\begin{equation}\tag{\ref{eq:pathInt2:phi}}
+-E_{b}^{(0)}\phi_{0\,\vp}=\epsilon_{\vp}\phi_{0\,\vp}-\sum_{\vk}V \phi_{0\,\vk}
+\end{equation}
+rearrange it we have (especially at low-momentum)
+\begin{equation*}
+\sum_{\vk}V \phi_{0\,\vk}=(\epsilon_{\vp}+E_{b})\phi_{0\,\vp}\approx{\eta}\phi_{0\,\vp}
+\end{equation*}
+The second approximation is correct at low-momentum (smaller or in the same order of Fermi momentum) as $\epsilon_{\vp}\ll{}E_{b}\approx\eta$.  Put all these together, we have
+\begin{equation*}
+D_{2}\approx\alpha{}E_{b}\phi
+\end{equation*}
+If we assume a simple exponentially decayed wave function
+\begin{equation*}
+\phi_{\vk}=\sqrt{\frac{8\pi\kappa}{V_{0}}}\frac{1}{k^{2}+\kappa^{2}}\approx\sqrt{\frac{8\pi\kappa}{V_{0}}}\frac{1}{\kappa^{2}}
+\end{equation*}
+Here  $V_{0}$ is the total volume.  The second approximation is for low-momentum as previous equation.  Collect all these together, we have
+\begin{equation}
+D_{2}\approx\sqrt{N_{c}}\eta\sqrt{\frac{8\pi\kappa}{V_{0}}}\frac{1}{\kappa^{2}}
+\sim\eta\sqrt\frac{n_{c}}{\kappa^{3}}
+\sim\eta\br{\frac{k_{Fc}}{\kappa}}^{\frac{3}{2}}
+\sim\eta\br{\frac{E_{Fc}}{\eta}}^{\frac{3}{4}}
+\end{equation}
+%:
+$k_{Fc}$ is the Fermi momentum corresponding to the particles in close-channel, which is much smaller than the characteristic momentum for bound-state, $\kappa$.   Therefore we have $D_{2}\ll\eta$, even when $n_{c}$ is close to total density $n$. 
+
+Now we check the correction in Fermionic spectrum (Eq. \ref{eq:pathInt2:xiExpand3}-\ref{eq:pathInt2:xiExpand3}), 
+is indeed small comparing to the main term.  
+\begin{align}\tag{\ref{eq:pathInt2:xiExpand}}
+\xi_{1\vk}&\approx{}E_{\vk}+\frac{D_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{1\vk}\\
+\xi_{2\vk}&\approx{}E_{\vk}-\frac{D_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{2\vk}
+\tag{\ref{eq:pathInt2:xiExpand2}}\\
+\xi_{3\vk}&\approx{}\xi_{\vk}+\eta-\frac{D_{2}^{2}}{2(\xi_{\vk}+\eta)}&\equiv{}&\xi_{\vk}+\eta+\gamma_{3\vk}
+\tag{\ref{eq:pathInt2:xiExpand3}}
+\end{align}
+Here, we mostly only concern of low-momentum ($k\sim{}k_{F}$).  In Eq. \ref{eq:pathInt2:xiExpand3}, 
+\begin{equation*}
+\frac{\gamma_{3\vk}}{\xi_{3\vk}}\sim{}\frac{D_{2}^{2}}{\eta^{2}}\sim\br{\frac{k_{Fc}}{\kappa}}^{2}\ll1
+\end{equation*}
+Eqs. \ref{eq:pathInt2:xiExpand} and Eqs. \ref{eq:pathInt2:xiExpand2} is slightly more complicated.  Both of them involve $\frac{D_{2}^{2}}{E_{\vk}\eta}$,  at very BCS side, close-channel density is small, $k_{F\,c}$ is small and that makes this ratio small; when close to (narrow) resonance, where $n_{c}$ is comparable to to total density, at low energy, $D_{1}$ is in the order of Fermi energy, so does $E_{\vk}$.   We have (we no longer distinguish $k_{F\,c}$ with $k_{F}$)
+ \begin{equation*}
+ \frac{\gamma_{i}}{\xi_{i}}<\frac{D_{2}^{2}}{E_{\vk}\eta}\sim\frac{\eta^{2}\frac{k_{Fc}^{3}}{\kappa^{3}}}{k_{F}^{2}\eta}\sim\frac{k_{F}}{\kappa}\ll1
+\end{equation*}
+
+More deeply, in the secular equation that leads to spectrum, Eq. \ref{eq:pahtApp:secular}.  We convert it back to normal scale without $E_{\vk}$,  (ignore subscript $\vk$ in the following equations)
+\begin{equation*}
+(x^{2}-E^{2})(x-\xi-\eta)-D_{2}^{2}x+D_{2}^{2}E(u^{2}-v^{2})=0
+\end{equation*}
+It is not hard to use definition of $u$ and $v$ to find $u^{2}-v^{2}=\xi/E$, and express $E^{2}=\xi^{2}+D_{1}^{2}$, therefore we have
+\begin{equation*}
+(x-\xi)(x+\xi)(x-\xi-\eta)-D_{1}^{2}(x-\xi-\eta)-D_{2}^{2}(x-\xi)=0
+\end{equation*}
+Here the first term is for free particles, and let us estimate the size of the last two terms.  For low-momentum solution, we simply use $D_{1}\sim{}E_{F}$, we find
+\begin{equation*}
+\frac{D_{1}^{2}(x-\xi-\eta)}{D_{2}^{2}(x-\xi)}\sim\frac{E_{F}^{2}\eta}{D_{2}^{2}E_{F}}\sim\frac{\kappa}{k_{F}}\gg1
+\end{equation*}
+This adjust our choice to neglect the last term when finding the lowest-order solution and use the last term for correction.  
+
+ 
+
+
+
+ In another word, the above estimation is saying that the total occupation number of close-channel at low-momentum is much smaller than 1 in all region of resonance (narrow or broad) because the close-channel bound-state is much smaller than inter-particle distance.  This factor gives us a small factor, $\frac{r_{c}}{a_{0}}\sim\frac{k_{F}}{\kappa}\sim\sqrt\frac{E_{F}}{\eta}$, upon which we can do the expansion.  

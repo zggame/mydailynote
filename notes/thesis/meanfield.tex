@@ -174,13 +174,13 @@ N=\sum_{\vk} \left(1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)
 \end{equation} 
 
 \subsection{$G_0$ and $\eta$}
-In the full region, $\eta$ should be close to the binding-energy of the close-channel bound-state all the time.  The sweep in detuning should always be smaller than $\eta$ in order.  So maybe it is fine to take it as constant of binding energy $E^0$.  However, this quantiy is a two-bdoy quantity and very specific for different case. 
-
-$G_0=\alpha\phi_0$, where $\phi_0$ is normlized wave function of two-body close-channel bound-state, strictly two-body.  Also, it is different from case to case. Its Pauli exclusion effect only shows up in many-body physics. It is determined by the real size of close-channel bound-state and therefore relates to binding energy $E^0$.  
-
-For the same $a_s$ or $t_0$, $G_0$ or $\eta$ can take different value for different resonance.  Maybe we can take it as a different exogenous parameter. But we still need to find a way to estimate/deduce it from measurable quantities.  It is possible that they only relate to many-body quantities (same number for different densities maybe?)  because they are pertinent in many-body physics.
-
-\subsection{more on $G_{k}$ and $\eta$}
+%In the full region, $\eta$ should be close to the binding-energy of the close-channel bound-state all the time.  The sweep in detuning should always be smaller than $\eta$ in order.  So maybe it is fine to take it as constant of binding energy $E^0$.  However, this quantiy is a two-bdoy quantity and very specific for different case. 
+%
+%$G_0=\alpha\phi_0$, where $\phi_0$ is normlized wave function of two-body close-channel bound-state, strictly two-body.  Also, it is different from case to case. Its Pauli exclusion effect only shows up in many-body physics. It is determined by the real size of close-channel bound-state and therefore relates to binding energy $E^0$.  
+%
+%For the same $a_s$ or $t_0$, $G_0$ or $\eta$ can take different value for different resonance.  Maybe we can take it as a different exogenous parameter. But we still need to find a way to estimate/deduce it from measurable quantities.  It is possible that they only relate to many-body quantities (same number for different densities maybe?)  because they are pertinent in many-body physics.
+%
+%\subsection{more on $G_{k}$ and $\eta$}
 $\phi^{0}$ the w.f. of two-body close-channel bound state varies in different Feshbach resonance and is a case-specific quantity.  Its relevant property is included in the general two-body Feshbach resonance formula's $\Delta{B}$.  However, its other properties does matter in narrow resonance problem.  Fortunately, this can be simplified if it is a close-to-threshold bound-state, that mostly is outside the potential.  Therefore, most weight of $\phi^{0}$ follows the simple form 
 \[
 \phi^{0}(r)=C\frac{e^{-\kappa{r}}}{r}
@@ -208,20 +208,20 @@ N=\sum{1-\frac{(\epsilon_{\vk}-2\mu)}{{\sqrt{{(\epsilon_{\vk}-2\mu)^{2}+\Delta^{
 +2\alpha^{2}|\phi^{0}_{k}|^{2}\frac{(\epsilon_{\vk}-2\mu)}{{\sqrt{{(\epsilon_{\vk}-2\mu)^{2}+\Delta^{2}}}}}}
 \label{eq:20101011:gapb}
 \end{gather}
-Here $\phi^{0}_{k}$ takes the form in \eef{eq:20101011:phi} and we have an extra exogenous parameter $\kappa$ ($\approx{}E^{0}$) (which seems to independent of the normal Feshbach resonance formula).
-\begin{equation}
-a_{s}=a_{bg}(1+\frac{\Delta{B}}{B-B_{0}})
-\end{equation}
-This seems to make sense that in Feshbach resonance, what is really matter is the coupling energy, which involves  the integration of $Y_{kk'}$ and $\alpha^{2}\phi^{0}$ ($\alpha^{2}$ is the close-channel weight in two-body physics).  The resonance is strong even when $\alpha^{2}$ is small but if the coupling strength $Y_{kk'}$ is strong.  However, the Pauli exclusion only cares about the wave function or $\alpha$, not coupling strength.   Therefore, we do need one extra parameter to describe this.  
-
-A more convenient choice for $\phi^{0}$ is to normalized to total number N, i.e. $\sum|\phi^{0}_{k}|^{2}=N$.  So $0<|\alpha|^{2}<1$ is the ratio of atoms in close-channel to total number.  For this normalization, we find 
-\begin{equation}
-\phi^{0}_{k}=\sqrt{8pi\kappa\rho}\nth{k^{2}+\kappa^{2}}
-\end{equation}
-
- \cite{shizhongSumRule} derived  (eq. (25))
-\begin{equation}\label{eq:20101025:fr}
-F(\vr)=\frac{m\Delta}{4\pi\hbar^{2}}\frac{1-r/a_{s}}{r}
-\end{equation}
-
-we have the pre-factor $\frac{m\Delta}{4\pi\hbar^{2}}$ for the normalization and with \cite{Leggett} (Eq. (4.A.17)), we can express the relation between $\Delta$ and $\alpha$.  (assume $\kappa$ varies slowly with detuning)
+%Here $\phi^{0}_{k}$ takes the form in \eef{eq:20101011:phi} and we have an extra exogenous parameter $\kappa$ ($\approx{}E^{0}$) (which seems to independent of the normal Feshbach resonance formula).
+%\begin{equation}
+%a_{s}=a_{bg}(1+\frac{\Delta{B}}{B-B_{0}})
+%\end{equation}
+%This seems to make sense that in Feshbach resonance, what is really matter is the coupling energy, which involves  the integration of $Y_{kk'}$ and $\alpha^{2}\phi^{0}$ ($\alpha^{2}$ is the close-channel weight in two-body physics).  The resonance is strong even when $\alpha^{2}$ is small but if the coupling strength $Y_{kk'}$ is strong.  However, the Pauli exclusion only cares about the wave function or $\alpha$, not coupling strength.   Therefore, we do need one extra parameter to describe this.  
+%
+%A more convenient choice for $\phi^{0}$ is to normalized to total number N, i.e. $\sum|\phi^{0}_{k}|^{2}=N$.  So $0<|\alpha|^{2}<1$ is the ratio of atoms in close-channel to total number.  For this normalization, we find 
+%\begin{equation}
+%\phi^{0}_{k}=\sqrt{8\pi\kappa\rho}\nth{k^{2}+\kappa^{2}}
+%\end{equation}
+%
+% \cite{shizhongSumRule} derived  (eq. (25))
+%\begin{equation}\label{eq:20101025:fr}
+%F(\vr)=\frac{m\Delta}{4\pi\hbar^{2}}\frac{1-r/a_{s}}{r}
+%\end{equation}
+%
+%we have the pre-factor $\frac{m\Delta}{4\pi\hbar^{2}}$ for the normalization and with \cite{Leggett} (Eq. (4.A.17)), we can express the relation between $\Delta$ and $\alpha$.  (assume $\kappa$ varies slowly with detuning)

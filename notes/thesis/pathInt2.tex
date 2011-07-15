@@ -123,7 +123,7 @@ Now we can change the functional variable into $D(\bar{D})$
 \begin{equation}\label{eq:pathInt2:actionD}
 S(\bar{D},D)=\int{dx}\br{\bar{D}\tilde{U}^{-1}D-\tr\ln{G}^{-1}}
 \end{equation}
-Comparing Eq. \ref{eq:pathInt2:nG} with Eq. \ref{eq:canonical:M} in Bogoliubov transformation treatment, we  see that $D_{1,2}$ have simple physical meaning in the mean-field expression of $\nG_{0}$ and therefore are more  direct counterpart of order parameter $\Delta$ in single-channel problem. 
+
 
 
 
@@ -168,8 +168,10 @@ Here we choose the sign of $\xi_{1,2,3}$  to make their zeroth order positive.
 we have 
 \begin{align}\label{eq:pathInt2:xiExpand}
 \xi_{1\vk}&\approx{}E_{\vk}+\frac{D_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{1\vk}\\
-\xi_{2\vk}&\approx{}E_{\vk}-\frac{D_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{2\vk}\\
+\xi_{2\vk}&\approx{}E_{\vk}-\frac{D_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{2\vk}
+\label{eq:pathInt2:xiExpand2}\\
 \xi_{3\vk}&\approx{}\xi_{\vk}+\eta-\frac{D_{2}^{2}}{2(\xi_{\vk}+\eta)}&\equiv{}&\xi_{\vk}+\eta+\gamma_{3\vk}
+\label{eq:pathInt2:xiExpand3}
 \end{align}
 
 \begin{equation}\label{eq:pathInt2:L1}
@@ -221,6 +223,8 @@ Use the same techniques as Eq. (\ref{eq:pathInt:diffTr}), we have two saddle poi
   h_{2\vk}=D_{2}\frac{\xi_{1\,\vk}+\xi_{\vk}}{(\xi_{1\,\vk}+\xi_{2\,\vk})(\xi_{1\,\vk}+\xi_{3\,\vk})}\label{eq:pathInt2:h2}
   \end{gather}
 At high-momentum, both $h_{\vk}$ behaves as $1/\epsilon_{\vk}$ and therefore diverges for summation in 3D.  However, they can be  renormalized as we recognize the interaction is not really contact and $D_{i\vk}$'s decay at high-momentum.  
+
+Comparing Eq. \ref{eq:pathInt2:mf} with gap equation for single-channel problem, we  see that $D_{1,2}$ have simple physical meaning in the mean-field expression of $\nG_{0}$ and therefore are more  direct counterpart of order parameter $\Delta$ in single-channel problem. 
 
 It is interesting to look at Eq. \ref{eq:pathInt2:h2} more carefully, at low momentum, $\xi_k<0$ and $h_{2\,\vk}$ is close to 0; at higher momentum where $\epsilon_{\vk}>\mu$, we have $\xi_{2\,\vk}\approx\xi_{\vk}$, $\xi_{3\,\vk}\approx\xi_{\vk}+\eta$.  All these lead to $  h_{2\vk}\approx\frac{D_2}{(2\epsilon+\eta)}$, which coincides with two-particle wave function for such range (not too high-momentum);  at very high momentum where $\epsilon_{\vk}>\eta$, $D_2$ can no longer be treated as a constant and decays with energy, its specific form is determined by the specific short-range shape of potential. We expect the high-momentum normalization follows the middle-momentum normalization when comparing to two-body bound state.   Only in the low-momentum, it differs from the two-body wave function and that is where 
 
@@ -318,7 +322,7 @@ In summary there are several difference of gap equation here comparing to single
 \end{enumerate}
 Item \ref{item:pathInt2:mu} corresponds to the simple many-body effect one universal; while the rest corrections are unique for Pauli-exclusion between channels in three-species problem.
 
-Furthermore,  close look into $\lambda_1$ and $\lambda_2$ (Appendix \ref{sec:pathInt2:lambda}) reveals that they varies slowly with energy/momentum and is a function of density.  They describe  fundamental many-body effects, and do not have a good correspond in two-body problem.  
+Furthermore,  close look into $\lambda_1$ and $\lambda_2$ (Appendix \ref{sec:pathInt2:lambda}) reveals that they varies slowly with energy/momentum and is a function of density.  They describe  fundamental many-body effects, and do not have a counterpart in two-body problem.  
 
 
 
@@ -338,8 +342,14 @@ Let us look at the equation of close-channel first, if we expand $\xi_{i\,\vk}$,
 \begin{equation}
 N_{close}=\sum_{\vk}\frac{\gamma_{1\,\vk}}{(E_{\vk}+\xi_{\vk}+\eta)}=\sum_{\vk}\frac{D_{2}^2u_{\vk}^{2}}{(\xi_{\vk}+\eta)(E_{\vk}+\xi_{\vk}+\eta)}
 \end{equation}
-\mycomment{This is consistent with Eq. \ref{eq:pathInt2:h2} and \ref{eq:pathInt2:h2D2} if we assume $N_{close}\approx\sum{h_{2}^{2}}$.  The weight spread in a very large range of momentum ($\sim\eta$),  both of them has $D_{2}^{2}/\eta^{2}$ for summand. }
-Similar to the argument in gap equation, the summand  above is mostly useful at energy below $\eta$, where the component is small everywhere comparing to 1, however, the summation runs over high-momentum ($\sim\eta$), where $D_2$ should no longer be regarded as constant and summation can gives $N_{close}$ comparable to total number.  \mycomment{ This might not be correct statement.  Maybe it is just fine as it properly converges. } This summation shows that the close-channel state is small and therefore the summation runs up to high momentum, where mostly is determined by two-body physics.  
+This is consistent with Eq. \ref{eq:pathInt2:h2} and \ref{eq:pathInt2:h2D2} if we assume $N_{close}\approx\sum{h_{2}^{2}}$.  From appendix \ref{sec:pathApp:consistency}, we know the summand is much smaller than 1.  Nevertheless, the weight spread in a very large range of momentum ($\sim\eta$),  both of them has $D_{2}^{2}/\eta^{2}$ for summand. And the resulting sum can be in the order of total number $N$. Note the connection between $D_{2}$ and the ``Contact'' in theory of universality (\cite{Tan2008-1,Tan2008-2}).  The summand as  density of momentum is valid at momentum up to the scale $1/a_{c}$, and is mostly determined by two-body physics except an overall factor.  furthermore, we can renormalize it to include the higher-momentum contribution as the summation converges in 3D.  In the lowest order, this summation can be written as 
+\begin{equation}
+N_{close}\approx\sum_{\vk}\frac{D_{2}^2}{(\xi_{\vk}+\eta)(2\xi_{\vk}+\eta)}
+\end{equation}
+This equation has only one unknown parameter $D_{2}$.  Therefore, this equation can be used to estimate the $D_{2}$ from experiments.  
+
+%Similar to the argument in gap equation, the summand  above is mostly useful at energy below $\eta$, where the component is small everywhere comparing to 1, however, the summation runs over high-momentum ($\sim\eta$), where $D_2$ should no longer be regarded as constant and summation can gives $N_{close}$ comparable to total number. 
+% \mycomment{ This might not be correct statement.  Maybe it is just fine as it properly converges. } This summation shows that the close-channel state is small and therefore the summation runs up to high momentum, where mostly is determined by two-body physics.  
 
 
 \begin{equation}
@@ -355,6 +365,7 @@ N_{open}\approx&\sum_\vk\mbr{\frac{E_\vk-\xi_\vk}{2E_\vk}+\frac{\gamma_{1\vk}}{2
 \end{equation}
 All terms are well behaved in 3D and does not need any renomalization. 
 %\input{oldTwoChannelMeanField}
+
 
 \section{Collective mode}
 %\input{collectiveMode1}

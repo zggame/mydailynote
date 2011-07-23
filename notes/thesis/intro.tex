@@ -17,11 +17,10 @@ Alternatively, we can make a rough estimation on simple double-fermion molecule 
 
 We will introduce several concepts important to our study in the following sections and study the narrow resonance problems in detail in Chapter \ref{ch:path2}. And we will discuss and conclude our approach in Chapter \ref{ch:conclusion}.
 
-\section{Two-body Feshbach resonance problem}
-Here we will briefly review the Feshbach resonance in two-body setup, we will mostly follow treatment in \cite{Leggett}.
-
-
+\section{Dilute ultracold Alkali gas}
+\subsection{Hyperfine species}
 TO BE COMPLETED. 
+
 
 \section{S-wave scattering length, universality, two-body density matrix\label{sec:intro:as}}
 In dilute ultracold Alkali gas, both the density and temperature are so low that in most case, the interaction can be characterized by a single two-body parameter, s-wave scattering length, $a_s$.  Most case this is  interpreted as we can replace the real potential as a pseudo potential\cite{pethick}.  Nevertheless, an alternative interpretation about $a_s$ is more useful in this work\cite{LeggettBEC, Tan2008-1,Tan2008-2,CombescotTan}.  For short-range potential, where potential range $a_c$ is much smaller than average inter-particle distance $a_0$, it is not hard to see in the majority of the space, $\mathcal{D}$, particles are free-like, they only interact when close to each other, $\mathcal{I}$.  In the very dilute case, most physical quantities can be calculated only considering the free part, $\mathcal{D}$.  The effect of the potential and short-range wave-function, $\mathcal{I}$, is to enforce the boundary condition on free part $\mathcal{D}$, 
@@ -46,9 +45,30 @@ Shizhong and Leggett developed independently another universality theory based o
 
 In this thesis, similar idea is used along this line.  However, open-channel does not follow its two-body short-range wave-function because sensitive nature of resonance. 
  
-\section{Dilute ultracold Alkali gas}
-\subsection{Hyperfine species}
-TO BE COMPLETED. 
+ 
+ \section{Two-body Feshbach resonance\label{sec:intro:twobody}}
+Here we will briefly review the Feshbach resonance in two-body system.   As discussed in the previous section, for isolated single atom, hyperfine level is the eigenstate.  However, when two atoms interacts, most of interaction comes from interaction of electrons while nucleons interacts very little.  Therefore, hyperfine levels is no longer true eigenstates of the two-body system and two hyperfine.  Nevertheless, hyperfine level serves a good approximated quantum number and levels are still labelled with it. Furthermore, we take ``channels'' as pair of hyperfine indices, they are in general different in interaction strength and are decoupled in the lowest order.  In magnetic field, different channels differ in energy mostly due to the Zeeman energy of electronic spin as electronic magnetic moment is much larger than nuclear magnetic moment.  This energy difference is easy to tune via magnetic field.  
+
+When mixture between channels are taken into consideration, the simple single-channel scattering becomes multi-channel scattering.  Especially, when the one channel's threshold is close to a bound-state in the other channel when considered isolated, the scattering property in this channel is dramatically altered,  phase shift can changes $2\pi$ and s-wave scattering length $a_{s}$ changes to infinity and jumps to the infinity in opposite sign.  This is essentially what happens in Feshbach resonance, which was studied by Fano\cite{Fano} and Feshbach \cite{nuclear}  in nuclear and atom physics 1960s.  Here we will mostly follow treatment in \cite{Leggett} (with some different symbols to confirm with the rest of this thesis). 
+\footnote{Here I list a few main different symbols, with the symbols from \cite{Leggett} in parenthesis.  $U$ ($V$): open-channel interaction; $V$ ($V_{c}$): close-channel interaction; $Y$ ($g\cdot{}f$): inter-channel coupling; $E_{b}$ ($\epsilon_{0}$):binding energy of close-channel bound state.}
+
+Here we schematically call two channels as $\ket{\uparrow}$ and $\ket{\downarrow}$.  And the hamiltonian in this ``spinor'' space is (assumed isotropic)
+\begin{equation}
+\hat{H}(r)=
+\begin{pmatrix}
+-\frac{\hbar^{2}}{2m_{r}}\nabla^{2}+U(r)&Y(r)\\
+-\frac{\hbar^{2}}{2m_{r}}\nabla^{2}+\eta+V(r)&Y(r)
+\end{pmatrix}
+\end{equation}
+Here we count energy zero from that of the open channel at infinite separation, $\eta$ is the absolute difference in Zeeman energy of two channels.  For a s-wave solution we have 
+\begin{equation}
+\psi(r)=\nth{r}\bbr{\chi(r)\ket{\uparrow}+\chi_{c}(r)\ket{\downarrow}}
+\end{equation}
+
+
+As we discussed in Sec. \ref{sec:intro:as}, two-particle interaction is often approximated by a pseudo-potential characterized with s-wave scattering length $a_{s}$ in a dilute system.   The drastic  change  of $a_{s}$  via tuning energy difference (magnetic field)between two channels in Feshbach resonance gives the rare ability to experimentalists to varying the interaction strength between two channels.  And it is extremely useful in the study of BEC-BCS crossover which covers the variation of exact this nature.  
+
+
 \section{Single-channel BEC-BCS crossover}
 Here we will briefly review the BEC-BCS crossover in single channel.   Here the interaction strength is tuned along the crossover region.  This applies to the broad-resonance, where the close-channel weight is negligible and serves only to modify the effective strength in open-channel.  We will mostly follow treatment in \cite{RanderiaBEC, Randeria1997, Randeria2008}.
 %\subsection{Path integral for one channels}

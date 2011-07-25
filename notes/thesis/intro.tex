@@ -50,7 +50,7 @@ In this thesis, similar idea is used along this line.  However, open-channel doe
 Here we will briefly review the Feshbach resonance in two-body system.   As discussed in the previous section, for isolated single atom, hyperfine level is the eigenstate.  However, when two atoms interacts, most of interaction comes from interaction of electrons while nucleons interacts very little.  Therefore, hyperfine levels is no longer true eigenstates of the two-body system and two hyperfine.  Nevertheless, hyperfine level serves a good approximated quantum number and levels are still labelled with it. Furthermore, we take ``channels'' as pair of hyperfine indices, they are in general different in interaction strength and are decoupled in the lowest order.  In magnetic field, different channels differ in energy mostly due to the Zeeman energy of electronic spin as electronic magnetic moment is much larger than nuclear magnetic moment.  This energy difference is easy to tune via magnetic field.  
 
 When mixture between channels are taken into consideration, the simple single-channel scattering becomes multi-channel scattering.  Especially, when the one channel's threshold is close to a bound-state in the other channel when considered isolated, the scattering property in this channel is dramatically altered,  phase shift can changes $2\pi$ and s-wave scattering length $a_{s}$ changes to infinity and jumps to the infinity in opposite sign.  This is essentially what happens in Feshbach resonance, which was studied by Fano\cite{Fano} and Feshbach \cite{nuclear}  in nuclear and atom physics 1960s.  Here we will mostly follow treatment in \cite{Leggett} (with some different symbols to confirm with the rest of this thesis). 
-\footnote{Here I list a few main different symbols, with the symbols from \cite{Leggett} in parenthesis.  $U$ ($=-V$): open-channel interaction; $V$ ($=-V_{c}$): close-channel interaction; $Y$ (=-$g\cdot{}f$): inter-channel coupling; $E_{b}$ ($\epsilon_{0}$):binding energy of close-channel bound state; $\eta$ ($=\epsilon_0+\tilde\delta$) the Zeeman energy difference between two channels.}
+\footnote{Here I list a few main different symbols, with the symbols from \cite{Leggett} in parenthesis.  $U$ ($=-V$): open-channel interaction; $V$ ($=-V_{c}$): close-channel interaction; $Y$ (=-$g\cdot{}f$): inter-channel coupling; $E_{b}$ ($=\epsilon_{0}$):binding energy of close-channel bound state; $\eta$ ($=\epsilon_0+\tilde\delta$) the Zeeman energy difference between two channels; $\mathcal{K}$ ($=\kappa$) see Eq.\ref{eq:intro:kappa}.}
 
 Here we schematically call two channels as $\ket{\uparrow}$ and $\ket{\downarrow}$.  And the hamiltonian in this ``spinor'' space is (assumed isotropic)
 \begin{equation}
@@ -73,13 +73,13 @@ Here we expand $\chi_{c}$ over the eigenstates of close-channel hamiltonian, $\p
 \begin{equation}
 -\frac{\hbar^{2}}{2m_{r}}\phi_{i}''-V \phi_{i}=-E_{b}^{(i)}\phi_{i}
 \end{equation}
-Here we assume the energy difference between levels are larger than other energy scale and keeps only the one in resonance, $\phi_{0}$.  It is not hard to find
+Here we assume the energy difference between levels are larger than other energy scale and keeps only the one in resonance, $\phi_{0}$.  Na\"{i}vely speaking, the resonance happens at the point where the close-channel bound state level is exactly at the threshold of open-chanel.  Therefore we introduce the relative detuning, $\tilde\delta=\eta-E_{b}$ It is not hard to find
 \begin{equation}
-\chi_{c}=\frac{\phi_{0}}{E-\eta+E_{b}}\int{dr'}\,\phi_{0}^{*}(r')Y(r')\chi_{r'}
+\chi_{c}=\frac{\phi_{0}}{E-\tilde\delta}\int{dr'}\,\phi_{0}^{*}(r')Y(r')\chi_{r'}
 \end{equation}
 Note that here $\phi_{0}$ is normalized (for radial component).  Put this back to \sch equation of open-channel component $\chi$ (Eq. \ref{eq:intro:open}), 
 \begin{equation}\label{eq:intro:chi}
-\br{-\frac{\hbar^{2}}{2m_{r}}\frac{d^{2}}{dr^{2}}-U-E}\chi+\frac{1}{E-\eta+E_{b}}\int_{0}^{\infty}K(r\,r')\chi(r')dr'=0
+\br{-\frac{\hbar^{2}}{2m_{r}}\frac{d^{2}}{dr^{2}}-U-E}\chi+\frac{1}{E-\tilde\delta}\int_{0}^{\infty}K(r\,r')\chi(r')dr'=0
 \end{equation}
 where kernel $K(r\,r')$ is
 \begin{equation}
@@ -92,18 +92,25 @@ Compare this with open-channel scattering \sch equation without coupling to clos
 Note that $\chi_{0}(r)\rightarrow0$ as $r\rightarrow0$ and $\chi_{0}(r)\rightarrow\text{const}(1-r/a_{bg})$ for $r\rightarrow\infty$\footnote{Note that we are dealing with the internal wave function $\chi_{0}$ here instead of the external wave function as in Sec. \ref{sec:intro:as}, therefore, the boundary condition for $r\rightarrow0$ there actually corresponds boundary condition $r\rightarrow\infty$ here.}  Now multiply Eq. \ref{eq:intro:chi} with $\chi_{0}$ and Eq. \ref{eq:intro:chi0} with $\chi$, subtract them, and use Green's theorem, we find 
 \begin{equation}
 \chi_{0}(r_{c})\chi'(r_{c})-\chi_{0}'(r_{c})\chi(r_{c})+\frac{2m_{r}E}{\hbar^{2}}\int_{0}^{r_{c}}dr\chi_{0}(r)\chi(r)
-=\frac{2m_{r}/\hbar^{2}}{E-\eta+E_{b}}\int_{0}^{r_{c}}dr\int_{0}^{r_{c}}dr'\chi_{0}(r)K(rr')\chi(r')
+=\frac{2m_{r}/\hbar^{2}}{E-\tilde\delta}\int_{0}^{r_{c}}dr\int_{0}^{r_{c}}dr'\chi_{0}(r)K(rr')\chi(r')
 \end{equation}
 Here $r_{c}$ is a large distance, and we can use the boundary condition by let $r\rightarrow\infty$, $\chi_{0}(r)\rightarrow\text{const}(1-r/a_{bg})$, $\chi(r)\rightarrow\text{const}(1-r/a_{s})$.  The R.H.S approaches a constant for a short-range interaction $Y(r)$ and therefore $K(rr')$.  For scattering solution at  $E=0$, we have 
 \begin{equation}
-\nth{a_{s}}-\nth{a_{bg}}=\frac{2m_{r}/\hbar^{2}}{E-\eta+E_{b}}\int_{0}^{\infty}dr\int_{0}^{\infty}dr'\chi_{0}(r)K(rr')\chi(r')
+\nth{a_{s}}-\nth{a_{bg}}=\frac{2m_{r}/\hbar^{2}}{\tilde\delta}\int_{0}^{\infty}dr\int_{0}^{\infty}dr'\chi_{0}(r)K(rr')\chi(r')
 \end{equation}
-
-
-
-
-
-
+It is easy to see that contrary to na\"ive intuition, $a_{s}$ does not diverge at the point $\tilde\delta=0$ because of the original interaction in open-channel, $a_{bg}$.  We can define a quantity $\mathcal{K}$, as the detuning where $a_{s}$ diverges, by the implicit equation ($\mathcal{K}$ shows up in R.H.S as well)
+\begin{equation}\label{eq:intro:kappa}
+\mathcal{K}\equiv-\frac{2m_{r}a_{bg}}{\hbar^{2}}\int_{0}^{\infty}{dr}\int_{0}^{\infty}dr'\chi_{0}(r)K(rr')\chi_{\tilde\delta=\mathcal{K}}(r')
+\end{equation}
+And if we define the ``real detuning'' $\delta\equiv\tilde\delta-\mathcal{K}$, we have 
+\begin{equation}
+a_{s}(\delta)=a_{bg}\br{1+\frac{\kappa}{\delta}}
+\end{equation}
+Comparing this with the empirical formula of Feshbach resonance
+\begin{equation}
+a_{s}(B)=a_{bg}\br{1+\frac{\Delta{B}}{B-B_{0}}}
+\end{equation}
+We see that $\Delta{B}=\mathcal{K}(\partial\delta/\partial{B})^{-1}$, and $B_{0}$ is the real resonance position.  Here $\partial\delta/\partial{B}$ is the magnetic momentum difference between two channels.  
 
 
 

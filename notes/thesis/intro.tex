@@ -17,10 +17,40 @@ Alternatively, we can make a rough estimation on simple double-fermion molecule 
 
 We will introduce several concepts important to our study in the following sections and study the narrow resonance problems in detail in Chapter \ref{ch:path2}. And we will discuss and conclude our approach in Chapter \ref{ch:conclusion}.
 
-\section{Dilute ultracold Alkali gas}
-\subsection{Hyperfine species}
-TO BE COMPLETED. 
+\section{Dilute ultracold alkali gas}
+Dilute ultracold Alkali gas became experimental realized since 90s.  Not long after the bonsonic ones, fermionic Alkali gas was also available at or below its Fermi temperature.  Because of the ultra-low temperature (in the order of $nK$), and diluteness ($10^{12}\sim10^{15}cm^{-3}$), the system is mostly \emph{free} except when they are close.   This particular properties simplifies the theoretical analysis tremendously (see Sec. \ref{sec:intro:as} for detail).  In this section, we covers a few aspects that closely related to this thesis.     
 
+%\subsection{Single atom and hyperfine levels}
+In experiments of ultracold alkali gas, magnetic field ($\mathbf{B}$) is the most common physical quantity to manipulate.  Here we study in detail how it interact with single atom.  For an alkali atom, there is only one electron in the outer shell, and rest electrons are in the filled inner shells.  The filled shell has no total magnetic moment, so only the outermost electron interact with magnetic field through electron spin, $\mathbf{S}$.  Furthermore, magnetic filed also interacts with nuclear spin, $\mathbf{I}$.  The full hamiltonian is
+\begin{equation}
+H_{spin}=A \mathbf{I}\cdot\mathbf{S}-\mu_{e}\mathbf{B}\cdot\mathbf{S}-{\mu}_{n}\mathbf{B}\cdot\mathbf{I}
+=A \mathbf{I}\cdot\mathbf{S}-\mu_{e}{B}{S_{z}}-{\mu}_{n}{B}{I_{z}}
+\end{equation}
+Here $\mu_{e}$ is electron magnetic moment, while $\mu$ is the nuclear magnetic moment.  In the second equal sign, we take the direction of magnetic field as z-direction. This hamiltonian can be diagonalized and  we can introduce the total spin 
+\begin{equation}
+\mathbf{F}=\mathbf{S}+\mathbf{I}
+\end{equation}
+When magnetic field is zero, $(F,F_{z})$ are good quantum numbers, actually, all states with the same total spin $F$ are degenerated.   When magnetic field is finite, they are no longer good quantum numbers, nevertheless, we can still label states with these two numbers with the adiabatic connection to zero magnetic field.  Actually at high magnetic field, the first hyperfine coupling term is dominated by the last two terms and the eigenstate has almost pure $(S_{z},I_{z})$.  But in general, besides states with the highest and lowest $F_{z}=\pm{}F$, each state is a mix of different $(S_{z}, I_{z})$.  
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{hyperfineLi6}
+\caption{Hyperfine structure of single \textsuperscript{6}Li atom } 
+Levels are marked with $F$ and $F_{z}$ {(see Footnote \ref{foot:intro:f} in page \pageref{foot:intro:f})}
+\label{fig:intro:li6}
+\end{center}
+\end{figure}
+
+
+
+%\subsection{Two-body interaction}
+Things will be very boring if there is only single-atom hamiltonian.  Two alkali atom interacts mostly through the overlapping of their electron clouds in the dilute setup.  Schematically the interaction can be written as 
+\begin{equation}\label{eq:intro:two}
+V=f(r)+g(r)\mathbf{S_{1}}\cdot\mathbf{S_{2}}
+\end{equation}
+The hyperfine levels that diagonalize the single atom hamiltonian is no longer eigenstates for this interaction.  In another word, if we take the direct product of hyperfine level as basis (channels) $\ket{F^{(1)},F_{z}^{(1)}}\otimes\ket{F^{(2)},F_{z}^{(2)}}$\footnote{Remember that $(F,F_{z})$ are only label, not stands for total angular momentum unless no magnetic field.\label{foot:intro:f}}, the interaction has non-diagonal term and therefore hybridizes them. Instead, states with definite electron spins are good basis for them.  In most experiments, hyperfine level is in the so-called high-field region where electron spin $\mathbf{S}$ is approximately good quantum number though.  When the hybridization is considered, multichannel scattering is possible.  When $g(r)$ is large enough, one channel can be deep enough and sustain a bound-state.  Interesting resonance arises in certain parameter region.  Especially one phenomena, known  as Feshbach resonance can happens, about which most study of cold atoms study focuses.  Sec. \ref{sec:intro:twobody} briefly reviews it in two-body physics; the more involving many-body problem is then the central theme of this thesis. 
+
+In one popular experiments setup for $^{6}$Li (Fig. \ref{fig:intro:li6}), usually experiments are prepared with atoms in two lowest hyperfine levels, $\ket{F=\nth{2},F_{z}=-\nth{2}}\otimes\ket{F=\nth{2},F_{z}=+\nth{2}}$.  This is a good approximation until when two atoms are very close.  Recall that the two-atom interaction \ref{eq:intro:two} conserves the z-component of total angular momentum, $F_{z}^{(1)}+F_{z}^{(2)}$.  Therefore this states mixed with four other possible channels, $\ket{\nth{2},-\nth{2}}\otimes\ket{\frac{3}{2},+\nth{2}}$, $\ket{\frac{3}{2},-\nth{2}}\otimes\ket{\nth{2},+\nth{2}}$, $\ket{\frac{3}{2},+\frac{3}{2}}\otimes\ket{\frac{3}{2},-\frac{3}{2}}$, $\ket{\frac{3}{2},+\frac{1}{2}}\otimes\ket{\frac{3}{2},-\frac{1}{2}}$ (All states is labeled as $\ket{F,F_{z}}$).  There are plenty of chances for resonance, and indeed, there are several of them.  Note that close to the resonance, it is normally sufficient to consider only the one level that is in resonance, while neglect all other levels.  Another important observation is that it is possible that the two channel does not share any hyperfine levels (four species) or share one single hyperfine levels (three species).   Indeed the close channel in the most studied resonance close 834G is approximately $\ket{\frac{3}{2},-\nth{2}}\otimes\ket{\nth{2},+\nth{2}}$ and the resonance is a three-species one\cite{ZhangThesis,ChengRMP}. 
 
 \section{S-wave scattering length, Bethe-Peierls boundary condition, universality, two-body density matrix\label{sec:intro:as}}
 In dilute ultracold Alkali gas, both the density and temperature are so low that in most case, the interaction can be characterized by a single two-body parameter, s-wave scattering length, $a_s$.  Most case this is  interpreted as we can replace the real potential as a pseudo potential\cite{pethick}.  Nevertheless, an alternative interpretation about $a_s$ is more useful in this work\cite{LeggettBEC, Tan2008-1,Tan2008-2,CombescotTan}.  For short-range potential, where potential range $a_c$ is much smaller than average inter-particle distance $a_0$, it is not hard to see in the majority of the space, $\mathcal{D}$, particles are free-like, they only interact when close to each other, $\mathcal{I}$.  In the very dilute case, most physical quantities can be calculated only considering the free part, $\mathcal{D}$.  The effect of the potential and short-range wave-function, $\mathcal{I}$, is to enforce the boundary condition on free part $\mathcal{D}$, 
@@ -53,6 +83,8 @@ In this thesis, similar idea is used along this line.  However, open-channel doe
  
  
  \section{Two-body Feshbach resonance\label{sec:intro:twobody}}
+ As we discussed in Sec. \ref{sec:intro:as}, two-particle interaction is often approximated by a pseudo-potential characterized with s-wave scattering length $a_{s}$ in a dilute system.   The drastic  change  of $a_{s}$  via tuning energy difference (magnetic field)between two channels in Feshbach resonance gives the rare ability to experimentalists to varying the interaction strength between two channels.  And it is extremely useful in the study of BEC-BCS crossover which covers the variation of exact this nature.  
+ 
 Here we will briefly review the Feshbach resonance in two-body system.   As discussed in the previous section, for isolated single atom, hyperfine level is the eigenstate.  However, when two atoms interacts, most of interaction comes from interaction of electrons while nucleons interacts very little.  Therefore, hyperfine levels is no longer true eigenstates of the two-body system and two hyperfine.  Nevertheless, hyperfine level serves a good approximated quantum number and levels are still labelled with it. Furthermore, we take ``channels'' as pair of hyperfine indices, they are in general different in interaction strength and are decoupled in the lowest order.  In magnetic field, different channels differ in energy mostly due to the Zeeman energy of electronic spin as electronic magnetic moment is much larger than nuclear magnetic moment.  This energy difference is easy to tune via magnetic field.  
 
 When mixture between channels are taken into consideration, the simple single-channel scattering becomes multi-channel scattering.  Especially, when the one channel's threshold is close to a bound-state in the other channel when considered isolated, the scattering property in this channel is dramatically altered,  phase shift can changes $2\pi$ and s-wave scattering length $a_{s}$ changes to infinity and jumps to the infinity in opposite sign.  This is essentially what happens in Feshbach resonance, which was studied by Fano\cite{Fano} and Feshbach \cite{nuclear}  in nuclear and atom physics 1960s.  Here we will mostly follow treatment in \cite{Leggett} (with some different symbols to confirm with the rest of this thesis). 
@@ -119,10 +151,44 @@ a_{s}(B)=a_{bg}\br{1+\frac{\Delta{B}}{B-B_{0}}}
 We see that $\Delta{B}=\mathcal{K}(\partial\delta/\partial{B})^{-1}$, and $B_{0}$ is the real resonance position.  Here $\partial\delta/\partial{B}$ is the magnetic momentum difference between two channels.  
 
 Next we consider the bound state where $E<0$, define
-\begin{equation}
+\begin{equation}\label{eq:intro:ab}
 a_{b}(E)\equiv\frac{\hbar}{(2m_{r}\abs{E})^{1/2}}
 \end{equation}
-Note that $a_{b}(E)$ is not identified as $a_{s}$ a priori.  Here we only study the bound state close to threshold with binding energy much smaller than the binding energy of close-channel bound state $\phi_{0}$, $\abs{E}\ll\epsilon_{0}$.  Outside the range of potential $a_{c}$,  Going through the similar procedure as previous, the 
+Note that $a_{b}(E)$ is not identified as $a_{s}$ a priori.  Here we only study the bound state close to threshold with binding energy much smaller than the binding energy of close-channel bound state $\phi_{0}$, $\abs{E}\ll\epsilon_{0}$, and therefore $a_{b}\ll{a_{c}}$.  Outside the range of potential $a_{c}$,  the wave function is proportional to $e^{-r/a_{b}}$. For $a_{c}\ll{}r\ll{}a_{b}$, it is approximately $1-\frac{r}{a_{b}}$, just as the s-wave scattering wave function.  We can go through the similar procedure as previous, and it is not hard to find 
+\begin{equation}
+\frac{a_{bg}}{a_{b}}-1=\frac{-\mathcal{K}}{\delta+\mathcal{K}-E}
+\end{equation}
+Provided both $\delta$ and $\abs{E}$ are much smaller than $\mathcal{K}$, this leads to 
+\begin{equation}\label{eq:intro:abKE}
+a_{b}=\frac{\mathcal{K}}{\delta-E}
+\end{equation}
+It is not hard to see that $a_{b}$ coincides with s-wave scattering length $a_{s}$ when $\abs{E}\ll\abs{\delta}$, and therefore we will use them interchangeably afterward. This is actually an example our discussion about Bethe-Peierls boundary condition in Sec. \ref{sec:intro:as}.  Using Eqs. \ref{eq:intro:ab} and \ref{eq:intro:abKE}, it is easy to obtain an equation for $E$
+\begin{equation}
+(\abs{E}+\delta)^{2}-2\delta_{c}\abs{E}=0
+\end{equation}
+where $\delta_{c}$ is defined as 
+\begin{equation}
+\delta_{c}\equiv\frac{\mathcal{K}^{2}}{\hbar^{2}/m_{r}a_{bg}^{2}}
+\end{equation}
+And the solution is  (for $\delta<0$)
+\begin{equation}
+\abs{E}=\delta_{c}-\delta-\sqrt{\delta_{c}^{2}-2\delta\delta_{c}}
+\end{equation}
+Furthermore, we can calculate the ``relative wieght'' (probability) of close-channel 
+\begin{equation}
+\lambda=\br{\frac{1}{E-\tilde\delta}}^{2}\abs{\int{}dr'\phi_{0}(r')Y(r')\xi_{n}(r')}^{2}
+\end{equation}
+where $\xi_{n}(r)$ is the normalized open-channel bound-state component.  Comparing this with Eq. \ref{eq:intro:kappa}, assume the short-range part of $\chi_{n}(r)$ does not differ from $\chi_{o}(r)$ much, we can find 
+\begin{equation}
+\lambda=\nth{(E-\tilde\delta)^{2}}\frac{\hbar^{2}}{2m_{r}a_{bg}}\mathcal{K}a_{b}^{-1}
+\end{equation}
+For $\abs{\delta}\lesssim\delta_{c}\ll\mathcal{K}$, $E-\tilde\delta\approx\mathcal{K}$ and we have 
+\begin{equation}
+\lambda=\frac{\hbar^{2}}{2m_{r}a_{bg}}\nth{(\mathcal{K}a_{b})}=\br{\frac{\abs{E}}{2\delta_{c}}}^{1/2}
+\end{equation}
+Now we can see that  $\delta_{c}$ is a ``characteristic'' energy scale. When $\abs{\delta}\gg\delta_{c}$, $E\approx\delta$, this simply means that when the negative detuning is large, most weight is in close-channel, and the real mixed bound state is a close-channel bound state ($\phi_{0}$) dressed with little open-channel component and therefore the binding energy is roughly equal that of $\phi_{0}$.  On the contrary, when $\abs{\delta}\ll\delta_{c}$, $\abs{E}\approx-\delta^{2}/\delta_{c}\ll\delta$,  and close-channel weight is much smaller than that of open-channel, the real bound-state is more or less a open-channel affair with little dress-up from close-channel.   It is not hard to  estimate $\delta_{c}$. 
+
+In the many-body physics, another important energy scale comes into play, Fermi energy, $E_{F}$.  When it is much smaller than $\delta_{c}$, i.e. \emph{broad resonance},  close-channel has only negligible weight close to resonance, where we are mostly interested in. And it is a good approximation to take Feshbach resonance as only a knob to tweak the interaction over open-channel there.  On the contrary, when $E_{F}$ is close even larger than $\delta_{c}$, i.e. \emph{narrow resonance}, close-channel weight can be  significant around resonance, therefore requires explicitly taken into many-body framework.  
 
 
 
@@ -131,8 +197,6 @@ Note that $a_{b}(E)$ is not identified as $a_{s}$ a priori.  Here we only study 
 
 
 
-
-As we discussed in Sec. \ref{sec:intro:as}, two-particle interaction is often approximated by a pseudo-potential characterized with s-wave scattering length $a_{s}$ in a dilute system.   The drastic  change  of $a_{s}$  via tuning energy difference (magnetic field)between two channels in Feshbach resonance gives the rare ability to experimentalists to varying the interaction strength between two channels.  And it is extremely useful in the study of BEC-BCS crossover which covers the variation of exact this nature.  
 
 
 \section{Single-channel BEC-BCS crossover}

@@ -8,7 +8,7 @@ For two-channel problem, we write down the Hamiltonian as
 \begin{split}
 H&=\int{d^{d}r}\bigg\{\sum_{j}\bar\psi_{j}\mbr{\nth{2m}(-i\nabla)^{2}-\mu+\eta_{j}}\psi_{j}\\
 	&\qquad-U\bar\psi_{a}(r)\bar\psi_{b}(r)\psi_{b}(r)\psi_{a}(r)-V\bar\psi_{a}(r)\bar\psi_{c}(r)\psi_{c}(r)\psi_{a}(r)\\
-	&\qquad-\mbr{Y\bar\psi_{a}(r)\bar\psi_{b}(r)\psi_{b}(r)\psi_{a}(r)+h.c.}
+	&\qquad-\mbr{Y\bar\psi_{a}(r)\bar\psi_{b}(r)\psi_{c}(r)\psi_{a}(r)+h.c.}
 	\bigg\}\\
  &=\int{d^{d}r}\bigg\{\sum_{j}\bar\psi_{j}\mbr{\nth{2m}(-i\nabla)^{2}-\mu+\eta_{j}}\psi_{j}
  	-(\bar\psi\bar\psi)\mtrx{U&Y\\Y^{*}&V}(\psi\psi)
@@ -18,7 +18,10 @@ Here $\eta_{j}$ is the Zeeman energy of the specific hyperfine species.  ``a'' i
 
 We can introduce a unitary transformation $Q$ (mixing two channels) to diagonalize the interaction matrix into diagonal matrix $A$.
 \begin{equation}
-Q^{\dg}AQ=\mtrx{U&Y\\Y^{*}&V}\equiv{}\tilde{U}
+\begin{split}
+Q^{\dg}AQ=\mtrx{U&Y\\Y^{*}&V}\equiv{}\tilde{U}\\
+\tilde{U}\equiv\mtrx{U&Y\\Y^{*}&V}=Q\mtrx{A_{11}&0\\0&A_{22}}Q^{\dg}
+\end{split}
 \end{equation}
 The finite temperature action is 
 \begin{equation}\label{eq:pathInt2:actionFermi}
@@ -32,7 +35,7 @@ Now $(\psi\psi)$ is column vector and $(\bar\psi\bar\psi)$ is row vector
 \qquad(\psi\psi)=\mtrx{\psi_{b}\psi_{a}\\\psi_{c}\psi_{a}}
 \end{equation*}
 
-Similar as in Sec. \ref{sec:pathInt}, we can make Hubbard-Stratonovich transformation on the action.   Here, introduce a bosonic field as a 2-component vector   and start from a fat identity
+Similar as in Sec. \ref{sec:pathInt}, we can make Hubbard-Stratonovich transformation on the action.   Here, introduce a bosonic field as a 2-component vector   and start from a fat identity \cite{Altland}
 \begin{equation}\label{eq:pathInt2:indetity}
 1=\int{D(\Delta,\bar\Delta)}\exp(-\int{dx}\Delta^{\dg}A^{-1}\Delta)
 \end{equation}
@@ -59,7 +62,7 @@ Write it into the matrix form
 	\mtrx{Q_{11}^{*}&Q_{21}^{*}\\Q_{12}^{*}&Q_{22}^{*}}\mtrx{A_{11}&0\\0&A_{22}}
 \end{equation*}
 
-Note that in principle, $\bar{\Delta}_{i}$ is not simple complex conjugate of $\Delta_{i}$ as they are related to fermion field $\psi$ and $\bar\psi$, which are both Grassman numbers and is not relevant to each other.  But in our solution, we actually take them as complex conjugate.  Now the fat identity Eq. \ref{eq:pathInt2:indetity} becomes 
+Note that in principle, $\bar{\Delta}_{i}$ is not simple complex conjugate of $\Delta_{i}$ as they are related to fermion field $\psi$ and $\bar\psi$, which are both Grassman numbers and is not relevant to each other.  But in our solution (to the level of mean-field as well as simple Gaussian level of collective mode), we actually take them as complex conjugate.  Now the fat identity Eq. \ref{eq:pathInt2:indetity} becomes 
 \begin{equation}
 1=\int{D(\Delta,\bar\Delta)}\exp\big\{-\int{dx}
 	[\Delta^{\dg}A^{-1}\Delta-(\bar\psi\bar\psi)Q^{\dg}\Delta-\bar\Delta{Q}(\psi\psi)+(\bar\psi\bar\psi)Q^{\dg}AQ(\psi\psi)]\big\}
@@ -102,6 +105,7 @@ This form can be simplified by introducing mixture within two channels.
 \begin{equation}\label{eq:pathInt2:Ddef}
 D\equiv\mtrx{D_{1}\\D_{2}}=Q^{\dg}\Delta
 \end{equation}
+It is not difficult to see that $D$ actually describe the off-diagonal coupling in fermionic field $\Psi$ and is the counterpart of order parameter, gap, in single-channel problem instead of $\Delta$ here.  We will see it  more clearly when  discussing mean-field solution. 
 
 We furthermore assume $\eta_{a}=\eta_{b}=0$, $\eta_{c}=\eta$. (i.e., $\eta$ is the absolute Zeeman energy difference of two channels.) In frequency-momentum space, 
 \begin{equation}\label{eq:pathInt2:nG}
@@ -145,8 +149,9 @@ v_{\vk}^{2}\equiv1-u_{\vk}^{2}\equiv\nth{2}\br{1-\frac{\xi_{\vk}}{E_{\vk}}}\\
 E_{\vk}\equiv(\xi_{\vk}^{2}+D_{1}^{2})^{1/2}
 \end{gather}
 
-In the broad-resonance, $L$ is simply identity matrix.  Here we will try to approximate it to the first order correction due to Pauli exclusion between two-channel.  
-Apply $T_k$ onto $G^{-1}$, we have 
+In the broad-resonance, where only the BCS pairing in open channel needs to be considered, $T$ is enough to diagonalize $G^{-1}$ and $L$ is simply identity matrix.  %Here we will try to approximate it to the first order correction due to Pauli exclusion between two-channel.  
+In the narrow resonance, $T$ cannot diagonalize $G^{-1}$ because of the Pauli exclusion between channels and therefore $L$ stands the extra correction due to Pauli exclusion in the canonical transformation. Basically, we seek the solution around the BCS ansatz ($T$ transform). 
+Apply $T$ onto $G^{-1}$, we have 
 \begin{equation}\label{eq:pathInt2:G2}
 T_k^{\dg}G_k^{-1}T_k=i\omega_nI+\mtrx{-E_k&0&u_kD_2\\0&+E_k&v_kD_2\\u_kD_2&v_kD_2&+\xi_k+\eta}
 \end{equation}
@@ -241,7 +246,7 @@ It is interesting to look at Eq. \ref{eq:pathInt2:h2} more carefully, at low mom
 If we simply take the lowest order of $\xi_{i}$, and ignore the close-channel, it is easy to identify $h_{1\vk}\approx{D_{1}}/(2E_{\vk})$ as the many-body wave function $F_{\vk}$ in single channel BEC-BCS crossover problem.  
  
 \subsection {Renormalization of mean field equation}
-One key assumption of the problem is the potential is short-range, and the two-body bound-states of isolated close-channel $\phi$ are much smaller in size than particle-particle distance, although larger than the potential range, $r_{c}$.  Within $r_{c}$, the specific potential determine the specific shape of the wave-functions, however, at long distance (larger than $r_{c}$), i.e. low momentum, the behave should be quite universal for these bound states except an overall normalization factor.  At the lowest order $\phi_{0\vk}\sim{A}\nth{\kappa^{2}}$ where $\kappa$ is the momentum scale related to binding energy or tuning, $\kappa^{2}/2m=E_{b}$.  This quantity is actually very small as $\kappa{}a_{0}\ll1$ where $a_{0}$ is the particle-particle distance.  Across the crossover, the internal structure of wave-function does not change much, but the overall normalization does vary along tuning.  However, \emph{it is always small across the region interested even when close-channel weight is large.}
+One key assumption of the problem is the potential is short-range, and the two-body bound-states of isolated close-channel $\phi$ are much smaller in size than particle-particle distance, although larger than the potential range, $r_{c}$.  Within $r_{c}$, the specific potential determine the specific shape of the wave-functions, however, at long distance (larger than $r_{c}$), i.e. low momentum, the behavial should be quite universal for these bound states except an overall normalization factor.  At the lowest order, $\phi_{0\vk}\sim\nth{\kappa^{2}+k^{2}}$ where $\kappa$ is the momentum scale related to binding energy or tuning, $\kappa^{2}/2m=E_{b}$.   In the interesting region where momentum is not too larger than Fermi momentum, this quantity is actually very small and approximately a constant, $\nth{\kappa^{2}}$, because $\kappa{}\gg{}k_{F}$.  Across the crossover, the internal structure of wave-function does not change much, but the overall normalization does vary along tuning.  However, \emph{it is always small across the interesting region  even when total close-channel weight is large.}
  
 Let us look at $h_{2\vk}$ first, it can be rewritten into such form
 \begin{equation}\label{eq:pathInt2:h2D2}

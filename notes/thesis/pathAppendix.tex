@@ -60,7 +60,7 @@ i\omega_{n}-\xi_{k}&D_{1}&D_{2}\\
 \bar{D}_{2}&0&i\omega_{n}+\xi_{k}+\eta
 \end{pmatrix}
 \end{equation}
-A general matrix inverted as such, 
+A general $3\times3$ matrix inverted as such, 
   \begin{equation}
   \mtrx{A_{11}&A_{12}&A_{13}\\A_{12}^{*}&A_{22}&0\\A_{13}^{*}&0&A_{33}}^{-1}=
   \nth{|A|}
@@ -70,21 +70,22 @@ A general matrix inverted as such,
   \end{equation}
 where $|A|$ is the determined of $A$ matrix.  Here we work in momentum space, in which the system is nicely decoupled at least to the mean-field order.  And we therefore drop all the $k$ subscript in the rest of section.  For Eq. (\ref{eq:pathInt2:nG}),
 \begin{equation}
-|A|=(i\omega_{n}-\epsilon_{1})(i\omega_{n}-\epsilon_{2})(i\omega_{n}-\epsilon_{3})
+|A|=(i\omega_{n}-E_{1})(i\omega_{n}+E_{2})(i\omega_{n}+E_{3})
 \end{equation}
-From Eq. \ref{eq:pathInt2:mf01}, 
+Now we have $G_{0}$, and we can find the last term in \ref{eq:pathInt2:mf01}, 
 \begin{equation}
 \begin{split}
-\tr\mbr{{G_{0}}\cdot\cmtrx{0&1&0\\0&0&0\\0&0&0}}&=\sum_{\vk\omega_{n}}G_{0\,(21)}
-=\sum_{\vk}\sum_{\omega_{n}}\frac{-D_{1}^{*}(i\omega_{n}+\xi+\eta)}{(i\omega_{n}-\epsilon_{1})(i\omega_{n}-\epsilon_{2})(i\omega_{n}-\epsilon_{3})}\\
-&=\sum_{\vk}D_{1}^{*}\frac{\xi_{1}+\xi+\eta}{(\xi_{1}+\xi_{2})(\xi_{1}+\xi_{3})}\equiv\sum_{\vk}h_{1\,\vk}
+\tr\mbr{{G_{0}}\cdot\cmtrx{0&1&0\\0&0&0\\0&0&0}}&=\sum_{\vk\omega_{n}}G_{0\,(21)}\\
+&=\sum_{\vk}\sum_{\omega_{n}}\frac{-D_{1}^{*}(i\omega_{n}+\xi+\eta)}{(i\omega_{n}-E_{1})(i\omega_{n}+E_{2})(i\omega_{n}+E_{3})}\\
+&=\sum_{\vk}D_{1}^{*}\frac{E_{1}+\xi+\eta}{(E_{1}+E_{2})(E_{1}+E_{3})}\equiv\sum_{\vk}h_{1\,\vk}
 \end{split}
 \end{equation}
+Here we perform Matsubara summation at zero temperature in the third equal sign with the normal trick (see sec. 4.2.1 in \cite{Altland}, sec. 25 in \cite{Fetter}).  We notice that within three roots, $E_{1}$, $-E_{2}$ and $-E_{3}$, we only need to take into account two negative roots $-E_{2}$ and $-E_{3}$, assuming the correction is small. 
 Similarly
 \begin{equation}
 \begin{split}
 \tr\mbr{{G_{0}}\cdot\cmtrx{0&0&1\\0&0&0\\0&0&0}}&=\sum_{\vk\omega_{n}}G_{0\,(31)}
-=\sum_{\vk}D_{2}^{2}\frac{\xi_{1}+\xi}{(\xi_{1}+\xi_{2})(\xi_{1}+\xi_{3})}\equiv\sum_{\vk}h_{2\,\vk}
+=\sum_{\vk}D_{2}^{2}\frac{E_{1}+\xi}{(E_{1}+E_{2})(E_{1}+E_{3})}\equiv\sum_{\vk}h_{2\,\vk}
 \end{split}
 \end{equation}
 And we have 
@@ -167,9 +168,9 @@ It is straightforward to calculate
 \begin{equation*}
 T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}=
 \begin{pmatrix}
-{\frac{\xi_{\vk}}{E_{\vk}(i\omega_{k}-\xi_{1\,\vk})}}&\frac{D_{1}}{E_{\vk}(i\omega_{k}+\xi_{2\,\vk})}&0\\
-{\frac{D_{1}}{E_{\vk}(i\omega_{k}-\xi_{1\,\vk})}}&-\frac{\xi_{\vk}}{E_{\vk}(i\omega_{k}+\xi_{2\,\vk})}&0\\
-0&0&-\nth{i\omega_{k}+\xi_{3\,\vk}}\\
+{\frac{\xi_{\vk}}{E_{\vk}(i\omega_{k}-E_{1\,\vk})}}&\frac{D_{1}}{E_{\vk}(i\omega_{k}+E_{2\,\vk})}&0\\
+{\frac{D_{1}}{E_{\vk}(i\omega_{k}-E_{1\,\vk})}}&-\frac{\xi_{\vk}}{E_{\vk}(i\omega_{k}+E_{2\,\vk})}&0\\
+0&0&-\nth{i\omega_{k}+E_{3\,\vk}}\\
 \end{pmatrix}
 \end{equation*}
 Now it is easy to calculate the first term
@@ -177,15 +178,15 @@ Now it is easy to calculate the first term
 \begin{split}
 \sum_k\tr\big(M_{k}\big)=&
 \sum_{k}\mbr{
-\frac{2D_{1}^{2}}{E_{\vk}^{2}(i\omega_{k}-\xi_{1\,\vk})(i\omega_{k}+\xi_{2\,\vk})}+
-\br{\frac{\xi_{\vk}^{2}}{E_{\vk}^{2}(i\omega_{k}-\xi_{1\,\vk})^{2}}+\frac{\xi_{\vk}^{2}}{E_{\vk}^{2}(i\omega_{k}+\xi_{2\,\vk})^{2}}
--\nth{(i\omega_{k}+\xi_{3\,\vk})^{2}}}
+\frac{2D_{1}^{2}}{E_{\vk}^{2}(i\omega_{k}-E_{1\,\vk})(i\omega_{k}+\xi_{2\,\vk})}+
+\br{\frac{\xi_{\vk}^{2}}{E_{\vk}^{2}(i\omega_{k}-E_{1\,\vk})^{2}}+\frac{\xi_{\vk}^{2}}{E_{\vk}^{2}(i\omega_{k}+E_{1\,\vk})^{2}}
+-\nth{(i\omega_{k}+E_{3\,\vk})^{2}}}
 }
 \end{split}
 \end{equation}
 Only root $-\xi_{2\,\vk}$ in the first term contributes in Matrubara frequency summation.
 \begin{equation}\label{eq:pathInt2:pi0-1}
-\sum_k\tr\big(M_{k}\big)=\sum_{\vk}\frac{2D_{1}^{2}}{E_{\vk}^{2}(\xi_{1\,\vk}+\xi_{2\,\vk})}
+\sum_k\tr\big(M_{k}\big)=\sum_{\vk}\frac{2D_{1}^{2}}{E_{\vk}^{2}(E_{1\,\vk}+\xi_{2\,\vk})}
 \approx\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{D_{1}^{2}D_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}
 \end{equation}
 
@@ -247,15 +248,15 @@ $k_{Fc}$ is the Fermi momentum corresponding to the particles in close-channel, 
 Now we check the correction in Fermionic spectrum (Eq. \ref{eq:pathInt2:xiExpand3}-\ref{eq:pathInt2:xiExpand3}), 
 is indeed small comparing to the main term.  
 \begin{align}\tag{\ref{eq:pathInt2:xiExpand}}
-\xi_{1\vk}&\approx{}E_{\vk}+\frac{D_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{1\vk}\\
+E_{1\vk}&\approx{}E_{\vk}+\frac{D_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{1\vk}\\
 \xi_{2\vk}&\approx{}E_{\vk}-\frac{D_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{2\vk}
 \tag{\ref{eq:pathInt2:xiExpand2}}\\
-\xi_{3\vk}&\approx{}\xi_{\vk}+\eta-\frac{D_{2}^{2}}{2(\xi_{\vk}+\eta)}&\equiv{}&\xi_{\vk}+\eta+\gamma_{3\vk}
+E_{3\vk}&\approx{}\xi_{\vk}+\eta-\frac{D_{2}^{2}}{2(\xi_{\vk}+\eta)}&\equiv{}&\xi_{\vk}+\eta+\gamma_{3\vk}
 \tag{\ref{eq:pathInt2:xiExpand3}}
 \end{align}
 Here, we mostly only concern of low-momentum ($k\sim{}k_{F}$).  In Eq. \ref{eq:pathInt2:xiExpand3}, 
 \begin{equation*}
-\frac{\gamma_{3\vk}}{\xi_{3\vk}}\sim{}\frac{D_{2}^{2}}{\eta^{2}}\sim\br{\frac{k_{Fc}}{\kappa}}^{2}\ll1
+\frac{\gamma_{3\vk}}{E_{3\vk}}\sim{}\frac{D_{2}^{2}}{\eta^{2}}\sim\br{\frac{k_{Fc}}{\kappa}}^{2}\ll1
 \end{equation*}
 Eqs. \ref{eq:pathInt2:xiExpand} and Eqs. \ref{eq:pathInt2:xiExpand2} is slightly more complicated.  Both of them involve $\frac{D_{2}^{2}}{E_{\vk}\eta}$,  at very BCS side, close-channel density is small, $k_{F\,c}$ is small and that makes this ratio small; when close to (narrow) resonance, where $n_{c}$ is comparable to to total density, at low energy, $D_{1}$ is in the order of Fermi energy, so does $E_{\vk}$.   We have (we no longer distinguish $k_{F\,c}$ with $k_{F}$)
  \begin{equation*}

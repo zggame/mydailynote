@@ -1,7 +1,8 @@
-\subsection{Path integral approach for single channel\label{sec:pathInt}}
+%\subsection{Path integral approach for single channel\label{sec:pathInt}}
+\label{sec:pathInt}
 Here we reviewed the path integral approach for the original single-channel BEC-BCS crossover problem. Randeria and the company \cite{RanderiaBEC, Randeria1997, Randeria2008} has studied this problem with path integral and it is proved to be a rather nice tool for the problem.  
 
-We started with an attractive $\delta$-potential in real space.  This is not equivalent to normal reduced pairing potential as in original BCS work.  However, reduced paring potential only couples  particles of the opposite momentum and does not support simple form of Habbard-Stratonovich transformation, which is essential to solve the problem in path integral formulation.   More physically,
+We started with an attractive $\delta$-potential in real space.  This is not equivalent to normal reduced pairing potential as in original BCS work.  However, reduced paring potential only couples  particles of the opposite momentum and does not support simple form of Hubbard-Stratonovich transformation, which is essential to solve the problem in path integral formulation.   More physically,
 \begin{equation}
 \hat{H}-\mu\hat{N}=\sum_{\sigma}\int{d^{d}r}c^{\dagger}_{\sigma}(\vr)\br{\partial_{\tau}-\nth{2m}\nabla^{2}-\mu}c^{}_{\sigma}(\vr)-g\int{d^{d}r}c^{\dagger}_{\uparrow}(\vr)c^{\dagger}_{\downarrow}(\vr)c^{}_{\downarrow}(\vr)c^{}_{\uparrow}(\vr)
 \end{equation}
@@ -52,7 +53,7 @@ S[\bar\Delta,\Delta]=
 \end{equation}
 Note that $\ln\det\nG$ goes through both the normal space and $2\times2$ Nambu spinor space.  
 
-\subsubsection{Mean Field Result}
+\subsection{Mean Field Result}
 The saddle point equation of Eq. (\ref{eq:pathInt:DeltaPF}) gives the mean-field result of the system.  First we need to find the derivative of $\ln\det\nG$.  We notice the identity
 \begin{equation}
 \ln\det\hat{A}=\tr\ln\hat{A}
@@ -103,7 +104,7 @@ similarly the summation over the Mastubara frequency can be evaluated and we hav
 n=\nth{L^{d}}\sum_{\vk}\mbr{1-\frac{\epsilon_{\vk}}{E_{\vk}}\tanh{(\frac{E_{\vk}}{2T})}}
 \end{equation}
 
-\subsubsection{Gaussian fluctuation and collective mode}\label{sec:collective1}
+\subsection{Gaussian fluctuation and collective mode}\label{sec:collective1}
 Once the mean field value is obtained, we can expand partition function Eq. (\ref{eq:pathInt:DeltaPF}) around it ($\Delta(\vr,\tau)=\Delta_{0}+\eta(\vr,\tau)$). The linear order of  expansion is zero because $\Delta_{0}$ is the saddle point.  The second order gives us the bilinear terms on $\eta$, i.e., correlation of bosonic field $\Delta$ (four-fermion correlation).  Note that here the hamiltonian only has an extreme-short-range ($\delta$) potential, therefore it cannot cover the situation of charged system where long-range Columnb interaction cannot be neglected.  We will discuss this later.  Nevertheless, it is conceivable that a more realistic short-range potential only renormalizes some parameters in the following calculation while leaves the qualitative result unmodified.  
 
 Notice that we can expand the second term in Eq. \ref{eq:pathInt:DeltaPF} for $\hat{G}{}^{-1}=\hat{G}_{0}^{-1}+\hat{K}$
@@ -175,7 +176,7 @@ v_{\vk}^{2}=1-u_{\vk}^{2}=\nth{2}\br{1-\frac{\xi_{\vk}}{E_{\vk}}}
 For low energy modes, where $\omega,\,\abs{\vq}^{2}\ll\min\bbr{E_{\vk}}$ both are much smaller than $\Delta_{0}$, we can expand $M$ with $\omega$ and $\vq$.  
 
 
-\subsubsection{Alternative in inverting green function\label{sec:diagonalizeGreen1}}
+\subsection{Alternative in inverting green function\label{sec:diagonalizeGreen1}}
 In this problem, we have inverse of Gorkov green function Eq. (\ref{eq:pathInt:nG}) and it can be invert easily as Eq. (\ref{eq:pathInt:G0}).   Alternatively, we can use a different approach which proves to be more convenient in late expansion.  First, we can diagonalize $\nG$ with unitary transformation $T$, in momentum space
 \begin{equation}
 \nG=\mtrx{i\omega_{n}-\xi_{k}&\Delta\\\bar\Delta&i\omega_{n}+\xi_{k}}=T^{\dg}BT

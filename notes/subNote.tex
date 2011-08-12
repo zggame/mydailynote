@@ -28,10 +28,34 @@
 %\input{scattering}
 %\input{relationTfAs}
 %\input{CanonicalTransf}
-\section{Path integral for one channels}
-\input{pathInt}
-\section{Path integral for two channels}
-\input{pathInt2}
+
+\section{S-wave scattering length, Bethe-Peierls boundary condition, universality, two-body density matrix\label{sec:intro:as}}
+In dilute ultracold alkali gas, both the density and temperature are so low that in most case, the interaction can be characterized by a single two-body parameter, s-wave scattering length, $a_s$.  Often this is  interpreted as we can replace the real potential as a pseudo potential\cite{pethick}.  Nevertheless, an alternative interpretation about $a_s$ is more useful in this work\cite{LeggettBEC, Tan2008-1,Tan2008-2,CombescotTan}.  For short-range potential, where potential range $a_c$ is much smaller than average inter-particle distance $a_0$, it is not hard to see in the majority of the time, particles are free-like.  They only interact  when two particles are close to each other.  We can schematically divide the Hilbert space into two regions: $\mathcal{D}$, where any two particles are more than $a_c$ away from each other; and otherwise, $\mathcal{I}$ .  In the very dilute case, most physical quantities can be calculated only considering the free part, $\mathcal{D}$.  The effect of the potential on wave-function in the short-range region, $\mathcal{I}$, is to enforce the boundary condition on free part $\mathcal{D}$, $\psi(r)\xrightarrow{r\to0}\psi_{0}(r)$.  For an isometric $\psi_{0}(r)$, the lowest order in radial coordinator $r$ is $\nth{r}$.   Including the next order, a constant,  we have $\psi_{0}(r)=\nth{r}(1-\frac{r}{a_{s}})$ barring the normalization.  All these consideration gives us the simplest non-trivial boundary condition
+\begin{equation}\label{eq:intro:Bethe}
+\psi(r)\xrightarrow{r\to0}\nth{r}-\nth{a_s}
+\end{equation}
+which is also known as Bethe-Peierls boundary condition\cite{BethePeierls}.  This simple boundary condition applies to two-body, few-body, as well as many-body context, and proves to be a very powerful tool to various problems.  
+
+Eq. \ref{eq:intro:Bethe} coincides the zero-energy s-wave scattering wave function with very small phase-shift and that explain the name of parameter ``$a_s$''. Nevertheless,   note we did not mention anything about zero energy, where $a_{s}$ is defined in scattering theory context, and indeed this boundary condition applies generally to  any weak (positive or negative) energy solution as long as the energy involved is much lower than the energy scale in interaction region $\mathcal{I}$.  Therefore it is easy to extend it to close-to-threshold bound state.  A weak bound-state has wave function $\psi(r)=\nth{r}e^{-r/a_s}$ in $\mathcal{D}$,\footnote{The extra $\nth{r}$ factor is there for  radial wave function in 3D.} which matches Bethe-Peierls boundary condition with a positive $a_{s}$ (for  $r\ll{}a_{s}$), and we have the often cited relation for binding energy $E_{b}$.
+\begin{equation}
+ E_{b}=\frac{\hbar^{2}}{2ma_{s}^{2}}
+\end{equation}
+  This immediately clears one often confusing and counter-intuitive fact, that positive  $a_s$ corresponds to bound state.  If interpreting in the normal scattering theory, positive $a_s$  usually associates with the repulsive interaction, which obviously does not support a bound state.\footnote{This seemingly paradox can be resolved carefully within scattering theory as following. In scattering theory, the fact,  repulsive interaction leads to positive phase shift and therefore positive $a_s$, and attractive interaction leads to negative phase shift and negative $a_s$, is only true when interaction is weak, phase shift and $a_s$ is small.  At the strong interaction, where bound state is formed, phase shift changes $2\pi$; $a_s$ is large and  change sign over the threshold. }
+
+ S-wave scattering length, $a_s$, or Eq. \ref{eq:intro:Bethe}, does not fix the normalization on the wave function. This normalization factor, turns out to be very useful.  Its square is just \emph{integrated contact intensity}, $C$, defined in \cite{ Tan2008-1,Tan2008-2,CombescotTan}, besides a simple constant factor.  At the limit where $a_c\to0$, $C$ and $a_s$ alone, can describe several important physical quantities, (for example internal energy).  A particular useful one for this thesis is the limit at high-momentum distribution of particles, 
+ \begin{equation}
+ n_k=\frac{C}{k^4}
+ \end{equation}
+ Note that here \emph{high-momentum} does not mean the absolutely high-momentum, it means lower than the characteristic momentum of potential $1/a_c$, but higher than any other scale, $1/a_0$,...
+ 
+ In many-body physics, lots of physical observable quantities relate to one set of  quantities, density matrix, $\av{\Psi^\dg\Psi^\dg\cdots\Psi\Psi}$. In fermionic system,  one-body density matrix is often very close to the free case, although the difference can be important for various theories (such as Landau Fermi liquid theory).  Two-body density matrix is often more use with more strikingly qualitative change, especially for phenomenon involving pairing. Formally, we can decompose it into orthogonal basis
+ \begin{equation}
+ \av{\Psi^\dg(x_1)\Psi^\dg(x_2)\Psi(y_2)\Psi(y_1)}=\sum_nC_n\phi_n^\dg(x_1,x_2)\phi_n(y_1,y_2)
+ \end{equation}     
+ When one or a few $C_n$ is macroscopic, the system behaves quantum mechanically in macroscopic term.  Especially when only one term is macroscopic, system can often be interpreted as one macroscopic wave function.\cite{Leggett}  This can serves as the starting point for several phenomenon, such as BEC, BCS superconductor,...
+ 
+Shizhong and Leggett developed independently another universality theory based on two-body density matrix \linebreak[2] \cite{shizhongUniv}, which actually takes a more general case.   They asserted that for short-range potential and low temperature, for example dilute ultracold alkali gas, the basis wave functions $\phi_n$ follows the two-body wave function at short-range. This is actually similar as Bethe-Peierls boundary condition Eq. \ref{eq:intro:Bethe}.  Instead of require the simplest form of $\psi_0$ in Eq. \eqref{eq:intro:Bethe}, they requires a more general wave-function that solves the  hamiltonian in two-body level.  And not surprisingly, many physical properties are determined by the normalization factors in boundary condition.  
+
 \bibliographystyle{amsplain}
 \bibliography{citation}
 

@@ -80,12 +80,12 @@ Now we have $G_{0}$, and we can find the last term in \ref{eq:pathInt2:mf01},
 &=\sum_{\vk}D_{1}^{*}\frac{E_{1}+\xi+\eta}{(E_{1}+E_{2})(E_{1}+E_{3})}\equiv\sum_{\vk}h_{1\,\vk}
 \end{split}
 \end{equation}
-Here we perform Matsubara summation at zero temperature in the third equal sign with the normal trick (see sec. 4.2.1 in \cite{Altland}, sec. 25 in \cite{Fetter}).  We notice that within three roots, $E_{1}$, $-E_{2}$ and $-E_{3}$, we only need to take into account two negative roots $-E_{2}$ and $-E_{3}$, assuming the correction is small. 
+Here we perform Matsubara summation at zero temperature in the third equal sign with the normal trick (see sec. 4.2.1 in \cite{Altland}, sec. 25 in \cite{Fetter}, also refer to Footnote \ref{foot:intro:sum} at Page. \pageref{foot:intro:sum}).  We notice that within three roots, $E_{1}$, $-E_{2}$ and $-E_{3}$, we only need to take into account two negative roots $-E_{2}$ and $-E_{3}$, assuming the correction is small. 
 Similarly
 \begin{equation}
 \begin{split}
 \tr\mbr{{G_{0}}\cdot\cmtrx{0&0&1\\0&0&0\\0&0&0}}&=\sum_{\vk\omega_{n}}G_{0\,(31)}
-=\sum_{\vk}D_{2}^{2}\frac{E_{1}+\xi}{(E_{1}+E_{2})(E_{1}+E_{3})}\equiv\sum_{\vk}h_{2\,\vk}
+=\sum_{\vk}D_{2}\frac{E_{1}+\xi}{(E_{1}+E_{2})(E_{1}+E_{3})}\equiv\sum_{\vk}h_{2\,\vk}
 \end{split}
 \end{equation}
 And we have 
@@ -98,11 +98,11 @@ Invert the interaction matrix $\tilde{U}$ and we have Eq.  \ref{eq:pathInt2:mf}.
 
 
 \section{Wave function for short-range potential}\label{sec:pathInt2:short-range}
-Here we discuss some possible generalization on the wave function for short-range potential.  This topic has been studied by Shizhong Zhang \cite{shizhongUniv}. We will use some similar ideas.  When we have a short-range potential with range $r_{c}$, outside this range, \sch equation is very simple
+Here we discuss some possible generalization on the wave function for short-range potential.  This topic has been studied by Shizhong Zhang \cite{shizhongUniv}. We will use some similar ideas.  Outside the range $r_{c}$ of a short-range potential,  atom is free and  \sch equation is very simple.
 \begin{equation}
--\frac{\hbar^{2}}{2m}\nabla^{2}\psi+U\psi=E\psi
+-\frac{\hbar^{2}}{2m}\nabla^{2}\psi=E\psi
 \end{equation}
-And the equation has a simple solution for s-wave $\psi=A{e^{-\kappa{r}}}/{r}$ ($\kappa$ is imaginary for scattering state), here normalization $A$ is determined  by connecting it with the short-range part of the wave function, $\varphi_0$. 
+The equation has a simple solution for s-wave, $\psi=A{e^{-\kappa{r}}}/{r}$ ($\kappa$ is imaginary for scattering state), here normalization $A$ is determined  by connecting it with the short-range part of the wave function, $\varphi_0$. 
 
 Let us discuss the bound-state first, $\kappa>0$.  In the momentum space, there is also a universal behavior at low-momentum, where $kr_{c}\ll1$.   
 \begin{equation*}
@@ -113,7 +113,7 @@ The first part for $\varphi_{0}$ has very little $k$ dependence and the second t
 \psi_{k}=\varphi_{0\,k}+\nth{(2\pi)^{3/2}}\int{d\vr}(A\frac{e^{-\kappa{r}}}{r})e^{-i\vk\cdot\vr}=\varphi_{0\,k}-(\frac{2}{\pi})^{1/2}A\nth{k^{2}+\kappa^{2}}
 \end{equation*}
 
-Furthermore, if the bound-state is the one close to threshold, the most weight is outside $r_{c}$, we can neglect the first term and we have universal behavior at low-momentum while the normalization determined in two-body problem.   When considering many-body physics, the really low momentum, (at order of Fermi energy or below), is modified, but in the medium momentum, (still much smaller than $1/r_{c}$), this universal behavior is preserved.  This is actually the high-momentum behavior ($C/k^{4}$) described in Tan's work about universality\cite{Tan2008-1,Tan2008-2}. 
+Furthermore, if the bound-state is the one close to threshold, the most weight is outside $r_{c}$, we can neglect the first term and we have universal behavior at low-momentum while the normalization is determined in two-body problem.   When considering many-body physics, in the really low momentum, (at order of Fermi energy or below), wave function  is modified, but in the medium momentum, (still much smaller than $1/r_{c}$), this universal behavior is preserved.  The number distribution of particle in such momentum, $k_{F}\ll{k}\ll{1/r_{c}}$, is $1/k^{4}$. This is actually the ``high-momentum'' (medium here) behavior ($C/k^{4}$) described in Tan's work about universality\cite{Tan2008-1,Tan2008-2}. 
 
 
 \section{$\lambda_{1}$ and $\lambda_{2}$\label{sec:pathInt2:lambda}}

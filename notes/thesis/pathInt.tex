@@ -1,12 +1,13 @@
+% !TeX root =thesis.tex
 %\subsection{Path integral approach for single channel\label{sec:pathInt}}
 \label{sec:pathInt}
-Here we reviewed the path integral approach for the original single-channel BEC-BCS crossover problem. Randeria and the company \cite{RanderiaBEC, Randeria1997, Randeria2008} has studied this problem with path integral and it is proved to be a rather nice tool for the problem.  
+Randeria and the company has studied this problem with path integral and it is proved to be a rather nice tool for the problem due to its flexibility and readiness for extension to higher order fluctuation.  
 
-We started with an attractive $\delta$-potential in real space.  This is not equivalent to normal reduced pairing potential as in original BCS work.  However, reduced paring potential only couples  particles of the opposite momentum and does not support simple form of Hubbard-Stratonovich transformation, which is essential to solve the problem in path integral formulation.   More physically,
+We start with an attractive $\delta$-potential in real space.  This is not equivalent to the l reduced pairing potential as in original BCS work.  However, reduced paring potential only couples  particles of the opposite momentum and does not support simple form of Hubbard-Stratonovich transformation, which is essential to solve the problem in path integral formulation.  
 \begin{equation}
-\hat{H}-\mu\hat{N}=\sum_{\sigma}\int{d^{d}r}c^{\dagger}_{\sigma}(\vr)\br{\partial_{\tau}-\nth{2m}\nabla^{2}-\mu}c^{}_{\sigma}(\vr)-g\int{d^{d}r}c^{\dagger}_{\uparrow}(\vr)c^{\dagger}_{\downarrow}(\vr)c^{}_{\downarrow}(\vr)c^{}_{\uparrow}(\vr)
+\hat{H}-\mu\hat{N}=\sum_{\sigma}\int{d^{d}r}c^{\dagger}_{\sigma}(\vr)\br{-\nth{2m}\nabla^{2}-\mu}c^{}_{\sigma}(\vr)-g\int{d^{d}r}c^{\dagger}_{\uparrow}(\vr)c^{\dagger}_{\downarrow}(\vr)c^{}_{\downarrow}(\vr)c^{}_{\uparrow}(\vr)
 \end{equation}
-where $\xi_{\vk}=\epsilon_{\vk}-\mu$, $\epsilon_{\vk}=\vk^{2}/2m$.  We can write down the action for the quantum partition function $\mathcal{Z}=\int{D(\bar\psi,\psi)\exp\br{-S[\bar\psi,\psi]}}$
+ We can write down the action for the quantum partition function $\mathcal{Z}=\int{D(\bar\psi,\psi)\exp\br{-S[\bar\psi,\psi]}}$
 \begin{equation}
 S[\bar\psi,\psi]=\int^{\beta}_{0}d\tau\int{d^{d}r}\mbr{\sum_{\sigma}\bar\psi_{\sigma}(\vr,\tau)\br{\partial_{\tau}-\nth{2m}\nabla^{2}-\mu}\psi_{\sigma}(\vr,\tau)-g\bar\psi_{\uparrow}(\vr,\tau)\bar\psi_{\downarrow}(\vr,\tau)\psi^{}_{\downarrow}(\vr,\tau)\psi^{}_{\uparrow}(\vr,\tau)}
 \end{equation}
@@ -53,7 +54,7 @@ S[\bar\Delta,\Delta]=
 \end{equation}
 Note that $\ln\det\nG$ goes through both the normal space and $2\times2$ Nambu spinor space.  
 
-\subsection{Mean Field Result}
+\subsection{Mean Field Result\label{sec:pathInt:meanfield}}
 The saddle point equation of Eq. (\ref{eq:pathInt:DeltaPF}) gives the mean-field result of the system.  First we need to find the derivative of $\ln\det\nG$.  We notice the identity
 \begin{equation}
 \ln\det\hat{A}=\tr\ln\hat{A}
@@ -74,7 +75,7 @@ G_0(p)=\nth{(i\omega_n)^2-E_\vp^2}
 	-\bar{\Delta}_0&i\omega_n-\xi_\vp
 \end{pmatrix}
 \end{equation}
-Here $\omega_n$ is Matsubara frequency of Fermions.   And $E_\vp=\sqrt{\xi_\vp^2+\abs{\Delta_0}^2}$ And the saddle point equation is 
+Here $\omega_n$ is Matsubara frequency of Fermions.  $\xi_{\vk}=\epsilon_{\vk}-\mu$, $\epsilon_{\vk}=\vk^{2}/2m$,  $E_\vp=\sqrt{\xi_\vp^2+\abs{\Delta_0}^2}$.  And the saddle point equation can be rewritten as 
 \begin{equation}
 \nth{g}\bar{\Delta}_0=\frac{T}{L^d}\sum_{\vp,n}\frac{\bar\Delta_0}{\omega_n^2+E_\vp^2}
 \end{equation}
@@ -86,16 +87,14 @@ The summation of Matsubara frequency can be evaluated and we find
 where $n_f(\epsilon)$ is the fermi distribution function.  This is exactly the gap equation obtained from other methods as well.  On the other hand, $\nG$ in Eq. (\ref{eq:pathInt:nG})  is the inverse of fermion-fermion correlation of $\Psi$.  In mean field, $G_{0}$ as Eq. (\ref{eq:pathInt:G0}) can be diagnosed in momentum space with a canonical (Bogoliubov) transformation.  Nevertheless, poles is where  $\omega^2-E_\vp^2=0$ (with a analytic continue of $i\omega_{n}\rightarrow\omega+0^{+}$) as we can see from  Eq. (\ref{eq:pathInt:G0}) and therefore the spectrum of fermionic excitation is $\pm{}E_{p}$.  
 
 Summand in Eq. \ref{eq:pathInt:gap} does not decreases fast enough in 3D and the summation does not converges.  This is because our assumption of contact interaction breaks down when reaching real potential range $a_{c}$, i.e., the summation of momentum is capped at some high momentum $\Lambda$ related to $1/a_{c}$.  Notice that in 3-D, we have a relation that connect the bare potential $g$ to more physically observable s-wave scattering length $a_{s}$
-\begin{equation}
+\begin{equation}\label{eq:pathInt:as}
 \frac{m}{4\pi{}a_{s}}=-\nth{g}+\sum_{k<\Lambda}\nth{2\epsilon_{\vk}}
 \end{equation}
 We can renormalize Eq. \ref{eq:pathInt:gap} with this relation
 \begin{equation}
 -\frac{m}{4\pi{}a_{s}}=\sum_{\vk}\mbr{\frac{\tanh{(E_k/2T)}}{2E_k}-\nth{2\epsilon_{\vk}}}
 \end{equation}
-Now the gap equation has proper decay in high momentum and no artificial cutoff is necessary.  
-
-And the number equation is $n=-\partial\Omega/\partial\mu$, at the saddle point the thermodynamic potential $\Omega_{0}=S[\Delta_{0}]/\beta$, and we have number equation
+Now the gap equation has proper decay in high momentum and no artificial cutoff is necessary.  There are two unknown parameters, $\mu$ and $\Delta$,  in the equation.  We need another equation in order to pin them down. To compliment the gap equation, we can introduce the number equation, $n=-\partial\Omega/\partial\mu$. At the saddle point, the thermodynamic potential is $\Omega_{0}=S[\Delta_{0}]/\beta$, and we have number equation
 \begin{equation*}
 n=-\nth{\beta}\tr\br{{G_{0}\pdiff{G_{0}^{-1}}{\mu}}}
 \end{equation*}
@@ -105,7 +104,7 @@ n=\nth{L^{d}}\sum_{\vk}\mbr{1-\frac{\epsilon_{\vk}}{E_{\vk}}\tanh{(\frac{E_{\vk}
 \end{equation}
 
 \subsection{Gaussian fluctuation and collective mode}\label{sec:collective1}
-Once the mean field value is obtained, we can expand partition function Eq. (\ref{eq:pathInt:DeltaPF}) around it ($\Delta(\vr,\tau)=\Delta_{0}+\eta(\vr,\tau)$). The linear order of  expansion is zero because $\Delta_{0}$ is the saddle point.  The second order gives us the bilinear terms on $\eta$, i.e., correlation of bosonic field $\Delta$ (four-fermion correlation).  Note that here the hamiltonian only has an extreme-short-range ($\delta$) potential, therefore it cannot cover the situation of charged system where long-range Columnb interaction cannot be neglected.  We will discuss this later.  Nevertheless, it is conceivable that a more realistic short-range potential only renormalizes some parameters in the following calculation while leaves the qualitative result unmodified.  
+Once the mean field value is obtained, we can expand partition function Eq. (\ref{eq:pathInt:DeltaPF}) around it ($\Delta(\vr,\tau)=\Delta_{0}+\eta(\vr,\tau)$). The linear order of  expansion is zero because $\Delta_{0}$ is the saddle point.  The next order gives us the bilinear terms on $\eta$, i.e., correlation of bosonic field $\Delta$ (four-fermion correlation).  Note that here the hamiltonian only has an extreme-short-range ($\delta$) potential, therefore it cannot cover the situation of charged system where long-range Columnb interaction cannot be neglected.  We will discuss this later.  Nevertheless, it is conceivable that a more realistic short-range potential only renormalizes some parameters in the following calculation while leaves the qualitative result unmodified.  
 
 Notice that we can expand the second term in Eq. \ref{eq:pathInt:DeltaPF} for $\hat{G}{}^{-1}=\hat{G}_{0}^{-1}+\hat{K}$
 \begin{equation}\label{eq:pathInt:expand}
@@ -152,7 +151,7 @@ Notice that we can always choose a real $\Delta_{0}$ and therefore $G_{0}{\ _{12
 \end{pmatrix}
 \end{equation}
 The summation over (fermionic) Matsubara frequency of $p_{n}$ can be carried out at zero temperature
-\footnote{The summation of Matsubara frequency of function $h(i\omega_{n})$ is carried out by the normal method to multiplying $h(z)$ with fermi distribution function $n_{F}(z)$, and then find all residues with a contour over infinity.  However, due to zero temperature, the  $n_{F}(z)$ only nonzero at the negative singular points of $h(z)$, $-E_{\vk}$ in our case.  (The other singular point $E_{\vk}$ gives $n_{F}(E_{\vk})=0$ for zero temperature.}
+\footnote{\label{foot:intro:sum}The summation of Matsubara frequency of function $h(i\omega_{n})$ is carried out by the normal method to multiplying $h(z)$ with fermi distribution function $n_{F}(z)$, and then find all residues with a contour over infinity.  However, due to zero temperature, the  $n_{F}(z)$ only nonzero at the negative singular points of $h(z)$, $-E_{\vk}$ in our case.  (The other singular point $E_{\vk}$ gives $n_{F}(E_{\vk})=0$ for zero temperature.}
 \begin{equation}
 \begin{split}
 M_{11}(q)&=M_{22}(-q)\\
@@ -171,13 +170,13 @@ where $u=u_{\vp}$, $v=v_{\vp}$, $E=E_{\vp}$ and $u'=u_{\vp-\vq}$, $v'=v_{\vk-\vq
 \begin{equation}
 v_{\vk}^{2}=1-u_{\vk}^{2}=\nth{2}\br{1-\frac{\xi_{\vk}}{E_{\vk}}}
 \end{equation}
- The $G^{M}=\mathbf{M}^{-1}$ is the correlation function of $\eta$ (or $\Delta$) and its poles give the spectrum of collective mode as every  $\eta_{q}$ (or $\Delta_{q}$) involves many fermions moving in a coherent manner.  So the spectrum of collective modes can be determined by $\det{M(\omega,\vq)}=0$ after we analytically continue for the frequency $iq_{l}\rightarrow\omega+i0^{+}$.  
+ The $G^{(M)}=\mathbf{M}^{-1}$ is the correlation function of $\eta$ (or $\Delta$) and its poles give the spectrum of collective mode as every  $\eta_{q}$ (or $\Delta_{q}$) involves many fermions moving in a coherent manner.  So the spectrum of collective modes can be determined by $\det{M(\omega,\vq)}=0$ after we analytically continue for the frequency $iq_{l}\rightarrow\omega+i0^{+}$.  
  
 For low energy modes, where $\omega,\,\abs{\vq}^{2}\ll\min\bbr{E_{\vk}}$ both are much smaller than $\Delta_{0}$, we can expand $M$ with $\omega$ and $\vq$.  
 
 
 \subsection{Alternative in inverting green function\label{sec:diagonalizeGreen1}}
-In this problem, we have inverse of Gorkov green function Eq. (\ref{eq:pathInt:nG}) and it can be invert easily as Eq. (\ref{eq:pathInt:G0}).   Alternatively, we can use a different approach which proves to be more convenient in late expansion.  First, we can diagonalize $\nG$ with unitary transformation $T$, in momentum space
+In the above section, we have inversion of Gorkov green function Eq. (\ref{eq:pathInt:nG}) and it can be invert easily as Eq. (\ref{eq:pathInt:G0}).   Alternatively, we can use a different approach which proves to be more convenient in two-channel problem.  First, we diagonalize $\nG$ with unitary transformation $T$, in momentum space
 \begin{equation}
 \nG=\mtrx{i\omega_{n}-\xi_{k}&\Delta\\\bar\Delta&i\omega_{n}+\xi_{k}}=T^{\dg}BT
 \end{equation}

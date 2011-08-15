@@ -1,6 +1,6 @@
 % !TeX root =thesis.tex
 
-\chapter{Path integral approach for two-channel\label{ch:path2}}
+\chapter{Two-channel many-body model\label{ch:path2}}
 For narrow resonance, atoms have considerable weight in close-channel and the Pauli exclusion between two channels cannot be neglected.  A many-body framework needs to include both channels.  Path integral approach is particular suitable for crossover problem.   The Hubbard-Stratonovich transformation is powerful tool to study non-trivial degree of freedom (order parameter) in the system.  It is more or less equivalent to other approaches at mean-filed level (Appendix \ref{ch:mean}). But it has great advantage to be easily extended to explore the fluctuation over the mean-field result.  
 
 For two-channel problem, we write down the Hamiltonian as
@@ -274,17 +274,29 @@ Let us look at $h_{2\vk}$ (Eq. \ref{eq:pathInt2:h2}) first, it can be rewritten 
  h_{2\vk}\approx\frac{D_{2}}{(E_{1\,\vk}+E_{3\,\vk})}u_{\vk}^{2}
 \end{equation}
 %In three-species many-body problem, the above conclusion is still valid except at low-momentum (around or below Fermi energy) where Pauli exclusion between two channels is severe. 
-We can see the ${D_{2}}/{(E_{1\,\vk}+E_{3\,\vk})}$ is just the same as two-body wave function $\phi_{0}$ (when $k\ll\kappa$), while the extra factor $u_{\vk}^{2}$ describes the Pauli exclusion between two channels.  At the low-momentum, open-channel weight is large, phase space left for close-channel is limited, this is shown mathematically as small $u_{\vk}^{2}$ factor.   At high-momentum, $u_{\vk}^{2}\approx1$ and close-channel wave-function just follow two-body counterpart with a different normalization factor.   The two-body wave function for isolated close-channel spreads in large momentum space and has small weight in low momentum (below $k_{F}$), and therefore, we expected $u_{\vk}^{2}$ has small correction only.  $D_{2}$ is the product of two factors: 1, the normalization ($A$) factor as in two-body wave function normalized to 1(Appendix \ref{sec:pathInt2:short-range}); 2, total number of particles in close-channel.  
-It is not hard to see that $D_{2}$ is actually closely related to ``\emph{integrated contact intensity}'', $C$, in Tan's works (\cite{Tan2008-1,Tan2008-2}).  In his work, Tan concluded  the high-end of relative-momentum distribution asymptotically approaches  $C/k^{4}$.  Note that the high-end in his paper means momentum lower than $1/r_{c}$, but higher than any other scale ($1/a_{s}$, $1/a_{0}$).  In such scale, $u_{k}\approx1$ and especially, for close-to-threshold bound-state, $E_{b}\ll{}\frac{\hbar^{2}}{mr_{c}^{2}}$, so $C=\frac{D_{2}^{2}}{4m^{2}}$ for the close-channel.   
-
-As discussed, $1/(2\xi_{\vk}+\eta)$ is the form of two-body close-channel wave function, $\phi_0$, at low momentum.  If we ignore the Pauli exclusion between close-channel bound states, the close-channel wave function $h_{2\vk}$ can be written as .
+We can see the ${D_{2}}/{(E_{1\,\vk}+E_{3\,\vk})}$ is just the same as two-body wave function $\phi_{0}$ (when $k\ll\kappa$), while the extra factor $u_{\vk}^{2}$ describes the Pauli exclusion between two channels.  At the low-momentum, open-channel weight is large, phase space left for close-channel is limited, this is shown mathematically as small $u_{\vk}^{2}$ factor.   At higher momentum ($k_{F}\ll{k}\ll1/r_{c}$), $u_{\vk}^{2}\approx1$ and close-channel wave-function just follow two-body counterpart with a different normalization factor.   At even higher momentum ($>1/r_{c}$), the mean-field / saddle-point solution no longer applies.  And  two-body correlation, $h_{2\vk}$, should just follow two-body wave function (See Sec. \ref{sec:intro:as}).  Therefore, we replace $\frac{D_{2}}{(E_{1\,\vk}+E_{3\,\vk})}$ with two-body wave function $\phi_{0\vk}$ in Eq. \ref{eq:pathInt2:h2D2}, and we have 
 \begin{equation}
-h_{2\vk}=\alpha\phi^{(0)}_{\vk}u_{\vk}^{2}+o(\frac{E_{F}}{\eta})
+h_{2\vk}=\alpha\phi^{(0)}_{\vk}u_{\vk}^{2}
 \end{equation}
- where $\phi^{(0)}$ follows two-body \sch equation
+where $\phi^{(0)}$ follows two-body \sch equation.
 \begin{equation}\label{eq:pathInt2:phi}
 -E_{b}^{(0)}\phi_{0\,\vp}=\epsilon_{\vp}\phi_{0\,\vp}-\sum_{\vk}V \phi_{0\,\vk}
 \end{equation}
+By replacing with the two-body wave function,we ignore the Pauli exclusion between different close-channel bound-state $\phi_{0}$, while keeping Pauli exclusion between channels as $u_{k}^{2}$.
+This replacement also solves the renormalization problem automatically as the two-body wave function decays fast enough at high momentum and therefore remove the divergence in summation for $h_{2\vk}$.  
+
+
+The two-body wave function for isolated close-channel spreads in large momentum space and has small weight in low momentum (below $k_{F}$), and therefore, we expected $u_{\vk}^{2}$ has small correction only.  $D_{2}$ is the product of two factors: 1, the normalization ($A$) factor as in two-body wave function normalized to 1(Appendix \ref{sec:pathInt2:short-range}); 2, total number of particles in close-channel.  
+It is not hard to see that $D_{2}$ is actually closely related to ``\emph{integrated contact intensity}'', $C$, in Tan's works (\cite{Tan2008-1,Tan2008-2}).  In his work, Tan concluded  the high-end of relative-momentum distribution asymptotically approaches  $C/k^{4}$.  Note that the high-end in his paper means momentum lower than $1/r_{c}$, but higher than any other scale ($1/a_{s}$, $1/a_{0}$).  In such scale, $u_{k}\approx1$ and especially, for close-to-threshold bound-state, $E_{b}\ll{}\frac{\hbar^{2}}{mr_{c}^{2}}$, so $C=\frac{D_{2}^{2}}{4m^{2}}$ for the close-channel.   
+
+As discussed, $1/(2\xi_{\vk}+\eta)$ is the form of two-body close-channel wave function, $\phi_0$, at low momentum.  If we ignore the Pauli exclusion between close-channel bound states, the close-channel wave function $h_{2\vk}$ can be written as .
+%\begin{equation}
+%h_{2\vk}=\alpha\phi^{(0)}_{\vk}u_{\vk}^{2}+o(\frac{E_{F}}{\eta})
+%\end{equation}
+% where $\phi^{(0)}$ follows two-body \sch equation
+%\begin{equation}\label{eq:pathInt2:phi}
+%-E_{b}^{(0)}\phi_{0\,\vp}=\epsilon_{\vp}\phi_{0\,\vp}-\sum_{\vk}V \phi_{0\,\vk}
+%\end{equation}
 
 Let us look at the second equation Eq. \ref{eq:pathInt2:mfclose} first, as discussed before, $h_{2}$ is similar to $\phi^{(0)}$ in two-body wave function. More specifically
 

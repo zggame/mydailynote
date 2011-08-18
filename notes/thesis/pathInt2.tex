@@ -2,7 +2,11 @@
 
 \chapter{Two-channel many-body model\label{ch:path2}}
 For narrow resonance, atoms have considerable weight in close-channel and the Pauli exclusion between two channels cannot be neglected.  A many-body framework needs to include both channels.  Before dive into the detailed calculation, let us make some rough estimation on scale and build the intuition.  The two-body problem is well understood (Sec. \ref{sec:intro:twobody}).  %Extended to many-body, three different types of Pauli exclusion requires to be considered: Pauli exclusion within open-channel, Pauli exclusion within close-channel and Pauli exclusion between two channels. Let us estimate the scale of each with an artificial question.  We  calculate how much is reduced in two-body wave function by one single type of Pauli exclusion when a new pair is added.  This quality is quite unphysical without any real measurable counterpart, but it serves as a starting point to build intuition. 
-Let us discuss how much would change for each channels in many-body system.  In a low-energy (cold) fermion many-body system,  mostly the low energy part, up to Fermi energy, is modified due to many-body effects.  An two-body open-channel wave function is almost like a free wave ($k=0$) with small kernel in $r_c$.  In momentum space, this wave function has most weight within Fermi momentum, and therefore completely modified by many-body effect. Next open-channel pair is likely to occupy the next available level in $k$.   Open-channel requires full many-body treatment.  The situation is quite different in close-channel.  Close-channel bound state $\phi_{0}$ spreads mostly in $[0,1/a_{c}]$ range of momentum, only has tiny fraction within Fermi energy range if we assume the close-channel bound state is much smaller than inter-particle distance. In following analysis, many-body effects in close-channel is treated perturbatively.  As discussed in Sec. \ref{sec:intro:as} and Appendix \ref{sec:pathInt2:short-range}, the high momentum part of two-body correlation just follows the two-body wave function,  therefore, we can set correlation as $\phi_{0\vk}f(\vk)$, where $f(\vk)=0$ for $k\gg{k_{F}}$.  
+Let us discuss how much would change for each channels in many-body system.  Comparing to two-body system, a low-energy (cold) many-body system of fermions, mostly modifies the low energy part, around or below to Fermi energy; while leaves the high energy part intact.  A two-body open-channel wave function is almost like a free wave ($k=0$) with small kernel in $r_c$.  In momentum space, this wave function has most weight within Fermi momentum, and therefore completely modified by many-body effect. Next open-channel pair has to occupy the next available level in $k$ instead of the lowest energy two-body level.  This suggests that open-channel requires full many-body treatment.  The situation is quite different in close-channel.  Close-channel bound state $\phi_{0}$ spreads mostly in $[0,1/a_{c}]$ range of momentum, only has tiny fraction within Fermi energy range if we assume the close-channel bound state is much smaller than inter-particle distance. The smallness of this overlap makes sure that many-body effects in close-channel can be  treated perturbatively.  As discussed in Sec. \ref{sec:intro:as} and Appendix \ref{sec:pathInt2:short-range}, the high momentum part of two-body correlation just follows the two-body wave function,  therefore, we can set correlation as 
+\begin{equation}\label{eq:pathInt2:hphif}
+h_{\vk}\sim\phi_{0\vk}f(\vk)
+\end{equation}
+ where $f(\vk)=0$ for $k\gg{k_{F}}$.  
 
 %This is fairly straight-forward Pauli exclusion within open-channel.  Open-channel wave function is almost like a free wave ($k=0$) with small kernel in $r_c$.  The open-channel is like a Fermi sea with clear step at chemical potential in BCS side. It is less step-like in BEC  side, nevertheless, the lowest level ($k=0$) occupation is large and in the order $1$.   If adding a pair with the original wave-function, the normalization is simply going to be reduced by a factor in order of $1$.  Actually in BCS side, the next open-channel pair can only occupy the next $k$ level, which is nothing like the two-body wave function at all.  A many-body state is nothing like the simple exponential of two-body wave function.  Therefore, this type of Pauli exclusion calls for the most exact treatment, and indeed, we takes the anomalous correlation function, gap, and carry the non-perturbative (BCS) treatment all the way.
 %
@@ -11,7 +15,7 @@ Let us discuss how much would change for each channels in many-body system.  In 
 % The inter-channel Pauli exclusion sits in between of them.  If we take the open-channel as a simple Fermi gas (liquid).  The wave function of close-channel bound state $\phi_0$ spreads over $[0,1/a_c]$ in momentum space, a simple estimation of the overlap with open-channel Fermi sea is  $k_F^3(1/a_c)^{-3}\sim(a_c/a_0)^3\ll1$.  This effect is larger than the Pauli exclusion within close-channel but smaller than 1, therefore, we handle it perturbatively.  
 %
 
-Now let us get into the real calculation.  Path integral approach is particular suitable for this problem.   The Hubbard-Stratonovich transformation is powerful tool to study non-trivial degree of freedom (order parameter) in the system.  It is more or less equivalent to other approaches at mean-filed level (Appendix \ref{ch:mean}). But it has great advantage to be easily extended to explore the fluctuation over the mean-field result.  
+Now let us get into the  calculation.  Path integral approach is particular suitable for this problem.   The Hubbard-Stratonovich transformation provides powerful tool to study non-trivial degree of freedom (order parameter) in the system.  It is more or less equivalent to other approaches at mean-filed level (Appendix \ref{ch:mean}). But it has great advantage to be easily extended to explore the fluctuation over the mean-field result.  
 
 For two-channel problem, we write down the Hamiltonian as
 \begin{equation}\label{eq:pathInt2:ham2}
@@ -26,9 +30,9 @@ H&=\int{d^{d}r}\bigg\{\sum_{j}\bar\psi_{j}\mbr{\nth{2m}(-i\nabla)^{2}-\mu+\eta_{
 \end{equation}
 Here $\eta_{j}$ is the Zeeman energy of the specific hyperfine species.  ``a'' is the common species of two channels, (a,b) is the open channel and (a,c) is the close channel.  All the interactions ($U$, $V$, $Y$), are contact type, this simplifies Hubbard-Stratonovich transformation considerably.  It is plausible as we only study low-energy phenomenon for the short-range potential. 
 
-One drawback of contact interaction is that it is flat in momentum space, in another word, it pairs not only zero central-momentum pairs, but also finite central-momentum pairs.  Nevertheless, the saddle point (mean-field) solution settles at the zero central-momentum pairing, therefore the mean-field solution coincides with that of  variation method that only considering pairing of opposite momentum atoms.  On the other hand, the collective mode (fluctuation in order parameter) emerges naturally with including non-zero central-momentum interaction.  We do not need to introduce extra interaction term (as in \cite{AndersonBCS}) to study collective mode.   
+One drawback of contact interaction is that it is flat in momentum space, in another word, it pairs not only zero central-momentum pairs, but also finite central-momentum pairs.  Nevertheless, the saddle point (mean-field) solution settles at the zero central-momentum pairing, therefore the mean-field solution coincides with that of  variation method derived from pairing of only opposite momentum atoms.  On the other hand, the collective mode (fluctuation of order parameter) emerges naturally from the included non-zero central-momentum interaction.  We do not need to introduce extra interaction term (as in \cite{AndersonBCS}) to study collective mode.   
 
-There are three different types of Hilbert space in this chapter:  the coordinator space and its reciprocal momentum space (infinite dimension);   hyperfine spin, $a,\,b,\,c$ (3 dimension);  two channels $(a,b),\,(a,c)$ (2 dimension).  In principle, fermion field $\psi$ and $\bar\psi$ (and $\Delta$ and $\bar\Delta$ defined according to $\psi$ and $\bar\psi$),  both Grassman numbers, are independent to each other  and  not related as complex conjugate\footnote{Complex conjugate is not a well-defined concept for Grassman algebra}.  This is marked by using ``$\bar{\;}$''(bar) instead of normally used ``$^{\dg}$''(dagger) sign. In this chapter, $^{}\dg$ sign is reserved only for hermitian conjugate matrix in the later two finite-dimension spaces: hyperfine spin ($3\times3$ matrix) or channel ($2\times2$ matrix). 
+There are three different types of Hilbert space in this chapter:  the coordinator space and its reciprocal momentum space (infinite dimension);   hyperfine spin, $a,\,b,\,c$ (3 dimension);  two channels $(a,b),\,(a,c)$ (2 dimension).  In principle, fermion field $\psi$ and $\bar\psi$ (and $\Delta$ and $\bar\Delta$ defined according to $\psi$ and $\bar\psi$),  both Grassman numbers, are independent to each other  and  not related as complex conjugate\footnote{Complex conjugate is not a well-defined concept for Grassman algebra}.  This is marked by using ``$\bar{\;}$''(bar) instead of normally used ``$^{\dg}$''(dagger) sign. In this chapter, $^{}\dg$ sign is reserved only for hermitian conjugate matrix in the later two finite-dimension spaces: hyperfine spins ($3\times3$ matrix) or channels ($2\times2$ matrix). 
 
 We can introduce a unitary transformation $Q$ (mixing two channels) to diagonalize the interaction matrix into diagonal matrix $A$.
 \begin{equation}
@@ -162,7 +166,7 @@ Note that at this stage either $D(\vr,\tau)$ or $\Delta(\vr,\tau)$ is not necess
 
 \section{Diagonalize Green's function\label{sec:diagonalGreen}}
 Eq. \eqref{eq:pathInt2:actionD} looks fairly innocent and compact.  Nevertheless, it has all the physics in it and is not as simple as it looks.  The major problem comes from term $\tr\ln\nG$, which includes  logarithm and trace over an infinite-dimension matrix.   All these operations are fairly straight-forward if we can diagonalize  Green's function (or its inverse) in a proper basis.    Actually, we have already off on a good start.  It is not hard to see $\nG$ is decoupled in frequency-momentum space (Eqs.  \ref{eq:pathInt2:nGDeltaK}, \ref{eq:pathInt2:nG}).  It is however mixed in the $3\times3$ hyperfine-spin space though.  The rest of this section is dedicated to diagonalize the $3\times3$ matrix in hyperfine-species space.  Note that in principle, the following discussion is not limited for constant $D$, but also applies to inhomogenous $D(\omega_{n},\vk)$ as well because the $3\times3$ hyperfine space is independent to the frequency-momentum space.   Here we use the approach in Sec. \ref{sec:diagonalizeGreen1} to diagonalize it.   
-In current problem, we need to diagonalize a $3\times3$ matrix Eq. \ref{eq:pathInt2:nG}, in another word, we need to figure out the Bogoliubov canonical transformation over which the hamiltonian/action is diagonalized.   Eigen-problem of $3\times3$ matrix involves solving a cubic equation. An exact solution exists in principle.  However,  it offers little intuition in writing the exact result, instead we  find that  spectrum from the broad-resonance, where the only effect of close-channel is to modify the effective interaction of open-channel, serves a reasonable lowest order approximation and we proceeds to find the first order of correction over it (See Appendix \ref{sec:diagonalize} and \ref{sec:pathApp:consistency}). 
+In current problem, we need to diagonalize a $3\times3$ matrix Eq. \ref{eq:pathInt2:nG}, in another word, we need to figure out the Bogoliubov canonical transformation over which the hamiltonian/action is diagonalized.   Eigen-problem of $3\times3$ matrix involves solving a cubic equation. An exact solution exists in principle.  However,  it offers little intuition in writing the exact result, instead we  find that  spectrum from the broad-resonance, where the only effect of close-channel is to modify the effective interaction of open-channel, serves a reasonable lowest order approximation and we proceeds to find the next order of correction over it (See Appendix \ref{sec:diagonalize} and \ref{sec:pathApp:consistency}). 
 
 
 Within the assumption that spectrum  deviates not too much from na\"{i}ve broad-resonance solution, we  break down the unitary transformation into two steps $T$ and $L$. 
@@ -186,7 +190,7 @@ Apply $T$ onto $G^{-1}$, we have
 T_k^{\dg}G_k^{-1}T_k=i\omega_nI+\mtrx{-E_k&0&u_kD_2\\0&+E_k&v_kD_2\\u_kD_2&v_kD_2&+\xi_k+\eta}
 \end{equation}
 We regard the off-diagonal elements as perturbation.  This matrix can then be diagonalized with  unitary transformation $L_{\vk}$ within the first order of $D_{2}^{2}/(E\eta)$  (Please see Appendix \ref{sec:diagonalize} for details.)
-\begin{equation}
+\begin{equation}\label{eq:pathInt2:Bapprox}
 \begin{split}
 B_{\omega_{n},\vk}&=i\omega_{n}I-
 	\mtrx{E_{1}{}_{\vk}&0&0\\0&-E_{2}{}_{\vk}&0\\0&0&-E_{3}{}_{\vk}}\\
@@ -276,13 +280,25 @@ D_{2}&=\sum{}Yh_{1\vk}+\sum{}Vh_{2\vk}\label{eq:pathInt2:mfclose}
 \end{align}
 As pointed out previously, both $h_{i\vk}$ approach $1/\epsilon_{\vk}$ in high momentum and all the summation diverges at high momentum if we take the interaction as contact and pull them out of the summation.  However, we note that the real potential is not contact.  So the summation should be capped at high-momentum, which removes the divergence.  In single channel problem, (Sec. \ref{sec:pathInt:meanfield}), to avoid the arbitrary high-momentum cutoff, we  introduce a relation involving s-wave scattering length $a_{s}$, Eq. \eqref{eq:pathInt:as}, which has the similar divergence in high-momentum.  We subtract it from the summation.  Now the difference behaves well in high-momentum and a cutoff is no longer necessary.  In principle, we can do the same in two channels and introduce the two-channel equivalent of s-wave scattering length, a $2\times2$ scattering amplitude matrix.  However, this $2\times2$ matrix is awkward in definition and not clear for the physical meaning.   Therefore, we adopt a two-step process with better physical intuition in it.   
 
+As discussed at the beginning of this chapter, the close-channel correlation follows its two-body bound-state in high momentum, and therefore we can write it as $h_{2\vk}\propto\phi_{0\vk}f(\vk)$ with factor $f(\vk)$ encapsulating all the many-body effects. This automatically cure the divergence involving $h_{2\vk}$ because $\phi_{0\vk}$ decays fast enough in high momentum and gives no singularity when integrated.   With $h_{2\vk}$ taken care of, we remove the singularity of integral involving open-channel correlation $h_{1\vk}$ using the regular method by subtracting low-energy two-body interacting kernel $a_{s}$. 
 
- Besides the assumption of short-range potential, we makes another assumption:  the in-resonance two-body bound-state of isolated close-channel, $\phi$, is much smaller in size than particle-particle distance, although larger than the potential range, $r_{c}$.     ($r_{c}\ll{}a_{c}\ll{}a_{0}$).  The problem is a genuine 3-species problem and requires other techniques if the close-channel bound-state is about the size of or larger than  inter-particle distance. Within $r_{c}$, the  potential determine the specific shape of the wave-functions, however, at long distance (larger than $r_{c}$), i.e. low momentum, the behavior should be quite universal for these bound states except an overall normalization factor.  At the lowest order, $\phi_{0\vk}\sim\nth{\kappa^{2}+k^{2}}$ where $\kappa$ is the momentum scale related to binding energy or tuning, $\kappa^{2}/2m=E_{b}$.   In the interesting region where momentum is not too larger than Fermi momentum, this quantity is actually very small and approximately a constant, $\nth{\kappa^{2}}$, because $\kappa{}\gg{}k_{F}$.  Across the crossover, the internal structure of wave-function does not change much, but the overall normalization does vary along tuning.  However, \emph{it is always small in the low momentum region  even when total close-channel weight is large.}
- 
-Let us look at $h_{2\vk}$ (Eq. \ref{eq:pathInt2:h2}) first, it can be rewritten into such form
+
+Besides the assumption of short-range potential, we makes another assumption:  the in-resonance two-body bound-state of isolated close-channel, $\phi$, is much smaller in size ($a_{c}$) than particle-particle distance ($a_{0}$), although larger than the potential range ($r_{c}$).     ($r_{c}\ll{}a_{c}\ll{}a_{0}$).  The problem is a genuine 3-species problem and requires other techniques if the close-channel bound-state is about the size  or even larger than  inter-particle distance. Within $r_{c}$, the  potential determine the specific shape of the wave-functions; while, at free region, $\mathcal{D}$ ($r\gg{r_{c}}$ see Sec. \ref{sec:intro:as}), system is ``free'', all the details of potential are encapsulated in a few parameters (for example, s-wave scattering length, $a_{s}$).       %    the behavior should be quite universal for these bound states except an overall normalization factor. 
+  Across the crossover, the internal structure of correlation ($h_{2\vk}$) at medium and high momentum ($k\gg{k_{F}}$) follows the two-body wave function ($\phi_{0\vk}$) does not change much, while the overall normalization does vary along tuning.   At low momentum, we can introduce a factor for  many-body effect as illustrated in Eq. \ref{eq:pathInt2:hphif}.   Eq. \ref{eq:pathInt2:h2} actually follows such form fairly well in the medium and low momentum.  In the lowest order, we have $u_{\vk}^{2}\approx\frac{E_{1\,\vk}+\xi_{\vk}}{E_{1\,\vk}+E_{2\,\vk}}$ and it serves as the many-body modifier.  At high momentum ($>1/r_{c}$), the mean field result is not really reliable as showed in the divergence of integral. $D_{2\vk}$ at high momentum is no longer a constant, but  has specific form determined by the specific form of  potential. 
+
+
+ Let us look at the close-channel correlation $h_{2\vk}$ (Eq. \ref{eq:pathInt2:h2}) first. In the lowest order, we have $u_{\vk}^{2}\approx\frac{E_{1\,\vk}+\xi_{\vk}}{E_{1\,\vk}+E_{2\,\vk}}$, $h_{2\vk}$ can be rewritten into such form
 \begin{equation}\label{eq:pathInt2:h2D2}
  h_{2\vk}\approx\frac{D_{2}}{(E_{1\,\vk}+E_{3\,\vk})}u_{\vk}^{2}
 \end{equation}
+ 
+ 
+ 
+
+
+At the lowest order, $\phi_{0\vk}\sim\nth{\kappa^{2}+k^{2}}$ where $\kappa$ is the momentum scale related to binding energy or tuning, $\kappa^{2}/2m=E_{b}$.     In the many-body interesting region where momentum is not too larger than Fermi momentum, this quantity is actually very small and approximately a constant, $\nth{\kappa^{2}}$, because $\kappa{}\gg{}k_{F}$.
+Nevertheless, \emph{the full close-channel (including normalization) is always small in the low momentum region  even when total close-channel weight is large.}
+
 %In three-species many-body problem, the above conclusion is still valid except at low-momentum (around or below Fermi energy) where Pauli exclusion between two channels is severe. 
 We can see the ${D_{2}}/{(E_{1\,\vk}+E_{3\,\vk})}$ is just the same as two-body wave function $\phi_{0}$ (when $k\ll\kappa$) besides normalization, while the extra factor $u_{\vk}^{2}$ describes the Pauli exclusion between two channels.  At the low-momentum, open-channel weight is large, phase space left for close-channel is limited, this is shown mathematically as small $u_{\vk}^{2}$ factor.   At higher momentum ($k_{F}\ll{k}\ll1/r_{c}$), $u_{\vk}^{2}\approx1$ and close-channel wave-function just follow two-body counterpart with a different normalization factor.   At even higher momentum ($>1/r_{c}$), the mean-field / saddle-point solution no longer applies.  And  two-body correlation, $h_{2\vk}$, should just follow two-body wave function (See Sec. \ref{sec:intro:as}).  Therefore, we replace $\frac{D_{2}}{(E_{1\,\vk}+E_{3\,\vk})}$ with two-body wave function $\phi_{0\vk}$ in Eq. \ref{eq:pathInt2:h2D2}, and we have 
 \begin{equation}\label{eq:pathInt2:hphi}
@@ -380,7 +396,7 @@ Item \ref{item:pathInt2:mu} corresponds to the simple many-body effect  universa
 
 Furthermore,  close look into $\lambda_1$ and $\lambda_2$ (Appendix \ref{sec:pathInt2:lambda}) reveals that they varies slowly with energy / momentum and is a function of density.  They describe  fundamental many-body effects, and do not have a counterpart in two-body problem.  
 
-Nevertheless, $\lambda_1$ is much smaller than the  constant $\kappa$.  So the shift is not very large.  But it shifted with the change of density.  However, in the many-body system, no dramatic jump in physical quantities happens at resonance due to the crossover nature, and it is hard to observe.  Nevertheless, this effect can show up at two-body level experiments.  
+Nevertheless, $\lambda_1$ is much smaller than the  constant $\kappa$.  So the shift is not very large.  But it shifted with the change of density.  However, in the many-body system, no dramatic jump in physical quantities happens at resonance due to the crossover nature, and it is hard to observe this shift.  Nevertheless, this effect can show up at two-body type experiments.  
 
 \subsection{Number equation}
 We can derive two number equations for each channel.  
@@ -423,7 +439,7 @@ All terms are well behaved in 3D and does not need any renomalization.
 %\input{oldTwoChannelMeanField}
 
 \section{Fermionic mode and Bogoliubov transformation}
-In fact, if we limit ourselves in mean field level, we can interpret the above transform $T_\vk{}L_\vk$ as Bogoliubov canonical transformation and $B$ gives us spectrum of fermionic quasi-particle excitation.  At mean field, both $D_{1}$ and $D_{2}$ are taken as constants. Furthermore, they are taken as real.  From Eqs. (\ref{eq:pathInt2:xiExpand}-\ref{eq:pathInt2:xiExpand3}), we see that the fermionic excitation modes basically follow the pattern in broad resonance.  In broad resonance where close channel only modifies the interaction in open channel,  there are basically three quasi-particle modes: two (degenerate) Bogoliubov quasi-particle modes  in open channel, $E_{\vk}=\sqrt{\xi^{2}_{\vk}+D_{1}^{2}}$; and one high normal fermi excitation mode in close-channel, $\xi_{\vk}+\eta$.  In narrow resonance, first of all, the gap $D_{1}$ is modified  by consideration of extra Pauli exclusion though the correction is in order of $\frac{D_2^2}{\eta}$.  Once that is taken into account, the above conclusion is approximately correct except high-order correction in $\frac{D_{2}^{2}}{\eta}$.   The originally double degenerate excitation now split by $\frac{D_{2}^{2}}{\xi_{\vk}+\eta}$, while the third high excitation has a small correction in the same order as well.  From Eq. \eqref{eq:pathInt2:actionMix} and Eq. \eqref{eq:pathInt2:B}, the action is diagonal for new fermionic (quasi-particle) field $\Phi_\vk\equiv(\phi_{\alpha\,\vk},\bar\phi_{\beta\,-\vk},\bar\phi_{\gamma\,-\vk})=L^{\dg}_{\vk}T^{\dg}_{\vk}\Psi_{\vk}$ ($\Psi_\vk=(\psi_{\alpha\,\vk},\bar\psi_{\beta\,-\vk},\bar\psi_{\gamma\,-\vk}$)).   Translate it into operator language and use $\alpha$, $\beta$, and $\gamma$ to denote the new quasi-particles.  We have the relation
+In fact, if we limit ourselves in mean field level, we can interpret transform $T_\vk{}L_\vk$ in Eq. \eqref{eq:pathInt2:B} as Bogoliubov canonical transformation and $3\times3$ matrix $B$ in Eq. \eqref{eq:pathInt2:Bapprox} gives us spectrum of fermionic quasi-particle excitation.  At mean field, both $D_{1}$ and $D_{2}$ are taken as constants and real.  From Eqs. (\ref{eq:pathInt2:xiExpand}-\ref{eq:pathInt2:xiExpand3}), we see that the fermionic excitation modes basically follow the pattern in broad resonance.  In broad resonance where close channel only modifies the interaction in open channel,  there are basically three fermionic quasi-particle modes: two (degenerate) Bogoliubov quasi-particle modes  in open channel, $E_{\vk}=\sqrt{\xi^{2}_{\vk}+D_{1}^{2}}$ as in BCS theory; and one high fermionic excitation mode in close-channel, $\xi_{\vk}+\eta$, as in normal gas.  In narrow resonance, first of all, the gap $D_{1}$ is modified  by consideration of extra Pauli exclusion though the correction is in order of $\frac{D_2^2}{\eta}$.  Once that is taken into account, the above conclusion is approximately correct except high-order correction in $\frac{D_{2}^{2}}{\eta}$.   The originally double degenerate excitation now split by $\frac{D_{2}^{2}}{\xi_{\vk}+\eta}$, while the third high excitation has a small correction in the same order as well.  From Eq. \eqref{eq:pathInt2:actionMix} and Eq. \eqref{eq:pathInt2:B}, the action is diagonal for new fermionic (quasi-particle) field $\Phi_\vk\equiv(\phi_{\alpha\,\vk},\bar\phi_{\beta\,-\vk},\bar\phi_{\gamma\,-\vk})=L^{\dg}_{\vk}T^{\dg}_{\vk}\Psi_{\vk}$ ($\Psi_\vk=(\psi_{\alpha\,\vk},\bar\psi_{\beta\,-\vk},\bar\psi_{\gamma\,-\vk}$)).   Translate it into operator language and use $\alpha$, $\beta$, and $\gamma$ to denote the new quasi-particles.  We have the relation
 \begin{equation}
 \mtrx{\alpha_{\vk}\\\beta_{-\vk}^{\dg}\\\gamma_{-\vk}^{\dg}}
 =L^{\dg}_{\vk}T^{\dg}_{\vk}  \mtrx{a_{\vk}\\b_{-\vk}^{\dg}\\c_{-\vk}^{\dg}}
@@ -433,6 +449,13 @@ and the new Hamiltonian at mean-field level is
 \hat{H}=f(D)+E_{1\,\vk}\alpha^{\dg}_{\vk}\alpha^{}_{\vk}
 +E_{2\,\vk}\beta^{\dg}_{-\vk}\beta^{}_{-\vk}+E_{3\,\vk}\gamma^{\dg}_{-\vk}\gamma^{}_{-\vk}
 \end{equation}
+\begin{align}\tag{\ref{eq:pathInt2:xiExpand}}
+E_{1\vk}&\approx{}E_{\vk}+\frac{D_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{1\vk}\\
+E_{2\vk}&\approx{}E_{\vk}-\frac{D_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{2\vk}
+\label{eq:pathInt2:xiExpand2}\\
+E_{3\vk}&\approx{}\xi_{\vk}+\eta-\frac{D_{2}^{2}}{2(\xi_{\vk}+\eta)}&\equiv{}&\xi_{\vk}+\eta+\gamma_{3\vk}
+\label{eq:pathInt2:xiExpand3}
+\end{align}
 This clearly shows that $\alpha_{\vk}$, $\beta_{\vk}$, and $\gamma_{\vk}$ is fermionic quasi-particle excitation modes with spectrum $E_{i\,\vk}$.  And $L^{\dg}_{\vk}T^{\dg}_{\vk}$ is  Bogoliubov canonical transformation for them.  Here we see in the excitation, different species of opposite momentum, $(a,b)$ and $(a,c)$, mixed together to form the elementary excitation due to the paring in the ground state.  
 
 
@@ -442,12 +465,12 @@ This clearly shows that $\alpha_{\vk}$, $\beta_{\vk}$, and $\gamma_{\vk}$ is fer
 %\input{collectiveMode1}
 
 %\subsubsection{Alternative Approach: Phase fluctuation mode \label{sec:phaseFluctuation}}
- Action of $D$, $S(\bar{D_i},D_i)$ Eq. \eqref{eq:pathInt2:nG} and Eq. \eqref{eq:pathInt2:actionD}, is invariant over if the phases of $D_{1\,\vk}$ and $D_{2\,\vk}$ rotate simultaneously. We therefore conclude that we should have a massless (Goldstone) mode.  And particularly, this mode is related to the local phase invariance. 
+ Action of $D$, $S(\bar{D_i},D_i)$ Eq. \eqref{eq:pathInt2:nG} and Eq. \eqref{eq:pathInt2:actionD}, is invariant if the phases of $D_{1\,\vk}$ and $D_{2\,\vk}$ rotate simultaneously. We therefore conclude that there exists a massless (Goldstone) mode.  And particularly, this mode is related to the local phase invariance. 
 \begin{equation*}
 D_{i}(x)\rightarrow{}D_{i}(x)e^{i2\theta(x)}\qquad{}
 \bar{D}_{i}(x)\rightarrow{}\bar{D}_{i}(x)e^{-i2\theta(x)}
 \end{equation*}
-This corresponding to the translation of fermionic operator $\psi$
+This corresponding to  phase  rotation of fermionic variable $\psi$
 \begin{equation*}
 \psi_{i}(x)\rightarrow{}\psi_{i}(x)e^{i\theta(x)}\qquad{}
 \bar{\psi}_{i}(x)\rightarrow{}\bar{\psi}_{i}(x)e^{-i\theta(x)}
@@ -464,7 +487,7 @@ S_1[\theta,\bar\psi_{i},\psi_{i}]=&\int{dx}\sum_{j}\Big\{
 S_2[\theta,\bar\psi_{i},\psi_{i}]=&\int{dx}\sum_{j}\nth{2m}(\nabla\theta)^{2}\bar\psi_{j}\psi_{j}
 \end{align}
 \end{subequations}
-Note that here $D^{(0)}$ is a constant 2-component vector, no longer functional variables.  Here we see that $S_{0}$ has the same form as before except it only takes the mean field value of $D$ and it is described by the same correlation $G_{0}$ (Eq. \ref{eq:pathInt2:nG}).  We can regard $S_{1}$ and $S_{2}$ as perturbation for the so-called gradient expansion on $\nabla\theta$.  It is then obvious that $S_{1}$ is in the first order while $S_{2}$ is in the second order.  Use the same spinor representation as before, $S$ is bilinear of $\psi$ and therefore we can formally integrate out $\psi$. 
+Note that here $D^{(0)}$ is now a constant 2-component vector, no longer functional variables.  Here we see that $S_{0}$ has the same form as before except it only takes the mean field value of $D$ and it is described by the same correlation $G_{0}$ (Eq. \ref{eq:pathInt2:nG}).  We can regard $S_{1}$ and $S_{2}$ as perturbation for the so-called gradient expansion on $\nabla\theta$.  It is then obvious that $S_{1}$ is in the first order while $S_{2}$ is in the second order.  Use the same spinor representation as before, $S$ is bilinear of $\psi$ and therefore we can formally integrate out $\psi$. 
 \begin{equation}
 S[\theta]=const.+\ln\det\nG(\theta)
 \end{equation}
@@ -501,17 +524,18 @@ Here we use the fact $\nth{{\beta{}V}}\sum_{k}\tr(\hat{G}_{0\,k}\sigma_3)=n$. $\
 &\quad+\nth{m^2}\sum_{i,j}q_iq_j(k_i+\frac{q_i}{2})(k_j+\frac{q_j}{2})\tr(\hat{G}_{0,k+q}\hat{G}_{0\,k})\Big]\nonumber\\
 \equiv&\sum_{q}\theta(q)\theta(-q)\big[-\pi^{(0)}(q)\omega_m^2+\sum_{ij}\pi^{(\perp)}_{ij}(q)q_iq_j\big]
 \end{align}
-\emph{Here we only interested in the low-energy behavior of the mode and therefore we only use $\pi(0)$.} Use the previous result of Sec. \ref{sec:diagonalGreen}, we can calculate the Green's function in the lowest and first order of $D_i/\eta$ in $\pi$.  After some long but straigh-forward algebra (see Sec. \ref{sec:calculatePi}), we find
+\emph{Here we only interested in the low-energy behavior of the mode and therefore we only use $\pi^{(0)}(0)$ and $\pi^{(\perp)}(0)$.} Use the previous result of Sec. \ref{sec:diagonalGreen}, we can calculate the Green's function in the lowest and first order of $D_i/\eta$ in $\pi$.  After some long but straigh-forward algebra (see Sec. \ref{sec:calculatePi}), we find
 \begin{gather}
-\pi^{(0)}(0)\approx\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{D_{1}^{2}D_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}\\
+\pi^{(0)}(0)\approx\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{D_{1}^{2}D_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}
+\label{eq:pathInt2:pi0}\\
 \pi^{(\perp)}(0)=0
 \end{gather}
 Combine all these together
 \begin{equation}
-S[\theta]=\int{dx}\sum_{q}\theta(q)\theta(-q)\big[\nth{2}\pi^{(0)}(q)\omega_m^2-\frac{n}{2m}q^2\big]
+S[\theta]=\int{dx}\sum_{q}\theta(q)\theta(-q)\big[\nth{2}\pi^{(0)}(0)\omega_m^2-\frac{n}{2m}q^2\big]
 \end{equation}
-And this determines the velocity of the Anderson-Bogoliubov collective mode.  We see that its behavior is qualitatively same as  single-channel with some correction in the order of $D_{i}/\eta$.
-
+And this determines the velocity of the Anderson-Bogoliubov collective mode.  We see that its behavior is qualitatively same as  single-channel with some correction in the order of $D_{i}/\eta$. We can see that  the second term in Eq. \eqref{eq:pathInt2:pi0} is
+the only correction in the next order.
 
 
 \begin{subappendices}

@@ -51,7 +51,7 @@ L=I+
 Here we use $uv=D_{1}/2E$
 
 
-\section{Derive mean-field equation \ref{eq:pathInt2:mf}\label{sec:pathInt2:deriveMF}}
+\section{Derive mean-field equation \eqref{eq:pathInt2:mf}\label{sec:pathInt2:deriveMF}}
 For a $3\times3$ matrix as in Eq. (\ref{eq:pathInt2:nG}), 
 \begin{equation}\tag{\ref{eq:pathInt2:nG}}
 \mathcal{G}^{-1}=\begin{pmatrix}
@@ -95,6 +95,26 @@ And we have
  \end{align*}
 Invert the interaction matrix $\tilde{U}$ and we have Eq.  \ref{eq:pathInt2:mf}.
 
+
+\section{Wave function for short-range potential}\label{sec:pathInt2:short-range}
+Here we discuss some possible generalization on the wave function for short-range potential.  This topic has been studied by Shizhong Zhang \cite{shizhongUniv}. We will use some similar ideas.  Outside the range $r_{c}$ of a short-range potential,  atom is free and  \sch equation is very simple.
+\begin{equation}
+-\frac{\hbar^{2}}{2m}\nabla^{2}\psi=E\psi
+\end{equation}
+The equation has a simple solution for s-wave, $\psi=A{e^{-\kappa{r}}}/{r}$ ($\kappa$ is imaginary for scattering state), here normalization $A$ is determined  by connecting it with the short-range part of the wave function, $\varphi_0$. 
+
+Let us discuss the bound-state first, $\kappa>0$.  In the momentum space, there is also a universal behavior at low-momentum, where $kr_{c}\ll1$.   
+\begin{equation*}
+\psi_{k}=\nth{(2\pi)^{3/2}}\int{d\vr}(\varphi_{0}+A\frac{e^{-\kappa{r}}}{r})e^{-i\vk\cdot\vr}
+\end{equation*}
+The first part for $\varphi_{0}$ has very little $k$ dependence and the second terms give
+\begin{equation*}
+\psi_{k}=\varphi_{0\,k}+\nth{(2\pi)^{3/2}}\int{d\vr}(A\frac{e^{-\kappa{r}}}{r})e^{-i\vk\cdot\vr}=\varphi_{0\,k}-(\frac{2}{\pi})^{1/2}A\nth{k^{2}+\kappa^{2}}
+\end{equation*}
+
+Furthermore, if the bound-state is the one close to threshold, the most weight is outside $r_{c}$, we can neglect the first term and we have universal behavior at low-momentum while the normalization is determined in two-body problem.   Besides  bound-state, if interaction is weak and short-range, the low energy scattering state is well described by s-wave scattering state $\psi\propto1/r-1/a$ (Eq. \ref{eq:intro:Bethe}), and its Fourier transform in momentum space has the similar form $1/k^{2}$.  When considering many-body physics, in the low momentum below or around the scale of Fermi momentum,  wave function  is modified by many-body effect; but in the medium momentum, (still much smaller than $1/r_{c}$), this universal behavior is preserved.  The distribution of particle in such momentum, $k_{F}\ll{k}\ll{1/r_{c}}$, is $1/k^{4}$. This is actually the ``high-momentum'' (medium here) behavior ($C/k^{4}$) described in Tan's work about universality\cite{Tan2008-1,Tan2008-2}. 
+
+On the other hand, at very high momentum ($k\gg1/r_{c}$), the second term in the above is very small.  This is because the smooth tail part of the wave function contributes little in high-oscillation.  The high-frequency Fourier component is solely determined by the wave function within the potential range.   This can be extend beyond two-body wave function to two-body correlation as long as the long-wave-length part is smooth.  In all cases, two-body, or many-body, very high-frequency of two-body correlation follows the two-body wave function.  
 
 
 
@@ -249,7 +269,7 @@ Eqs. \ref{eq:pathInt2:xiExpand} and Eqs. \ref{eq:pathInt2:xiExpand2} is slightly
  \frac{\gamma_{i}}{\xi_{i}}<\frac{D_{2}^{2}}{E_{\vk}\eta}\sim\frac{\eta^{2}\frac{k_{Fc}^{3}}{\kappa^{3}}}{k_{F}^{2}\eta}\sim\frac{k_{F}}{\kappa}\ll1
 \end{equation*}
 
-More deeply, in the secular equation that leads to spectrum, Eq. \ref{eq:pahtApp:secular}.  We convert it back to normal scale without $E_{\vk}$,  (ignore subscript $\vk$ in the following equations)
+More deeply, in the secular equation that leads to spectrum, Eq. \ref{eq:pahtApp:secular}.  We convert it back to normal scale without $E_{\vk}$,  (We drop subscript $\vk$ in the following equations for simplicity)
 \begin{equation*}
 (x^{2}-E^{2})(x-\xi-\eta)-D_{2}^{2}x+D_{2}^{2}E(u^{2}-v^{2})=0
 \end{equation*}

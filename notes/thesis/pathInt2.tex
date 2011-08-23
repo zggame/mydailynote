@@ -264,21 +264,23 @@ Use the same techniques as Eq. (\ref{eq:pathInt:diffTr}), we have two saddle poi
   h_{2\vk}=\av{\psi_{a,-\frac{\vk}{2}}\psi_{c,+\frac{\vk}{2}}}
   =D_{2}\frac{E_{1\,\vk}+\xi_{\vk}}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}\label{eq:pathInt2:h2}
   \end{gather}
-At high-momentum, both $h_{\vk}$ behaves as $1/\epsilon_{\vk}$ and therefore diverges for summation in 3D.  However, they can be  renormalized once we recognize the interaction is not really contact and the summation is capped at a high momentum in the order of inverse of potential range.  
+
+
 Comparing Eq. \ref{eq:pathInt2:mf} with gap equation for single-channel problem, we  see that $D_{1,2}$ are  direct counterpart of order parameter $\Delta$ in single-channel problem. 
 If we simply take the lowest order of $\xi_{i}$, and ignore the close-channel, it is easy to identify $h_{1\vk}\approx{D_{1}}/(2E_{\vk})$ as the many-body wave function $F_{\vk}$ in single channel BEC-BCS crossover problem.  
 
 
-It is interesting to look at Eq. \ref{eq:pathInt2:h2} more carefully, in BCS side, $\mu\approx{}E_{F}$, at low momentum ($k<k_{F}$), $\xi_k<0$ and $h_{2\,\vk}$ is close to 0; at higher momentum where $\epsilon_{\vk}>\mu$, we have $E_{2\,\vk}\approx\xi_{\vk}$, $E_{3\,\vk}\approx\xi_{\vk}+\eta$.  All these lead to $  h_{2\vk}\approx\frac{D_2}{(2\epsilon+\eta)}$, which coincides with two-particle wave function for such range ( momentum $k$ smaller than inverse of potential range $1/a_{c}$ as well as  characteristic of close-channel binding energy ``$\kappa$'', but larger than other scale, such as $k_{F}$, $1/a_{s}$).
+At high-momentum, both $h_{1\vk}$ and $h_{2\vk}$ behave as $1/\epsilon_{\vk}$ and it diverges when summation is converted to integral in 3D.  This divergence can be mitigated by setting a high-momentum cutoff in integral or recognizing the decay in high momentum of interaction.  It is not unique in many-body and exists in the two-body physics if we take the high-momentum component of wave function simply as $1/\epsilon_{\vk}$ as well.  In the next section, we proceed to  remove divergence of summation in $h_{1\vk}$ and $h_{2\vk}$ by noting the same divergence in two-body wave function and manipulating accordingly. 
+%It is interesting to look at Eq. \ref{eq:pathInt2:h2} more carefully, in BCS side, $\mu\approx{}E_{F}$, at low momentum ($k<k_{F}$), $\xi_k<0$ and $h_{2\,\vk}$ is close to 0; at higher momentum where $\epsilon_{\vk}>\mu$, we have $E_{2\,\vk}\approx\xi_{\vk}$, $E_{3\,\vk}\approx\xi_{\vk}+\eta$.  All these lead to $  h_{2\vk}\approx\frac{D_2}{(2\epsilon+\eta)}$, which coincides with two-particle wave function for such range ( momentum $k$ smaller than inverse of potential range $1/a_{c}$ as well as  characteristic of close-channel binding energy ``$\kappa$'', but larger than other scale, such as $k_{F}$, $1/a_{s}$).
 %;  at very high momentum where $\epsilon_{\vk}>\eta, 1/a_c$, $D_2$ can no longer be treated as a constant and decays with energy, its specific form is determined by the specific short-range shape of potential. We expect the high-momentum normalization follows the middle-momentum normalization when comparing to two-body bound state ($D_2$ here is the normalization factor.  See sec \ref{sec:intro:as}).  Only in the low-momentum, it differs from the two-body wave function and that is where 
  
 \subsection {Renormalization of mean field equation}
 We can rewrite the mean-field equations \ref{eq:pathInt2:mf} as 
 \begin{align}
-D_{1}&=\sum{}Uh_{1\vk}+\sum{}Yh_{2\vk}\label{eq:pathInt2:mfopen}\\
-D_{2}&=\sum{}Yh_{1\vk}+\sum{}Vh_{2\vk}\label{eq:pathInt2:mfclose}
+D_{1\vp}&=\sum{}U_{\vp\vk}h_{1\vk}+\sum{}Y_{\vp\vk}h_{2\vk}\label{eq:pathInt2:mfopen}\\
+D_{2\vp}&=\sum{}Y_{\vp\vk}h_{1\vk}+\sum{}V_{\vp\vk}h_{2\vk}\label{eq:pathInt2:mfclose}
 \end{align}
-As pointed out previously, both $h_{i\vk}$ approach $1/\epsilon_{\vk}$ in high momentum and all the summation diverges at high momentum if we take the interaction as contact and pull them out of the summation.  However, we note that the real potential is not contact.  So the summation should be capped at high-momentum, which removes the divergence.  In single channel problem, (Sec. \ref{sec:pathInt:meanfield}), to avoid the arbitrary high-momentum cutoff, we  introduce a relation involving s-wave scattering length $a_{s}$, Eq. \eqref{eq:pathInt:as}, which has the similar divergence in high-momentum.  We subtract it from the summation.  Now the difference behaves well in high-momentum and a cutoff is no longer necessary.  In principle, we can do the same in two channels and introduce the two-channel equivalent of s-wave scattering length, a $2\times2$ scattering amplitude matrix.  However, this $2\times2$ matrix is awkward in definition and not clear for the physical meaning.   Therefore, we adopt a two-step process with better physical intuition in it.   
+The first thing to notice is that we restore the momentum dependence of interaction.  As pointed out previously, both $h_{i\vk}$ approach $1/\epsilon_{\vk}$ in high momentum and all the summation diverges at high momentum when converted to integral in 3D if we take the interaction as contact and pull them out of the summation.  However, we note that the real potential is not contact.  One way to remove the divergence is to  limit the summation/integral to a cutoff at high-momentum while keeping the interaction contact.  However an arbitrary cutoff is not desirable.  Alternatively, we can remove the divergence by restoring the momentum dependence in interaction and recognizing the decay for high-momentum in them.  The problem here is that those microscopic bare interaction is hard to pin down.      More readily available and observable is the low-energy effective interaction matrix elements.             In single channel problem, (Sec. \ref{sec:pathInt:meanfield}),  we  introduce a relation involving two-body s-wave scattering length $a_{s}$, Eq. \eqref{eq:pathInt:as}, which has the similar divergence in high-momentum.  We subtract it from the summation.  Now the difference behaves well in high-momentum,  and therefore a cutoff or bare momentum-dependent interaction is no longer necessary.  In principle, we can do the same in two channels and introduce the two-channel equivalent of s-wave scattering length, a $2\times2$ scattering amplitude matrix.  However, this $2\times2$ matrix is awkward in definition and not clear for the physical meaning.   Therefore, we adopt a two-step process with better physical intuition behind it.   
 
 Besides the assumption of short-range potential, we makes another assumption:  the in-resonance two-body bound-state of isolated close-channel, $\phi$, is much smaller in size ($a_{c}$) than particle-particle distance ($a_{0}$), although larger than the potential range ($r_{c}$).     ($r_{c}\ll{}a_{c}\ll{}a_{0}$).  The problem would be a genuine 3-species problem and require other techniques if the close-channel bound-state is about the size  or even larger than  inter-particle distance. As discussed at the beginning of this chapter, in such assumption, the close-channel correlation follows its two-body bound-state in high momentum, and  we can write it as $h_{2\vk}\propto\phi_{0\vk}f(\vk)$ with factor $f(\vk)$ encapsulating all the many-body effects. This automatically cures the divergence involving $h_{2\vk}$ because $\phi_{0\vk}$ decays fast enough in high momentum and gives no singularity when integrated.   After $h_{2\vk}$ is taken care of, we remove the singularity of integral involving open-channel correlation $h_{1\vk}$ using the regular method by subtracting low-energy two-body interacting kernel $a_{s}$, which involves  the same high-momentum divergence as $h_{1\vk}$. 
 
@@ -309,7 +311,7 @@ where $\phi^{(0)}$ is the normalized solution of  two-body \sch equation.
 -E_{b}^{(0)}\phi_{0\,\vp}=\epsilon_{\vp}\phi_{0\,\vp}-\sum_{\vk}V \phi_{0\,\vk}
 \end{equation}
 By replacing with the two-body wave function,we ignore the Pauli exclusion between different close-channel bound-state $\phi_{0}$, while keeping Pauli exclusion between channels as $u_{k}^{2}$.
-This replacement also solves the renormalization problem automatically as the two-body wave function decays fast enough at high momentum and therefore remove the divergence in summation for $h_{2\vk}$.  
+This replacement also solves the renormalization problem automatically because the two-body wave function decays fast enough at high momentum and therefore remove the divergence in summation for $h_{2\vk}$.  
 
 
 %The two-body wave function for isolated close-channel spreads in large momentum space and has small weight in low momentum (below $k_{F}$), and therefore, we expected $u_{\vk}^{2}$ has small correction only.  $D_{2}$ is the product of two factors: 1, the normalization ($A$) factor as in two-body wave function normalized to 1(Appendix \ref{sec:pathInt2:short-range}); 2, total number of particles in close-channel.  
@@ -342,7 +344,7 @@ Multiply both sides with $\phi^{*}$ and integrate over the momentum, and using E
 \begin{equation}
 \alpha\br{-E_{b}+\eta-2\mu-\sum\abs{\phi_{\vk}}^{2}{(E_{\vk}-\xi_{\vk})}+\sum\abs{\phi_{\vk}}^{2}{v_{\vk}^{2}V}}=\sum{\phi_{\vk}^{*}}{Y}{h_{1\vk}}
 \end{equation}
-Comparing this to the two-body problem, the detuning is shifted by many-body effects ($\mu$ and two average terms on left).  
+Comparing this to the two-body problem, detuning is shifted by many-body effects $\mu$ (mostly due to Pauli exclusion within open-channel) and $\lambda_{1}$ (mostly due to Pauli exclusion between channels).  
 \begin{equation}\label{eq:pathInt2:alpha}
 \alpha=\frac{\sum{\phi_{\vk}^{*}}{Y}{h_{1\vk}}}{\br{-E_{b}+\eta-2\mu-\lambda_{1}}}
 \end{equation}
@@ -350,8 +352,7 @@ Comparing this to the two-body problem, the detuning is shifted by many-body eff
 \lambda_{1}(\eta)\equiv\sum\abs{\phi_{\vk}}^{2}{(E_{\vk}-\xi_{\vk})}-\sum\abs{\phi_{\vk}}^{2}{v_{\vk}^{2}V}
 \end{equation}
 
-\mycomment{It is not clear that whether $\lambda_{1}$ depends on detuning (through $E_{\vk}$, $v_{\vk}$), but the dependence should be weak even if it does.  }
-%Put the shift on $\alpha$ aside for now and get back to the other equation Eq. \ref{eq:pathInt2:mfopen}.  With the above equation and Eq. \ref{eq:pathInt2:h1}
+$\lambda_{1}$ depends on detuning $\eta$ (through $E_{\vk}$, $v_{\vk}$), but the dependence is rather weak. We will discuss more detail/reasoning about it later in Sec \ref{sec:pathInt2:lambda}. 
 Using Eq. \ref{eq:pathInt2:alpha}, we can express the $\alpha$ in $h_{2\vk}$ (Eq. \ref{eq:pathInt2:hphi}), and then plug it into Eq. \ref{eq:pathInt2:h1}
 \begin{equation*}
 D_{1}=\sum{}U{h_{1_{\vk}}}+\frac{\sum_{\vk\vk^{'}} Y{\phi_{\vk'}}{\phi_{\vk}}{Y}u_{\vk}^{2}{{h_{1\vk}}}}{\br{-E_{b}+\eta-2\mu-\lambda_{1}}}\end{equation*}
@@ -400,6 +401,43 @@ Item \ref{item:pathInt2:mu} corresponds to the simple many-body effect  universa
 Furthermore,  close look into $\lambda_1$ and $\lambda_2$ (Appendix \ref{sec:pathInt2:lambda}) reveals that they varies slowly with energy / momentum and is a function of density.  They describe  fundamental many-body effects, and do not have a counterpart in two-body problem.  
 
 Both $\lambda_{1}$ and $\lambda_{2}$ involves the integral between open-channel wave function and close-channel wave function, (factor $v_{\vk}^{2}$ or $u_{\vk}^{2}$ describes mostly the open-channel wave function in the integral). The larger the overlap of two, the larger these two parameters is.  This has a very intuitive interpretation:  more overlap leads more severe inter-channel Pauli exclusion, which shows that $\lambda_{1}$ and $\lambda_{2}$ describe this effect between two  channels.  In our model, open-channel wave function is more or less spread all over the place, (even at BEC-side, the real bound-state is very loosely bound comparing to close-channel bound state), while close-channel wave function is very sensitive to binding energy, $E_{b}(\approx\eta)$.  When  close-channel  bound-state is closer to the threshold, i.e.,  bound state energy  is smaller, the close-channel bound-state is more spread out  in real space and has larger overlap with open-channel, therefore $\lambda_{1}$ and $\lambda_{2}$ are larger in such case.                           Nevertheless, $\lambda_1$ is much smaller than the  constant $\kappa$.  So the shift is not very large.  But it shifted with the change of density.  However, in the many-body system, no dramatic jump in physical quantities happens at resonance due to the crossover nature, and it is hard to observe this shift.  Nevertheless, this effect can show up at two-body type experiments.  
+
+
+\subsection{Evaluation and estimation of $\lambda_{1}$ and $\lambda_{2}$\label{sec:pathInt2:lambda}}
+It is obvious from the last section that most of the inter-channel Pauli exclusion is encapsulated in two parameters $\lambda_{1}$ and $\lambda_{2}$.   It is well-worthwhile to study them in more details.  $\lambda_{1}$ is defined as 
+\begin{equation}\tag{\ref{eq:pathInt2:lambda1}}
+\lambda_{1}(\eta)\equiv\sum\abs{\phi_{\vk}}^{2}{(E_{\vk}-\xi_{\vk})}-\sum\abs{\phi_{\vk}}^{2}{v_{\vk}^{2}V}
+\end{equation}
+$\phi_{\vk}$ is close to constant or varies slowly around or below Fermi momentum, $k_{F}$, because the close-channel bound state is much smaller than the inter-particle distance.  On the other hand, $E_{\vk}-\xi_{\vk}$ and $v_{\vk}^{2}$  are only non-zero in this region.  Therefore, it is a good approximation to replace $\phi_{\vk}$ with $\phi_{\vk=0}$ and take it out of the summation.  
+\begin{equation*}
+\lambda_{1}(\eta)=\sum\abs{\phi_{\vk}}^{2}{(E_{\vk}-\xi_{\vk})}-\sum\abs{\phi_{\vk}}^{2}{v_{\vk}^{2}V}
+\end{equation*}
+
+Use relationship $v_{k}=\frac{E_{\vk}-\xi_{\vk}}{2E_{\vk}}$, we can rewrite the above equation into 
+\begin{equation*}
+\lambda_{1}=\avs{\phi}{v_{\vk}^{2}(2E_{\vk}-V)}{\phi}
+\end{equation*}
+$v_{\vk}$ is close to zero when momentum much higher Fermi momentum, on this region, $E_{\vk}$ is much smaller comparing to potential energy $V$.  So $V\ket{\phi}\approx-\eta\ket{\phi}$, and $\phi\approx\frac{A}{\kappa^{2}}$Therefore, we can estimate this term 
+\begin{equation}
+\lambda_{1}=\frac{A^{2}}{\kappa^{2}}\sum{}v_{\vk}^{2}=n\frac{A^{2}}{\kappa^{2}}\sim{}D_{1}^{2}/\eta
+\end{equation}
+
+
+
+
+
+
+
+\begin{equation}\tag{\ref{eq:pathInt2:lambda2}}
+\lambda_{2}=(1+GT)\frac{Y\ket{\phi}\bra{\phi}{Y}}{\br{-E_{b}+\eta-2\mu-\lambda_{1}}}v_{\vk}^{2}\ket{{h_{1}}}
+\end{equation}
+Here the argument is more or less the same as in $\lambda_{1}$, considering the short-range nature of $Y$, and $v_{k}^{2}$ introduces an extra $nA^{2}/\kappa^{2}\sim{}D_{1}^{2}/\eta$ factor.  
+
+We can see, both of them depends on many-body effect through density.  Particularly, they depend on density of open-channel component linearly at the lowest order.  $\lambda_{i}(n_o)=\lambda_{i}^{(0)}n_o$.  When not too close to resonance, $n_o$ is close to total density.  And $\lambda_{i}$ can be measured at different densities,  $\lambda_{i}^{(0)}$ estimated then accordingly. 
+
+In the replacement of $1/(E_{1\vk}+E_{3\vk})$ by $\phi_{k}$ in Eq. \ref{eq:pathInt2:hphi}, certain error is introduced by directly replacement.  We expect the error is in higher order.  They might lead a non-linear relationship between $\lambda_{i}$ and density $n$.  But we expect the non-linearity is weak and we can still include the Pauli exclusion in these two parameters $\lambda_{i}(n)$.
+
+
 
 \subsection{Number equation}
 We can derive two number equations for each channel.  

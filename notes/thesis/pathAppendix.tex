@@ -152,7 +152,7 @@ On the other hand, at very high momentum ($k\gg1/r_{c}$), the second term in the
 
 
 \section{Evaluating $\pi^{(0)}$ and $\pi^{\perp}$\label{sec:calculatePi}}
-Here we will calculate $\pi^{(0)}$ and $\pi^{\perp}$ to the first order of $D_i/\eta$ using the expansion of Green's function in Sec. \ref{sec:diagonalGreen}.
+Here we  calculate $\pi^{(0)}$ and $\pi^{\perp}$ to the first order of $D_i/\eta$ using the expansion of Green's function in Sec. \ref{sec:diagonalGreen}.
 
 \begin{equation}\label{eq:pathInt2:pi0}
 \begin{split}
@@ -190,7 +190,7 @@ Now it is easy to calculate the first term
 }
 \end{split}
 \end{equation}
-Only root $-\xi_{2\,\vk}$ in the first term contributes in Matrubara frequency summation.
+Only root $-\xi_{2\,\vk}$ in the first term contributes in Matrubara frequency summation at zero temperature.
 \begin{equation}\label{eq:pathInt2:pi0-1}
 \sum_k\tr\big(M_{k}\big)=\sum_{\vk}\frac{2D_{1}^{2}}{E_{\vk}^{2}(E_{1\,\vk}+\xi_{2\,\vk})}
 \approx\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{D_{1}^{2}D_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}
@@ -208,7 +208,7 @@ Combine Eq. \eqref{eq:pathInt2:pi0-1} and Eq. \eqref{eq:pathInt2:pi0-2}, we have
 \begin{equation}
 \pi^{(0)}(0)\approx\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{D_{1}^{2}D_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}\end{equation}
 
-and it is actually exact for $\pi^{\perp}(0)$
+We can actually calculate  $\pi^{\perp}(0)$ exactly
 \begin{equation}
 \begin{split}
 \pi^{\perp}(0)=&\sum_k\tr(\hat{G}_{0\,k}\hat{G}_{0\,k})\\
@@ -227,11 +227,11 @@ D_{2}=\sum{}Yh_{1\vk}+\sum{}Vh_{2\vk}\tag{\ref{eq:pathInt2:mfclose}}
 \end{equation}
 The first term on the right is relatively small comparing to the second term.  In an estimation we just keep the second term.  Furthermore,  we assume $h_{2\,\vk}=\sqrt{N_{c}}\phi_{0\,\vk}$, where $\phi_{0\,\vk}$ is the normalized wave function of isolated close-channel potential satisfying \sch equation
 \begin{equation}\tag{\ref{eq:pathInt2:phi}}
--E_{b}^{(0)}\phi_{0\,\vp}=\epsilon_{\vp}\phi_{0\,\vp}-\sum_{\vk}V \phi_{0\,\vk}
+-E_{b}^{(0)}\phi_{0\,\vp}=2\epsilon_{\vp}\phi_{0\,\vp}-\sum_{\vk}V \phi_{0\,\vk}
 \end{equation}
 rearrange it we have (especially at low-momentum)
 \begin{equation*}
-\sum_{\vk}V \phi_{0\,\vk}=(\epsilon_{\vp}+E_{b})\phi_{0\,\vp}\approx{\eta}\phi_{0\,\vp}
+\sum_{\vk}V \phi_{0\,\vk}=(2\epsilon_{\vp}+E_{b})\phi_{0\,\vp}\approx{\eta}\phi_{0\,\vp}
 \end{equation*}
 The second approximation is correct at low-momentum (smaller or in the same order of Fermi momentum) as $\epsilon_{\vp}\ll{}E_{b}\approx\eta$.  Put all these together, we have
 \begin{equation*}
@@ -241,7 +241,7 @@ If we assume a simple exponentially decayed wave function
 \begin{equation*}
 \phi_{\vk}=\sqrt{\frac{8\pi\kappa}{V_{0}}}\frac{1}{k^{2}+\kappa^{2}}\approx\sqrt{\frac{8\pi\kappa}{V_{0}}}\frac{1}{\kappa^{2}}
 \end{equation*}
-Here  $V_{0}$ is the total volume.  The second approximation is for low-momentum as previous equation.  Collect all these together, we have
+Here  $V_{0}$ is the total volume.  The second approximation uses the fact that $k\ll\kappa$ at low-momentum as previous equation.  Collect all these together, we have
 \begin{equation}
 D_{2}\approx\sqrt{N_{c}}\eta\sqrt{\frac{8\pi\kappa}{V_{0}}}\frac{1}{\kappa^{2}}
 \sim\eta\sqrt\frac{n_{c}}{\kappa^{3}}
@@ -249,10 +249,10 @@ D_{2}\approx\sqrt{N_{c}}\eta\sqrt{\frac{8\pi\kappa}{V_{0}}}\frac{1}{\kappa^{2}}
 \sim\eta\br{\frac{E_{Fc}}{\eta}}^{\frac{3}{4}}
 \end{equation}
 %:
-$k_{Fc}$ is the Fermi momentum corresponding to the particles in close-channel, which is much smaller than the characteristic momentum for bound-state, $\kappa$.   Therefore we have $D_{2}\ll\eta$, even when $n_{c}$ is close to total density $n$. 
+$k_{Fc}$ is the Fermi momentum corresponding to density of the particles in close-channel, which is much smaller than the characteristic momentum for bound-state, $\kappa$.   Therefore we have $D_{2}\ll\eta$, even when $n_{c}$ is close to total density $n$. 
 
-Now we check the correction in Fermionic spectrum (Eq. \ref{eq:pathInt2:xiExpand3}-\ref{eq:pathInt2:xiExpand3}), 
-is indeed small comparing to the main term.  
+Now we check whether the correction in Fermionic spectrum (Eq. \ref{eq:pathInt2:xiExpand3}-\ref{eq:pathInt2:xiExpand3}), 
+is indeed small comparing to the zeroth order term.  
 \begin{align}\tag{\ref{eq:pathInt2:xiExpand}}
 E_{1\vk}&\approx{}E_{\vk}+\frac{D_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{1\vk}\\
 \xi_{2\vk}&\approx{}E_{\vk}-\frac{D_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{2\vk}
@@ -269,7 +269,7 @@ Eqs. \ref{eq:pathInt2:xiExpand} and Eqs. \ref{eq:pathInt2:xiExpand2} is slightly
  \frac{\gamma_{i}}{\xi_{i}}<\frac{D_{2}^{2}}{E_{\vk}\eta}\sim\frac{\eta^{2}\frac{k_{Fc}^{3}}{\kappa^{3}}}{k_{F}^{2}\eta}\sim\frac{k_{F}}{\kappa}\ll1
 \end{equation*}
 
-More deeply, in the secular equation that leads to spectrum, Eq. \ref{eq:pahtApp:secular}.  We convert it back to normal scale without $E_{\vk}$,  (We drop subscript $\vk$ in the following equations for simplicity)
+More deeply, in the secular equation that leads to spectrum, Eq. \ref{eq:pahtApp:secular}.  We rewrite it without scale to $E_{\vk}$,  (We drop subscript $\vk$ in the following equations for simplicity)
 \begin{equation*}
 (x^{2}-E^{2})(x-\xi-\eta)-D_{2}^{2}x+D_{2}^{2}E(u^{2}-v^{2})=0
 \end{equation*}
@@ -281,10 +281,10 @@ Here the first term is for free particles, and let us estimate the size of the l
 \begin{equation*}
 \frac{D_{1}^{2}(x-\xi-\eta)}{D_{2}^{2}(x-\xi)}\sim\frac{E_{F}^{2}\eta}{D_{2}^{2}E_{F}}\sim\frac{\kappa}{k_{F}}\gg1
 \end{equation*}
-This justifies our choice to neglect the last term when finding the lowest-order solution and use the last term for correction.  
+This justifies our choice to neglect the last term when finding the lowest-order solution and then use the last term for correction.  
 
  
 
 
 
- In another word, the above estimation is saying that the total occupation number of close-channel at low-momentum is much smaller than 1 in all region of resonance (narrow or broad) because the close-channel bound-state is much smaller than inter-particle distance.  This factor gives us a small factor, $\frac{r_{c}}{a_{0}}\sim\frac{k_{F}}{\kappa}\sim\sqrt\frac{E_{F}}{\eta}$, upon which we can do the expansion.  
+ In another word, the above estimation is just saying that the total occupation number of close-channel at low-momentum is much smaller than 1 in all region of resonance (narrow or broad) because the close-channel bound-state is much smaller than inter-particle distance.  This factor gives us a small factor, $\frac{r_{c}}{a_{0}}\sim\frac{k_{F}}{\kappa}\sim\sqrt\frac{E_{F}}{\eta}$, upon which we can do the expansion.  

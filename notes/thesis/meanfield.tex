@@ -1,6 +1,6 @@
 \chapter{BCS-type ansatz and variation approach for two-channel problem \label{ch:mean}}
-We can also formulate the two-channel problem  using the trial BCS-type ansatz with two channels in it.  It is not difficult to calculate the the expectation of free energy and  the wave function that optimizes the free energy within the ansatz space.  The optimization process gives us the gap equations, which determine the exact wave function with constraint of number equation.   %with those common parameters as chemical potential, gap.  
-We will see that this method yields the the mean-field solution consistent with the path-integral approach.  However, this method is mean-field by nature and it is difficult if not impossible to extend it to study the collective excitation of the system.  
+We can also formulate the two-channel problem  using the  BCS-type ansatz with two channels in it.  It is not difficult to calculate the the expectation of free energy and  the wave function that optimizes the free energy within the ansatz space.  The optimization process gives us the gap equations, which determine the exact wave function with constraint of number equation.   %with those common parameters as chemical potential, gap.  
+We will see that this method yields the the mean-field solution consistent with the path-integral approach.  However, this method is mean-field by nature and it is difficult  to extend it to study the collective excitation of the system.  
 
 We put the hamiltonian \ref{eq:pathInt2:ham2} into momentum space, and restore the momentum dependence of the interaction coefficients
 \begin{equation}\label{eq:uvw:hamiltonian}
@@ -26,7 +26,7 @@ for example,
 \av{U_{\vk\vk'}a^\dg_\vk{}b^\dg_{-\vk}{}b^{}_{-\vk'}a^{}_{\vk'}}
 =\sum_{\vk}U_{\vk\vk}\abs{v_\vk}^2+\sum_{\vk\neq\vk'}U_{\vk\vk'}v^{}_{\vk'}u^*_{\vk'}u^{}_\vk{}v^*_\vk
 \end{equation*}
-The first term is the Hatree term and the second term is more interesting pairing term.  
+The first term is the Hatree term and the second term is the more interesting pairing term.  
 
 
 And the full free energy is 
@@ -47,11 +47,11 @@ Where
 \begin{equation*}
  \xi^a_\vk=\epsilon^a_\vk-\mu^a,\qquad\xi^b_\vk=\epsilon^b_\vk-\mu^b,\qquad\xi^c_\vk=\epsilon^c_\vk-\mu^b
 \end{equation*}
-Two chemical potentials are added to make sure the $n_a=n_b+n_c=\nth{2}n$.  In principle, $\mu^{a}$ does not need to be equal to $\mu^{b}$  as there is no exchange/interaction between $(a)$ and $(b,c)$.  Nevertheless, we can set $\mu^{a}=\mu^{b}$ for simplicity and drop the superscript on chemical potential from here on. 
-We will also drop the Hatree terms as they can be absorbed into the chemical potentials as they only relate to the density.  (\emph{Not sure still valid in the two-channel problems, especially for the close-channel.})   In the second summation, we ignore the fact that the summation only go through $\vk\neq\vk'$ as the correction is in the higher order. 
+Two chemical potentials are added to make sure the $n_a=n_b+n_c=\nth{2}n$.  In principle, $\mu^{a}$ does not need to be equal to $\mu^{b}$  as there is no exchange/conversion between $(a)$ and $(b,c)$.  Nevertheless, we  set $\mu^{a}=\mu^{b}$ for simplicity and drop the superscript on chemical potential from here on. 
+We will also drop the Hatree terms as they can be absorbed into the chemical potentials as they only relate to the density.   In the second summation, we ignore the fact that the summation only go through $\vk\neq\vk'$ as the correction is in the higher order. 
  
  \section{Exact gap equations in variation method}
-Introduce the new parameter $F_{\vk}$ and $G_{\vk}$, corresponding to the mean field value of anomalous Green function,  (as $h_{1,2}$  in Sec \ref{sec:pathInt2:meanfield}), solve $u_{\vk}$, $v_{\vk}$, $w_{\vk}$ with $F_{\vk}$ and $G_{\vk}$ (treat everything as real\footnote{It is not hard to prove that the parameters that optimize the free energy is real within an overall phase factor. })
+Introduce the new parameter $F_{\vk}$ and $G_{\vk}$, corresponding to the mean field value (equal time average) of anomalous Green function,  (as $h_{1,2}$  in Sec \ref{sec:pathInt2:meanfield}), solve $u_{\vk}$, $v_{\vk}$, $w_{\vk}$ with $F_{\vk}$ and $G_{\vk}$ (treat everything as real\footnote{It is not hard to prove that the parameters that optimize the free energy is real within an overall phase factor. })
 \begin{gather}
 u_{\vk}^2+v^{2}_{\vk}+w^{2}_{\vk}=1\\
 u_{\vk}v_{\vk}=F_{\vk}\\
@@ -67,7 +67,7 @@ w^{2}_{\vk}=&\frac{2 G_{\vk}^2}{1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}}
 =\frac{G_{\vk}^2}{2( F_{\vk}^2+ G_{\vk}^2)} \left(1-\sgn_{k}\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)
 \end{split}
 \end{equation}
-Below, we adopt $\sgn_k=1$. (This works for BEC and most part of BCS; and in final equation, the sign function is taken care of automatically.  It is easy to verify we arrive at the same number equation in the other case where $\sgn_{k}=-1$. ) Derivatives over $F_{\vk}$ are
+Below, we adopt $\sgn_k=1$. (This works for BEC and most part of BCS; and in final equation, the sign function is taken care of automatically.  It is easy to verify we arrive at the same final result in the other case where $\sgn_{k}=-1$. ) Derivatives over $F_{\vk}$ are
 \begin{equation}
 \begin{split}
 \pdiff{u_{\vk}^2}{F_\vk}=&-\frac{2 F_\vk}{\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}}\\
@@ -94,7 +94,7 @@ The gap equations are
 \label{eq:20100909:fullgapb}
 \end{gather}
 \end{subequations}
-where $\eta=\epsilon^{ac}_{\vk}-\epsilon^{ab}_{\vk}$ is the bare Zeeman energy difference and is large than most energy scale, such as $E_{F}$.  It is close to  binding energy of the close-channel bound state.   
+where $\eta=\epsilon^{ac}_{\vk}-\epsilon^{ab}_{\vk}$ is the bare Zeeman energy difference and is large than most energy scale, such as $E_{F}$.  It is close to  binding energy of the close-channel bound state when not too far away from resonance.   
 
 The number equation is (see footnote (\ref{foot:20100909:sgn}) for $\sgn_{k}$)
 \begin{equation}\label{eq:20100909:number}
@@ -105,7 +105,7 @@ where N is the number of atoms (twice  the number of pairs)
 \section{Approximating close-channel with bound-state level}
 Let us look at \eef{eq:20100909:fullgapb}.  It is energetically very disadvantageous to deviate from the bound state as the binding energy and the difference from the next bound state is much  larger than Fermi energy.     This equation must close to  the solution for the isolated close-channel \sch equation.  
 \begin{equation}\label{eq:20100915:twobody}
-{\phi^{0}_{\vk}}(\epsilon^{\text{pair}}_{\vk})+V_{\vk\vk'}\phi^{0}_{\vk'}=-E^{0}\phi^{0}_{\vk'}
+{\phi^{0}_{\vk}}(2\epsilon^{ac}_{\vk})-V_{\vk\vk'}\phi^{0}_{\vk'}=-E_{b}\phi^{0}_{\vk'}
 \end{equation}
 This equation relates region (in k-space) much larger than $k_{F}$.  On the other hand, the open-channel 
 $F_{\vk}$ is only substantial in region around or not too high above  $k_{F}$.  Therefore, as the first order approximation, we takes $F_{\vk}=0$ for this equation. So we can drop the second term and the denominator in the first term ($G_{\vk}\ll1$ all the time) of \eef{eq:20100909:fullgapb}\footnote{ This is certainly OK for he BEC end where $F_{k}\ll1$ all the time.  It is less satisfactory, might be problematic,  when $F_{k}$ is close to maximum $\nth2$, this happens around Fermi energy in BCS limit, but the approximation is still OK for other places. So at least for bulk of the region of $G_{\vk}$ satisfies \eef{eq:20100915:gapb}}.  In  open-channel equation, \eef{eq:20100909:fullgapa}, we drop the factor $\left(1+\sqrt{1-4 F_{\vk}^2-4 G_{\vk}^2}\right)^2$ in the second term for easier calculation, (no strong reason yet, but this term can only takes value between 1 and 4, and the second term is relatively minor comparing to the first). We write down the approximated gap equations

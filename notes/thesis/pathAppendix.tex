@@ -6,7 +6,7 @@ We need to find a unitary transformation $L$ to diagonalize matrix
 \begin{equation*}
 i\omega_{n}I+\mtrx{-E_k&0&u _kD_2\\0&+E_k&v_kD_2\\u_kD_2&v_kD_2&+\xi_k+\eta}
 \end{equation*}
-We drops all the $k$ subscripts in this section.  We notice that the first term is proportional to identity matrix and does not change by unitary transformation, we only need to concentrate for the second term.  We rescale all elements with $E$, 
+We drops all the $k$ subscripts in this section because the $3\times3$ hyperfine space is the only concern here.  We notice that the first term is proportional to identity matrix and does not change by unitary transformation, we only need to concentrate for the second term.  We rescale all elements with $E$, 
 \begin{equation*}
 R=
 \begin{pmatrix}
@@ -120,33 +120,33 @@ On the other hand, at very high momentum ($k\gg1/r_{c}$), the second term in the
 
 
 
-\section{Evaluating $\lambda_{1}$ and $\lambda_{2}$}
-\begin{equation}\tag{\ref{eq:pathInt2:lambda1}}
-\lambda_{1}\equiv\avs{\phi}{(E_{\vk}-\xi_{\vk})}{\phi}-\avs{\phi}{v_{\vk}^{2}V}{\phi}
-\end{equation}
-Use relationship $v_{k}=\frac{E_{\vk}-\xi_{\vk}}{2E_{\vk}}$, we can rewrite the above equation into 
-\begin{equation*}
-\lambda_{1}=\avs{\phi}{v_{\vk}^{2}(2E_{\vk}-V)}{\phi}
-\end{equation*}
-$v_{\vk}$ is close to zero when momentum much higher Fermi momentum, on this region, $E_{\vk}$ is much smaller comparing to potential energy $V$.  So $V\ket{\phi}\approx-\eta\ket{\phi}$, and $\phi\approx\frac{A}{\kappa^{2}}$Therefore, we can estimate this term 
-\begin{equation}
-\lambda_{1}=\frac{A^{2}}{\kappa^{2}}\sum{}v_{\vk}^{2}=n\frac{A^{2}}{\kappa^{2}}\sim{}D_{1}^{2}/\eta
-\end{equation}
-
-
-
-
-
-
-
-\begin{equation}\tag{\ref{eq:pathInt2:lambda2}}
-\lambda_{2}=(1+GT)\frac{Y\ket{\phi}\bra{\phi}{Y}}{\br{-E_{b}+\eta-2\mu-\lambda_{1}}}v_{\vk}^{2}\ket{{h_{1}}}
-\end{equation}
-Here the argument is more or less the same as in $\lambda_{1}$, considering the short-range nature of $Y$, and $v_{k}^{2}$ introduces an extra $nA^{2}/\kappa^{2}\sim{}D_{1}^{2}/\eta$ factor.  
-
-We can see, both of them depends on many-body effect through density.  Particularly, they depend on density of open-channel component linearly at the lowest order.  $\lambda_{i}(n_o)=\lambda_{i}^{(0)}n_o$.  When not too close to resonance, $n_o$ is close to total density.  And $\lambda_{i}$ can be measured at different densities,  $\lambda_{i}^{(0)}$ estimated then accordingly. 
-
-In the replacement of $1/(E_{1\vk}+E_{3\vk})$ by $\phi_{k}$ in Eq. \ref{eq:pathInt2:hphi}, certain error is introduced by directly replacement.  We expect the error is in higher order.  They might lead a non-linear relationship between $\lambda_{i}$ and density $n$.  But we expect the non-linearity is weak and we can still include the Pauli exclusion in these two parameters $\lambda_{i}(n)$.
+%\section{Evaluating $\lambda_{1}$ and $\lambda_{2}$}
+%\begin{equation}\tag{\ref{eq:pathInt2:lambda1}}
+%\lambda_{1}\equiv\avs{\phi}{(E_{\vk}-\xi_{\vk})}{\phi}-\avs{\phi}{v_{\vk}^{2}V}{\phi}
+%\end{equation}
+%Use relationship $v_{k}=\frac{E_{\vk}-\xi_{\vk}}{2E_{\vk}}$, we can rewrite the above equation into 
+%\begin{equation*}
+%\lambda_{1}=\avs{\phi}{v_{\vk}^{2}(2E_{\vk}-V)}{\phi}
+%\end{equation*}
+%$v_{\vk}$ is close to zero when momentum much higher Fermi momentum, on this region, $E_{\vk}$ is much smaller comparing to potential energy $V$.  So $V\ket{\phi}\approx-\eta\ket{\phi}$, and $\phi\approx\frac{A}{\kappa^{2}}$Therefore, we can estimate this term 
+%\begin{equation}
+%\lambda_{1}=\frac{A^{2}}{\kappa^{2}}\sum{}v_{\vk}^{2}=n\frac{A^{2}}{\kappa^{2}}\sim{}D_{1}^{2}/\eta
+%\end{equation}
+%
+%
+%
+%
+%
+%
+%
+%\begin{equation}\tag{\ref{eq:pathInt2:lambda2}}
+%\lambda_{2}=(1+GT)\frac{Y\ket{\phi}\bra{\phi}{Y}}{\br{-E_{b}+\eta-2\mu-\lambda_{1}}}v_{\vk}^{2}\ket{{h_{1}}}
+%\end{equation}
+%Here the argument is more or less the same as in $\lambda_{1}$, considering the short-range nature of $Y$, and $v_{k}^{2}$ introduces an extra $nA^{2}/\kappa^{2}\sim{}D_{1}^{2}/\eta$ factor.  
+%
+%We can see, both of them depends on many-body effect through density.  Particularly, they depend on density of open-channel component linearly at the lowest order.  $\lambda_{i}(n_o)=\lambda_{i}^{(0)}n_o$.  When not too close to resonance, $n_o$ is close to total density.  And $\lambda_{i}$ can be measured at different densities,  $\lambda_{i}^{(0)}$ estimated then accordingly. 
+%
+%In the replacement of $1/(E_{1\vk}+E_{3\vk})$ by $\phi_{k}$ in Eq. \ref{eq:pathInt2:hphi}, certain error is introduced by directly replacement.  We expect the error is in higher order.  They might lead a non-linear relationship between $\lambda_{i}$ and density $n$.  But we expect the non-linearity is weak and we can still include the Pauli exclusion in these two parameters $\lambda_{i}(n)$.
 
 
 

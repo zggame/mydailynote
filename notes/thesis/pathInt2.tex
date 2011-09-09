@@ -359,13 +359,13 @@ In summary, \emph{the full closed-channel (including normalization) is always sm
 Not far away from resonance, binding energy $E_{b}^{(0)}$ is always close to absolute detuning $\eta$.   
 Using Eq. \ref{eq:pathInt2:h2D2}, we can write 
 \begin{equation*}
-D_{2\vk}=h_{2\vk}\frac{(E_{1\vk}+E_{3\vk})}{u_{\vk}^{2}}\approx{}h_{2\vk}\frac{(\epsilon_{\vk}-2\mu+\eta)}{u_{\vk}^{2}}
+D_{2\vk}=h_{2\vk}\frac{(E_{1\vk}+E_{3\vk})}{u_{\vk}^{2}}\approx{}h_{2\vk}\frac{(E_{\vk}+\xi_{\vk}+\eta)}{u_{\vk}^{2}}
 \end{equation*}
 Combining the above equation with Eq. \ref{eq:pathInt2:mfclose}, we have 
 \begin{equation*}
-h_{2\vk}\frac{(\epsilon_{\vk}-2\mu+\eta)}{u_{\vk}^{2}}=\sum_{\vk'}{}Y_{\vk\vk'}h_{1\vk'}+\sum_{\vk'}V_{\vk\vk'}h_{2\vk'}
+h_{2\vk}\frac{(E_{\vk}+\xi_{\vk}+\eta)}{u_{\vk}^{2}}=\sum_{\vk'}{}Y_{\vk\vk'}h_{1\vk'}+\sum_{\vk'}V_{\vk\vk'}h_{2\vk'}
 \end{equation*}
-Multiply both sides with $\phi^{*}$ and integrate over the momentum, also use Eq. \ref{eq:pathInt2:hphi}
+Multiply both sides with $\phi^{*}$ and integrate over the momentum, also use Eq. \ref{eq:pathInt2:hphi} and $\xi_{\vk}=\epsilon_{\vk}-\mu$
 \begin{equation}
 \alpha\br{-E_{b}+\eta-2\mu-\sum_{\vk}{\phi_{\vk}^{*}}{(E_{\vk}-\xi_{\vk})}\phi_{\vk}
 	+\sum_{\vk\vk'}{\phi_{\vk}^{*}}{v_{\vk'}^{2}V_{\vk\vk'}}\phi_{\vk'}}
@@ -464,10 +464,10 @@ In the above summation, $v_{\vk}^2$ is only non-zero below or not much higher th
 Furthermore, $\phi_{\vk}$ is close to constant or varies slowly in this range, because the closed-channel bound state is much smaller than the inter-particle distance.    It is a good approximation to replace $\phi_{\vk}$ with $\phi_{\vk=0}\approx\frac{A}{\kappa^{2}}$ and to take it out of the summation.  
 Put all these together, we can estimate $\lambda_{1}$ 
 \begin{equation}
-\lambda_{1}\approx-\eta\abs{\phi_{k=0}}^2\sum{}v_{\vk}^{2}
-	=-\frac{A^{2}}{\kappa^{2}}n_{o}\sim{}-D_{1}^{2}/\eta
+\lambda_{1}\approx-\eta\abs{\phi_{k=0}}^2\sum{}v_{\vk}^{2}=-\eta\abs{\phi_{k=0}}^2N	
 \end{equation}
-It is not easy to estimate this value precisely from  microscopic parameters above because these parameters themselves are  in turn hard to  estimate precisely.  Nevertheless, a key observation is that $\lambda_1$ depends on (open channel) density ($v_\vk^2$) linearly to the lowest order, $\lambda_1\approx\lambda_1^{(0)}n_{o}$.  We can perform the experiments at different densities and estimate the coefficient $\lambda_1^{(0)}$. 
+It is easy to see that $\abs{\lambda_{1}}$ is much smaller than $\eta$ as $\abs{\phi_{k=0}}^2N\ll1$.  Furthermore, using $\phi_{k=0}\approx\sqrt{\frac{8\pi\kappa}{V_{0}}}\frac{1}{\kappa^{2}}$ from Eq. \ref{eq:pathInt2:phi2body}, we get $\lambda_{1}\sim\nth{a_{0}\kappa}E_{F}\ll{}E_{F}$, where $a_{0}$ is the average inter-particle distance and $\kappa$ is momentum scale of close-channel bound-state.   We have showed that $\lambda_{1}$ is indeed a minor correction over shift $\mu$.
+It is not easy to estimate $\lambda_{1}$ precisely from  microscopic parameters above because these parameters themselves are  in turn hard to  estimate precisely.  Nevertheless, a key observation is that $\lambda_1$ depends on (open channel) density ($v_\vk^2$) linearly to the lowest order, $\lambda_1\approx\lambda_1^{(0)}n_{o}$.  We can perform the experiments at different densities and estimate the coefficient $\lambda_1^{(0)}$. 
 
 
  $\lambda_2$ is defined as

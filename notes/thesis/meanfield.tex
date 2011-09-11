@@ -50,7 +50,7 @@ Where
 Two chemical potentials are added to make sure the $n_a=n_b+n_c=\nth{2}n$.  In principle, $\mu^{a}$ does not need to be equal to $\mu^{b}$  as there is no exchange/conversion between $(a)$ and $(b,c)$.  Nevertheless, we  set $\mu^{a}=\mu^{b}$ for simplicity and drop the superscript on chemical potential from here on. 
 We will also drop the Hatree terms as they can be absorbed into the chemical potentials as they only relate to the density.   In the second summation, we ignore the fact that the summation only go through $\vk\neq\vk'$ as the correction is in the higher order. 
  
- \section{Exact gap equations in variation method}
+ \section{Exact gap equations and number equations in variation method}
 Introduce the new parameter $h_{1\vk}$ and $h_{2\vk}$, corresponding to the mean field value (equal time average) of anomalous Green function,  (as $h_{1,2}$  in Sec \ref{sec:pathInt2:meanfield}), solve $u_{\vk}$, $v_{\vk}$, $w_{\vk}$ with $h_{1\vk}$ and $h_{2\vk}$ (treat everything as real\footnote{It is not hard to prove that the parameters that optimize the free energy is real within an overall phase factor. })
 \begin{gather}
 u_{\vk}^2+v^{2}_{\vk}+w^{2}_{\vk}=1\\
@@ -95,6 +95,61 @@ The gap equations are
 \end{gather}
 \end{subequations}
 where $\eta=\epsilon^{ac}_{\vk}-\epsilon^{ab}_{\vk}$ is the bare Zeeman energy difference and is large than most energy scale, such as $E_{F}$.  It is close to  binding energy of the closed-channel bound state when not too far away from resonance.   We see the advantages of path integral approach, where $h_{1\vk}$ and $h_{2\vk}$ instead have a very specific forms Eqs. (\ref{eq:pathInt2:h1}, \ref{eq:pathInt2:h2}) and ready for further approximation and analysis.  Here we do not have much guide for these two quantities and need to make some guess.  
+
+Two number equations can be obtained.  One for each channel (see footnote (\ref{foot:20100909:sgn}) for $\sgn_{k}$).
+\begin{gather}\label{eq:20100909:number}
+N_{\text{open}}=2\sum_{\vk}v_{\vk}^{2}
+	=\sum_{\vk}\frac{ h_{1\vk}^2}{( h_{1\vk}^2+ h_{2\vk}^2)} \left(1-\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\right)\\
+N_{\text{close}}=2\sum_{\vk}w_{\vk}^{2}
+	=\sum_{\vk}\frac{ h_{2\vk}^2}{( h_{1\vk}^2+ h_{2\vk}^2)} \left(1-\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\right)
+\end{gather} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 The number equation is (see footnote (\ref{foot:20100909:sgn}) for $\sgn_{k}$)
 \begin{equation}\label{eq:20100909:number}

@@ -4,7 +4,7 @@
 \section{Diagonalize matrix Eq. (\ref{eq:pathInt2:G2})\label{sec:diagonalize}}
 We need to find a unitary transformation $L$ to diagonalize matrix 
 \begin{equation*}
-i\omega_{n}I+\mtrx{-E_k&0&u _kD_2\\0&+E_k&v_kD_2\\u_kD_2&v_kD_2&+\xi_k+\eta}
+i\omega_{n}I+\mtrx{-E_k&0&u _k\Delta_2\\0&+E_k&v_k\Delta_2\\u_k\Delta_2&v_k\Delta_2&+\xi_k+\eta}
 \end{equation*}
 We drops all the $k$ subscripts in this section because the $3\times3$ hyperfine space is the only concern here.  We notice that the first term is proportional to identity matrix and does not change by unitary transformation, we only need to concentrate for the second term.  We rescale all elements with $E$, 
 \begin{equation*}
@@ -36,28 +36,28 @@ B=i\omega_{n}I+E\mtrx{-1-\frac{y_{1}^{2}}{t}&0&0\\0&1-\frac{y_{2}^{2}}{t}&0\\0&0
 \begin{equation}
 L=\mtrx{1&-\frac{y_{1}y_{2}}{2t}&\frac{y_{1}}{t}\\\frac{y_{1}y_{2}}{2t}&1&\frac{y_{2}}{t}\\-\frac{y_{1}}{t}&-\frac{y_{2}}{t}&1}
 \end{equation}
-Here $L$ is not exactly unitary transformation, it only unitary in the first order of  $y_{i}^{2}/{t}$ (or $D_{i}^{2}/(E\eta)$). We have 
+Here $L$ is not exactly unitary transformation, it only unitary in the first order of  $y_{i}^{2}/{t}$ (or $\Delta_{i}^{2}/(E\eta)$). We have 
 \[
 B=L^{\dg}RL+o(\frac{y_{i}^{2}}{t})
 \]
 Alternatively, we can write $L$ as 
 \begin{equation}
 L=I+
-\mtrx{0&-\frac{D_{1}D_{2}}{4E^{2}}&u\\
-\frac{D_{1}D_{2}}{4E^{2}}&0&v\\
+\mtrx{0&-\frac{\Delta_{1}\Delta_{2}}{4E^{2}}&u\\
+\frac{\Delta_{1}\Delta_{2}}{4E^{2}}&0&v\\
 -u&v&0
-}\frac{D_{2}}{\eta}
+}\frac{\Delta_{2}}{\eta}
 \end{equation}
-Here we use $uv=D_{1}/2E$
+Here we use $uv=\Delta_{1}/2E$
 
 
 \section{Derivation of  mean-field equation \eqref{eq:pathInt2:mf}\label{sec:pathInt2:deriveMF}}
 For a $3\times3$ matrix as in Eq. (\ref{eq:pathInt2:nG}), 
 \begin{equation}\tag{\ref{eq:pathInt2:nG}}
 \mathcal{G}^{-1}=\begin{pmatrix}
-i\omega_{n}-\xi_{k}&D_{1}&D_{2}\\
-\bar{D}_{1}&i\omega_{n}+\xi_{k}&0\\
-\bar{D}_{2}&0&i\omega_{n}+\xi_{k}+\eta
+i\omega_{n}-\xi_{k}&\Delta_{1}&\Delta_{2}\\
+\bar{\Delta}_{1}&i\omega_{n}+\xi_{k}&0\\
+\bar{\Delta}_{2}&0&i\omega_{n}+\xi_{k}+\eta
 \end{pmatrix}
 \end{equation}
 A general $3\times3$ matrix inverted as such, 
@@ -76,8 +76,8 @@ Now we have $G_{0}$, and we can find the last term in \ref{eq:pathInt2:mf01},
 \begin{equation}
 \begin{split}
 \tr\mbr{{G_{0}}\cdot\cmtrx{0&1&0\\0&0&0\\0&0&0}}&=\sum_{\vk\omega_{n}}G_{0\,(21)}\\
-&=\sum_{\vk}\sum_{\omega_{n}}\frac{-D_{1}^{*}(i\omega_{n}+\xi+\eta)}{(i\omega_{n}-E_{1})(i\omega_{n}+E_{2})(i\omega_{n}+E_{3})}\\
-&=\sum_{\vk}D_{1}^{*}\frac{E_{1}+\xi+\eta}{(E_{1}+E_{2})(E_{1}+E_{3})}\equiv\sum_{\vk}h_{1\,\vk}
+&=\sum_{\vk}\sum_{\omega_{n}}\frac{-\Delta_{1}^{*}(i\omega_{n}+\xi+\eta)}{(i\omega_{n}-E_{1})(i\omega_{n}+E_{2})(i\omega_{n}+E_{3})}\\
+&=\sum_{\vk}\Delta_{1}^{*}\frac{E_{1}+\xi+\eta}{(E_{1}+E_{2})(E_{1}+E_{3})}\equiv\sum_{\vk}h_{1\,\vk}
 \end{split}
 \end{equation}
 Here we perform Matsubara summation at zero temperature in the third equal sign with the normal trick (see sec. 4.2.1 in \cite{Altland}, sec. 25 in \cite{Fetter}, also refer to Footnote \ref{foot:intro:sum} at Page. \pageref{foot:intro:sum}).  We notice that within three roots, $E_{1}$, $-E_{2}$ and $-E_{3}$, we only need to take into account two negative roots $-E_{2}$ and $-E_{3}$, assuming the correction is small. 
@@ -85,13 +85,13 @@ Similarly
 \begin{equation}
 \begin{split}
 \tr\mbr{{G_{0}}\cdot\cmtrx{0&0&1\\0&0&0\\0&0&0}}&=\sum_{\vk\omega_{n}}G_{0\,(31)}
-=\sum_{\vk}D_{2}\frac{E_{1}+\xi}{(E_{1}+E_{2})(E_{1}+E_{3})}\equiv\sum_{\vk}h_{2\,\vk}
+=\sum_{\vk}\Delta_{2}\frac{E_{1}+\xi}{(E_{1}+E_{2})(E_{1}+E_{3})}\equiv\sum_{\vk}h_{2\,\vk}
 \end{split}
 \end{equation}
 And we have 
  \begin{align*}
-(\tilde{U}^{-1})_{11}\bar{D}_{1}+(\tilde{U}^{-1})_{21}\bar{D}_{2}-\sum_{\vk}h_{1\,\vk}=0\\
-(\tilde{U}^{-1})_{12}\bar{D}_{1}+(\tilde{U}^{-1})_{22}\bar{D}_{2}-\sum_{\vk}h_{2\,\vk}=0
+(\tilde{U}^{-1})_{11}\bar{\Delta}_{1}+(\tilde{U}^{-1})_{21}\bar{\Delta}_{2}-\sum_{\vk}h_{1\,\vk}=0\\
+(\tilde{U}^{-1})_{12}\bar{\Delta}_{1}+(\tilde{U}^{-1})_{22}\bar{\Delta}_{2}-\sum_{\vk}h_{2\,\vk}=0
  \end{align*}
 Invert the interaction matrix $\tilde{U}$ and we have Eq.  \ref{eq:pathInt2:mf}.
 
@@ -152,7 +152,7 @@ On the other hand, at very high momentum ($k\gg1/r_{c}$), the second term in the
 
 
 \section{Evaluating $\pi^{(0)}$ and $\pi^{\perp}$\label{sec:calculatePi}}
-Here we  calculate $\pi^{(0)}$ and $\pi^{\perp}$ to the first order of $D_i/\eta$ using the expansion of Green's function in Sec. \ref{sec:diagonalGreen}.
+Here we  calculate $\pi^{(0)}$ and $\pi^{\perp}$ to the first order of $\Delta_i/\eta$ using the expansion of Green's function in Sec. \ref{sec:diagonalGreen}.
 
 \begin{equation}\label{eq:pathInt2:pi0long}
 \begin{split}
@@ -174,8 +174,8 @@ It is straightforward to calculate
 \begin{equation*}
 T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}=
 \begin{pmatrix}
-{\frac{\xi_{\vk}}{E_{\vk}(i\omega_{k}-E_{1\,\vk})}}&\frac{D_{1}}{E_{\vk}(i\omega_{k}+E_{2\,\vk})}&0\\
-{\frac{D_{1}}{E_{\vk}(i\omega_{k}-E_{1\,\vk})}}&-\frac{\xi_{\vk}}{E_{\vk}(i\omega_{k}+E_{2\,\vk})}&0\\
+{\frac{\xi_{\vk}}{E_{\vk}(i\omega_{k}-E_{1\,\vk})}}&\frac{\Delta_{1}}{E_{\vk}(i\omega_{k}+E_{2\,\vk})}&0\\
+{\frac{\Delta_{1}}{E_{\vk}(i\omega_{k}-E_{1\,\vk})}}&-\frac{\xi_{\vk}}{E_{\vk}(i\omega_{k}+E_{2\,\vk})}&0\\
 0&0&-\nth{i\omega_{k}+E_{3\,\vk}}\\
 \end{pmatrix}
 \end{equation*}
@@ -184,7 +184,7 @@ Now it is easy to calculate the first term
 \begin{split}
 \sum_k\tr\big(M_{k}\big)=&
 \sum_{k}\mbr{
-\frac{2D_{1}^{2}}{E_{\vk}^{2}(i\omega_{k}-E_{1\,\vk})(i\omega_{k}+\xi_{2\,\vk})}+
+\frac{2\Delta_{1}^{2}}{E_{\vk}^{2}(i\omega_{k}-E_{1\,\vk})(i\omega_{k}+\xi_{2\,\vk})}+
 \br{\frac{\xi_{\vk}^{2}}{E_{\vk}^{2}(i\omega_{k}-E_{1\,\vk})^{2}}+\frac{\xi_{\vk}^{2}}{E_{\vk}^{2}(i\omega_{k}+E_{1\,\vk})^{2}}
 -\nth{(i\omega_{k}+E_{3\,\vk})^{2}}}
 }
@@ -192,8 +192,8 @@ Now it is easy to calculate the first term
 \end{equation}
 Only root $-\xi_{2\,\vk}$ in the first term contributes in Matrubara frequency summation at zero temperature.
 \begin{equation}\label{eq:pathInt2:pi0-1}
-\sum_k\tr\big(M_{k}\big)=\sum_{\vk}\frac{2D_{1}^{2}}{E_{\vk}^{2}(E_{1\,\vk}+\xi_{2\,\vk})}
-\approx\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{D_{1}^{2}D_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}
+\sum_k\tr\big(M_{k}\big)=\sum_{\vk}\frac{2\Delta_{1}^{2}}{E_{\vk}^{2}(E_{1\,\vk}+\xi_{2\,\vk})}
+\approx\sum_{\vk}\frac{\Delta_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{\Delta_{1}^{2}\Delta_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}
 \end{equation}
 
 For the lowest order of the second term in Eq. \eqref{eq:pathInt2:pi0long}, we only need to take the lowest order of $B_{k}$
@@ -206,7 +206,7 @@ It is easy to verify at this approximation
 \end{equation}
 Combine Eq. \eqref{eq:pathInt2:pi0-1} and Eq. \eqref{eq:pathInt2:pi0-2}, we have 
 \begin{equation}
-\pi^{(0)}(0)\approx\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{D_{1}^{2}D_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}\end{equation}
+\pi^{(0)}(0)\approx\sum_{\vk}\frac{\Delta_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{\Delta_{1}^{2}\Delta_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}\end{equation}
 
 We can actually calculate  $\pi^{\perp}(0)$ exactly
 \begin{equation}
@@ -221,9 +221,9 @@ We can actually calculate  $\pi^{\perp}(0)$ exactly
 
 
 \section{Check for consistency of expansion\label{sec:pathApp:consistency}}
-In our treatment here, one crucial assumption in expansion is the smallness of $D_{2}/\eta$.  Here we check it.  We have 
+In our treatment here, one crucial assumption in expansion is the smallness of $\Delta_{2}/\eta$.  Here we check it.  We have 
 \begin{equation}
-D_{2}=\sum{}Yh_{1\vk}+\sum{}Vh_{2\vk}\tag{\ref{eq:pathInt2:mfclose}}
+\Delta_{2}=\sum{}Yh_{1\vk}+\sum{}Vh_{2\vk}\tag{\ref{eq:pathInt2:mfclose}}
 \end{equation}
 The first term on the right is relatively small comparing to the second term.  In an estimation we just keep the second term.  Furthermore,  we assume $h_{2\,\vk}=\sqrt{N_{c}}\phi_{0\,\vk}$, where $\phi_{0\,\vk}$ is the normalized wave function of isolated close-channel potential satisfying \sch equation
 \begin{equation}\tag{\ref{eq:pathInt2:phi}}
@@ -235,7 +235,7 @@ rearrange it we have (especially at low-momentum)
 \end{equation*}
 The second approximation is correct at low-momentum (smaller or in the same order of Fermi momentum) as $\epsilon_{\vp}\ll{}E_{b}\approx\eta$.  Put all these together, we have
 \begin{equation*}
-D_{2}\approx\alpha{}E_{b}\phi
+\Delta_{2}\approx\alpha{}E_{b}\phi
 \end{equation*}
 If we assume a simple exponentially decayed wave function
 \begin{equation}\label{eq:pathInt2:phi2body}
@@ -243,43 +243,43 @@ If we assume a simple exponentially decayed wave function
 \end{equation}
 Here  $V_{0}$ is the total volume.  The second approximation uses the fact that $k\ll\kappa$ at low-momentum as previous equation.  Collect all these together, we have
 \begin{equation}
-D_{2}\approx\sqrt{N_{c}}\eta\sqrt{\frac{8\pi\kappa}{V_{0}}}\frac{1}{\kappa^{2}}
+\Delta_{2}\approx\sqrt{N_{c}}\eta\sqrt{\frac{8\pi\kappa}{V_{0}}}\frac{1}{\kappa^{2}}
 \sim\eta\sqrt\frac{n_{c}}{\kappa^{3}}
 \sim\eta\br{\frac{k_{Fc}}{\kappa}}^{\frac{3}{2}}
 \sim\eta\br{\frac{E_{Fc}}{\eta}}^{\frac{3}{4}}
 \end{equation}
 %:
-$k_{Fc}$ is the Fermi momentum corresponding to density of the particles in close-channel, which is much smaller than the characteristic momentum for bound-state, $\kappa$.   Therefore we have $D_{2}\ll\eta$, even when $n_{c}$ is close to total density $n$. 
+$k_{Fc}$ is the Fermi momentum corresponding to density of the particles in close-channel, which is much smaller than the characteristic momentum for bound-state, $\kappa$.   Therefore we have $\Delta_{2}\ll\eta$, even when $n_{c}$ is close to total density $n$. 
 
 Now we check whether the correction in Fermionic spectrum (Eq. \ref{eq:pathInt2:xiExpand3}-\ref{eq:pathInt2:xiExpand3}), 
 is indeed small comparing to the zeroth order term.  
 \begin{align}\tag{\ref{eq:pathInt2:xiExpand}}
-E_{1\vk}&\approx{}E_{\vk}+\frac{D_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{1\vk}\\
-\xi_{2\vk}&\approx{}E_{\vk}-\frac{D_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{2\vk}
+E_{1\vk}&\approx{}E_{\vk}+\frac{\Delta_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{1\vk}\\
+\xi_{2\vk}&\approx{}E_{\vk}-\frac{\Delta_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{2\vk}
 \tag{\ref{eq:pathInt2:xiExpand2}}\\
-E_{3\vk}&\approx{}\xi_{\vk}+\eta-\frac{D_{2}^{2}}{2(\xi_{\vk}+\eta)}&\equiv{}&\xi_{\vk}+\eta+\gamma_{3\vk}
+E_{3\vk}&\approx{}\xi_{\vk}+\eta-\frac{\Delta_{2}^{2}}{2(\xi_{\vk}+\eta)}&\equiv{}&\xi_{\vk}+\eta+\gamma_{3\vk}
 \tag{\ref{eq:pathInt2:xiExpand3}}
 \end{align}
 Here, we mostly only concern of low-momentum ($k\sim{}k_{F}$).  In Eq. \ref{eq:pathInt2:xiExpand3}, 
 \begin{equation*}
-\frac{\gamma_{3\vk}}{E_{3\vk}}\sim{}\frac{D_{2}^{2}}{\eta^{2}}\sim\br{\frac{k_{Fc}}{\kappa}}^{2}\ll1
+\frac{\gamma_{3\vk}}{E_{3\vk}}\sim{}\frac{\Delta_{2}^{2}}{\eta^{2}}\sim\br{\frac{k_{Fc}}{\kappa}}^{2}\ll1
 \end{equation*}
-Eqs. \ref{eq:pathInt2:xiExpand} and Eqs. \ref{eq:pathInt2:xiExpand2} is slightly more complicated.  Both of them involve $\frac{D_{2}^{2}}{E_{\vk}\eta}$,  at very BCS side, close-channel density is small, $k_{F\,c}$ is small and that makes this ratio small; when close to (narrow) resonance, where $n_{c}$ is comparable to to total density, at low energy, $D_{1}$ is in the order of Fermi energy, so does $E_{\vk}$.   We have (we no longer distinguish $k_{F\,c}$ with $k_{F}$)
+Eqs. \ref{eq:pathInt2:xiExpand} and Eqs. \ref{eq:pathInt2:xiExpand2} is slightly more complicated.  Both of them involve $\frac{\Delta_{2}^{2}}{E_{\vk}\eta}$,  at very BCS side, close-channel density is small, $k_{F\,c}$ is small and that makes this ratio small; when close to (narrow) resonance, where $n_{c}$ is comparable to to total density, at low energy, $\Delta_{1}$ is in the order of Fermi energy, so does $E_{\vk}$.   We have (we no longer distinguish $k_{F\,c}$ with $k_{F}$)
  \begin{equation*}
- \frac{\gamma_{i}}{\xi_{i}}<\frac{D_{2}^{2}}{E_{\vk}\eta}\sim\frac{\eta^{2}\frac{k_{Fc}^{3}}{\kappa^{3}}}{k_{F}^{2}\eta}\sim\frac{k_{F}}{\kappa}\ll1
+ \frac{\gamma_{i}}{\xi_{i}}<\frac{\Delta_{2}^{2}}{E_{\vk}\eta}\sim\frac{\eta^{2}\frac{k_{Fc}^{3}}{\kappa^{3}}}{k_{F}^{2}\eta}\sim\frac{k_{F}}{\kappa}\ll1
 \end{equation*}
 
 More deeply, in the secular equation that leads to spectrum, Eq. \ref{eq:pahtApp:secular}.  We rewrite it without scale to $E_{\vk}$,  (We drop subscript $\vk$ in the following equations for simplicity)
 \begin{equation*}
-(x^{2}-E^{2})(x-\xi-\eta)-D_{2}^{2}x+D_{2}^{2}E(u^{2}-v^{2})=0
+(x^{2}-E^{2})(x-\xi-\eta)-\Delta_{2}^{2}x+\Delta_{2}^{2}E(u^{2}-v^{2})=0
 \end{equation*}
-It is not hard to use definition of $u$ and $v$ to find $u^{2}-v^{2}=\xi/E$, and express $E^{2}=\xi^{2}+D_{1}^{2}$, therefore we have
+It is not hard to use definition of $u$ and $v$ to find $u^{2}-v^{2}=\xi/E$, and express $E^{2}=\xi^{2}+\Delta_{1}^{2}$, therefore we have
 \begin{equation*}
-(x-\xi)(x+\xi)(x-\xi-\eta)-D_{1}^{2}(x-\xi-\eta)-D_{2}^{2}(x-\xi)=0
+(x-\xi)(x+\xi)(x-\xi-\eta)-\Delta_{1}^{2}(x-\xi-\eta)-\Delta_{2}^{2}(x-\xi)=0
 \end{equation*}
-Here the first term is for free particles, and let us estimate the size of the last two terms.  For low-momentum solution, we simply use $D_{1}\sim{}E_{F}$, we find
+Here the first term is for free particles, and let us estimate the size of the last two terms.  For low-momentum solution, we simply use $\Delta_{1}\sim{}E_{F}$, we find
 \begin{equation*}
-\frac{D_{1}^{2}(x-\xi-\eta)}{D_{2}^{2}(x-\xi)}\sim\frac{E_{F}^{2}\eta}{D_{2}^{2}E_{F}}\sim\frac{\kappa}{k_{F}}\gg1
+\frac{\Delta_{1}^{2}(x-\xi-\eta)}{\Delta_{2}^{2}(x-\xi)}\sim\frac{E_{F}^{2}\eta}{\Delta_{2}^{2}E_{F}}\sim\frac{\kappa}{k_{F}}\gg1
 \end{equation*}
 This justifies our choice to neglect the last term when finding the lowest-order solution and then use the last term for correction.  
 

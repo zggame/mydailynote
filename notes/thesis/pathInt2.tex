@@ -46,8 +46,7 @@ Here $\eta_{j}$ is the Zeeman energy of the specific hyperfine species.  ``$a$''
 
 One drawback of contact interaction is that it is flat in momentum space, in another word, it pairs not only zero central-momentum pairs, but also finite central-momentum pairs.  Nevertheless, the saddle point (mean-field) solution settles at the zero central-momentum pairing, therefore the mean-field solution coincides with that of  variation method derived from pairing of only opposite momentum atoms.  On the other hand, the collective mode (fluctuation of order parameter) emerges naturally from the included non-zero central-momentum interaction.  We do not need to introduce extra interaction term (as in \cite{AndersonBCS}) to study collective mode.   
 
-There are three different types of Hilbert space in this chapter:  the coordinator space and its reciprocal momentum space (infinite dimension);   hyperfine spin, $a,\,b,\,c$ (3 dimension);  two channels $(a,b),\,(a,c)$ (2 dimension).  In principle, fermion field $\psi$ and $\bar\psi$ (and $\Delta$ and $\bar\Delta$ defined according to $\psi$ and $\bar\psi$),  both Grassmann numbers, are independent to each other  and  not related as complex conjugate\footnote{Complex conjugate is not a well-defined concept for Grassmann algebra}.  This is marked by using ``$\bar{\;}$''(bar) instead of normally used ``$^{\dg}$''(dagger) sign. In this chapter, $^{}\dg$ sign is reserved only for hermitian conjugate matrix in the later two finite-dimension spaces: hyperfine spins ($3\times3$ matrix) or channels ($2\times2$ matrix). 
-
+Three different types of Hilbert space show in this chapter.   The first one is the coordinate space and its reciprocal momentum space (infinite dimension).   The second one is the space of hyperfine spin, $a,\,b,\,c$ (3 dimension).   These two are atom based.  The full Hilbert space is $N$-power of direct product of these two.  Sometimes, instead of 3-dimension hyperfine space, we use the third type of space, open- and closed-channel $(a,b),\,(a,c)$ (2 dimension).  Strictly speaking, this one is just a subspace of direct product of a pair hyperfine space.  Nevertheless,  it is sufficient within our model because only these two combinations of a pair are considered.    In principle, fermion field $\psi$ and $\bar\psi$ (and $\Delta$ and $\bar\Delta$ defined according to $\psi$ and $\bar\psi$),  both Grassmann numbers, are independent to each other  and  not related as complex conjugate\footnote{Complex conjugate is not a well-defined concept for Grassmann algebra}.  This is marked by using ``$\bar{\;}$''(bar) instead of normally used ``$^{\dg}$''(dagger) sign. In this chapter, a $3\times3$ matrix always refer to hyperfine spins, while a $2\times2$ matrix always refers to  open- and closed-channel.  And $^{}\dg$ sign  is reserved only for hermitian conjugate of these two types of matricies. 
 %We can introduce a unitary transformation $Q$ (mixing two channels) to diagonalize the interaction matrix into diagonal matrix $A$.
 %\begin{equation}
 %\begin{split}
@@ -55,6 +54,7 @@ There are three different types of Hilbert space in this chapter:  the coordinat
 %\tilde{U}\equiv\mtrx{U&Y\\Y^{*}&V}=Q\mtrx{A_{11}&0\\0&A_{22}}Q^{\dg}
 %\end{split}
 %\end{equation}
+
 Introduce hermitian interaction matrix ($2\times2$) $\tilde{U}$
 \begin{equation}
 \tilde{U}\equiv{}\mtrx{U&Y\\Y^{*}&V}
@@ -79,7 +79,7 @@ Similar as in Sec. \ref{sec:pathInt}, we can make Hubbard-Stratonovich transform
 \[
 \Delta^{\dg}=(\bar\Delta_{1},\bar\Delta_{2})\qquad\Delta=\begin{pmatrix}\Delta_{1}\\\Delta_{2}\end{pmatrix}
 \]
-here $x$ is four-coordinator, $(\vr, \tau)$,  $\int{dx}=\int^{\beta}_{0}d\tau\int{d^{d}\vr}$. 
+here $x$ is four-coordinate, $(\vr, \tau)$,  $\int{dx}=\int^{\beta}_{0}d\tau\int{d^{d}\vr}$. 
 
 We can make a shift in $\Delta$
 \begin{equation}
@@ -99,7 +99,7 @@ Write it explicitly into the matrix form
 	\mtrx{U&Y^{*}\\Y^{}&V}
 \end{equation*}
 First of all, notice that the new auxiliary field $\Delta$ is related to the mixture of two channels by $2\times2$ matrix $\tilde{U}$.
-Also note that  $\bar{\Delta}_{i}$ is not simple complex conjugate of $\Delta_{i}$ as they are related to $\psi\psi$ and $\bar\psi\bar\psi$ because $\psi$ and $\bar\psi$ are Grassmann numbers. But in following analysis, to the  mean-field (saddle point) level about the system as well as simple  (phase-fluctuation) Gaussian level about collective modes, they are indeed complex conjugate (and real for saddle point).  We will treat them as complex conjugate afterward and use $\bar\Delta$ and $\Delta^{\dg}$ more or less arbitrarily.  Furthermore, $\Delta(\vr,\tau)$ carries the the same coordinator as $\psi(\vr,\tau)\psi(\vr,\tau)$ (or frequency-momentum in reciprocal space).  Now the ``fat identity'' Eq. \ref{eq:pathInt2:indetity} becomes 
+Also note that  $\bar{\Delta}_{i}$ is not simple complex conjugate of $\Delta_{i}$ as they are related to $\psi\psi$ and $\bar\psi\bar\psi$ because $\psi$ and $\bar\psi$ are Grassmann numbers. But in following analysis, to the  mean-field (saddle point) level about the system as well as simple  (phase-fluctuation) Gaussian level about collective modes, they are indeed complex conjugate (and real for saddle point).  We will treat them as complex conjugate afterward and use $\bar\Delta$ and $\Delta^{\dg}$ more or less arbitrarily.  Furthermore, $\Delta(\vr,\tau)$ carries the the same coordinates as $\psi(\vr,\tau)\psi(\vr,\tau)$ (or frequency-momentum in reciprocal space).  Now the ``fat identity'' Eq. \ref{eq:pathInt2:indetity} becomes 
 \begin{equation}
 1=\int{\bigD(\Delta_{j},\bar\Delta_{j})}\exp\big\{-\int{dx}
 	[\Delta^{\dg}\tilde{U}^{-1}\Delta-(\bar\psi\bar\psi)\Delta-\bar\Delta(\psi\psi)+(\bar\psi\bar\psi)\tilde{U}(\psi\psi)]\big\}
@@ -157,14 +157,13 @@ here $\xi_{k}=\nth{2m}k^{2}-\mu$.\footnote{Here and afterward in the chapter, we
 
 We furthermore assume $\eta_{a}=\eta_{b}=0$, $\eta_{c}=\eta$ (i.e., $\eta$ is the absolute Zeeman energy difference of two channels.) In frequency-momentum space, 
 \begin{equation}\label{eq:pathInt2:nG}
-\mathcal{G}^{-1}=i\omega_{n}I+
+\mathcal{G}^{-1}=i\omega_{n}I-
 \begin{pmatrix}
--\xi_{k}&\Delta_{1}&\Delta_{2}\\
-\bar{\Delta}_{1}&+\xi_{k}&0\\
-\bar{\Delta}_{2}&0&+\xi_{k}+\eta
+\xi_{k}&-\Delta_{1}&-\Delta_{2}\\
+-\bar{\Delta}_{1}&-\xi_{k}&0\\
+-\bar{\Delta}_{2}&0&-(\xi_{k}+\eta)
 \end{pmatrix}
 \end{equation}
- 
 
 %and the first term $\bar\Delta{}A^{-1}\Delta$ in action Eq. (\ref{eq:pathInt2:actionMix}) becomes
 %\[
@@ -224,7 +223,8 @@ B_{\omega_{n},\vk}&=i\omega_{n}I-
 %	&\equiv{}B^{(0)}_{\vk}+B^{(1)}_{\vk}
 \end{split}	
 \end{equation}
-Here we choose the sign of $E_{1,2,3}$  to make their zeroth order positive.  Therefore, the Fermi sea of the redefined Bogoliubov quasiparticle is always filled up without extra particle-hole remapping.  We have 
+Here we choose the sign of $E_{1,2,3}$  to make their zeroth order positive.  Similar as in Eq.  \ref{eq:pathInt2:nGDeltaK}, the second and third diagonal elements are negative because in the spinor representation, we choose $\bar{\psi}_{b}$ and $\bar{\psi}_{c}$ for $\Psi$, which gives extra negative signs for quantity such as $\bar\Psi\Psi$ in Eq. \ref{eq:pathInt2:actionMixCompact}.  We can see that both are restored to positive once we restore them to the normal order $\bar\psi\psi$ in Sec. \ref{sec:pathInt2:bog}.  %Therefore, the Fermi sea of the redefined Bogoliubov quasiparticle is always filled up without extra particle-hole remapping.  
+The dispersion spectrum of fermions is
 \begin{align}\label{eq:pathInt2:xiExpand}
 E_{1\vk}&\approx{}E_{\vk}+\frac{\Delta_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{1\vk}\\
 E_{2\vk}&\approx{}E_{\vk}-\frac{\Delta_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{2\vk}
@@ -232,7 +232,7 @@ E_{2\vk}&\approx{}E_{\vk}-\frac{\Delta_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equi
 E_{3\vk}&\approx{}\xi_{\vk}+\eta-\frac{\Delta_{2}^{2}}{2(\xi_{\vk}+\eta)}&\equiv{}&\xi_{\vk}+\eta+\gamma_{3\vk}
 \label{eq:pathInt2:xiExpand3}
 \end{align}
-
+The extra factor of unitary transformation is 
 \begin{equation}\label{eq:pathInt2:L1}
 L_{\vk}\approx{}I+
 \mtrx{0&-\frac{\Delta_{1}{}\Delta_{2}{}}{4E^{2}_{\vk}}&u_{\vk}\\
@@ -242,12 +242,12 @@ L_{\vk}\approx{}I+
 \equiv{}I+\delta_{k}\qquad
 L^{\dg}_{\vk}=I-\delta_{\vk}
 \end{equation}
-Here we use $uv=\Delta_{1}/2E$.    Note that $L$ and $L^{\dg}$ are unitary only to the first order of $D_{i}/\eta$.
+Here we use $uv=\Delta_{1}/2E$.    Note that $L$ and $L^{\dg}$ are unitary only to the first order of $\Delta_{i}/\eta$.
 Now it is easy to express the Green's function as
 \begin{equation}
 G_{\vk}=T_{\vk}L_{\vk}B_{\vk}^{-1}L_{\vk}^{\dg}T_{\vk}^{\dg}
 \end{equation}
-This is ready to be expanded over the perturbation in order of  $\Delta_{2}^{2}/(E\eta)$ or $D_{i}/\eta$.  It is easy to see that all $\omega_{n}$ dependence concentrates on $B_{\vk}$, which is linear in $\omega_{n}$  and simplifies the Matsubara frequency summation considerably.   
+This is ready to be expanded over the perturbation in order of  $\Delta_{2}^{2}/(E\eta)$ or $\Delta_{i}/\eta$.  It is easy to see that all $\omega_{n}$ dependence concentrates on $B_{\vk}$, which is linear in $\omega_{n}$  and simplifies the Matsubara frequency summation considerably.   
 \begin{subequations}\label{eq:pathInt2:Gexpand}
 \begin{gather}
 G_{k}\approx{}T_{\vk}B_{\omega_{n},\vk}^{-1}T_{\vk}^{\dg}+T_{\vk}\delta_{\vk}B_{\omega_{n},\vk}^{-1}T_{\vk}^{\dg}
@@ -280,9 +280,9 @@ Use the same techniques as Eq. (\ref{eq:pathInt:diffTr}), we have two saddle poi
 \end{equation}
   where 
   \begin{gather}
-  h_{1\vk}=\av{\psi_{a,-\frac{\vk}{2}}\psi_{b,+\frac{\vk}{2}}}
+  h_{1\vk}=\av{\psi_{a,-{\vk}}\psi_{b,+{\vk}}}
   =\Delta_{1}\frac{E_{1\,\vk}+\xi_{\vk}+\eta}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}\label{eq:pathInt2:h1}\\
-  h_{2\vk}=\av{\psi_{a,-\frac{\vk}{2}}\psi_{c,+\frac{\vk}{2}}}
+  h_{2\vk}=\av{\psi_{a,-{\vk}}\psi_{c,+{\vk}}}
   =\Delta_{2}\frac{E_{1\,\vk}+\xi_{\vk}}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}\label{eq:pathInt2:h2}
   \end{gather}
 
@@ -535,7 +535,7 @@ All terms behave well  in 3D and do not need any renormalization.   It is like t
 
 %\input{oldTwoChannelMeanField}
 
-\section{Fermionic excitation mode and Bogoliubov transformation}
+\section{Fermionic excitation mode and Bogoliubov transformation\label{sec:pathInt2:bog}}
 If we limit ourselves in mean field level, we can interpret transform $T_\vk{}L_\vk$ in Eq. \eqref{eq:pathInt2:B} as Bogoliubov canonical transformation, where  $3\times3$ matrix $B$ in Eq. (\ref{eq:pathInt2:Bapprox}-\ref{eq:pathInt2:xiExpand3}) gives us spectrum of fermionic quasi-particle excitation. From Eq. \eqref{eq:pathInt2:actionMix} and Eq. \eqref{eq:pathInt2:B}, the action is diagonal for new fermions (quasi-particles) field 
 \begin{equation*}
 \Phi_\vk\equiv\mtrx{\phi_{\alpha\,\vk}\\\bar\phi_{\beta\,-\vk}\\\bar\phi_{\gamma\,-\vk}}

@@ -48,17 +48,22 @@ One drawback of contact interaction is that it is flat in momentum space, in ano
 
 There are three different types of Hilbert space in this chapter:  the coordinator space and its reciprocal momentum space (infinite dimension);   hyperfine spin, $a,\,b,\,c$ (3 dimension);  two channels $(a,b),\,(a,c)$ (2 dimension).  In principle, fermion field $\psi$ and $\bar\psi$ (and $\Delta$ and $\bar\Delta$ defined according to $\psi$ and $\bar\psi$),  both Grassmann numbers, are independent to each other  and  not related as complex conjugate\footnote{Complex conjugate is not a well-defined concept for Grassmann algebra}.  This is marked by using ``$\bar{\;}$''(bar) instead of normally used ``$^{\dg}$''(dagger) sign. In this chapter, $^{}\dg$ sign is reserved only for hermitian conjugate matrix in the later two finite-dimension spaces: hyperfine spins ($3\times3$ matrix) or channels ($2\times2$ matrix). 
 
-We can introduce a unitary transformation $Q$ (mixing two channels) to diagonalize the interaction matrix into diagonal matrix $A$.
+%We can introduce a unitary transformation $Q$ (mixing two channels) to diagonalize the interaction matrix into diagonal matrix $A$.
+%\begin{equation}
+%\begin{split}
+%Q^{\dg}AQ=\mtrx{U&Y\\Y^{*}&V}\equiv{}\tilde{U}\\
+%\tilde{U}\equiv\mtrx{U&Y\\Y^{*}&V}=Q\mtrx{A_{11}&0\\0&A_{22}}Q^{\dg}
+%\end{split}
+%\end{equation}
+Introduce hermitian interaction matrix ($2\times2$) $\tilde{U}$
 \begin{equation}
-\begin{split}
-Q^{\dg}AQ=\mtrx{U&Y\\Y^{*}&V}\equiv{}\tilde{U}\\
-\tilde{U}\equiv\mtrx{U&Y\\Y^{*}&V}=Q\mtrx{A_{11}&0\\0&A_{22}}Q^{\dg}
-\end{split}
+\tilde{U}\equiv{}\mtrx{U&Y\\Y^{*}&V}
 \end{equation}
+
 The finite temperature action is 
 \begin{equation}\label{eq:pathInt2:actionFermi}
 S(\bar\psi,\psi)=\int^{\beta}_{0}d\tau\int{d^{d}r}\mbr{\sum_{j}\bar\psi_{j}(\partial_\tau-\nth{2m}\nabla^{2}-\mu+\eta_{j})\psi_{j}
--(\bar\psi\bar\psi)Q^{\dg}AQ(\psi\psi)}
+-(\bar\psi\bar\psi)\tilde{U}(\psi\psi)}
 \end{equation}
 
 Now $(\psi\psi)$ is a column vector and $(\bar\psi\bar\psi)$ is a row vector for channels
@@ -67,9 +72,9 @@ Now $(\psi\psi)$ is a column vector and $(\bar\psi\bar\psi)$ is a row vector for
 \qquad(\psi\psi)=\mtrx{\psi_{b}\psi_{a}\\\psi_{c}\psi_{a}}
 \end{equation*}
 
-Similar as in Sec. \ref{sec:pathInt}, we can make Hubbard-Stratonovich transformation on the action.   Introduce a bosonic field as a 2-component vector   and start from the ``fat identity'', where  all the integral constant is absorbed into measure of functional integral of $D(\Delta,\bar\Delta)$ \cite{Altland}.
+Similar as in Sec. \ref{sec:pathInt}, we can make Hubbard-Stratonovich transformation on the action.   Introduce a bosonic field as a 2-component vector   and start from the ``fat identity'', where  all the integral constant is absorbed into measure of functional integral of $\bigD(\Delta,\bar\Delta)$ \cite{Altland}.
 \begin{equation}\label{eq:pathInt2:indetity}
-1=\int{\bigD(\Delta,\bar\Delta)}\exp(-\int{dx}\Delta^{\dg}A^{-1}\Delta)
+1=\int{\bigD(\Delta,\bar\Delta)}\exp(-\int{dx}\Delta^{\dg}\tilde{U}^{-1}\Delta)
 \end{equation}
 \[
 \Delta^{\dg}=(\bar\Delta_{1},\bar\Delta_{2})\qquad\Delta=\begin{pmatrix}\Delta_{1}\\\Delta_{2}\end{pmatrix}
@@ -78,36 +83,38 @@ here $x$ is four-coordinator, $(\vr, \tau)$,  $\int{dx}=\int^{\beta}_{0}d\tau\in
 
 We can make a shift in $\Delta$
 \begin{equation}
-\Delta\longrightarrow\Delta-A\,Q(\psi\psi)
+\Delta\longrightarrow\Delta-\tilde{U}(\psi\psi)
 \end{equation}
 Write it explicitly into the matrix form
 \begin{equation*}
 \mtrx{\Delta_{1}\\\Delta_{2}}\longrightarrow
-	\mtrx{\Delta_{1}\\\Delta_{2}}-\mtrx{A_{11}&0\\0&A_{22}}\mtrx{Q_{11}&Q_{12}\\Q_{21}&Q_{22}}
+	\mtrx{\Delta_{1}\\\Delta_{2}}-
+	\mtrx{U&Y\\Y^{*}&V}
 	\mtrx{\psi_{b}\psi_{a}\\\psi_{c}\psi_{a}}
 \end{equation*}
 \begin{equation*}
 \mtrx{\bar\Delta_{1},\bar\Delta_{2}}\longrightarrow
 	\mtrx{\bar\Delta_{1},\bar\Delta_{2}}-
 	\mtrx{\bar\psi_{a}\bar\psi_{b}&\bar\psi_{a}\bar\psi_{c}}
-	\mtrx{Q_{11}^{*}&Q_{21}^{*}\\Q_{12}^{*}&Q_{22}^{*}}\mtrx{A_{11}&0\\0&A_{22}}
+	\mtrx{U&Y^{*}\\Y^{}&V}
 \end{equation*}
-
-Note that  $\bar{\Delta}_{i}$ is not simple complex conjugate of $\Delta_{i}$ as they are related to $\psi\psi$ and $\bar\psi\bar\psi$ because $\psi$ and $\bar\psi$ are Grassmann numbers. But in following analysis, to the  mean-field (saddle point) level about the system as well as simple  (phase-fluctuation) Gaussian level about collective modes, they are indeed complex conjugate (and real for saddle point).  We will treat them as complex conjugate afterward and use $\bar\Delta$ and $\Delta^{\dg}$ more or less arbitrarily.  Furthermore, $\Delta(\vr,\tau)$ carries the the same coordinator as $\psi(\vr,\tau)\psi(\vr,\tau)$ (or frequency-momentum in reciprocal space).  Now the ``fat identity'' Eq. \ref{eq:pathInt2:indetity} becomes 
+First of all, notice that the new auxiliary field $\Delta$ is related to the mixture of two channels by $2\times2$ matrix $\tilde{U}$.
+Also note that  $\bar{\Delta}_{i}$ is not simple complex conjugate of $\Delta_{i}$ as they are related to $\psi\psi$ and $\bar\psi\bar\psi$ because $\psi$ and $\bar\psi$ are Grassmann numbers. But in following analysis, to the  mean-field (saddle point) level about the system as well as simple  (phase-fluctuation) Gaussian level about collective modes, they are indeed complex conjugate (and real for saddle point).  We will treat them as complex conjugate afterward and use $\bar\Delta$ and $\Delta^{\dg}$ more or less arbitrarily.  Furthermore, $\Delta(\vr,\tau)$ carries the the same coordinator as $\psi(\vr,\tau)\psi(\vr,\tau)$ (or frequency-momentum in reciprocal space).  Now the ``fat identity'' Eq. \ref{eq:pathInt2:indetity} becomes 
 \begin{equation}
 1=\int{\bigD(\Delta_{j},\bar\Delta_{j})}\exp\big\{-\int{dx}
-	[\Delta^{\dg}A^{-1}\Delta-(\bar\psi\bar\psi)Q^{\dg}\Delta-\bar\Delta{Q}(\psi\psi)+(\bar\psi\bar\psi)Q^{\dg}AQ(\psi\psi)]\big\}
+	[\Delta^{\dg}\tilde{U}^{-1}\Delta-(\bar\psi\bar\psi)\Delta-\bar\Delta(\psi\psi)+(\bar\psi\bar\psi)\tilde{U}(\psi\psi)]\big\}
 \end{equation}
+The above equation use the fact $\tilde{U}$ is hermitian, so $\tilde{U}^{\dg}\tilde{U}^{-1}=\tilde{U}^{-1}\tilde{U}=I$.
 It can be rearranged as 
 \begin{equation}
-\exp[\int{dx}(\bar\psi\bar\psi)Q^{\dg}AQ(\psi\psi)]
+\exp[\int{dx}(\bar\psi\bar\psi)\tilde{U}(\psi\psi)]
 =\int{\bigD(\Delta,\bar\Delta)}\exp\big\{-\int{dx}
-	[\Delta^{\dg}A^{-1}\Delta-(\bar\psi\bar\psi)Q^{\dg}\Delta-\bar\Delta{Q}(\psi\psi)]\big\}
+	[\Delta^{\dg}\tilde{U}^{-1}\Delta-(\bar\psi\bar\psi)\Delta-\bar\Delta{}(\psi\psi)]\big\}
 \end{equation}
 This is now ready to be applied to the original action in Eq. \ref{eq:pathInt2:actionFermi}, 
 \begin{equation}\label{eq:pathInt2:actionMix}
 S_{\tau}(\bar\Delta,\Delta,\bar\psi_{i},\psi_{i})=\int^{\beta}_{0}d\tau\int{d^{d}r}\bbr{\sum_{j}\bar\psi_{j}(\partial_\tau-\nth{2m}\nabla^{2}-\mu+\eta_{j})\psi_{j}
-+[\Delta^{\dg}A^{-1}\Delta-(\bar\psi\bar\psi)Q^{\dg}\Delta-\bar\Delta{Q}(\psi\psi)]}
++[\Delta^{\dg}\tilde{U}^{-1}\Delta-(\bar\psi\bar\psi)\Delta-\bar\Delta{}(\psi\psi)]}
 \end{equation}
 We can introduce a spinor space similar to Nambu spinor representation in single-channel superconductivity.  
 \begin{equation}
@@ -116,15 +123,15 @@ We can introduce a spinor space similar to Nambu spinor representation in single
 The action can then be rewritten in a more compact form with respect to $\Psi$ and $\bar\Psi$
 \begin{equation}\label{eq:pathInt2:actionMixCompact}
 S(\bar\Delta,\Delta,\bar\psi_{i},\psi_{i})=\int^{\beta}_{0}d\tau\int{d^{d}r}
-	\mbr{\Delta^{\dg}A^{-1}\Delta-\bar\Psi\mathcal{G}^{-1}\Psi}
+	\mbr{\Delta^{\dg}\tilde{U}^{-1}\Delta-\bar\Psi\mathcal{G}^{-1}\Psi}
 \end{equation}
 where 
 \begin{equation}
 \mathcal{G}^{-1}=
 \begin{pmatrix}\label{eq:pathInt2:nGDelta}
--\partial_{\tau}+\nth{2m}\nabla^{2}+\mu-\eta_{a}&Q^{*}_{11}\Delta_{1}+Q^{*}_{21}\Delta_{2}&Q^{*}_{12}\Delta_{1}+Q^{*}_{22}\Delta_{2}\\
-Q^{}_{11}\bar\Delta_{1}+Q^{}_{21}\bar\Delta_{2}&-\partial_{\tau}-\nth{2m}\nabla^{2}-\mu+\eta_{b}&0\\
-Q^{}_{12}\bar\Delta_{1}+Q^{}_{22}\bar\Delta_{2}&0&-\partial_{\tau}-\nth{2m}\nabla^{2}-\mu+\eta_{c}
+-\partial_{\tau}+\nth{2m}\nabla^{2}+\mu-\eta_{a}&\Delta_{1}&\Delta_{2}\\
+\bar\Delta_{1}&-\partial_{\tau}-\nth{2m}\nabla^{2}-\mu+\eta_{b}&0\\
+\bar\Delta_{2}&0&-\partial_{\tau}-\nth{2m}\nabla^{2}-\mu+\eta_{c}
 \end{pmatrix}
 \end{equation}
 Rewriting  $\nG$ in frequency-momentum space, we find $\nG$ is nicely decoupled between different momentums. 
@@ -132,54 +139,54 @@ Rewriting  $\nG$ in frequency-momentum space, we find $\nG$ is nicely decoupled 
 \begin{equation}\label{eq:pathInt2:nGDeltaK}
 \mathcal{G}^{-1}=
 \begin{pmatrix}
-i\omega_{n}-\xi_{k}-\eta_{a}&Q^{*}_{11}\Delta_{1}+Q^{*}_{21}\Delta_{2}&Q^{*}_{12}\Delta_{1}+Q^{*}_{22}\Delta_{2}\\
-Q^{}_{11}\bar\Delta_{1}+Q^{}_{21}\bar\Delta_{2}&i\omega_{n}+\xi_{k}+\eta_{b}&0\\
-Q^{}_{12}\bar\Delta_{1}+Q^{}_{22}\bar\Delta_{2}&0&i\omega_{n}+\xi_{k}+\eta_{c}
+i\omega_{n}-\xi_{k}-\eta_{a}&\Delta_{1}&\Delta_{2}\\
+\bar\Delta_{1}&i\omega_{n}+\xi_{k}+\eta_{b}&0\\
+\bar\Delta_{2}&0&i\omega_{n}+\xi_{k}+\eta_{c}
 \end{pmatrix}
 \end{equation}
 here $\xi_{k}=\nth{2m}k^{2}-\mu$.\footnote{Here and afterward in the chapter, we take $\hbar=1$.} The diagonal elements of second column/row (${b}$) and third column/row (${c}$) corresponding to negative energy, because of the particular choice in the Nambu spinor ($\bar\psi_{b}$ and $\bar\psi_{c}$).  The non-diagonal elements mix the different spins  and therefore lead to a number-non-conserved theory (mix-up between $\psi_{a}$ with $\bar{\psi}_{b,c}$).  
 
-$\nG$ can be further simplified by introducing mixture within two channels.
-\begin{equation}\label{eq:pathInt2:Ddef}
-D\equiv\mtrx{D_{1}\\D_{2}}=Q^{\dg}\Delta
-\end{equation}
-\begin{equation*}
-\bar\Delta=\bar{D}\,Q^{\dg}\qquad\Delta=Q\,D
-\end{equation*}
-It is not difficult to see that $D$ actually describe the off-diagonal coupling in fermionic field $\Psi$ and is the counterpart of order parameter, gap, in single-channel problem instead of $\Delta$ here.  We will see it  more clearly when  discussing mean-field solution. 
+%$\nG$ can be further simplified by introducing mixture within two channels.
+%\begin{equation}\label{eq:pathInt2:Ddef}
+%D\equiv\mtrx{D_{1}\\D_{2}}=Q^{\dg}\Delta
+%\end{equation}
+%\begin{equation*}
+%\bar\Delta=\bar{\Delta}\,Q^{\dg}\qquad\Delta=Q\,D
+%\end{equation*}
+%It is not difficult to see that $D$ actually describe the off-diagonal coupling in fermionic field $\Psi$ and is the counterpart of order parameter, gap, in single-channel problem instead of $\Delta$ here.  We will see it  more clearly when  discussing mean-field solution. 
 
 We furthermore assume $\eta_{a}=\eta_{b}=0$, $\eta_{c}=\eta$ (i.e., $\eta$ is the absolute Zeeman energy difference of two channels.) In frequency-momentum space, 
 \begin{equation}\label{eq:pathInt2:nG}
 \mathcal{G}^{-1}=i\omega_{n}I+
 \begin{pmatrix}
--\xi_{k}&D_{1}&D_{2}\\
-\bar{D}_{1}&+\xi_{k}&0\\
-\bar{D}_{2}&0&+\xi_{k}+\eta
+-\xi_{k}&\Delta_{1}&\Delta_{2}\\
+\bar{\Delta}_{1}&+\xi_{k}&0\\
+\bar{\Delta}_{2}&0&+\xi_{k}+\eta
 \end{pmatrix}
 \end{equation}
  
 
-and the first term $\bar\Delta{}A^{-1}\Delta$ in action Eq. (\ref{eq:pathInt2:actionMix}) becomes
-\[
-\bar\Delta{}A^{-1}\Delta=\bar{D}Q^{\dg}A^{-1}QD=\bar{D}\tilde{U}^{-1}D
-\]
+%and the first term $\bar\Delta{}A^{-1}\Delta$ in action Eq. (\ref{eq:pathInt2:actionMix}) becomes
+%\[
+%\bar\Delta{}A^{-1}\Delta=\bar{\Delta}Q^{\dg}A^{-1}QD=\bar{\Delta}\tilde{U}^{-1}D
+%\]
 
 
-We can then change the functional variable into $D(\bar{D})$ 
-\begin{equation}\label{eq:pathInt2:actionMixD}
-S(\bar{D},D,\bar\psi_{i},\psi_{i})=\int^{\beta}_{0}d\tau\int{d^{d}r}
-	\mbr{\bar{D}\tilde{U}^{-1}D-\bar\Psi\mathcal{G}^{-1}\Psi}
-\end{equation}
-The action is now bilinear to $\Psi$ and we can integrate  out $\Psi$ ($\bar\Psi$) formally
+%We can then change the functional variable into $D(\bar{\Delta})$ 
+%\begin{equation}\label{eq:pathInt2:actionMixD}
+%S(\bar{\Delta},D,\bar\psi_{i},\psi_{i})=\int^{\beta}_{0}d\tau\int{d^{d}r}
+%	\mbr{\bar{\Delta}\tilde{U}^{-1}D-\bar\Psi\mathcal{G}^{-1}\Psi}
+%\end{equation}
+The action in Eq. \ref{eq:pathInt2:actionMixCompact} is  bilinear to $\Psi$ and we can integrate  out $\Psi$ ($\bar\Psi$) formally
 \begin{equation}\label{eq:pathInt2:actionD}
-S(\bar{D},D)=\int{dx}\br{\bar{D}\tilde{U}^{-1}D-\tr\ln\nG}
+S(\bar{\Delta},\Delta)=\int{dx}\br{\bar{\Delta}\tilde{U}^{-1}D-\tr\ln\nG}
 \end{equation}
-Note that at this stage neither $D(\vr,\tau)$ nor $\Delta(\vr,\tau)$ is  necessarily homogeneous in space or pseudo-time.  
+Note that at this stage neither $\Delta(\vr,\tau)$ nor $\Delta(\vr,\tau)$ is  necessarily homogeneous in space or pseudo-time.  
 
 
 
 \section{Diagonalizing Green's function\label{sec:diagonalGreen}}
-Eq. \eqref{eq:pathInt2:actionD} looks fairly innocent and compact.  Nevertheless, it has all the physics in it and is not as simple as it looks.  The major problem comes from term $\tr\ln\nG$, which includes  logarithm and trace over an infinite-dimension matrix.   All these operations are fairly straight-forward if we can diagonalize  Green's function (or its inverse) in a proper basis.      It is not hard to see $\nG$ is already decoupled in frequency-momentum space (Eqs.  \ref{eq:pathInt2:nGDeltaK}, \ref{eq:pathInt2:nG}).  It is however mixed in the $3\times3$ hyperfine-spin space though.  The rest of this section is dedicated to diagonalize the $3\times3$ matrix in hyperfine-species space.  Note that in principle, the following discussion is not limited for constant $D$, but also applies to inhomogeneous $D(\omega_{n},\vk)$ as well because the $3\times3$ hyperfine space is independent to the frequency-momentum space.   Here we use the approach in Sec. \ref{sec:diagonalizeGreen1} to diagonalize it.   
+Eq. \eqref{eq:pathInt2:actionD} looks fairly innocent and compact.  Nevertheless, it has all the physics in it and is not as simple as it looks.  The major problem comes from term $\tr\ln\nG$, which includes  logarithm and trace over an infinite-dimension matrix.   All these operations are fairly straight-forward if we can diagonalize  Green's function (or its inverse) in a proper basis.      It is not hard to see $\nG$ is already decoupled in frequency-momentum space (Eqs.  \ref{eq:pathInt2:nGDeltaK}, \ref{eq:pathInt2:nG}).  It is however mixed in the $3\times3$ hyperfine-spin space though.  The rest of this section is dedicated to diagonalize the $3\times3$ matrix in hyperfine-species space.  Note that in principle, the following discussion is not limited for constant $\Delta$, but also applies to inhomogeneous $\Delta(\omega_{n},\vk)$ as well because the $3\times3$ hyperfine space is independent to the frequency-momentum space.   Here we use the approach in Sec. \ref{sec:diagonalizeGreen1} to diagonalize it.   
 In current problem, we need to diagonalize a $3\times3$ matrix Eq. \ref{eq:pathInt2:nG}, in another word, we need to figure out the Bogoliubov canonical transformation over which the hamiltonian/action is diagonalized.   Eigen-problem of $3\times3$ matrix involves solving a cubic equation. An exact solution exists in principle.  However,  it offers little intuition in writing the exact result. Instead,  spectrum from the broad-resonance, where the only effect of closed-channel is to modify the effective interaction of open-channel, serves a reasonable lowest order approximation. We proceed to find the next order of correction over it (See Appendix \ref{sec:diagonalize} and \ref{sec:pathApp:consistency}). 
 
 
@@ -194,23 +201,23 @@ T_k=\mtrx{u_k&v_k&0\\-v_k&u_k&0\\0&0&1}
 where $u_{k}$ and $v_{k}$ are defined in a similar fashion as in single-channel BCS  problem
 \begin{gather}
 v_{\vk}^{2}\equiv1-u_{\vk}^{2}\equiv\nth{2}\br{1-\frac{\xi_{\vk}}{E_{\vk}}}\\
-E_{\vk}\equiv(\xi_{\vk}^{2}+D_{1}^{2})^{1/2}
+E_{\vk}\equiv(\xi_{\vk}^{2}+\Delta_{1}^{2})^{1/2}
 \end{gather}
 
 In the broad-resonance, where only the BCS pairing in open channel needs to be considered, $T$ is enough to diagonalize $G^{-1}$ and $L$ is simply identity matrix.  %Here we will try to approximate it to the first order correction due to Pauli exclusion between two-channel.  
 In the narrow resonance, $T$ cannot diagonalize $G^{-1}$ because of the Pauli exclusion between channels.  Consequently, $L$ stands the extra correction due to Pauli exclusion in the canonical transformation. Basically, we seek the solution around the BCS wave function ($T$ transform). 
 Apply $T$ onto $G^{-1}$, we have 
 \begin{equation}\label{eq:pathInt2:G2}
-T_k^{\dg}G_k^{-1}T_k=i\omega_nI+\mtrx{-E_k&0&u_kD_2\\0&+E_k&v_kD_2\\u_kD_2&v_kD_2&+\xi_k+\eta}
+T_k^{\dg}G_k^{-1}T_k=i\omega_nI+\mtrx{-E_k&0&u_k\Delta_2\\0&+E_k&v_k\Delta_2\\u_k\Delta_2&v_k\Delta_2&+\xi_k+\eta}
 \end{equation}
-We regard the off-diagonal elements as perturbation.  This matrix can then be diagonalized with  unitary transformation $L_{\vk}$ within the first order of $D_{2}^{2}/(E_{\vk}\eta)$  (see Appendix \ref{sec:diagonalize} for details.)
+We regard the off-diagonal elements as perturbation.  This matrix can then be diagonalized with  unitary transformation $L_{\vk}$ within the first order of $\Delta_{2}^{2}/(E_{\vk}\eta)$  (see Appendix \ref{sec:diagonalize} for details.)
 \begin{equation}\label{eq:pathInt2:Bapprox}
 \begin{split}
 B_{\omega_{n},\vk}&=i\omega_{n}I-
 	\mtrx{E_{1}{}_{\vk}&0&0\\0&-E_{2}{}_{\vk}&0\\0&0&-E_{3}{}_{\vk}}\\
 	&\approx{}i\omega_{n}I-
-	\mtrx{E_{\vk}+\frac{D_{2}^{2}u_{\vk}^{2}}{\eta}&0&0\\
-	0&-\br{E_{\vk}-\frac{D_{2}^{2}v_{\vk}^{2}}{\eta}}&0\\0&0&-\br{\xi_{\vk}+\eta+\frac{D_{2}^{2}}{2\eta}}}
+	\mtrx{E_{\vk}+\frac{\Delta_{2}^{2}u_{\vk}^{2}}{\eta}&0&0\\
+	0&-\br{E_{\vk}-\frac{\Delta_{2}^{2}v_{\vk}^{2}}{\eta}}&0\\0&0&-\br{\xi_{\vk}+\eta+\frac{\Delta_{2}^{2}}{2\eta}}}
 %	&=
 %	\mtrx{i\omega_{n}-E_{\vk}&0&0\\0&i\omega_{n}+E_{\vk}&0\\0&0&i\omega_{n}+\eta}
 %	+\mtrx{-\frac{D_{1}^{2}}{\eta}&0&0\\0&-\frac{D_{2}^{2}}{\eta}&0\\0&0&+\frac{D_{1}^{2}+D_{2}^{2}}{2\eta}}\\
@@ -219,28 +226,28 @@ B_{\omega_{n},\vk}&=i\omega_{n}I-
 \end{equation}
 Here we choose the sign of $E_{1,2,3}$  to make their zeroth order positive.  Therefore, the Fermi sea of the redefined Bogoliubov quasiparticle is always filled up without extra particle-hole remapping.  We have 
 \begin{align}\label{eq:pathInt2:xiExpand}
-E_{1\vk}&\approx{}E_{\vk}+\frac{D_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{1\vk}\\
-E_{2\vk}&\approx{}E_{\vk}-\frac{D_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{2\vk}
+E_{1\vk}&\approx{}E_{\vk}+\frac{\Delta_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{1\vk}\\
+E_{2\vk}&\approx{}E_{\vk}-\frac{\Delta_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{2\vk}
 \label{eq:pathInt2:xiExpand2}\\
-E_{3\vk}&\approx{}\xi_{\vk}+\eta-\frac{D_{2}^{2}}{2(\xi_{\vk}+\eta)}&\equiv{}&\xi_{\vk}+\eta+\gamma_{3\vk}
+E_{3\vk}&\approx{}\xi_{\vk}+\eta-\frac{\Delta_{2}^{2}}{2(\xi_{\vk}+\eta)}&\equiv{}&\xi_{\vk}+\eta+\gamma_{3\vk}
 \label{eq:pathInt2:xiExpand3}
 \end{align}
 
 \begin{equation}\label{eq:pathInt2:L1}
 L_{\vk}\approx{}I+
-\mtrx{0&-\frac{D_{1}{}D_{2}{}}{4E^{2}_{\vk}}&u_{\vk}\\
-\frac{D_{1}{}D_{2}{}}{4E^{2}_{\vk}}&0&v_{\vk}\\
+\mtrx{0&-\frac{\Delta_{1}{}\Delta_{2}{}}{4E^{2}_{\vk}}&u_{\vk}\\
+\frac{\Delta_{1}{}\Delta_{2}{}}{4E^{2}_{\vk}}&0&v_{\vk}\\
 -u_{\vk}&-v_{\vk}&0
-}\frac{D_{2}{}}{\eta}
+}\frac{\Delta_{2}{}}{\eta}
 \equiv{}I+\delta_{k}\qquad
 L^{\dg}_{\vk}=I-\delta_{\vk}
 \end{equation}
-Here we use $uv=D_{1}/2E$.    Note that $L$ and $L^{\dg}$ are unitary only to the first order of $D_{i}/\eta$.
+Here we use $uv=\Delta_{1}/2E$.    Note that $L$ and $L^{\dg}$ are unitary only to the first order of $D_{i}/\eta$.
 Now it is easy to express the Green's function as
 \begin{equation}
 G_{\vk}=T_{\vk}L_{\vk}B_{\vk}^{-1}L_{\vk}^{\dg}T_{\vk}^{\dg}
 \end{equation}
-This is ready to be expanded over the perturbation in order of  $D_{2}^{2}/(E\eta)$ or $D_{i}/\eta$.  It is easy to see that all $\omega_{n}$ dependence concentrates on $B_{\vk}$, which is linear in $\omega_{n}$  and simplifies the Matsubara frequency summation considerably.   
+This is ready to be expanded over the perturbation in order of  $\Delta_{2}^{2}/(E\eta)$ or $D_{i}/\eta$.  It is easy to see that all $\omega_{n}$ dependence concentrates on $B_{\vk}$, which is linear in $\omega_{n}$  and simplifies the Matsubara frequency summation considerably.   
 \begin{subequations}\label{eq:pathInt2:Gexpand}
 \begin{gather}
 G_{k}\approx{}T_{\vk}B_{\omega_{n},\vk}^{-1}T_{\vk}^{\dg}+T_{\vk}\delta_{\vk}B_{\omega_{n},\vk}^{-1}T_{\vk}^{\dg}
@@ -254,13 +261,13 @@ G_{k}\approx{}T_{\vk}B_{\omega_{n},\vk}^{-1}T_{\vk}^{\dg}+T_{\vk}\delta_{\vk}B_{
 
 %We only need to keep the zeroth order term for $B_{\vk}^{-1}$ for first order expansion.  
 \section{Mean field equation \label{sec:pathInt2:meanfield}}
-Use the same techniques as Eq. (\ref{eq:pathInt:diffTr}), we have two saddle point equations for $D_{1}$ and $D_{2}$ from Eq. \eqref{eq:pathInt2:actionD},
+Use the same techniques as Eq. (\ref{eq:pathInt:diffTr}), we have two saddle point equations for $\Delta_{1}$ and $\Delta_{2}$ from Eq. \eqref{eq:pathInt2:actionD},
  \begin{align}
-\frac{\delta}{\delta{}D_{1}}:&\qquad&
-(\tilde{U}^{-1})_{11}\bar{D}_{1}+(\tilde{U}^{-1})_{21}\bar{D}_{2}-\tr\mbr{{G_{0}}\cdot\cmtrx{0&1&0\\0&0&0\\0&0&0}}=0
+\frac{\delta}{\delta{}\Delta_{1}}:&\qquad&
+(\tilde{U}^{-1})_{11}\bar{\Delta}_{1}+(\tilde{U}^{-1})_{21}\bar{\Delta}_{2}-\tr\mbr{{G_{0}}\cdot\cmtrx{0&1&0\\0&0&0\\0&0&0}}=0
 \label{eq:pathInt2:mf01}\\
-\frac{\delta}{\delta{}D_{2}}:&\qquad&
-(\tilde{U}^{-1})_{12}\bar{D}_{1}+(\tilde{U}^{-1})_{22}\bar{D}_{2}-\tr\mbr{{G_{0}}\cdot\cmtrx{0&0&1\\0&0&0\\0&0&0}}=0
+\frac{\delta}{\delta{}\Delta_{2}}:&\qquad&
+(\tilde{U}^{-1})_{12}\bar{\Delta}_{1}+(\tilde{U}^{-1})_{22}\bar{\Delta}_{2}-\tr\mbr{{G_{0}}\cdot\cmtrx{0&0&1\\0&0&0\\0&0&0}}=0
 \label{eq:pathInt2:mf02}
  \end{align}
  
@@ -269,20 +276,20 @@ Use the same techniques as Eq. (\ref{eq:pathInt:diffTr}), we have two saddle poi
   %\footnote{Actually $D_{2}{_{\vk}}$ cannot be constant at high momentum.  However, for the momentum we are interested, i.e. the momentum lower or in the order of Fermi momentum, it slowly varies.  Therefore  it is reasonable to take it as constant.}     
   we can find the mean field result. Eq. (\ref{eq:pathInt2:nG}) can be inverted to get $G$.  The inversion is quite tedious, but fortunately, we only need two elements of the $G$ matrix ($G_{0\, (21)}$ and $G_{0 \,(31)}$).  The final mean-field equations are (all $D_{i}$'s are taken as real, see Appendix \ref{sec:pathInt2:deriveMF} for detail) 
   \begin{equation}\label{eq:pathInt2:mf}
-\mtrx{D_1\\D_2}=\mtrx{U&Y\\Y^{*}&V}\sum_{\vk}\mtrx{h_{1\vk}\\h_{2\vk}}
+\mtrx{\Delta_1\\\Delta_2}=\mtrx{U&Y\\Y^{*}&V}\sum_{\vk}\mtrx{h_{1\vk}\\h_{2\vk}}
 \end{equation}
   where 
   \begin{gather}
   h_{1\vk}=\av{\psi_{a,-\frac{\vk}{2}}\psi_{b,+\frac{\vk}{2}}}
-  =D_{1}\frac{E_{1\,\vk}+\xi_{\vk}+\eta}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}\label{eq:pathInt2:h1}\\
+  =\Delta_{1}\frac{E_{1\,\vk}+\xi_{\vk}+\eta}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}\label{eq:pathInt2:h1}\\
   h_{2\vk}=\av{\psi_{a,-\frac{\vk}{2}}\psi_{c,+\frac{\vk}{2}}}
-  =D_{2}\frac{E_{1\,\vk}+\xi_{\vk}}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}\label{eq:pathInt2:h2}
+  =\Delta_{2}\frac{E_{1\,\vk}+\xi_{\vk}}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}\label{eq:pathInt2:h2}
   \end{gather}
 
 
-Comparing Eq. \ref{eq:pathInt2:mf} with gap equation for single-channel problem, we  see that $D_{1,2}$ are  direct counterpart of order parameter $\Delta$ in single-channel problem. 
+Comparing Eq. \ref{eq:pathInt2:mf} with gap equation for single-channel problem, we  see that $\Delta_{1,2}$ are  direct counterpart of order parameter $\Delta$ in single-channel problem. 
 $h_{1\vk}$ and $h_{2\vk}$ are (equal time) anomalous Green's function for open- and closed-channel. On the other hand, they correspond the macroscopic eigen-function of two-body density matrix as described by Zhang and Leggett\cite{ZhangThesis,shizhongUniv} (see Sec. \ref{sec:intro:as}). In many respects, they are just like the two-body wave function. And indeed, they coincide with two-body wave-function at high-momentum.  We will reference them often as ``many-body correlation'' in the following.  
-If we simply take the lowest order of $\xi_{i}$, and ignore the closed-channel, it is easy to identify $h_{1\vk}\approx{D_{1}}/(2E_{\vk})$ as the many-body wave function $F_{\vk}$ in single channel BEC-BCS crossover problem.  
+If we simply take the lowest order of $\xi_{i}$, and ignore the closed-channel, it is easy to identify $h_{1\vk}\approx{\Delta_{1}}/(2E_{\vk})$ as the many-body wave function $F_{\vk}$ in single channel BEC-BCS crossover problem.  
 
 
 At high-momentum, both $h_{1\vk}$ and $h_{2\vk}$ behave as $1/\epsilon_{\vk}$ and it diverges when summation is converted to integral in 3D.  This divergence can be mitigated by setting a high-momentum cutoff in integral or recognizing the decay of interaction  in high momentum.  It is not unique in many-body and exists in the two-body physics where  high-momentum component of wave function is  $1/\epsilon_{\vk}$ asymptotically as well.  In the next section, we proceed to  remove divergence of summation in $h_{1\vk}$ and $h_{2\vk}$ by noting the same divergence in two-body wave function and manipulating accordingly. 
@@ -292,10 +299,10 @@ At high-momentum, both $h_{1\vk}$ and $h_{2\vk}$ behave as $1/\epsilon_{\vk}$ an
 \subsection {Renormalization of mean field equation\label{sec:pathInt2:ren}}
 The mean-field equations \ref{eq:pathInt2:mf} can be rewritten as 
 \begin{align}
-D_{1\vp}&=\sum{}U_{\vp\vk}h_{1\vk}+\sum{}Y_{\vp\vk}h_{2\vk}\label{eq:pathInt2:mfopen}\\
-D_{2\vp}&=\sum{}Y_{\vp\vk}h_{1\vk}+\sum{}V_{\vp\vk}h_{2\vk}\label{eq:pathInt2:mfclose}
+\Delta_{1\vp}&=\sum{}U_{\vp\vk}h_{1\vk}+\sum{}Y_{\vp\vk}h_{2\vk}\label{eq:pathInt2:mfopen}\\
+\Delta_{2\vp}&=\sum{}Y_{\vp\vk}h_{1\vk}+\sum{}V_{\vp\vk}h_{2\vk}\label{eq:pathInt2:mfclose}
 \end{align}
-The first thing to notice is that we restore the momentum dependence of interaction as well as $D_{1\vp}$ and $D_{2\vp}$.     Here $D_{1\vp}$ and $D_{2\vp}$ vary slowly at low momentum and  it is a good approximate to take them as constant if we only study the low momentum properties.  We introduce the momentum-dependence in order to gain proper convergence in summation. As pointed out previously, both $h_{1\vk}$ and $h_{2\vk}$ approach $1/\epsilon_{\vk}$ in high momentum asymptotically.  This  makes  all summations diverge at high momentum when they are converted to integral in 3D if we take the interaction as contact and pull them out of the summation.  However, we note that the real potential is not contact and decays in high momentum.  One way to remove the divergence is to  introduce  a cutoff at high-momentum while keeping the interaction coefficient constant.  However, an arbitrary cutoff is unphysical and therefore undesirable.  Alternatively, we can remove the divergence by restoring the momentum dependence in interaction and recognizing its decay at high-momentum.    The problem here is that those microscopic bare interaction is hard to pin down.      More readily available and observable is the two-body low-energy effective scattering matrix, $T$.             In single channel problem, (Sec. \ref{sec:pathInt:meanfield}),  we  introduce a relation involving two-body s-wave scattering length $a_{s}$, (or $T_{0}$), Eq. \eqref{eq:pathInt:as}, which has the similar divergence in high-momentum.  We subtract it from the summation and the remaining difference behaves well in high-momentum.  A cutoff or bare momentum-dependent interaction is then no longer necessary.  In principle, we can do the same in two channels and introduce the two-channel equivalent of s-wave scattering length, a $2\times2$ scattering amplitude matrix.  However, this $2\times2$ matrix is awkward in definition and not clear for the physical meaning.   Therefore, we adopt a two-step process with better physical intuition behind it.   
+The first thing to notice is that we restore the momentum dependence of interaction as well as $\Delta_{1\vp}$ and $\Delta_{2\vp}$.     Here $\Delta_{1\vp}$ and $\Delta_{2\vp}$ vary slowly at low momentum and  it is a good approximate to take them as constant if we only study the low momentum properties.  We introduce the momentum-dependence in order to gain proper convergence in summation. As pointed out previously, both $h_{1\vk}$ and $h_{2\vk}$ approach $1/\epsilon_{\vk}$ in high momentum asymptotically.  This  makes  all summations diverge at high momentum when they are converted to integral in 3D if we take the interaction as contact and pull them out of the summation.  However, we note that the real potential is not contact and decays in high momentum.  One way to remove the divergence is to  introduce  a cutoff at high-momentum while keeping the interaction coefficient constant.  However, an arbitrary cutoff is unphysical and therefore undesirable.  Alternatively, we can remove the divergence by restoring the momentum dependence in interaction and recognizing its decay at high-momentum.    The problem here is that those microscopic bare interaction is hard to pin down.      More readily available and observable is the two-body low-energy effective scattering matrix, $T$.             In single channel problem, (Sec. \ref{sec:pathInt:meanfield}),  we  introduce a relation involving two-body s-wave scattering length $a_{s}$, (or $T_{0}$), Eq. \eqref{eq:pathInt:as}, which has the similar divergence in high-momentum.  We subtract it from the summation and the remaining difference behaves well in high-momentum.  A cutoff or bare momentum-dependent interaction is then no longer necessary.  In principle, we can do the same in two channels and introduce the two-channel equivalent of s-wave scattering length, a $2\times2$ scattering amplitude matrix.  However, this $2\times2$ matrix is awkward in definition and not clear for the physical meaning.   Therefore, we adopt a two-step process with better physical intuition behind it.   
 
 Besides the assumption of short-range potential, we make another assumption:  the  two-body closed-channel bound-state at resonance, $\phi$, is much smaller in size ($a_{c}$) than particle-particle distance ($a_{0}$), although it is  larger than the potential range ($r_{c}$),    $r_{c}\ll{}a_{c}\ll{}a_{0}$.  The problem would be a genuine 3-species problem and require other techniques if the closed-channel bound-state is about the size  or even larger than  inter-particle distance. As discussed at the beginning of this chapter, this assumption guarantees that the closed-channel correlation $h_{2\vk}$ follows its two-body bound-state wave-function in high momentum, and  we can write it as 
 \begin{equation}\tag{\ref{eq:pathInt2:hphif}}
@@ -307,7 +314,7 @@ with factor $f(\vk)$ encapsulating all the many-body effects. This replacement a
 
 Let us put the above qualitative statement into concrete mathematical formulas.   As discussed before, we start with  closed-channel correlation $h_{2\vk}$ (Eq. \ref{eq:pathInt2:h2}). In the lowest order, we have $\frac{E_{1\,\vk}+\xi_{\vk}}{E_{1\,\vk}+E_{2\,\vk}}\approx{}u_{\vk}^{2}$, $h_{2\vk}$ can be rewritten into such form
 \begin{equation}\label{eq:pathInt2:h2D2}
- h_{2\vk}\approx\frac{D_{2\vk}}{(E_{1\,\vk}+E_{3\,\vk})}u_{\vk}^{2}
+ h_{2\vk}\approx\frac{\Delta_{2\vk}}{(E_{1\,\vk}+E_{3\,\vk})}u_{\vk}^{2}
 \end{equation}
 
 %Within $r_{c}$, the  potential determine the specific shape of the wave-functions; while, at free region, $\mathcal{D}$ ($r\gg{r_{c}}$ see Sec. \ref{sec:intro:as}), system is ``free'', all the details of potential are encapsulated in a few parameters (for example, s-wave scattering length, $a_{s}$).       %    the behavior should be quite universal for these bound states except an overall normalization factor. 
@@ -320,9 +327,9 @@ Let us put the above qualitative statement into concrete mathematical formulas. 
 
 
 %In three-species many-body problem, the above conclusion is still valid except at low-momentum (around or below Fermi energy) where Pauli exclusion between two channels is severe. 
-Here $\nth{(E_{1\,\vk}+E_{3\,\vk})}\approx\nth{2\xi_{\vk}+\eta}$ is just the same as two-body wave function $\phi_{0}$  besides normalization (when $k\ll\kappa$); while the extra factor $u_{\vk}^{2}$ is the many-body factor $f(\vk)$ in Eq. \ref{eq:pathInt2:hphif} which describes the Pauli exclusion between two channels.  At the low-momentum, open-channel weight is large, phase space left for closed-channel is limited, which is shown mathematically as the small $u_{\vk}^{2}$ factor.   At higher momentum ($k_{F}\ll{k}\ll1/r_{c}$),  closed-channel wave-function just follows two-body counterpart with a different normalization factor, indicated by $u_{\vk}^{2}\approx1$.   It is not hard to see that $D_{2}$ is actually closely related to ``\emph{integrated contact intensity}'', $C$, in Tan's work about universality (\cite{Tan2008-1,Tan2008-2}).  In his work, Tan concluded that  the high-end of relative-momentum distribution asymptotically approaches  $C/k^{4}$.  Note that the high-end in his paper means momentum lower than $1/r_{c}$, but higher than any other scale ($1/a_{s}$, $1/a_{0}$).  In such scale, $u_{k}^2\approx1$, %and especially, for close-to-threshold bound-state, $E_{b}\ll{}\frac{\hbar^{2}}{mr_{c}^{2}}$, so 
-$C=\frac{D_{2}^{2}}{4m^{2}}$ for the closed-channel.   
-At even higher momentum ($>1/r_{c}$), the mean-field / saddle-point solution no longer applies.  And  two-body correlation, $h_{2\vk}$, should just follow two-body wave function (See Sec. \ref{sec:intro:as}).  Therefore, we replace $\frac{D_{2}}{(E_{1\,\vk}+E_{3\,\vk})}$ with two-body wave function $\phi_{0\vk}$ in Eq. \ref{eq:pathInt2:h2D2},
+Here $\nth{(E_{1\,\vk}+E_{3\,\vk})}\approx\nth{2\xi_{\vk}+\eta}$ is just the same as two-body wave function $\phi_{0}$  besides normalization (when $k\ll\kappa$); while the extra factor $u_{\vk}^{2}$ is the many-body factor $f(\vk)$ in Eq. \ref{eq:pathInt2:hphif} which describes the Pauli exclusion between two channels.  At the low-momentum, open-channel weight is large, phase space left for closed-channel is limited, which is shown mathematically as the small $u_{\vk}^{2}$ factor.   At higher momentum ($k_{F}\ll{k}\ll1/r_{c}$),  closed-channel wave-function just follows two-body counterpart with a different normalization factor, indicated by $u_{\vk}^{2}\approx1$.   It is not hard to see that $\Delta_{2}$ is actually closely related to ``\emph{integrated contact intensity}'', $C$, in Tan's work about universality (\cite{Tan2008-1,Tan2008-2}).  In his work, Tan concluded that  the high-end of relative-momentum distribution asymptotically approaches  $C/k^{4}$.  Note that the high-end in his paper means momentum lower than $1/r_{c}$, but higher than any other scale ($1/a_{s}$, $1/a_{0}$).  In such scale, $u_{k}^2\approx1$, %and especially, for close-to-threshold bound-state, $E_{b}\ll{}\frac{\hbar^{2}}{mr_{c}^{2}}$, so 
+$C=\frac{\Delta_{2}^{2}}{4m^{2}}$ for the closed-channel.   
+At even higher momentum ($>1/r_{c}$), the mean-field / saddle-point solution no longer applies.  And  two-body correlation, $h_{2\vk}$, should just follow two-body wave function (See Sec. \ref{sec:intro:as}).  Therefore, we replace $\frac{\Delta_{2}}{(E_{1\,\vk}+E_{3\,\vk})}$ with two-body wave function $\phi_{0\vk}$ in Eq. \ref{eq:pathInt2:h2D2},
 \begin{equation}\label{eq:pathInt2:hphi}
 h_{2\vk}=\alpha\phi^{}_{0\vk}u_{\vk}^{2}
 \end{equation}
@@ -351,7 +358,7 @@ And we can see $\phi_{0}$ directly corresponds closed-channel wave-function $\ph
 %\end{equation}
 
 
-At the lowest order, $\phi_{0\vk}\sim\nth{\kappa^{2}+k^{2}}$, where $\kappa$ is the momentum scale related to binding energy or tuning, $\kappa^{2}/2m=E_{b}$.     In the many-body relevant region where momentum is not significantly larger than Fermi momentum, this quantity is actually very small and approximately a constant, $\nth{\kappa^{2}}$, because $\kappa{}\gg{}k_{F}$.  The part where the many-body factor $u_{\vk}^{2}$ significantly alters the wave function is actually rather small comparing to the whole spread of the wave function over momentum space.  Within this range where $u_{\vk}^{2}$ differs from 1 significantly, the wave function $\phi_{0\vk}$ is small.   This fact is valid across the full range of crossover.  At some regions of crossover, $D_{2\vk}$ ($\alpha$) may be large and the total closed-channel weight is comparable or even larger than that of open-channel. However, for each momentum level in low-momentum, the factor $\phi_{0\vk}$ is so small that the product of $h_{2\vk}$ is still much smaller than $1$.  
+At the lowest order, $\phi_{0\vk}\sim\nth{\kappa^{2}+k^{2}}$, where $\kappa$ is the momentum scale related to binding energy or tuning, $\kappa^{2}/2m=E_{b}$.     In the many-body relevant region where momentum is not significantly larger than Fermi momentum, this quantity is actually very small and approximately a constant, $\nth{\kappa^{2}}$, because $\kappa{}\gg{}k_{F}$.  The part where the many-body factor $u_{\vk}^{2}$ significantly alters the wave function is actually rather small comparing to the whole spread of the wave function over momentum space.  Within this range where $u_{\vk}^{2}$ differs from 1 significantly, the wave function $\phi_{0\vk}$ is small.   This fact is valid across the full range of crossover.  At some regions of crossover, $\Delta_{2\vk}$ ($\alpha$) may be large and the total closed-channel weight is comparable or even larger than that of open-channel. However, for each momentum level in low-momentum, the factor $\phi_{0\vk}$ is so small that the product of $h_{2\vk}$ is still much smaller than $1$.  
 In summary, \emph{the full closed-channel (including normalization) is always small in the low momentum region  even when total closed-channel weight is large.}  This justifies our following perturbative treatment on the Pauli exclusion between two channels. 
 
 %Let us look at the second equation Eq. \ref{eq:pathInt2:mfclose} first, as discussed before, $h_{2}$ is similar to $\phi^{(0)}$ in two-body wave function. More specifically
@@ -359,7 +366,7 @@ In summary, \emph{the full closed-channel (including normalization) is always sm
 Not far away from resonance, binding energy $E_{b}^{(0)}$ is always close to absolute detuning $\eta$.   
 Using Eq. \ref{eq:pathInt2:h2D2}, we can write 
 \begin{equation*}
-D_{2\vk}=h_{2\vk}\frac{(E_{1\vk}+E_{3\vk})}{u_{\vk}^{2}}\approx{}h_{2\vk}\frac{(E_{\vk}+\xi_{\vk}+\eta)}{u_{\vk}^{2}}
+\Delta_{2\vk}=h_{2\vk}\frac{(E_{1\vk}+E_{3\vk})}{u_{\vk}^{2}}\approx{}h_{2\vk}\frac{(E_{\vk}+\xi_{\vk}+\eta)}{u_{\vk}^{2}}
 \end{equation*}
 Combining the above equation with Eq. \ref{eq:pathInt2:mfclose}, we have 
 \begin{equation*}
@@ -383,56 +390,56 @@ Comparing this to the two-body problem Eq. \ref{eq:intro:closeCoeff}, detuning i
 $\lambda_{1}$ depends on detuning $\eta$ (through $E_{\vk}$, $v_{\vk}$), but the dependence is rather weak because the integration is over mostly the short-range quantities and  insensitive to detuning. We will discuss more detail about it later in Sec \ref{sec:pathInt2:lambda}. 
 Using Eq. \ref{eq:pathInt2:alpha}, we can express the $\alpha$ in $h_{2\vk}$ (Eq. \ref{eq:pathInt2:hphi}), and then plug it into Eq. \ref{eq:pathInt2:h1}
 \begin{equation*}
-D_{1\vp}=\sum_\vk{}U_{\vp\vk}{h_{1_{\vk}}}+
+\Delta_{1\vp}=\sum_\vk{}U_{\vp\vk}{h_{1_{\vk}}}+
 	\frac{\sum_{\vk\vk^{'}\vp'} Y_{\vp\vp'}{\phi_{\vp'}}{\phi_{\vk'}^{*}}{Y_{\vk\vk'}}u_{\vp'}^{2}{{h_{1\vk}}}}
 		{\br{-E_{b}+\eta-2\mu-\lambda_{1}}}
 \end{equation*}
 Comparing this with two-body problem, we can see the detuning part (denominator of the second term) is shifted by $2\mu+\lambda_{1}$ and there is an extra $u_{\vp'}^{2}$ term introduced by many-body effect.  Nevertheless, none of these affect the high-momentum behavior. Therefore, the equation can be renormalized exactly as in two-body problem by introducing the long-wave-length s-scattering length $a_{s}$.  We rewrite the above equation
 \begin{equation*}
 \begin{split}
-D_{1\vp}=&\sum_{\vk}\br{U_{\vp\vk}+
+\Delta_{1\vp}=&\sum_{\vk}\br{U_{\vp\vk}+
 	\frac{\sum_{\vk^{'}\vp'} Y_{\vp\vp'}{\phi_{\vp'}}{\phi_{\vk'}^{*}}{Y_{\vk\vk'}}}
 		{\br{-E_{b}+\eta-2\mu-\lambda_{1}}}}{{h_{1\vk}}}\\
 	&-\frac{\sum_{\vk\vk{'}\vp'} Y_{\vp\vp'}{\phi_{\vp'}}{\phi_{\vk'}^{*}}{Y_{\vk\vk'}}v_{\vp'}^{2}{h_{1_{\vk}}}}
 		{\br{-E_{b}+\eta-2\mu-\lambda_{1}}}{}
 \end{split}
 \end{equation*}
-The second term has no divergence at high momentum in 3D due to the extra $v_{p'}^{2}$. Actually the factor, $v_{p'}^{2}$, decreases quickly over a small range in the order of  ``gap'' $D_{1\vp}$; therefore, the summation in the second term is essentially only over low-momentum.   In addition, considering the short-range nature for $Y_{\vp\vp'}$, this term varies slowly over momentum, $\vp$.  
+The second term has no divergence at high momentum in 3D due to the extra $v_{p'}^{2}$. Actually the factor, $v_{p'}^{2}$, decreases quickly over a small range in the order of  ``gap'' $\Delta_{1\vp}$; therefore, the summation in the second term is essentially only over low-momentum.   In addition, considering the short-range nature for $Y_{\vp\vp'}$, this term varies slowly over momentum, $\vp$.  
 
 Multiply both side with $(1+GT)$,  where $T$ is the scattering matrix for open-channel, and $G$ is the Green's function for a free pair
 \begin{equation*}
-(1+GT)D_{1}=Th_{1}-\lambda_{2}
+(1+GT)\Delta_{1}=Th_{1}-\lambda_{2}
 \end{equation*}
 \begin{equation}\label{eq:pathInt2:lambda2}
 \lambda_{2\vp}\equiv\sum_{\tilde\vp}(1+GT)_{\vp\tilde\vp}\frac{\sum_{\vk\vk{'}\vp'} Y_{\tilde\vp\vp'}{\phi_{\vp'}}{\phi_{\vk'}^{*}}{Y_{\vk\vk'}}v_{\vp'}^{2}{h_{1_{\vk}}}}
 		{\br{-E_{b}+\eta-2\mu-\lambda_{1}}}{}
 \end{equation}
 
-In principle, $\lambda_{2\vp}$ depends on momentum, however, like $D_{1\vp}$, it is approximately constant at low momentum.
-We are only interested in the low momentum/frequency properties as the system is cold, dilute with short-range interaction. Scattering matrix $T$ is approximately its s-wave zero-energy value $\frac{4\pi{\tilde{a}_{s}}}{m}$; Green's function is simply $1/2\epsilon_{\vk}$ at zero energy.   Similarly,   $D_{1\vp}$ and $\lambda_{1\vp}$ is approximately a constant at low momentum.  We drop the subscript $\vp$ of them, and pull $D_{1}$ out of summation. 
+In principle, $\lambda_{2\vp}$ depends on momentum, however, like $\Delta_{1\vp}$, it is approximately constant at low momentum.
+We are only interested in the low momentum/frequency properties as the system is cold, dilute with short-range interaction. Scattering matrix $T$ is approximately its s-wave zero-energy value $\frac{4\pi{\tilde{a}_{s}}}{m}$; Green's function is simply $1/2\epsilon_{\vk}$ at zero energy.   Similarly,   $\Delta_{1\vp}$ and $\lambda_{1\vp}$ is approximately a constant at low momentum.  We drop the subscript $\vp$ of them, and pull $\Delta_{1}$ out of summation. 
 \begin{equation}
-D_{1}=T\sum(h_{1}-GD_{1})-\lambda_{2}
-=\frac{4\pi{\tilde{a}_{s}}}{m}D_{1}\sum{}(\frac{E_{1\,\vk}+\xi_{\vk}+\eta}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}-\nth{2\epsilon_{\vk}})
+\Delta_{1}=T\sum(h_{1}-G\Delta_{1})-\lambda_{2}
+=\frac{4\pi{\tilde{a}_{s}}}{m}\Delta_{1}\sum{}(\frac{E_{1\,\vk}+\xi_{\vk}+\eta}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}-\nth{2\epsilon_{\vk}})
 	-\lambda_{2}
 \end{equation}
-Dividing both sides with $D_{1}$, we have the renormalized equation
+Dividing both sides with $\Delta_{1}$, we have the renormalized equation
 \begin{equation}
 1=\frac{4\pi{\tilde{a}_{s}}}{m}\sum(\frac{E_{1\,\vk}+\xi_{\vk}+\eta}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}-\nth{2\epsilon_{\vk}})
-	-\frac{\lambda_{2}}{D_{1}}
+	-\frac{\lambda_{2}}{\Delta_{1}}
 \end{equation}
 Note that $\tilde{a}_{s}$ corresponds to the two-body s-wave scattering length at detuning shifted by $2\mu+\lambda_{1}$.
 Now we can expand the first term in the parentheses to the first order of $D_{i}^{2}/\eta$, using Eq. \ref{eq:pathInt2:xiExpand}. Keeping in mind $E_{\vk}\ll{\eta}$ at low momentum where summation is about, we have\footnote{Here we used $u_{\vk}^{2}-v_{\vk}^{2}=\frac{\xi_{\vk}}{E_{\vk}}$}
 \begin{equation}\label{eq:pathInt2:gapRenorm}
-1=\frac{4\pi{\tilde{a}_{s}}}{m}\sum(\nth{2E_{\vk}}-\nth{2\epsilon_{\vk}}-\frac{D_{2}^{2}\xi_{\vk}}{4(\xi_{\vk}+\eta){E_{\vk}^{3}}})
-	-\frac{\lambda_{2}}{D_{1}}
+1=\frac{4\pi{\tilde{a}_{s}}}{m}\sum(\nth{2E_{\vk}}-\nth{2\epsilon_{\vk}}-\frac{\Delta_{2}^{2}\xi_{\vk}}{4(\xi_{\vk}+\eta){E_{\vk}^{3}}})
+	-\frac{\lambda_{2}}{\Delta_{1}}
 \end{equation}
 The correction term (the third term in parentheses) does not have divergence in summation of high-momentum. 
 In summary, there are several difference of gap equation here comparing to single-channel problems:
 \begin{enumerate}
 \item\label{item:pathInt2:mu}The shift of $2\mu$ in detuning;
 \item The extra shift of $\lambda_{1}$ in detuning;
-\item The extra term $-\frac{\lambda_{2}}{D_{1}}$ in Eq. \ref{eq:pathInt2:gapRenorm};
-\item The extra term $-\frac{D_{2}^{2}\xi_{\vk}}{4(\xi_{\vk}+\eta){(E_{\vk})^{3}}}$ in summation of Eq. \ref{eq:pathInt2:gapRenorm};
+\item The extra term $-\frac{\lambda_{2}}{\Delta_{1}}$ in Eq. \ref{eq:pathInt2:gapRenorm};
+\item The extra term $-\frac{\Delta_{2}^{2}\xi_{\vk}}{4(\xi_{\vk}+\eta){(E_{\vk})^{3}}}$ in summation of Eq. \ref{eq:pathInt2:gapRenorm};
 \end{enumerate}
 Item \ref{item:pathInt2:mu} corresponds to the many-body effect  common to both three and four species problem.
 \begin{unsure}
@@ -495,20 +502,20 @@ There is one  number equation for each channel,
 \end{gather*}
 Note that the Matsubara summation  formally diverges and we need to put in a small negative part into the summation in order to prevent divergence.  Here we put in a small  negative part instead of a positive part as usual  because $\Psi_{2}$ and $\Psi_{3}$ are conjugate of real particles, $\Psi_2=\bar\psi_b$, $\Psi_3=\bar\psi_c$.  Matsubara summation can be performed with the normal trick of multiplying a Fermi function to summand and deform the contour  (see Appendix \ref{sec:pathInt2:deriveMF} for more details).  For the summation at zero-temperature, we just need to consider the positive roots, $E_{1\,\vk}$.  It is straightforward to find 
 \begin{gather}
-N_{open}=\sum_{\vk}\frac{(E_{1\,\vk}-\xi_{\vk})(E_{1\,\vk}+\xi_{\vk}+\eta)-D_2^2}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}
+N_{open}=\sum_{\vk}\frac{(E_{1\,\vk}-\xi_{\vk})(E_{1\,\vk}+\xi_{\vk}+\eta)-\Delta_2^2}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}
 \label{eq:pathInt2:numOpen}\\
-N_{close}=\sum_{\vk}\frac{(E_{1\,\vk}-\xi_{\vk})(E_{1\,\vk}+\xi_{\vk})-D_1^2}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}
+N_{close}=\sum_{\vk}\frac{(E_{1\,\vk}-\xi_{\vk})(E_{1\,\vk}+\xi_{\vk})-\Delta_1^2}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}
 =\sum_{\vk}\frac{E_{1\,\vk}^2-E_{\vk}^2}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}\label{eq:pathInt2:numClose}
 \end{gather}
 Let us look at the equation of closed-channel first, if we expand $E_{i\,\vk}$, the lowest order is 
 \begin{equation}
-N_{close}\approx\sum_{\vk}\frac{\gamma_{1\,\vk}}{(E_{\vk}+\xi_{\vk}+\eta)}=\sum_{\vk}\frac{D_{2}^2u_{\vk}^{2}}{(\xi_{\vk}+\eta)(E_{\vk}+\xi_{\vk}+\eta)}
+N_{close}\approx\sum_{\vk}\frac{\gamma_{1\,\vk}}{(E_{\vk}+\xi_{\vk}+\eta)}=\sum_{\vk}\frac{\Delta_{2}^2u_{\vk}^{2}}{(\xi_{\vk}+\eta)(E_{\vk}+\xi_{\vk}+\eta)}
 \end{equation}
-This is consistent with Eq. \ref{eq:pathInt2:h2} and \ref{eq:pathInt2:h2D2} if we assume $N_{close}\approx\sum{h_{2}^{2}}$\footnote{As discussed before, in closed-channel $h_{2\vk}\ll1$ over all momentum.  Furthermore, the summation goes over very large momentum range, the difference between $h_{2\vk}$ and closed-channel particle number is only large below or around Fermi energy, but the total weight of closed-channel in such region is very small.  }.    From appendix \ref{sec:pathApp:consistency}, we know the summand is much smaller than 1 in all region.  Nevertheless, the weight spread in a very large range of momentum ($\sim\eta$), so the resulting sum can be still in the order of total number $N$ at certain detuning. Note the connection between $D_{2}$ and the ``Contact'' in theory of universality (\cite{Tan2008-1,Tan2008-2}).  The summand as  density of momentum is valid at momentum up to the scale $1/a_{c}$, and is mostly determined by two-body physics except an overall factor at ``high-momentum'' ($k_{F}\ll{}k\ll{}1/r_{c}$).  Furthermore, the contribution in the very-high-momentum ($k\gg1/r_{c}$) to integral is small.  All the deviation there can be absorbed as a small shift in $D_{2}$.  In the lowest order, $E_{i\vk}\approx\xi_\vk$ and $u_\vk^2\approx1$ for most of integral domain.  This summation can be written as 
+This is consistent with Eq. \ref{eq:pathInt2:h2} and \ref{eq:pathInt2:h2D2} if we assume $N_{close}\approx\sum{h_{2}^{2}}$\footnote{As discussed before, in closed-channel $h_{2\vk}\ll1$ over all momentum.  Furthermore, the summation goes over very large momentum range, the difference between $h_{2\vk}$ and closed-channel particle number is only large below or around Fermi energy, but the total weight of closed-channel in such region is very small.  }.    From appendix \ref{sec:pathApp:consistency}, we know the summand is much smaller than 1 in all region.  Nevertheless, the weight spread in a very large range of momentum ($\sim\eta$), so the resulting sum can be still in the order of total number $N$ at certain detuning. Note the connection between $\Delta_{2}$ and the ``Contact'' in theory of universality (\cite{Tan2008-1,Tan2008-2}).  The summand as  density of momentum is valid at momentum up to the scale $1/a_{c}$, and is mostly determined by two-body physics except an overall factor at ``high-momentum'' ($k_{F}\ll{}k\ll{}1/r_{c}$).  Furthermore, the contribution in the very-high-momentum ($k\gg1/r_{c}$) to integral is small.  All the deviation there can be absorbed as a small shift in $\Delta_{2}$.  In the lowest order, $E_{i\vk}\approx\xi_\vk$ and $u_\vk^2\approx1$ for most of integral domain.  This summation can be written as 
 \begin{equation}\label{eq:pathInt2:closeD2}
-N_{close}\approx\sum_{\vk}\frac{D_{2}^2}{(\xi_{\vk}+\eta)(2\xi_{\vk}+\eta)}
+N_{close}\approx\sum_{\vk}\frac{\Delta_{2}^2}{(\xi_{\vk}+\eta)(2\xi_{\vk}+\eta)}
 \end{equation}
-This equation has only one unknown parameter $D_{2}$.  Therefore, this equation can be used to estimate the $D_{2}$ from experiments.  The  estimation of  $D_{2}$ from such procedure automatically includes the correction from  high-momentum. 
+This equation has only one unknown parameter $\Delta_{2}$.  Therefore, this equation can be used to estimate the $\Delta_{2}$ from experiments.  The  estimation of  $\Delta_{2}$ from such procedure automatically includes the correction from  high-momentum. 
 
 %Similar to the argument in gap equation, the summand  above is mostly useful at energy below $\eta$, where the component is small everywhere comparing to 1, however, the summation runs over high-momentum ($\sim\eta$), where $D_2$ should no longer be regarded as constant and summation can gives $N_{close}$ comparable to total number. 
 % \mycomment{ This might not be correct statement.  Maybe it is just fine as it properly converges. } This summation shows that the closed-channel state is small and therefore the summation runs up to high momentum, where mostly is determined by two-body physics.  
@@ -518,13 +525,13 @@ The open-channel number equation  can be expanded perturbatively as well, \begin
 N_{open}\approx&\sum_\vk\mbr{\frac{E_\vk-\xi_\vk}{2E_\vk}+\frac{\gamma_{1\vk}}{2E_\vk}
 	-\frac{(E_\vk-\xi_\vk)(\gamma_{1\vk}+\gamma_{2\vk})}{4E_\vk^2}
 	-\frac{(E_\vk-\xi_\vk)\gamma_{3\vk}}{2E_\vk(\xi_\vk+E_\vk+\eta)}
-	-\frac{D_{2}^{2}}{2E_\vk(\xi_\vk+E_\vk+\eta)}}\\
-	\approx&\sum_\vk\mbr{\frac{E_\vk-\xi_\vk}{2E_\vk}+\frac{{D_{2}^{2}(E_{\vk}+\xi_{\vk})}}{4E_\vk^{2}(\xi_{\vk}+\eta)}
-	-\frac{(E_\vk-\xi_\vk)\xi_{\vk}D_{2}^{2}}{4E_\vk^3(\xi_{\vk}+\eta)}
-	-\frac{D_{2}^{2}}{2E_\vk(\xi_\vk+E_\vk+\eta)}}	
+	-\frac{\Delta_{2}^{2}}{2E_\vk(\xi_\vk+E_\vk+\eta)}}\\
+	\approx&\sum_\vk\mbr{\frac{E_\vk-\xi_\vk}{2E_\vk}+\frac{{\Delta_{2}^{2}(E_{\vk}+\xi_{\vk})}}{4E_\vk^{2}(\xi_{\vk}+\eta)}
+	-\frac{(E_\vk-\xi_\vk)\xi_{\vk}\Delta_{2}^{2}}{4E_\vk^3(\xi_{\vk}+\eta)}
+	-\frac{\Delta_{2}^{2}}{2E_\vk(\xi_\vk+E_\vk+\eta)}}	
 \end{split}
 \end{equation}
-All terms behave well  in 3D and do not need any renormalization.   It is like the number equation in single channel with  a few correction in the order of $D_2^2/\eta$.  
+All terms behave well  in 3D and do not need any renormalization.   It is like the number equation in single channel with  a few correction in the order of $\Delta_2^2/\eta$.  
 
 %\input{oldTwoChannelMeanField}
 
@@ -545,45 +552,45 @@ T_k=\mtrx{u_k&v_k&0\\-v_k&u_k&0\\0&0&1}
 \end{equation}
 \begin{equation}\tag{\ref{eq:pathInt2:L1}}
 L_{\vk}\approx{}I+
-\mtrx{0&-\frac{D_{1}{}D_{2}{}}{4E^{2}_{\vk}}&u_{\vk}\\
-\frac{D_{1}{}D_{2}{}}{4E^{2}_{\vk}}&0&v_{\vk}\\
+\mtrx{0&-\frac{\Delta_{1}{}\Delta_{2}{}}{4E^{2}_{\vk}}&u_{\vk}\\
+\frac{\Delta_{1}{}\Delta_{2}{}}{4E^{2}_{\vk}}&0&v_{\vk}\\
 -u_{\vk}&-v_{\vk}&0
-}\frac{D_{2}{}}{\eta}
+}\frac{\Delta_{2}{}}{\eta}
 \equiv{}I+\delta_{k}\qquad
 L^{\dg}_{\vk}=I-\delta_{\vk}
 \end{equation}
-First of all, mixture of $a_{\vk}$ and $b^{\dg}_{-\vk}$ ($c^{\dg}_{-\vk}$) indicates the pairing of atoms in opposite momentum. Furthermore,   mixture of creators and annihilators dictates the approach of grand-canonical ensemble, i.e., the ground state is a number non-conserved state.   Secondly, $L$ matrix cannot be separated into two channels, which indicate the mixture of two channels.   At mean field, both $D_{1}$ and $D_{2}$ are taken as constants and real.  The new Hamiltonian at this level is 
+First of all, mixture of $a_{\vk}$ and $b^{\dg}_{-\vk}$ ($c^{\dg}_{-\vk}$) indicates the pairing of atoms in opposite momentum. Furthermore,   mixture of creators and annihilators dictates the approach of grand-canonical ensemble, i.e., the ground state is a number non-conserved state.   Secondly, $L$ matrix cannot be separated into two channels, which indicate the mixture of two channels.   At mean field, both $\Delta_{1}$ and $\Delta_{2}$ are taken as constants and real.  The new Hamiltonian at this level is 
 \begin{equation}
 \hat{H}=f(D)+E_{1\,\vk}\alpha^{\dg}_{\vk}\alpha^{}_{\vk}
 +E_{2\,\vk}\beta^{\dg}_{-\vk}\beta^{}_{-\vk}+E_{3\,\vk}\gamma^{\dg}_{-\vk}\gamma^{}_{-\vk}
 \end{equation}
 \begin{align}\tag{\ref{eq:pathInt2:xiExpand}}
-E_{1\vk}&\approx{}E_{\vk}+\frac{D_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{1\vk}\\
-E_{2\vk}&\approx{}E_{\vk}-\frac{D_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{2\vk}
+E_{1\vk}&\approx{}E_{\vk}+\frac{\Delta_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{1\vk}\\
+E_{2\vk}&\approx{}E_{\vk}-\frac{\Delta_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{2\vk}
 \tag{\ref{eq:pathInt2:xiExpand2}}\\
-E_{3\vk}&\approx{}\xi_{\vk}+\eta-\frac{D_{2}^{2}}{2(\xi_{\vk}+\eta)}&\equiv{}&\xi_{\vk}+\eta+\gamma_{3\vk}
+E_{3\vk}&\approx{}\xi_{\vk}+\eta-\frac{\Delta_{2}^{2}}{2(\xi_{\vk}+\eta)}&\equiv{}&\xi_{\vk}+\eta+\gamma_{3\vk}
 \tag{\ref{eq:pathInt2:xiExpand3}}
 \end{align}
 
 
 This clearly shows that $\alpha_{\vk}$, $\beta_{\vk}$, and $\gamma_{\vk}$ is fermionic quasi-particle excitation modes with spectrum $E_{i\,\vk}$ and   $L^{\dg}_{\vk}T^{\dg}_{\vk}$ is  the Bogoliubov canonical transformation to transfer the normal fermionic modes into these elementary quasi-particle modes .  Here we see in the excitation, different species of opposite momentum, $(a,b)$ and $(a,c)$, mixed together to form the elementary excitation due to the paring in the ground state.  
-  From Eqs. (\ref{eq:pathInt2:xiExpand}-\ref{eq:pathInt2:xiExpand3}), we see that the fermionic excitation modes basically follow the pattern in broad resonance.  In broad resonance where closed channel only modifies the interaction in open channel,  there are basically three fermionic quasi-particle modes: two (degenerate) Bogoliubov quasi-particle modes  in open channel, $E_{\vk}=\sqrt{\xi^{2}_{\vk}+D_{1}^{2}}$ as in BCS theory; and one high fermionic excitation mode in closed-channel, $\xi_{\vk}+\eta$, as in normal gas.  In narrow resonance, first of all, the gap $D_{1}$ is modified  by consideration of extra Pauli exclusion though the correction is in order of $\frac{D_2^2}{\eta}$.  Once that is taken into account, the above conclusion is approximately correct except high-order correction in $\frac{D_{2}^{2}}{\eta}$.   The originally double degenerate excitation modes, $E_{\vk}=\sqrt{\xi^{2}_{\vk}+D_{1}^{2}}$ , now split by $\frac{D_{2}^{2}}{\xi_{\vk}+\eta}$; while the third high excitation corresponding the normal fermionic excitation in closed-channel has a small correction in the same order. 
+  From Eqs. (\ref{eq:pathInt2:xiExpand}-\ref{eq:pathInt2:xiExpand3}), we see that the fermionic excitation modes basically follow the pattern in broad resonance.  In broad resonance where closed channel only modifies the interaction in open channel,  there are basically three fermionic quasi-particle modes: two (degenerate) Bogoliubov quasi-particle modes  in open channel, $E_{\vk}=\sqrt{\xi^{2}_{\vk}+\Delta_{1}^{2}}$ as in BCS theory; and one high fermionic excitation mode in closed-channel, $\xi_{\vk}+\eta$, as in normal gas.  In narrow resonance, first of all, the gap $\Delta_{1}$ is modified  by consideration of extra Pauli exclusion though the correction is in order of $\frac{\Delta_2^2}{\eta}$.  Once that is taken into account, the above conclusion is approximately correct except high-order correction in $\frac{\Delta_{2}^{2}}{\eta}$.   The originally double degenerate excitation modes, $E_{\vk}=\sqrt{\xi^{2}_{\vk}+\Delta_{1}^{2}}$ , now split by $\frac{\Delta_{2}^{2}}{\xi_{\vk}+\eta}$; while the third high excitation corresponding the normal fermionic excitation in closed-channel has a small correction in the same order. 
 
 \section{Collective excitation mode}
 %\input{collectiveMode1}
 
 %\subsubsection{Alternative Approach: Phase fluctuation mode \label{sec:phaseFluctuation}}
- Action of $D$, $S(\bar{D_i},D_i)$ Eq. \eqref{eq:pathInt2:nG} and Eq. \eqref{eq:pathInt2:actionD}, is invariant if the phases of $D_{1\,\vk}$ and $D_{2\,\vk}$ rotate simultaneously. We therefore conclude that there exists a massless (Goldstone) mode corresponding to local phase invariance. (Notice unlike our treatment in single-channel in sec. \ref{sec:collective1}, we only have the two-channel in-phase phase fluctuation for $\theta$ instead of all possible modes of fluctuation.)
+ Action of $D$, $S(\bar{D_i},D_i)$ Eq. \eqref{eq:pathInt2:nG} and Eq. \eqref{eq:pathInt2:actionD}, is invariant if the phases of $\Delta_{1\,\vk}$ and $\Delta_{2\,\vk}$ rotate simultaneously. We therefore conclude that there exists a massless (Goldstone) mode corresponding to local phase invariance. (Notice unlike our treatment in single-channel in sec. \ref{sec:collective1}, we only have the two-channel in-phase phase fluctuation for $\theta$ instead of all possible modes of fluctuation.)
 \begin{equation*}
 D_{i}(x)\rightarrow{}D_{i}(x)e^{i2\theta(x)}\qquad{}
-\bar{D}_{i}(x)\rightarrow{}\bar{D}_{i}(x)e^{-i2\theta(x)}
+\bar{\Delta}_{i}(x)\rightarrow{}\bar{\Delta}_{i}(x)e^{-i2\theta(x)}
 \end{equation*}
 This is equivalent to  phase  rotation of fermionic variable $\psi$
 \begin{equation*}
 \psi_{i}(x)\rightarrow{}\psi_{i}(x)e^{i\theta(x)}\qquad{}
 \bar{\psi}_{i}(x)\rightarrow{}\bar{\psi}_{i}(x)e^{-i\theta(x)}
 \end{equation*}
-Note that the phase $\theta(x)$ is common for the both components. (The out-of-phase phase fluctuation is massive.) For two complex variables, $D_1$ and $D_2$, there are totally four degrees of freedom: two for magnitude variation of each $D_i$,  internal phase between two $D_i$, and the overall local phase $\theta(x)$ of $D_1$ and $D_2$.  The first three change the magnitude of action, while the last one leaves the action invariant.  We here isolate this particular degree of freedom while leave other three at their mean-field values. With a phase shift, we can rewrite the action (taken mean-field value $D^{(0)}=(D_1,D_2)^\dg$) (here we  follow treatment of Nagaosa\cite{Nagaosa})
+Note that the phase $\theta(x)$ is common for the both components. (The out-of-phase phase fluctuation is massive.) For two complex variables, $\Delta_1$ and $\Delta_2$, there are totally four degrees of freedom: two for magnitude variation of each $D_i$,  internal phase between two $D_i$, and the overall local phase $\theta(x)$ of $\Delta_1$ and $\Delta_2$.  The first three change the magnitude of action, while the last one leaves the action invariant.  We here isolate this particular degree of freedom while leave other three at their mean-field values. With a phase shift, we can rewrite the action (taken mean-field value $D^{(0)}=(\Delta_1,\Delta_2)^\dg$) (here we  follow treatment of Nagaosa\cite{Nagaosa})
 \begin{subequations}
 \begin{align}\label{eq:pathInt2:actionPhase}
 S[\theta,\bar\psi_{i},\psi_{i}]=&S_0[\bar\psi_{i},\psi_{i}]+S_1[\theta,\bar\psi_{i},\psi_{i}]+S_2[\theta,\bar\psi_{i},\psi_{i}]\\
@@ -634,7 +641,7 @@ Here we use the fact $\nth{{\beta{}V}}\sum_{k}\tr(\hat{G}_{0\,k}\sigma_3)=n$. $\
 \end{align}
 \emph{Here we only interested in the low-energy behavior of the mode and therefore we only use $\pi^{(0)}(0)$ and $\pi^{(\perp)}(0)$.} Use the previous result of Sec. \ref{sec:diagonalGreen}, we can calculate the Green's function in the lowest and first order of $D_i/\eta$ in $\pi$.  After some long but straigh-forward algebra (see Appendix. \ref{sec:calculatePi}), we find
 \begin{gather}
-\pi^{(0)}(0)\approx\sum_{\vk}\frac{D_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{D_{1}^{2}D_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}
+\pi^{(0)}(0)\approx\sum_{\vk}\frac{\Delta_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{\Delta_{1}^{2}\Delta_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}
 \label{eq:pathInt2:pi0}\\
 \pi^{(\perp)}(0)=0
 \end{gather}
@@ -642,7 +649,7 @@ Combine all these together
 \begin{equation}
 S[\theta]=\int{dx}\sum_{q}\theta(q)\theta(-q)\big[\nth{2}\pi^{(0)}(0)\omega_m^2-\frac{n}{2m}q^2\big]
 \end{equation}
-And this determines the velocity of the Anderson-Bogoliubov collective mode.  We can see that  the second term in Eq. \eqref{eq:pathInt2:pi0} is the only correction in the next order.  We see that its behavior is qualitatively same as  single-channel with some correction in the order of $D_{2}^2/E_\vk\eta\ll1$ (see Appendix \ref{sec:pathApp:consistency}).
+And this determines the velocity of the Anderson-Bogoliubov collective mode.  We can see that  the second term in Eq. \eqref{eq:pathInt2:pi0} is the only correction in the next order.  We see that its behavior is qualitatively same as  single-channel with some correction in the order of $\Delta_{2}^2/E_\vk\eta\ll1$ (see Appendix \ref{sec:pathApp:consistency}).
 
 
 \begin{subappendices}

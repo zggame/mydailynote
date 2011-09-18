@@ -73,8 +73,8 @@ Here this matrix is in the Nambu Spinor space.  If we seek a tempo-spacial homog
 \begin{equation}\label{eq:pathInt:G0}
 G_0(p)=\nth{(i\omega_n)^2-E_\vp^2}
 \begin{pmatrix}
-	i\omega_n+\xi_\vp&-\Delta_0\\
-	-\bar{\Delta}_0&i\omega_n-\xi_\vp
+	i\omega_n+\xi_\vp&\;&-\Delta_0\\
+	-\bar{\Delta}_0&\;&i\omega_n-\xi_\vp
 \end{pmatrix}
 \end{equation}
 Here $\omega_n$ is Matsubara frequency of Fermions.  $\xi_{\vk}=\epsilon_{\vk}-\mu$, $\epsilon_{\vk}=\vk^{2}/2m$,  $E_\vp=\sqrt{\xi_\vp^2+\abs{\Delta_0}^2}$.  And the saddle point equation can be rewritten as 
@@ -93,17 +93,20 @@ Summand in Eq. \ref{eq:pathInt:gap} does not decreases fast enough in 3D and the
 \frac{m}{4\pi{}a_{s}}=-\nth{g}+\sum_{k<\Lambda}\nth{2\epsilon_{\vk}}
 \end{equation}
 We can renormalize Eq. \ref{eq:pathInt:gap} with this relation
-\begin{equation}
+\begin{equation}\label{eq:pathInt:gapRenormalized}
 -\frac{m}{4\pi{}a_{s}}=\sum_{\vk}\mbr{\frac{\tanh{(E_k/2T)}}{2E_k}-\nth{2\epsilon_{\vk}}}
 \end{equation}
 Now the gap equation has proper decay in high momentum and no artificial cutoff is necessary.  There are two unknown parameters, $\mu$ and $\Delta$,  in the equation.  We need another equation in order to pin them down. To compliment the gap equation, we can introduce the number equation, $n=-\partial\Omega/\partial\mu$. At the saddle point, the thermodynamic potential is $\Omega_{0}=S[\Delta_{0}]/\beta$, and we have number equation
 \begin{equation*}
 n=-\nth{\beta}\tr\br{{G_{0}\pdiff{G_{0}^{-1}}{\mu}}}
 \end{equation*}
-similarly the summation over the Mastubara frequency can be evaluated and we have equation
+Similarly the summation (due to the trace) over the Mastubara frequency can be evaluated and we have equation
 \begin{equation}
 n=\nth{L^{d}}\sum_{\vk}\mbr{1-\frac{\epsilon_{\vk}}{E_{\vk}}\tanh{(\frac{E_{\vk}}{2T})}}
 \end{equation}
+This equation and renormalized gap equation Eq. \ref{eq:pathInt:gapRenormalized} compose the implicit equations for two unknown parameters for mean-field gap $\Delta$ and chemical potential $\mu$.  It not hard to derive the zero temperature analytic result at both ends.  At BCS end ($1/k_{F}a_{s}\rightarrow-\infty$), we obtain $\mu\approx{}E_{F}$ and $\Delta\propto\exp(-\pi/2k_{F}\abs{a_{s}})$; at BEC end ($1/k_{F}a_{s}\rightarrow+\infty$),  $\mu=-\hbar^{2}/2ma_{s}^{2}$, i.e. half of the binding energy of the molecule, while $\Delta\propto{}n^{1/2}a_{s}^{-1/2}$ no longer has  much physical significance.  In the more general crossover region, these two  can be calculated numerically.  They have no singularity in the whole region, which indicates it is a crossover instead of any simple phase transition.  
+
+
 
 \section{Gaussian fluctuation and collective mode}\label{sec:collective1}
 Once the mean field value is obtained, we can expand partition function Eq. (\ref{eq:pathInt:DeltaPF}) around it ($\Delta(\vr,\tau)=\Delta_{0}+\theta(\vr,\tau)$) The linear order of  expansion is zero because $\Delta_{0}$ is the saddle point.  The next order gives us the bilinear terms on $\theta$, i.e., correlation of bosonic field $\Delta$ (four-fermion correlation).  Note that here the hamiltonian only has an extreme-short-range (contact) potential, therefore it cannot cover the situation of charged system where long-range Columnb interaction cannot be neglected.  We will discuss this later.  Nevertheless, it is conceivable that a more realistic short-range potential only renormalizes some parameters in the following calculation while leaves the qualitative result unmodified.  
@@ -174,7 +177,7 @@ v_{\vk}^{2}=1-u_{\vk}^{2}=\nth{2}\br{1-\frac{\xi_{\vk}}{E_{\vk}}}
 \end{equation}
  The $G^{(M)}=\mathbf{M}^{-1}$ is the correlation function of $\theta$ (or $\Delta$) and its poles give the spectrum of collective mode as every  $\theta_{q}$ (or $\Delta_{q}$) involves many fermions moving in a coherent manner.  So the spectrum of collective modes can be determined by $\det{M(\omega,\vq)}=0$ after we analytically continue for the frequency $iq_{l}\rightarrow\omega+i0^{+}$.  
  
-For low energy modes, where $\omega,\,\abs{\vq}^{2}\ll\min\bbr{E_{\vk}}$ both are much smaller than $\Delta_{0}$, we can expand $M$ with $\omega$ and $\vq$.  
+For low energy modes, where $\omega,\,\abs{\vq}^{2}\ll\min\bbr{E_{\vk}}$ both are much smaller than $\Delta_{0}$, we can expand $M$ with $\omega$ and $\vq$.  The lowest order has the form $\omega\approx{}c\,q$, which suggests a sound wave as expected for any Goldstone mode.  At BCS side, $c=v_{F}/\sqrt{3}$, where $v_{F}$ is Fermi velocity.  This coincides with the famous Anderson-Bogoliubov mode.  At BEC side, we get $c^{2}=\Delta^{2}/8m\abs{\mu}=v_{F}^{2}(k_{F}a_{s})/3\pi=4\pi{}n_{B}a_{B}/m_{B}$, which fits the low momentum part of Bogoliubov spectrum.  Here $m_{B}=2m$ is the molecule mass, $n_{B}=n/2$ is the molecule density and $a_{B}=2a_{s}$ is the inferred the interaction between molecules.  This value differs from the result of more accurate calculation from few-body, $a_{B}=0.6a_{s}$, which indicates the possible deficiency of the theory. 
 
 
 \section{Alternative method to invert Green's function\label{sec:diagonalizeGreen1}}

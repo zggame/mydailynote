@@ -2,7 +2,7 @@
 
 \chapter{Two-channel many-body model\label{ch:path2}}
 For narrow Feshbach resonance, atoms have considerable weight in the closed-channel and the Pauli exclusion between two channels cannot be neglected.  A many-body framework needs to include both channels.  Before diving into the detailed calculation, let us make some rough estimates about scale and build some intuition.  The two-body problem is well understood as briefed in Sec. \ref{sec:intro:twobody}.  %Extended to many-body, three different types of Pauli exclusion requires to be considered: Pauli exclusion within open-channel, Pauli exclusion within closed-channel and Pauli exclusion between two channels. Let us estimate the scale of each with an artificial question.  We  calculate how much is reduced in two-body wave function by one single type of Pauli exclusion when a new pair is added.  This quality is quite unphysical without any real measurable counterpart, but it serves as a starting point to build intuition. 
-We can look into how much each channel would change  in many-body system.  Compared to the two-body system, a (cold) many-body fermion system is modified mostly in  low-energy,  around or below to Fermi energy; while staying like two-body wave-function intact at high energy.  An open-channel wave function would be  almost like a free wave ($k=0$) with a small kernel in $r_c$.  In momentum space, this wave function is mostly weighted below or around Fermi momentum, and consequently is completely modified by many-body effect. Next open-channel pair has to occupy the next available level in $k$ instead of the lowest energy two-body level.  This suggests that the open-channel requires a full many-body treatment.  The situation is quite different in the closed-channel.  A closed-channel bound state\footnote{Here we want to stress the difference between a closed-channel bound-state $\phi_{i}$ and a real bound state formed by two channels in the BEC side.   The closed-channel bound state $\phi_{i}$ is the eigenstate of the hamiltonian of isolated closed-channel, and is not a real eigenstate for the real space.  On the other hand, the full (two-channel) hamiltonian has eigenstate of bound-state at large detuning (in two-body context) or BEC-side (in many-body context).  The bound state solution for two-channel eigenstate has components both in open-channel and closed-channel.  Often the open-channel weight is larger when close to resonance and therefore those bound-states are often called open-channel bound-states.  In this thesis, most time we only deal with closed-channel bound-state, $\phi_{i}$.},  $\phi_{0}$, spreads in $[0,1/a_{c}]$ range of momentum mostly.  It only has tiny fraction of its weight within Fermi energy range if the closed-channel bound state is much smaller than the inter-particle distance. The smallness of this overlap ensures that many-body effects in the closed-channel can be  treated perturbatively.  As discussed in Sec. \ref{sec:intro:as} and Appendix \ref{sec:pathInt2:short-range}, the high momentum part of the two-body correlation just follows the two-body wave function,  therefore, we can write two-body correlation as 
+We can look into how much each channel would change  in many-body system.  Compared to the two-body system, a (cold) many-body fermion system is modified mostly in  low-energy,  around or below to Fermi energy; while staying like two-body wave-function intact at high energy.  An open-channel wave function would be  almost like a free wave ($k=0$) with a small kernel in $r_c$.  In momentum space, this wave function is mostly weighted below or around Fermi momentum, and consequently is completely modified by many-body effect. Next open-channel pair has to occupy the next available level in $k$ instead of the lowest energy two-body level.  This suggests that the open-channel requires a full many-body treatment.  The situation is quite different in the closed-channel.  A closed-channel bound state,  $\phi_{0}$, spreads in $[0,1/a_{c}]$ range of momentum mostly.  It only has tiny fraction of its weight within Fermi energy range if the closed-channel bound state is much smaller than the inter-particle distance. The smallness of this overlap ensures that many-body effects in the closed-channel can be  treated perturbatively.  As discussed in Sec. \ref{sec:intro:as} and Appendix \ref{sec:pathInt2:short-range}, the high momentum part of the two-body correlation just follows the two-body wave function,  therefore, we can write two-body correlation as 
 \begin{equation}\label{eq:pathInt2:hphif}
 h_{\vk}\sim\phi_{0\vk}f(\vk)
 \end{equation}
@@ -209,14 +209,19 @@ Apply $T$ onto $G^{-1}$, we have
 \begin{equation}\label{eq:pathInt2:G2}
 T_k^{\dg}G_k^{-1}T_k=i\omega_nI+\mtrx{-E_k&0&u_k\Delta_2\\0&+E_k&v_k\Delta_2\\u_k\Delta_2&v_k\Delta_2&+\xi_k+\eta}
 \end{equation}
-We regard the off-diagonal elements as perturbation.  This matrix can then be diagonalized with  unitary transformation $L_{\vk}$ within the first order of $\Delta_{2}^{2}/(E_{\vk}\eta)$  (see Appendix \ref{sec:diagonalize} for details.)
+We regard the off-diagonal elements as perturbation.  We introduce a small energy scale $\eta$,
+\begin{equation}
+\zeta=\frac{\Delta_{2}^{2}}{\eta}
+\end{equation}
+Here $\Delta_{2}$ is its mean-field (saddle point) value.  It can be proved that $\zeta\ll\Delta_{1}$, $\zeta\ll{}E_{F}$ (See Appendix \ref{sec:pathApp:consistency}).  
+This matrix can then be diagonalized with  unitary transformation $L_{\vk}$ within the first order of $\zeta$  (see Appendix \ref{sec:diagonalize} for details.)
 \begin{equation}\label{eq:pathInt2:Bapprox}
 \begin{split}
 B_{\omega_{n},\vk}&=i\omega_{n}I-
 	\mtrx{E_{1}{}_{\vk}&0&0\\0&-E_{2}{}_{\vk}&0\\0&0&-E_{3}{}_{\vk}}\\
 	&\approx{}i\omega_{n}I-
-	\mtrx{E_{\vk}+\frac{\Delta_{2}^{2}u_{\vk}^{2}}{\eta}&0&0\\
-	0&-\br{E_{\vk}-\frac{\Delta_{2}^{2}v_{\vk}^{2}}{\eta}}&0\\0&0&-\br{\xi_{\vk}+\eta+\frac{\Delta_{2}^{2}}{2\eta}}}
+	\mtrx{E_{\vk}+{}u_{\vk}^{2}\zeta&0&0\\
+	0&-\br{E_{\vk}-{}v_{\vk}^{2}\zeta}&0\\0&0&-\br{\xi_{\vk}+\eta+\frac{\zeta}{2}}}
 %	&=
 %	\mtrx{i\omega_{n}-E_{\vk}&0&0\\0&i\omega_{n}+E_{\vk}&0\\0&0&i\omega_{n}+\eta}
 %	+\mtrx{-\frac{D_{1}^{2}}{\eta}&0&0\\0&-\frac{D_{2}^{2}}{\eta}&0\\0&0&+\frac{D_{1}^{2}+D_{2}^{2}}{2\eta}}\\
@@ -226,12 +231,15 @@ B_{\omega_{n},\vk}&=i\omega_{n}I-
 Here we choose the sign of $E_{1,2,3}$  to make their zeroth order positive.  Similar as in Eq.  \ref{eq:pathInt2:nGDeltaK}, the second and third diagonal elements are negative because in the spinor representation, we choose $\bar{\psi}_{b}$ and $\bar{\psi}_{c}$ for $\Psi$, which gives extra negative signs for quantity such as $\bar\Psi\Psi$ in Eq. \ref{eq:pathInt2:actionMixCompact}.  We can see that both are restored to positive once we restore them to the normal order $\bar\psi\psi$ in Sec. \ref{sec:pathInt2:bog}.  %Therefore, the Fermi sea of the redefined Bogoliubov quasiparticle is always filled up without extra particle-hole remapping.  
 The dispersion spectrum of fermions is
 \begin{align}\label{eq:pathInt2:xiExpand}
-E_{1\vk}&\approx{}E_{\vk}+\frac{\Delta_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{1\vk}\\
-E_{2\vk}&\approx{}E_{\vk}-\frac{\Delta_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{2\vk}
-\label{eq:pathInt2:xiExpand2}\\
-E_{3\vk}&\approx{}\xi_{\vk}+\eta-\frac{\Delta_{2}^{2}}{2(\xi_{\vk}+\eta)}&\equiv{}&\xi_{\vk}+\eta+\gamma_{3\vk}
+E_{1\vk}&\equiv{}E_{\vk}+\gamma_{1\vk}\approx{}E_{\vk}+\frac{\Delta_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}
+\approx{}E_{\vk}+u_{\vk}^{2}\zeta\\
+E_{2\vk}&\equiv{}E_{\vk}+\gamma_{2\vk}\approx{}E_{\vk}-\frac{\Delta_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}
+\approx{}E_{\vk}-v_{\vk}^{2}\zeta\label{eq:pathInt2:xiExpand2}\\
+E_{3\vk}&\equiv{}\xi_{\vk}+\eta+\gamma_{3\vk}\approx{}\xi_{\vk}+\eta-\frac{\Delta_{2}^{2}}{2(\xi_{\vk}+\eta)}
+\approx{}\epsilon_{\vk}+\eta+\frac{\zeta}{2}
 \label{eq:pathInt2:xiExpand3}
 \end{align}
+
 The extra factor of unitary transformation is 
 \begin{equation}\label{eq:pathInt2:L1}
 L_{\vk}\approx{}I+
@@ -312,7 +320,7 @@ with factor $f(\vk)$ encapsulating all the many-body effects. This replacement a
 
 
 
-Let us put the above qualitative statement into concrete mathematical formulas.   As discussed before, we start with  closed-channel correlation $h_{2\vk}$ (Eq. \ref{eq:pathInt2:h2}). In the lowest order, we have $\frac{E_{1\,\vk}+\xi_{\vk}}{E_{1\,\vk}+E_{2\,\vk}}\approx{}u_{\vk}^{2}$, $h_{2\vk}$ can be rewritten into such form
+Let us put the above qualitative statement into concrete mathematical formulas.   As discussed before, we start with  closed-channel correlation $h_{2\vk}$ (Eq. \ref{eq:pathInt2:h2}). In the lowest order of $\frac{\zeta}{E_{\vk}}$, we have $\frac{E_{1\,\vk}+\xi_{\vk}}{E_{1\,\vk}+E_{2\,\vk}}\approx{}u_{\vk}^{2}$, $h_{2\vk}$ can be rewritten into such form
 \begin{equation}\label{eq:pathInt2:h2D2}
  h_{2\vk}\approx\frac{\Delta_{2\vk}}{(E_{1\,\vk}+E_{3\,\vk})}u_{\vk}^{2}
 \end{equation}
@@ -344,7 +352,7 @@ Eq. \ref{eq:pathInt2:hphi} can also be understood in terms of BCS-type anstaz $\
 \begin{equation}
 h_{2\vk}=u_{\vk}w_{\vk}=u_{\vk}^{2}(\frac{w_{\vk}}{u_{\vk}})=u_{\vk}^{2}\phi^{(ac)}_{\vk}
 \end{equation}
-And we can see $\phi_{0}$ directly corresponds closed-channel wave-function $\phi^{(ac)}$.
+And we can see $\phi_{0}$ directly corresponds closed-channel wave-function $\phi^{(ac)}$ besides normalization.
 
 %The two-body wave function for isolated closed-channel spreads in large momentum space and has small weight in low momentum (below $k_{F}$), and therefore, we expected $u_{\vk}^{2}$ has small correction only.  $D_{2}$ is the product of two factors: 1, the normalization ($A$) factor as in two-body wave function normalized to 1(Appendix \ref{sec:pathInt2:short-range}); 2, total number of particles in closed-channel.  
 
@@ -372,9 +380,20 @@ Combining the above equation with Eq. \ref{eq:pathInt2:mfclose}, we have
 \begin{equation*}
 h_{2\vk}\frac{(E_{\vk}+\xi_{\vk}+\eta)}{u_{\vk}^{2}}=\sum_{\vk'}{}Y_{\vk\vk'}h_{1\vk'}+\sum_{\vk'}V_{\vk\vk'}h_{2\vk'}
 \end{equation*}
-Multiply both sides with $\phi^{*}_{\vk}$ and integrate over the momentum, also use Eq. \ref{eq:pathInt2:hphi} and $\xi_{\vk}=\epsilon_{\vk}-\mu$
+We replace $h_{2\vk}$ with $\alpha{}u_{\vk}^{2}\phi_{\vk}$ as in Eq. \ref{eq:pathInt2:hphi}.  The above equation becomes
+\begin{align*}
+\alpha{}\phi_{\vk}{(E_{\vk}+\xi_{\vk}+\eta)}
+	&=\sum_{\vk'}{}Y_{\vk\vk'}h_{1\vk'}+\alpha{}\sum_{\vk'}V_{\vk\vk'}u_{\vk'}^{2}\phi_{\vk'}\\
+	&=\sum_{\vk'}{}Y_{\vk\vk'}h_{1\vk'}-\alpha{}\sum_{\vk'}V_{\vk\vk'}v_{\vk'}^{2}\phi_{\vk'}
+		+\alpha{}\sum_{\vk'}V_{\vk\vk'}\phi_{\vk'}
+\end{align*}
+The last term can be rewritten as $\sum_{\vk}V_{\vp\vk} \phi_{0\,\vk}=(2\epsilon_{\vp}+E_{b})\phi_{0\,\vp}$ using two-body \sch equation of closed-channel Eq. \ref{eq:pathInt2:phi}.  We move the last two terms on r.h.s to l.h.s, and using $\xi_{\vk}=\epsilon_{\vk}-\mu$
+\begin{equation*}
+\alpha{}\phi_{\vk}{(-E_{b}+\eta-2\mu+E_{\vk}-\xi_{\vk})}+\alpha{}\sum_{\vk'}V_{\vk\vk'}v_{\vk'}^{2}\phi_{\vk'}
+=\sum_{\vk'}{}Y_{\vk\vk'}h_{1\vk'}\end{equation*}
+Multiply both sides with $\phi^{*}_{\vk}$ and integrate over the momentum,
 \begin{equation}
-\alpha\br{-E_{b}+\eta-2\mu-\sum_{\vk}{\phi_{\vk}^{*}}{(E_{\vk}-\xi_{\vk})}\phi_{\vk}
+\alpha\br{-E_{b}+\eta-2\mu+\sum_{\vk}{\phi_{\vk}^{*}}{(E_{\vk}-\xi_{\vk})}\phi_{\vk}
 	+\sum_{\vk\vk'}{\phi_{\vk}^{*}}{v_{\vk'}^{2}V_{\vk\vk'}}\phi_{\vk'}}
 	=\sum_{\vk\vk'}{\phi_{\vk}^{*}}{Y_{\vk\vk'}}{h_{1\vk'}}
 \end{equation}
@@ -383,7 +402,7 @@ Comparing this to the two-body problem Eq. \ref{eq:intro:closeCoeff}, detuning i
 \alpha=\frac{\sum_{\vk\vk'}{\phi_{\vk}^{*}}{Y_{\vk\vk'}}{h_{1\vk'}}}{\br{-E_{b}+\eta-2\mu-\lambda_{1}}}
 \end{equation}
 \begin{equation}\label{eq:pathInt2:lambda1}
-\lambda_{1}(\eta)\equiv\sum_{\vk}{\phi_{\vk}^{*}}{(E_{\vk}-\xi_{\vk})}\phi_{\vk}
+\lambda_{1}(\eta)\equiv-\sum_{\vk}{\phi_{\vk}^{*}}{(E_{\vk}-\xi_{\vk})}\phi_{\vk}
 	-\sum_{\vk\vk'}{\phi_{\vk}^{*}}{v_{\vk'}^{2}V_{\vk\vk'}}\phi_{\vk'}
 \end{equation}
 
@@ -439,7 +458,7 @@ In summary, there are several difference of gap equation here comparing to singl
 \item\label{item:pathInt2:mu}The shift of $2\mu$ in detuning;
 \item The extra shift of $\lambda_{1}$ in detuning;
 \item The extra term $-\frac{\lambda_{2}}{\Delta_{1}}$ in Eq. \ref{eq:pathInt2:gapRenorm};
-\item The extra term $-\frac{\Delta_{2}^{2}\xi_{\vk}}{4(\xi_{\vk}+\eta){(E_{\vk})^{3}}}$ in summation of Eq. \ref{eq:pathInt2:gapRenorm};
+\item The extra term $-\frac{\Delta_{2}^{2}\xi_{\vk}}{4(\xi_{\vk}+\eta){(E_{\vk})^{3}}}\approx-\frac{\xi_{\vk}}{4{E_{\vk}^{3}}}\zeta$ in summation of Eq. \ref{eq:pathInt2:gapRenorm};
 \end{enumerate}
 Item \ref{item:pathInt2:mu} corresponds to the many-body effect  common to both three and four species problem.
 \begin{unsure}
@@ -455,24 +474,21 @@ Both $\lambda_{1}$ and $\lambda_{2}$ involves the integral between open-channel 
 \subsection{Evaluation and estimation of $\lambda_{1}$ and $\lambda_{2}$\label{sec:pathInt2:lambda}}
 From the last section, we  see  that lots of the inter-channel Pauli exclusion is encapsulated in two parameters $\lambda_{1}$ and $\lambda_{2}$.   Therefore, it is well-worthwhile to study them in more details.  $\lambda_{1}$ is defined as 
 \begin{equation}\tag{\ref{eq:pathInt2:lambda1}}
-\lambda_{1}(\eta)\equiv\sum_{\vk}{\phi_{\vk}^{*}}{(E_{\vk}-\xi_{\vk})}\phi_{\vk}
+\lambda_{1}(\eta)\equiv-\sum_{\vk}{\phi_{\vk}^{*}}{(E_{\vk}-\xi_{\vk})}\phi_{\vk}
 	-\sum_{\vk\vk'}{\phi_{\vk}^{*}}{v_{\vk'}^{2}V_{\vk\vk'}}\phi_{\vk'}
 \end{equation}
 Use relationship $v_{k}^{2}=\frac{E_{\vk}-\xi_{\vk}}{2E_{\vk}}$, we can rewrite the above equation into 
 
 \begin{equation*}
-\lambda_{1}(\eta)\equiv\sum_{\vk}{\phi_{\vk}^{*}}v_{\vk}^{2}(2E_{k}\phi_{\vk}-\sum_{\vk'}V_{\vk\vk'}\phi_{\vk'})
+\lambda_{1}(\eta)\equiv-\sum_{\vk}{\phi_{\vk}^{*}}v_{\vk}^{2}(2E_{k}\phi_{\vk}+\sum_{\vk'}V_{\vk\vk'}\phi_{\vk'})
 \end{equation*}
-The expression in the parenthese bears fair resemblance of two-body \sch equation Eq. \ref{eq:pathInt2:phi}.  
-\begin{equation}\tag{\ref{eq:pathInt2:phi}}
--E_{b}^{(0)}\phi_{\vp}=2\epsilon_{\vp}\phi_{\vp}-\sum_{\vk}V_{\vp\vk} \phi_{\vk}
-\end{equation}
-We can replace the summation $\sum_{\vk}V_{\vp\vk} \phi_{\vk}$ in the parenthese using the two-body \sch equation
+
+We can replace the summation $\sum_{\vk}V_{\vp\vk} \phi_{\vk}=(E_{b}+2\epsilon_{\vp})\phi_{\vp}$ in the parentheses using the two-body \sch equation of isolated closed-channel Eq. \ref{eq:pathInt2:phi}.
 \begin{equation*}
-\lambda_{1}(\eta)=\sum_{\vk}{\phi_{\vk}^{*}}v_{\vk}^{2}\mbr{2(E_{k}-\epsilon_{k})-E_b}\phi_{\vk}
-	\approx\sum_{\vk}\abs{\phi_{\vk}}^2v_{\vk}^{2}\mbr{2\br{E_{k}-\epsilon_{k}}-\eta}
+\lambda_{1}(\eta)=-\sum_{\vk}{\phi_{\vk}^{*}}v_{\vk}^{2}\mbr{2(E_{k}+\epsilon_{k})+E_b}\phi_{\vk}
+	\approx\sum_{\vk}\abs{\phi_{\vk}}^2v_{\vk}^{2}\mbr{2\br{E_{k}+\epsilon_{k}}+\eta}
 \end{equation*}
-In the above summation, $v_{\vk}^2$ is only non-zero below or not much higher than Fermi momentum.  In this range, $E_\vk-\epsilon_\vk\ll\eta$ and we can neglect $E_\vk-\epsilon_\vk$ comparing to $\eta$.  
+In the above summation, $v_{\vk}^2$ is only non-zero below or not much higher than Fermi momentum.  In this range, $E_\vk,\epsilon_\vk\ll\eta$ and we can neglect $E_\vk+\epsilon_\vk$ comparing to $\eta$.  
 Furthermore, $\phi_{\vk}$ is close to constant or varies slowly in this range, because the closed-channel bound state is much smaller than the inter-particle distance.    It is a good approximation to replace $\phi_{\vk}$ with $\phi_{\vk=0}\approx\frac{A}{\kappa^{2}}$ and to take it out of the summation.  
 Put all these together, we can estimate $\lambda_{1}$ 
 \begin{equation}
@@ -531,7 +547,7 @@ N_{open}\approx&\sum_\vk\mbr{\frac{E_\vk-\xi_\vk}{2E_\vk}+\frac{\gamma_{1\vk}}{2
 	-\frac{\Delta_{2}^{2}}{2E_\vk(\xi_\vk+E_\vk+\eta)}}	
 \end{split}
 \end{equation}
-All terms behave well  in 3D and do not need any renormalization.   It is like the number equation in single channel with  a few correction in the order of $\Delta_2^2/\eta$.  
+All terms behave well  in 3D and do not need any renormalization.   It is like the number equation in single channel with  a few correction in the order of $\zeta=\Delta_2^2/\eta$.  
 
 %\input{oldTwoChannelMeanField}
 
@@ -564,17 +580,18 @@ First of all, mixture of $a_{\vk}$ and $b^{\dg}_{-\vk}$ ($c^{\dg}_{-\vk}$) indic
 \hat{H}=f(D)+E_{1\,\vk}\alpha^{\dg}_{\vk}\alpha^{}_{\vk}
 +E_{2\,\vk}\beta^{\dg}_{-\vk}\beta^{}_{-\vk}+E_{3\,\vk}\gamma^{\dg}_{-\vk}\gamma^{}_{-\vk}
 \end{equation}
-\begin{align}\tag{\ref{eq:pathInt2:xiExpand}}
-E_{1\vk}&\approx{}E_{\vk}+\frac{\Delta_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{1\vk}\\
-E_{2\vk}&\approx{}E_{\vk}-\frac{\Delta_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{2\vk}
-\tag{\ref{eq:pathInt2:xiExpand2}}\\
-E_{3\vk}&\approx{}\xi_{\vk}+\eta-\frac{\Delta_{2}^{2}}{2(\xi_{\vk}+\eta)}&\equiv{}&\xi_{\vk}+\eta+\gamma_{3\vk}
+
+\begin{align}
+E_{1\vk}&\equiv{}E_{\vk}+\gamma_{1\vk}\approx{}E_{\vk}+u_{\vk}^{2}\zeta\tag{\ref{eq:pathInt2:xiExpand}}\\
+E_{2\vk}&\equiv{}E_{\vk}+\gamma_{2\vk}
+\approx{}E_{\vk}-v_{\vk}^{2}\zeta\tag{\ref{eq:pathInt2:xiExpand2}}\\
+E_{3\vk}&\equiv{}\xi_{\vk}+\eta+\gamma_{3\vk}\approx{}\epsilon_{\vk}+\eta+\frac{\zeta}{2}
 \tag{\ref{eq:pathInt2:xiExpand3}}
 \end{align}
 
 
 This clearly shows that $\alpha_{\vk}$, $\beta_{\vk}$, and $\gamma_{\vk}$ is fermionic quasi-particle excitation modes with spectrum $E_{i\,\vk}$ and   $L^{\dg}_{\vk}T^{\dg}_{\vk}$ is  the Bogoliubov canonical transformation to transfer the normal fermionic modes into these elementary quasi-particle modes .  Here we see in the excitation, different species of opposite momentum, $(a,b)$ and $(a,c)$, mixed together to form the elementary excitation due to the paring in the ground state.  
-  From Eqs. (\ref{eq:pathInt2:xiExpand}-\ref{eq:pathInt2:xiExpand3}), we see that the fermionic excitation modes basically follow the pattern in broad resonance.  In broad resonance where closed channel only modifies the interaction in open channel,  there are basically three fermionic quasi-particle modes: two (degenerate) Bogoliubov quasi-particle modes  in open channel, $E_{\vk}=\sqrt{\xi^{2}_{\vk}+\Delta_{1}^{2}}$ as in BCS theory; and one high fermionic excitation mode in closed-channel, $\xi_{\vk}+\eta$, as in normal gas.  In narrow resonance, first of all, the gap $\Delta_{1}$ is modified  by consideration of extra Pauli exclusion though the correction is in order of $\frac{\Delta_2^2}{\eta}$.  Once that is taken into account, the above conclusion is approximately correct except high-order correction in $\frac{\Delta_{2}^{2}}{\eta}$.   The originally double degenerate excitation modes, $E_{\vk}=\sqrt{\xi^{2}_{\vk}+\Delta_{1}^{2}}$ , now split by $\frac{\Delta_{2}^{2}}{\xi_{\vk}+\eta}$; while the third high excitation corresponding the normal fermionic excitation in closed-channel has a small correction in the same order. 
+  From Eqs. (\ref{eq:pathInt2:xiExpand}-\ref{eq:pathInt2:xiExpand3}), we see that the fermionic excitation modes basically follow the pattern in broad resonance.  In broad resonance where closed channel only modifies the interaction in open channel,  there are basically three fermionic quasi-particle modes: two (degenerate) Bogoliubov quasi-particle modes  in open channel, $E_{\vk}=\sqrt{\xi^{2}_{\vk}+\Delta_{1}^{2}}$ as in BCS theory; and one high fermionic excitation mode in closed-channel, $\xi_{\vk}+\eta$, as in normal gas.  In narrow resonance, first of all, the gap $\Delta_{1}$ is modified  by consideration of extra Pauli exclusion though the correction is in order of $\zeta$.  Once that is taken into account, the above conclusion is approximately correct except high-order correction in $\zeta$.   The originally double degenerate excitation modes, $E_{\vk}=\sqrt{\xi^{2}_{\vk}+\Delta_{1}^{2}}$ , now split by $\zeta$; while the third high excitation corresponding the normal fermionic excitation in closed-channel has a small correction in the same order. 
 
 \section{Collective excitation mode}
 %\input{collectiveMode1}
@@ -641,7 +658,8 @@ Here we use the fact $\nth{{\beta{}V}}\sum_{k}\tr(\hat{G}_{0\,k}\sigma_3)=n$. $\
 \end{align}
 \emph{Here we only interested in the low-energy behavior of the mode and therefore we only use $\pi^{(0)}(0)$ and $\pi^{(\perp)}(0)$.} Use the previous result of Sec. \ref{sec:diagonalGreen}, we can calculate the Green's function in the lowest and first order of $D_i/\eta$ in $\pi$.  After some long but straigh-forward algebra (see Appendix. \ref{sec:calculatePi}), we find
 \begin{gather}
-\pi^{(0)}(0)\approx\sum_{\vk}\frac{\Delta_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{\Delta_{1}^{2}\Delta_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}
+\pi^{(0)}(0)\approx\sum_{\vk}\frac{\Delta_{1}^{2}}{E_{\vk}^{3}}
+	-\sum_{\vk}\frac{\Delta_{1}^{2}\Delta_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}
 \label{eq:pathInt2:pi0}\\
 \pi^{(\perp)}(0)=0
 \end{gather}
@@ -649,7 +667,7 @@ Combine all these together
 \begin{equation}
 S[\theta]=\int{dx}\sum_{q}\theta(q)\theta(-q)\big[\nth{2}\pi^{(0)}(0)\omega_m^2-\frac{n}{2m}q^2\big]
 \end{equation}
-And this determines the velocity of the Anderson-Bogoliubov collective mode.  We can see that  the second term in Eq. \eqref{eq:pathInt2:pi0} is the only correction in the next order.  We see that its behavior is qualitatively same as  single-channel with some correction in the order of $\Delta_{2}^2/E_\vk\eta\ll1$ (see Appendix \ref{sec:pathApp:consistency}).
+And this determines the velocity of the Anderson-Bogoliubov collective mode.  We can see that  the second term in Eq. \eqref{eq:pathInt2:pi0}, $-\sum_{\vk}\frac{\Delta_{1}^{2}\Delta_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}\approx-\sum_{\vk}\frac{\Delta_{1}^{2}}{2E_{\vk}^{3}}\frac{\xi_{\vk}}{E_{\vk}}\frac{\zeta}{E_{\vk}}$, is the only correction in the next order.  We see that its behavior is qualitatively same as  single-channel with some correction in the order of $\zeta/E_\vk\ll1$ (see Appendix \ref{sec:pathApp:consistency}).
 
 
 \begin{subappendices}

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     21554,        472]
-NotebookOptionsPosition[     20996,        447]
-NotebookOutlinePosition[     21353,        463]
-CellTagsIndexPosition[     21310,        460]
+NotebookDataLength[     21700,        474]
+NotebookOptionsPosition[     21142,        449]
+NotebookOutlinePosition[     21499,        465]
+CellTagsIndexPosition[     21456,        462]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -97,7 +97,8 @@ Cell[BoxData[
   3.525293571094898*^9, 3.525293623932809*^9}, {3.525293683361291*^9, 
   3.5252937275602407`*^9}, {3.525293768601399*^9, 3.525293774904992*^9}, {
   3.5252938225080423`*^9, 3.525293826497477*^9}, {3.5252938599878597`*^9, 
-  3.525293878095886*^9}}],
+  3.525293878095886*^9}, {3.525294251030424*^9, 3.525294261066926*^9}, {
+  3.525294293085704*^9, 3.52529432543578*^9}}],
 
 Cell[BoxData[
  GraphicsBox[{{}, {}, 
@@ -252,7 +253,7 @@ QpfUKsL5155xLpocqgTnn0t66igkrwznqy2VlOrsR/Ch+QXOBwAXN/oI
 \\(s\\)]\\)/\\!\\(\\*SubscriptBox[\\(a\\), \\(bg\\)]\\)\"", TraditionalForm]},
   
   AxesOrigin->{0, 0},
-  ImageSize->{567., Automatic},
+  ImageSize->{630., Automatic},
   LabelStyle->Directive[Bold, Larger],
   PlotRange->{{-10, 10}, {-2, 3}},
   PlotRangeClipping->True,
@@ -280,7 +281,8 @@ QpfUKsL5155xLpocqgTnn0t66igkrwznqy2VlOrsR/Ch+QXOBwAXN/oI
       FormBox["2.5`", TraditionalForm]}}}]], "Output",
  CellChangeTimes->{{3.525292881519824*^9, 3.525292931872437*^9}, {
    3.5252935722268267`*^9, 3.525293624637528*^9}, {3.525293701251773*^9, 
-   3.525293728408036*^9}, 3.525293775497037*^9, 3.525293879832391*^9}]
+   3.525293728408036*^9}, 3.525293775497037*^9, 3.525293879832391*^9, {
+   3.525294299435914*^9, 3.5252943263753777`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -467,16 +469,15 @@ Cell[579, 22, 519, 16, 27, "Input"],
 Cell[1101, 40, 219, 6, 27, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1357, 51, 1841, 48, 83, "Input"],
-Cell[3201, 101, 9918, 181, 341, "Output"]
+Cell[1357, 51, 1935, 49, 83, "Input"],
+Cell[3295, 102, 9970, 182, 380, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13156, 287, 1264, 31, 58, "Input"],
-Cell[14423, 320, 6557, 124, 217, "Output"]
+Cell[13302, 289, 1264, 31, 58, "Input"],
+Cell[14569, 322, 6557, 124, 217, "Output"]
 }, Open  ]]
 }
 ]
 *)
 
 (* End of internal cache information *)
-

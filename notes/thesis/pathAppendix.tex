@@ -114,9 +114,17 @@ The first part for $\varphi_{0}$ has very little $k$ dependence and the second t
 
 Furthermore, if the bound-state is the one close to threshold, the most weight is outside $r_{c}$, we can neglect the first term and we have universal behavior at low-momentum while the normalization is determined in two-body problem.   Besides  bound-state, if interaction is weak and short-range, the low energy scattering state is well described by s-wave scattering state $\psi\propto1/r-1/a$ (Eq. \ref{eq:intro:Bethe}), and its Fourier transform in momentum space has the similar form $1/k^{2}$.  When considering many-body physics, in the low momentum below or around the scale of Fermi momentum,  wave function  is modified by many-body effect; but in the medium momentum, (still much smaller than $1/r_{c}$), this universal behavior is preserved.  The distribution of particle in such momentum, $k_{F}\ll{k}\ll{1/r_{c}}$, is $1/k^{4}$. This is actually the ``high-momentum'' (medium here) behavior ($C/k^{4}$) described in Tan's work about universality\cite{Tan2008-1,Tan2008-2}. 
 
-On the other hand, at very high momentum ($k\gg1/r_{c}$), the second term in the above is very small.  This is because the smooth tail part of the wave function contributes little in high-oscillation.  The high-frequency Fourier component is solely determined by the wave function within the potential range.   This can be extend beyond two-body wave function to two-body correlation as long as the long-wave-length part is smooth.  In all cases, two-body, or many-body, very high-frequency of two-body correlation follows the two-body wave function.  
+On the other hand, at higher momentum ($k\gg1/r_{c}$), the second term in the above is very small.  This is because the smooth tail part of the wave function contributes little in high-oscillation.  The high-frequency Fourier component is solely determined by the wave function within the potential range.   This can be extend beyond two-body wave function to two-body correlation as long as the long-wave-length part is smooth.  In all cases, two-body, or many-body, very high-frequency of two-body correlation follows the two-body wave function.  
 
-
+On the other hand, the two-body \sch equation in momentum space reads as 
+\begin{equation}
+\frac{\hbar^{2}k^{2}}{2m}\psi_{\vk}+\sum_{\vk'}U_{\vk\vk'}\psi_{\vk'}=E\psi_{\vk}
+\end{equation}
+At very high momentum (determined by the interaction strength and  potential range), the first term dominates, and we have the asymptotic form of the wave-function
+\begin{equation}
+\lim_{k\rightarrow\infty}\psi_{\vk}=\tilde{A}\nth{k^{2}+\kappa^{2}}
+\end{equation}
+where $-\frac{\hbar^{2}\kappa^{2}}{2m}=E$.  Note that $\tilde{A}$ is not necessarily equal $A$ at low momentum discussed before.  
 
 
 
@@ -162,13 +170,14 @@ Here we  calculate $\pi^{(0)}$ and $\pi^{\perp}$ to the first order of $\Delta_i
 	-T_{\vk}B_{k}^{-1}\delta_{\vk}T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3\\
 	&\qquad+T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T_{\vk}\delta_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3
 	-T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}\delta_{\vk}T_{\vk}^{\dg}\sigma_3\Big)\\
-	=&\sum_k\tr\big(M_{k}\big)+2\tr\Big(\delta_{\vk}M_{k}-\delta_{\vk}M_{k}\Big)
+	=&\sum_k\tr\big({M}_{k}\big)+2\tr\Big(\delta_{\vk}\widetilde{M}_{k}-\delta_{\vk}M_{k}\Big)
 \end{split}
 \end{equation}
 where 
-\begin{equation}
-M_{k}=T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}
-\end{equation}
+\begin{gather}
+M_{k}=T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}\\
+\widetilde{M}_{k}=B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T^{}_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T^{}_{\vk}
+\end{gather}
 Here we use the cyclical  property of the trace $\tr(AB)=\tr(BA)$.  
 It is straightforward to calculate
 \begin{equation*}
@@ -184,7 +193,7 @@ Now it is easy to calculate the first term
 \begin{split}
 \sum_k\tr\big(M_{k}\big)=&
 \sum_{k}\mbr{
-\frac{2\Delta_{1}^{2}}{E_{\vk}^{2}(i\omega_{k}-E_{1\,\vk})(i\omega_{k}+\xi_{2\,\vk})}+
+\frac{2\Delta_{1}^{2}}{E_{\vk}^{2}(i\omega_{k}-E_{1\,\vk})(i\omega_{k}+E_{2\,\vk})}+
 \br{\frac{\xi_{\vk}^{2}}{E_{\vk}^{2}(i\omega_{k}-E_{1\,\vk})^{2}}+\frac{\xi_{\vk}^{2}}{E_{\vk}^{2}(i\omega_{k}+E_{1\,\vk})^{2}}
 -\nth{(i\omega_{k}+E_{3\,\vk})^{2}}}
 }
@@ -192,7 +201,7 @@ Now it is easy to calculate the first term
 \end{equation}
 Only root $-\xi_{2\,\vk}$ in the first term contributes in Matrubara frequency summation at zero temperature.
 \begin{equation}\label{eq:pathInt2:pi0-1}
-\sum_k\tr\big(M_{k}\big)=\sum_{\vk}\frac{2\Delta_{1}^{2}}{E_{\vk}^{2}(E_{1\,\vk}+\xi_{2\,\vk})}
+\sum_k\tr\big(M_{k}\big)=\sum_{\vk}\frac{2\Delta_{1}^{2}}{E_{\vk}^{2}(E_{1\,\vk}+E_{2\,\vk})}
 \approx\sum_{\vk}\frac{\Delta_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{\Delta_{1}^{2}\Delta_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}
 \end{equation}
 
@@ -202,7 +211,7 @@ B_{k}=\mtrx{i\omega_{k}-E_{\vk}&0&0\\0&i\omega_{k}+E_{\vk}&0\\0&0&i\omega_{k}+\x
 \end{equation}
 It is easy to verify at this approximation
 \begin{equation}\label{eq:pathInt2:pi0-2}
-\tr\Big(\delta_{\vk}M_{k}-\delta_{\vk}M_{k}\Big)=0
+\tr\Big(\delta_{\vk}\widetilde{M}_{k}-\delta_{\vk}M_{k}\Big)=0
 \end{equation}
 Combine Eq. \eqref{eq:pathInt2:pi0-1} and Eq. \eqref{eq:pathInt2:pi0-2}, we have 
 \begin{equation}
@@ -253,11 +262,11 @@ $k_{Fc}$ is the Fermi momentum corresponding to density of the particles in clos
 
 Now we check whether the correction in Fermionic spectrum (Eq. \ref{eq:pathInt2:xiExpand3}-\ref{eq:pathInt2:xiExpand3}), 
 is indeed small comparing to the zeroth order term.  
-\begin{align}\tag{\ref{eq:pathInt2:xiExpand}}
-E_{1\vk}&\approx{}E_{\vk}+\frac{\Delta_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{1\vk}\\
-\xi_{2\vk}&\approx{}E_{\vk}-\frac{\Delta_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}&\equiv{}&E_{\vk}+\gamma_{2\vk}
-\tag{\ref{eq:pathInt2:xiExpand2}}\\
-E_{3\vk}&\approx{}\xi_{\vk}+\eta-\frac{\Delta_{2}^{2}}{2(\xi_{\vk}+\eta)}&\equiv{}&\xi_{\vk}+\eta+\gamma_{3\vk}
+\begin{align}
+E_{1\vk}&\equiv{}E_{\vk}+\gamma_{1\vk}\approx{}E_{\vk}+u_{\vk}^{2}\zeta\tag{\ref{eq:pathInt2:xiExpand}}\\
+E_{2\vk}&\equiv{}E_{\vk}+\gamma_{2\vk}
+\approx{}E_{\vk}-v_{\vk}^{2}\zeta\tag{\ref{eq:pathInt2:xiExpand2}}\\
+E_{3\vk}&\equiv{}\xi_{\vk}+\eta+\gamma_{3\vk}\approx{}\epsilon_{\vk}+\eta+\frac{\zeta}{2}
 \tag{\ref{eq:pathInt2:xiExpand3}}
 \end{align}
 Here, we mostly only concern of low-momentum ($k\sim{}k_{F}$).  In Eq. \ref{eq:pathInt2:xiExpand3}, 

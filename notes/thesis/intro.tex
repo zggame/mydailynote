@@ -18,7 +18,7 @@ This unique ability gives physicists a rare opportunity to study  a many-body sy
 %This thesis tries to look into the idiosyncrasy of the Feshbach resonance in contrast with a true ``Simple'' knob of the interaction strength.
   The two-body theory of Feshbach resonance has a characteristic  parameter, $\delta_c$.  Na\"{i}vely speaking, in the negative detuning side of any resonance, particles should mostly stay  in a (virtual) bound-state of closed-channel (or similar) resonances.  However, at the resonance point  of Feshbach resonance, atoms is mostly in the open-channel, and it does so up to a negative detuning of $\delta_c$. Only when the detuning from resonance is much larger than $\delta_c$, atoms have the majority weight in the closed-channel.    Moving to a many-body problem, an important question is how this energy scale compares to a typical many-body energy scale, the Fermi energy. In the region not too far away from resonance, the closed-channel weight is negligible, if the Fermi energy is much smaller than $\delta_c$, (i.e., \emph{broad resonance}).   Thus the closed-channel can be safely ignored at many-body level. The problem can be well-described as a two-species fermion system with a tunable interaction.  Feshbach resonance indeed serves as a simple ``magic'' knob for the interaction strength.  The original  theories based on a single-channel model  applies to this case directly.  This is also the situation for the popular experiment systems (${}^{6}\text{Li}$ at 834G, $^{40}\text{K}$ at 224G).   Many theoretical works develop over those original works along such simple single-channel models. On the contrary, when Fermi energy is  comparable to or even larger than $\delta_c$, the closed-channel has to be included in the many-body level. A many-body theory must include both channels.  Several theoretical works consider such a situation \cite{GurarieNarrow}. 
   
-  Nevertheless, one crucial simplification comes from  the assumption that closed-channel bound state is relatively tight bound, and is much smaller than  many-body scales, such as inter-particle distance, (but often larger than potential range).  Therefore, we do not need to handle the three (four) fermion species simultaneously, which probably requires quite different techniques to solve. Instead, two channels can still be treated in step. 
+  Nevertheless, one crucial simplification comes from  the assumption that closed-channel bound state is relatively tight bound, and is much smaller than  many-body scales, such as interparticle distance, (but often larger than potential range).  Therefore, we do not need to handle the three (four) fermion species simultaneously, which probably requires quite different techniques to solve. Instead, two channels can still be treated in step. 
 
 To complicate the problem even further,  real experiment setups often have one common hyperfine species between two channels. There are three hyperfine species in two channels instead of four species (two for each channel).  Two most popular setups (${}^{6}\text{Li}$ at 834G, $^{40}\text{K}$ at 224G) are both three-species ones although they are the broad resonance.  Pauli exclusion prevents  both channels from occupying the same level simultaneously because of this common species.  This peculiar effect has no counterpart in two-body physics. It has  received little theoretical attention.    Some  narrow resonances do exist \cite{ChinRMP} and it is not totally inconceivable to conduct many-body experiments with those resonances.  The central concern in this thesis is about such situations. 
 
@@ -108,7 +108,7 @@ Here we briefly review the Feshbach resonance in a two-body system.   As discuss
 When mixture between channels are taken into consideration, the simple single-channel scattering becomes the multi-channel scattering.  Especially, when the one channel's threshold is close to a bound-state in the other channel, the scattering property in that channel is dramatically altered.  Phase shift can changes $2\pi$ and the s-wave scattering length $a_{s}$ changes to infinity and jumps to the infinity of the opposite sign.  This is essentially what happens in the Feshbach resonance, which was studied by Fano\cite{Fano} and Feshbach \cite{nuclear}  in nuclear and atom physics in 1960s.  Here we  mostly follow treatment in \cite{Leggett} (with some different symbols to comply with the rest of this thesis). 
 \footnote{In order to conform with other parts of the thesis, this thesis uses some different symbols comparing to the original works by Leggett \cite{Leggett}.  Here I list them, with the symbols from \cite{Leggett} in parenthesis.  $U$ ($=-V$): open-channel interaction; $V$ ($=-V_{c}$): closed-channel interaction; $Y$ (=-$g\cdot{}f$): inter-channel coupling; $E_{b}$ ($=\epsilon_{0}$):binding energy of closed-channel bound state; $r_{c}$ ($=r_{0}$): range of potential; $\eta$ ($=\epsilon_0+\tilde\delta$) the Zeeman energy difference between two channels; $\mathcal{K}$ ($=\kappa$) see Eq.\ref{eq:intro:kappa}.}
 
-The two-channel Hamiltonian can be written as ($2\times2$ matrix for  (open,closed) ``spinor'')
+The two-channel Hamiltonian can be written as a $2\times2$ matrix for  the (open,closed) channel
 \begin{equation}\label{eq:intro:ham}
 \hat{H}(r)=
 \begin{pmatrix}
@@ -116,7 +116,7 @@ The two-channel Hamiltonian can be written as ($2\times2$ matrix for  (open,clos
 -\frac{\hbar^{2}}{2m_{r}}\nabla^{2}+\eta-V(r)&\;&-Y(r)
 \end{pmatrix}
 \end{equation}
-where  zero of energy is counted from that of two open-channel atoms with infinite separation. $\eta$ is the absolute difference in Zeeman energy of two channels.  All the interactions are short-range.  For a s-wave solution we have 
+where the  zero of energy is taken as the energy of two open-channel atoms with infinite separation. $\eta$ is the absolute difference in the Zeeman energy of two channels.  All the interactions are short-range.  For a s-wave solution we have 
 \begin{equation}
 \psi(r)=\nth{r}\mtrx{\chi(r)\\\chi_{c}(r)}
 \end{equation}
@@ -129,7 +129,7 @@ We expand the closed-channel component $\chi_{c}$ over the eigenstates of the is
 \begin{equation}\label{eq:intro:sch2}
 -\frac{\hbar^{2}}{2m_{r}}\phi_{i}''-V \phi_{i}=-E_{b}^{(i)}\phi_{i}
 \end{equation}
-We denote $\phi_{0}$ as the wave function  in resonance and $c_{0}$ is its coeeficient.  Here we assume the energy difference between eigenstates are larger than other energy scales in the problem; hence $c_{0}$ dominates any other $c_{i}$'s.  $\chi_{c}\approx{}c_{0}\phi_{0}$.  Na\"{i}vely speaking, the resonance happens at the point where the closed-channel bound state level is exactly at the threshold of the open-channel.  Therefore we introduce the relative detuning, $\tilde\delta=\eta-E_{b}$. Comparing Eq. \ref{eq:intro:open} and Eq. \ref{eq:intro:sch2}, it is not hard to find
+We denote $\phi_{0}$ as the wave function  in resonance and $c_{0}$ as its coefficient.  Here we assume the energy difference between eigenstates, $\phi_{i}$'s, are larger than other energy scales in the problem; hence $c_{0}$ dominates any other $c_{i}$'s.  $\chi_{c}\approx{}c_{0}\phi_{0}$.  Na\"{i}vely speaking, the resonance happens at the point where the closed-channel bound state has the energy exactly at the threshold of the open-channel.  Therefore we introduce the relative detuning, $\tilde\delta=\eta-E_{b}$. Comparing Eq. \ref{eq:intro:open} and Eq. \ref{eq:intro:sch2}, it is not hard to find
 \begin{equation}\label{eq:intro:closeCoeff}
 \chi_{c}=\frac{\phi_{0}}{E-\tilde\delta}\int{dr'}\,\phi_{0}^{*}(r')Y(r')\chi\br{r'}
 \end{equation}
@@ -141,20 +141,20 @@ where kernel $K(r\,r')$ is
 \begin{equation}
 K(r\,r')\equiv\phi_{0}(r)\phi_{0}(r')Y(r')Y(r)\equiv{}K(r'\,r)
 \end{equation}
-Compare this with open-channel scattering \sch equation without coupling to the closed-channel
+Compare this with the open-channel  \sch equation without coupling to the closed-channel
 \begin{equation}\label{eq:intro:chi0}
 \br{-\frac{\hbar^{2}}{2m_{r}}\frac{d^{2}}{dr^{2}}-U-E}\chi_{0}=0
 \end{equation}
-Note that $\chi_{0}(r)\rightarrow0$ as $r\rightarrow0$ and $\chi_{0}(r)\rightarrow\text{const}(1-r/a_{bg})$ for $r\rightarrow\infty$.\footnote{Note that we are dealing with the internal wave function $\chi_{0}$ here (in region $\mathcal{I}$) instead of the external wave function as in Sec. \ref{sec:intro:as}; therefore, the boundary condition for $r\rightarrow0$ there actually corresponds the boundary condition $r\rightarrow\infty$ here.} Now multiplying Eq. \ref{eq:intro:chi} with $\chi_{0}$ and Eq. \ref{eq:intro:chi0} with $\chi$, subtracting them, and using Green's theorem, we find 
+Note that $\chi_{0}(r)\rightarrow0$ as $r\rightarrow0$ and $\chi_{0}(r)\rightarrow{A}(1-r/a_{bg})$ for $r\rightarrow\infty$.\footnote{Note that we are dealing with the internal wave function $\chi_{0}$ here (in region $\mathcal{I}$) instead of the external wave function as in Sec. \ref{sec:intro:as}; therefore, the boundary condition for $r\rightarrow0$ there actually corresponds the boundary condition $r\rightarrow\infty$ here.} Now multiplying Eq. \ref{eq:intro:chi} with $\chi_{0}$ and Eq. \ref{eq:intro:chi0} with $\chi$, integrating from $r=0$ to a  distance much larger than the potential range, $r=r_{0}$, subtracting them, and using Green's theorem, we find 
 \begin{equation}
-\chi_{0}(r_{c})\chi'(r_{c})-\chi_{0}'(r_{c})\chi(r_{c})+\frac{2m_{r}E}{\hbar^{2}}\int_{0}^{r_{c}}dr\chi_{0}(r)\chi(r)
-=\frac{2m_{r}/\hbar^{2}}{E-\tilde\delta}\int_{0}^{r_{c}}dr\int_{0}^{r_{c}}dr'\chi_{0}(r)K(rr')\chi(r')
+\chi_{0}(r_{c})\chi'(r_{c})-\chi_{0}'(r_{0})\chi(r_{0})+\frac{2m_{r}E}{\hbar^{2}}\int_{0}^{r_{c}}dr\chi_{0}(r)\chi(r)
+=\frac{2m_{r}/\hbar^{2}}{E-\tilde\delta}\int_{0}^{r_{0}}dr\int_{0}^{r_{0}}dr'\chi_{0}(r)K(rr')\chi(r')
 \end{equation}
-Here $r_{c}$ is a  distance much larger than potential range, and we can use the boundary condition by let $r\rightarrow\infty$, $\chi_{0}(r)\rightarrow\text{const}(1-r/a_{bg})$, $\chi(r)\rightarrow\text{const}(1-r/a_{s})$.  The R.H.S approaches a constant for a short-range interaction $Y(r)$ and therefore $K(rr')$.  For scattering solution at  $E=0$, we have 
+Here we can use the boundary condition by let $r\rightarrow\infty$, $\chi_{0}(r)\rightarrow{A}(1-r/a_{bg})$, $\chi(r)\rightarrow\tilde{A}(1-r/a_{s})$.  $Y(r)$ is a short-range interaction and thus $K(r,r')$ only picks the short-range parts of $\chi(r)$ and $\chi_{0}(r)$, which varies little with detuning. Consequently,  the R.H.S approaches a constant.  For the scattering solution at  $E=0$, we have 
 \begin{equation}
 \nth{a_{s}}-\nth{a_{bg}}=\frac{2m_{r}/\hbar^{2}}{\tilde\delta}\int_{0}^{\infty}dr\int_{0}^{\infty}dr'\chi_{0}(r)K(rr')\chi(r')
 \end{equation}
-Contrary to na\"ive intuition, $a_{s}$ does not diverge at the point $\tilde\delta=0$ because of the original interaction in open-channel, $a_{bg}$.  We can define a quantity $\mathcal{K}$, the detuning where $a_{s}$ diverges, by the implicit equation ($\mathcal{K}$ shows up in R.H.S as well)
+Contrary to the na\"ive intuition, $a_{s}$ does not diverge at the point $\tilde\delta=0$ because of the original interaction in open-channel, $a_{bg}$.  We can define a quantity $\mathcal{K}$, the detuning where $a_{s}$ diverges, by the implicit equation ($\mathcal{K}$ shows up in R.H.S as well)
 \begin{equation}\label{eq:intro:kappa}
 \mathcal{K}\equiv-\frac{2m_{r}a_{bg}}{\hbar^{2}}\int_{0}^{\infty}{dr}\int_{0}^{\infty}dr'\chi_{0}(r)K(rr')\chi_{\tilde\delta=\mathcal{K}}(r')
 \end{equation}
@@ -176,12 +176,12 @@ We see that $\Delta{B}=\mathcal{K}(\partial\delta/\partial{B})^{-1}$, and $B_{0}
 \end{center}
 \end{figure}
 
-Next we consider the bound state \footnote{Here we want to stress the difference between a closed-channel bound-state $\phi_{i}$ and a real bound state with negative energy formed by two channels.   The closed-channel bound state $\phi_{i}$ is the eigenstate of the Hamiltonian of isolated closed-channel, and is not a real eigenstate for the full two-channel Hamiltonian.  On the other hand, the full  Hamiltonian has eigenstate of bound-state ($E<0$) at large negative detuning (in two-body context) or BEC-side (in many-body context).  The bound state solution for two-channel eigenstate has components both in open-channel and closed-channel.  Often the open-channel weight is larger when close to resonance and therefore those bound-states are often called open-channel bound-states.  Only at large negative detuning, the real two-channel bound state is mostly composed of close-channel component, and coincides with close-channel bound-state, $\phi_{i}$.}
+Next we consider the bound state \footnote{Here we want to stress the difference between a closed-channel bound-state $\phi_{i}$ and a real bound state with negative energy formed by two channels.   The closed-channel bound state, $\phi_{i}$, is the eigenstate of the  isolated closed-channel Hamiltonian, and is not a real eigenstate for the full two-channel Hamiltonian.  On the other hand, the full  Hamiltonian has bound eigenstates ($E<0$) at large negative detuning (in the two-body context) or BEC-side (in the many-body context).  The bound state solution for a two-channel eigenstate has components both in the open-channel and the closed-channel.  Often the open-channel weight is larger when close to resonance and therefore those bound-states are often called open-channel bound-states.  Only at large negative detuning, the real two-channel bound state is mostly composed of close-channel component, and coincides with close-channel bound-state, $\phi_{i}$ to a large degree.}
 where $E<0$, define
 \begin{equation}\label{eq:intro:ab}
 a_{b}(E)\equiv\frac{\hbar}{(2m_{r}\abs{E})^{1/2}}
 \end{equation}
- Here we only study the bound state close to threshold with binding energy much smaller than the binding energy of closed-channel bound state $\phi_{0}$, $\abs{E}\ll{}E_{b}$, and therefore $a_{b}\gg{a_{c}}$.  Outside the range of potential $r_{c}$,  the wave function is proportional to $e^{-r/a_{b}}$. For $r_{c}\ll{}r\ll{}a_{b}$, it is approximately $1-\frac{r}{a_{b}}$, just as the Bethe-Peierls boundary condition (or s-wave scattering wave function) we discussed in Chapter \ref{sec:intro:as}.  Note that $a_{b}(E)$ is not identified as $a_{s}$ a priori.  We can go through the similar procedure as previous, and it is not hard to find
+ Here we only study the bound state close to threshold with binding energy much smaller than the binding energy of closed-channel bound state $\phi_{0}$, $\abs{E}\ll{}E_{b}$, and therefore $a_{b}\gg{a_{c}}$.  Outside the range of potential $r_{c}$,  the wave function is proportional to $e^{-r/a_{b}}$. For $r_{c}\ll{}r\ll{}a_{b}$, it can be expanded as  $1-\frac{r}{a_{b}}$, just as the Bethe-Peierls boundary condition (or the s-wave scattering wave function) we discussed in Chapter \ref{sec:intro:as}.  Note that $a_{b}(E)$ is not identified as $a_{s}$ a priori.  We can go through the similar procedure as previous, and it is not hard to find
 \begin{equation}
 \frac{a_{bg}}{a_{b}}-1=\frac{-\mathcal{K}}{\delta+\mathcal{K}-E}
 \end{equation}
@@ -189,7 +189,7 @@ Here we assume the short-range part of wave function $\chi$ does not change much
 \begin{equation}\label{eq:intro:abKE}
 a_{b}=\frac{\mathcal{K}}{\delta-E}
 \end{equation}
-It is not hard to see that $a_{b}$ coincides with s-wave scattering length $a_{s}$ when $\abs{E}\ll\abs{\delta}$, and therefore we will use them interchangeably afterward. This is actually an example our discussion about Bethe-Peierls boundary condition in Chapter \ref{sec:intro:as}.  Using Eqs. \ref{eq:intro:ab} and \ref{eq:intro:abKE}, it is easy to obtain an equation for $E$
+It is not hard to see that $a_{b}$ indeed \emph{does} coincide with the s-wave scattering length $a_{s}$ when $\abs{E}\ll\abs{\delta}$, and therefore we will use them interchangeably hereafter. This is actually an example our discussion about the Bethe-Peierls boundary condition in Chapter \ref{sec:intro:as}.  Using Eqs. \ref{eq:intro:ab} and \ref{eq:intro:abKE}, it is easy to obtain an equation for $E$
 \begin{equation}
 (\abs{E}+\delta)^{2}-2\delta_{c}\abs{E}=0
 \end{equation}
@@ -203,9 +203,9 @@ And the solution is  (for $\delta<0$)
 \end{equation}
 Furthermore, we can calculate the ``relative weight'' (probability) of closed-channel 
 \begin{equation}
-\lambda=\br{\frac{1}{E-\tilde\delta}}^{2}\abs{\int{}dr'\phi_{0}(r')Y(r')\xi_{n}(r')}^{2}
+\lambda=\br{\frac{1}{E-\tilde\delta}}^{2}\abs{\int{}dr'\phi_{0}(r')Y(r')\chi_{n}(r')}^{2}
 \end{equation}
-where $\xi_{n}(r)$ is the normalized open-channel bound-state component.  Comparing this with Eq. \ref{eq:intro:kappa}, assume the short-range part of $\chi_{n}(r)$ does not differ from $\chi_{o}(r)$ much, we can find 
+where $\chi_{n}(r)$ is the normalized open-channel bound-state component.  Comparing this with Eq. \ref{eq:intro:kappa}, assuming the short-range part of $\chi_{n}(r)$ does not differ from $\chi_{o}(r)$ much, we can find 
 \begin{equation}
 \lambda=\nth{(E-\tilde\delta)^{2}}\frac{\hbar^{2}}{2m_{r}a_{bg}}\mathcal{K}a_{b}^{-1}
 \end{equation}
@@ -213,9 +213,9 @@ For $\abs{\delta}\lesssim\delta_{c}\ll\mathcal{K}$, $E-\tilde\delta\approx\mathc
 \begin{equation}
 \lambda=\frac{\hbar^{2}}{2m_{r}a_{bg}}\nth{(\mathcal{K}a_{b})}=\br{\frac{\abs{E}}{2\delta_{c}}}^{1/2}
 \end{equation}
-Now we can see that  $\delta_{c}$ is a ``characteristic'' energy scale. When $\abs{\delta}\gg\delta_{c}$, $E\approx\delta$, this simply means that when the negative detuning is large, most weight is in closed-channel, and the real mixed bound state is a closed-channel bound state ($\phi_{0}$) dressed with little open-channel component and therefore the binding energy is roughly equal that of $\phi_{0}$.  On the contrary, when $\abs{\delta}\ll\delta_{c}$, $\abs{E}\approx-\delta^{2}/\delta_{c}\ll\delta$,  and closed-channel weight is much smaller than that of open-channel, the real bound-state is more or less a open-channel affair with little dress-up from closed-channel.  % It is not hard to  estimate $\delta_{c}$. 
+Now we can see that  $\delta_{c}$ is a ``characteristic'' energy scale. When $\abs{\delta}\gg\delta_{c}$, $E\approx\delta$, this simply means that when the negative detuning is large, most weight is in the closed-channel, and the real mixed bound state is a closed-channel bound state ($\phi_{0}$) dressed with little open-channel component and therefore the binding energy is roughly equal that of $\phi_{0}$.  The often quoted relation between $a_{s}$ and the binding energy (Eq. \ref{eq:intro:ab}) does not apply here.  On the contrary, when $\abs{\delta}\ll\delta_{c}$, $\abs{E}\approx-\delta^{2}/\delta_{c}\ll\delta$,  and closed-channel weight is much smaller than that of the open-channel, the real bound-state is more or less an open-channel affair with little dress-up from closed-channel.  % It is not hard to  estimate $\delta_{c}$. 
 
-In the many-body physics, another important energy scale comes into play, Fermi energy, $E_{F}$.  When it is much smaller than $\delta_{c}$, i.e. \emph{broad resonance},  closed-channel has only negligible weight close to resonance, where we are mostly interested in. In such situation, it is a good approximation to take Feshbach resonance as only a knob to tweak the interaction over open-channel there.  On the contrary, when $E_{F}$ is close even larger than $\delta_{c}$, i.e. \emph{narrow resonance}, closed-channel weight can be  significant around resonance, therefore requires to be explicitly taken into many-body framework.  
+In many-body physics, another important energy scale comes into play, the Fermi energy, $E_{F}$.  When it is much smaller than $\delta_{c}$, i.e. a \emph{broad resonance},  closed-channel has only negligible weight close to resonance, where we are mostly interested in. In such situation, it is a good approximation to take the Feshbach resonance as only a knob to tweak the interaction in the open-channel.  On the contrary, when $E_{F}$ is close even larger than $\delta_{c}$, i.e. a \emph{narrow resonance}, the closed-channel weight can be  significant around resonance, therefore it is required to explicitly take the closed-channel into many-body framework.  
 
 
 
@@ -227,15 +227,15 @@ In the many-body physics, another important energy scale comes into play, Fermi 
 
 
 \chapter{Single-channel BEC-BCS crossover\label{sec:intro:1channel}}
-In this chapter, we briefly review the BEC-BCS crossover in single channel.   The idea to describe the BEC and BCS in the same footing stems back several decades \cite{Eagle, LeggettCrossover, Nozieres, RanderiaBEC}.  %One way to interpret BCS is through the existing macroscopic eigenvalue of two-body density matrix (see Sec. \ref{sec:intro:as})\cite{Leggett}.   This eigenvalue corresponds the more familiar anomalous expectation, $\av{a_{\uparrow-\vk}a_{\downarrow\vk}}$.  If simply taking it as wave function of a two-fermion molecule, this eigenfucntion, $\ket{\psi}=(\sum_{\vk}c_{\vk}a^{\dg}_{\uparrow\vk}a^{\dg}_{\downarrow-\vk})\ket{0}$ is very large in size (coherent length), much larger than the average particle distance.  Therefore overlap between different ``molecules'' is significant.   
-BCS theory can be understood as the fermions form  ``giant molecules'' and those molecules then condense simultaneously.    It is not hard to show that the famous BCS ansatz is equivalent to  the  coherent state of two-body pair $\psi^{\dg}=\sum_{\vk}c_{\vk}a^{\dg}_{\uparrow\vk}a^{\dg}_{\downarrow-\vk}$
+In this chapter, we briefly review the BEC-BCS crossover in a single channel.   The idea to describe the BEC and BCS in the same footing stems back several decades \cite{Eagle, LeggettCrossover, Nozieres, RanderiaBEC}.  %One way to interpret BCS is through the existing macroscopic eigenvalue of two-body density matrix (see Sec. \ref{sec:intro:as})\cite{Leggett}.   This eigenvalue corresponds the more familiar anomalous expectation, $\av{a_{\uparrow-\vk}a_{\downarrow\vk}}$.  If simply taking it as wave function of a two-fermion molecule, this eigenfucntion, $\ket{\psi}=(\sum_{\vk}c_{\vk}a^{\dg}_{\uparrow\vk}a^{\dg}_{\downarrow-\vk})\ket{0}$ is very large in size (coherent length), much larger than the average particle distance.  Therefore overlap between different ``molecules'' is significant.   
+The BCS theory can be understood as fermions form  ``giant molecules'' and those molecules then condense simultaneously.    It is not hard to show that the famous BCS ansatz is equivalent to  the  coherent state of a two-body pair $\psi^{\dg}=\sum_{\vk}c_{\vk}a^{\dg}_{\uparrow\vk}a^{\dg}_{\downarrow-\vk}$
 \begin{equation}\label{eq:intro:BCScoherent}
 \prod_{\vk}(u_{vk}+v_{\vk}a^{\dg}_{\uparrow\vk}a^{\dg}_{\downarrow-\vk})\ket{0}=A\exp{}(\sum_{\vk}c_{\vk}a^{\dg}_{\uparrow\vk}a^{\dg}_{\downarrow-\vk})\ket{0}
 \end{equation}
-where $c_{\vk}=( v_{\vk}/u_{\vk})$. The size of these ``giant molecules'' is in the order of coherent length and much larger than inter-particle distance.
-Moving away from BCS ends, the pair shrinks as the inter-particle attraction becomes stronger.  At BEC side, two-fermion molecules are smaller than inter-particle distance and therefore well-defined. However, the binding energy now is much higher than typical many-body energy scale and condensation does not happens at the same time when molecules form.  Nevertheless,  at low enough temperature, we can still consider the condensation and molecule-forming at the same time, within the same framework as in BCS.  
+where $c_{\vk}=( v_{\vk}/u_{\vk})$. The size of these ``giant molecules'' is in the order of coherent length and much larger than the interparticle distance.
+Moving away from the BCS ends, a pair shrinks as the interparticle attraction becomes stronger.  At the BEC side, two-fermion molecules are smaller than the interparticle distance and therefore well-defined. However, the binding energy now is much higher than the typical many-body energy scale and condensation does not happens at the same time when molecules form.  Nevertheless,  at low enough temperature, we can still consider the formation of molecules and their condensation  at the same time, within the same framework as in BCS.  
 
-In the single-channel BEC-BCS crossover model, one images a ``magic'' knob that can tunes the interaction strength along the crossover.  The many-body fermion  system sweeps from fermionic BCS to BEC of molecules of two fermions in response to interaction change.   This applies directly to the broad-resonance, where the closed-channel weight is negligible and serves only to modify the effective interaction strength in open-channel.  We mostly follow path-integral treatment in \cite{RanderiaBEC, Randeria1997, Randeria2008} because it is readily adapted for two-channel model in the next chapter.
+In the single-channel BEC-BCS crossover model, one images a ``magic'' knob that can tunes the interaction strength along the crossover.  The many-body fermion  system sweeps from fermionic BCS to BEC of diatomic molecules  in response to the interaction change.   This applies directly to the broad-resonance of the two-channel case as well, where the closed-channel weight is negligible and serves only to modify the effective interaction strength in the open-channel.  We mostly follow the path-integral treatment in \cite{RanderiaBEC, Randeria1997, Randeria2008} because it can be readily adapted for two-channel model in the next chapter.
 %\subsection{Path integral for one channels}
 \input{pathInt}
 

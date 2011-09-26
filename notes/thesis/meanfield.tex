@@ -1,8 +1,8 @@
 \chapter{BCS-type ansatz and variation approach for two-channel problem \label{ch:mean}}
-We can also formulate the two-channel problem  using the  BCS-type ansatz with two channels in it.  It is not difficult to calculate the the expectation of free energy and  the wave function that optimizes the free energy within the ansatz space.  The optimization process gives us the gap equations, which determine the exact wave function with constraint of number equation.   %with those common parameters as chemical potential, gap.  
-We will see that this method yields the the mean-field solution consistent with the path-integral approach.  However, this method is mean-field by nature and it is difficult  to extend it to study the collective excitation of the system.  
+We can also formulate the problem  using the  BCS-type ansatz.  It is not difficult to calculate the the expectation of the free energy and  the wave function that optimizes the free energy within the ansatz space.  The optimization process gives us gap equations, which determine the exact wave function with the constraint from number equation.   %with those common parameters as chemical potential, gap.  
+We will see that this method yields  the mean-field solution consistent with the path-integral approach.  However, this method is mean-field by nature and it is difficult  to extend it to study the collective excitation of the system.  
 
-We put the hamiltonian \ref{eq:pathInt2:ham2} into momentum space, and restore the momentum dependence of the interaction coefficients
+We put the Hamiltonian \ref{eq:pathInt2:ham2} into momentum space, and restore the momentum dependence of the interaction coefficients
 \begin{equation}\label{eq:uvw:hamiltonian}
 \begin{split}
  H=&\sum_\vk\epsilon^a_\vk{}a^+_\vk{}a^{}_\vk+\sum_\vk\epsilon^b_\vk{}b^+_\vk{}b^{}_\vk+\sum_\vk\epsilon^c_\vk{}c^+_\vk{}c^{}_\vk\\
@@ -20,7 +20,7 @@ By the Hermition condition we have
 \begin{equation}\label{eq:ansatz}
  \ket{\Psi}=\prod_\vk\br{u_\vk+v_\vk{}a^\dg_\vk{}b^\dg_{-\vk}+w_\vk{}a^\dg_\vk{}c^\dg_{-\vk}}\ket{0}
 \end{equation}
-$\ket{0}$ is the particle vacuum state.  Here we require $\abs{u_\vk}^2+\abs{v_\vk}^2+\abs{w_\vk}^2=1$ for normalization.  This ansatz is closely modeled on BCS ansatz for superconductivity.  An alternative ansatz would be $\prod_\vk(u_\vk+v_\vk{}a^\dg_\vk{}b^\dg_{-\vk})(u^{'}_\vk+w_\vk{}a^\dg_\vk{}c^\dg_{-\vk})\ket{0}$, which is actually the same as Eq. \ref{eq:ansatz}, because  the cross term vanishes due to the Pauli exclusion of the common species.   Similarly to the original BCS ansatz, this ansatz does not have the fixed particle number.  We  will just require the expected value of number operator matches the total particle number. For all the interaction term, there are two types of contribution,
+$\ket{0}$ is the particle vacuum state.  Here we require $\abs{u_\vk}^2+\abs{v_\vk}^2+\abs{w_\vk}^2=1$ for normalization.  This ansatz is closely modeled on the original BCS ansatz for superconductivity.  An alternative ansatz would be $\prod_\vk(u_\vk+v_\vk{}a^\dg_\vk{}b^\dg_{-\vk})(u^{'}_\vk+w_\vk{}a^\dg_\vk{}c^\dg_{-\vk})\ket{0}$, which is actually the same as Eq. \ref{eq:ansatz}, because  the cross term vanishes due to the Pauli exclusion of the common species.   Similarly to the original BCS ansatz, this ansatz does not have the fixed particle number.  We  will just require the expected value of number operator matches the total particle number. For all the interaction term, there are two types of contribution,
 for example, 
 \begin{equation*}
 \av{U_{\vk\vk'}a^\dg_\vk{}b^\dg_{-\vk}{}b^{}_{-\vk'}a^{}_{\vk'}}
@@ -48,16 +48,16 @@ Where
  \xi^a_\vk=\epsilon^a_\vk-\mu^a,\qquad\xi^b_\vk=\epsilon^b_\vk-\mu^b,\qquad\xi^c_\vk=\epsilon^c_\vk-\mu^b
 \end{equation*}
 Two chemical potentials are added to make sure the $n_a=n_b+n_c=\nth{2}n$.  In principle, $\mu^{a}$ does not need to be equal to $\mu^{b}$  as there is no exchange/conversion between $(a)$ and $(b,c)$.  Nevertheless, we  set $\mu^{a}=\mu^{b}$ for simplicity and drop the superscript on chemical potential from here on. 
-We will also drop the Hatree terms as they can be absorbed into the chemical potentials as they only relate to the density.   In the second summation, we ignore the fact that the summation only go through $\vk\neq\vk'$ as the correction is in the higher order. 
+We will also drop the Hatree terms as they can be absorbed into the chemical potentials as they only relate to the density.   In the second summation, we ignore the fact that the summation only go through $\vk\neq\vk'$ as the correction due to this is in the higher order. 
  
- \section{Exact gap equations and number equations in variation method}
-Introduce the new parameter $h_{1\vk}$ and $h_{2\vk}$, corresponding to the mean field value (equal time average) of anomalous Green function,  (as $h_{1,2}$  in Sec \ref{sec:pathInt2:meanfield}), solve $u_{\vk}$, $v_{\vk}$, $w_{\vk}$ with $h_{1\vk}$ and $h_{2\vk}$ (treat everything as real\footnote{It is not hard to prove that the parameters that optimize the free energy is real within an overall phase factor. })
+ \section{Exact gap equations and number equations in the variation method}
+Introduce the new parameter $h_{1\vk}$ and $h_{2\vk}$, corresponding to the mean field value (equal time average) of the anomalous Green function,  (as $h_{1,2}$  in Sec \ref{sec:pathInt2:meanfield}), and solve $u_{\vk}$, $v_{\vk}$, $w_{\vk}$ with $h_{1\vk}$ and $h_{2\vk}$ (treat everything as real\footnote{It is not hard to prove that the parameters that optimize the free energy is real within an overall phase factor. })
 \begin{gather}
 u_{\vk}^2+v^{2}_{\vk}+w^{2}_{\vk}=1\\
 u_{\vk}v_{\vk}=h_{1\vk}\\
 u_{\vk}w_{\vk}=h_{2\vk}
 \end{gather}
-One complication is that $u_\vk$ is a monotonic function of $k$ while $h_{1\vk}$ is not in BCS end.  So we need to be careful when take the square root.  We introduce $\sgn_k$ for such purpose.  \footnote{\label{foot:20100909:sgn} $\sgn_k=1$  for the whole region of BEC case, or for $k$ is large in BCS case. In BCS case, when $k$ is small, $\sgn_{k}=-1$.  In single-channel case $\sgn_{k}=\sgn(\epsilon_{k}-\mu)$, the turning point is at chemical potential $\mu$.  However, in two-channel, this is more delicate.  The turning point is close to chemical potential, but with a shift. It is $\sgn_k=\sgn(\epsilon^{ab}_{\vk}-2\mu+  h_{2\vk}^2\eta)$.  This is very important in \eef {eq:20100909:number}}
+One complication is that $u_\vk$ is a monotonic function of $k$ while $h_{1\vk}$ is not in the BCS end.  So we need to be careful when take the square root.  We introduce $\sgn_k$ for such purpose.  \footnote{\label{foot:20100909:sgn} $\sgn_k=1$  for the whole region of BEC cases, or for $k$ is large in BCS cases. In BCS cases, when $k$ is small, $\sgn_{k}=-1$.  In single-channel cases, $\sgn_{k}=\sgn(\epsilon_{k}-\mu)$, the turning point is at chemical potential $\mu$.  However, in two-channel cases, this is more delicate.  The turning point is close to chemical potential, but with a shift. It is $\sgn_k=\sgn(\epsilon^{ab}_{\vk}-2\mu+  h_{2\vk}^2\eta)$.  This is very important in \eef {eq:20100909:number}}
 \begin{equation}
 \begin{split}
 u_{\vk}^2=&\frac{1}{2} \left(1+\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\right)\\
@@ -67,7 +67,7 @@ w^{2}_{\vk}=&\frac{2 h_{2\vk}^2}{1+\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}}
 =\frac{h_{2\vk}^2}{2( h_{1\vk}^2+ h_{2\vk}^2)} \left(1-\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\right)
 \end{split}
 \end{equation}
-Below, we adopt $\sgn_k=1$. (This works for BEC and most part of BCS; and in final equation, the sign function is taken care of automatically.  It is easy to verify we arrive at the same final result in the other case where $\sgn_{k}=-1$. ) Derivatives over $h_{1\vk}$ are\footnote{Here we follow the convention that takes $h_{1\vk}$ and $h_{2\vk}$ as real}
+Below, we adopt $\sgn_k=1$. (This works for BEC and most part of BCS; and in the final equations, the sign function is taken care of automatically by using $E_{\vk}$.  It is easy to verify that  we arrive at the same final result in the other cases where $\sgn_{k}=-1$. ) Derivatives over $h_{1\vk}$ are\footnote{Here we follow the convention that takes $h_{1\vk}$ and $h_{2\vk}$ as real}
 \begin{equation}
 \begin{split}
 \pdiff{u_{\vk}^2}{h_{1\vk}}=&-\frac{2 h_{1\vk}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}}\\
@@ -94,7 +94,7 @@ The gap equations are
 \label{eq:20100909:fullgapb}
 \end{gather}
 \end{subequations}
-where $\eta=\epsilon^{ac}_{\vk}-\epsilon^{ab}_{\vk}$ is the bare Zeeman energy difference and is large than most energy scale, such as $E_{F}$.  It is close to  binding energy of the closed-channel bound state when not too far away from resonance.   We see the advantages of path integral approach, where $h_{1\vk}$ and $h_{2\vk}$ instead have a very specific forms Eqs. (\ref{eq:pathInt2:h1}, \ref{eq:pathInt2:h2}) and ready for further approximation and analysis.  Here we do not have much guide for these two quantities and need to make some guess.  
+where $\eta=\epsilon^{ac}_{\vk}-\epsilon^{ab}_{\vk}$ is the bare Zeeman energy difference and is large than most energy scales, such as $E_{F}$.  It is close to  the binding energy of the closed-channel bound state when it is not too far away from the resonance point.   We see the advantages of path integral approach, where $h_{1\vk}$ and $h_{2\vk}$ instead have a very specific forms, Eqs. (\ref{eq:pathInt2:h1}, \ref{eq:pathInt2:h2}) and ready for further approximation and analysis.  Here we do not have much guide for these two quantities and need to make some guess.  
 
 Two number equations can be obtained.  One for each channel (see footnote (\ref{foot:20100909:sgn}) for $\sgn_{k}$).
 \begin{gather}\label{eq:20100909:number}
@@ -106,7 +106,7 @@ N_{\text{close}}=2\sum_{\vk}w_{\vk}^{2}
 
 
 
-Here instead of the solving these equations, we just demonstrate that they are equivalent to the saddle point equations obtained in path-integral methods, Eqs. (\ref{eq:pathInt2:mfopen}, \ref{eq:pathInt2:mfclose}, \ref{eq:pathInt2:numOpen}, \ref{eq:pathInt2:numClose}) up to the first order of correction.
+Here instead of solving these equations, we just demonstrate that they are equivalent to the saddle point equations obtained in the path-integral methods, Eqs. (\ref{eq:pathInt2:mfopen}, \ref{eq:pathInt2:mfclose}, \ref{eq:pathInt2:numOpen}, \ref{eq:pathInt2:numClose}) up to the first order of correction.
 
 At the lowest order, the second term in both gap equations, Eq. \ref{eq:20100909:fullgap}, are negligible.  And to the lowest order, the first term in these two equations are equal $D_{1}$ and $D_{2}$ respectively.  
 

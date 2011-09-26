@@ -1,12 +1,12 @@
 % !TeX root =thesis.tex
 
 
-\section{Diagonalize matrix Eq. (\ref{eq:pathInt2:G2})\label{sec:diagonalize}}
+\section{Diagonalize the matrix Eq. (\ref{eq:pathInt2:G2})\label{sec:diagonalize}}
 We need to find a unitary transformation $L$ to diagonalize matrix 
-\begin{equation*}
-i\omega_{n}I+\mtrx{-E_k&0&u _k\Delta_2\\0&+E_k&v_k\Delta_2\\u_k\Delta_2&v_k\Delta_2&+\xi_k+\eta}
-\end{equation*}
-We drops all the $k$ subscripts in this section because the $3\times3$ hyperfine space is the only concern here.  We notice that the first term is proportional to identity matrix and does not change by unitary transformation, we only need to concentrate for the second term.  We rescale all elements with $E$, 
+\begin{equation}\tag{\ref{eq:pathInt2:G2}}
+T_k^{\dg}G_{\omega_{n},\vk}^{-1}T_k=i\omega_nI+\mtrx{-E_k&0&u_k\Delta_2\\0&+E_k&v_k\Delta_2\\u_k\Delta_2&v_k\Delta_2&+\xi_k+\eta}
+\end{equation}
+We drops all the $k$ subscripts in this section because the $3\times3$ hyperfine space is the only concern here.  We notice that the first term is proportional to an identity matrix and does not change by unitary transformation, we only need to concentrate for the second term.  We rescale all elements with $E$, 
 \begin{equation*}
 R=
 \begin{pmatrix}
@@ -15,11 +15,11 @@ R=
 y_1&y_2&t
 \end{pmatrix}
 \end{equation*}
-The secular equation is 
+The secular equation of $R$ is 
 \begin{equation}\label{eq:pahtApp:secular}
 (x^{2}-1)(x-t)-(y_{1}^{2}+y_{2}^{2})x+y_{1}^{2}-y_{2}^{2}=0
 \end{equation}
-We will assume at the zeroth order, the three eigenvalues are $-1$, $1$ and $t$.  ($t$ has weak dependency on energy as $(\xi_{k}+\eta)/E_{k}$, however, at the low energy region of interest, we ignore $\xi_{k}$.) Both $y_{1,2}$ and t are larger than 1, however, we will verify that given condition $y_{i}^{2}\ll{t}$, the correction is indeed small and the expansion is legit.(See Sec.\ref{sec:pathApp:consistency})  \emph{Indeed, this approximation is not as bad as it seems to be, close-channel component can still be smaller than open-channel at low-k (in order of $k_{F}$)  due to close-channel bound state is much smaller than inter-particle distance even when total close-channel is more than open-channel.  And here all the quantities are about low-k unless specifically noticed.} 
+We  assume at the zeroth order, the three eigenvalues are $-1$, $1$ and $t$.  ($t$ has weak dependency on energy as $(\xi_{k}+\eta)/E_{k}$, however, at the low energy region of interest, we ignore $\xi_{k}$.) Both $y_{1,2}$ and t are larger than 1, however, we will verify that given condition $y_{i}^{2}\ll{t}$, the correction is indeed small and the expansion is reasonable (See Sec.\ref{sec:pathApp:consistency}).  \emph{Indeed, this approximation is not as bad as it seems to be, close-channel component can still be smaller than the open-channel one at low-k (in the order of $k_{F}$)  due to the close-channel bound state is much smaller than the interparticle distance even when the total close-channel atom number  is more than that of open-channel.  And here all the quantities are about low-k unless specifically noticed.} 
 We expand the system to the first order of $y_{i}^{2}/{t}$, and find
 \begin{equation}
 \begin{array}{ccc}
@@ -29,14 +29,14 @@ x^{(0)}&\quad{}x^{(1)}&\quad{}Eigenvector\nonumber\\
 t&\frac{y_{1}^{2}+y_{2}^{2}}{2t}&\mtrx{\frac{y_{1}}{t}&\frac{y_{2}}{t}&1}
 \end{array}
 \end{equation}
-Now it is easy to write down the corresponding diagonal matrix and unitary transformation
+Now it is easy to write down the corresponding diagonal matrix and the unitary transformation
 \begin{equation}
 B=i\omega_{n}I+E\mtrx{-1-\frac{y_{1}^{2}}{t}&0&0\\0&1-\frac{y_{2}^{2}}{t}&0\\0&0&t+\frac{y_{1}^{2}+y_{2}^{2}}{2t}}
 \end{equation}
 \begin{equation}
 L=\mtrx{1&-\frac{y_{1}y_{2}}{2t}&\frac{y_{1}}{t}\\\frac{y_{1}y_{2}}{2t}&1&\frac{y_{2}}{t}\\-\frac{y_{1}}{t}&-\frac{y_{2}}{t}&1}
 \end{equation}
-Here $L$ is not exactly unitary transformation, it only unitary in the first order of  $y_{i}^{2}/{t}$ (or $\Delta_{i}^{2}/(E\eta)$). We have 
+Here $L$ is not exactly unitary transformation, it is only unitary in the first order of  $y_{i}^{2}/{t}$ (or $\Delta_{i}^{2}/(E\eta)$). We have 
 \[
 B=L^{\dg}RL+o(\frac{y_{i}^{2}}{t})
 \]
@@ -52,7 +52,7 @@ Here we use $uv=\Delta_{1}/2E$
 
 
 \section{Derivation of  mean-field equation \eqref{eq:pathInt2:mf}\label{sec:pathInt2:deriveMF}}
-For a $3\times3$ matrix as in Eq. (\ref{eq:pathInt2:nG}), 
+We have fermion correlation as a $3\times3$ matrix (Eq. \ref{eq:pathInt2:nG}), 
 \begin{equation}\tag{\ref{eq:pathInt2:nG}}
 \mathcal{G}^{-1}=\begin{pmatrix}
 i\omega_{n}-\xi_{k}&\Delta_{1}&\Delta_{2}\\
@@ -60,7 +60,7 @@ i\omega_{n}-\xi_{k}&\Delta_{1}&\Delta_{2}\\
 \bar{\Delta}_{2}&0&i\omega_{n}+\xi_{k}+\eta
 \end{pmatrix}
 \end{equation}
-A general $3\times3$ matrix inverted as such, 
+Here we work in the momentum space, in which the system is nicely decoupled at least to the mean-field order.  And we therefore drop all the $k$ subscript in the rest of section. A general $3\times3$ matrix inverted as such, 
   \begin{equation}
   \mtrx{A_{11}&A_{12}&A_{13}\\A_{12}^{*}&A_{22}&0\\A_{13}^{*}&0&A_{33}}^{-1}=
   \nth{|A|}
@@ -68,11 +68,12 @@ A general $3\times3$ matrix inverted as such,
   	-A_{12}^{*}A_{33}&A_{11}A_{33}-A_{13}A_{13}^{*}&A_{12}^{*}A_{13}\\
 	-A_{13}^{*}A_{22}&A_{12}A_{13}^{*}&A_{11}A_{22}-A_{12}A_{12}^{*}}
   \end{equation}
-where $|A|$ is the determined of $A$ matrix.  Here we work in momentum space, in which the system is nicely decoupled at least to the mean-field order.  And we therefore drop all the $k$ subscript in the rest of section.  For Eq. (\ref{eq:pathInt2:nG}),
+where $|A|$ is the determined of $A$.   At the mean field level, all $\Delta_{i}$'s are real constants.  We denote the mean field value of $\mathcal{G}$ as $G_{0}$.  The determent of ${G}_{0}^{-1}$ can be expressed as 
 \begin{equation}
-|A|=(i\omega_{n}-E_{1})(i\omega_{n}+E_{2})(i\omega_{n}+E_{3})
+|G_{0}^{-1}|=(i\omega_{n}-E_{1})(i\omega_{n}+E_{2})(i\omega_{n}+E_{3})
 \end{equation}
-Now we have $G_{0}$, and we can find the last term in \ref{eq:pathInt2:mf01}, 
+where $E_{i}$'s are defined in Eqs. (\ref{eq:pathInt2:xiExpand}-\ref{eq:pathInt2:xiExpand3}).
+And $G_{0}$ can be obtained according to the above rule. Now we can find the last term in \ref{eq:pathInt2:mf01}, 
 \begin{equation}
 \begin{split}
 \tr\mbr{{G_{0}}\cdot\cmtrx{0&1&0\\0&0&0\\0&0&0}}&=\sum_{\vk\omega_{n}}G_{0\,(21)}\\
@@ -80,7 +81,7 @@ Now we have $G_{0}$, and we can find the last term in \ref{eq:pathInt2:mf01},
 &=\sum_{\vk}\Delta_{1}^{*}\frac{E_{1}+\xi+\eta}{(E_{1}+E_{2})(E_{1}+E_{3})}\equiv\sum_{\vk}h_{1\,\vk}
 \end{split}
 \end{equation}
-Here we perform Matsubara summation at zero temperature in the third equal sign with the normal trick (see sec. 4.2.1 in \cite{Altland}, sec. 25 in \cite{Fetter}, also refer to Footnote \ref{foot:intro:sum} at Page. \pageref{foot:intro:sum}).  We notice that within three roots, $E_{1}$, $-E_{2}$ and $-E_{3}$, we only need to take into account two negative roots $-E_{2}$ and $-E_{3}$, assuming the correction is small. 
+Here we perform the zero-temperature Matsubara summation  in the third equal sign with the normal trick (see sec. 4.2.1 in \cite{Altland}, sec. 25 in \cite{Fetter}, also refer to Footnote \ref{foot:intro:sum} at Page. \pageref{foot:intro:sum}). Because of zero-temperature,  within three roots, $E_{1}$, $-E_{2}$ and $-E_{3}$, we only need to take into account two negative roots $-E_{2}$ and $-E_{3}$, assuming the correction is small. 
 Similarly
 \begin{equation}
 \begin{split}
@@ -96,35 +97,45 @@ And we have
 Invert the interaction matrix $\tilde{U}$ and we have Eq.  \ref{eq:pathInt2:mf}.
 
 
-\section{Wave function for short-range potential}\label{sec:pathInt2:short-range}
-Here we discuss some possible generalization on the wave function for short-range potential.  This topic has been studied by Shizhong Zhang \cite{shizhongUniv}. We will use some similar ideas.  Outside the range $r_{c}$ of a short-range potential,  atom is free and  \sch equation is very simple.
+\section{Wave function for a short-range potential}\label{sec:pathInt2:short-range}
+Here we discuss some possible generalization on the wave function for a short-range potential.  This topic has been studied by Zhang \cite{shizhongUniv}. We will use some similar ideas.  Outside the range $r_{c}$ of a short-range potential,  an atom is free and  the  \sch equation is very simple.
 \begin{equation}
 -\frac{\hbar^{2}}{2m}\nabla^{2}\psi=E\psi
 \end{equation}
-The equation has a simple solution for s-wave, $\psi=A{e^{-\kappa{r}}}/{r}$ ($\kappa$ is imaginary for scattering state), here normalization $A$ is determined  by connecting it with the short-range part of the wave function, $\varphi_0$. 
+The equation has a simple solution for s-wave, $\psi=A'{e^{-\kappa{r}}}/{r}$ ($\kappa$ is imaginary for a scattering state), here normalization $A'$ is determined  by connecting it with the short-range part of the wave function, $\varphi_0$ and then requiring the full wave function normalized to $1$. 
 
-Let us discuss the bound-state first, $\kappa>0$.  In the momentum space, there is also a universal behavior at low-momentum, where $kr_{c}\ll1$.   
+Let us discuss the bound-state first, where $\kappa>0$.  In the momentum space, there is also a universal behavior at low momentum, where $kr_{c}\ll1$.   
 \begin{equation*}
-\psi_{k}=\nth{(2\pi)^{3/2}}\int{d\vr}(\varphi_{0}+A\frac{e^{-\kappa{r}}}{r})e^{-i\vk\cdot\vr}
+\psi_{k}=\nth{(2\pi)^{3/2}}\int{d\vr}(\varphi_{0}+A'\frac{e^{-\kappa{r}}}{r})e^{-i\vk\cdot\vr}
 \end{equation*}
-The first part for $\varphi_{0}$ has very little $k$ dependence and the second terms give
+The first part for $\varphi_{0}$ is the short-range part of the wave-function. 
 \begin{equation*}
-\psi_{k}=\varphi_{0\,k}+\nth{(2\pi)^{3/2}}\int{d\vr}(A\frac{e^{-\kappa{r}}}{r})e^{-i\vk\cdot\vr}=\varphi_{0\,k}-(\frac{2}{\pi})^{1/2}A\nth{k^{2}+\kappa^{2}}
+\psi_{k}=\varphi_{0\,k}+\nth{(2\pi)^{3/2}}\int{d\vr}(A'\frac{e^{-\kappa{r}}}{r})e^{-i\vk\cdot\vr}=\varphi_{0\,k}-A\nth{k^{2}+\kappa^{2}}
 \end{equation*}
+The first term has  very little $k$ dependence for low memontum $k\ll1/r_{c}$ and the second terms is more important in this range. 
+Furthermore, if the bound-state is  close to threshold, the most weight is outside $r_{c}$, we can neglect the first term and we have universal behavior at low-momentum while the normalization factor $A$ can be easily determined.
+\begin{equation}
+A=\sqrt{\frac{8\pi\kappa}{\mathcal{V}_{0}}}
+\end{equation}
+Where $\mathcal{V}_{0}$ is the total volume of the system. And the wave-function is
+\begin{equation}\label{eq:pathInt2:phi2body}
+\phi_{\vk}=\sqrt{\frac{8\pi\kappa}{\mathcal{V}_{0}}}\frac{1}{k^{2}+\kappa^{2}}\approx\sqrt{\frac{8\pi\kappa}{\mathcal{V}_{0}}}\frac{1}{\kappa^{2}}
+\end{equation}
+The second approximation is when the momentum is low ($\lesssim{}k_{F}$).
 
-Furthermore, if the bound-state is the one close to threshold, the most weight is outside $r_{c}$, we can neglect the first term and we have universal behavior at low-momentum while the normalization is determined in two-body problem.   Besides  bound-state, if interaction is weak and short-range, the low energy scattering state is well described by s-wave scattering state $\psi\propto1/r-1/a$ (Eq. \ref{eq:intro:Bethe}), and its Fourier transform in momentum space has the similar form $1/k^{2}$.  When considering many-body physics, in the low momentum below or around the scale of Fermi momentum,  wave function  is modified by many-body effect; but in the medium momentum, (still much smaller than $1/r_{c}$), this universal behavior is preserved.  The distribution of particle in such momentum, $k_{F}\ll{k}\ll{1/r_{c}}$, is $1/k^{4}$. This is actually the ``high-momentum'' (medium here) behavior ($C/k^{4}$) described in Tan's work about universality\cite{Tan2008-1,Tan2008-2}. 
+   Besides  the bound-state, if the interaction is weak and short-range, the low energy scattering state is well described by the s-wave scattering state $\psi\propto1/r-1/a$ (Eq. \ref{eq:intro:Bethe}), and its Fourier transformation in the momentum space has the similar form $1/k^{2}$.  When considering many-body physics, in the low momentum below or around the Fermi momentum,  wave function  is modified by the many-body effect; but in the medium momentum, (still much smaller than $1/r_{c}$), this universal behavior is preserved.  The distribution of particle in such momentum, $k_{F}\ll{k}\ll{1/r_{c}}$, is $1/k^{4}$. This is actually the ``high-momentum'' (medium here) behavior ($C/k^{4}$) described in Tan's work about universality\cite{Tan2008-1,Tan2008-2}. 
 
-On the other hand, at higher momentum ($k\gg1/r_{c}$), the second term in the above is very small.  This is because the smooth tail part of the wave function contributes little in high-oscillation.  The high-frequency Fourier component is solely determined by the wave function within the potential range.   This can be extend beyond two-body wave function to two-body correlation as long as the long-wave-length part is smooth.  In all cases, two-body, or many-body, very high-frequency of two-body correlation follows the two-body wave function.  
+On the other hand, at very higher momentum ($k\gg1/r_{c}$), the second term in the above is very small.  This is because the smooth tail part of the wave function contributes little in high oscillation.  The high-frequency Fourier component is solely determined by the wave function within the potential range.   This can be extend beyond the two-body wave function to the two-body correlation as long as the long-wave-length part is smooth.  In all cases, two-body, or many-body, very high-frequency of two-body correlation follows the two-body wave function.  
 
-On the other hand, the two-body \sch equation in momentum space reads as 
+More specifically, the two-body \sch equation in the momentum space reads as 
 \begin{equation}
 \frac{\hbar^{2}k^{2}}{2m}\psi_{\vk}+\sum_{\vk'}U_{\vk\vk'}\psi_{\vk'}=E\psi_{\vk}
 \end{equation}
-At very high momentum (determined by the interaction strength and  potential range), the first term dominates, and we have the asymptotic form of the wave-function
+At very high momentum (determined by the interaction strength and  potential range), the first term dominates, and we have the asymptotic form of the wave-function similar as Eq. \ref{eq:pathInt2:phi2body},
 \begin{equation}
 \lim_{k\rightarrow\infty}\psi_{\vk}=\tilde{A}\nth{k^{2}+\kappa^{2}}
 \end{equation}
-where $-\frac{\hbar^{2}\kappa^{2}}{2m}=E$.  Note that $\tilde{A}$ is not necessarily equal $A$ at low momentum discussed before.  
+where $-\frac{\hbar^{2}\kappa^{2}}{2m}=E$.  Note that this behavior is for a different reason and $\tilde{A}$ is not necessarily equal $A$ at low momentum discussed before.  
 
 
 
@@ -160,7 +171,7 @@ where $-\frac{\hbar^{2}\kappa^{2}}{2m}=E$.  Note that $\tilde{A}$ is not necessa
 
 
 \section{Evaluating $\pi^{(0)}$ and $\pi^{\perp}$\label{sec:calculatePi}}
-Here we  calculate $\pi^{(0)}$ and $\pi^{\perp}$ to the first order of $\Delta_i/\eta$ using the expansion of Green's function in Sec. \ref{sec:diagonalGreen}.
+Here we  calculate $\pi^{(0)}$ and $\pi^{\perp}$ to the first order of $\zeta$ using the expansion of the Green's function described in Sec. \ref{sec:diagonalGreen}.
 
 \begin{equation}\label{eq:pathInt2:pi0long}
 \begin{split}
@@ -173,7 +184,7 @@ Here we  calculate $\pi^{(0)}$ and $\pi^{\perp}$ to the first order of $\Delta_i
 	=&\sum_k\tr\big({M}_{k}\big)+2\tr\Big(\delta_{\vk}\widetilde{M}_{k}-\delta_{\vk}M_{k}\Big)
 \end{split}
 \end{equation}
-where 
+Note that $k$ stands for both the momentum and  the Matsubara frequency, $(\omega_{n},\vk)$.
 \begin{gather}
 M_{k}=T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T_{\vk}B_{k}^{-1}\\
 \widetilde{M}_{k}=B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T^{}_{\vk}B_{k}^{-1}T_{\vk}^{\dg}\sigma_3T^{}_{\vk}
@@ -199,7 +210,7 @@ Now it is easy to calculate the first term
 }
 \end{split}
 \end{equation}
-Only root $-\xi_{2\,\vk}$ in the first term contributes in Matrubara frequency summation at zero temperature.
+Only root $-E_{2\,\vk}$ in the first term contributes in the Matsubara frequency summation at zero temperature.
 \begin{equation}\label{eq:pathInt2:pi0-1}
 \sum_k\tr\big(M_{k}\big)=\sum_{\vk}\frac{2\Delta_{1}^{2}}{E_{\vk}^{2}(E_{1\,\vk}+E_{2\,\vk})}
 \approx\sum_{\vk}\frac{\Delta_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{\Delta_{1}^{2}\Delta_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}
@@ -217,51 +228,51 @@ Combine Eq. \eqref{eq:pathInt2:pi0-1} and Eq. \eqref{eq:pathInt2:pi0-2}, we have
 \begin{equation}
 \pi^{(0)}(0)\approx\sum_{\vk}\frac{\Delta_{1}^{2}}{E_{\vk}^{3}}-\sum_{\vk}\frac{\Delta_{1}^{2}\Delta_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}\end{equation}
 
-We can actually calculate  $\pi^{\perp}(0)$ exactly
+$\pi^{\perp}(0)$ can actually be calculated   exactly
 \begin{equation}
 \begin{split}
 \pi^{\perp}(0)=&\sum_k\tr(\hat{G}_{0\,k}\hat{G}_{0\,k})\\
 	=&\sum_k\tr\big(T_{\vk}L_{\vk}B_{k}^{-1}L_{\vk}^{\dg}T_{\vk}^{\dg}T_{\vk}L_{\vk}B_{k}^{-1}L_{\vk}^{\dg}T_{\vk}^{\dg}\big)\\
 	=&\sum_k\tr\big(B_{k}^{-1}B_{k}^{-1}\big)\\
-	=&\sum_{\vk,i}(\sum_{\omega_{k}}(i\omega_{k}-\xi_{i})^{-2})\\
+	=&\sum_{\vk,i}(\sum_{\omega_{n}}(i\omega_{k}-\xi_{i})^{-2})\\
 	=&0
 \end{split}
 \end{equation}
 
 
 \section{Check for consistency of expansion\label{sec:pathApp:consistency}}
-In our treatment here, one crucial assumption in expansion is the smallness of $\Delta_{2}/\eta$.  Here we check it.  We have 
+In our treatment here, one crucial assumption in expansion is the smallness of $\Delta_{2}/\eta$ comparing to $1$.  Here we check it.  We have 
 \begin{equation}
 \Delta_{2}=\sum{}Yh_{1\vk}+\sum{}Vh_{2\vk}\tag{\ref{eq:pathInt2:mfclose}}
 \end{equation}
-The first term on the right is relatively small comparing to the second term.  In an estimation we just keep the second term.  Furthermore,  we assume $h_{2\,\vk}=\sqrt{N_{c}}\phi_{0\,\vk}$, where $\phi_{0\,\vk}$ is the normalized wave function of isolated close-channel potential satisfying \sch equation
+The first term on the right is relatively small comparing to the second term.  We just keep the second term for estimation.  Furthermore,  we assume $h_{2\,\vk}=\sqrt{N_{c}}\phi_{0\,\vk}$, where $\phi_{0\,\vk}$ is the normalized wave function of the  isolated closed-channel potential satisfying \sch equation
 \begin{equation}\tag{\ref{eq:pathInt2:phi}}
 -E_{b}^{(0)}\phi_{0\,\vp}=2\epsilon_{\vp}\phi_{0\,\vp}-\sum_{\vk}V \phi_{0\,\vk}
 \end{equation}
-rearrange it we have (especially at low-momentum)
+Rearranging it, we have (especially at low momentum)
 \begin{equation*}
 \sum_{\vk}V \phi_{0\,\vk}=(2\epsilon_{\vp}+E_{b})\phi_{0\,\vp}\approx{\eta}\phi_{0\,\vp}
 \end{equation*}
-The second approximation is correct at low-momentum (smaller or in the same order of Fermi momentum) as $\epsilon_{\vp}\ll{}E_{b}\approx\eta$.  Put all these together, we have
+The second approximation is correct at low momentum (smaller or in the same order of the Fermi momentum) as $\epsilon_{\vp}\ll{}E_{b}\approx\eta$.  Put all these together, we have
 \begin{equation*}
 \Delta_{2}\approx\alpha{}E_{b}\phi
 \end{equation*}
-If we assume a simple exponentially decayed wave function
-\begin{equation}\label{eq:pathInt2:phi2body}
-\phi_{\vk}=\sqrt{\frac{8\pi\kappa}{V_{0}}}\frac{1}{k^{2}+\kappa^{2}}\approx\sqrt{\frac{8\pi\kappa}{V_{0}}}\frac{1}{\kappa^{2}}
+If we assume a simple exponentially decayed wave function as in Eq. \ref{eq:pathInt2:phi2body} from Sec. \ref{sec:pathInt2:short-range}
+\begin{equation}\tag{\ref{eq:pathInt2:phi2body}}
+\phi_{\vk}=\sqrt{\frac{8\pi\kappa}{\mathcal{V}_{0}}}\frac{1}{k^{2}+\kappa^{2}}\approx\sqrt{\frac{8\pi\kappa}{\mathcal{V}_{0}}}\frac{1}{\kappa^{2}}
 \end{equation}
-Here  $V_{0}$ is the total volume.  The second approximation uses the fact that $k\ll\kappa$ at low-momentum as previous equation.  Collect all these together, we have
+Here  $\mathcal{V}_{0}$ is the total volume.  The second approximation is only for  low momentum.  Collect all these together, we have
 \begin{equation}
-\Delta_{2}\approx\sqrt{N_{c}}\eta\sqrt{\frac{8\pi\kappa}{V_{0}}}\frac{1}{\kappa^{2}}
+\Delta_{2}\approx\sqrt{N_{c}}\eta\sqrt{\frac{8\pi\kappa}{\mathcal{V}_{0}}}\frac{1}{\kappa^{2}}
 \sim\eta\sqrt\frac{n_{c}}{\kappa^{3}}
 \sim\eta\br{\frac{k_{Fc}}{\kappa}}^{\frac{3}{2}}
 \sim\eta\br{\frac{E_{Fc}}{\eta}}^{\frac{3}{4}}
 \end{equation}
 %:
-$k_{Fc}$ is the Fermi momentum corresponding to density of the particles in close-channel, which is much smaller than the characteristic momentum for bound-state, $\kappa$.   Therefore we have $\Delta_{2}\ll\eta$, even when $n_{c}$ is close to total density $n$. 
+$k_{Fc}$ is the Fermi momentum corresponding to density of atoms in the close-channel, which is much smaller than the characteristic momentum for the bound-state, $\kappa$.   Therefore we have $\Delta_{2}\ll\eta$, even when $n_{c}$ is close to the total density $n$. 
 
-Now we check whether the correction in Fermionic spectrum (Eq. \ref{eq:pathInt2:xiExpand3}-\ref{eq:pathInt2:xiExpand3}), 
-is indeed small comparing to the zeroth order term.  
+Now we check whether the corrections in Fermionic spectrum (Eq. \ref{eq:pathInt2:xiExpand3}-\ref{eq:pathInt2:xiExpand3}), 
+are indeed small comparing to the zeroth order terms.  
 \begin{align}
 E_{1\vk}&\equiv{}E_{\vk}+\gamma_{1\vk}\approx{}E_{\vk}+u_{\vk}^{2}\zeta\tag{\ref{eq:pathInt2:xiExpand}}\\
 E_{2\vk}&\equiv{}E_{\vk}+\gamma_{2\vk}
@@ -269,16 +280,16 @@ E_{2\vk}&\equiv{}E_{\vk}+\gamma_{2\vk}
 E_{3\vk}&\equiv{}\xi_{\vk}+\eta+\gamma_{3\vk}\approx{}\epsilon_{\vk}+\eta+\frac{\zeta}{2}
 \tag{\ref{eq:pathInt2:xiExpand3}}
 \end{align}
-Here, we mostly only concern of low-momentum ($k\sim{}k_{F}$).  In Eq. \ref{eq:pathInt2:xiExpand3}, 
+Here, we mostly only concern of case of low momentum ($k\sim{}k_{F}$).  In Eq. \ref{eq:pathInt2:xiExpand3}, 
 \begin{equation*}
-\frac{\gamma_{3\vk}}{E_{3\vk}}\sim{}\frac{\Delta_{2}^{2}}{\eta^{2}}\sim\br{\frac{k_{Fc}}{\kappa}}^{2}\ll1
+\frac{\gamma_{3\vk}}{E_{3\vk}}\sim{}\frac{\Delta_{2}^{2}}{\eta^{2}}\sim\br{\frac{k_{Fc}}{\kappa}}^{3}\ll1
 \end{equation*}
-Eqs. \ref{eq:pathInt2:xiExpand} and Eqs. \ref{eq:pathInt2:xiExpand2} is slightly more complicated.  Both of them involve $\frac{\Delta_{2}^{2}}{E_{\vk}\eta}$,  at very BCS side, close-channel density is small, $k_{F\,c}$ is small and that makes this ratio small; when close to (narrow) resonance, where $n_{c}$ is comparable to to total density, at low energy, $\Delta_{1}$ is in the order of Fermi energy, so does $E_{\vk}$.   We have (we no longer distinguish $k_{F\,c}$ with $k_{F}$)
+Eqs. \ref{eq:pathInt2:xiExpand} and Eqs. \ref{eq:pathInt2:xiExpand2} is slightly more complicated.  Both of them involve $\frac{\Delta_{2}^{2}}{E_{\vk}\eta}$,  at the  BCS limit, the closed-channel density is small, $k_{F\,c}$ is small and that makes this ratio small; when close to the (narrow) resonance, where $n_{c}$ is comparable to to the total density, at low energy, $\Delta_{1}$ is in the order of the Fermi energy, so does $E_{\vk}$.   We have (we no longer distinguish $k_{F\,c}$ with $k_{F}$)
  \begin{equation*}
  \frac{\gamma_{i}}{\xi_{i}}<\frac{\Delta_{2}^{2}}{E_{\vk}\eta}\sim\frac{\eta^{2}\frac{k_{Fc}^{3}}{\kappa^{3}}}{k_{F}^{2}\eta}\sim\frac{k_{F}}{\kappa}\ll1
 \end{equation*}
 
-More deeply, in the secular equation that leads to spectrum, Eq. \ref{eq:pahtApp:secular}.  We rewrite it without scale to $E_{\vk}$,  (We drop subscript $\vk$ in the following equations for simplicity)
+More deeply, in the secular equation that leads to spectrum, Eq. \ref{eq:pahtApp:secular}.  We rewrite it without scaling to $E_{\vk}$,  (We drop subscript $\vk$ in the following equations for simplicity)
 \begin{equation*}
 (x^{2}-E^{2})(x-\xi-\eta)-\Delta_{2}^{2}x+\Delta_{2}^{2}E(u^{2}-v^{2})=0
 \end{equation*}
@@ -286,7 +297,7 @@ It is not hard to use definition of $u$ and $v$ to find $u^{2}-v^{2}=\xi/E$, and
 \begin{equation*}
 (x-\xi)(x+\xi)(x-\xi-\eta)-\Delta_{1}^{2}(x-\xi-\eta)-\Delta_{2}^{2}(x-\xi)=0
 \end{equation*}
-Here the first term is for free particles, and let us estimate the size of the last two terms.  For low-momentum solution, we simply use $\Delta_{1}\sim{}E_{F}$, we find
+Here the first term is for free particles, and let us estimate the relative size of the last two terms.  For low-momentum solution, we simply use $\Delta_{1}\sim{}E_{F}$, we find
 \begin{equation*}
 \frac{\Delta_{1}^{2}(x-\xi-\eta)}{\Delta_{2}^{2}(x-\xi)}\sim\frac{E_{F}^{2}\eta}{\Delta_{2}^{2}E_{F}}\sim\frac{\kappa}{k_{F}}\gg1
 \end{equation*}
@@ -296,4 +307,4 @@ This justifies our choice to neglect the last term when finding the lowest-order
 
 
 
- In another word, the above estimation is just saying that the total occupation number of close-channel at low-momentum is much smaller than 1 in all region of resonance (narrow or broad) because the close-channel bound-state is much smaller than inter-particle distance.  This factor gives us a small factor, $\frac{r_{c}}{a_{0}}\sim\frac{k_{F}}{\kappa}\sim\sqrt\frac{E_{F}}{\eta}$, upon which we can do the expansion.  
+ In another word, the above estimation is just saying that the total occupation number of the closed-channel at low momentum is much smaller than 1 in all regions of resonance (narrow or broad) because the closed-channel bound state is much smaller than the interparticle distance.  This factor gives us a small factor, $\frac{r_{c}}{a_{0}}\sim\frac{k_{F}}{\kappa}\sim\sqrt\frac{E_{F}}{\eta}$, upon which we can do the expansion.  

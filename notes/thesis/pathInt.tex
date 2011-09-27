@@ -69,15 +69,17 @@ Using the above relations, we can write the saddle equation of Eq. (\ref{eq:path
 \begin{equation}
 \nth{g}\bar{\Delta}(\vr,\tau)-\tr\mbr{\hat{\mathcal{G}}(\vr,\tau,\vr,\tau)\begin{pmatrix}0&1\\0&0\end{pmatrix}}=0
 \end{equation}
-Here this matrix is in the Nambu Spinor space.  If we seek a tempo-spacial homogeneous solution of $\Delta_0$, we can find the Nambu Green function from Eq. (\ref{eq:pathInt:nG}) in momentum space
+Here this matrix is in the Nambu Spinor space.  At the  mean field level, we seek a tempo-spacial homogeneous solution of $\Delta_0$, i.e., $\Delta_{0}$ is a $\delta$-function in the frequency-momentum space, $\Delta_{0,\omega_{n},\vk}=\Delta_{0}\delta(\omega_{n}=0)\delta(\vk=0)$. We can find the Nambu Green function from Eq. (\ref{eq:pathInt:nG}) in momentum space
 \begin{equation}\label{eq:pathInt:G0}
-G_0(p)=\nth{(i\omega_n)^2-E_\vp^2}
+G_{0\;p,p'}=\nth{(i\omega_n)^2-E_\vp^2}
 \begin{pmatrix}
 	i\omega_n+\xi_\vp&\;&-\Delta_0\\
 	-\bar{\Delta}_0&\;&i\omega_n-\xi_\vp
 \end{pmatrix}
+\delta_{p=p'}
+\equiv{}G_{0}(p)\delta_{p=p'}
 \end{equation}
-Here $\omega_n$ is the Matsubara frequency of Fermions.  $\xi_{\vk}=\epsilon_{\vk}-\mu$, $\epsilon_{\vk}=\vk^{2}/2m$,  $E_\vp=\sqrt{\xi_\vp^2+\abs{\Delta_0}^2}$.  And the saddle point equation can be rewritten as 
+Here $p$ is the four momentum, $p=(\omega_{n},\vp)$, and $\omega_n$ is the Matsubara frequency of Fermions.  $\xi_{\vk}=\epsilon_{\vk}-\mu$, $\epsilon_{\vk}=\vk^{2}/2m$,  $E_\vp=\sqrt{\xi_\vp^2+\abs{\Delta_0}^2}$.  And the saddle point equation can be rewritten as 
 \begin{equation}
 \nth{g}\bar{\Delta}_0=\frac{T}{L^d}\sum_{\vp,n}\frac{\bar\Delta_0}{\omega_n^2+E_\vp^2}
 \end{equation}

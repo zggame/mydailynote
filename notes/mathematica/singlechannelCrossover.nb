@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     82880,       1875]
-NotebookOptionsPosition[     79977,       1772]
-NotebookOutlinePosition[     80333,       1788]
-CellTagsIndexPosition[     80290,       1785]
+NotebookDataLength[     84085,       1902]
+NotebookOptionsPosition[     81192,       1799]
+NotebookOutlinePosition[     81548,       1815]
+CellTagsIndexPosition[     81505,       1812]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -101,17 +101,21 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"NSolve", "[", 
   RowBox[{
-   RowBox[{"NIntegrate", "[", 
-    RowBox[{
+   RowBox[{
+    RowBox[{"NIntegrate", "[", 
      RowBox[{
-      RowBox[{"f", "[", "x", "]"}], "/.", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"f", "[", "x", "]"}], "/.", 
+        RowBox[{"{", 
+         RowBox[{"xmu2", "\[Rule]", "0.9"}], "}"}]}], ")"}], ",", 
       RowBox[{"{", 
-       RowBox[{"xmu2", "\[Rule]", "0.9"}], "}"}]}], ",", 
-     RowBox[{"{", 
-      RowBox[{"x", ",", "0", ",", "Infinity"}], "}"}]}], "]"}], ",", 
-   RowBox[{"{", "xdt2", "}"}]}], "]"}]], "Input",
+       RowBox[{"x", ",", "0", ",", "Infinity"}], "}"}]}], "]"}], "\[Equal]", 
+    RowBox[{"2", "/", "3"}]}], ",", 
+   RowBox[{"{", "xdt2", "}"}], ",", "Reals"}], "]"}]], "Input",
  CellChangeTimes->{{3.5260603255218773`*^9, 3.52606036479672*^9}, {
-  3.52606613882664*^9, 3.526066143649539*^9}}],
+  3.52606613882664*^9, 3.526066143649539*^9}, {3.526123993041198*^9, 
+  3.526124006616928*^9}, {3.526124045502474*^9, 3.5261240877349167`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -119,7 +123,7 @@ Cell[BoxData[
    RowBox[{"NIntegrate", "::", "inumr"}], "MessageName"], 
   RowBox[{
   ":", " "}], "\<\"The integrand \[NoBreak]\\!\\(x\\^2\\\\ \\(\\((1 - \
-\\(\\(\\(-0.99`\\)\\) + x\\^2\\)\\/\\@\\(\\((\\(\\(-0.99`\\)\\) + \
+\\(\\(\\(-0.9`\\)\\) + x\\^2\\)\\/\\@\\(\\((\\(\\(-0.9`\\)\\) + \
 \\(\\(Power[\\(\\(\[LeftSkeleton] 2 \[RightSkeleton]\\)\\)]\\)\\))\\)\\^2 + \
 xdt2\\))\\)\\)\\)\[NoBreak] has evaluated to non-numerical values for all \
 sampling points in the region with boundaries \
@@ -128,7 +132,8 @@ sampling points in the region with boundaries \
 ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", \
 ButtonNote -> \\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{{3.52606035716805*^9, 3.526060365975609*^9}, 
-   3.526065921318459*^9}],
+   3.526065921318459*^9, 3.5261240167612877`*^9, {3.52612404914902*^9, 
+   3.5261240886176767`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -136,7 +141,7 @@ Cell[BoxData[
    RowBox[{"NIntegrate", "::", "inumr"}], "MessageName"], 
   RowBox[{
   ":", " "}], "\<\"The integrand \[NoBreak]\\!\\(x\\^2\\\\ \\(\\((1 - \
-\\(\\(\\(-0.99`\\)\\) + x\\^2\\)\\/\\@\\(\\((\\(\\(-0.99`\\)\\) + \
+\\(\\(\\(-0.9`\\)\\) + x\\^2\\)\\/\\@\\(\\((\\(\\(-0.9`\\)\\) + \
 \\(\\(Power[\\(\\(\[LeftSkeleton] 2 \[RightSkeleton]\\)\\)]\\)\\))\\)\\^2 + \
 xdt2\\))\\)\\)\\)\[NoBreak] has evaluated to non-numerical values for all \
 sampling points in the region with boundaries \
@@ -145,7 +150,8 @@ sampling points in the region with boundaries \
 ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", \
 ButtonNote -> \\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{{3.52606035716805*^9, 3.526060365975609*^9}, 
-   3.526065921325715*^9}],
+   3.526065921318459*^9, 3.5261240167612877`*^9, {3.52612404914902*^9, 
+   3.5261240886254807`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -153,7 +159,7 @@ Cell[BoxData[
    RowBox[{"NIntegrate", "::", "inumr"}], "MessageName"], 
   RowBox[{
   ":", " "}], "\<\"The integrand \[NoBreak]\\!\\(x\\^2\\\\ \\(\\((1 - \
-\\(\\(\\(-0.99`\\)\\) + x\\^2\\)\\/\\@\\(\\((\\(\\(-0.99`\\)\\) + \
+\\(\\(\\(-0.9`\\)\\) + x\\^2\\)\\/\\@\\(\\((\\(\\(-0.9`\\)\\) + \
 \\(\\(Power[\\(\\(\[LeftSkeleton] 2 \[RightSkeleton]\\)\\)]\\)\\))\\)\\^2 + \
 xdt2\\))\\)\\)\\)\[NoBreak] has evaluated to non-numerical values for all \
 sampling points in the region with boundaries \
@@ -162,7 +168,8 @@ sampling points in the region with boundaries \
 ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", \
 ButtonNote -> \\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{{3.52606035716805*^9, 3.526060365975609*^9}, 
-   3.526065921368094*^9}],
+   3.526065921318459*^9, 3.5261240167612877`*^9, {3.52612404914902*^9, 
+   3.5261240886302357`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -176,12 +183,14 @@ Cell[BoxData[
 ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/stop\\\", \
 ButtonNote -> \\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{{3.52606035716805*^9, 3.526060365975609*^9}, 
-   3.5260659213721037`*^9}],
+   3.526065921318459*^9, 3.5261240167612877`*^9, {3.52612404914902*^9, 
+   3.526124088633959*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", "}"}]], "Output",
  CellChangeTimes->{{3.526060358753615*^9, 3.526060367519753*^9}, 
-   3.526065922822657*^9}]
+   3.526065922822657*^9, 3.5261240183756027`*^9, {3.5261240503368587`*^9, 
+   3.526124089073203*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1675,8 +1684,7 @@ uGTdm/EukRPKVzkAAA6Yq8c=
        "\[Mu]/",
        Cell[BoxData[
         FormBox[
-         SubscriptBox["E", "F"], TraditionalForm]],
-        FormatType->"TraditionalForm"]
+         SubscriptBox["E", "F"], TraditionalForm]]]
       }],
        GeneratedCell->False,
        CellAutoOverwrite->False,
@@ -1691,8 +1699,7 @@ uGTdm/EukRPKVzkAAA6Yq8c=
        "\[CapitalDelta]/",
        Cell[BoxData[
         FormBox[
-         SubscriptBox["E", "F"], TraditionalForm]],
-        FormatType->"TraditionalForm"]
+         SubscriptBox["E", "F"], TraditionalForm]]]
       }],
        GeneratedCell->False,
        CellAutoOverwrite->False,
@@ -1702,6 +1709,26 @@ uGTdm/EukRPKVzkAAA6Yq8c=
       FontWeight->Bold,
       Background->GrayLevel[1.]], {-2.759802297473513, 2.330939481593065}, {
      Left, Baseline},
+     Alignment->{Left, Top}], InsetBox[
+     StyleBox[Cell["BEC",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left],
+      FontSize->24,
+      FontWeight->Bold,
+      Background->GrayLevel[
+       1.]], {-3.1848133977180115`, -1.2189298833511482`}, {Left, Baseline},
+     Alignment->{Left, Top}], InsetBox[
+     StyleBox[Cell["BCS",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left],
+      FontSize->24,
+      FontWeight->Bold,
+      Background->GrayLevel[
+       1.]], {2.0165129243218085`, -1.1659467585012337`}, {Left, Baseline},
      Alignment->{Left, Top}]},
    AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
    Axes->True,
@@ -1720,7 +1747,7 @@ uGTdm/EukRPKVzkAAA6Yq8c=
   "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.526067435827997*^9, 3.526067520803433*^9}, {
   3.526067563127694*^9, 3.526067670620719*^9}, {3.526067724600564*^9, 
-  3.526067861628015*^9}}],
+  3.526067861628015*^9}, {3.526126074984087*^9, 3.526126112135783*^9}}],
 
 Cell[CellGroupData[{
 
@@ -1801,85 +1828,84 @@ Cell[2485, 90, 120, 2, 27, "Input"],
 Cell[2608, 94, 112, 1, 27, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2757, 100, 482, 13, 27, "Input"],
-Cell[3242, 115, 820, 15, 53, "Message"],
-Cell[4065, 132, 820, 15, 53, "Message"],
-Cell[4888, 149, 820, 15, 53, "Message"],
-Cell[5711, 166, 585, 12, 23, "Message"],
-Cell[6299, 180, 137, 3, 27, "Output"]
+Cell[2757, 100, 688, 17, 27, "Input"],
+Cell[3448, 119, 893, 16, 53, "Message"],
+Cell[4344, 137, 893, 16, 53, "Message"],
+Cell[5240, 155, 893, 16, 53, "Message"],
+Cell[6136, 173, 656, 13, 23, "Message"],
+Cell[6795, 188, 213, 4, 27, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6473, 188, 1143, 24, 27, "Input"],
-Cell[7619, 214, 2645, 48, 210, "Output"]
+Cell[7045, 197, 1143, 24, 27, "Input"],
+Cell[8191, 223, 2645, 48, 210, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10301, 267, 188, 5, 27, "Input"],
-Cell[10492, 274, 109, 1, 27, "Output"]
+Cell[10873, 276, 188, 5, 27, "Input"],
+Cell[11064, 283, 109, 1, 27, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10638, 280, 389, 11, 27, "Input"],
-Cell[11030, 293, 5471, 96, 244, "Output"]
+Cell[11210, 289, 389, 11, 27, "Input"],
+Cell[11602, 302, 5471, 96, 244, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[16538, 394, 2456, 74, 58, "Input"],
-Cell[18997, 470, 2252, 71, 58, "Output"]
+Cell[17110, 403, 2456, 74, 58, "Input"],
+Cell[19569, 479, 2252, 71, 58, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21286, 546, 231, 4, 27, "Input"],
-Cell[21520, 552, 748, 17, 245, "Output"]
+Cell[21858, 555, 231, 4, 27, "Input"],
+Cell[22092, 561, 748, 17, 245, "Output"]
 }, Open  ]],
-Cell[22283, 572, 511, 17, 27, "Input"],
+Cell[22855, 581, 511, 17, 27, "Input"],
 Cell[CellGroupData[{
-Cell[22819, 593, 121, 2, 27, "Input"],
-Cell[22943, 597, 335, 12, 75, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[23315, 614, 310, 8, 27, "Input"],
-Cell[23628, 624, 981, 34, 94, "Output"]
-}, Open  ]],
-Cell[24624, 661, 1307, 35, 58, "Input"],
-Cell[CellGroupData[{
-Cell[25956, 700, 97, 1, 27, "Input"],
-Cell[26056, 703, 825, 15, 43, "Output"]
-}, Open  ]],
-Cell[26896, 721, 488, 14, 27, "Input"],
-Cell[CellGroupData[{
-Cell[27409, 739, 99, 1, 27, "Input"],
-Cell[27511, 742, 672, 20, 27, "Output"]
+Cell[23391, 602, 121, 2, 27, "Input"],
+Cell[23515, 606, 335, 12, 75, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[28220, 767, 232, 5, 27, "Input"],
-Cell[28455, 774, 2903, 89, 58, "Output"]
+Cell[23887, 623, 310, 8, 27, "Input"],
+Cell[24200, 633, 981, 34, 94, "Output"]
+}, Open  ]],
+Cell[25196, 670, 1307, 35, 58, "Input"],
+Cell[CellGroupData[{
+Cell[26528, 709, 97, 1, 27, "Input"],
+Cell[26628, 712, 825, 15, 43, "Output"]
+}, Open  ]],
+Cell[27468, 730, 488, 14, 27, "Input"],
+Cell[CellGroupData[{
+Cell[27981, 748, 99, 1, 27, "Input"],
+Cell[28083, 751, 672, 20, 27, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[31395, 868, 604, 11, 27, "Input"],
-Cell[32002, 881, 1245, 26, 239, "Output"]
+Cell[28792, 776, 232, 5, 27, "Input"],
+Cell[29027, 783, 2903, 89, 58, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[33284, 912, 448, 10, 27, "Input"],
-Cell[33735, 924, 13773, 232, 247, "Output"]
+Cell[31967, 877, 604, 11, 27, "Input"],
+Cell[32574, 890, 1245, 26, 239, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[47545, 1161, 868, 21, 27, "Input"],
-Cell[48416, 1184, 14199, 243, 226, "Output"]
-}, Open  ]],
-Cell[62630, 1430, 15927, 292, 610, InheritFromParent],
-Cell[CellGroupData[{
-Cell[78582, 1726, 131, 2, 27, "Input"],
-Cell[78716, 1730, 459, 9, 23, "Message"]
+Cell[33856, 921, 448, 10, 27, "Input"],
+Cell[34307, 933, 13773, 232, 247, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[79212, 1744, 146, 3, 27, "Input"],
-Cell[79361, 1749, 145, 3, 27, "Output"]
+Cell[48117, 1170, 868, 21, 27, "Input"],
+Cell[48988, 1193, 14199, 243, 226, "Output"]
+}, Open  ]],
+Cell[63202, 1439, 16570, 310, 610, "Input"],
+Cell[CellGroupData[{
+Cell[79797, 1753, 131, 2, 27, "Input"],
+Cell[79931, 1757, 459, 9, 23, "Message"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[79543, 1757, 131, 2, 27, "Input"],
-Cell[79677, 1761, 95, 1, 27, "Output"]
+Cell[80427, 1771, 146, 3, 27, "Input"],
+Cell[80576, 1776, 145, 3, 27, "Output"]
 }, Open  ]],
-Cell[79787, 1765, 186, 5, 27, "Input"]
+Cell[CellGroupData[{
+Cell[80758, 1784, 131, 2, 27, "Input"],
+Cell[80892, 1788, 95, 1, 27, "Output"]
+}, Open  ]],
+Cell[81002, 1792, 186, 5, 27, "Input"]
 }
 ]
 *)
 
 (* End of internal cache information *)
-

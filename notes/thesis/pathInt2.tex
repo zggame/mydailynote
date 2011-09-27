@@ -245,6 +245,7 @@ E_{3\vk}&\equiv{}\xi_{\vk}+\eta+\gamma_{3\vk}\approx{}\xi_{\vk}+\eta-\frac{\Delt
 \approx{}\epsilon_{\vk}+\eta-\frac{\zeta}{2}
 \label{eq:pathInt2:xiExpand3}
 \end{align}
+An interesting feature of this solution is that the corrections do not disappear for zero inter-channel coupling, $Y=0$.  This is because the corrections are due to the Pauli exclusion between two channels, which continues to exist even when there is no inter-channel coupling.  In fact, the inter-channel coupling, $Y$, mostly contribute energetically.  It modifies the effective interaction in the open-channel and affect the open-channel order parameters,  $\Delta_{1}$, greatly.  By taking the broad resonance result as the zeroth order, we have taken care of $Y$.  On the other hand, the inter-channel Pauli exclusion or statistics is left out as the higher order correction as we just found out. 
 
 The extra factor of unitary transformation is 
 \begin{equation}\label{eq:pathInt2:L1}
@@ -606,14 +607,16 @@ E_{3\vk}&\equiv{}\xi_{\vk}+\eta+\gamma_{3\vk}\approx{}\epsilon_{\vk}+\eta+\frac{
 
 
 This clearly shows that $\mathcal{X}^{\dg}_{\text{I},\vk}$, $\mathcal{X}^{\dg}_{\text{II},\vk}$, and $\mathcal{X}^{\dg}_{\text{III},\vk}$ are fermionic quasi-particle excitation modes with spectrum $E_{i\,\vk}$ and   $L^{\dg}_{\vk}T^{\dg}_{\vk}$ is  the Bogoliubov canonical transformation to transfer the normal fermionic modes into these elementary quasi-particle modes .  Here we see in the excitation, different species of opposite momentum, $(a,b)$ and $(a,c)$, mixed together to form the elementary excitation due to the paring in the ground state.  
-  From Eqs. (\ref{eq:pathInt2:xiExpand}-\ref{eq:pathInt2:xiExpand3}), we see that the fermionic excitation modes basically follow the pattern in the broad resonance.  In the broad resonance where the closed-channel only modifies the interaction in the open-channel,  there are basically three fermionic quasi-particle modes: two (degenerate) Bogoliubov quasi-particle modes  in the open-channel, $E_{\vk}=\sqrt{\xi^{2}_{\vk}+\Delta_{1}^{2}}$ as in BCS theory; and one high fermionic excitation mode in the closed-channel, $\xi_{\vk}+\eta$, as in normal gas.  In the narrow resonance, first of all, the gap $\Delta_{1}$ itself is modified  by consideration of the extra Pauli exclusion with the correction in order of $\zeta$.  Once that is taken into account, the above conclusion is approximately correct except high-order corrections in $\zeta$.   The originally double degenerate excitation modes, $E_{\vk}=\sqrt{\xi^{2}_{\vk}+\Delta_{1}^{2}}$ , now split by $\zeta$; while the third high excitation corresponding the normal fermionic excitation in the closed-channel has a small correction in the same order. 
+  From Eqs. (\ref{eq:pathInt2:xiExpand}-\ref{eq:pathInt2:xiExpand3}), we see that the fermionic excitation modes basically follow the pattern in the broad resonance.  In the broad resonance where the closed-channel only modifies the interaction in the open-channel,  there are basically three fermionic quasi-particle modes: two (degenerate) Bogoliubov quasi-particle modes  in the open-channel, $E_{\vk}=\sqrt{\xi^{2}_{\vk}+\Delta_{1}^{2}}$ as in BCS theory; and one high fermionic excitation mode in the closed-channel, $\xi_{\vk}+\eta$, as in normal gas.  In the narrow resonance, first of all, the gap $\Delta_{1}$ itself is modified  by consideration of the extra Pauli exclusion with the correction in order of $\zeta$.  Once that is taken into account, the above conclusion is approximately correct except high-order corrections in $\zeta$.   The originally double degenerate excitation modes, $E_{\vk}=\sqrt{\xi^{2}_{\vk}+\Delta_{1}^{2}}$ , now split by $\zeta$; while the third high excitation corresponding the normal fermionic excitation in the closed-channel has a small correction in the same order.   On the other respect, as discussed earlier in Sec. \ref{sec:diagonalGreen}, these corrections are due to the inter-channel Pauli exclusion and do not vanish when the inter-channel coupling, $Y$, approaches zero.  
 
-\section{Collective excitation mode}
-%\input{collectiveMode1}
+\section{Collective excitation modes}
+Fermionic modes are derived from the correlation function $\nG$ of the fermion fields $\Psi$, and therefore are mostly single (quasi)particle like.  On the other hand, order parameters ($\Delta_{1}$, $\Delta_{2}$) are defined in terms of collective behavior of many fermion atoms.  Fluctuations of order parameters thus marked the collective excitation modes of the system. Here with a two-component order parameter, four independent modes exist:   two for magnitude variation of each $\Delta_i$,  internal phase between two $\Delta_i$, and the overall local phase $\theta(x)$ of $\Delta_1$ and $\Delta_2$.  The first three change the magnitude of action and therefore massive; while the last one leaves the action invariant and thus massless.  
+  For the single-channel crossover, Sec. \ref{sec:collective1} considers all (magnitude and phase) modes of the order parameter fluctuation at the same time, and only calculates  the low sound-like part of the spectrum. In the two-channel case, a general analysis with all modes in becomes unwieldy.  
+We instead focus on one mode a time. We isolate the change in one mode and leave others at their mean-field values.  
 
-%\subsubsection{Alternative Approach: Phase fluctuation mode \label{sec:phaseFluctuation}}
-The action of $\Delta$, $S(\bar{\Delta}_i,\Delta_i)$ (Eqs. \ref{eq:pathInt2:nG}, \ref{eq:pathInt2:actionD}), is invariant if the phases of $\Delta_{1\,\vk}$ and $\Delta_{2\,\vk}$ rotate simultaneously. We therefore conclude that there exists a massless (Goldstone) mode corresponding to local phase invariance. A treatment as in Sec. \ref{sec:collective1} for the single channel considers all (magnitude and phase) modes of the order parameter fluctuation at the same time, and only calculate  the low sound-like part of the spectrum. Here with a two-component order parameter, four independent modes exist:   two for magnitude variation of each $\Delta_i$,  internal phase between two $\Delta_i$, and the overall local phase $\theta(x)$ of $\Delta_1$ and $\Delta_2$.  The first three change the magnitude of action and therefore massive; while the last one leaves the action invariant and thus massless.  A general analysis with all modes in becomes unwieldy.  
-We instead focus on one mode a time. We focus the change in one mode and leave others at their mean-field values.  For the  two-channel in-phase phase fluctuation for $\theta$, we have 
+We study two phase fluctuation modes in the next two sections. 
+\subsection{Two-channel in-phase phase fluctuation }
+The action of $\Delta$, $S(\bar{\Delta}_i,\Delta_i)$ (Eqs. \ref{eq:pathInt2:nG}, \ref{eq:pathInt2:actionD}), is invariant if the phases of $\Delta_{1\,\vk}$ and $\Delta_{2\,\vk}$ rotate simultaneously. We therefore conclude that there exists a massless (Goldstone) mode corresponding to the local phase invariance.We first study the massless two-channel in-phase phase fluctuation.   Introduce the phase fluctuation $\theta$, 
 \begin{equation*}
 \Delta_{i}(x)\rightarrow{}\Delta_{i}(x)e^{i2\theta(x)}\qquad{}
 \bar{\Delta}_{i}(x)\rightarrow{}\bar{\Delta}_{i}(x)e^{-i2\theta(x)}
@@ -631,7 +634,7 @@ S_0[\bar\psi_{i},\psi_{i}]=&\int{dx}
 \Big\{\sum_{j}\bar\psi_{j}(\partial_\tau-\nth{2m}\nabla^{2}-\mu+\eta_{j})\psi_{j}\nonumber\\
 &\quad+\Delta^{(0)}{}^{\dg}\tilde{U}^{-1}\Delta^{(0)}-(\bar\psi\bar\psi)\Delta^{(0)}-{\Delta^{(0)}}{}^{\dg}(\psi\psi)\Big\}\\
 S_1[\theta,\bar\psi_{i},\psi_{i}]=&\int{dx}\sum_{j}\Big\{
-   i\,\bar\psi_{j}(\partial_{\tau}\theta)\psi_{j}+\nabla\theta\cdot\nth{2mi}[\bar\psi_{j}\nabla\psi_{j}-(\nabla\bar{\psi}_{j}\psi_{j})]\Big\}\\
+   i\,\bar\psi_{j}(\partial_{\tau}\theta)\psi_{j}+\nabla\theta\cdot\nth{2mi}[\bar\psi_{j}\nabla\psi_{j}-(\nabla\bar{\psi}_{j})\psi_{j}]\Big\}\\
 S_2[\theta,\bar\psi_{i},\psi_{i}]=&\int{dx}\sum_{j}\nth{2m}(\nabla\theta)^{2}\bar\psi_{j}\psi_{j}
 \end{align}
 \end{subequations}
@@ -686,8 +689,8 @@ S[\theta]=\int{dx}\sum_{q}\theta(q)\theta(-q)\big[\nth{2}\pi^{(0)}(0)\omega_m^2-
 The correlation determines the velocity of the Anderson-Bogoliubov collective mode.  The second term in Eq. \eqref{eq:pathInt2:pi0}, $-\sum_{\vk}\frac{\Delta_{1}^{2}\Delta_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}\approx-\sum_{\vk}\frac{\Delta_{1}^{2}}{2E_{\vk}^{3}}\frac{\xi_{\vk}}{E_{\vk}}\frac{\zeta}{E_{\vk}}$, is the only correction in the next order.  Thus its behavior is qualitatively same as  single-channel with some correction in the order of $\zeta/E_\vk\ll1$ (see Appendix \ref{sec:pathApp:consistency}).
 
 
-\subsection{Out-of- phase fluctuation}
-Another interesting phase fluctuation of order parameters is the  phase fluctuation in two channels out of phase.   When  the phase fluctuation of two channels are out of  sync,  the inter-channel coupling changes.  Thus, it is  expected to be  a gapped (massive) mode.  Similar as the in-phase mode,  we narrow down to the mode that the phases of two atoms  ($\psi_{b}$ and $\psi_{c}$) are opposite and leave all other modes constant.  
+\subsection{Out-of-phase phase fluctuation}
+Another interesting phase fluctuation of order parameters is the  phase fluctuation in two channels out of phase.  This mode is unique for a two-channel system without any counterpart in the single-channel modal.  When  the phase fluctuation of two channels are out of  sync,  the inter-channel coupling changes.  Thus, it is  expected to be  a gapped (massive) mode.  Similar as the in-phase mode,  we narrow down to the mode that the phases of two atoms  ($\psi_{b}$ and $\psi_{c}$) are opposite and leave all other modes constant.  
 \begin{equation*}
 \mtrx{\psi_{a}(x)\\\psi_{b}(x)\\\psi_{c}(x)}\rightarrow{}
 	\mtrx{\psi_{a}(x)\\\psi_{b}(x)e^{+i\theta(x)}\\\psi_{c}(x)e^{-i\theta(x)}}
@@ -718,25 +721,35 @@ This term cannot be easily written in terms of mean-field value $\Delta_i$.   On
 %	+\bar\Delta^{(0)}_{2}\tilde{U}^{-1}_{21}\Delta^{(0)}_{1}e^{+i2\theta(x)}\\
 %&-(\bar\psi\bar\psi)\Delta^{(0)}-{\Delta^{(0)}}{}^{\dg}(\psi\psi)\\
 %\end{align*}
-The interaction term can be rewritten as 
+Comparing to the in-phase phase rotation, the out-of-phase one does modify the action's magnitude. Write the interaction term in the momentum space,
 \begin{align*}
-&\Delta^{}{}^{\dg}\tilde{U}^{-1}\Delta^{}-(\bar\psi\bar\psi)\Delta^{}-{\Delta^{}}{}^{\dg}(\psi\psi)\\
-=&
+&\Delta^{}{}^{\dg}\tilde{U}^{-1}\Delta^{}\\
+=&\mtrx{\av{\bar{\psi}_{b,\vk}\bar{\psi}_{a,-\vk}}e^{-i\theta}&\av{\bar{\psi}_{c,\vk}\bar{\psi}_{a,-\vk}}e^{+i\theta}}\tilde{U}^{}\tilde{U}^{-1}\tilde{U}
+\mtrx{\av{\psi_{b,\vk}\psi_{a,-\vk}}e^{+i\theta}\\\av{\psi_{c,\vk}\psi_{a,-\vk}}e^{-i\theta}}\\
+%=&\mtrx{\av{\psi_{b}\psi_{a}}e^{-i\theta}&\av{\psi_{c}\psi_{a}}e^{+i\theta}}\mtrx{U&Y\\Y^{*}&V}
+%\mtrx{\av{\psi_{b}\psi_{a}}e^{+i\theta}\\\av{\psi_{c}\psi_{a}}e^{-i\theta}}
+=&\mtrx{h_{1,\vk}^{*}&h_{2,\vk}^{*}}\mtrx{U&Ye^{-i2\theta}\\Y^{*}e^{+i2\theta}&V}\mtrx{h_{1,\vk}\\h_{2,\vk}}\\
+=&\Delta^{(0)}{}^{\dg}\tilde{U}^{-1}\Delta^{(0)}
++\mbr{Y(e^{-i2\theta}-1)h_{1,\vk}^{*}h_{2,\vk} +Y^{*}(e^{+i2\theta}-1)h_{1,\vk}h_{2,\vk}^{*}}
 \end{align*}
-
-\begin{subequations}
+Note that here we take the mean-field expectation of pairs of fermions $h_{1,\vk}=\av{\psi_{b,\vk}\psi_{a,-\vk}}$, $h_{2,\vk}=\av{\psi_{c,\vk}\psi_{a,-\vk}}$, and their complex conjugates\footnote{$\psi\psi$ and $\bar\psi\bar\psi$ are complex conjugate in the mean field.}.  Comparing with the action of the in-phase phase fluctuation (Eq. \ref{eq:pathInt2:actionPhase}), we find one more terms in the new action.  
+\begin{subequations}\label{eq:pathInt2:actionPhase2}
 \begin{align}
 S[\theta,\bar\psi_{i},\psi_{i}]=&S_0[\bar\psi_{i},\psi_{i}]+S_1[\theta,\bar\psi_{i},\psi_{i}]+S_2[\theta,\bar\psi_{i},\psi_{i}]
-	+S_3[\theta,\bar\psi_{i},\psi_{i}]\\
+	+S_3[\theta]\\
 S_0[\bar\psi_{i},\psi_{i}]=&\int{dx}
-\Big\{\sum_{j}\bar\psi_{j}(\partial_\tau-\nth{2m}\nabla^{2}-\mu+\eta_{j})\psi_{j}\nonumber\\
+\Big\{\sum_{j=(a,b,c)}\bar\psi_{j}(\partial_\tau-\nth{2m}\nabla^{2}-\mu+\eta_{j})\psi_{j}\nonumber\\
 &\quad+\Delta^{(0)}{}^{\dg}\tilde{U}^{-1}\Delta^{(0)}-(\bar\psi\bar\psi)\Delta^{(0)}-{\Delta^{(0)}}{}^{\dg}(\psi\psi)\Big\}\\
-S_1[\theta,\bar\psi_{i},\psi_{i}]=&\int{dx}\sum_{j}\Big\{
-   i\,\bar\psi_{j}(\partial_{\tau}\theta)\psi_{j}+\nabla\theta\cdot\nth{2mi}[\bar\psi_{j}\nabla\psi_{j}-(\nabla\bar{\psi}_{j}\psi_{j})]\Big\}\\
-S_2[\theta,\bar\psi_{i},\psi_{i}]=&\int{dx}\sum_{j}\nth{2m}(\nabla\theta)^{2}\bar\psi_{j}\psi_{j}
+S_1[\theta,\bar\psi_{i},\psi_{i}]=&\int{dx}\Big\{
+   i\,(\partial_{\tau}\theta)(\bar\psi_{b}\psi_{b}-\bar\psi_{c}\psi_{c})\\
+   &\quad+\nabla\theta\cdot\nth{2mi}[\bar\psi_{b}\nabla\psi_{b}-\bar\psi_{c}\nabla\psi_{c}
+   -(\nabla\bar{\psi}_{b})\psi_{b}   +(\nabla\bar{\psi}_{c})\psi_{c}]\Big\}\\
+S_2[\theta,\bar\psi_{i},\psi_{i}]=&\int{dx}\nth{2m}(\nabla\theta)^{2}(\bar\psi_{b}\psi_{b}+\bar\psi_{c}\psi_{c})\\
+S_3[\theta]=&\int{dx}\mbr{Y(e^{-i2\theta}-1)\av{\bar{\psi}_{b}\bar{\psi}_{a}}\av{\psi_{c}\psi_{a}}
+     +Y^{*}(e^{+i2\theta}-1)\av{\bar{\psi}_{c}\bar{\psi}_{a}}\av{\psi_{b}\psi_{a}}}
 \end{align}
 \end{subequations}
-
+Let us look at $S_{3}$ first.  The two terms in the parenthesis are complex conjugate and 
 \begin{subappendices}
 \include{pathAppendix}
 \end{subappendices}

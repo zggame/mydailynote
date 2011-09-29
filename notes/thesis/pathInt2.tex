@@ -3,7 +3,7 @@
 
 
 \newcommand{\htd}{\tilde{h}}
-\chapter{Two-channel three-species many-body model\label{ch:path2}}
+\chapter{The two-channel three-species many-body model\label{ch:path2}}
 
 
 For the narrow Feshbach resonance, atoms have considerable weight in the closed-channel and the Pauli exclusion between two channels cannot be neglected.  A many-body framework needs to include both channels.  Before diving into the detailed calculation, let us make some rough estimates about scale in order to  build some intuition.  The same problem at the two-body level is well understood as briefed in Chapter. \ref{sec:intro:twobody}.  %Extended to many-body, three different types of Pauli exclusion requires to be considered: Pauli exclusion within open-channel, Pauli exclusion within closed-channel and Pauli exclusion between two channels. Let us estimate the scale of each with an artificial question.  We  calculate how much is reduced in two-body wave function by one single type of Pauli exclusion when a new pair is added.  This quality is quite unphysical without any real measurable counterpart, but it serves as a starting point to build intuition. 
@@ -187,13 +187,13 @@ If we in addition assume $\eta_{a}=\eta_{b}=0$, $\eta_{c}=\eta$ (i.e., use $\eta
 %\end{equation}
 The action in Eq. \ref{eq:pathInt2:actionMixCompact} is  bilinear to $\Psi$ and we can integrate  out $\Psi$ ($\bar\Psi$) formally
 \begin{equation}\label{eq:pathInt2:actionD}
-S(\bar{\Delta},\Delta)=\int{dx}\br{\bar{\Delta}\tilde{U}^{-1}D-\tr\ln\nG}
+S(\bar{\Delta},\Delta)=\int{dx}\br{\bar{\Delta}\tilde{U}^{-1}\Delta-\tr\ln\nG}
 \end{equation}
 Note that at this stage $\Delta(\vr,\tau)$  is not necessarily homogeneous in space or pseudo-time.  
 
 
 
-\section{Diagonalizing Green's function\label{sec:diagonalGreen}}
+\section{Diagonalizing the Green's function\label{sec:diagonalGreen}}
 Eq. \eqref{eq:pathInt2:actionD} looks fairly innocent and compact.  Nevertheless, it has all the physics in it and is not as simple as it looks.  The major problem comes from the term $\tr\ln\nG$, which includes  logarithm and trace over an infinite-dimension matrix.   All these operations are fairly straight-forward if we can diagonalize the  Green's function (or its inverse) in a proper basis.      It is not hard to see $\nG$ is already decoupled in the frequency-momentum space (Eqs.  \ref{eq:pathInt2:nGDeltaK}, \ref{eq:pathInt2:nG}).  It is however mixed in the $3\times3$ hyperfine-spin space.  The rest of this section is dedicated to diagonalize this $3\times3$ matrix in hyperfine-species space.  Note that in principle, the following discussion is not limited for constant $\Delta$, but also applies to inhomogeneous $\Delta(\omega_{n},\vk)$ as well because the $3\times3$ hyperfine space is independent to the frequency-momentum space.   Here we use the approach in Sec. \ref{sec:diagonalizeGreen1} to diagonalize it.   
 In current problem, we need to diagonalize a $3\times3$ matrix Eq. \ref{eq:pathInt2:nG}, in other words, we need to figure out the Bogoliubov canonical transformation over which the Hamiltonian/action is diagonalized.   Eigen-problem of the $3\times3$ matrix involves solving a cubic equation. An exact solution exists in principle.  However,  it offers little intuition to write down the exact result. Instead,  the spectrum from the broad-resonance, where the only effect of closed-channel is to modify the effective interaction of open-channel, serves a reasonable lowest order approximation. We proceed to find the next order of correction over it (See Appendix \ref{sec:diagonalize} and \ref{sec:pathApp:consistency}). 
 
@@ -211,6 +211,7 @@ where $u_{k}$ and $v_{k}$ are defined in a similar fashion as in the single-chan
 v_{\vk}^{2}\equiv1-u_{\vk}^{2}\equiv\nth{2}\br{1-\frac{\xi_{\vk}}{E_{\vk}}}\\
 E_{\vk}\equiv(\xi_{\vk}^{2}+\Delta_{1}^{2})^{1/2}
 \end{gather}
+Note that here $v_{\vk}^{2}$  does not carry the physical meaning of the occupation number of the (open-channel) atoms, and $E_{\vk}$   does not stands for fermionic excitation spectrum as in Chapter \ref{sec:intro:1channel} or Appendix \ref{ch:mean}.   They are only those values at the broad resonance. In the narrow resonance, we currently discuss, they are the zeroth order approximation. 
 
 In the broad-resonance, where only the BCS pairing in open channel needs to be considered, $T$ is enough to diagonalize $G^{-1}$ and $L$ is simply an identity matrix.  %Here we will try to approximate it to the first order correction due to Pauli exclusion between two-channel.  
 In the narrow resonance, $T$ cannot diagonalize $G^{-1}$ because of the Pauli exclusion between channels.  Consequently, $L$ stands the extra correction due to Pauli exclusion in the canonical transformation. Apply $T$ onto $G^{-1}$, we have 
@@ -278,7 +279,7 @@ G_{\omega_{n},\vk}\approx{}T_{\vk}B_{\omega_{n},\vk}^{-1}T_{\vk}^{\dg}+T_{\vk}\d
 \end{subequations}
 
 %We only need to keep the zeroth order term for $B_{\vk}^{-1}$ for first order expansion.  
-\section{Mean field equation \label{sec:pathInt2:meanfield}}
+\section{Mean field equations \label{sec:pathInt2:meanfield}}
 Use the same techniques for derivatives as Eq. (\ref{eq:pathInt:diffTr}), we derive two saddle point equations for $\Delta_{1}$ and $\Delta_{2}$ from Eq. \eqref{eq:pathInt2:actionD},
  \begin{align}
 \frac{\delta}{\delta{}\Delta_{1}}:&\qquad&
@@ -529,7 +530,7 @@ Here the argument goes similar as in $\lambda_{1}$, considering the short-range 
 
 
 
-\subsection{Number equation}
+\subsection{Number equations}
 There is one  number equation for each channel,  
 \begin{gather*}
 \sum_{\omega_{n}, \vk}G_{22}e^{(-i\omega_n\delta_-)}=N_{open}\\
@@ -555,7 +556,8 @@ This equation has only one unknown parameter $\Delta_{2}$.  Therefore, this equa
 %Similar to the argument in gap equation, the summand  above is mostly useful at energy below $\eta$, where the component is small everywhere comparing to 1, however, the summation runs over high-momentum ($\sim\eta$), where $D_2$ should no longer be regarded as constant and summation can gives $N_{close}$ comparable to total number. 
 % \mycomment{ This might not be correct statement.  Maybe it is just fine as it properly converges. } This summation shows that the closed-channel state is small and therefore the summation runs up to high momentum, where mostly is determined by two-body physics.  
 
-The open-channel number equation  can be expanded perturbatively as well, \begin{equation}
+The open-channel number equation  can be expanded perturbatively as well, 
+\begin{equation}\label{eq:pathInt2:openNum}
 \begin{split}
 N_{open}\approx&\sum_\vk\mbr{\frac{E_\vk-\xi_\vk}{2E_\vk}+\frac{\gamma_{1\vk}}{2E_\vk}
 	-\frac{(E_\vk-\xi_\vk)(\gamma_{1\vk}+\gamma_{2\vk})}{4E_\vk^2}
@@ -569,7 +571,7 @@ All terms behave well  in 3D and do not need any renormalization.   It is like t
 
 %\input{oldTwoChannelMeanField}
 
-\section{Fermionic excitation mode and Bogoliubov transformation\label{sec:pathInt2:bog}}
+\section{Fermionic excitation modes and Bogoliubov transformation\label{sec:pathInt2:bog}}
 If we limit ourselves in the mean field level, we can interpret the transformation $T_\vk{}L_\vk$ in Eq. \eqref{eq:pathInt2:B} as the Bogoliubov canonical transformation, while  the $3\times3$ matrix $B$ in Eq. (\ref{eq:pathInt2:Bapprox}-\ref{eq:pathInt2:xiExpand3}) gives us the spectrum of the  fermionic quasi-particle excitation. From Eq. \eqref{eq:pathInt2:actionMix} and Eq. \eqref{eq:pathInt2:B}, the action is diagonal for new fermions (quasi-particles) field 
 \begin{equation*}
 \Phi_\vk\equiv\mtrx{\phi_{\text{\Rmnum{1}},+\vk}\\\bar\phi_{\text{\Rmnum{2}},-\vk}\\\bar\phi_{\text{\Rmnum{3}},-\vk}}
@@ -617,7 +619,7 @@ Fermionic modes are derived from the correlation function $\nG$ of the fermion f
 We instead focus on one mode a time. We isolate the change in one mode and leave others at their mean-field values.  
 
 Phase fluctuations are usually more interesting, the in-phase mode is the counterpart of the Anderson-Bogoliubov modes in the single channel problem, while the two channels introduce a new out-of-phase mode. We study two phase fluctuation modes in the next two sections. 
-\subsection{In-phase phase fluctuation }
+\subsection{The in-phase phase fluctuation }
 The action of $\Delta$, $S(\bar{\Delta}_i,\Delta_i)$ (Eqs. \ref{eq:pathInt2:nG}, \ref{eq:pathInt2:actionD}), is invariant if the phases of $\Delta_{1\,\vk}$ and $\Delta_{2\,\vk}$ rotate simultaneously. We therefore conclude that there exists a massless (Goldstone) mode corresponding to the local phase invariance.We first study the massless two-channel in-phase phase fluctuation.   Introduce the phase fluctuation $\theta$, 
 \begin{equation*}
 \Delta_{i}(x)\rightarrow{}\Delta_{i}e^{i2\theta(x)}\qquad{}
@@ -691,7 +693,7 @@ S[\theta]=\int{dx}\sum_{q}\theta(q)\theta(-q)\big[\nth{2}\pi^{(0)}(0)\omega_m^2-
 The correlation determines the velocity of the Anderson-Bogoliubov collective mode.  The second term in Eq. \eqref{eq:pathInt2:pi0}, $-\sum_{\vk}\frac{\Delta_{1}^{2}\Delta_{2}^{2}\xi_{\vk}}{2E_{\vk}^{5}(\xi_{\vk}+\eta)}\approx-\sum_{\vk}\frac{\Delta_{1}^{2}}{2E_{\vk}^{3}}\frac{\xi_{\vk}}{E_{\vk}}\frac{\zeta}{E_{\vk}}$, is the only correction in the next order.  Thus its behavior is qualitatively same as  single-channel with some correction in the order of $\zeta/E_\vk\ll1$ (see Appendix \ref{sec:pathApp:consistency}).
 
 
-\subsection{Out-of-phase phase fluctuation}
+\subsection{The out-of-phase phase fluctuation}
 Another interesting phase fluctuation of order parameters is the  phase fluctuation in two channels out of phase.  This mode is unique for a two-channel system without any counterpart in the single-channel modal.  When  the phase fluctuation of two channels are out of  sync,  the inter-channel coupling changes.  Thus, it is  expected to be  a gapped (massive) mode.  Similar as the in-phase mode,  we narrow down to the mode that the phases of two atoms  ($\psi_{b}$ and $\psi_{c}$) are opposite and leave all other modes constant.  
 \begin{equation*}
 \mtrx{\psi_{a}(x)\\\psi_{b}(x)\\\psi_{c}(x)}\rightarrow{}
@@ -779,9 +781,9 @@ S[\theta]=\int{dx}\sum_{q}\theta(q)\theta(-q)\big[\nth{4}\pi^{(0)}(0)(\omega_m^2
 \end{equation}
 where
 \begin{equation}
-\pi^{(0)}(0)\omega_{0}^{2}=-4Y\htd_{1}^{*}\htd_{2}
+\omega_{0}^{2}=-\frac{4Y\htd_{1}^{*}\htd_{2}}{\pi^{(0)}(0)}
 \end{equation}
-
+As expected, the out-of-phase phase mode is a gapped mode, with a spectrum starting from $\omega_{0}$.  At the BCS end, $Y\htd_{1}^{*}\htd_{2}$ is close the expectation of the interaction energy calculated according to the effective interaction in the open-channel.  We can estimate it as $Y\htd_{1}^{*}\htd_{2}\sim{}-N(0)\Delta_{1}^{2}$, where $N(0)$ is the density of the state at the Fermi energy.  $\pi^{(0)}(0)\sim{}N(0)$.  So we can estimate that $\omega_{0}\sim\Delta_{1}$.  This mode is inside the fermionic excitation spectrum.  At the BEC end, the interaction energy in the open-channel can be estimated roughly as $N_{\text{open}}\abs{\mu}$; $\pi^{(0)}(0)\sim{}\mathcal{V}_{0}\Delta_{1}^{2}/\abs{\mu}^{3/2}$. Note that here the open-channel total number $N_{\text{open}}$ might be significantly smaller than total number. At BEC end, $\Delta_{1}\sim{}n_{o}^{1/2}a_{s}^{-1/2}$ and $\abs{\mu}\sim{}a_{s}^{-2}$.  Put all these together, $\omega_{0}\sim{}n^{1/2}\abs{\mu}^{5/4}/\Delta_{1}\sim{}a_{s}^{-2}$. It is in the order of the ionization (pair breaking) energy again. 
 \include{pathAppendix}
 \end{subappendices}
 

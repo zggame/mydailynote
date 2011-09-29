@@ -1,5 +1,8 @@
 % !TeX root =thesis.tex
 
+
+
+\newcommand{\htd}{\tilde{h}}
 \chapter{Two-channel three-species many-body model\label{ch:path2}}
 
 
@@ -289,7 +292,7 @@ Use the same techniques for derivatives as Eq. (\ref{eq:pathInt:diffTr}), we der
  
  Taking $\Delta$ as real constant,
   %\footnote{Actually $D_{2}{_{\vk}}$ cannot be constant at high momentum.  However, for the momentum we are interested, i.e. the momentum lower or in the order of Fermi momentum, it slowly varies.  Therefore  it is reasonable to take it as constant.}     
-  we can find the mean field result. Eq. (\ref{eq:pathInt2:nG}) can be inverted to get $G$.  The inversion is quite tedious, but fortunately, we only need two elements of the $G$ matrix ($G_{0\, (21)}$ and $G_{0 \,(31)}$).  The final mean-field equations are (all $\Delta_{i}$'s are taken as real, see Appendix \ref{sec:pathInt2:deriveMF} for detail) 
+  we can find the mean field result. Eq. (\ref{eq:pathInt2:nG}) can be inverted to get $G$.  The inversion is quite tedious, but fortunately, we only need two elements of the $G$ matrix ($G_{0\, (21)}$ and $G_{0 \,(31)}$).  The final mean-field equations are (For simplicity,  both $\Delta_{i}$'s are taken as real,\footnote{When $Y$ is not real, $\Delta_{1}$ and $\Delta_{2}$ cannot be both real even at the mean field level.  Nevertheless, we can require one  real, then the other will have a phase just to compensate the phase in $Y$.  The final conclusion can be verified  still valid.   }. Please see Appendix \ref{sec:pathInt2:deriveMF} for detail) 
   \begin{equation}\label{eq:pathInt2:mf}
 \mtrx{\Delta_1\\\Delta_2}=\mtrx{U&Y\\Y^{*}&V}\sum_{\vk}\mtrx{h_{1\vk}\\h_{2\vk}}
 \end{equation}
@@ -451,28 +454,28 @@ Multiply both side with $(1+GT)$,  where $T$ is the scattering matrix for open-c
 \end{equation}
 
 In principle, $\lambda_{2\vp}$ depends on momentum, however, like $\Delta_{1\vp}$, it is approximately constant at low momentum.
-We are only interested in the low momentum/frequency properties as the system is cold, dilute and governed by only short-range interactions. The scattering matrix $T$ is approximately its s-wave zero-energy value $\frac{4\pi{\tilde{a}_{s}}}{m}$ although $\tilde{a}_{s}$ is the s-wave scattering length of the shifted (by $2\mu+\lambda_{1}$) detuning; the Green's function is simply $1/2\epsilon_{\vk}$ at zero energy.   Similarly,   $\Delta_{1\vp}$ and $\lambda_{2\vp}$ is approximately a constant at low momentum.  We drop the subscript $\vp$ of them, and pull $\Delta_{1}$ out of summation. 
+We are only interested in the low momentum/frequency properties as the system is cold, dilute and governed by only short-range interactions. The scattering matrix $T$ is approximately its s-wave zero-energy value ${4\pi{\tilde{a}_{s}(\mu,\lambda_{1})}}/{m}$ although $\tilde{a}_{s}(\mu,\lambda_{1})$ is the s-wave scattering length of the shifted (by $2\mu+\lambda_{1}$) detuning; the Green's function is simply $1/2\epsilon_{\vk}$ at zero energy.   Similarly,   $\Delta_{1\vp}$ and $\lambda_{2\vp}$ is approximately a constant at low momentum.  We drop the subscript $\vp$ of them, and pull $\Delta_{1}$ out of summation. 
 \begin{equation}
 \Delta_{1}=T\sum(h_{1}-G\Delta_{1})-\lambda_{2}
-=\frac{4\pi{\tilde{a}_{s}}}{m}\Delta_{1}\sum{}(\frac{E_{1\,\vk}+\xi_{\vk}+\eta}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}-\nth{2\epsilon_{\vk}})
+=\frac{4\pi{\tilde{a}_{s}(\mu,\lambda_{1})}}{m}\Delta_{1}\sum{}(\frac{E_{1\,\vk}+\xi_{\vk}+\eta}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}-\nth{2\epsilon_{\vk}})
 	-\lambda_{2}
 \end{equation}
 Dividing both sides with $\Delta_{1}$, we have the renormalized equation
 \begin{equation}
-1=\frac{4\pi{\tilde{a}_{s}}}{m}\sum(\frac{E_{1\,\vk}+\xi_{\vk}+\eta}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}-\nth{2\epsilon_{\vk}})
+1=\frac{4\pi{\tilde{a}_{s}(\mu,\lambda_{1})}}{m}\sum(\frac{E_{1\,\vk}+\xi_{\vk}+\eta}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}-\nth{2\epsilon_{\vk}})
 	-\frac{\lambda_{2}}{\Delta_{1}}
 \end{equation}
-Note that $\tilde{a}_{s}$ corresponds to the two-body s-wave scattering length at detuning shifted by $2\mu+\lambda_{1}$.
+Note that $\tilde{a}_{s}(\mu,\lambda_{1})$ corresponds to the two-body s-wave scattering length at detuning shifted by $2\mu+\lambda_{1}$.
 Now we can expand the first term in the parentheses to the first order of $\zeta$, using Eq. \ref{eq:pathInt2:xiExpand}. Keeping in mind $E_{\vk}\ll{\eta}$ at low momentum where summation is about, we have\footnote{Here we used $u_{\vk}^{2}-v_{\vk}^{2}=\frac{\xi_{\vk}}{E_{\vk}}$}
 \begin{equation}\label{eq:pathInt2:gapRenorm}
-1=\frac{4\pi{\tilde{a}_{s}}}{m}\sum(\nth{2E_{\vk}}-\nth{2\epsilon_{\vk}}-\frac{\Delta_{2}^{2}\xi_{\vk}}{4(\xi_{\vk}+\eta){E_{\vk}^{3}}})
+1=\frac{4\pi{\tilde{a}_{s}(\mu,\lambda_{1})}}{m}\sum(\nth{2E_{\vk}}-\nth{2\epsilon_{\vk}}-\frac{\Delta_{2}^{2}\xi_{\vk}}{4(\xi_{\vk}+\eta){E_{\vk}^{3}}})
 	-\frac{\lambda_{2}}{\Delta_{1}}
 \end{equation}
 The correction term (the third term in parentheses) does not have divergence in summation of high-momentum. 
 In summary, there are several difference of gap equation here comparing to single-channel problems:
 \begin{enumerate}
-\item\label{item:pathInt2:mu}The shift of $2\mu$ in detuning;
-\item The extra shift of $\lambda_{1}$ in detuning;
+\item\label{item:pathInt2:mu}The shift of $2\mu$ in detuning through $\tilde{a}_{s}$;
+\item The extra shift of $\lambda_{1}$ in detuning through $\tilde{a}_{s}$;
 \item The extra term $-\frac{\lambda_{2}}{\Delta_{1}}$ in Eq. \ref{eq:pathInt2:gapRenorm};
 \item The extra term $-\frac{\Delta_{2}^{2}\xi_{\vk}}{4(\xi_{\vk}+\eta){(E_{\vk})^{3}}}\approx-\frac{\xi_{\vk}}{4{E_{\vk}^{3}}}\zeta$ in the summation of Eq. \ref{eq:pathInt2:gapRenorm};
 \end{enumerate}
@@ -558,9 +561,8 @@ N_{open}\approx&\sum_\vk\mbr{\frac{E_\vk-\xi_\vk}{2E_\vk}+\frac{\gamma_{1\vk}}{2
 	-\frac{(E_\vk-\xi_\vk)(\gamma_{1\vk}+\gamma_{2\vk})}{4E_\vk^2}
 	-\frac{(E_\vk-\xi_\vk)\gamma_{3\vk}}{2E_\vk(\xi_\vk+E_\vk+\eta)}
 	-\frac{\Delta_{2}^{2}}{2E_\vk(\xi_\vk+E_\vk+\eta)}}\\
-	\approx&\sum_\vk\mbr{\frac{E_\vk-\xi_\vk}{2E_\vk}+\frac{{\Delta_{2}^{2}(E_{\vk}+\xi_{\vk})}}{4E_\vk^{2}(\xi_{\vk}+\eta)}
-	-\frac{(E_\vk-\xi_\vk)\xi_{\vk}\Delta_{2}^{2}}{4E_\vk^3(\xi_{\vk}+\eta)}
-	-\frac{\Delta_{2}^{2}}{2E_\vk(\xi_\vk+E_\vk+\eta)}}	
+	\approx&\sum_\vk\mbr{\frac{E_\vk-\xi_\vk}{2E_\vk}(1+\frac{\zeta}{\eta})-\frac{\Delta_{1}^{2}}{4E_\vk^{3}}\zeta
+	}	
 \end{split}
 \end{equation}
 All terms behave well  in 3D and do not need any renormalization.   It is like the number equation in single channel with  a few correction in the order of $\zeta=\Delta_2^2/\eta$.  
@@ -614,12 +616,12 @@ Fermionic modes are derived from the correlation function $\nG$ of the fermion f
   For the single-channel crossover, Sec. \ref{sec:collective1} considers all (magnitude and phase) modes of the order parameter fluctuation at the same time, and only calculates  the low sound-like part of the spectrum. In the two-channel case, a general analysis with all modes in becomes unwieldy.  
 We instead focus on one mode a time. We isolate the change in one mode and leave others at their mean-field values.  
 
-We study two phase fluctuation modes in the next two sections. 
-\subsection{Two-channel in-phase phase fluctuation }
+Phase fluctuations are usually more interesting, the in-phase mode is the counterpart of the Anderson-Bogoliubov modes in the single channel problem, while the two channels introduce a new out-of-phase mode. We study two phase fluctuation modes in the next two sections. 
+\subsection{In-phase phase fluctuation }
 The action of $\Delta$, $S(\bar{\Delta}_i,\Delta_i)$ (Eqs. \ref{eq:pathInt2:nG}, \ref{eq:pathInt2:actionD}), is invariant if the phases of $\Delta_{1\,\vk}$ and $\Delta_{2\,\vk}$ rotate simultaneously. We therefore conclude that there exists a massless (Goldstone) mode corresponding to the local phase invariance.We first study the massless two-channel in-phase phase fluctuation.   Introduce the phase fluctuation $\theta$, 
 \begin{equation*}
-\Delta_{i}(x)\rightarrow{}\Delta_{i}(x)e^{i2\theta(x)}\qquad{}
-\bar{\Delta}_{i}(x)\rightarrow{}\bar{\Delta}_{i}(x)e^{-i2\theta(x)}
+\Delta_{i}(x)\rightarrow{}\Delta_{i}e^{i2\theta(x)}\qquad{}
+\bar{\Delta}_{i}(x)\rightarrow{}\bar{\Delta}_{i}e^{-i2\theta(x)}
 \end{equation*}
 This is equivalent to  phase  rotation of fermionic variable $\psi$
 \begin{equation*}
@@ -724,15 +726,15 @@ This term cannot be easily written in terms of mean-field value $\Delta_i$.   On
 Comparing to the in-phase phase rotation, the out-of-phase one does modify the action's magnitude. Write the interaction term in the momentum space,
 \begin{align*}
 &\Delta^{}{}^{\dg}\tilde{U}^{-1}\Delta^{}\\
-=&\mtrx{\av{\bar{\psi}_{b,\vk}\bar{\psi}_{a,-\vk}}e^{-i\theta}&\av{\bar{\psi}_{c,\vk}\bar{\psi}_{a,-\vk}}e^{+i\theta}}\tilde{U}^{}\tilde{U}^{-1}\tilde{U}
-\mtrx{\av{\psi_{b,\vk}\psi_{a,-\vk}}e^{+i\theta}\\\av{\psi_{c,\vk}\psi_{a,-\vk}}e^{-i\theta}}\\
+=&\mtrx{\av{\bar{\psi}_{b}\bar{\psi}_{a}}e^{-i\theta}&\av{\bar{\psi}_{c}\bar{\psi}_{a}}e^{+i\theta}}\tilde{U}^{}\tilde{U}^{-1}\tilde{U}
+\mtrx{\av{\psi_{b}\psi_{a}}e^{+i\theta}\\\av{\psi_{c}\psi_{a}}e^{-i\theta}}\\
 %=&\mtrx{\av{\psi_{b}\psi_{a}}e^{-i\theta}&\av{\psi_{c}\psi_{a}}e^{+i\theta}}\mtrx{U&Y\\Y^{*}&V}
 %\mtrx{\av{\psi_{b}\psi_{a}}e^{+i\theta}\\\av{\psi_{c}\psi_{a}}e^{-i\theta}}
-=&\mtrx{h_{1,\vk}^{*}&h_{2,\vk}^{*}}\mtrx{U&Ye^{-i2\theta}\\Y^{*}e^{+i2\theta}&V}\mtrx{h_{1,\vk}\\h_{2,\vk}}\\
+=&\mtrx{\htd_{1}^{*}&\htd_{2}^{*}}\mtrx{U&Ye^{-i2\theta}\\Y^{*}e^{+i2\theta}&V}\mtrx{\htd_{1}\\\htd_{2}}\\
 =&\Delta^{(0)}{}^{\dg}\tilde{U}^{-1}\Delta^{(0)}
-+\mbr{Y(e^{-i2\theta}-1)h_{1,\vk}^{*}h_{2,\vk} +Y^{*}(e^{+i2\theta}-1)h_{1,\vk}h_{2,\vk}^{*}}
++\mbr{Y(e^{-i2\theta}-1)\htd_{1}^{*}\htd_{2} +Y^{*}(e^{+i2\theta}-1)\htd_{1}\htd_{2}^{*}}
 \end{align*}
-Note that here we take the mean-field expectation of pairs of fermions $h_{1,\vk}=\av{\psi_{b,\vk}\psi_{a,-\vk}}$, $h_{2,\vk}=\av{\psi_{c,\vk}\psi_{a,-\vk}}$, and their complex conjugates\footnote{$\psi\psi$ and $\bar\psi\bar\psi$ are complex conjugate in the mean field.}.  Comparing with the action of the in-phase phase fluctuation (Eq. \ref{eq:pathInt2:actionPhase}), we find one more terms in the new action.  
+Note that here we take the mean-field expectation of pairs of fermions $\tilde{h}_{1}=\av{\psi_{b}\psi_{a}}=\sum_{\vk}h_{1\vk}$, $\tilde{h}_{2}=\av{\psi_{c}\psi_{a}}=\sum_{\vk}h_{2\vk}$, and their complex conjugates\footnote{$\psi\psi$ and $\bar\psi\bar\psi$ are complex conjugate in the mean field.}.  Comparing with the action of the in-phase phase fluctuation (Eq. \ref{eq:pathInt2:actionPhase}), we find one more terms in the new action.  
 \begin{subequations}\label{eq:pathInt2:actionPhase2}
 \begin{align}
 S[\theta,\bar\psi_{i},\psi_{i}]=&S_0[\bar\psi_{i},\psi_{i}]+S_1[\theta,\bar\psi_{i},\psi_{i}]+S_2[\theta,\bar\psi_{i},\psi_{i}]
@@ -745,12 +747,41 @@ S_1[\theta,\bar\psi_{i},\psi_{i}]=&\int{dx}\Big\{
    &\quad+\nabla\theta\cdot\nth{2mi}[\bar\psi_{b}\nabla\psi_{b}-\bar\psi_{c}\nabla\psi_{c}
    -(\nabla\bar{\psi}_{b})\psi_{b}   +(\nabla\bar{\psi}_{c})\psi_{c}]\Big\}\\
 S_2[\theta,\bar\psi_{i},\psi_{i}]=&\int{dx}\nth{2m}(\nabla\theta)^{2}(\bar\psi_{b}\psi_{b}+\bar\psi_{c}\psi_{c})\\
-S_3[\theta]=&\int{dx}\mbr{Y(e^{-i2\theta}-1)\av{\bar{\psi}_{b}\bar{\psi}_{a}}\av{\psi_{c}\psi_{a}}
-     +Y^{*}(e^{+i2\theta}-1)\av{\bar{\psi}_{c}\bar{\psi}_{a}}\av{\psi_{b}\psi_{a}}}
+S_3[\theta]=&\int{dx}\mbr{Y(e^{-i2\theta}-1)\htd_{1}^{*}\htd_{2} +Y^{*}(e^{+i2\theta}-1)\htd_{1}\htd_{2}^{*}}
 \end{align}
 \end{subequations}
-Let us look at $S_{3}$ first.  The two terms in the parenthesis are complex conjugate and 
+Let us look at $S_{3}$ first. We can expand it around small $\theta$.  
+\begin{align}
+S_3[\theta]=&\int{dx}\mbr{Y(e^{-i2\theta}-1)\htd_{1}^{*}\htd_{2} +Y^{*}(e^{+i2\theta}-1)\htd_{1}\htd_{2}^{*}}\\
+  =&\int{dx}-i2\mbr{Y\htd_{1}^{*}\htd_{2} -Y^{*}\htd_{1}\htd_{2}^{*}}\theta
+  	-2\mbr{Y\htd_{1}^{*}\htd_{2} +Y^{*}\htd_{1}\htd_{2}^{*}}\theta^2
+\end{align}
 \begin{subappendices}
+
+
+From Eq. \ref{eq:pathInt2:h1}
+\begin{equation*}
+ h_{1\vk}=\Delta_{1}\frac{E_{1\,\vk}+\xi_{\vk}+\eta}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}
+\end{equation*}
+If $\Delta_{1}=\Delta_{1}e^{i\varphi}$, all $h_{1\vk}$ has argument $\varphi$ (or $\pi+\varphi$). Thus $\htd_{1}$ has argument $\varphi$ (or $\pi+\varphi$) as well.  Also consider the mean-field equation  $\Delta_{1}=U\htd_{1}+Y\htd_{2}$, We can rewrite 
+\begin{equation}
+Y\htd_{1}^{*}\htd_{2}=\htd_{1}^{*}\Delta_{1}-\htd_{1}^{*}U\htd_{1}
+\end{equation}
+$U$ is real for a Hermite interaction.  So this quantity is real.  In addition,  $Y^{*}\htd_{1}\htd_{2}^{*}$ is complex conjugate of $Y^{}\htd_{2}\htd_{1}^{*}$. So they are equal because they are both real.  From all these, we conclude that the linear term of $\theta$ vanishes.  This is actually expected for a perturbation around saddle point.  Now we can rewrite this term
+\begin{equation}
+S_{3}[\theta]=\int{dx}-4Y\htd_{1}^{*}\htd_{2}\theta^{2}=\sum_{q}\theta({q})\theta({-q})(-4Y\htd_{1}^{*}\htd_{2})
+\end{equation}
+$Y\htd_{1}^{*}\htd_{2}$ is actually the expectation of coupling for the two channel correlation.  It is not hard to see that this value  is negative in the minimum (saddle point).  
+
+The other two terms in the expansion of the action, $S_{1}$ and $S_{2}$ goes in the same way as the in-phase phase fluctuation.  They actually produce the same result except only half of the particles $(b,c)$ participates. ($n_{b}+n_{c}=n_{a}=n/2$)   The full action about $\theta$ is 
+\begin{equation}
+S[\theta]=\int{dx}\sum_{q}\theta(q)\theta(-q)\big[\nth{4}\pi^{(0)}(0)(\omega_m^2-(2\omega_{0})^{2})-\frac{n}{4m}q^2\big]
+\end{equation}
+where
+\begin{equation}
+\pi^{(0)}(0)\omega_{0}^{2}=-4Y\htd_{1}^{*}\htd_{2}
+\end{equation}
+
 \include{pathAppendix}
 \end{subappendices}
 

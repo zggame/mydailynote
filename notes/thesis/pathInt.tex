@@ -20,7 +20,7 @@ We write down first the Gaussian integral of $\Delta$
 Note that we absorb the extra constant of integration into the measure of $\bigD(\bar\Delta,\Delta)$.
 And with a shift of $\Delta(\vr,\tau)\rightarrow\Delta(\vr,\tau)-g\psi_{\uparrow}(\vr,\tau)\psi_{\downarrow}(\vr,\tau))$, we have 
 \footnote{$\int{\bigD(\bar\Delta,\Delta)}\cdot1$ is only a constant factor on partition function $\mathcal{Z}$ and has no effect on real physical quantity; therefore, we can take it as 1. (This is equivalent to  divide the $\mathcal{Z}$ by a constant)}
-\begin{equation}
+\begin{equation}\label{eq:pathInt:expHS}
 \exp\br{g\int{d\tau{}d^{d}r}\bar{\psi}_{\uparrow}\bar\psi_{\downarrow}\psi_{\downarrow}\psi_{\uparrow}}=
 \int{\bigD(\bar\Delta,\Delta)}\exp\bbr{-\int{d\tau{d^{d}r}}\mbr{\nth{g}{\bar\Delta}{\Delta}-\br{\bar\Delta\psi_{\downarrow}\psi_{\uparrow}+\Delta\bar\psi_{\uparrow}\bar\psi_{\downarrow}}}}
 \end{equation}
@@ -34,8 +34,8 @@ At the expense of introducing an auxiliary field ($\Delta$) with contact-type co
 \bar\Psi=\begin{pmatrix}\bar{\psi}_{\uparrow}&\psi_{\downarrow}\end{pmatrix}\text{,  }\qquad
 \Psi=\begin{pmatrix}{\psi}_{\uparrow}\\\bar\psi_{\downarrow}\end{pmatrix}
 \end{equation}
-\begin{equation}
-\mathcal{Z}=\int{\bigD(\bar\psi,\psi)}\int{\bigD(\bar\Delta,\Delta)}\exp
+\begin{equation}\label{eq:pathInt:ZDeltaPhi}
+\mathcal{Z}=\int{\bigD(\bar\Psi,\Psi)}\int{\bigD(\bar\Delta,\Delta)}\exp
 	\bbr{-\int{d\tau{d^{d}r}}\mbr{\nth{g}{\bar\Delta}{\Delta}-\bar\Psi \nG\Psi}}
 \end{equation}
 where 
@@ -44,7 +44,11 @@ where
 [\hat{G}_{0}^{(p)}]^{-1}&\Delta\\\bar\Delta&[\hat{G}_{0}^{(h)}]^{-1}
 \end{pmatrix}
 \end{equation}
-is known as the Gor'kov Green function. $[\hat{G}_{0}^{(p)}]^{-1}=-\partial_{\tau}+\nth{2m}\nabla^{2}+\mu$, and $[\hat{G}_{0}^{(h)}]^{-1}=-\partial_{\tau}-\nth{2m}\nabla^{2}-\mu$ represent the non-interacting Green functions of the particle and the hole respectively. Now $\Psi$ can be integrated out formally and the partition function then only depends on the tbosonic field $\Delta$.  
+is known as the Gor'kov Green function. $[\hat{G}_{0}^{(p)}]^{-1}=-\partial_{\tau}+\nth{2m}\nabla^{2}+\mu$, and $[\hat{G}_{0}^{(h)}]^{-1}=-\partial_{\tau}-\nth{2m}\nabla^{2}-\mu$ represent the non-interacting Green functions of the particle and the hole respectively. 
+
+Before going further, we would like to discuss one confusing point about the possible one-or-two indices for quantities such as ${G}$ or $\Delta$ in Eq. \ref{eq:pathInt:nG}.  As a matrix, such a quantity has two indices $(x,x')$ or $(p,p')$, which have no ambiguity in usage. On the other hand, there are often ambiguity when only one index $x$ or $p$ is used. In some cases, the one index means the relative value of the two indices. For example, an  interaction, $U(\vr_{1},\vr_{2})$, normally only depends on the relative coordinate, $\vr=\vr_{1}-\vr_{2}$. So $U(\vr)$ means $U(\vr_{0}+\vr,\vr_{0})$.  In other cases, especially common in the current thesis, the one index stands for its repetition.  In this case, the difference is always zero. For example, the free Green's function, $G_{0}(p)$ stands for $G_{0}(p,p')\delta({p-p'})$.  Similarly,  the order parameter, $\Delta(x)$, only couples to $\bar\psi(x)\bar\psi(x)$ (Eq. \ref{eq:pathInt:expHS}).  When used in the matrix context (Eq. \ref{eq:pathInt:nG}), it means $\Delta(x)\delta(x-x')$. Interestingly, its Fourier transformation in momentum space does not have the same properties.  In fact, it means $\Delta(p,p')=\Delta(p'-p)$.
+
+Now action in Eq. \ref{eq:pathInt:ZDeltaPhi} is bilinear to $\Psi$; so it can be integrated out formally and the partition function then only depends on the bosonic field $\Delta$.  
 \begin{equation}\label{eq:pathInt:DeltaPF}
 \mathcal{Z}=\int{\bigD(\bar\Delta,\Delta)}\exp
 	\bbr{-\mbr{\br{\int{d\tau{d^{d}r}}\nth{g}{\bar\Delta\Delta}}-\ln\det\nG}}
@@ -69,7 +73,8 @@ Using the above relations, we can write the saddle equation of Eq. (\ref{eq:path
 \begin{equation}
 \nth{g}\bar{\Delta}(\vr,\tau)-\tr\mbr{\hat{\mathcal{G}}(\vr,\tau,\vr,\tau)\begin{pmatrix}0&1\\0&0\end{pmatrix}}=0
 \end{equation}
-Here this matrix is in the Nambu Spinor space.  At the  mean field level, we seek a tempo-spacial homogeneous solution of $\Delta_0$, i.e., $\Delta_{0}$ is a $\delta$-function in the frequency-momentum space, $\Delta_{0,\omega_{n},\vk}=\Delta_{0}\delta(\omega_{n}=0)\delta(\vk=0)$. We can find the Nambu Green function from Eq. (\ref{eq:pathInt:nG}) in momentum space
+Here this matrix is in the Nambu Spinor space.  At the  mean field level, we seek a tempo-spacial homogeneous solution of $\Delta(x)=\Delta_{0}$.  At this level,  $\Delta(p)$ becomes a $\delta$-function in the frequency-momentum space, and has non-zero elements only for two fermions with the same momentum.  (Please See the discussion in the previous section about one vs. two indices. This is not generally true, as we show it when discussing collective modes in sec. \ref{sec:collective1})
+We can find the Nambu Green function from Eq. (\ref{eq:pathInt:nG}) in momentum space
 \begin{equation}\label{eq:pathInt:G0}
 G_{0\;p,p'}=\nth{(i\omega_n)^2-E_\vp^2}
 \begin{pmatrix}
@@ -79,7 +84,7 @@ G_{0\;p,p'}=\nth{(i\omega_n)^2-E_\vp^2}
 \delta_{p=p'}
 \equiv{}G_{0}(p)\delta_{p=p'}
 \end{equation}
-Here $p$ is the four momentum, $p=(\omega_{n},\vp)$, and $\omega_n$ is the Matsubara frequency of Fermions.  $\xi_{\vk}=\epsilon_{\vk}-\mu$, $\epsilon_{\vk}=\vk^{2}/2m$,  $E_\vp=\sqrt{\xi_\vp^2+\abs{\Delta_0}^2}$.  And the saddle point equation can be rewritten as 
+Here $p$ is the frequency-momentum, $p=(\omega_{n},\vp)$, and $\omega_n$ is the Matsubara frequency of Fermions.  $\xi_{\vk}=\epsilon_{\vk}-\mu$, $\epsilon_{\vk}=\vk^{2}/2m$,  $E_\vp=\sqrt{\xi_\vp^2+\abs{\Delta_0}^2}$.  And the saddle point equation can be rewritten as 
 \begin{equation}
 \nth{g}\bar{\Delta}_0=\frac{T}{L^d}\sum_{\vp,n}\frac{\bar\Delta_0}{\omega_n^2+E_\vp^2}
 \end{equation}
@@ -143,11 +148,12 @@ Write the last term into the momentum representation
 \end{equation}
 Notice that the second ``$\Tr$'' and following ``$\Tr$'' in this section only runs in Nambu spinor space and $q={(\vq,q_{l})}$, $p=(\vp,p_{n})$ are all four momentum, where $q_{l}$ is the bosonic Matsubara frequency while $p_{n}$ is the fermionic Matsubara frequency.
 \begin{equation}
-K_{q}=\begin{pmatrix}
+K_{p_{0},p_{0}+q}=K_{q}=\begin{pmatrix}
 0&\theta_{q}\\
 \theta^{*}_{-q}&0
 \end{pmatrix}
 \end{equation}
+And we remember that $G_{0}(p)=G_{0}{}_{p,p}$
 If we introduce  a new vector 
 \begin{equation}
 \theta{(q)}=\begin{pmatrix}\theta_{q}\\\theta^{*}_{-q}\end{pmatrix}\qquad
@@ -155,11 +161,11 @@ If we introduce  a new vector
 \end{equation}
 the action can be rewritten into a more compact form
 \begin{equation}
-S[\Delta_{0},\theta,\theta^{*}]=S[\Delta_{0}]+\nth{2}\sum_{q}\Tr\mbr{\theta^{\dg}(q)\mathbf{M(q)}\theta(q)}
+S[\Delta_{0},\theta,\theta^{*}]=S[\Delta_{0}]+\nth{2}\sum_{q}\mbr{\theta^{\dg}(q)\mathbf{M}(q)\theta(q)}
 \end{equation}
 Notice that we can always choose a real $\Delta_{0}$ and therefore $G_{0}{\ _{12}}(p)=G_{0}{\ _{21}}(p)$, we have 
 \begin{equation}
-\mathbf{M(q)}=
+\mathbf{M}_{q,q}=\mathbf{M}(q)=
 \begin{pmatrix}
 \nth{g}+\sum_{p}G_{0}{\ }_{11}(p)G_{0}{\ }_{22}(p-q)&\sum_{p}G_{0}{\ }_{12}(p)G_{0}{\ }_{12}(p-q)\\
 \sum_{p}G_{0}{\ }_{12}(p)G_{0}{\ }_{12}(p-q)&\nth{g}+\sum_{p}G_{0}{\ }_{11}(p-q)G_{0}{\ }_{22}(p)

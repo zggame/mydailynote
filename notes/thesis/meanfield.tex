@@ -88,15 +88,25 @@ Similarly, the derivative over $h_{2\vk}$ can be obtained by exchange $h_{1\vk}$
 \end{equation}
 The gap equations are 
 \begin{subequations}\label{eq:20100909:fullgap}
-\begin{gather}
-\frac{2h_{1\vk}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}} \xi^{ab}_{\vk}+\frac{8 h_{1\vk} h_{2\vk}^2\sgn_{k}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2} \left(1+\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\right)^2}\eta-2U_{\vk\vk'}h_{1\vk'}-2Y_{\vk\vk'}h_{2\vk'}=0
-\label{eq:20100909:fullgapa}\\
-\frac{2h_{2\vk}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}} \xi^{ac}_{\vk}-\frac{8 h_{1\vk}^{2} h_{2\vk}\sgn_{k}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2} \left(1+\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\right)^2}\eta-2V_{\vk\vk'}h_{2\vk'}-2Y_{\vk\vk'}h_{1\vk'}=0
+\begin{multline}
+\frac{h_{1\vk}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}} \xi^{ab}_{\vk}+\frac{4 h_{1\vk} h_{2\vk}^2\sgn_{k}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2} \left(1+\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\right)^2}\eta\\
+-\sum_{\vk'}U_{\vk\vk'}h_{1\vk'}-\sum_{\vk'}Y_{\vk\vk'}h_{2\vk'}=0
+\label{eq:20100909:fullgapa}
+\end{multline}
+\begin{multline}
+\frac{h_{2\vk}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}} \xi^{ac}_{\vk}-\frac{4 h_{1\vk}^{2} h_{2\vk}\sgn_{k}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2} \left(1+\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\right)^2}\eta\\
+-\sum_{\vk'}V_{\vk\vk'}h_{2\vk'}-\sum_{\vk'}Y_{\vk\vk'}h_{1\vk'}=0
 \label{eq:20100909:fullgapb}
-\end{gather}
+\end{multline}
 \end{subequations}
 where $\eta=\epsilon^{ac}_{\vk}-\epsilon^{ab}_{\vk}$ is the bare Zeeman energy difference and is large than most energy scales, such as $E_{F}$.  It is close to  the binding energy of the closed-channel bound state when it is not too far away from the resonance point.   We see the advantages of path integral approach, where $h_{1\vk}$ and $h_{2\vk}$ instead have a very specific forms, Eqs. (\ref{eq:pathInt2:h1}, \ref{eq:pathInt2:h2}) and ready for further approximation and analysis.  Here we do not have much guide for these two quantities and need to make some guess.  
 
+Here we can define order parameters
+\begin{gather}
+\Delta_{1\vk}=\sum_{\vk'}U_{\vk\vk'}h_{1\vk'}+\sum_{\vk'}Y_{\vk\vk'}h_{2\vk'}\\
+\Delta_{2\vk}=\sum_{\vk'}V_{\vk\vk'}h_{2\vk'}+\sum_{\vk'}Y_{\vk\vk'}h_{1\vk'}
+\end{gather}
+Both of them should have little $\vk$-dependence at low momentum for short-range interactions.  We will drop the $\vk$ subscripts in both $\Delta$ in the following. 
 Two number equations can be obtained.  One for each channel (see footnote (\ref{foot:20100909:sgn}) for $\sgn_{k}$).
 \begin{gather}\label{eq:20100909:number}
 N_{\text{open}}=2\sum_{\vk}v_{\vk}^{2}
@@ -108,9 +118,10 @@ N_{\text{close}}=2\sum_{\vk}w_{\vk}^{2}
 
 \section{Approximate solution of the mean field equations}
 Let us look at the closed-channel gap equation (Eq. \ref{eq:20100909:fullgapb}) first.  It can be rewritten as 
-\begin{equation*}
-\frac{2h_{2\vk}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}}\br{2 \xi_{\vk}+\eta-\frac{4 h_{1\vk}^{2} \sgn_{k}}{\left(1+\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\right)^2}\eta}-2V_{\vk\vk'}h_{2\vk'}-2Y_{\vk\vk'}h_{1\vk'}=0
-\end{equation*}
+\begin{multline*}
+\frac{h_{2\vk}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}}\br{2 \xi_{\vk}+\eta-\frac{4 h_{1\vk}^{2} \sgn_{k}}{\left(1+\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\right)^2}\eta}
+-\sum_{\vk'}V_{\vk\vk'}h_{2\vk'}-\sum_{\vk'}Y_{\vk\vk'}h_{1\vk'}=0
+\end{multline*}
 We can put some terms back into the notation of $(u_{\vk},\,v_{\vk},\, w_{\vk})$.
 \begin{gather}
 \sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}=(u^{2}_{\vk}-v_{\vk}^{2}-w_{\vk}^{2})\\
@@ -119,13 +130,35 @@ We can put some terms back into the notation of $(u_{\vk},\,v_{\vk},\, w_{\vk})$
 \end{gather}
 We can rewrite the closed-channel gap equation using these relations
 \begin{equation*}
-\frac{2h_{2\vk}}{u^{2}_{\vk}-v_{\vk}^{2}-w_{\vk}^{2}}\br{2 \xi_{\vk}+\eta-\sgn_{k}\frac{v_{\vk}^{2}}{u_{\vk}^{2}}\eta}-2V_{\vk\vk'}h_{2\vk'}-2Y_{\vk\vk'}h_{1\vk'}=0
+\frac{h_{2\vk}}{u^{2}_{\vk}-v_{\vk}^{2}-w_{\vk}^{2}}\br{2 \xi_{\vk}+\eta-\sgn_{k}\frac{v_{\vk}^{2}}{u_{\vk}^{2}}\eta}-\sum_{\vk'}V_{\vk\vk'}h_{2\vk'}-\sum_{\vk'}Y_{\vk\vk'}h_{1\vk'}=0
 \end{equation*}
+At high momentum ($\ll{}k_{F}$),  the third term in the parenthesis is negligible and the the denominator $u^{2}_{\vk}-v_{\vk}^{2}-w_{\vk}^{2}\approx1$.  This equation is then very similar to the two-body \sch equation (Eq. \ref{eq:intro:close}). For the close-channel, the interaction, or the closed-channel bound state, $\phi_{0}$, has non-zero value for a range much larger than $k_{F}$ in the momentum space.  Thus we expect the closed-channel correlation $h_{2\vk}\propto\phi_{0}f(\vk)$ where $f(\vk)$ approach one at high momentum.  This is in fact the same argument as Eq. \ref{eq:pathInt2:hphif}  in the beginning of Chapter \ref{ch:path2}.  The next thing to notice is that the third term in the parenthesis might dominate the other two terms in  certain situation (low momentum, BCS) because the denominator  $u_{\vk}^{2}$ can be very small in such regions.  A nature way to compensate this big term is to set \footnote{$u_{\vk}^{2}$ in Chapter \ref{ch:path2} is defined for $(\xi_{\vk}+E_{\vk})/2E_{\vk}$ and does not carry an obvious physical meaning as $u_{\vk}^{2}$ in this appendix. They are the same in the lowest order of our expansion ($\zeta$) for the narrow resonance. This does not affect our analysis though because the closed-channel correlation is actually a first order quantity.} $f(\vk)=u_{\vk}^{2}$.  Now we arrive the same conclusion for the closed-channel correlation as the path-integral approach (Eq. \ref{eq:pathInt2:hphi})
+\begin{equation}
+h_{2\vk}=\tilde\alpha{}\phi_{0\vk}u_{\vk}^{2}
+\end{equation}
+Note that $\tilde\alpha$ is not fixed yet and is not the same as $\alpha$ in the path-integral approach (Eq. \ref{eq:pathInt2:hphi}) \textit{a prior}. The equation becomes,
+\begin{equation*}
+\frac{\tilde\alpha{}\phi_{0\vk}u_{\vk}^{2}}{u^{2}_{\vk}-v_{\vk}^{2}-w_{\vk}^{2}}\br{2 \xi_{\vk}+\eta-\sgn_{k}\frac{v_{\vk}^{2}}{u_{\vk}^{2}}\eta}-\sum_{\vk'}V_{\vk\vk'}\tilde\alpha{}\phi_{0\vk}u_{\vk}^{2}-\sum_{\vk'}Y_{\vk\vk'}h_{1\vk'}=0
+\end{equation*}
+Using the similar approach as in the path-integral method, we multiply the equation with $\phi_{0\vk}^{*}$ and integrate the equation in order to find $\tilde{\alpha}$. In the denominator of the first term $u^{2}_{\vk}\ll{}v_{\vk}^{2},\,w_{\vk}^{2}$ in the most of the integral domains.  The equation is approximately 
+\begin{equation*}
+\tilde\alpha{}\sum_{\vk}\frac{\phi_{0\vk}\phi_{0\vk}^{*}u_{\vk}^{2}}{u^{2}_{\vk}}\br{2 \xi_{\vk}+\eta}-\tilde\alpha\sum_{\vk\vk'}V_{\vk\vk'}{}\phi_{0\vk}\phi_{0\vk}^{*}u_{\vk}^{2}-\sum_{\vk\vk'}\phi_{0\vk}^{*}Y_{\vk\vk'}h_{1\vk'}=0
+\end{equation*}
+And it is not hard to find 
+\begin{equation}
+\tilde\alpha=\frac{\sum_{\vk\vk'}{\phi_{\vk}^{*}}{Y_{\vk\vk'}}{h_{1\vk'}}}{{-E_{b}+\eta-2\mu-\tilde\lambda_{1}}}
+\end{equation}
+And $\tilde\lambda_{1}$ is simpler than Eq. \ref{eq:pathInt2:lambda1}
+\begin{equation*}
+\tilde\lambda_{1}(\eta)\equiv-\sum_{\vk\vk'}{\phi_{\vk}^{*}}{v_{\vk'}^{2}V_{\vk\vk'}}\phi_{\vk'}
+\end{equation*}
+But it should be equal to $\lambda_{1}$ from the path-integral approach at the lowest order of $\zeta$ because this term is the dominated one (see Sec. \ref{sec:pathInt2:lambda}). We will just use $\lambda_{1}$ hereinafter. 
 
+   Now let us check the open-channel gap equation.  We can rewrite it as 
+   \begin{equation*}
+   \frac{h_{1\vk}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}}\br{ \xi^{ab}_{\vk}+\frac{4 h_{2\vk}^2\sgn_{k}}{\left(1+\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\right)^2}\eta}=\Delta_{1}
+   \end{equation*}
 
-
-
-The first thing to notice is that the third term in the parenthesis might dominate the other two terms in  certain situation (low momentum, BCS) because the denominator can be very small.  
 
 Here instead of solving these equations, we just demonstrate that they are equivalent to the saddle point equations obtained in the path-integral methods, Eqs. (\ref{eq:pathInt2:mfopen}, \ref{eq:pathInt2:mfclose}, \ref{eq:pathInt2:numOpen}, \ref{eq:pathInt2:numClose}) up to the first order of correction.
 

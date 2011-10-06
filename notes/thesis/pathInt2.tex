@@ -293,7 +293,7 @@ Use the same techniques for derivatives as Eq. (\ref{eq:pathInt:diffTr}), we der
  
  Taking $\Delta$ as real constant,
   %\footnote{Actually $D_{2}{_{\vk}}$ cannot be constant at high momentum.  However, for the momentum we are interested, i.e. the momentum lower or in the order of Fermi momentum, it slowly varies.  Therefore  it is reasonable to take it as constant.}     
-  we can find the mean field result. Eq. (\ref{eq:pathInt2:nG}) can be inverted to get $G$.  The inversion is quite tedious, but fortunately, we only need two elements of the $G$ matrix ($G_{0\, (21)}$ and $G_{0 \,(31)}$).  The final mean-field equations are (For simplicity,  both $\Delta_{i}$'s are taken as real,\footnote{When $Y$ is not real, $\Delta_{1}$ and $\Delta_{2}$ cannot be both real even at the mean field level.  Nevertheless, we can require one  real, then the other will have a phase just to compensate the phase in $Y$.  The final conclusion can be verified  still valid.   }. Please see Appendix \ref{sec:pathInt2:deriveMF} for detail) 
+  we can find the mean field result. Eq. (\ref{eq:pathInt2:nG}) can be inverted to get $G$.  The inversion is quite tedious, but fortunately, we only need two elements of the $G$ matrix ($G_{0\, (21)}$ and $G_{0 \,(31)}$).  The final mean-field equations are (For simplicity,  both $\Delta_{i}$'s are taken as real,\footnote{\label{foot:pathInt2:real}When $Y$ is not real, $\Delta_{1}$ and $\Delta_{2}$ cannot be both real even at the mean field level.  Nevertheless, we can require one  real, then the other will have a phase just to compensate the phase in $Y$.  The final conclusion can be verified  still valid.   }. Please see Appendix \ref{sec:pathInt2:deriveMF} for detail) 
   \begin{equation}\label{eq:pathInt2:mf}
 \mtrx{\Delta_1\\\Delta_2}=\mtrx{U&Y\\Y^{*}&V}\sum_{\vk}\mtrx{h_{1\vk}\\h_{2\vk}}
 \end{equation}
@@ -538,18 +538,18 @@ There is one  number equation for each channel,
 \end{gather*}
 Note that the Matsubara summation  formally diverges and we need to put in a small negative part into the summation in order to prevent the divergence.  Here we put in a small  negative part instead of a positive part  because $\Psi_{2}$ and $\Psi_{3}$ are conjugate of real particles, $\Psi_2=\bar\psi_b$, $\Psi_3=\bar\psi_c$.  The Matsubara summation can be performed with the normal trick of multiplying a Fermi function to summand and deform the contour  (see Appendix \ref{sec:pathInt2:deriveMF} for more details).  For the summation at zero temperature, we just need to consider the positive roots, $E_{1\,\vk}$.  It is straightforward to find 
 \begin{gather}
-N_{open}=\sum_{\vk}\frac{(E_{1\,\vk}-\xi_{\vk})(E_{1\,\vk}+\xi_{\vk}+\eta)-\Delta_2^2}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}
+N_{\text{open}}=\sum_{\vk}\frac{(E_{1\,\vk}-\xi_{\vk})(E_{1\,\vk}+\xi_{\vk}+\eta)-\Delta_2^2}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}
 \label{eq:pathInt2:numOpen}\\
-N_{close}=\sum_{\vk}\frac{(E_{1\,\vk}-\xi_{\vk})(E_{1\,\vk}+\xi_{\vk})-\Delta_1^2}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}
+N_{\text{closed}}=\sum_{\vk}\frac{(E_{1\,\vk}-\xi_{\vk})(E_{1\,\vk}+\xi_{\vk})-\Delta_1^2}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}
 =\sum_{\vk}\frac{E_{1\,\vk}^2-E_{\vk}^2}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}\label{eq:pathInt2:numClose}
 \end{gather}
 Let us look at the equation of the closed-channel first, if we expand $E_{i\,\vk}$, the lowest order is 
-\begin{equation}
-N_{close}\approx\sum_{\vk}\frac{\gamma_{1\,\vk}}{(E_{\vk}+\xi_{\vk}+\eta)}=\sum_{\vk}\frac{\Delta_{2}^2u_{\vk}^{2}}{(\xi_{\vk}+\eta)(E_{\vk}+\xi_{\vk}+\eta)}
+\begin{equation}\label{eq:pathInt2:closeD1}
+N_{\text{closed}}\approx\sum_{\vk}\frac{\gamma_{1\,\vk}}{(E_{\vk}+\xi_{\vk}+\eta)}=\sum_{\vk}\frac{\Delta_{2}^2u_{\vk}^{2}}{(\xi_{\vk}+\eta)(E_{\vk}+\xi_{\vk}+\eta)}
 \end{equation}
-This is consistent with Eq. \ref{eq:pathInt2:h2} and \ref{eq:pathInt2:h2D2} if we assume\footnote{As discussed before, in the closed-channel $h_{2\vk}\ll1$ over all momentum.  Furthermore, the summation goes over very large momentum range, the difference between $h_{2\vk}$ and the closed-channel particle number is only large below or around Fermi energy, but the total weight of closed-channel atoms  in such a region is very small.  }  $N_{close}\approx\sum{h_{2}^{2}}$.    From appendix \ref{sec:pathApp:consistency}, we know the summand is much smaller than 1 in all regions.  Nevertheless, the weight spread in a very large range of momentum ($\sim\eta$), so the resulting sum can be still in the order of total number $N$ at certain detuning. Note that the connection between $\Delta_{2}$ and the ``Contact'' in the theory of universality (\cite{Tan2008-1,Tan2008-2}).  The summand as  density of momentum is valid at momentum up to the scale $1/a_{c}$, and is mostly determined by two-body physics except an overall factor at ``high momentum'' ($k_{F}\ll{}k\ll{}1/r_{c}$).  Furthermore, the contribution from the very high momentum ($k\gg1/r_{c}$) to integral is small.  All the deviation there can be absorbed as a small correction in $\Delta_{2}$.  In the lowest order of $\zeta$, $E_{i\vk}\approx\xi_\vk$ and $u_\vk^2\approx1$ for most of integral domain.  This summation can be written as 
+This is consistent with Eq. \ref{eq:pathInt2:h2} and \ref{eq:pathInt2:h2D2} if we assume\footnote{As discussed before, in the closed-channel $h_{2\vk}\ll1$ over all momentum.  Furthermore, the summation goes over very large momentum range, the difference between $h_{2\vk}$ and the closed-channel particle number is only large below or around Fermi energy, but the total weight of closed-channel atoms  in such a region is very small.  }  $N_{\text{closed}}\approx\sum{h_{2}^{2}}$.    From appendix \ref{sec:pathApp:consistency}, we know the summand is much smaller than 1 in all regions.  Nevertheless, the weight spread in a very large range of momentum ($\sim\eta$), so the resulting sum can be still in the order of total number $N$ at certain detuning. Note that the connection between $\Delta_{2}$ and the ``Contact'' in the theory of universality (\cite{Tan2008-1,Tan2008-2}).  The summand as  density of momentum is valid at momentum up to the scale $1/a_{c}$, and is mostly determined by two-body physics except an overall factor at ``high momentum'' ($k_{F}\ll{}k\ll{}1/r_{c}$).  Furthermore, the contribution from the very high momentum ($k\gg1/r_{c}$) to integral is small.  All the deviation there can be absorbed as a small correction in $\Delta_{2}$.  In the lowest order of $\zeta$, $E_{i\vk}\approx\xi_\vk$ and $u_\vk^2\approx1$ for most of integral domain.  This summation can be written as 
 \begin{equation}\label{eq:pathInt2:closeD2}
-N_{close}\approx\sum_{\vk}\frac{\Delta_{2}^2}{(\xi_{\vk}+\eta)(2\xi_{\vk}+\eta)}
+N_{\text{closed}}\approx\sum_{\vk}\frac{\Delta_{2}^2}{(\xi_{\vk}+\eta)(2\xi_{\vk}+\eta)}
 \end{equation}
 This equation has only one unknown parameter $\Delta_{2}$.  Therefore, this equation can be used to estimate $\Delta_{2}$ from experiments.  The  estimation of  $\Delta_{2}$ from such procedure automatically includes the correction from  high momentum. 
 
@@ -559,15 +559,16 @@ This equation has only one unknown parameter $\Delta_{2}$.  Therefore, this equa
 The open-channel number equation  can be expanded perturbatively as well, 
 \begin{equation}\label{eq:pathInt2:openNum}
 \begin{split}
-N_{open}\approx&\sum_\vk\mbr{\frac{E_\vk-\xi_\vk}{2E_\vk}+\frac{\gamma_{1\vk}}{2E_\vk}
+N_{\text{open}}\approx&\sum_\vk\mbr{\frac{E_\vk-\xi_\vk}{2E_\vk}+\frac{\gamma_{1\vk}}{2E_\vk}
 	-\frac{(E_\vk-\xi_\vk)(\gamma_{1\vk}+\gamma_{2\vk})}{4E_\vk^2}
 	-\frac{(E_\vk-\xi_\vk)\gamma_{3\vk}}{2E_\vk(\xi_\vk+E_\vk+\eta)}
 	-\frac{\Delta_{2}^{2}}{2E_\vk(\xi_\vk+E_\vk+\eta)}}\\
-	\approx&\sum_\vk\mbr{\frac{E_\vk-\xi_\vk}{2E_\vk}(1+\frac{\zeta}{\eta})-\frac{\Delta_{1}^{2}}{4E_\vk^{3}}\zeta
+	\approx&\sum_\vk\mbr{\frac{E_\vk-\xi_\vk}{2E_\vk}+\frac{E_\vk-\xi_\vk}{2E_\vk}\frac{\zeta}{2(E_{\vk}+\xi_{\vk}+\eta)} -\frac{\Delta_{1}^{2}}{4E_\vk^{3}}\zeta
 	}	
 \end{split}
 \end{equation}
-All terms behave well  in 3D and do not need any renormalization.   It is like the number equation in single channel with  a few correction in the order of $\zeta=\Delta_2^2/\eta$.  
+All terms behave well  in 3D and do not need any renormalization.   It is like the number equation in the single channel with  a few correction in the order of $\zeta=\Delta_2^2/\eta$.  The second term, except the factor $\frac{E_\vk-\xi_\vk}{2E_\vk}=v_{\vk}^{2}$, looks like the summand in the closed-channel number equation, Eq. \ref{eq:pathInt2:closeD1},  which can sum up in the order of $N$.  Nevertheless, the $v_{\vk}^{2}$ factor, decreases quickly in high momentum, becomes close to zero in high momentum, and limits the summation to only low momentum. This makes the sum  a small correction as we discussed before.    Similarly, $\frac{\Delta_{1}^{2}}{E_{\vk}^{2}}$ in the third term also limits the summation to low momentum and ensures the sum a small correction. At low momentum, this term is actually more important than the second term. 
+
 
 %\input{oldTwoChannelMeanField}
 

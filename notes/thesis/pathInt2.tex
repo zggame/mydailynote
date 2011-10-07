@@ -25,7 +25,7 @@ One way to approach this problem is to extend BCS ansatz and then find the set o
 \begin{equation}\label{eq:pathInt2:ansatz}
 \ket{\Psi}=\prod_\vk\br{u_\vk+v_\vk{}a^\dg_\vk{}b^\dg_{-\vk}+w_\vk{}a^\dg_\vk{}c^\dg_{-\vk}}\ket{0}
 \end{equation} 
-with normalization, $\abs{u_\vk}^2+\abs{v_\vk}^2+\abs{w_\vk}^2=1$.   Here ``$a$'' is the common species of two channels. $(a,b)$ is the open channel and $(a,c)$ is the closed channel.  This ansatz can be derived from a many-body coherent state of the two-body state as we did in the single-channel (Eq. \ref{eq:intro:BCScoherent}), 
+with normalization, $\abs{u_\vk}^2+\abs{v_\vk}^2+\abs{w_\vk}^2=1$.   Here ``$a$'' is the common species of two channels. $(a,b)$ is the open channel and $(a,c)$ is the closed channel.  $\ket{0}$ is the vacuum state of fermions. This ansatz can be derived from a many-body coherent state of the two-body state as we did in the single-channel (Eq. \ref{eq:intro:BCScoherent}), 
 \begin{equation}\label{eq:pathInt2:ansatzCoh}
 \ket{\Psi}\propto\exp{}\mbr{\sum_{\vk}(\phi^{(ab)}_\vk{}a^\dg_\vk{}b^\dg_{-\vk}+\phi^{(ac)}_\vk{}a^\dg_\vk{}c^\dg_{-\vk})}\ket{0}
 \end{equation} 
@@ -48,7 +48,7 @@ H&=\int{d^{d}r}\bigg\{\sum_{j=(a,b,c)}\bar\psi_{j}\mbr{\nth{2m}(-i\nabla)^{2}-\m
 \end{equation}
 Here $\eta_{j}$ is the Zeeman energy of the specific hyperfine species.  $a,b,c$ stands for the three hyperfine species defined as the same before in the ansatz approach.  All the interactions ($U$, $V$, $Y$), are contact type, this simplifies the Hubbard-Stratonovich transformation considerably.  It is plausible as we only study low-energy phenomena for the short-range potential. 
 
-One drawback of a contact interaction is that it is flat in momentum space, in other words, it pairs not only zero central-momentum pairs, but also finite central-momentum pairs.  Nevertheless, the saddle point (mean-field) solution settles at the zero central-momentum pairing; therefore the mean-field solution coincides with that of  variation method derived from pairing  only opposite momentum atoms.  On the other hand, the collective mode (fluctuation of order parameters) emerges naturally from the included non-zero central-momentum interaction.  We do not need to introduce extra interaction term (as in \cite{AndersonBCS}) to study collective modes.   
+A contact interaction is  flat in momentum space, in other words, it pairs not only zero center-of-mass momentum pairs, but also finite center-of-mass momentum pairs, unlike the paring interaction used in the original BCS work\cite{BCS}, which only pairs zero center-of-mass momentum, i.e. opposite-momentum, pairs.  Nevertheless, the saddle point (mean-field) solution settles at the zero center-of-mass momentum pairing; therefore the mean-field solution coincides with that of  variation method derived from pairing  only opposite momentum atoms.  On the other hand, the collective mode (fluctuation of order parameters) emerges naturally from the included non-zero center-of-mass momentum interaction.  We do not need to introduce more general interaction terms beyond the simple opposite momentum pairing (e.g. the Coulomb interaction in \cite{AndersonBCS}) to study collective modes.   
 
 Three different types of Hilbert spaces are used in this chapter.   The first one is the  (infinite dimension) coordinate space and its reciprocal momentum space.   The second one is the  (3 dimension) space of hyperfine spin, $a,\,b,\,c$.   These two are atom-based.  The full many-body Hilbert space is $N$-power (also direct-product type) of the direct product of these two.  As discussed previously, in some cases, instead of a 3-dimension hyperfine space, we use the third type of spaces, open- and closed-channel, $(a,b),\,(a,c)$ (2 dimension).  Strictly speaking, this one is just a subspace of the direct product of a pair hyperfine spin spaces.  Nevertheless,  it is sufficient within our model because only these two combinations (channels) of a pair are considered.    In principle, fermion fields $\psi$ and $\bar\psi$ (and $\Delta$ and $\bar\Delta$ defined according to $\psi$ and $\bar\psi$),  both Grassmann numbers, are independent to each other  and  not related as complex conjugate\footnote{Complex conjugate is not a well-defined concept for Grassmann algebra}.  This is marked by using ``$\bar{\;}$''(bar) instead of the normally used ``$^{\dg}$''(dagger) sign. In this chapter, a $3\times3$ matrix always refer to hyperfine spins; while a $2\times2$ matrix always refers to  open- and closed-channel.  And $^{}\dg$ sign  is reserved only for hermitian conjugate of these two types of matrices. 
 %We can introduce a unitary transformation $Q$ (mixing two channels) to diagonalize the interaction matrix into diagonal matrix $A$.
@@ -213,7 +213,7 @@ E_{\vk}\equiv(\xi_{\vk}^{2}+\Delta_{1}^{2})^{1/2}
 \end{gather}
 Note that here $v_{\vk}^{2}$  does not carry the physical meaning of the occupation number of the (open-channel) atoms, and $E_{\vk}$   does not stands for fermionic excitation spectrum as in Chapter \ref{sec:intro:1channel} or Appendix \ref{ch:mean}.   They are only those values at the broad resonance. In the narrow resonance, as we currently discuss, they are the zeroth order approximates of such quantities. 
 
-In the broad-resonance, where only the BCS pairing in open channel needs to be considered, $T$ is enough to diagonalize $G^{-1}$ and $L$ is simply an identity matrix.  %Here we will try to approximate it to the first order correction due to Pauli exclusion between two-channel.  
+In the broad resonance, where only the BCS pairing in the open channel needs to be considered at the many-body level, $T$ is enough to diagonalize $G^{-1}$ and $L$ is simply an identity matrix.  %Here we will try to approximate it to the first order correction due to Pauli exclusion between two-channel.  
 In the narrow resonance, $T$ cannot diagonalize $G^{-1}$ because of the Pauli exclusion between channels.  Consequently, $L$ stands the extra correction due to Pauli exclusion in the canonical transformation. Apply $T$ onto $G^{-1}$, we have 
 \begin{equation}\label{eq:pathInt2:G2}
 T_k^{\dg}G_{\omega_{n},\vk}^{-1}T_k=i\omega_nI+\mtrx{-E_k&0&u_k\Delta_2\\0&+E_k&v_k\Delta_2\\u_k\Delta_2&v_k\Delta_2&+\xi_k+\eta}
@@ -318,8 +318,8 @@ At high-momentum, both $h_{1\vk}$ and $h_{2\vk}$ behave as $1/\epsilon_{\vk}$ wh
 \subsection {Renormalization of the mean field equations\label{sec:pathInt2:ren}}
 The mean-field equations \ref{eq:pathInt2:mf} can be rewritten as 
 \begin{align}
-\Delta_{1\vp}&=\sum{}U_{\vp\vk}h_{1\vk}+\sum{}Y_{\vp\vk}h_{2\vk}\label{eq:pathInt2:mfopen}\\
-\Delta_{2\vp}&=\sum{}Y_{\vp\vk}h_{1\vk}+\sum{}V_{\vp\vk}h_{2\vk}\label{eq:pathInt2:mfclose}
+\Delta_{1\vp}&=\sum_{\vk}{}U_{\vp\vk}h_{1\vk}+\sum_{\vk}{}Y_{\vp\vk}h_{2\vk}\label{eq:pathInt2:mfopen}\\
+\Delta_{2\vp}&=\sum_{\vk}{}Y_{\vp\vk}h_{1\vk}+\sum_{\vk}{}V_{\vp\vk}h_{2\vk}\label{eq:pathInt2:mfclose}
 \end{align}
 The first thing to notice is that we restore the momentum dependence of the interaction as well as of $\Delta_{1\vp}$ and $\Delta_{2\vp}$.     Here $\Delta_{1\vp}$ and $\Delta_{2\vp}$ vary slowly at low momentum and  it is a good approximate to take them as constant if we only study the low momentum properties.  We introduce the momentum-dependence in order to gain proper convergence in summation in high momentum. As pointed out previously, both $h_{1\vk}$ and $h_{2\vk}$ approach $1/\epsilon_{\vk}$ in high momentum asymptotically.  This  makes  all summations diverge at high momentum when they are converted to integral in 3D if we take the interaction as contact and pull them out of the summation.  However, we note that the real potential is not contact and decays in high momentum.  One way to remove the divergence is to  introduce  a cutoff at high-momentum while keeping the interaction coefficient constant.  However, an arbitrary cutoff is  undesirable in the point of a theory.  Alternatively, we can remove the divergence by restoring the momentum dependence in the  interaction and recognizing its decay at high-momentum.    The problem here is that those microscopic bare interaction is hard to pin down.      More readily available and observable is the two-body low-energy effective scattering matrix, $T$, which effectively integrates out the high-momentum component of the bare interaction.             In the single channel problem, (Sec. \ref{sec:pathInt:meanfield}),  we  introduce a relation involving the two-body s-wave scattering length $a_{s}$, (or $T_{0}$), Eq. \eqref{eq:pathInt:as}, which has the similar divergence in high momentum.  We subtract it from the summation and the remaining difference does not diverge in high momentum.  A cutoff or bare momentum-dependent interaction is then no longer necessary.  In principle, we can do the same in two channels and introduce the two-channel equivalent of the s-wave scattering length, a $2\times2$ scattering amplitude matrix.  However, this $2\times2$ matrix is awkward in definition and not clear for the physical meaning.   Therefore, we adopt a two-step process with better physical intuition behind it.   
 
@@ -381,10 +381,9 @@ just like Eq. \ref{eq:pathInt2:hphi}.
 %-E_{b}^{(0)}\phi_{0\,\vp}=\epsilon_{\vp}\phi_{0\,\vp}-\sum_{\vk}V \phi_{0\,\vk}
 %\end{equation}
 
-
-At the lowest order of $\zeta$, $\phi_{0\vk}\sim\nth{\kappa^{2}+k^{2}}$, where $\kappa$ is the momentum scale related to the binding energy or the tuning, $\kappa^{2}/2m=E_{b}\approx\eta$.     In the many-body relevant region where momentum is not significantly larger than Fermi momentum, this quantity is actually very small and approximately a constant, $\nth{\kappa^{2}}$, because $\kappa{}\gg{}k_{F}$.  The part where the many-body factor $u_{\vk}^{2}$ significantly alters the wave function is actually rather small comparing to the whole spread of the wave function over the momentum space, in the order of $\kappa$.  Within the range where $u_{\vk}^{2}$ differs from 1 significantly, the wave function $\phi_{0\vk}$ is very small.  (See Appendix \ref{sec:pathApp:consistency})
+To  zeroth order of $\zeta$, $\phi_{0\vk}\sim\nth{\kappa^{2}+k^{2}}$, where $\kappa$ is the momentum scale related to the binding energy or the tuning, $\kappa^{2}/2m=E_{b}\approx\eta$.     In the many-body relevant region where momentum is not significantly larger than Fermi momentum, this quantity is actually very small and approximately a constant, $\nth{\kappa^{2}}$, because $\kappa{}\gg{}k_{F}$.  The part where the many-body factor $u_{\vk}^{2}$ significantly alters the wave function is actually rather small comparing to the whole spread of the wave function over the momentum space, in the order of $\kappa$.  Within the range where $u_{\vk}^{2}$ differs from 1 significantly, the wave function $\phi_{0\vk}$ is very small.  (See Appendix \ref{sec:pathApp:consistency})
 \begin{equation*}
-\abs{\phi_{0\,k=0}}^{2}N\sim\br{\sqrt{\frac{\kappa}{\mathcal{V}_{0}}}\nth{\kappa^{2}}}^{2}\mathcal{V}_{0}a_{0}^{3}={a_{0}\kappa}\ll1
+\abs{\phi_{0\,k=0}}^{2}N\sim\br{\sqrt{\frac{\kappa}{\mathcal{V}_{0}}}\nth{\kappa^{2}}}^{2}\frac{\mathcal{V}_{0}}{a_{0}^{3}}=\nth{(a_{0}\kappa)^{3}}\gg1
 \end{equation*}
  This fact is valid across the full range of crossover.  At some regions of crossover, $\Delta_{2\vk}$ ($\alpha$) may be large and the total closed-channel weight is comparable or even larger than that of the open-channel. However, for each momentum level in low  momentum, the factor $\phi_{0\vk}$ is so small that the product of $h_{2\vk}$ is still much smaller than $1$.  
 In summary, \emph{the full closed-channel (including normalization) is always small in the low momentum region  even when the total closed-channel weight is large.}  This justifies our following perturbative treatment on the Pauli exclusion between two channels. 
@@ -759,7 +758,7 @@ S_3[\theta]=&\int{dx}\mbr{Y(e^{-i2\theta}-1)\htd_{1}^{*}\htd_{2} +Y^{*}(e^{+i2\t
   =&\int{dx}-i2\mbr{Y\htd_{1}^{*}\htd_{2} -Y^{*}\htd_{1}\htd_{2}^{*}}\theta
   	-2\mbr{Y\htd_{1}^{*}\htd_{2} +Y^{*}\htd_{1}\htd_{2}^{*}}\theta^2
 \end{align}
-\begin{subappendices}
+
 
 
 From Eq. \ref{eq:pathInt2:h1}
@@ -785,8 +784,9 @@ where
 \omega_{0}^{2}=-\frac{4Y\htd_{1}^{*}\htd_{2}}{\pi^{(0)}(0)}
 \end{equation}
 As expected, the out-of-phase phase mode is a gapped mode, with a spectrum starting from $\omega_{0}$.  At the BCS end, $Y\htd_{1}^{*}\htd_{2}$ is close the expectation of the interaction energy calculated according to the effective interaction in the open-channel.  We can estimate it as $Y\htd_{1}^{*}\htd_{2}\sim{}-N(0)\Delta_{1}^{2}$, where $N(0)$ is the density of the state at the Fermi energy.  $\pi^{(0)}(0)\sim{}N(0)$.  So we can estimate that $\omega_{0}\sim\Delta_{1}$.  This mode is inside the fermionic excitation spectrum.  At the BEC end, the interaction energy in the open-channel can be estimated roughly as $N_{\text{open}}\abs{\mu}$; $\pi^{(0)}(0)\sim{}\mathcal{V}_{0}\Delta_{1}^{2}/\abs{\mu}^{3/2}$. Note that here the open-channel total number $N_{\text{open}}$ might be significantly smaller than total number. At BEC end, $\Delta_{1}\sim{}n_{o}^{1/2}a_{s}^{-1/2}$ and $\abs{\mu}\sim{}a_{s}^{-2}$.  Put all these together, $\omega_{0}\sim{}n^{1/2}\abs{\mu}^{5/4}/\Delta_{1}\sim{}a_{s}^{-2}$. It is in the order of the ionization (pair breaking) energy again. 
-\include{pathAppendix}
-\end{subappendices}
+%\begin{subappendices}
+%\include{pathAppendix}
+%\end{subappendices}
 
 
 

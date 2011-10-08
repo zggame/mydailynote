@@ -141,7 +141,7 @@ We rewrite the closed-channel gap equation using these relations
 \begin{equation*}
 \frac{h_{2\vk}}{u^{2}_{\vk}-v_{\vk}^{2}-w_{\vk}^{2}}\br{2 \xi_{\vk}+\eta-\frac{v_{\vk}^{2}}{u_{\vk}^{2}}\eta}-\sum_{\vk'}V_{\vk\vk'}h_{2\vk'}-\sum_{\vk'}Y_{\vk\vk'}h_{1\vk'}=0
 \end{equation*}
-At high momentum ($\gg{}k_{F}$),  the third term in the parenthesis is negligible and the the denominator $u^{2}_{\vk}-v_{\vk}^{2}-w_{\vk}^{2}\approx1$.  This equation is then very similar to the two-body \sch equation (Eq. \ref{eq:intro:close}). For the closed-channel, the interaction, or the closed-channel bound state, $\phi_{0}$, has non-zero value for a range  in the momentum space much larger than $k_{F}$.  Thus we expect the closed-channel correlation $h_{2\vk}\propto\phi_{0}f(\vk)$ where $f(\vk)$ approach one at high momentum.  This is in fact the same argument as Eq. \ref{eq:pathInt2:hphif}  in the beginning of Chapter \ref{ch:path2}.  The next thing to notice is that the third term in the parenthesis might dominate the other two terms in  certain situation (low momentum, BCS) because the denominator  $u_{\vk}^{2}$ can be very small in such regions.  A nature way to compensate this big term is to set\footnote{$u_{\vk}^{2}$ in Chapter \ref{ch:path2} is defined for $(\xi_{\vk}+E_{\vk})/2E_{\vk}$ and does not carry an obvious physical meaning as $u_{\vk}^{2}$ in this appendix. They are the same in the lowest order of our expansion ($\zeta/E_{\vk}$) for the narrow resonance. This does not affect our analysis because the closed-channel correlation is actually a first order quantity.} $f(\vk)=u_{\vk}^{2}$.  Now we arrive the same conclusion for the closed-channel correlation as in the path-integral approach (Eq. \ref{eq:pathInt2:hphi})
+At high momentum ($\gg{}k_{F}$),  the third term in the parenthesis is negligible and the the denominator $u^{2}_{\vk}-v_{\vk}^{2}-w_{\vk}^{2}\approx1$.  This equation is then very similar to the two-body \sch equation (Eq. \ref{eq:intro:close}). For the closed-channel, the interaction, or the closed-channel bound state, $\phi_{0}$, has non-zero value for a range  in the momentum space much larger than $k_{F}$.  Thus we expect the closed-channel correlation $h_{2\vk}\propto\phi_{0}f(\vk)$ where $f(\vk)$ approach one at high momentum.  This is in fact the same argument as Eq. \ref{eq:pathInt2:hphif}  in the beginning of Chapter \ref{ch:path2}.  The next thing to notice is that the third term in the parenthesis might dominate the other two terms in  certain situation (low momentum, BCS) because the denominator  $u_{\vk}^{2}$ can be very small in such regions.  A nature way to compensate this big term is to set\footnote{$u_{\vk}^{2}$ in Chapter \ref{ch:path2} is defined to be $(\xi_{\vk}+E_{\vk})/2E_{\vk}$ and does not carry an obvious physical meaning as $u_{\vk}^{2}$ in this appendix. They are the same in the lowest order of our expansion ($\zeta/E_{\vk}$) for the narrow resonance. This does not affect our analysis because the closed-channel correlation is actually a first order quantity.} $f(\vk)=u_{\vk}^{2}$.  Now we arrive the same conclusion for the closed-channel correlation as in the path-integral approach (Eq. \ref{eq:pathInt2:hphi})
 \begin{equation}\label{eq:meanfield:h2phi}
 h_{2\vk}=\tilde\alpha{}\phi_{0\vk}u_{\vk}^{2}
 \end{equation}
@@ -162,7 +162,7 @@ And it is not hard to find
 \tilde\lambda_{1}(\eta)\equiv-\sum_{\vk\vk'}{\phi_{\vk}^{*}}{v_{\vk'}^{2}V_{\vk\vk'}}\phi_{\vk'}
 \end{equation*}
 But it should be equal to $\lambda_{1}$ from the path-integral approach at the lowest order of $\zeta$ because this term is the dominated one (see Sec. \ref{sec:pathInt2:lambda}). We will just use $\lambda_{1}$ hereinafter. $\tilde\alpha$ is the same as $\alpha$ in the path-integral approach if $h_{1\vk}$ here is the same as the one in the path-integral approach,  which we will show in the following. Particularly for low momentum, $\phi_{0\vk}\sim\nth{\eta}$ (see Appendix \ref{sec:pathInt2:short-range}) and it is not hard to find at low momentum
-\begin{equation}
+\begin{equation}\label{eq:meanfield:aphi}
 \alpha\phi_{0\vk}\overset{{k\lesssim{k_F}}}{=}\frac{\Delta_2}{\eta}
 \end{equation}
 
@@ -174,7 +174,7 @@ Again, using Eq. \ref{eq:meanfield:1sqrt}, we replace the denominator with $2u_\
  \begin{equation*}
    \frac{h_{1\vk}\sgn_{k}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}}\br{ 2\xi_{\vk}+({\tilde\alpha}\phi_{0\vk})^2\eta}=\Delta_{1}
    \end{equation*}
- At low momentum, the second term in the parenthesis can be simplified as $\Delta_2^2/\eta=\zeta$  
+ At low momentum, the second term in the parenthesis can be simplified as $\Delta_2^2/\eta=\zeta$  using Eq. \ref{eq:meanfield:aphi}
    \begin{equation*}
    \frac{h_{1\vk}\sgn_{k}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}}\br{ 2\xi_{\vk}+\zeta}=\Delta_{1}
    \end{equation*}
@@ -202,7 +202,7 @@ On the other hand, we have
 \sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\approx1-4h_{1\vk}^{2}+O((\frac{\zeta}{E_{\vk}})^{2})
 	\approx\frac{\xi_{\vk}}{E_{\vk}}+\frac{\Delta_{1}^{2}}{4E_{\vk}^{3}}\zeta+O((\frac{\zeta}{E_{\vk}})^{2})
 \end{equation*}
-And we have the open-channel number equation 
+So we have the open-channel number equation 
 \begin{equation}
 N_{\text{open}}\approx\sum_{\vk}1-\frac{\xi_{\vk}}{E_{\vk}}-\frac{\Delta_{1}^{2}}{4E_{\vk}^{3}}\zeta
 \end{equation}

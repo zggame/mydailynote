@@ -219,11 +219,11 @@ In the narrow resonance, $T$ cannot diagonalize $G^{-1}$ because of the Pauli ex
 T_k^{\dg}G_{\omega_{n},\vk}^{-1}T_k=i\omega_nI+\mtrx{-E_k&0&u_k\Delta_2\\0&+E_k&v_k\Delta_2\\u_k\Delta_2&v_k\Delta_2&+\xi_k+\eta}
 \end{equation}
 We regard the off-diagonal elements as perturbation because  we  only seek the solution around the BCS wave function ($T$ transform). 
-Introduce a small energy scale $\zeta$,
+Introduce a dimensionless scale $\zeta$,
 \begin{equation}
-\zeta=\frac{\Delta_{2}^{2}}{\eta}
+\boxed{\zeta=\frac{\Delta_{2}^{2}}{\Delta_{1}\eta}}
 \end{equation}
-Here $\Delta_{2}$ is its mean-field (saddle point) value.  It can be verified that $\zeta\ll\Delta_{1}$, $\zeta\ll{}E_{F}$ (See Appendix \ref{sec:pathApp:consistency}).  
+Here both $\Delta_{1}$ and $\Delta_{2}$ are their mean-field (saddle point) value.  It can be verified that $\zeta\ll1$ (See Appendix \ref{sec:pathApp:consistency}).  
 This matrix can then be diagonalized with  the unitary transformation $L_{\vk}$ within the first order of $\zeta$  (see Appendix \ref{sec:diagonalize} for details.)
 \begin{equation}\label{eq:pathInt2:Bapprox}
 \begin{split}
@@ -242,11 +242,11 @@ Here we choose the sign convention to make  $E_{1,2,3}$  positive in their zerot
 The dispersion spectrum of fermions is
 \begin{align}\label{eq:pathInt2:xiExpand}
 E_{1\vk}&\equiv{}E_{\vk}+\gamma_{1\vk}\approx{}E_{\vk}+\frac{\Delta_{2}^{2}u_{\vk}^{2}}{\xi_{\vk}+\eta}
-\approx{}E_{\vk}+u_{\vk}^{2}\zeta\\
+\approx{}E_{\vk}+u_{\vk}^{2}\zeta\frac{\eta}{\xi_{\vk}+\eta}\Delta_{1}\\
 E_{2\vk}&\equiv{}E_{\vk}+\gamma_{2\vk}\approx{}E_{\vk}-\frac{\Delta_{2}^{2}v_{\vk}^{2}}{\xi_{\vk}+\eta}
-\approx{}E_{\vk}-v_{\vk}^{2}\zeta\label{eq:pathInt2:xiExpand2}\\
+\approx{}E_{\vk}-v_{\vk}^{2}\zeta\frac{\eta}{\xi_{\vk}+\eta}\Delta_{1}\label{eq:pathInt2:xiExpand2}\\
 E_{3\vk}&\equiv{}\xi_{\vk}+\eta+\gamma_{3\vk}\approx{}\xi_{\vk}+\eta-\frac{\Delta_{2}^{2}}{2(\xi_{\vk}+\eta)}
-\approx{}\epsilon_{\vk}+\eta-\frac{\zeta}{2}
+\approx{}\epsilon_{\vk}+\eta-\frac{\zeta}{2}\frac{\eta}{\xi_{\vk}+\eta}\Delta_{1}
 \label{eq:pathInt2:xiExpand3}
 \end{align}
 An interesting feature of this solution is that the corrections do not disappear for zero inter-channel coupling, $Y=0$.  This is because the corrections are due to the Pauli exclusion between two channels, which continues to exist even when there is no inter-channel coupling.  In fact, the inter-channel coupling, $Y$, mostly contribute energetically.  It modifies the effective interaction in the open-channel and affect the open-channel order parameters,  $\Delta_{1}$, greatly.  By taking the broad resonance result as the zeroth order, we have taken care of $Y$.  On the other hand, the inter-channel Pauli exclusion or statistics is left out as the higher order correction as we just found out. 

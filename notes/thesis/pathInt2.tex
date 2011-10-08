@@ -385,7 +385,7 @@ To  zeroth order of $\zeta$, $\phi_{0\vk}\sim\nth{\kappa^{2}+k^{2}}$, where $\ka
 \begin{equation*}
 \abs{\phi_{0\,k=0}}^{2}N\sim\br{\sqrt{\frac{\kappa}{\mathcal{V}_{0}}}\nth{\kappa^{2}}}^{2}\frac{\mathcal{V}_{0}}{a_{0}^{3}}=\nth{(a_{0}\kappa)^{3}}\gg1
 \end{equation*}
- This fact is valid across the full range of crossover.  At some regions of crossover, $\Delta_{2\vk}$ ($\alpha$) may be large and the total closed-channel weight is comparable or even larger than that of the open-channel. However, for each momentum level in low  momentum, the factor $\phi_{0\vk}$ is so small that the product of $h_{2\vk}$ is still much smaller than $1$.  
+ This fact is valid across the full range of crossover.  At some regions of crossover, $\Delta_{2\vk}$ (or $\alpha$) may be large and the total closed-channel weight is comparable or even larger than that of the open-channel. However, for each momentum level in low  momentum, the factor $\phi_{0\vk}$ is so small that the product of $h_{2\vk}$ is still much smaller than $1$.  
 In summary, \emph{the full closed-channel (including normalization) is always small in the low momentum region  even when the total closed-channel weight is large.}  This justifies our following perturbative treatment on the Pauli exclusion between two channels. 
 
 %Let us look at the second equation Eq. \ref{eq:pathInt2:mfclose} first, as discussed before, $h_{2}$ is similar to $\phi^{(0)}$ in two-body wave function. More specifically
@@ -416,7 +416,7 @@ Multiply both sides with $\phi^{*}_{\vk}$ and integrate over the momentum,
 	+\sum_{\vk\vk'}{\phi_{\vk}^{*}}{v_{\vk'}^{2}V_{\vk\vk'}}\phi_{\vk'}}
 	=\sum_{\vk\vk'}{\phi_{\vk}^{*}}{Y_{\vk\vk'}}{h_{1\vk'}}
 \end{equation}
-Comparing this to the two-body problem Eq. \ref{eq:intro:closeCoeff}, detuning is shifted by the many-body effects $\mu$ (mostly due to the Pauli exclusion within the open-channel) and $\lambda_{1}$ (mostly due to the Pauli exclusion between channels).  
+ We rewrite this equation in the form
 \begin{equation}\label{eq:pathInt2:alpha}
 \alpha=\frac{\sum_{\vk\vk'}{\phi_{\vk}^{*}}{Y_{\vk\vk'}}{h_{1\vk'}}}{\br{-E_{b}+\eta-2\mu-\lambda_{1}}}
 \end{equation}
@@ -424,7 +424,7 @@ Comparing this to the two-body problem Eq. \ref{eq:intro:closeCoeff}, detuning i
 \lambda_{1}(\eta)\equiv-\sum_{\vk}{\phi_{\vk}^{*}}{(E_{\vk}-\xi_{\vk})}\phi_{\vk}
 	-\sum_{\vk\vk'}{\phi_{\vk}^{*}}{v_{\vk'}^{2}V_{\vk\vk'}}\phi_{\vk'}
 \end{equation}
-
+Comparing this to the two-body problem Eq. \ref{eq:intro:closeCoeff}, detuning is shifted by the many-body effects $\mu$ (mostly due to the Pauli exclusion within the open-channel) and $\lambda_{1}$ (mostly due to the Pauli exclusion between channels). 
 $\lambda_{1}$ depends on detuning $\eta$ (through $E_{\vk}$, $v_{\vk}$), but the dependence is rather weak because the integration is over mostly the short-range quantities and  insensitive to the detuning. We will discuss more detail about it later in Sec \ref{sec:pathInt2:lambda}. 
 Using Eq. \ref{eq:pathInt2:alpha}, we can express the $\alpha$ in $h_{2\vk}$ (Eq. \ref{eq:pathInt2:hphi}), and then plug it into Eq. \ref{eq:pathInt2:h1}
 \begin{equation*}
@@ -475,7 +475,7 @@ The correction term (the third term in parentheses) does not have divergence in 
 In summary, there are several difference of gap equation here comparing to single-channel problems:
 \begin{enumerate}
 \item\label{item:pathInt2:mu}The shift of $2\mu$ in detuning through $\tilde{a}_{s}$;
-\item The extra shift of $\lambda_{1}$ in detuning through $\tilde{a}_{s}$;
+\item The extra shift of $\lambda_{1}$ (see Eq. \ref{eq:pathInt2:lambda1}) in detuning through $\tilde{a}_{s}$;
 \item The extra term $-\frac{\lambda_{2}}{\Delta_{1}}$ in Eq. \ref{eq:pathInt2:gapRenorm};
 \item The extra term $-\frac{\Delta_{2}^{2}\xi_{\vk}}{4(\xi_{\vk}+\eta){(E_{\vk})^{3}}}\approx-\frac{\xi_{\vk}}{4{E_{\vk}^{3}}}\zeta$ in the summation of Eq. \ref{eq:pathInt2:gapRenorm};
 \end{enumerate}
@@ -487,7 +487,7 @@ In a many-body system, most of the properties is obtained when considering what 
 
 The next three corrections are unique for three-species problem where the inter-channel Pauli exclusion cannot be neglected.  
 Furthermore,  close look into $\lambda_1$ and $\lambda_2$ (Sec. \ref{sec:pathInt2:lambda}) reveals that they vary slowly across the full region of crossover and is a function of the density of atoms in the open-channel .  They describe  fundamental many-body effects, and do not have counterparts in a two-body problem.  
-Both $\lambda_{1}$ and $\lambda_{2}$ involve integrals between the open-channel wave function and the closed-channel wave function, (factor $v_{\vk}^{2}$ or $u_{\vk}^{2}$ describes mostly the open-channel wave function; while $\phi$ describes the closed-channel wave function). The larger the overlap of two, the larger $\lambda_{1}$ and $\lambda_{2}$ are.  This has a very intuitive interpretation:  more overlap leads more severe inter-channel Pauli exclusion, which in turn leads to larger $\lambda_{1}$ and $\lambda_{2}$ that describe this effect between two  channels.  In our model, an open-channel wave function is more or less spread all over the real-space, (even at BEC-side, the real bound-state is very loosely bound comparing to the closed-channel bound state), while the closed-channel wave function is very sensitive to the binding energy, $E_{b}(\approx\eta)$.  When the closed-channel  bound-state is closer to the threshold, i.e.,  the binding energy  is smaller, the closed-channel bound-state is more spread out  in real space and has larger overlap with open-channel. Consequently,  $\lambda_{1}$ and $\lambda_{2}$ are larger in such cases.                           Nevertheless, $\lambda_1$ is much smaller than the  constant $\mathcal{K}$.  So the shift is not very large and it is still all right to treat it as a perturbation.  The correction is   shifted with the change of the density.  In the many-body system, no dramatic jump in physical quantities happens at resonance due to the crossover nature, and it is hard to observe this shift over the resonance position though.  %Nevertheless, this effect can show up at two-body type experiments, where resonance position is easier to detect.  
+Both $\lambda_{1}$ (see Eq. \ref{eq:pathInt2:lambda1})  and $\lambda_{2}$ (see Eq. \ref{eq:pathInt2:lambda2})  involve integrals between the open-channel wave function and the closed-channel wave function, (factor $v_{\vk}^{2}$ or $u_{\vk}^{2}$ describes mostly the open-channel wave function; while $\phi$ describes the closed-channel wave function). The larger the overlap of two, the larger $\lambda_{1}$ and $\lambda_{2}$ are.  This has a very intuitive interpretation:  more overlap leads more severe inter-channel Pauli exclusion, which in turn leads to larger $\lambda_{1}$  and $\lambda_{2}$  that describe this effect between two  channels.  In our model, an open-channel wave function is more or less spread all over the real-space, (even at BEC-side, the real bound-state is very loosely bound comparing to the closed-channel bound state), while the closed-channel wave function is very sensitive to the binding energy, $E_{b}(\approx\eta)$.  When the closed-channel  bound-state is closer to the threshold, i.e.,  the binding energy  is smaller, the closed-channel bound-state is more spread out  in real space and has larger overlap with open-channel. Consequently,  $\lambda_{1}$ and $\lambda_{2}$ are larger in such cases.                           Nevertheless, $\lambda_1$ is much smaller than the  constant $\mathcal{K}$.  So the shift is not very large and it is still all right to treat it as a perturbation.  The correction is   shifted with the change of the density.  In the many-body system, no dramatic jump in physical quantities happens at resonance due to the crossover nature, and it is hard to observe this shift over the resonance position though.  %Nevertheless, this effect can show up at two-body type experiments, where resonance position is easier to detect.  
 
 
 \subsection{Evaluation and estimation of $\lambda_{1}$ and $\lambda_{2}$\label{sec:pathInt2:lambda}}
@@ -522,7 +522,7 @@ It is not easy to estimate $\lambda_{1}$ precisely from  microscopic parameters 
 \lambda_{2\vp}\equiv\sum_{\tilde\vp}(1+GT)_{\vp\tilde\vp}\frac{\sum_{\vk\vk{'}\vp'} Y_{\tilde\vp\vp'}{\phi_{\vp'}}{\phi_{\vk'}^{*}}{Y_{\vk\vk'}}v_{\vp'}^{2}{h_{1_{\vk}}}}
 		{\br{-E_{b}+\eta-2\mu-\lambda_{1}}}{}
 \end{equation}
-Here the argument goes similar as in $\lambda_{1}$, considering the short-range nature, both  $Y_{\tilde\vp\vp'}$ and $\phi_{\vp'}$ varies slowly and can be approximated by their value at $\vp'=0$ for the momentum below or around the Fermi momentum.  After pulling these two quantities out of the summation over $\vp'$, we only need to sum over   $v_{\vp'}^{2}$, which gives a familiar factor,  the (open-channel) density, $n_{o}$. Therefore,  $\lambda_{2\vp}$ also depends on the (open-channel) density linearly, $\lambda_2\approx\lambda_2^{(0)}n_{o}$,  because only a single $v_{\vp'}^2$ factor shows up  in the definition of $\lambda_{2\vp}$.  In experiments, when not too close to resonance, $n_o$ is close to total density.  $\lambda_{i}$ can be measured at different densities,  and coefficients $\lambda_{i}^{(0)}$ can then be estimated. 
+Here the argument goes similar as in $\lambda_{1}$, considering the short-range nature, both  $Y_{\tilde\vp\vp'}$ and $\phi_{\vp'}$ varies slowly and can be approximated by their value at $\vp'=0$ for the momentum below or around the Fermi momentum.  After pulling these two quantities out of the summation over $\vp'$, we only need to sum over   $v_{\vp'}^{2}$, which gives a familiar factor,  the (open-channel) density, $n_{o}$. Therefore,  $\lambda_{2\vp}$ also depends on the (open-channel) density linearly, $\lambda_2\approx\lambda_2^{(0)}n_{o}$,  because only a single $v_{\vp'}^2$ factor shows up  in the definition of $\lambda_{2\vp}$.  In experiments, when not too close to resonance, $n_o$ is close to total density.  $\lambda_{i}$ can be measured at different densities,  and two coefficients, $\lambda_{1}^{(0)}$  and $\lambda_{2}^{(0)}$, can then be estimated. 
 
 
 %The Direct replacement of $1/(E_{1\vk}+E_{3\vk})$ by $\phi_{k}$ in Eq. \ref{eq:pathInt2:hphi} introduces certain error. They might lead to a non-linear correction on $\lambda_{i}$ about density $n$.  Nonetheless, we expect the higher order non-linearity is weak and not important for small corrections, $\lambda_{i}$.

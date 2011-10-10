@@ -274,20 +274,19 @@ $k_{Fc}$ is the Fermi momentum corresponding to density of atoms in the close-ch
 Now we check whether the corrections in Fermionic spectrum (Eq. \ref{eq:pathInt2:xiExpand3}-\ref{eq:pathInt2:xiExpand3}), 
 are indeed small comparing to the zeroth order terms.  
 \begin{align}
-E_{1\vk}&\equiv{}E_{\vk}+\gamma_{1\vk}\approx{}E_{\vk}+u_{\vk}^{2}\zeta\tag{\ref{eq:pathInt2:xiExpand}}\\
-E_{2\vk}&\equiv{}E_{\vk}+\gamma_{2\vk}
-\approx{}E_{\vk}-v_{\vk}^{2}\zeta\tag{\ref{eq:pathInt2:xiExpand2}}\\
-E_{3\vk}&\equiv{}\xi_{\vk}+\eta+\gamma_{3\vk}\approx{}\epsilon_{\vk}+\eta+\frac{\zeta}{2}
+E_{1\vk}\approx{}E_{\vk}+u_{\vk}^{2}\Delta_{1}\zeta\tag{\ref{eq:pathInt2:xiExpand}}\\
+E_{2\vk}\approx{}E_{\vk}-v_{\vk}^{2}\Delta_{1}\zeta\tag{\ref{eq:pathInt2:xiExpand2}}\\
+E_{3\vk}\approx{}\epsilon_{\vk}+\eta+\frac{\zeta}{2}\Delta_{1}
 \tag{\ref{eq:pathInt2:xiExpand3}}
 \end{align}
 Here, we mostly only concern of case of low momentum ($k\sim{}k_{F}$).  In Eq. \ref{eq:pathInt2:xiExpand3}, 
 \begin{equation*}
-\frac{\gamma_{3\vk}}{E_{3\vk}}\sim{}\frac{\Delta_{2}^{2}}{\eta^{2}}\sim\br{\frac{k_{Fc}}{\kappa}}^{3}\ll1
+\frac{\zeta\Delta_{1}}{E_{3\vk}}\sim{}\frac{\Delta_{2}^{2}}{\eta^{2}}\sim\br{\frac{k_{Fc}}{\kappa}}^{3}\ll1
 \end{equation*}
 Eqs. \ref{eq:pathInt2:xiExpand} and Eqs. \ref{eq:pathInt2:xiExpand2} is slightly more complicated.  Both of them involve $\frac{\Delta_{2}^{2}}{E_{\vk}\eta}$,  at the  BCS limit, the closed-channel density is small, $k_{F\,c}$ is small and that makes this ratio small; when close to the (narrow) resonance, where $n_{c}$ is comparable to to the total density, at low energy, $\Delta_{1}$ is in the order of the Fermi energy, so does $E_{\vk}$.   We have (we no longer distinguish $k_{F\,c}$ with $k_{F}$)
- \begin{equation*}
- \frac{\gamma_{i}}{\xi_{i}}<\frac{\Delta_{2}^{2}}{E_{\vk}\eta}\sim\frac{\eta^{2}\frac{k_{Fc}^{3}}{\kappa^{3}}}{k_{F}^{2}\eta}\sim\frac{k_{F}}{\kappa}\ll1
-\end{equation*}
+ \begin{equation}\label{eq:pathApp:zetaEs}
+ \zeta=\frac{\Delta_{2}^{2}}{\Delta_{1}\eta}\sim\frac{\eta^{2}\frac{k_{Fc}^{3}}{\kappa^{3}}}{k_{F}^{2}\eta}\sim\frac{k_{F}}{\kappa}\ll1
+\end{equation}
 
 More deeply, in the secular equation that leads to spectrum, Eq. \ref{eq:pahtApp:secular}.  We rewrite it without scaling to $E_{\vk}$,  (We drop subscript $\vk$ in the following equations for simplicity)
 \begin{equation*}
@@ -307,4 +306,4 @@ This justifies our choice to neglect the last term when finding the lowest-order
 
 
 
- In another word, the above estimation is just saying that the total occupation number of the closed-channel at low momentum is much smaller than 1 in all regions of resonance (narrow or broad) because the closed-channel bound state is much smaller than the interparticle distance.  This factor gives us a small factor, $\frac{r_{c}}{a_{0}}\sim\frac{k_{F}}{\kappa}\sim\sqrt\frac{E_{F}}{\eta}$, upon which we can do the expansion.  
+ In another word, the above estimation is just saying that the total occupation number of the closed-channel at low momentum is much smaller than 1 in all regions of resonance (narrow or broad) because the closed-channel bound state is much smaller than the interparticle distance.  This factor gives us a small factor, $\zeta\sim\frac{r_{c}}{a_{0}}\sim\frac{k_{F}}{\kappa}\sim\sqrt\frac{E_{F}}{\eta}$, upon which we can do the expansion.  

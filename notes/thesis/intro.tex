@@ -18,7 +18,7 @@ This unique ability gives physicists a rare opportunity to study  a many-body sy
 %This thesis tries to look into the idiosyncrasy of the Feshbach resonance in contrast with a true ``Simple'' knob of the interaction strength.
   The two-body theory of Feshbach resonance has a characteristic  parameter, $\delta_c$.  Na\"{i}vely speaking, in the negative detuning side of any resonance, particles should mostly stay  in a (virtual) bound-state of closed-channel (or similar) resonances.  However, at the resonance point  of Feshbach resonance, atoms is mostly in the open-channel, and it does so up to a negative detuning of $\delta_c$. Only when the detuning from resonance is much larger than $\delta_c$, atoms have the majority weight in the closed-channel.    Moving to a many-body problem, an important question is how this energy scale compares to a typical many-body energy scale, the Fermi energy. In the region not too far away from resonance, the closed-channel weight is negligible, if the Fermi energy is much smaller than $\delta_c$, (i.e., \emph{broad resonance}).   Thus the closed-channel can be safely ignored at many-body level. The problem can be well-described as a two-species fermion system with a tunable interaction.  The Feshbach resonance indeed serves as a simple ``magic'' knob for the interaction strength.  The original  theories developed on  single-channel models  apply to this case directly.  This is also the situation for the popular experiment systems (${}^{6}\text{Li}$ at 834G, $^{40}\text{K}$ at 224G).   Many theoretical works are developed over those original works along such simple single-channel models. On the contrary, when the Fermi energy is  comparable to or even larger than $\delta_c$, the closed-channel has to be included in the many-body level, which was considered in  theoretical works such as \cite{GurarieNarrow}. 
   
-  Nevertheless, one crucial simplification comes from  the assumption that closed-channel bound state is relatively tight bound, and is much smaller than  many-body scales, such as interparticle distance, (but often larger than potential range).  Therefore, it is not necessary to handle the three (four) fermion species simultaneously, which probably requires quite different techniques to solve. Instead, two channels can still be treated successively. 
+  Nevertheless, one crucial simplification comes from  the assumption that closed-channel bound state is relatively tight bound, and is much smaller than  many-body scales, such as interparticle distance, (but often larger than potential range).  Therefore, it is not necessary to handle all the  fermion species simultaneously, which probably requires quite different techniques to solve. Instead, two channels can still be treated successively. 
 
 To complicate the problem even further,  real experiment setups often have one common hyperfine species between two channels. There are three hyperfine species in two channels instead of four species (two for each channel).  Two most popular setups (${}^{6}\text{Li}$ at 834G, $^{40}\text{K}$ at 224G) are both three-species ones although they are the broad resonance.  Pauli exclusion prevents  both channels from occupying the same level simultaneously because of this common species.  This peculiar effect has no counterpart in two-body physics. It has  received little theoretical attention.    Some  narrow resonances do exist \cite{ChinRMP} and it is not totally inconceivable to conduct many-body experiments with those resonances.  The central concern in this thesis is about such situations. 
 
@@ -113,7 +113,7 @@ The two-channel Hamiltonian can be written as a $2\times2$ matrix for  the (open
 \hat{H}(r)=
 \begin{pmatrix}
 -\frac{\hbar^{2}}{2m_{r}}\nabla^{2}-U(r)&\;&-Y(r)\\
--\frac{\hbar^{2}}{2m_{r}}\nabla^{2}+\eta-V(r)&\;&-Y(r)
+-Y(r)&\;&-\frac{\hbar^{2}}{2m_{r}}\nabla^{2}+\eta-V(r)
 \end{pmatrix}
 \end{equation}
 where the  zero of energy is taken as the energy of two open-channel atoms with infinite separation. $\eta$ is the absolute difference in the Zeeman energy of two channels.  All the interactions are short-range.  For a s-wave solution we have 
@@ -138,7 +138,7 @@ Note that here $\phi_{0}$ is normalized (for radial component).  Put this back t
 \br{-\frac{\hbar^{2}}{2m_{r}}\frac{d^{2}}{dr^{2}}-U-E}\chi+\frac{1}{E-\tilde\delta}\int_{0}^{\infty}K(r\,r')\chi(r')dr'=0
 \end{equation}
 where kernel $K(r\,r')$ is
-\begin{equation}
+\begin{equation}\label{eq:intro:Krr}
 K(r\,r')\equiv\phi_{0}(r)\phi_{0}(r')Y(r')Y(r)\equiv{}K(r'\,r)
 \end{equation}
 Compare this with the open-channel  \sch equation without coupling to the closed-channel

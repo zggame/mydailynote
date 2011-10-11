@@ -13,7 +13,11 @@ We put the Hamiltonian Eq. \ref{eq:pathInt2:ham2} into the momentum space, and r
 	-\sum_{\vk\vk'}Y^*_{\vk\vk'}a^+_{\vk'}{}c^+_{-\vk'}{}b^{}_{-\vk}a^{}_{\vk}
 \end{split} 
 \end{equation}
-By the hermition condition we have 
+Here we take the free atom at zero magnetic field as the  zero energy.  
+\begin{equation*}
+\epsilon_{\vk}^i=k^2/(2m)+\eta^i, \qquad (i=a,b,c)
+\end{equation*}
+ $\eta^i$ is the Zeeman energy of the $i^{\text{th}}$ atom at magnetic field $B$. By the hermition condition we have 
 \begin{equation}
  U_{\vk'\vk}=U^*_{\vk\vk'},\qquad{} V_{\vk'\vk}=V^*_{\vk\vk'}
 \end{equation}
@@ -48,7 +52,7 @@ Where
 \begin{equation*}
  \xi^a_\vk=\epsilon^a_\vk-\mu^a,\qquad\xi^b_\vk=\epsilon^b_\vk-\mu^b,\qquad\xi^c_\vk=\epsilon^c_\vk-\mu^b
 \end{equation*}
-Two chemical potentials are added to make sure the $n_a=n_b+n_c=\nth{2}n$.  In principle, $\mu^{a}$ does not need to be equal to $\mu^{b}$  as there is no exchange/conversion between $(a)$ and $(b,c)$.  Nevertheless, we  set $\mu^{a}=\mu^{b}$ for simplicity and drop the superscript on chemical potential hereinafter. 
+ Two chemical potentials are added to make sure the $n_a=n_b+n_c=\nth{2}n$.  In principle, $\mu^{a}$ does not need to be equal to $\mu^{b}$  as there is no exchange/conversion between $(a)$ and $(b,c)$.  In fact, the structure of the ansatz guarantees that $n_a=n_b+n_c$. Therefore, we  set $\mu^{a}=\mu^{b}$ for simplicity and drop the superscript on chemical potential hereinafter. 
 We will also drop the Hatree terms because they  only relate to the density and thus can be absorbed into the chemical potentials.   In the second summation, we ignore the fact that the summation only go through $\vk\neq\vk'$ as the correction due to this is in the higher order. 
  
  \section{Exact gap equations and number equations}
@@ -103,7 +107,7 @@ The gap equations are
 \label{eq:20100909:fullgapb}
 \end{multline}
 \end{subequations}
-where $\eta=\epsilon^{ac}_{\vk}-\epsilon^{ab}_{\vk}$ is the bare Zeeman energy difference and is large than most energy scales, such as $E_{F}$.  It is close to  the binding energy of the closed-channel bound state when it is not too far away from the resonance point.   We see one  disadvantages of the ansatz method: unlike the path integral approach, where $h_{1\vk}$ and $h_{2\vk}$ have a very specific forms, Eqs. (\ref{eq:pathInt2:h1}, \ref{eq:pathInt2:h2}), and ready for further approximation and analysis,  we do not have much guide for these two quantities here and need to make some guess.  
+where $\eta=\epsilon^{ac}_{\vk}-\epsilon^{ab}_{\vk}=\eta^{c}-\eta^{b}$ is the bare Zeeman energy difference and is large than most energy scales, such as $E_{F}$.  It is close to  the binding energy of the closed-channel bound state when it is not too far away from the resonance point.   We see one  disadvantages of the ansatz method: unlike the path integral approach, where $h_{1\vk}$ and $h_{2\vk}$ have a very specific forms, Eqs. (\ref{eq:pathInt2:h1}, \ref{eq:pathInt2:h2}), and ready for further approximation and analysis,  we do not have much guide for these two quantities here and need to make some guess.  
 
 We can define order parameters
 \begin{gather}

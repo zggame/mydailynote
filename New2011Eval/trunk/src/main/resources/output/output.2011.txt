@@ -1,0 +1,117 @@
+QBSH2_JSSLP1_Task1a
+Single Count (Simple Score Method):0.939
+Single Count (MRR method):0.897
+total count:4431
+note:
+JSSLP1 Task1 (query against truth midi)(Roger Jang's data)file:result/2011/result-JSSLP1-jang.txt
+
+
+QBSH_JSSLP1_Task1b
+Single Count (Simple Score Method):0.941
+Single Count (MRR method):0.912
+total count:355
+note:
+JSSLP1 Task1 (query against truth midi)(ThinkIT data)file:result/2011/result-JSSLP1-thinkit.txt
+
+
+QBSH3_JSSLP1_Task2
+Multi Count (Simple Score Method):9.275
+total count:2040
+note:
+JSSLP1 Task2 (query against humming wav) (Roger Jang's data)file:result/2011/result-JSSLP1-task2.txt
+
+
+QBSH_JSSLP1_Task1c
+Single Count (Simple Score Method):0.438
+Single Count (MRR method):0.350
+total count:404
+note:
+JSSLP1 Task1 (query against truth midi)(IOACAS 2nd data)file:result/2011/result-JSSLP1-ioacas.txt
+
+
+QBSH2_PNLNP_Task1a
+Single Count (Simple Score Method):0.000
+Single Count (MRR method):0.000
+total count:4431
+note:
+PNLNP Task1 (query against truth midi)(Roger Jang's data)file:result/2011/result-PNLNP-jang.txt
+
+
+QBSH_PNLNP_Task1b
+Single Count (Simple Score Method):0.318
+Single Count (MRR method):0.253
+total count:355
+note:
+PNLNP Task1 (query against truth midi)(ThinkIT data)file:result/2011/result-PNLNP-thinkit.txt
+
+
+QBSH_PNLNP_Task1c
+Single Count (Simple Score Method):0.000
+Single Count (MRR method):0.000
+total count:404
+note:
+PNLNP Task1 (query against truth midi)(IOACAS 2nd data)file:result/2011/result-PNLNP-ioacas.txt
+
+
+QBSH2_TY2_Task1a
+Single Count (Simple Score Method):0.919
+Single Count (MRR method):0.881
+total count:4431
+note:
+TY2 Task1 (query against truth midi)(Roger Jang's data)file:result/2011/result-sub01-anywhere-jang.txt
+
+
+QBSH_TY2_Task1b
+Single Count (Simple Score Method):0.899
+Single Count (MRR method):0.853
+total count:355
+note:
+TY2 Task1 (query against truth midi)(ThinkIT data)file:result/2011/result-sub01-anywhere-thinkit.txt
+
+
+QBSH3_TY2_Task2
+Multi Count (Simple Score Method):8.744
+total count:2040
+note:
+TY2 Task2 (query against humming wav) (Roger Jang's data)file:result/2011/result-task2-anywhere.txt
+
+
+QBSH_TY2_Task1c
+Single Count (Simple Score Method):0.416
+Single Count (MRR method):0.287
+total count:404
+note:
+TY2 Task1 (query against truth midi)(IOACAS 2nd data)file:result/2011/result-sub01-anywhere-ioacas.txt
+
+
+QBSH2_TY1_Task1a
+Single Count (Simple Score Method):0.956
+Single Count (MRR method):0.930
+total count:4431
+note:
+TY1 Task1 (query against truth midi)(Roger Jang's data)file:result/2011/result-sub01-beginning-jang.txt
+
+
+QBSH_TY1_Task1b
+Single Count (Simple Score Method):0.456
+Single Count (MRR method):0.437
+total count:355
+note:
+TY1 Task1 (query against truth midi)(ThinkIT data)file:result/2011/result-sub01-beginning-thinkit.txt
+
+
+QBSH3_TY1_Task2
+Multi Count (Simple Score Method):8.744
+total count:2040
+note:
+TY1 Task2 (query against humming wav) (Roger Jang's data)file:result/2011/result-task2-begining.txt
+
+
+QBSH_TY1_Task1c
+Single Count (Simple Score Method):0.297
+Single Count (MRR method):0.232
+total count:404
+note:
+TY1 Task1 (query against truth midi)(IOACAS 2nd data)file:result/2011/result-sub01-beginning-ioacas.txt
+
+

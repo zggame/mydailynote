@@ -1,0 +1,12 @@
+result/qbsh/HAFR/result.ThinkIT.stript01.txt   		||QBSH	||HAFR||Task1b||result/qbsh/ThinkItQuery.list||result/qbsh/ThinkItGt.list|| HAFR Task1 (query against truth midi)(ThinkIT data)  ||fileKey||result/qbsh/ThinkItQuery.list
+result/qbsh/HAFR/result.MIR.task1.txt 		||QBSH2	||HAFR||Task1a||result/qbsh/MirQuery.list||48|| HAFR Task1 (query against truth midi)(Roger Jang's data)	|| simplekey
+result/qbsh/HAFR/result.MIR.task2.txt		||QBSH3	||HAFR||Task2||result/qbsh/MirTask2Query.list||48|| HAFR Task2 (query against humming wav) (Roger Jang's data)	|| simplekey2
+result/qbsh/HAFR/result.Ioacas2.task1.txt   		||QBSH	||HAFR||Task1c||result/qbsh/Ioacas2Query.list||result/qbsh/Ioacas2Gt.list|| HAFR Task1 (query against truth midi)(IOACAS 2nd data)  ||fileKey||result/qbsh/Ioacas2Query.list
+result/qbsh/CSJ/result.ThinkIT.task1.beginning.stript01.txt   		||QBSH	||CSJ||Task1b||result/qbsh/ThinkItQuery.list||result/qbsh/ThinkItGt.list|| HAFR Task1 (query against truth midi)(ThinkIT data)  ||fileKey||result/qbsh/ThinkItQuery.list
+result/qbsh/CSJ/result.MIR.task1.txt 		||QBSH2	||CSJ||Task1a||result/qbsh/MirQuery.list||48|| HAFR Task1 (query against truth midi)(Roger Jang's data)	|| simplekey
+result/qbsh/CSJ/outputSubtask02.beginning.txt		||QBSH3	||CSJ||Task2||result/qbsh/MirTask2Query.list||48|| HAFR Task2 (query against humming wav) (Roger Jang's data)	|| simplekey2
+result/qbsh/CSJ/result.Ioacas.task1.begining.txt   		||QBSH	||CSJ||Task1c||result/qbsh/Ioacas2Query.list||result/qbsh/Ioacas2Gt.list|| HAFR Task1 (query against truth midi)(IOACAS 2nd data)  ||fileKey||result/qbsh/Ioacas2Query.list
+result/qbsh/CSJ/result.ThinkIT.task1.anywhere.stript01.txt   		||QBSH	||CSJ2||Task1b||result/qbsh/ThinkItQuery.list||result/qbsh/ThinkItGt.list|| HAFR Task1 (query against truth midi)(ThinkIT data)  ||fileKey||result/qbsh/ThinkItQuery.list
+result/qbsh/CSJ/result.MIR.task1.anywhere.txt 		||QBSH2	||CSJ2||Task1a||result/qbsh/MirQuery.list||48|| HAFR Task1 (query against truth midi)(Roger Jang's data)	|| simplekey
+result/qbsh/CSJ/outputSubtask02.anywhere.txt		||QBSH3	||CSJ2||Task2||result/qbsh/MirTask2Query.list||48|| HAFR Task2 (query against humming wav) (Roger Jang's data)	|| simplekey2
+result/qbsh/CSJ/result.Ioacas.task1.anywhere.txt   		||QBSH	||CSJ2||Task1c||result/qbsh/Ioacas2Query.list||result/qbsh/Ioacas2Gt.list|| HAFR Task1 (query against truth midi)(IOACAS 2nd data)  ||fileKey||result/qbsh/Ioacas2Query.list

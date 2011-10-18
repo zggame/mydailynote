@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+<bean id="mrrScore" class="org.imirsel.mirex.eval.MrrScore"/>
+<bean id="simpleScore" class="org.imirsel.mirex.eval.SimpleScore"/>
+<bean id="fileKey" class="org.imirsel.mirex.eval.FileKey"/>
+<bean id="fileKey2" class="org.imirsel.mirex.eval.FileKey2"/>
+
+<bean id="simpleKey" class="org.imirsel.mirex.eval.SimpleKey"/>
+<bean id="simpleKey2" class="org.imirsel.mirex.eval.SimpleKey2"/>
+
+<bean id="simpleSingleCountLineMethod" class="org.imirsel.mirex.eval.SingleCountLineMethod" p:scoreMethod-ref="simpleScore"/>
+<bean id="mrrSingleCountLineMethod" class="org.imirsel.mirex.eval.SingleCountLineMethod" p:scoreMethod-ref="mrrScore"/>
+<bean id="multiCountLineMethod" class="org.imirsel.mirex.eval.MultiCountLineMethod" p:scoreMethod-ref="simpleScore"/>
+
+<bean id="qbtEval" class="org.imirsel.mirex.eval.MyEvalFile" p:keys-ref="fileKey" p:lineMethods-ref="twoMethod"/>
+<bean id="qbt2Eval" class="org.imirsel.mirex.eval.MyEvalFile" p:keys-ref="fileKey2" p:lineMethods-ref="twoMethod"/>
+<bean id="qbshEval" class="org.imirsel.mirex.eval.MyEvalFile" p:keys-ref="fileKey" p:lineMethods-ref="twoMethod"/>
+<bean id="qbsh2Eval" class="org.imirsel.mirex.eval.MyEvalFile2" p:keys-ref="simpleKey" p:lineMethods-ref="twoMethod"/>
+<bean id="qbsh3Eval" class="org.imirsel.mirex.eval.MyEvalFile" p:keys-ref="simpleKey2" p:lineMethods-ref="multiMethod"/>
+
+
+
+<util:list id="twoMethod">
+<ref bean="simpleSingleCountLineMethod"/>
+<ref bean="mrrSingleCountLineMethod"/>
+</util:list>
+<util:list id="multiMethod">
+<ref bean="multiCountLineMethod"/>
+</util:list>
+
+</beans>

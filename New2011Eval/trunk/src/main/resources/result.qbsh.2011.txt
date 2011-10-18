@@ -1,0 +1,15 @@
+result/2011/result-JSSLP1-jang.txt 		||QBSH2	||JSSLP1||Task1a||key/MirQuery.list||48|| JSSLP1 Task1 (query against truth midi)(Roger Jang's data)	|| simplekey
+result/2011/result-JSSLP1-thinkit.txt   		||QBSH	||JSSLP1||Task1b||key/ThinkITqueryRenamed.list||key/ThinkITmidiRenamed.list|| JSSLP1 Task1 (query against truth midi)(ThinkIT data)  ||fileKey||key/ThinkITQueryRenamed.list
+result/2011/result-JSSLP1-task2.txt 		||QBSH3	||JSSLP1||Task2||key/task2.query.list||48|| JSSLP1 Task2 (query against humming wav) (Roger Jang's data)	|| simplekey2
+result/2011/result-JSSLP1-ioacas.txt		||QBSH	||JSSLP1||Task1c||key/IOACASquery.list||key/IOACASmidi.list|| JSSLP1 Task1 (query against truth midi)(IOACAS 2nd data)  ||fileKey||key/IOACASquery.list
+result/2011/result-PNLNP-jang.txt 		||QBSH2	||PNLNP||Task1a||key/MirQuery.list||48|| PNLNP Task1 (query against truth midi)(Roger Jang's data)	|| simplekey
+result/2011/result-PNLNP-thinkit.txt   		||QBSH	||PNLNP||Task1b||key/ThinkITqueryRenamed.list||key/ThinkITmidiRenamed.list|| PNLNP Task1 (query against truth midi)(ThinkIT data)  ||fileKey||key/ThinkITQueryRenamed.list
+result/2011/result-PNLNP-ioacas.txt		||QBSH	||PNLNP||Task1c||key/IOACASquery.list||key/IOACASmidi.list|| PNLNP Task1 (query against truth midi)(IOACAS 2nd data)  ||fileKey||key/IOACASquery.list
+result/2011/result-sub01-anywhere-jang.txt 		||QBSH2	||TY2||Task1a||key/MirQuery.list||48|| TY2 Task1 (query against truth midi)(Roger Jang's data)	|| simplekey
+result/2011/result-sub01-anywhere-thinkit.txt   		||QBSH	||TY2||Task1b||key/ThinkITqueryRenamed.list||key/ThinkITmidiRenamed.list|| TY2 Task1 (query against truth midi)(ThinkIT data)  ||fileKey||key/ThinkITQueryRenamed.list
+result/2011/result-task2-anywhere.txt 		||QBSH3	||TY2||Task2||key/task2.query.list||48|| TY2 Task2 (query against humming wav) (Roger Jang's data)	|| simplekey2
+result/2011/result-sub01-anywhere-ioacas.txt		||QBSH	||TY2||Task1c||key/IOACASquery.list||key/IOACASmidi.list|| TY2 Task1 (query against truth midi)(IOACAS 2nd data)  ||fileKey||key/IOACASquery.list
+result/2011/result-sub01-beginning-jang.txt 		||QBSH2	||TY1||Task1a||key/MirQuery.list||48|| TY1 Task1 (query against truth midi)(Roger Jang's data)	|| simplekey
+result/2011/result-sub01-beginning-thinkit.txt   		||QBSH	||TY1||Task1b||key/ThinkITqueryRenamed.list||key/ThinkITmidiRenamed.list|| TY1 Task1 (query against truth midi)(ThinkIT data)  ||fileKey||key/ThinkITQueryRenamed.list
+result/2011/result-task2-begining.txt 		||QBSH3	||TY1||Task2||key/task2.query.list||48|| TY1 Task2 (query against humming wav) (Roger Jang's data)	|| simplekey2
+result/2011/result-sub01-beginning-ioacas.txt		||QBSH	||TY1||Task1c||key/IOACASquery.list||key/IOACASmidi.list|| TY1 Task1 (query against truth midi)(IOACAS 2nd data)  ||fileKey||key/IOACASquery.list

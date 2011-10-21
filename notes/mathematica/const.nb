@@ -1,0 +1,221 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      5518,        211]
+NotebookOptionsPosition[      4320,        163]
+NotebookOutlinePosition[      4674,        179]
+CellTagsIndexPosition[      4631,        176]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"n", "=", 
+   RowBox[{"10", "^", "18"}]}], ";", 
+  RowBox[{"kF", "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"6", "Pi", " ", "n"}], ")"}], "^", 
+    RowBox[{"(", 
+     RowBox[{"1", "/", "3"}], ")"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.52743434608484*^9, 3.527434367853147*^9}}],
+
+Cell[BoxData[
+ RowBox[{"1000000", " ", 
+  SuperscriptBox[
+   RowBox[{"(", 
+    RowBox[{"6", " ", "\[Pi]"}], ")"}], 
+   RowBox[{"1", "/", "3"}]]}]], "Output",
+ CellChangeTimes->{3.527434368490569*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", "kF", "]"}]], "Input",
+ CellChangeTimes->{{3.527434370855855*^9, 3.527434375004784*^9}}],
+
+Cell[BoxData["2.6613400789829376`*^6"], "Output",
+ CellChangeTimes->{3.527434375728137*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"mp", "=", 
+   RowBox[{"1.67", "*", 
+    RowBox[{"10", "^", 
+     RowBox[{"(", 
+      RowBox[{"-", "27"}], ")"}]}]}]}], ";", 
+  RowBox[{"hbar", "=", 
+   RowBox[{"1.05", "*", 
+    RowBox[{"10", "^", 
+     RowBox[{"(", 
+      RowBox[{"-", "34"}], ")"}]}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.527434543735938*^9, 3.5274345885300694`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EfLi6", "=", 
+  RowBox[{
+   RowBox[{"hbar", "^", "2"}], "*", 
+   RowBox[{
+    RowBox[{"kF", "^", "2"}], "/", 
+    RowBox[{"(", 
+     RowBox[{"2", 
+      RowBox[{"(", 
+       RowBox[{"mp", "*", "6"}], ")"}]}], ")"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.527434592095355*^9, 3.527434638578515*^9}, {
+  3.527435216360132*^9, 3.527435216735467*^9}}],
+
+Cell[BoxData["3.896562347874753`*^-30"], "Output",
+ CellChangeTimes->{{3.527434613382938*^9, 3.527434639302652*^9}, 
+   3.52743521777948*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ev", "=", 
+   RowBox[{"1.6", "*", 
+    RowBox[{"10", "^", 
+     RowBox[{"(", 
+      RowBox[{"-", "19"}], ")"}]}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.527434890564534*^9, 3.527434898375073*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EfLi6", "/", "ev"}]], "Input",
+ CellChangeTimes->{{3.527434900954402*^9, 3.527434907342854*^9}}],
+
+Cell[BoxData["2.4353514674217202`*^-11"], "Output",
+ CellChangeTimes->{3.5274349077985163`*^9, 3.527435274411565*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Kb", "=", 
+   RowBox[{"1.38", "*", 
+    RowBox[{"10", "^", 
+     RowBox[{"(", 
+      RowBox[{"-", "23"}], ")"}]}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.5274349543636427`*^9, 3.5274349829045343`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EfLi6", "/", "Kb"}]], "Input",
+ CellChangeTimes->{{3.527434985896658*^9, 3.527434993104549*^9}}],
+
+Cell[BoxData["2.8235959042570673`*^-7"], "Output",
+ CellChangeTimes->{3.527434993637591*^9, 3.527435670681809*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EfLi6", "/", 
+  RowBox[{"(", 
+   RowBox[{"hbar", "*", "2", "Pi"}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.527435158777356*^9, 3.5274351780941887`*^9}}],
+
+Cell[BoxData["5906.258654571698`"], "Output",
+ CellChangeTimes->{3.527435178595438*^9, 3.5274353036187677`*^9, 
+  3.5274356548513193`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[Mu]B", "=", 
+  RowBox[{"927", "*", 
+   RowBox[{"10", "^", 
+    RowBox[{"(", 
+     RowBox[{"-", "26"}], ")"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.527435373427565*^9, 3.527435389538398*^9}}],
+
+Cell[BoxData[
+ FractionBox["927", "100000000000000000000000000"]], "Output",
+ CellChangeTimes->{3.527435390559112*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EfLi6", "/", "\[Mu]B"}]], "Input",
+ CellChangeTimes->{{3.5274353952284603`*^9, 3.527435415744733*^9}}],
+
+Cell[BoxData["4.2034113785056673`*^-7"], "Output",
+ CellChangeTimes->{3.5274354162982197`*^9}]
+}, Open  ]]
+},
+WindowSize->{740, 867},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 6, \
+2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 319, 10, 27, "Input"],
+Cell[901, 34, 199, 6, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1137, 45, 121, 2, 27, "Input"],
+Cell[1261, 49, 91, 1, 30, "Output"]
+}, Open  ]],
+Cell[1367, 53, 376, 12, 27, "Input"],
+Cell[CellGroupData[{
+Cell[1768, 69, 370, 11, 27, "Input"],
+Cell[2141, 82, 141, 2, 30, "Output"]
+}, Open  ]],
+Cell[2297, 87, 235, 7, 27, "Input"],
+Cell[CellGroupData[{
+Cell[2557, 98, 120, 2, 27, "Input"],
+Cell[2680, 102, 117, 1, 30, "Output"]
+}, Open  ]],
+Cell[2812, 106, 240, 7, 27, "Input"],
+Cell[CellGroupData[{
+Cell[3077, 117, 120, 2, 27, "Input"],
+Cell[3200, 121, 114, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3351, 127, 177, 4, 27, "Input"],
+Cell[3531, 133, 138, 2, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3706, 140, 217, 6, 27, "Input"],
+Cell[3926, 148, 118, 2, 47, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4081, 155, 126, 2, 27, "Input"],
+Cell[4210, 159, 94, 1, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -500,6 +500,10 @@ Here the last step use the zero energy value of the free pair Green's function $
 	-\frac{\lambda_{2}}{\Delta_{1}}
 \end{equation}
 Note that $\tilde{a}_{s}(\mu,\lambda_{1})$ corresponds to the two-body s-wave scattering length at detuning shifted by $2\mu+\lambda_{1}$.
+\begin{equation}
+{a}_{s}=a_{\text{bg}}(1+\frac{\mathcal{K}}{\delta-2\mu-\lambda_{1}})
+\end{equation}
+
 Now we can expand the first term in the parentheses to the first order of $\zeta$, using Eq. \ref{eq:pathInt2:xiExpand}. Keeping in mind $E_{\vk}\ll{\eta}$ at low momentum where summation is about, we have\footnote{Here we used $u_{\vk}^{2}-v_{\vk}^{2}=\frac{\xi_{\vk}}{E_{\vk}}$}
 \begin{equation}\label{eq:pathInt2:gapRenorm}
 1=-\mbr{\frac{4\pi{\tilde{a}_{s}(\mu,\lambda_{1})}}{m}\sum(\nth{2E_{\vk}}-\nth{2\epsilon_{\vk}}-\frac{\Delta_{2}^{2}\xi_{\vk}}{4(\xi_{\vk}+\eta){E_{\vk}^{3}}})}
@@ -517,6 +521,26 @@ Item \ref{item:pathInt2:mu} corresponds to the many-body effect  common to both 
 \begin{unsure}
 In a many-body system, most of the properties is obtained when considering what happens at the next extra particle or particle pair. In a two-body system,  we can pretend that the vacuum is the initial state and the next particle pair comes in from energy zero.  In a many-body system, this starting point is no longer the absolutely zero, but the chemical potential.  Excitations are counted from the chemical potential, $\mu$.  The energy detuning in Feshbach resonance is no exception.  In a many-body formula, the detuning is shifted by $2\mu$ (for a pair).  In the broad resonance, the Fermi energy is smaller comparing to the detuning during the relevant probing region.  Consequently, this shift is negligible.  In the narrow resonance, the Fermi energy is substantial and a detuning of the chemical potential needs to be taken into account.  At the BCS side, $\mu$ is positive and close to the Fermi energy. This shifting just confirms the fact that most interesting phenomenon in a fermion system happens around Fermi surface instead of absolute zero.  With an extra positive shift $\mu$, detuning is reduced; therefore the crossover region is actually reached earlier (i.e. by larger detuning) than in two-body cases.  On the other hand, moving toward to the resonance point and BEC side, chemical potential becomes smaller and finally flips sign to negative. Accordingly, the detuning is reduced lesser and lesser;  finally it is enhanced.  The Feshbach resonance in many-body cases is skewed toward BCS (positive detuning) side from two-body cases.  Interestingly, the crossing point, $\mu=0$, is not shifted from a model with simple  s-wave scattering length directly from two-body physics if only considering this shift alone.  This effect is also  studied extensively by \cite{GurarieNarrow}(Sec. 6.2). 
 \end{unsure}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{simpleNarrowMuDt}
+\caption{The chemical potential $\mu$ and gap $\Delta$  over crossover with the Feshbach resonance of different $\delta_{c}$} 
+\label{fig:pathInt2:simpleNarrowMuDt}
+\parbox{0.8\textwidth}{\small  Here $E_{0}=a_{\text{bg}}\mathcal{K}k_{F}$ }
+\end{center}
+\end{figure}
+
+If only taking this effect into consideration, the gap equation and the (open-channel) number equation are simplified to 
+\begin{gather}
+1=-\mbr{\frac{4\pi{\tilde{a}_{s}(\mu,\lambda_{1})}}{m}\sum(\nth{2E_{\vk}}-\nth{2\epsilon_{\vk}})}\\
+N=\sum_\vk\frac{E_\vk-\xi_\vk}{2E_\vk}\\
+\tilde{a}_{s}=a_{\text{bg}}(1+\frac{\mathcal{K}}{\delta-2\mu})\approx{}\frac{a_{\text{bg}}\mathcal{K}}{\delta-2\mu}\label{eq:pathInt2:simplenarrowAs}
+\end{gather}
+In the last equation, we assume $a_{\text{bg}}\ll{}a_{0}$ and we only study situation close to resonance, where $\mathcal{K}\gg{}\delta \,\text{or}\,\mu$.  From the two-body analysis of the Feshbach resonance, we know the numerator in the Eq. \ref{eq:pathInt2:simplenarrowAs} is closely related to the characteristic scale $\delta_{c}$ in Eq. \ref{eq:intro:deltaC}
+\begin{equation}\tag{\ref{eq:intro:deltaC}}
+\delta_{c}\equiv\frac{\mathcal{K}^{2}}{\hbar^{2}/m_{r}a_{bg}^{2}}=\frac{(\mathcal{K}a_{\text{bg}})^{2}}{\hbar^{2}/m_{r}}
+\end{equation}
+In Fig. \ref{fig:pathInt2:simpleNarrowMuDt}, $\delta_{c}={E_{0}^{2}}/{E_{F}}$, we see the two lines correspond to $\delta_{c}=10E_{F}$ and $100E_{F}$.
 
 
 The next three corrections are unique for three-species problem where the inter-channel Pauli exclusion cannot be neglected.  
@@ -712,10 +736,10 @@ For the first order, $\tr(\hat{G_{0}}\hat{K})$,
 \end{align}
 Here we use the fact $\nth{{\beta{}V}}\sum_{k}\tr(\hat{G}_{0\,k}\sigma_3)=n$. $\tr(\hat{G_{0}}\hat{K_2})$ is already in the second order of $\theta$, and we only need to keep the expansion of $K_2$ to this order. On the other hand, we have to go to the second order of $K_1$ for the second order of $\theta$. 
 \begin{align}		
-\tr(\hat{G_{0}}{K_1}\hat{G_{0}}{K_1})=&\sum_{k,q}\tr(\hat{G}_{0,k+q}K_{1\,k+q,k}\hat{G}_{0\,k}K_{1\,k,k+q})\\
+\tr(\hat{G_{0}}{K_1}\hat{G_{0}}{K_1})=&\sum_{k,q}\tr(\hat{G}_{0,k+q}K_{1\,k+q,k}\hat{G}_{0\,k}K_{1\,k,k+q})\label{eq:pathInt2:GKGK}\\
 =&\nth{{\beta{}V}}\sum_{k,q}\theta(q)\theta(-q)\Big[(-\omega_m^2)\tr(\hat{G}_{0,k+q}\sigma_3\hat{G}_{0\,k}\sigma_3)\nonumber\\
-&\quad+\nth{m^2}\sum_{i,j}q_iq_j(k_i+\frac{q_i}{2})(k_j+\frac{q_j}{2})\tr(\hat{G}_{0,k+q}\hat{G}_{0\,k})\Big]\nonumber\\
-\equiv&\sum_{q}\theta(q)\theta(-q)\big[-\pi^{(0)}(q)\omega_m^2+\sum_{ij}\pi^{(\perp)}_{ij}(q)q_iq_j\big]
+&\quad+\nth{m^2}\sum_{i,j}q_iq_j(k_i+\frac{q_i}{2})(k_j+\frac{q_j}{2})\tr(\hat{G}_{0,k+q}\hat{G}_{0\,k})\Big]\label{eq:pathInt2:GKGK2}\\
+\equiv&\sum_{q}\theta(q)\theta(-q)\big[-\pi^{(0)}(q)\omega_m^2+\sum_{ij}\pi^{(\perp)}_{ij}(q)q_iq_j\big]\label{eq:pathInt2:pi}
 \end{align}
 \emph{Here we only interested in the low-energy behavior of the mode and therefore we only use $\pi^{(0)}(0)$ and $\pi^{(\perp)}(0)$.} Use the previous result of Sec. \ref{sec:diagonalGreen}, we can calculate the Green's function in the lowest and first order of $\zeta$ in $\pi$'s.  After some long but straightforward algebra (see Appendix. \ref{sec:calculatePi}), we find
 \begin{gather}
@@ -813,15 +837,15 @@ S_{3}[\theta]=\int{dx}-4Y\htd_{1}^{*}\htd_{2}\theta^{2}=\sum_{q}\theta({q})\thet
 \end{equation}
 $Y\htd_{1}^{*}\htd_{2}$ is actually the expectation of coupling for the two channel correlation.  It is not hard to see that this value  is negative in the minimum (saddle point).  
 
-The other two terms in the expansion of the action, $S_{1}$ and $S_{2}$ goes in the same way as the in-phase phase fluctuation.  They actually produce the same result except only half of the particles $(b,c)$ participates. ($n_{b}+n_{c}=n_{a}=n/2$)   The full action about $\theta$ is 
-\begin{equation}
-S[\theta]=\int{dx}\sum_{q}\theta(q)\theta(-q)\big[\nth{4}\pi^{(0)}(0)(\omega_m^2-(2\omega_{0})^{2})-\frac{n}{4m}q^2\big]
+The other two terms in the expansion of the action, $S_{1}$ and $S_{2}$ goes in the same way as the in-phase phase fluctuation except an extra  $\nth{2}$ because only hyperfine species ($b$ or $c$) participates .  They actually produce the same result except only half of the particles $(b,c)$ participates. ($n_{b}+n_{c}=n_{a}=n/2$)   The full action about $\theta$ is 
+\begin{equation}\label{eq:pathInt2:outofphase}
+S[\theta]=\int{dx}\sum_{q}\theta(q)\theta(-q)\big[\nth{4}\pi^{(0)}(0)(\omega_m^2-\omega_{0}^{2})-\frac{n}{4m}q^2\big]
 \end{equation}
 where
 \begin{equation}
-\omega_{0}^{2}=-\frac{4Y\htd_{1}^{*}\htd_{2}}{\pi^{(0)}(0)}
+\omega_{0}^{2}=-\frac{16Y\htd_{1}^{*}\htd_{2}}{\pi^{(0)}(0)}
 \end{equation}
-As expected, the out-of-phase phase mode is a gapped mode, with a spectrum starting from $\omega_{0}$.  At the BCS end, $Y\htd_{1}^{*}\htd_{2}$ is close the expectation of the interaction energy calculated according to the effective interaction in the open-channel.  We can estimate it as $Y\htd_{1}^{*}\htd_{2}\sim{}-N(0)\Delta_{1}^{2}$, where $N(0)$ is the density of the state at the Fermi energy.  $\pi^{(0)}(0)\sim{}N(0)$.  So we can estimate that $\omega_{0}\sim\Delta_{1}$.  This mode is inside the fermionic excitation spectrum.  At the BEC end, the interaction energy in the open-channel can be estimated roughly as $N_{\text{open}}\abs{\mu}$; $\pi^{(0)}(0)\sim{}\mathcal{V}_{0}\Delta_{1}^{2}/\abs{\mu}^{3/2}$. Note that here the open-channel total number $N_{\text{open}}$ might be significantly smaller than total number. At BEC end, $\Delta_{1}\sim{}n_{o}^{1/2}a_{s}^{-1/2}$ and $\abs{\mu}\sim{}a_{s}^{-2}$.  Put all these together, $\omega_{0}\sim{}n^{1/2}\abs{\mu}^{5/4}/\Delta_{1}\sim{}a_{s}^{-2}$. It is in the order of the ionization (pair breaking) energy again. 
+As expected, the out-of-phase phase mode is a gapped mode, with a spectrum starting from $\omega_{0}$. When two channels' phases fluctuate out-of-phase, they original self-consistent mean-field equation cannot be satisfied and this fluctuation is coupled with the fermionic modes.  Its general spectrum is expected to related to the pair-breaking energy, but Eq. \ref{eq:pathInt2:outofphase} can only be calculated numerically in general.  Particularly, $Y\htd_{1}^{*}\htd_{2}$ is hard to estimate except at the ends of crossover. At the BCS end, $Y\htd_{1}^{*}\htd_{2}$ is close the expectation of the interaction energy calculated according to the effective interaction in the open-channel.  We can estimate it as $Y\htd_{1}^{*}\htd_{2}\sim{}-N(0)\Delta_{1}^{2}$, where $N(0)$ is the density of the state at the Fermi energy.  $\pi^{(0)}(0)\sim{}N(0)$.  So we can estimate that $\omega_{0}\sim\Delta_{1}$.  This mode is inside the fermionic excitation spectrum.  At the BEC end, the interaction energy in the open-channel can be estimated roughly as $N_{\text{open}}\abs{\mu}$; $\pi^{(0)}(0)\sim{}\mathcal{V}_{0}\Delta_{1}^{2}/\abs{\mu}^{3/2}$. Note that here the open-channel total number $N_{\text{open}}$ might be significantly smaller than total number. At BEC end, $\Delta_{1}\sim{}n_{o}^{1/2}a_{s}^{-1/2}$ and $\abs{\mu}\sim{}a_{s}^{-2}$.  Put all these together, $\omega_{0}\sim{}n^{1/2}\abs{\mu}^{5/4}/\Delta_{1}\sim{}a_{s}^{-2}$. It is in the order of the ionization (pair breaking) energy again and is only related to two-body physics.   
 %\begin{subappendices}
 %\include{pathAppendix}
 %\end{subappendices}

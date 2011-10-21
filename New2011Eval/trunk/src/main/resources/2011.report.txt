@@ -1,43 +1,43 @@
 #####################################################
 output/2011/task1aMRR.csv
-JSSLP1||PNLNP||TY1||TY2
+JSSLP1||PLNLP||TY1||TY2
 output/2011/QBSH2_JSSLP1_Task1a_group_Single Count (MRR method).txt
-output/2011/QBSH2_PNLNP_Task1a_group_Single Count (MRR method).txt
+output/2011/QBSH2_PLNLP_Task1a_group_Single Count (MRR method).txt
 output/2011/QBSH2_TY1_Task1a_group_Single Count (MRR method).txt
 output/2011/QBSH2_TY2_Task1a_group_Single Count (MRR method).txt
 #####################################################
 output/2011/task1aSSM.csv
-JSSLP1||PNLNP||TY1||TY2
+JSSLP1||PLNLP||TY1||TY2
 output/2011/QBSH2_JSSLP1_Task1a_group_Single Count (Simple Score Method).txt
-output/2011/QBSH2_PNLNP_Task1a_group_Single Count (Simple Score Method).txt
+output/2011/QBSH2_PLNLP_Task1a_group_Single Count (Simple Score Method).txt
 output/2011/QBSH2_TY1_Task1a_group_Single Count (Simple Score Method).txt
 output/2011/QBSH2_TY2_Task1a_group_Single Count (Simple Score Method).txt
 #####################################################
 output/2011/task1bMRR.csv
-JSSLP1||PNLNP||TY1||TY2
+JSSLP1||PLNLP||TY1||TY2
 output/2011/QBSH_JSSLP1_Task1b_group_Single Count (MRR method).txt
-output/2011/QBSH_PNLNP_Task1b_group_Single Count (MRR method).txt
+output/2011/QBSH_PLNLP_Task1b_group_Single Count (MRR method).txt
 output/2011/QBSH_TY1_Task1b_group_Single Count (MRR method).txt
 output/2011/QBSH_TY2_Task1b_group_Single Count (MRR method).txt
 #####################################################
 output/2011/task1bSSM.csv
-JSSLP1||PNLNP||TY1||TY2
+JSSLP1||PLNLP||TY1||TY2
 output/2011/QBSH_JSSLP1_Task1b_group_Single Count (Simple Score Method).txt
-output/2011/QBSH_PNLNP_Task1b_group_Single Count (Simple Score Method).txt
+output/2011/QBSH_PLNLP_Task1b_group_Single Count (Simple Score Method).txt
 output/2011/QBSH_TY1_Task1b_group_Single Count (Simple Score Method).txt
 output/2011/QBSH_TY2_Task1b_group_Single Count (Simple Score Method).txt
 #####################################################
 output/2011/task1cMRR.csv
-JSSLP1||PNLNP||TY1||TY2
+JSSLP1||PLNLP||TY1||TY2
 output/2011/QBSH_JSSLP1_Task1c_group_Single Count (MRR method).txt
-output/2011/QBSH_PNLNP_Task1c_group_Single Count (MRR method).txt
+output/2011/QBSH_PLNLP_Task1c_group_Single Count (MRR method).txt
 output/2011/QBSH_TY1_Task1c_group_Single Count (MRR method).txt
 output/2011/QBSH_TY2_Task1c_group_Single Count (MRR method).txt
 #####################################################
 output/2011/task1cSSM.csv
-JSSLP1||PNLNP||TY1||TY2
+JSSLP1||PLNLP||TY1||TY2
 output/2011/QBSH_JSSLP1_Task1c_group_Single Count (Simple Score Method).txt
-output/2011/QBSH_PNLNP_Task1c_group_Single Count (Simple Score Method).txt
+output/2011/QBSH_PLNLP_Task1c_group_Single Count (Simple Score Method).txt
 output/2011/QBSH_TY1_Task1c_group_Single Count (Simple Score Method).txt
 output/2011/QBSH_TY2_Task1c_group_Single Count (Simple Score Method).txt
 #####################################################

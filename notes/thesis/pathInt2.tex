@@ -3,7 +3,7 @@
 
 
 \newcommand{\htd}{\tilde{h}}
-\chapter{The two-channel three-species many-body model\label{ch:path2}}
+\chapter{The two-channel three-species many-body model, the mean field\label{ch:path2}}
 
 
 For the narrow Feshbach resonance, atoms have considerable weight in the closed-channel and the Pauli exclusion between two channels cannot be neglected.  A many-body framework needs to include both channels.  Before diving into the detailed calculation, let us make some rough estimates about scale in order to  build some intuition.  The same problem at the two-body level is well understood as briefed in Chapter. \ref{sec:intro:twobody}.  %Extended to many-body, three different types of Pauli exclusion requires to be considered: Pauli exclusion within open-channel, Pauli exclusion within closed-channel and Pauli exclusion between two channels. Let us estimate the scale of each with an artificial question.  We  calculate how much is reduced in two-body wave function by one single type of Pauli exclusion when a new pair is added.  This quality is quite unphysical without any real measurable counterpart, but it serves as a starting point to build intuition. 
@@ -22,7 +22,7 @@ h_{\vk}\sim\phi_{0\vk}f(\vk)
 In addition, the model needs to be explicitly expressed with the three hyperfine species in order to address the Pauli exclusion between two channels due to the common species.  This effect has received little  attention in theoretical research and a model as such is a useful addition to our knowledge of the BEC-BCS crossover and the Feshbach resonance.  On the other hand, as we just discussed, and will illustrate more quantitatively later, the Pauli exclusion in the closed-channel is small and can be treated perturbatively.  Consequently, it is not necessarily to carry the three species description all through the calculation as in a genuine three species fermion problem.  Description of two channels and description of three species are used in different phases of the calculation to solve the problem.  
 
 \section{The extremely narrow resonance\label{sec:pathInt2:extremelyNR}}
-Before the quantitative model, we discuss qualitatively a simple yet revealing case,   the extremely narrow resonance, where the inter-channel coupling approaches zero, $Y\rightarrow0$.  In this case, two channels are almost independent to each other except sharing the same chemical potentials.  From the two-body discussion in Chapter \ref{sec:intro:twobody} (Eqs. \ref{eq:intro:Krr}, \ref{eq:intro:kappa}, \ref{eq:intro:deltaC}), the characteristic width of the resonance $\delta_{c}$ is zero for $Y=0$, which indicates that the resonance is always narrow no matter how dilute the system is.  
+Before the quantitative model, we discuss qualitatively a simple yet revealing case,   the extremely narrow resonance, where the inter-channel coupling approaches zero, $Y\rightarrow0$.  In this case, two channels are almost independent to each other except sharing the same chemical potentials.  From the two-body discussion in Chapter \ref{sec:intro:twobody} (Eqs. \ref{eq:intro:Krr}, \ref{eq:intro:kappa}, \ref{eq:intro:deltaC}), the characteristic width of the resonance $\delta_{c}$ is zero in this case, which indicates that the resonance is always narrow no matter how dilute the system is.  
 
 
 \begin{figure}[hhtb]
@@ -34,12 +34,12 @@ Before the quantitative model, we discuss qualitatively a simple yet revealing c
 	\small{The shaded area is occupied by atoms. }
 	%\parbox{0.7\textwidth}{\small{  In Fig. \subref{fig:narrowFR:inSea} chemical potential would be close to the closed-channel bound state level (besides small shift due to the open-channel intra-channel coupling) and the ``Fermi sea'' above is empty. }}
 \end{figure}
-Here we assume that the atoms in the open-channel maintains a relative clear Fermi surface, such as the Fermi liquid or the BCS.  The many body situation is  quite straightforward. In general, three different situations exist, as Figs. \ref{fig:narrowFR:aboveSea}, \ref{fig:narrowFR:inSea} and \ref{fig:narrowFR:belowSea}.  When the closed-channel bound state level is above the Fermi sea ($E_{F}<\tilde\delta$, Fig. \ref{fig:narrowFR:aboveSea}), all atoms are in the open-channel and no atoms in the closed-channel.  Therefore, it is a genuine  single-channel problem (only open-channel) with the original bare open-channel interaction.   There is no need to considering the inter-channel Pauli exclusion.  When the closed-channel bound state level is below the Fermi sea ($\tilde\delta<0$, Fig. \ref{fig:narrowFR:belowSea}), all atoms are in the closed-channel and no atoms in the open-channel.  It is a simple di-atom molecule gas. There is no need to considering the inter-channel Pauli exclusion either.  The interesting situation is when the closed-channel bound state is in the Fermi sea  ($0<\tilde\delta<E_{F}$, Fig. \ref{fig:narrowFR:inSea}).  The Fermi sea is then filled from the bottom (zero energy) all the way to the closed-channel bound state level in the open-channel.  Then all the rest atoms go into the closed-channel.  We do need to consider the inter-channel Pauli exclusion because atoms exist in both channel.  
+Here we assume that the atoms in the open-channel maintains a relatively clear Fermi surface, like the Fermi liquid or the BCS.  The many body situation is  quite straightforward. In general, three different situations exist, as Figs. \ref{fig:narrowFR:aboveSea}, \ref{fig:narrowFR:inSea} and \ref{fig:narrowFR:belowSea}.  When the closed-channel bound state level is above the Fermi sea ($E_{F}<\tilde\delta$, Fig. \ref{fig:narrowFR:aboveSea}), all atoms are in the open-channel and no atoms in the closed-channel.  Therefore, it is a genuine  single-channel problem (only open-channel) with the original bare open-channel interaction.   There is no need to considering the inter-channel Pauli exclusion.  When the closed-channel bound state level is below the Fermi sea ($\tilde\delta<0$, Fig. \ref{fig:narrowFR:belowSea}), all atoms are in the closed-channel and no atoms in the open-channel.  It is a simple di-atom molecule gas. There is no need to considering the inter-channel Pauli exclusion either.  The interesting situation is when the closed-channel bound state is in the Fermi sea  ($0<\tilde\delta<E_{F}$, Fig. \ref{fig:narrowFR:inSea}).  The Fermi sea is then filled from the bottom (zero energy) all the way to the closed-channel bound state level in the open-channel.  Then all the rest atoms go into the closed-channel.  We do need to consider the inter-channel Pauli exclusion because atoms exist in both channel.  
 
 
 
 
-The inter-channel Pauli-exclustion effect should be in the order of the overlap of the wave functions of atoms in two would-be-independent. In the open-channel, the momentum space is filled  with occupation $1$ from the bottom up to the order $E_F$ (or $\tilde\delta$). In the closed-channel, as we discussed in the introduction, the occupation is roughly $1/E_b$ at the low momentum ($\lesssim{}E_F$), where $E_b$ is the binding energy of the closed-channel bound state.   So this effect should be roughly is equal $\nth{E_b}E_F$.
+The inter-channel Pauli-exclustion effect should be in the order of the overlap of the wave functions of atoms in two would-be-independent channels. In the open-channel, the momentum space is filled  with occupation $1$ from the bottom up to the order $E_F$ (or $\tilde\delta$). In the closed-channel, as we discussed in the introduction, the occupation is roughly $1/E_b$ at the low momentum ($\lesssim{}E_F$), where $E_b$ is the binding energy of the closed-channel bound state.   So this effect should be roughly is equal $E_F/{E_b}$.
 
 \section{Model set-up and the Hubbard-Stratonovich transformation}
 
@@ -473,8 +473,7 @@ Comparing this with the two-body problem, we can see that the detuning part (den
 \end{equation*}
 The second term has no divergence at high momentum in 3D due to the extra $v_{p'}^{2}$ factor. Actually the factor, $v_{p'}^{2}$, decreases quickly over a small range in the order of  ``gap'' $\Delta_{1\vp}$; therefore, the summation in the second term is essentially only over low-momentum, and is very small.   In addition, considering the short-range nature for $Y_{\vp\vp'}$, this term varies slowly over momentum, $\vp$.  
 
-Multiply both side with $(1+TG)$,  where $T$ is the scattering matrix for open-channel, and $G=(\omega-H_{0})^{-1}$ is the Green's function for a free pair in the open-channel
-\footnote{Here we use the relation of the scattering $T$-matrix, the free pair Green's function $G=(\omega-H_{0})^{-1}$ and the bare interaction $V=-U_{\text{eff}}$.
+Multiply both side with $(1+TG)$,  where $T$ is the scattering matrix for open-channel, and $G=(\omega-H_{0})^{-1}$ is the Green's function for a free pair in the open-channel.\footnote{Here we use the relation of the scattering $T$-matrix, the free pair Green's function $G=(\omega-H_{0})^{-1}$ and the bare interaction $V=-U_{\text{eff}}$.
 \begin{equation*}
 T=V+TGV=-(1+TG)U_{\text{eff}}
 \end{equation*}
@@ -488,7 +487,16 @@ T=V+TGV=-(1+TG)U_{\text{eff}}
 \end{equation}
 
 In principle, $\lambda_{2\vp}$ depends on momentum, however, like $\Delta_{1\vp}$, it is approximately constant at low momentum.
-We are only interested in the low momentum/frequency properties as the system is cold, dilute and governed by only short-range interactions. The scattering matrix $T$ is approximately its s-wave zero-energy value ${4\pi{\tilde{a}_{s}(\mu,\lambda_{1})}}/{m}$ although $\tilde{a}_{s}(\mu,\lambda_{1})$ is the s-wave scattering length of the shifted (by $2\mu+\lambda_{1}$) detuning; the Green's function is simply $1/2\epsilon_{\vk}$ at zero energy.   Similarly,   $\Delta_{1\vp}$ and $\lambda_{2\vp}$ is approximately a constant at low momentum.  We drop the subscript $\vp$ of them, and pull $\Delta_{1}$ out of summation. 
+We are only interested in the low momentum/frequency properties as the system is cold, dilute and governed by only short-range interactions. The scattering matrix $T$ is approximately its s-wave zero-energy value ${4\pi{\tilde{a}_{s}(\mu,\lambda_{1})}}/{m}$ although $\tilde{a}_{s}(\mu,\lambda_{1})$ is the s-wave scattering length of the shifted (by $2\mu+\lambda_{1}$) detuning. The s-wave scattering length, $a_s$, in the two-body problem without many-body shift $2\mu+\lambda_{1}$ is simply Eq. \ref{eq:intro:asK}.  
+\begin{equation}\tag{\ref{eq:intro:asK}}
+a_{s}(\delta)=a_{bg}\br{1+\frac{\mathcal{K}}{\delta}}
+\end{equation}
+Here in the many-body context with the extra detuning $2\mu+\lambda_{1}$ is 
+\begin{equation}
+{a}_{s}=a_{\text{bg}}(1+\frac{\mathcal{K}}{\delta-2\mu-\lambda_{1}})
+\end{equation}
+where $\mathcal{K}$ is introduced in Eq. \ref{eq:intro:kappa} of Chapter \ref{sec:intro:twobody}. 
+The Green's function is simply $1/2\epsilon_{\vk}$ at zero energy.   Similarly,   $\Delta_{1\vp}$ and $\lambda_{2\vp}$ is approximately a constant at low momentum.  We drop the subscript $\vp$ of them, and pull $\Delta_{1}$ out of summation. 
 \begin{equation}
 \Delta_{1}=-T\sum(h_{1}+G\Delta_{1})-\lambda_{2}
 =-\frac{4\pi{\tilde{a}_{s}(\mu,\lambda_{1})}}{m}\Delta_{1}\sum{}(\frac{E_{1\,\vk}+\xi_{\vk}+\eta}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}-\nth{2\epsilon_{\vk}})
@@ -500,9 +508,7 @@ Here the last step use the zero energy value of the free pair Green's function $
 	-\frac{\lambda_{2}}{\Delta_{1}}
 \end{equation}
 Note that $\tilde{a}_{s}(\mu,\lambda_{1})$ corresponds to the two-body s-wave scattering length at detuning shifted by $2\mu+\lambda_{1}$.
-\begin{equation}
-{a}_{s}=a_{\text{bg}}(1+\frac{\mathcal{K}}{\delta-2\mu-\lambda_{1}})
-\end{equation}
+
 
 Now we can expand the first term in the parentheses to the first order of $\zeta$, using Eq. \ref{eq:pathInt2:xiExpand}. Keeping in mind $E_{\vk}\ll{\eta}$ at low momentum where summation is about, we have\footnote{Here we used $u_{\vk}^{2}-v_{\vk}^{2}=\frac{\xi_{\vk}}{E_{\vk}}$}
 \begin{equation}\label{eq:pathInt2:gapRenorm}
@@ -520,27 +526,7 @@ In summary, there are several difference of gap equation here comparing to singl
 Item \ref{item:pathInt2:mu} corresponds to the many-body effect  common to both three and four species problem.
 \begin{unsure}
 In a many-body system, most of the properties is obtained when considering what happens at the next extra particle or particle pair. In a two-body system,  we can pretend that the vacuum is the initial state and the next particle pair comes in from energy zero.  In a many-body system, this starting point is no longer the absolutely zero, but the chemical potential.  Excitations are counted from the chemical potential, $\mu$.  The energy detuning in Feshbach resonance is no exception.  In a many-body formula, the detuning is shifted by $2\mu$ (for a pair).  In the broad resonance, the Fermi energy is smaller comparing to the detuning during the relevant probing region.  Consequently, this shift is negligible.  In the narrow resonance, the Fermi energy is substantial and a detuning of the chemical potential needs to be taken into account.  At the BCS side, $\mu$ is positive and close to the Fermi energy. This shifting just confirms the fact that most interesting phenomenon in a fermion system happens around Fermi surface instead of absolute zero.  With an extra positive shift $\mu$, detuning is reduced; therefore the crossover region is actually reached earlier (i.e. by larger detuning) than in two-body cases.  On the other hand, moving toward to the resonance point and BEC side, chemical potential becomes smaller and finally flips sign to negative. Accordingly, the detuning is reduced lesser and lesser;  finally it is enhanced.  The Feshbach resonance in many-body cases is skewed toward BCS (positive detuning) side from two-body cases.  Interestingly, the crossing point, $\mu=0$, is not shifted from a model with simple  s-wave scattering length directly from two-body physics if only considering this shift alone.  This effect is also  studied extensively by \cite{GurarieNarrow}(Sec. 6.2). 
-\end{unsure}
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[width=0.8\textwidth]{simpleNarrowMuDt}
-\caption{The chemical potential $\mu$ and gap $\Delta$  over crossover with the Feshbach resonance of different $\delta_{c}$} 
-\label{fig:pathInt2:simpleNarrowMuDt}
-\parbox{0.8\textwidth}{\small  Here $E_{0}=a_{\text{bg}}\mathcal{K}k_{F}$ }
-\end{center}
-\end{figure}
 
-If only taking this effect into consideration, the gap equation and the (open-channel) number equation are simplified to 
-\begin{gather}
-1=-\mbr{\frac{4\pi{\tilde{a}_{s}(\mu,\lambda_{1})}}{m}\sum(\nth{2E_{\vk}}-\nth{2\epsilon_{\vk}})}\\
-N=\sum_\vk\frac{E_\vk-\xi_\vk}{2E_\vk}\\
-\tilde{a}_{s}=a_{\text{bg}}(1+\frac{\mathcal{K}}{\delta-2\mu})\approx{}\frac{a_{\text{bg}}\mathcal{K}}{\delta-2\mu}\label{eq:pathInt2:simplenarrowAs}
-\end{gather}
-In the last equation, we assume $a_{\text{bg}}\ll{}a_{0}$ and we only study situation close to resonance, where $\mathcal{K}\gg{}\delta \,\text{or}\,\mu$.  From the two-body analysis of the Feshbach resonance, we know the numerator in the Eq. \ref{eq:pathInt2:simplenarrowAs} is closely related to the characteristic scale $\delta_{c}$ in Eq. \ref{eq:intro:deltaC}
-\begin{equation}\tag{\ref{eq:intro:deltaC}}
-\delta_{c}\equiv\frac{\mathcal{K}^{2}}{\hbar^{2}/m_{r}a_{bg}^{2}}=\frac{(\mathcal{K}a_{\text{bg}})^{2}}{\hbar^{2}/m_{r}}
-\end{equation}
-In Fig. \ref{fig:pathInt2:simpleNarrowMuDt}, $\delta_{c}={E_{0}^{2}}/{E_{F}}$, we see the two lines correspond to $\delta_{c}=10E_{F}$ and $100E_{F}$.
 
 
 The next three corrections are unique for three-species problem where the inter-channel Pauli exclusion cannot be neglected.  
@@ -630,8 +616,51 @@ N_{\text{open}}\approx&\sum_\vk\mbr{\frac{E_\vk-\xi_\vk}{2E_\vk}+\frac{\gamma_{1
 All terms behave well  in 3D and do not need any renormalization.   It is like the number equation in the single channel with  a few correction in the order of $\zeta=\Delta_2^2/\eta\Delta_{1}$.  The second term, except the factor $\frac{E_\vk-\xi_\vk}{2E_\vk}=v_{\vk}^{2}$, looks like the summand in the closed-channel number equation, Eq. \ref{eq:pathInt2:closeD1},  which can sum up in the order of $N$.  Nevertheless, the $v_{\vk}^{2}$ factor, decreases quickly in high momentum, becomes close to zero in high momentum, and limits the summation to only low momentum. This makes the sum  a small correction as we discussed before.    Similarly, $\frac{\Delta_{1}^{2}}{E_{\vk}^{2}}$ in the third term also limits the summation to low momentum and ensures the sum a small correction. At low momentum, this term is actually more important than the second term. 
 
 
+
+\section{Discussion of the mean-field solution}
+As discussed before, the correction of the narrow Feshbach resonance can be taken into account in roughly two steps.  First,  we only consider the chemical potential $\mu$ in the shift and the extra counting of the closed-channel.  Then in the second step, we can correct the previous result with quantities originated from the inter-particle Pauli-exclusion unique in the three-species problem. 
+
+If only taking  the first step, the gap equation and the (open-channel) number equation are simplified to 
+\begin{gather}
+1=-\mbr{\frac{4\pi{\tilde{a}_{s}(\mu,\lambda_{1})}}{m}\sum(\nth{2E_{\vk}}-\nth{2\epsilon_{\vk}})}\\
+N_{\text{open}}=\sum_\vk\frac{E_\vk-\xi_\vk}{2E_\vk}\\
+\tilde{a}_{s}=a_{\text{bg}}(1+\frac{\mathcal{K}}{\delta-2\mu})\approx{}\frac{a_{\text{bg}}\mathcal{K}}{\delta-2\mu}\label{eq:pathInt2:simplenarrowAs}
+\end{gather}
+ In the last equation, we assume $a_{\text{bg}}\ll{}a_{0}$ and we only study situations close to resonance, where $\mathcal{K}\gg{}\delta \,\text{or}\,\mu$.  From the two-body analysis of the Feshbach resonance, we know the numerator in the Eq. \ref{eq:pathInt2:simplenarrowAs} is closely related to the characteristic scale $\delta_{c}$ defined in Eq. \ref{eq:intro:deltaC}
+\begin{equation}\tag{\ref{eq:intro:deltaC}}
+\delta_{c}\equiv\frac{\mathcal{K}^{2}}{\hbar^{2}/m_{r}a_{bg}^{2}}=\frac{(\mathcal{K}a_{\text{bg}})^{2}}{\hbar^{2}/m_{r}}
+\end{equation}
+\end{unsure}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{simpleNarrowMuDt}
+\caption{The chemical potential $\mu$ and gap $\Delta$  over crossover with the Feshbach resonance of different $\delta_{c}$} 
+\label{fig:pathInt2:simpleNarrowMuDt}
+\parbox{0.8\textwidth}{\small  Here $E_{0}=a_{\text{bg}}\mathcal{K}k_{F}$.  $\delta_{c}={E_{0}^{2}}/{E_{F}}$. So the two dashed lines correspond to $\delta_{c}=10E_{F}$ and $100E_{F}$. Notice that $E_{F}$ and $k_{F}$ here are referred to the open-channel quantities. }
+\end{center}
+\end{figure}
+In Fig. \ref{fig:pathInt2:simpleNarrowMuDt}, $\delta_{c}={E_{0}^{2}}/{E_{F}}$, we see the two lines correspond to $\delta_{c}=10E_{F}$ and $100E_{F}$.  Notice that all scales in Fig. \ref{fig:pathInt2:simpleNarrowMuDt} is related the Fermi energy and the Fermi momentum of atoms only in the open-channel.  It is important to find the relation between the open-channel density and the closed-channel density.   Let us look at the open-channel gap equation Eq. \ref{eq:pathInt2:mfopen} 
+\begin{equation}
+\Delta_{1\vp}=\sum_{\vk}{}U_{\vp\vk}h_{1\vk}+\sum_{\vk}{}Y_{\vp\vk}h_{2\vk}\tag{\ref{eq:pathInt2:mfopen}}
+\end{equation}
+Not far away from the resonance, the second term dominates the first term.  And considering Eq. \ref{eq:pathInt2:hphi}, $h_{2\vk}=\alpha\phi^{}_{0\vk}u_{\vk}^{2}$, it is not hard to see that the closed-channel normalization factor $\alpha$ is proportional to $\Delta_1$.   At the BEC end, i.e. negative detuning, the closed-channel density increases as $\Delta_1$ increases and eventually dominates the open-channel density.  In fact, for total density $n$, when the closed-channel dominates, $\alpha\approx\sqrt{N}$ and $\Delta_1$ saturates.  
+\begin{equation}
+\Delta_1\approx\sqrt{N}\sum_{\vk}{}Y_{\vp=0,\,\vk}\phi^{}_{0\vk}u_{\vk}^{2}
+\end{equation}
+ At such region, the open-channel density is very smal.l  Fig. \ref{fig:pathInt2:simpleNarrowMuDt} shows $\Delta_1/E_{F,\text{open}}$ increases toward BEC end.  Given the total density,  this increase is   not because $\Delta_{1}$ increases, but because the open-channel density decreases quickly.  
+ 
+Corrections to the equations in the second step are all in the order of $\zeta=\Delta_2^2/\eta\Delta_1$.  Given the non-singular nature of the crossover problem, we expect the correction to various quantities are in the same order of $\zeta$. 
+
+
+
+There are three distinct length scales in the problem.  The range of the potential, $r_c$, is the smallest.  The intra-channel and inter-channel potentials are  essentially zero outside this range. Potentials energy dominate the kinetic energy in this range and the correlation (wave function) is totally governed by the potential and might have large oscillation.   The two-body correlation follows the two-body wave function in this range.  The second range is the size of the closed-channel bound-state, $a_c$.  The closed-channel bound state only has negligible weight outside this range.  In this range, the many-body correlation still follow the two-body wave function in the closed-channel.  We assume that the closed-channel is high excitation state and therefore has most weight in this region.  The inter-channel Pauli exclusion are mostly accounted in this  region.  Not surprisingly, this region contributes most in the integral of $\lambda_{1}$ and $\lambda_{2}$. When much larger than $a_c$, many-body effect is important. However, the closed-channel has only negligible weight in it and therefore only the open-channel needs to be considered.  
+
+
+
 %\input{oldTwoChannelMeanField}
-%\chapter{Excitation modes}
+
+\chapter{Excitation modes\label{ch:excitation}}
+In the single channel crossover, fermionic modes are related to the two-body correlation of the original fermions; while the bosonic modes are related to the two-body correlation of the auxiliary new bosonic fields (order parameters $(\Delta_{1}, \Delta_{2})$).  Similarly to the single-channel case, most modes are gapped with minimum at  $\Delta_{1}$ and only one  Goldstone mode for the (in-phase) phase fluctuation of order parameters (bosonic fields) is gapless with linear dispersion at low energy. 
 \section{Fermionic excitation modes and Bogoliubov transformation\label{sec:pathInt2:bog}}
 If we limit ourselves in the mean field level, we can interpret the transformation $T_\vk{}L_\vk$ in Eq. \eqref{eq:pathInt2:B} as the Bogoliubov canonical transformation, while  the $3\times3$ fermionic correlation matrix $B$ in Eq. (\ref{eq:pathInt2:Bapprox}-\ref{eq:pathInt2:xiExpand3}) gives us the spectrum of the  fermionic quasi-particle excitation. From Eq. \eqref{eq:pathInt2:actionMix} and Eq. \eqref{eq:pathInt2:B}, the action is diagonal for new fermions (quasi-particles) field 
 \begin{equation*}

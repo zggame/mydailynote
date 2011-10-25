@@ -154,7 +154,7 @@ Compare this with the open-channel  \sch equation without coupling to the closed
 \begin{equation}\label{eq:intro:chi0}
 \br{-\frac{\hbar^{2}}{2m_{r}}\frac{d^{2}}{dr^{2}}-U-E}\chi_{0}=0
 \end{equation}
-Note that $\chi_{0}(r)\rightarrow0$ as $r\rightarrow0$ and $\chi_{0}(r)\rightarrow{A}(1-r/a_{bg})$ for $r\rightarrow\infty$.\footnote{Note that we are dealing with the internal wave function $\chi_{0}$ here (in region $\mathcal{I}$) instead of the external wave function as in Sec. \ref{sec:intro:as}; therefore, the boundary condition for $r\rightarrow0$ there actually corresponds the boundary condition $r\rightarrow\infty$ here.} Now multiplying Eq. \ref{eq:intro:chi} with $\chi_{0}$ and Eq. \ref{eq:intro:chi0} with $\chi$, integrating from $r=0$ to a  distance much larger than the potential range, $r=r_{0}$, subtracting them, and using Green's theorem, we find 
+Note that $\chi_{0}(r)\rightarrow0$ as $r\rightarrow0$ and $\chi_{0}(r)\rightarrow{A}(1-r/a_{bg})$ for $r\rightarrow\infty$.\footnote{Note that we are dealing with the internal wave function $\chi_{0}$ here (in region $\mathcal{I}$) instead of the external wave function as in Sec. \ref{sec:intro:as}; therefore, the boundary condition for $r\rightarrow0$ in Sec. \ref{sec:intro:as} actually corresponds the boundary condition $r\rightarrow\infty$ here.} Now multiplying Eq. \ref{eq:intro:chi} with $\chi_{0}$ and Eq. \ref{eq:intro:chi0} with $\chi$, integrating from $r=0$ to a  distance much larger than the potential range, $r=r_{0}$, subtracting them, and using Green's theorem, we find 
 \begin{equation}
 \chi_{0}(r_{c})\chi'(r_{c})-\chi_{0}'(r_{0})\chi(r_{0})+\frac{2m_{r}E}{\hbar^{2}}\int_{0}^{r_{c}}dr\chi_{0}(r)\chi(r)
 =\frac{2m_{r}/\hbar^{2}}{E-\tilde\delta}\int_{0}^{r_{0}}dr\int_{0}^{r_{0}}dr'\chi_{0}(r)K(rr')\chi(r')
@@ -214,8 +214,8 @@ Furthermore, we can calculate the ``relative weight'' (probability) of closed-ch
 \begin{equation}
 \lambda=\br{\frac{1}{E-\tilde\delta}}^{2}\abs{\int{}dr'\phi_{0}(r')Y(r')\chi_{n}(r')}^{2}
 \end{equation}
-where $\chi_{n}(r)$ is the normalized open-channel bound-state component.  Comparing this with Eq. \ref{eq:intro:kappa}, assuming the short-range part of $\chi_{n}(r)$ does not differ from $\chi_{o}(r)$ much, we can find 
-\begin{equation}
+where $\chi_{n}(r)$ is the normalized open-channel bound-state component $\int{}\chi_{n}(r)^{2}dr=1$\footnote{Note here the normalization on $\chi(r)$ is different from the most of this section, where $\chi(r)$ is normalized by  requiring $\chi{}\overset{r\rightarrow\infty}\rightarrow{}A(1-r/a_{b})\text{or}e^{-r/a_{b}} $. The difference is an extra $(a_{b})^{-1/2}$ for the wave function and that contributes the extra factor $a_{b}^{-1}$ in Eq. \ref{eq:intro:lambda}.}.  Comparing this with Eq. \ref{eq:intro:kappa}, assuming the short-range part of $\chi_{n}(r)$ does not differ from $\chi_{o}(r)$ much, we can find 
+\begin{equation}\label{eq:intro:lambda}
 \lambda=\nth{(E-\tilde\delta)^{2}}\frac{\hbar^{2}}{2m_{r}a_{bg}}\mathcal{K}a_{b}^{-1}
 \end{equation}
 For $\abs{\delta}\lesssim\delta_{c}\ll\mathcal{K}$, $E-\tilde\delta\approx\mathcal{K}$ and we have 
@@ -224,7 +224,7 @@ For $\abs{\delta}\lesssim\delta_{c}\ll\mathcal{K}$, $E-\tilde\delta\approx\mathc
 \end{equation}
 Now we can see that  $\delta_{c}$ is a ``characteristic'' energy scale. When $\abs{\delta}\gg\delta_{c}$, $E\approx\delta$, this simply means that when the negative detuning is large, most weight is in the closed-channel, and the real mixed bound state is a closed-channel bound state ($\phi_{0}$) dressed with little open-channel component and therefore the binding energy is roughly equal that of $\phi_{0}$.  The often quoted relation between $a_{s}$ and the binding energy (Eq. \ref{eq:intro:ab}) does not apply here.  On the contrary, when $\abs{\delta}\ll\delta_{c}$, $\abs{E}\approx-\delta^{2}/\delta_{c}\ll\delta$,  and closed-channel weight is much smaller than that of the open-channel, the real bound-state is more or less an open-channel affair with little dress-up from closed-channel.  % It is not hard to  estimate $\delta_{c}$. 
 
-In many-body physics, another important energy scale comes into play, the Fermi energy, $E_{F}$.  When it is much smaller than $\delta_{c}$, i.e. a \emph{broad resonance},  closed-channel has only negligible weight close to resonance, where we are mostly interested in. In such situation, it is a good approximation to take the Feshbach resonance as only a knob to tweak the interaction in the open-channel.  On the contrary, when $E_{F}$ is close even larger than $\delta_{c}$, i.e. a \emph{narrow resonance}, the closed-channel weight can be  significant around resonance, therefore it is required to explicitly take the closed-channel into many-body framework.  
+In many-body physics, another important energy scale comes into play, the Fermi energy, $E_{F}$.  When it is much smaller than $\delta_{c}$, i.e. a \emph{broad resonance},  closed-channel has only negligible weight close to resonance, where we are mostly interested in. In such situation, it is a good approximation to take the Feshbach resonance as only a knob to tweak the interaction in the open-channel.  On the contrary, when $E_{F}$ is close or even larger than $\delta_{c}$, i.e. a \emph{narrow resonance}, the closed-channel weight can be  significant around resonance, therefore it is required to explicitly take the closed-channel into many-body framework.  
 
 
 

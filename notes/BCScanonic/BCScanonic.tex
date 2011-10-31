@@ -3,7 +3,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphics,epsfig,graphicx}
 \usepackage{color}
-
+%\usepackage{epstopdf}
 
 \topmargin=-1cm \textheight=24cm \oddsidemargin=-0.2cm
 \evensidemargin=-0.2cm \textwidth=16cm
@@ -24,7 +24,7 @@ CNRS, Tour 22, 4 place Jussieu, 75005 Paris}
 
 
 \begin{abstract}
-The usual formulation of the BCS ansatz for superconductivity, as a sum of different $N$-pair states, makes the handling of the Pauli exclusion principle between paired electrons straightforward. It however masks that many-body effects between Cooper pairs are entirely controlled by this exclusion. To evidence it, one has to work in the canonical ensemble. However, the exact handling of the Pauli exclusion principle between a fixed number of composite bosons is far from easy. To do it, we here develop a commutator formalism for Cooper pairs, along the line we used for excitons. We then rederive, within the $N$-pair subspace, a few results of BCS superconductivity commonly derived in the grand canonical ensemble, in order to point out their Pauli blocking origin. We end by discussing what must be called Cooper pair wave function.
+The usual formulation of the BCS ansatz for superconductivity,is the grand canonical ensemble, makes the handling of the Pauli exclusion principle between paired electrons straightforward. It however masks that many-body effects between Cooper pairs are entirely controlled by this exclusion. To evidence it, one has to work in the canonical ensemble. Pauli blocking between a fixed number of composite bosons however is far from easy to handle exactly. To do it, we here develop a commutator formalism for Cooper pairs, along the line we used for excitons. We then rederive, within the $N$-pair subspace, a few results of BCS superconductivity commonly derived in the grand canonical ensemble, in order to point out their Pauli blocking origin. We end by discussing what should be called Cooper pair wave function.
 \end{abstract}
 
 \pacs{}
@@ -36,25 +36,32 @@ The usual formulation of the BCS ansatz for superconductivity, as a sum of diffe
 
 \section{Introduction}
 
-A major break in the understanding of superconductivity is definitely due to the wave function ansatz proposed by Bardeen, Cooper, Schrieffer \cite{BCS}. The main advantage of this ansatz is to lead to results in agreement with experiments through analytical calculations quite easy to perform. Its standard form in the grand canonical ensemble as a sum of different $N$-particle states, makes the Pauli exclusion principle between paired up and down spin electrons straightforward to handle. Calculations in the grand canonical ensemble however mask the key role played by the Pauli exclusion principle in superconductivity. Indeed, due to the very peculiar form of the reduced BCS potential --- the up spin electron $(\v k)$ interacting with the down spin electron $(-\v k)$ only --- Pauli blocking is the only way two correlated electron pairs can feel each other (see Fig.1). This in particular explains why Cooper pairs can strongly overlap without dissociating, by contrast with excitons which dissociate into an electron-hole plasma through a Mott transition when overlap starts.
+A major breakthrough in the understanding of superconductivity is definitely due to the wave function ansatz proposed by Bardeen, Cooper, Schrieffer \cite{BCS}. The main advantage of this ansatz is to lead to results in agreement with experiments through analytical calculations quite easy to perform. Its standard form in the grand canonical ensemble as a sum of  states with different particle numbers, makes the Pauli exclusion principle between paired up and down spin electrons straightforward to handle. Calculations in the grand canonical ensemble however mask the key role played by the Pauli exclusion principle in superconductivity. Indeed, due to the very peculiar form of the reduced BCS potential --- an up spin electron $(\v k)$ can interact with a down spin electron $(-\v k)$ only --- Pauli blocking is the only way two correlated electron pairs can feel each other (see Fig. \ref{fig:shiva}). This in particular explains why Cooper pairs can strongly overlap without dissociating, by contrast with excitons which dissociate into an electron-hole plasma through a Mott transition when overlap starts.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.4\textwidth]{shiva}
+\caption{Two Cooper pairs made of the repeated interactions of an up spin electron $\v k$ and a down spin electron $-\v{k}$ cannot interact by the reduced BCS potential because this would impose $\v{k}'_1=\v{k}'_2$.  The two up spin electrons would then have the same momentum which is impossible due to the Pauli exclusion principle. \label{fig:shiva}} 
+%\parbox{0.7\textwidth}{\small}
 
-To better understand the key role played by the Pauli exclusion principle in the physics of BCS superconductors, it is necessary to stay in the canonical ensemble, with a pair number and a number of states available for pairing fixed. However, to exactly handle Pauli blocking between a fixed number of paired fermions like excitons or Cooper pairs, is far from easy. It, in fact, requires the development of a many-body formalism appropriate to these composite bosons. Up to now, we have extensively studied excitons and developed a formalism adapted to their many-body physics. Due to the fact that Coulomb interaction between electrons and holes leads to a Mott dissociation of the exciton gas  into an electron-hole plasma when density increases, the relevant exciton regime is the dilute regime. By contrast, the relevant regime in BCS superconductivity is the dense regime with Cooper pair wave functions strongly overlapping. As a result, the many-body physics of composite bosons like Cooper pairs is expected to have similarities with the one of excitons, but a few important differences.
+\end{center}
+\end{figure}
+To better understand the key role played by the Pauli exclusion principle in the physics of BCS superconductors, it is necessary to stay in the canonical ensemble, with a pair number and a number of states available for pairing fixed. However, to exactly handle Pauli blocking between a fixed number of paired fermions like excitons or Cooper pairs, is far from easy. It, in fact, requires the development of a many-body formalism appropriate to these composite bosons. Up to now, we have extensively studied excitons and developed a formalism adapted to their many-body physics. Because the long-range Coulomb interaction between electrons and holes leads to a Mott dissociation of the exciton gas  into an electron-hole plasma when the density increases, the relevant exciton regime is the dilute regime. By contrast, the relevant regime in BCS superconductivity is the dense regime with Cooper pair wave functions strongly overlapping. As a result, the many-body physics of composite bosons like Cooper pairs is expected to have similarities with the one of excitons, but a few major differences.
 
-In section II, we first develop a commutator formalism for paired electrons able to handle the Pauli exclusion principle within a $N$-pair condensate, in an exact way.
+In section II, we  develop a commutator formalism for paired electrons able to handle the Pauli exclusion principle within a $N$-pair condensate, in an exact way.
 
 In section III, we come back to the BCS ansatz in its grand canonical form and, for completeness, we briefly rederive through standard grand canonical calculations, some textbook results linked to $\v k$-state population, pair number mean value, its fluctuations, and two-pair correlation function.
 
 In section IV, we turn to the canonical ensemble, with a fixed number of pairs. Through a direct study of the probability distribution of $N$-pair states in the BCS ansatz,  we prove that this ansatz indeed corresponds to a distribution very much peaked on a particular value $N^\ast$ of the pair number, due to the ``moth-eaten effect'' induced on Cooper pairs by the Pauli exclusion principle. The standard derivation of this result, through the fluctuations of the pair number around its mean value, completely hides the microscopic origin of this maximum.
 
-In section V, we calculate the fraction of the $\v k$ electron state occupied in a $N$-pair state. As expected, we show that it is identical to the one calculated within the grand canonical version of the ansatz for $N=N^\ast$ only. This is also true for the pair operator mean value associated to what is often called ``pair wave function''.
+In section V, we calculate the fraction of the $\v k$ electron state occupied in a $N$-pair state. We show that it is identical to the one calculated within the grand canonical version of the ansatz but for $N=N^\ast$ only. This is also true for the pair operator mean value associated to what is often called ``pair wave function''.
 
-In section VI, we come back to what must be called ``Cooper pair wave function''.
+In section VI, we come back to what should be called ``Cooper pair wave function''.
 
 In section VII, we conclude.
 
 \section{Composite boson formalism for condensed pairs}
 
-The goal of this section is to develop a formalism able to handle Pauli blocking within a $N$-fermion-pair condensate in an exact way. For that, we introduce the generalized creation operator for correlated pairs,
+The goal of this section is to develop a formalism able to handle Pauli blocking within a $N$-fermion-pair condensate in an exact way. For that, similar as our previous works \cite{CobosonPhysicsReports, combescotBCS, CobosonBcsRich,motheaten}, we introduce the generalized creation operator for correlated pairs,
 \begin{equation}
 B_n^\dag=\sum_{\v k}|\varphi_{\v k}^2|^n\varphi_{\v k}\beta_{\v k}^\dag\ ,
 \end{equation}
@@ -74,11 +81,14 @@ It is then easy to show that
 \begin{equation}
 [B_m,B_n^\dag]=\tau_{m+n}-D_{m+n}\ ,
 \end{equation}
-where the ``deviation from boson operator'' of these generalized correlated pairs is given by $D_m=\sum_{\v k}|\varphi_{\v k}^2|^{m+1}(a_{\v k}^\dag a_{\v k}+b_{-\v k}^\dag b_{-\v k})$, so that it also gives zero when acting on vacuum. The scalar $\tau_m$, defined as
+where the ``deviation from boson operator'' of these generalized correlated pairs is given by $D_m=\sum_{\v k}|\varphi_{\v k}^2|^{m+1}(a_{\v k}^\dag a_{\v k}+b_{-\v k}^\dag b_{-\v k})$, which also gives zero when acting on vacuum. The scalar $\tau_m$, defined as
 \begin{equation}
 \tau_m=\sum_{\v k}|\varphi_{\v k}^2|^{m+1},
 \end{equation}
-is the $m+1$ moment of the $\v k$ state distribution in the correlated pair at hand. To possibly relate this moment to the wave function of the correlated pair, we are led to normalize the $\varphi_{\v k}$ distribution as $\tau_0=\sum_{\v k}|\varphi_{\v k}^2|=1$.
+is the $m+1$ moment of the $\v k$ state distribution in the correlated pair at hand. To possibly relate this moment to the wave function of the correlated pair, we are led to normalize the $\varphi_{\v k}$ distribution as $\tau_0=\sum_{\v k}|\varphi_{\v k}^2|=1$. We then have, for $|0\rangle$ being the vacuum state
+\begin{equation}
+\langle0|B_0^{}B_0^{\dag}|0\rangle=\tau_0=1
+\end{equation}
 
 In order to easily handle the Pauli exclusion principle within a $B_0^{\dag N}|0\rangle$ condensate, we also need
 \begin{equation}
@@ -96,10 +106,10 @@ we get by iteration
 In the same way, Eqs.(4) and (8), along with
 \begin{eqnarray}
 \left[B_m,B_0^{\dag N}\right]=\left[B_m,B_0^\dag\right]B_0^{\dag N-1}\hspace{2cm}\nonumber\\
-+B_0^\dag\left[B_m,B_0^{\dag N-1}\right],
++B_0^\dag\left[B_m,B_0^{\dag N-1}\right],\label{Bcomm}
 \end{eqnarray}
 allow us to rewrite the RHS of the above equation as
-\begin{equation}
+\begin{equation}\label{BcommRHS}
 NB_0^{\dag N-1}(\tau_m-D_m)-N(N-1)B_{m+1}^\dag B_0^{\dag N-2}.
 \end{equation}
 
@@ -110,11 +120,11 @@ One important quantity for a condensate made of $N$ composite bosons $B_0^\dag$ 
 If $B_0^\dag$ were an elementary boson creation operator, we would have $F_N=1$. For composite bosons, $F_N$, equal to 1 for $N=1$, decreases when $N$ increases, due to what we called ``moth eaten effect'': more and more free pair states are missing in the $B_0^\dag$ operators of $B_0^{\dag N}|0\rangle$ due to the Pauli exclusion principle between these $N$ pairs as if $N$ little moths had eaten these free states. 
 
 To calculate $F_N$, we first note that 
-$\langle 0|B_0^NB_0^{\dag N}|0\rangle$ also reads $\langle 0|B_0^{N-1}B_0B_0^{\dag N}|0\rangle$. We then use Eqs.(9,10). For $\tau_0=1$, we find 
+$\langle 0|{B_0^N}B_0^{\dag}{}^{ N}|0\rangle$ also reads $\langle 0|B_0^{N-1}B_0B_0^{\dag}{}^ N|0\rangle$. We then use Eqs. (\ref{Bcomm}, \ref{BcommRHS}). For $\tau_0=1$, we find 
 \begin{equation}
 F_N=F_{N-1}-\frac{1}{(N-2)!}\langle\langle 0|B_0^{N-1}B_1^\dag B_0^{\dag N-2}|0\rangle,
 \end{equation}
-and we iterate. This shows that the $F_N$'s are linked by
+and we iterate using Eqs. (\ref{Bcomm}, \ref{BcommRHS}). This shows that the $F_N$'s are linked by
 \begin{eqnarray}
 F_N=F_{N-1}-(N-1)\tau_1F_{N-2}\hspace{2.3cm}\nonumber\\
 +(N-1)(N-2)\tau_2F_{N-3}+\cdots\nonumber\\
@@ -132,12 +142,12 @@ Let us introduce the \emph{unnormalized} correlated pair creation operator
 \begin{equation}
 C^\dag=\sum_{\v p}\phi_{\v p}\beta_{\v p}^\dag\ .
 \end{equation}
-From it,  we construct the following linear combination of $N$-pair states
+with $\langle 0|CC^{\dag }|0\rangle$ possibly different from $1$. From it,  we construct the following linear combination of $N$-pair states
 \begin{eqnarray}
 \sum_{N=1}^{+\infty}\frac{1}{N!}C^{\dag N}|0\rangle&=&e^{C^\dag}|0\rangle\nonumber\\
 &=&\Pi_{\v p}(1+\phi_{\v p}\beta_{\v p}^\dag)|0\rangle.
 \end{eqnarray}
-since $\beta_{\v p}^{\dag 2}=0$ due to the Pauli exclusion principle. By writing $\phi_{\v p}=v_{\v p}/u_{\v p}$ with $|u_{\v p}^2|+|v_{\v p}^2|=1$, we get the usual form of the \emph{normalized} BCS state as product of $\v p$ operators
+since $\beta_{\v p}^{\dag 2}=0$ due to the Pauli exclusion principle. By writing $\phi_{\v p}$ as $v_{\v p}/u_{\v p}$ with $|u_{\v p}^2|+|v_{\v p}^2|=1$, we get the usual form of the \emph{normalized} BCS state as product of $\v p$ operators
 \begin{eqnarray}
 |\phi_{BCS}\rangle&=&\gamma\sum_{N=1}^{+\infty}\frac{1}{N!}C^{\dag N}|0\rangle\nonumber\\
 &=&\Pi_{\v p}(u_{\v p}+v_{\v p}\beta_{\v p}^\dag)|0\rangle,
@@ -146,99 +156,97 @@ where $\gamma=\Pi_{\v p}u_{\v p}$.
 
 Using this $\v p$ product, the $\v k$ electron distribution in the $|\phi_{BCS}\rangle$ state is easy to find as
 \begin{eqnarray}
-\overline{N}_{\v k}&=&\langle\phi_{BCS}|a_{\v k\uparrow}^\dag a_{\v k\uparrow}|\phi_{BCS}\rangle\nonumber\\
+\langle\hat{N}_{\v k}\rangle&=&\langle\phi_{BCS}|a_{\v k\uparrow}^\dag a_{\v k\uparrow}|\phi_{BCS}\rangle\nonumber\\
 &=&|v_{\v k}^2|=\frac{|\phi_{\v k}^2|}{1+|\phi_{\v k}^2|}\ .
 \end{eqnarray}
-As a result, the $\phi_{\v k}$ distribution of the correlated pair operator $C^\dag$ defined in Eq.(15) is related to the mean value $\overline{N}$ of the number of up \emph{or} down spin electrons $\hat{N}=\sum_{\v k}a_{\v k\uparrow}^\dag a_{\v k\uparrow}$ in the $|\phi_{BCS}\rangle$ state through
+As a result, the $\phi_{\v k}$ distribution of the correlated pair operator $C^\dag$ defined in Eq.(15) is related to the mean value $\langle\hat{N}\rangle$ of the number of up \emph{or} down spin electrons $\hat{N}=\sum_{\v k}a_{\v k\uparrow}^\dag a_{\v k\uparrow}$ in the $|\phi_{BCS}\rangle$ state through
 \begin{eqnarray}
-\overline{N}&=&\langle\phi_{BCS}|\hat{N}|\phi_{BCS}\rangle=\sum_{\v k}\overline{N}_{\v k}\nonumber\\
-&=&\sum_{\v k}\frac{|\phi_{\v k}^2|}{1+|\phi_{\v k}^2|}\ .
+\langle\hat{N}\rangle&=&\sum_{\v k}\langle\hat{N}_{\v k}\rangle=\sum_{\v{k}}|v_{\v k}^2|
+=\sum_{\v k}\frac{|\phi_{\v k}^2|}{1+|\phi_{\v k}^2|}\ .
 \end{eqnarray}
 
 Turning to the fluctuation of this mean value, we find that it reads
 \begin{equation}
-\frac{\langle\hat{N}^2\rangle-\langle\hat{N}\rangle^2}{\langle\hat{N}\rangle^2}=\frac{\sum_{\v k}|u_{\v k}^2|•v_{\v k}^2|}{\Big{(}\sum_{\v k}|v_{\v k}^2|\Big{)}^2}.
+\frac{\langle\hat{N}^2\rangle-\langle\hat{N}\rangle^2}{\langle\hat{N}\rangle^2}=\frac{\sum_{\v k}|u_{\v k}^2v_{\v k}^2|}{\Big{(}\sum_{\v k}|v_{\v k}^2|\Big{)}^2}.
 \end{equation}
-Since the numerator is a $\v k$ sum while the denominator is the square of a $\v k$ sum, the above ratio goes to zero in the large sample limit, as one over the volume. As a result, this fluctuation is quite small and the $N$ distribution in the $|\phi_{BCS}\rangle$ state is very much peaked on its mean value $\overline{N}$.
+Since the numerator is a $\v k$ sum and  the denominator is the square of a $\v k$ sum while the sum over $\v{k}$ is proportional to the sample volume, the above ratio goes to zero in the large sample limit, as $1$ over the volume. So this fluctuation is quite small and the $N$ distribution in the $|\phi_{BCS}\rangle$ state is very peaked on its mean value $\langle\hat{N}\rangle$.
 
 We can also consider the mean value of the two-pair operator $\beta_{\v k}\beta_{\v k'}^\dag$ in the $|\phi_{BCS}\rangle$ state. For $\v k\neq\v k'$, we find
 \begin{equation}
 \langle\phi_{BCS}|\beta_{\v k}\beta_{\v k'}^\dag|\phi_{BCS}\rangle=u_{\v k}^\ast v_{\v k}u_{\v k'}v_{\v k'}^\ast=F_{\v k}F_{\v k'}^\ast\ 
 \end{equation}
 where $F_{\v k}$, often called ``pair wave function'', is defined as
-\begin{equation}
+\begin{equation}\label{fn}
 F_{\v k}=u_{\v k}^\ast v_{\v k}=\frac{\phi_{\v k}}{1+|\phi_{\v k}^2|}\ .
 \end{equation}
 
 \section{Direct calculation of the $N$-pair state probability in the BCS ansatz}
 
-Although the calculation of the mean value fluctuation using the grand canonical form of the BCS ansatz is quite convincing to conclude that the $N$-pair state distribution in this ansatz is very much peaked on a particular value of $N$, a direct calculation of the probability distribution, using Eq.(17), is of interest to possibly understand the microscopic origin of this peaked value.
+Although the calculation of the $\langle\hat{N}\rangle$ fluctuation using the grand canonical form of the BCS ansatz is quite convincing to conclude that the $N$-pair state distribution in this ansatz is very much peaked on a particular value of $N$, a direct calculation of the probability distribution, using Eq.(17), is of interest to possibly understand the microscopic origin of this peaked value.
 
-If we only considered  the $(1/N!)$ prefactor in Eq.(17), we could na\"{\i}vely conclude that the $N=1$ state dominates the sum. Actually, for the prefactors of the $N$-pair state expansion of $|\phi_{BCS}\rangle$ to have some physical meaning, these $N$-pair states must be normalized. To do it, we first introduce the normalized correlated pair operator
+If we only considered  the $(1/N!)$ prefactor in Eq.(17), we could na\"{\i}vely conclude that the $N=1$ state dominates the sum. However, in order for the prefactors of the  $|\phi_{BCS}\rangle$ $N$-pair state expansion to have some physical meaning, these $N$-pair states must be normalized. To do it, we first introduce the normalized correlated pair operator
 \begin{equation}
-B^\dag=\sum_{\v p}\varphi_{\v p}\beta_{\v p}^\dag=\frac{C^\dag}{\sqrt{S}}\ ,
+B_0^\dag=\sum_{\v p}\varphi_{\v p}\beta_{\v p}^\dag=\frac{C^\dag}{\sqrt{S}}\ ,
 \end{equation}
-where $\varphi_{\v p}=\phi_{\v p}/\sqrt{S}$ with $S=\sum_{\v p}|\phi_{\v p}^2|$, in order to have $\langle 0|BB^\dag|0\rangle=1$. The normalized $N$-pair state associated to the $C^\dag$ correlated pair operator then reads
+where $\varphi_{\v p}=\phi_{\v p}/\sqrt{S}$ with $S=\sum_{\v p}|\phi_{\v p}^2|$, in order to have $\langle 0|B_0B_0^\dag|0\rangle=1$. The normalized $N$-pair state associated to the $C^\dag$ correlated pair operator then reads
 \begin{equation}
-|\psi_N\rangle=\frac{B^{\dag N}|0\rangle}{\sqrt{N!F_N}}=\frac{C^{\dag N}|0\rangle}{\sqrt{N!F_NS^N}}\ 
+|\psi_N\rangle=\frac{B_0^{\dag N}|0\rangle}{\sqrt{N!F_N}}=\frac{C^{\dag N}|0\rangle}{\sqrt{N!F_NS^N}}\ 
 \end{equation}
 with $F_N$ defined as in Eq.(11), in order to have $\langle\psi_N|\psi_N\rangle=1$.
 
 The above equation allows us to rewrite $|\phi_{BCS}\rangle$ given in Eq.(17) as
 \begin{equation}
-|\phi_{BCS}\rangle=\gamma\sum_{N}\sqrt{\frac{F_NS^N}{N!}}|\psi_N\rangle=\sum_{N}\lambda_N
-|\psi_N\rangle\ .
+|\phi_{BCS}\rangle=\gamma\sum_{N}\sqrt{\frac{F_NS^N}{N!}}|\psi_N\rangle
+\equiv\sum_{N}\lambda_N|\psi_N\rangle\ .
 \end{equation}
-Since $\langle\phi_{BCS}|\phi_{BCS}\rangle=1=\langle\psi_N|\psi_N\rangle$, we see that $\sum_N
-|\lambda_N^2|=1$; so, $|\lambda_N^2|$ indeed is the probability distribution of the $N$-pair states in the BCS ansatz.
+$\sum_N |\lambda_N^2|=1$ since $\langle\phi_{BCS}|\phi_{BCS}\rangle=1=\langle\psi_N|\psi_N\rangle$; so, $|\lambda_N^2|$ is the probability distribution of the $N$-pair states in the BCS ansatz.
 
-To show that this distribution is peaked, we first note that $1/N!$ as well as $F_N$ decrease from $1$ when $N$ increases. So, the ratio $F_N/N!$ also decreases from 1 to zero when $N$ increases. In order to show that this decrease is compensated for small $N$ by the increase of $S^N$, we note that the sum $S=\sum_{\v p}|v_{\v p}^2|/|u_{\v p}^2|$ is far larger than $\sum_{\v p}|v_{\v p}^2|$ which is equal to $\overline{N}$ according to Eq.(19); so, $S\gg 1$ and $S^N$ increases with $N$. For low $N$, this $S^N$ increase dominates the decrease of $1/N!$ since, due to the Stirling formula, $S^N/N!\simeq(S/N)^N$. So, in the absence of the $F_N$ factor in the $\lambda_N$ probability distribution, this distribution would be peaked on $N^{\ast\ast}\simeq S$, which is far larger than the pair number mean value $\overline{N}$.
+To show that this distribution is peaked, we first note that $1/N!$ and $F_N$ both decrease from $1$ when $N$ increases. So, the ratio $F_N/N!$ also decreases when $N$ increases. In order to show that this decrease is compensated for small $N$ by the increase of $S^N$ and $\lambda_N$ is peaked, we first note that the sum $S=\sum_{\v p}|v_{\v p}^2|/|u_{\v p}^2|$ is  larger than $\sum_{\v p}|v_{\v p}^2|=\langle\hat{N}\rangle$ as Eq.(19); so, $S> 1$ and $S^N$ increases with $N$. For low $N$, this $S^N$ increase dominates the $1/N!$ decrease  since, due to the Stirling formula, $S^N/N!\simeq(S/N)^N$. So, in the absence of the $F_N$ factor in the $\lambda_N$ probability distribution which comes from the moth-eaten effect, this distribution would be peaked on $N^{\ast\ast}\simeq S$, which is far larger than the pair number mean value $\langle\hat{N}\rangle$.
 
-If we now keep the moth-eaten effect induced by Pauli blocking on Cooper pairs, which makes $F_N$ decrease from $F_1=1$ when $N$ increases, we expect this $F_N$ decrease not to affect the $\lambda_N$ behavior so much for small $N$ since, as seen from Eq.(13), $F_N/F_{N-1}$ stays close to 1 for $N\tau_1$ small. By contrast, $F_N$ is going to play a key role for large $N$'s by bringing the peak of the probability distribution from $N^{\ast\ast}=S$ to $N^\ast$ defined as
+The moth-eaten effect induced by Pauli blocking on Cooper pairs, which makes $F_N$ decrease from $F_1=1$ when $N$ increases,  brings the $\lambda_N$ peak back to $\langle\hat{N}\rangle$.  To show it, we first note that this $F_N$ decrease must not affect the $\lambda_N$ behavior so much for small $N$ since, as seen from Eq.(13), $F_N/F_{N-1}$ stays close to 1 for $N\tau_1$ small. By contrast, $F_N$ is going to play a key role for large $N$'s by bringing the peak of the probability distribution from $N^{\ast\ast}=S$ to $N^\ast$ defined as
 $\lambda_{N^\ast-1}\simeq \lambda_{N^\ast}$, i.e.,
-\begin{equation}
-x_{N^\ast}^2=\frac{F_{N^\ast-1}}{F_{N^\ast}}\ \frac{N^\ast}{S}=1\ .
+\begin{equation}\label{xn}
+1\simeq\frac{F_{N^\ast-1}}{F_{N^\ast}}\ \frac{N^\ast}{S}=x_{N^\ast}^2\ .
 \end{equation}
-If Cooper pairs were elementary bosons, $F_N$ would stay equal to 1 for all $N$ and the peak of the $\lambda_N$ distribution would take place for a pair number equal to $S$ which is far larger than $\overline{N}$. For composite bosons, the $F_N/F_{N-1}$ ratio is smaller than 1 since $F_N$ decreases with $N$, as previously shown; so, $\lambda_N$ is peaked on a $N$ value smaller than S.
+If Cooper pairs were elementary bosons, $F_N$ would stay equal to 1 for all $N$ and the peak of the $\lambda_N$ distribution would take place for a pair number equal to $S$ which is far larger than  $\langle\hat{N}\rangle$. For composite bosons, the $F_N/F_{N-1}$ ratio is smaller than 1 since $F_N$ decreases with $N$, as previously shown; so, $\lambda_N$ is peaked on a $N$ value smaller than S.
 
-If the $N^\ast$ peak were in the dilute regime, the $F_N$ ratio would be close to 1 and $N^\ast$ would be close to $S$ which is not small. This shows that the solution of Eq.(26) is in the dense regime, with $F_N/F_{N-1}$ substancially smaller than 1. This has to be contrasted to excitons for which the $F_N$ ratios always are close to 1, excitons dissociating into an electron-hole plasma at large density.
+If the $N^\ast$ peak were in the dilute regime, the $F_N$ ratio would be close to 1 and $N^\ast$ would be close to $S$much larger than $\langle\hat{N}\rangle$. This shows that the solution of Eq.(26) is in the dense regime, with $F_N/F_{N-1}$ substantially smaller than 1. This has to be contrasted to excitons for which the $F_N$ ratios always are close to 1, excitons dissociating into an electron-hole plasma at large density.
 
-To go farer and precisely relate the pair number $N^*$ corresponding to the $\lambda_N$ maximum to the pair number mean value $\overline{N}$ calculated within the grand canonical  form of the BCS ansatz, let us calculate the $\v k$ electron state population in the $B^{\dag N}$ condensate.
+To go further and precisely relate the pair number $N^*$ corresponding to the $\lambda_N$ maximum to the pair number mean value  $\langle\hat{N}\rangle$ calculated within the grand canonical  form of the BCS ansatz is more demanding. With this goal let us first calculate the $\v k$ electron state population in the $B_0^{\dag N}$ condensate.
 
 \section{$\v k$-electron population in $N$-pair state}
 
-The $\v k$ electron population is straightforward to obtain in the $|\phi_{BCS}\rangle$ state [see Eq.(6)]. To calculate it in a $N$-pair state is far more demanding.
+The $\v k$ electron population is straightforward to obtain in the $|\phi_{BCS}\rangle$ state [see Eq.(6)]. To calculate it in a $N$-pair state is less easy.
 
-We can think of performing a brute force calculation of
+The first idea is to perform a brute force calculation of
 \begin{equation}
-\overline{N}_{\v k}(N)=\langle\psi_N|a_{\v k\uparrow}^\dag a_{\v k\uparrow}|\psi_N\rangle
+ \langle\hat{N}_{\v{k}}\rangle_{N}=\langle\psi_N|a_{\v k\uparrow}^\dag a_{\v k\uparrow}|\psi_N\rangle
 \end{equation}
-in the normalized state $|\psi_N\rangle$ given in Eq.(24), using the commutator formalism developped in section II. To do it, we start with $[a_{\v k},B^\dag]=\varphi_{\v k}b_{-\v k}^\dag$, which gives by iteration
+in the normalized state $|\psi_N\rangle$ given in Eq.(24), using the commutator formalism developed in section II. To do it, we start with $[a_{\v k},B-0^\dag]=\varphi_{\v k}b_{-\v k}^\dag$, which gives by iteration
 \begin{equation}
-[a_{\v k},B^{\dag N}]=N\varphi_{\v k} b_{-\v k}^\dag B^{\dag N-1}\ .
+[a_{\v k},B_0^{\dag N}]=N\varphi_{\v k} b_{-\v k}^\dag B_0^{\dag N-1}\ .
 \end{equation}
 This allows us to rewrite Eq.(27) as
 \begin{equation}
-\overline{N}_{\v k}(N)=\frac{N^2|\varphi_{\v k}^2|}{N!F_N}\langle 0|B^{N-1}b_{-\v k}b_{-\v k}^\dag B^{\dag N-1}|0\rangle\ .
+ \langle\hat{N}_{\v{k}}\rangle_{N}=\frac{N^2|\varphi_{\v k}^2|}{N!F_N}\langle 0|B_0^{N-1}b_{-\v k}b_{-\v k}^\dag B_0^{\dag N-1}|0\rangle\ .
 \end{equation}
-We then use $b_{-\v k}b_{-\v k}^\dag=1-b_{-\v k}^\dag b_{-\v k}$ and iterate the process. This gives $\overline{N}_{\v k}(N)$ through the following $F_N$ expansion
+We then use $b_{-\v k}b_{-\v k}^\dag=1-b_{-\v k}^\dag b_{-\v k}$ and iterate the process. This gives $ \langle\hat{N}_{\v{k}}\rangle_{N}$ through the following $F_N$ expansion
 \begin{eqnarray}
-\overline{N}_{\v k}(N)=\frac{N}{F_N}\Big{\{}|\varphi_{\v k}^2|F_{N-1}-(N-1)|\varphi_{\v k}^4|F_{N-2}
+ \langle\hat{N}_{\v{k}}\rangle_{N}=\frac{N}{F_N}\Big{[}|\varphi_{\v k}^2|F_{N-1}-(N-1)|\varphi_{\v k}^4|F_{N-2}
 \nonumber\\
-+(N-1)(N-2)|\varphi_{\v k}^6|F_{N-3}\cdots\Big{\}}.
++(N-1)(N-2)|\varphi_{\v k}^6|F_{N-3}\cdots\Big{]}.
 \end{eqnarray}
-
 Equation (13) shows that the sum over $\v k$ of the bracket reduces to $F_N$; so 
 \begin{equation}
-\sum_{\v k}\overline{N}_{\v k}(N)=N,
+\sum_{\v k} \langle\hat{N}_{\v{k}}\rangle_{N}=N,
 \end{equation}
-whatever $|\varphi_{\v k}^2|$ as expected. However, through this $F_N$ expansion, it is not easy to show that $\overline{N}_{\v k}(N)$ indeed reduces to the value $\overline{N}_{\v k}$ obtained in the BCS ansatz when $N$ is equal to the peak value $N^\ast$.
+whatever $|\varphi_{\v k}^2|$ as expected. However, through this $F_N$ expansion, it is not easy to show that $ \langle\hat{N}_{\v{k}}\rangle_{N}$ indeed reduces to $ \langle\hat{N}_{\v{k}}\rangle$ obtained in the BCS ansatz for $N$ equal to the peak value $N^\ast$.
 
-A better way to make such a link is to follow Leggett \cite{Leggett} and to introduce the operator $C^\dag$ defined in Eq.(15) in which we have removed the $\v k$ state, namely,
+A better way to make such a link is to follow Leggett \cite{Leggett} and to introduce the operator $C^\dag$ defined in Eq.(15) with the $\v k$ state removed from the sum, namely,
 \begin{equation}
 C_{\v k}^\dag=\sum_{\v p\neq\v k}\phi_{\v p}\beta_{\v p}^\dag.
 \end{equation}
-We then construct its normalized form $B_{\v k}^\dag=C_{\v k}^\dag/\sqrt{S_{\v k}}$ with $S_{\v k}=\sum_{\v p\neq\v k}|\phi_{\v p}^2|$ in order to have $\langle 0|B_{\v k}B_{\v k}^\dag|0\rangle=1$, and the associated $N$-pair normalized state
+We then construct its normalized form $B_{\v k}^\dag=C_{\v k}^\dag/\sqrt{S_{\v k}}$ with $S_{\v k}=\sum_{\v p\neq\v k}|\phi_{\v p}^2|$ in order to have $\langle 0|B_{\v k}B_{\v k}^\dag|0\rangle=1$. The associated $N$-pair normalized state then reads
 \begin{equation}
 |\psi_{N,\v k}\rangle=\frac{B_{\v k}^{\dag N}|0\rangle}{\sqrt{N!F_{N,\v k}}}=
 \frac{C_{\v k}^{\dag N}|0\rangle}{\sqrt{N!F_{N,\v k}S_{\v k}^N}}\ ,
@@ -250,18 +258,18 @@ By writing $C^{\dag N}$ as $(C_{\v k}^\dag+\phi_{\v k}\beta_{\v k}^\dag)^N$ and 
 |\psi_N\rangle=\frac{|\psi_{N,\v k}\rangle+x_{N\v k}\phi_{\v k}\beta_{\v k}^\dag|\psi_{N-1,\v k}\rangle}{\sqrt{1+x_{N\v k}^2
 |\phi_{\v k}^2|}}\ ,
 \end{equation}
-where $x_{N\v k}$ is defined as
+with  $x_{N\v k}$  defined as in Eq. (\ref{xn}), namely
 \begin{equation}
-x_{N\v k}^2=\frac{F_{N-1,\v k}}{F_{N,\v k}}\,\frac{N}{S_{\v k}}\ .
+x_{N,\v k}^2=\frac{F_{N-1,\v k}}{F_{N,\v k}}\,\frac{N}{S_{\v k}}\ .
 \end{equation}
  
 Using this new expression of $|\psi_N\rangle$, it becomes easy to write the population of the $\v k$ electron state in the $N$ pair condensate in a compact form as
 \begin{equation}
-\overline{N}_{\v k}(N)=\frac{x_{N\v k}^2|\phi_{\v k}^2|}{1+x_{N\v k}^2|\phi_{\v k}^2|}\ .
+ \langle\hat{N}_{\v{k}}\rangle_{N}=\frac{x_{N\v k}^2|\phi_{\v k}^2|}{1+x_{N\v k}^2|\phi_{\v k}^2|}\ .
 \end{equation}
-When compared to $\overline{N}_{\v k}$ calculated in the $|\phi_{BCS}\rangle$ state, as given in Eq.(18), we see that $\overline{N}_{\v k}(N)$ calculated in a $N$-pair condensate reduces to $\overline{N}_{\v k}$ for $x_{N\v k}^2=1$. We then note that, for large samples, the number of $\v k$ states is very large; so $S\simeq S_{\v k}$ and $F_N\simeq F_{N,\v k}$. As a result, the condition $x_{N\v k}^2=1$ also reads $1\simeq x_N^2=NF_{N-1}/SF_N$. This is fulfilled for $N=N^\ast$ as seen from Eq.(26). So, $\overline {N}_{\v k}(N^\ast)=\overline{N}_{\v k}$: as expected, the $\v k$-electron state population calculated in a canonical $N$-pair state is equal to the one calculated in the grand canonical BCS state provided that $N$ corresponds to the maximum value $N^\ast$ of the $N$-pair distribution in the BCS state.
+When compared to $ \langle\hat{N}_{\v{k}}\rangle$ calculated in the $|\phi_{BCS}\rangle$ state, as given in Eq.(18), we see that $ \langle\hat{N}_{\v{k}}\rangle_{N}$ calculated in a $N$-pair condensate reduces to $ \langle\hat{N}_{\v{k}}\rangle$ for $x_{N,\v k}^2=1$. We then note that, for large samples, the number of $\v k$ states is very large; so the $S$ sum does not change very much when one term is removed, i.e., $S\simeq S_{\v k}$. In the same way $F_N\simeq F_{N,\v k}$. As a result, the condition $x_{N,\v k}^2=1$ also reads $1\simeq x_N^2=NF_{N-1}/SF_N$. This is fulfilled for $N=N^\ast$ as seen from Eq.(26). So, $\langle\hat{N}_{\v{k}}\rangle_{N^\ast}= \langle\hat{N}_{\v{k}}\rangle$: as expected, the $\v k$-electron state population calculated in a canonical $N$-pair state is equal to the one calculated in the grand canonical BCS state provided that $N$ corresponds to the maximum value $N^\ast$ of the $N$-pair distribution in the BCS state.
 
-To get a better understanding of the link which exists between $|\phi_{BCS}\rangle$ and its $N$-pair state projection, we can also calculate the mean value of the two-pair operator $\beta_{\v k}\beta_{\v k'}^\dag$. As for $a_{\v k\uparrow}^\dag a_{\v k\uparrow}$, a brute force calculation of this mean value would give it as a $F_N$ expansion, not easy to compare with Eqs.(21,22). We can instead follow Leggett \cite{Leggett} and introduce the operator $C^\dag$ in which the $\v k$ and $\v k'$ states are missing, namely,
+To get a better understanding of the link which exists between $|\phi_{BCS}\rangle$ and its $N$-pair state projection $|\Psi_N\rangle$, we can also calculate the mean value of the two-pair operator $\beta_{\v k}^{}\beta_{\v k'}^\dag$ for this $|\Psi_N\rangle$ state. As for $a_{\v k\uparrow}^\dag a_{\v k\uparrow}$, a brute force calculation of this mean value would give it as a $F_N$ expansion, not easy to compare with Eqs.(21,22). We can instead follow Leggett \cite{Leggett} and introduce the operator $C^\dag$ in which the $\v k$ and $\v k'$ states are missing, namely,
 \begin{equation}
 C_{\v k\v k'}^\dag=\sum_{\v p\neq (\v k,\v k')}\phi_{\v p}\beta_{\v p}^\dag\ .
 \end{equation}
@@ -274,10 +282,10 @@ with $F_{N,\v k\v k'}$ such that $\langle 0|B_{\v k\v k'}^NB_{\v k\v k'}^{\dag N
 
 From $C^\dag=C_{\v k\v k'}^\dag+\phi_{\v k}\beta_{\v k}^\dag+\phi_{\v k'}\beta_{\v k'}^\dag$, it is then easy to show that the normalized $N$-pair state $|\psi_N\rangle$ defined in Eq.(24) also reads
 \begin{eqnarray}
-|\psi_N\rangle=\frac{1}{\mathcal{N}}\Big{(}|\psi_{N,\v k\v k'}\rangle\hspace{4cm}\nonumber\\
+|\psi_N\rangle=\frac{1}{\mathcal{N}}\Big{[}|\psi_{N,\v k\v k'}\rangle\hspace{4cm}\nonumber\\
 +x_{N,\v k\v k'}(\phi_{\v k}\beta_{\v k}^\dag+
 \phi_{\v k'}\beta_{\v k'}^\dag)|\psi_{N-1,\v k\v k'}\rangle\hspace{1cm}\nonumber\\
-+x_{N,\v k\v k'}x_{N-1,\v k\v k'}\phi_{\v k}\phi_{\v k'}\beta_{\v k}^\dag\beta_{\v k'}^\dag|\psi_{N-2,\v k\v k'}\rangle\Big{)},
++x_{N,\v k\v k'}x_{N-1,\v k\v k'}\phi_{\v k}\phi_{\v k'}\beta_{\v k}^\dag\beta_{\v k'}^\dag|\psi_{N-2,\v k\v k'}\rangle\Big{]},
 \end{eqnarray}
 where $x_{N,\v k\v k'}$ has a similar form as $x_{N\v k}$ with now two states excluded instead of one, namely,
 \begin{equation}
@@ -296,17 +304,18 @@ $\Big{[}1+x_{N,\v k\v k'}|\phi_{\v k}^2|\Big{]}^{1/2}\Big{[}1+x_{N,\v k\v k'}|\p
 \frac{x_{N,\v k\v k'}\phi_{\v k'}}{1+x_{N,\v k\v k'}^2|\phi_{\v k'}^2|}\ .
 \end{eqnarray}
 
-When compared to the mean value of the same pair operator calculated in the BCS state, as given in Eqs.(21,22), we again find that these two results are identical provided that $1=x_{N,\v k\v k'}^2\simeq x_N^2$. As expected, this again happens for $N$ equal to the maximum $N^\ast$ of the $\lambda_N$ distribution of $N$-pair states in the BCS ansatz, provided that the sample is large enough in order to again have a large number of $\v k$ states for $F_{N,\v k\v k'}\simeq F_N$ and $S_{\v k\v k'}\simeq S$.
+When compared to the mean value of $\beta_{\v k}^{}\beta_{\v k'}^\dag$  calculated in the BCS state, as given in Eqs.(21,22), we  find that these two results are identical provided that $1=x_{N,\v k\v k'}^2$ which is very close to $ x_N^2$ because the missing $(\v k , \v k')$ states do not affect very much $F_N$ and the $S$ sum in the large sample, when the number of $\v k$'s is very large; so $F_{N,\v k\v k'}\simeq F_N$ and $S_{\v k\v k'}\simeq S$. As expected, this again happens for $N$ equal to the maximum $N^\ast$ of the $\lambda_N$ distribution of $N$-pair states in the BCS ansatz.
 
 \section{Cooper pair wave function}
 
-Cooper pairs like excitons are composite bosons made of two fermions. Their creation operators thus read as a sum of free fermion pair creation operators. To properly define the Cooper pair wave function, it can be of interest to compare their creation operator with the one of excitons.
+We wish to end by reconsidering what should be called ``pair-wave function'', since $F_{\v{k}}$ defined in Eq. (\ref{fn}) is often called this way.
+Cooper pairs like excitons are composite bosons made of two fermions. Their creation operators thus read as a sum of free fermion pair creation operators $\beta_{\v k}^\dag$. To properly identify what should be called ``Cooper pair wave function'', it can be of interest to compare their creation operator with the one of excitons.
 
-We commonly distinguish two types of excitons: Wannier excitons and Frenkel excitons, the latter having closer similarity with Cooper pairs. Indeed, Wannier excitons are constructed on free electrons and free holes so that they are ``double index'' composite bosons. Their creation operators read
+We commonly distinguish two types of excitons: Wannier excitons and Frenkel excitons, the latter having closer similarity with Cooper pairs. Indeed, Wannier excitons are constructed on free electrons and free holes, so that they are ``double index'' composite bosons. Their creation operators read
 \begin{equation}
 B_i^\dag=\sum_{\v k_e,\v k_h}a_{\v k_e}^\dag b_{\v k_h}^\dag \langle\v k_h,\v k_e|i\rangle\ ,
 \end{equation}
-with $i=(\v Q_i,\nu_i)$, where $\v Q_i$ is the exciton center-of-mass momentum and $\nu_i$ its relative motion index. The prefactor $\langle\v k_h,\v k_e|i\rangle$ of the exciton $i$ expansion on free electron-hole pairs, is the exciton wave function in momentum space.
+with $i=(\v Q_i,\nu_i)$, where $\v Q_i$ is the exciton center-of-mass momentum and $\nu_i$ its relative motion index. The prefactor $\langle\v k_h,\v k_e|i\rangle$ of the exciton $i$ expansion on free electron-hole pairs, is the $i$ exciton wave function in momentum space.
 
 By contrast, Frenkel excitons are made of atomic excitations for atoms on a regular lattice. They thus are ``single index'' composite bosons, their creation operators reading as
 \begin{equation}
@@ -316,58 +325,132 @@ $\v R_n$ is the position of the excited atom and $N_s$ the number of atomic site
 
 Cooper pairs also are ``single index'' composite bosons since an up spin electron $\v k$ is coupled to one down spin electron $(-\v k)$ only. The (normalized) creation operator of one Cooper pair in the BCS condensate reads, as quoted above,
 \begin{equation}
-B^\dag=\sum_{\v k}\varphi_{\v k}a_{\v k}^\dag b_{-\v k}^\dag,
+B_0^\dag=\sum_{\v k}\varphi_{\v k}a_{\v k}^\dag b_{-\v k}^\dag,
 \end{equation}
 where $\varphi_{\v k}=\phi_{\v k}/\sqrt{S}$ with $\phi_{\v k}=v_{\v k}/u_{\v k}$ and $S=\sum_{\v k}|\phi_{\v k}^2|$. 
 
 
 
-In view of Eqs.(43-45), $\varphi_{\v k}$ must be taken as the Cooper pair wave function, without any ambiguity, in spite of other quantities like $F_{\v k}=u_{\v k}^\ast v_{\v k}$ often quoted as "pair wave function" in the literature. 
+In view of Eqs.(43-45), $\varphi_{\v k}$ must be taken as the Cooper pair wave function, without any ambiguity, in spite of other quantities like $F_{\v k}=u_{\v k}^\ast v_{\v k}$ often quoted as ``pair wave function" in the literature. 
 
-Although Cooper pairs and Frenkel excitons both are ``single index'' composite bosons, they however have a few major differences. One of them comes from the fact that the Frenkel exciton wave function is just a phase, so that the excited site $n$ distribution in a Frenkel exciton is flat. By contrast, for Cooper pairs,
-\begin{equation}
+Although Cooper pairs and Frenkel excitons both are ``single index'' composite bosons, they however have a few major differences. One of them comes from the fact that the Frenkel exciton wave function is just a phase, so that the distribution of the  excited site $n$  in a Frenkel exciton is flat. By contrast, for Cooper pairs,
+\begin{equation}\label{phi}
 \phi_{\v k}=\frac{v_{\v k}}{u_{\v k}}=\sqrt{\frac{E_{\v k}-\xi_{\v k}}{E_{\v k}+\xi_{\v k}}}=\frac{\Delta}{E_{\v k}+\xi_{\v k}}
 \end{equation}
-with $\xi_{\v k}=\epsilon_{\v k}-\mu$ and $E_{\v k}^2=\xi_{\v k}^2+\Delta^2$, the electron $\v k$ energy being $\epsilon_{\v k}=\v k^2/2m$ while $\mu$ is the chemical potential of the $|\phi_{BCS}\rangle$ state in the grand canonical ensemble. In the usual BCS configuration with a potential extending symmetrically on a phonon energy scale on both sides of the normal electron Fermi sea, $\mu$ is in the middle of the layer over which the potential acts, this layer total extension $\Omega$ being twice the phonon energy. The gap $\Delta$ then reads in the small potential limit $\Delta\simeq \Omega e^{-1/\rho_0V}$, where $\rho_0$ is the density of states taken as constant in the potential layer. As a result, $\phi_{\v k}$ has three different scales: $\phi_{\v k}\simeq 1$ for $\epsilon_{\v k}$ very close to $\mu$ on the $\Delta$ scale. $\phi_{\v k}\simeq 2e^{1/\rho_0V}(\mu-\epsilon_{\v k})/\Omega$ for $\epsilon_{\v k}$ far below $\mu$ on the $\Delta$ scale and $1/\phi_{\v k}\simeq 2e^{1\rho_0V}(\epsilon_{\v k}-\mu)/\Omega$ for $\epsilon_{\v k}$ far above $\mu$ on this scale.
+where $\xi_{\v k}=\epsilon_{\v k}-\mu$ and $E_{\v k}^2=\xi_{\v k}^2+\Delta^2$, the electron $\v k$ energy being $\epsilon_{\v k}=\v k^2/2m$ while $\mu$ is the chemical potential of the $|\phi_{BCS}\rangle$ state in the grand canonical ensemble. In the usual BCS configuration with a reduced BCS potential extending symmetrically on a phonon energy scale on both sides of the normal electron Fermi sea, $\mu$ is in the middle of the layer over which the potential acts, this layer total extension $\Omega$ being twice the phonon energy (see Fig. \ref{potfig}). The gap $\Delta$ then reads in the small potential limit $\Delta\simeq \Omega e^{-1/\rho_0V}$, where $\rho_0$ is the density of states taken as constant over the potential layer. As a result, $\phi_{\v k}$ has three different scales: $\phi_{\v k}\simeq 1$ for $\epsilon_{\v k}$ very close to $\mu$ on the $\Delta$ scale. $\phi_{\v k}\simeq 2e^{1/\rho_0V}(\mu-\epsilon_{\v k})/\Omega$ for $\epsilon_{\v k}$ far below $\mu$ on the $\Delta$ scale and $1/\phi_{\v k}\simeq 2e^{1\rho_0V}(\epsilon_{\v k}-\mu)/\Omega$ for $\epsilon_{\v k}$ far above $\mu$ on this scale.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.3\textwidth]{potential}
+\caption{The reduced BCS potential extends over an energy $\Omega$, of the order of twice the phone energy, above a non-interacting electron Fermi sea with Fermi energy $E_{F_0}$.  The dashed line indicates the chemical potential $\mu$.  \label{potfig}} 
+%\parbox{0.7\textwidth}{\small}
 
-If we now turn to the normalized distribution, i.e., the Cooper pair wave function in momentum space, it reads $\varphi_{\v k}=\phi_{\v k}/\sqrt{S}$ with 
+\end{center}
+\end{figure}
+
+
+If we now turn to the normalized distribution, i.e., the Cooper pair wave function in momentum space, it reads $\varphi_{\v k}=\phi_{\v k}/\sqrt{S}$ where, using Eq. (\ref{phi})
 \begin{equation}
 S=\sum_{\v k}|\phi_{\v k}^2|=N_{\Omega}(1+\frac{\Omega^2}{6\Delta^2})\simeq \frac{N_{\Omega}}{6}\,e^{2/\rho_0V},
 \end{equation}
- $N_{\Omega}=\rho_0\Omega$ being the total number of pair states in the potential layer for a constant density of states $\rho_0$. Since, in the small coupling limit, $e^{-1/\rho_0V}$ is very small, the Cooper pair wave function is sizeable between $\epsilon_{F_0}$ and $\mu-\Delta/2$ only, where $\epsilon_{F_0}$  is the Fermi energy of the non-interacting electrons. This wave function scales, within irrelevant numerical prefactors,  as 
+ $N_{\Omega}=\rho_0\Omega$ is the total number of pair states in the potential layer for a constant density of states $\rho_0$. Since,  $e^{-1/\rho_0V}$ is very small in the small coupling limit, the Cooper pair wave function $\phi_{\v{k}}$ is sizable between $\epsilon_{F_0}$ and $\mu-\Delta/2$ only, where $\epsilon_{F_0}$  is the Fermi energy of the non-interacting electrons (see Fig. \ref{potfig}. It then  scales, within irrelevant numerical prefactors,  as 
 \begin{equation}
 \varphi_1(\v k)\simeq \frac{1}{\sqrt{N_{\Omega}}}\frac{\mu-\epsilon_{\v k}}{\Omega}.
 \end{equation}
-It has a small tail of the order of
+It has a small tail (see Fig. \ref{wavfig}) of the order of
 \begin{equation}
 \varphi_2(\v k)\simeq \frac{e^{-1/\rho_0V}}{\sqrt{N_{\Omega}}}
 \end{equation}
-for electron energies in the range $\pm \Delta$ around $\mu$, while for higher energy, i.e., for $\epsilon_{\v k}$ between $\mu+\Delta$ and $\epsilon_{F_0}+\Omega$, the wave function is even smaller, being of the order of 
+for electron energies in the range $\pm \Delta$ around $\mu$. For higher energy, i.e., for $\epsilon_{\v k}$ between $\mu+\Delta$ and $\epsilon_{F_0}+\Omega$, the wave function is even smaller, being of the order of 
 \begin{equation}
 \varphi_3(\v k)\simeq \frac{e^{-2/\rho_0V}}{\sqrt{N_{\Omega}}}\frac{\Omega}{\epsilon_{\v k}-\mu}.
 \end{equation}
 
  
- This shows that the sizeable part of the Cooper pair wave function $\varphi_{\v k}$, which is the normalized form of $\phi_{\v k}=v_{\v k}/u_{\v k}$, is a linearly decreasing function of $\epsilon_{\v k}$ between the non-interacting electron Fermi sea $\epsilon_{F_0}$ and the normal electron Fermi sea  $\epsilon_{F}=\epsilon_{F_0}+\Omega/2$, in the case of a potential extending symmetrically on both sides of this Fermi sea. The number of pair states included in the Cooper pair creation operator is of the order of $N_\Omega/2$. This has to be contrasted with what is often called pair wave function, namely $F_{\v k}=v_{\v k}^*u_{\v k}$, and which is highly peaked on $\epsilon_{F}$. The latter is physically related to excited states through the excitation of electron-hole pairs in the BCS condensate while the former corresponds to the ground state of $N_\Omega/2$ up and down spin electrons added to the frozen sea $\epsilon_{F_0}$ and paired by the BCS potential.
- 
-  For completeness, in addition to Cooper pairs with creation operator $B^\dag$ making the BCS condensate, we should also mention the "single Cooper pair" derived by Cooper when studying a single pair of up and down spin electrons added to the $\epsilon_{F_0}$ Fermi sea. Its ( unnormalized ) creation operator reads 
+ This shows that the sizable part of the Cooper pair wave function $\varphi_{\v k}$, which is the normalized form of $\phi_{\v k}=v_{\v k}/u_{\v k}$, is a linearly decreasing function of $\epsilon_{\v k}$ between the non-interacting electron Fermi sea $\epsilon_{F_0}$ and the normal electron Fermi sea  $\epsilon_{F}=\epsilon_{F_0}+\Omega/2$, in the case of a potential extending symmetrically on both sides of this Fermi sea. The number of pair states with sizable weight in the Cooper pair creation operator thus is of the order of $N_\Omega/2$. This understanding  has to be contrasted with what is often called pair wave function, namely $F_{\v k}=v_{\v k}^*u_{\v k}$, and which is highly peaked on $\epsilon_{F}$ (see Fig. \ref{wavfig}). The latter is physically related to excited states through the excitation of electron-hole pairs in the BCS condensate while the former corresponds to the ground state of  up and down spin electrons added to the non-interacting Fermi sea $\epsilon_{F_0}$ and paired by the reduced  BCS potential.
+ \begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.45\textwidth]{wave}
+\caption{The Cooper pair wave function $\varphi_{\v{k}}$ has a linear decrease between $\epsilon_{F_0}$ and $\epsilon_{F_0}+\frac{\Omega}{2}\simeq\mu$ and a very small tail between $\mu$ and $\epsilon_{F_0}+\Omega$. \\ Insert: the ``pair wave function'' defined as $F_{\v{k}}=u_{\v{k}}v_{\v{k}}^*$ is concentrated on a $\Delta$ scale around   $\epsilon_{F_0}+\frac{\Omega}{2}$.\label{wavfig}} 
+%\parbox{0.7\textwidth}{\small}
+
+\end{center}
+\end{figure}
+  For completeness, in addition to Cooper pairs with creation operator $B_0^\dag$ making the BCS condensate, we must  also mention the ``single Cooper pair" derived by Cooper when studying a single pair of up and down spin electrons added to the $\epsilon_{F_0}$ Fermi sea. Its ( unnormalized ) creation operator reads 
   \begin{equation}
 B_{N=1}^\dag=\sum_{\v k}\frac{1}{2\epsilon_{\v k}-E_1}a_{\v k}^\dag b_{-\v k}^\dag.
 \end{equation}
- with $E_1=2\epsilon_{F_0}-\epsilon_{c}$ where $\epsilon_{c}\simeq2\Omega e^{-2/\rho_0V}$ is the single pair binding energy. The wave function associated to $B_{N=1}^\dag$ is concentrated on a $\epsilon_{c}$ scale above $\epsilon_{F_0}$, so that the amount of pair states included in $B_{N=1}^\dag$ is of the order of $N_c=\rho_0\epsilon_{c}$.
+the term being taken for $\epsilon_{F_0}<\epsilon_{\v{k}}<\epsilon_{F_0}+\Omega$ .$E_1=2\epsilon_{F_0}-\epsilon_{c}$, where $\epsilon_{c}\simeq2\Omega e^{-2/\rho_0V}$, is the single pair binding energy. The wave function of $B_{N=1}^\dag|0\rangle$ state is concentrated on a $\epsilon_{c}$ scale above $\epsilon_{F_0}$; so, that the amount of pair states with sizable weight in $B_{N=1}^\dag$ is of the order of $N_c=\rho_0\epsilon_{c}$.
  
   
   \section{Conclusion}
  
  
+In this work, we address the BCS condensate of Cooper pairs in the canonical ensemble. To possibly treat the Pauli exclusion principle between a given number of paired electrons, we first develop a formalism appropriate for Cooper pairs which is based on a set of commutators.  We then use it to in particular show that the Pauli exclusion principle between Cooper pairs is fully responsible for the correct peak value of the probability distribution for $N$-pair state in the BCS wave function ansatz. The standard grand canonical ensemble approach  tends to mask the key role played by Pauli blocking in this problem. We end by reconsidering what should be called ``pair wave function'' through a comparison with other composite bosons like Wannier and Frenkel excitons. 
+
+\section{Acknowledgment}
+We wish to thank Tony Leggett for very many discussions on the canonical ensemble approach to Cooper pairs. One of us (M. C.) wants to thank the Institute of Condensed Matter Physics of the University of Illinois at Urbana-Champaign for various invitation during which most of this work has been performed.  G. Z. is supported partly by USA NSF under grant No. DMR 09-06921. 
 
 
 
 
+\begin{thebibliography}{6}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem[{\citenamefont{Bardeen et~al.}(1957)\citenamefont{Bardeen, Cooper, and
+  Schrieffer}}]{BCS}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Bardeen}},
+  \bibinfo{author}{\bibfnamefont{L.~N.} \bibnamefont{Cooper}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.~R.}
+  \bibnamefont{Schrieffer}}, \bibinfo{journal}{Phys. Rev.}
+  \textbf{\bibinfo{volume}{106}}, \bibinfo{pages}{162} (\bibinfo{year}{1957}).
 
+\bibitem[{\citenamefont{Combescot et~al.}(2008)\citenamefont{Combescot,
+  Betbeder-Matibet, and Dubin}}]{CobosonPhysicsReports}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Combescot}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Betbeder-Matibet}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Dubin}},
+  \bibinfo{journal}{Physics Reports} \textbf{\bibinfo{volume}{463}},
+  \bibinfo{pages}{215} (\bibinfo{year}{2008}).
 
+\bibitem[{\citenamefont{Pogosov et~al.}(2010)\citenamefont{Pogosov, Combescot,
+  and Crouzeix}}]{combescotBCS}
+\bibinfo{author}{\bibfnamefont{W.~V.} \bibnamefont{Pogosov}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Combescot}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Crouzeix}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{81}},
+  \bibinfo{pages}{174514} (\bibinfo{year}{2010}).
 
+\bibitem[{\citenamefont{{Combescot} and {Zhu}}(2010)}]{CobosonBcsRich}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Combescot}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{{Zhu}}},
+  \bibinfo{journal}{Eur.Phys.J.B,} \textbf{\bibinfo{volume}{79}},
+  \bibinfo{pages}{263} (\bibinfo{year}{2010}).
+
+\bibitem[{\citenamefont{Zhu and Combescot}(2011)}]{motheaten}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Zhu}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Combescot}},
+  \bibinfo{journal}{Solid State Communications}  (\bibinfo{year}{2011}),
+  \bibinfo{note}{accepted}.
+
+\bibitem[{\citenamefont{Leggett}(2006)}]{Leggett}
+\bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{Leggett}},
+  \emph{\bibinfo{title}{{Quantum Liquids}}} (\bibinfo{publisher}{Oxford
+  University Press}, \bibinfo{year}{2006}).
+
+\end{thebibliography}
+
+%\bibliography{../citation}
 
 \end{document}
  

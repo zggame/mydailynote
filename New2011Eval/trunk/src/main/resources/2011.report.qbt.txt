@@ -1,0 +1,48 @@
+#####################################################
+output/2011/qbtTask1aMRR.csv
+CJ1
+output/2011/qbt_CJ1_Task1a_group_Single Count (MRR method).txt
+#####################################################
+output/2011/qbtTask1bMRR.csv
+CJ1
+output/2011/qbt2_CJ1_Task1b_group_Single Count (MRR method).txt
+#####################################################
+output/2011/qbtTask2MRR.csv
+CJ1
+output/2011/qbt_CJ1_Task2_group_Single Count (MRR method).txt
+#####################################################
+output/2011/qbtTask1aSimple.csv
+CJ1
+output/2011/qbt_CJ1_Task1a_group_Single Count (Simple Score method).txt
+#####################################################
+output/2011/qbtTask1bSimple.csv
+CJ1
+output/2011/qbt2_CJ1_Task1b_group_Single Count (Simple Score method).txt
+#####################################################
+output/2011/qbtTask2Simple.csv
+CJ1
+output/2011/qbt_CJ1_Task2_group_Single Count (Simple Score method).txt
+#####################################################
+output/2011/qbtTask1aQueryMRR.csv
+CJ1
+output/2011/qbt_CJ1_Task1a_query_Single Count (MRR method).txt
+#####################################################
+output/2011/qbtTask1bQueryMRR.csv
+CJ1
+output/2011/qbt2_CJ1_Task1b_query_Single Count (MRR method).txt
+#####################################################
+output/2011/qbtTask2QueryMRR.csv
+CJ1
+output/2011/qbt_CJ1_Task2_query_Single Count (MRR method).txt
+#####################################################
+output/2011/qbtTask1aQuerySimple.csv
+CJ1
+output/2011/qbt_CJ1_Task1a_query_Single Count (Simple Score method).txt
+#####################################################
+output/2011/qbtTask1bQuerySimple.csv
+CJ1
+output/2011/qbt2_CJ1_Task1b_query_Single Count (Simple Score method).txt
+#####################################################
+output/2011/qbtTask2QuerySimple.csv
+CJ1
+output/2011/qbt_CJ1_Task2_query_Single Count (Simple Score method).txt

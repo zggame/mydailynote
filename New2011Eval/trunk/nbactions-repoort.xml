@@ -9,7 +9,7 @@
             <properties>
                 <exec.workingdir>/Users/gzhu1/mirex/2011/qbt/trunk/src/main/resources</exec.workingdir>
                 <exec.classpathScope>runtime</exec.classpathScope>
-                <exec.args>-classpath %classpath org.imirsel.mirex.eval.Eval result.qbt.2011.txt output/output.2011.qbt.txt output/2011</exec.args>
+                <exec.args>-classpath %classpath org.imirsel.mirex.eval.CombineReport 2011.report.qbt.txt</exec.args>
                 <exec.executable>java</exec.executable>
             </properties>
         </action>
@@ -22,7 +22,7 @@
             <properties>
                 <exec.workingdir>/Users/gzhu1/mirex/2011/qbt/trunk/src/main/resources</exec.workingdir>
                 <exec.classpathScope>runtime</exec.classpathScope>
-                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -classpath %classpath org.imirsel.mirex.eval.Eval result.qbt.2011.txt output/output.2011.qbt.txt output/2011</exec.args>
+                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -classpath %classpath org.imirsel.mirex.eval.CombineReport 2011.report.qbt.txt</exec.args>
                 <jpda.listen>true</jpda.listen>
                 <exec.executable>java</exec.executable>
             </properties>
@@ -35,7 +35,7 @@
             </goals>
             <properties>
                 <exec.workingdir>/Users/gzhu1/mirex/2011/qbt/trunk/src/main/resources</exec.workingdir>
-                <exec.args>${profiler.args} -classpath %classpath org.imirsel.mirex.eval.Eval result.qbt.2011.txt output/output.2011.qbt.txt output/2011</exec.args>
+                <exec.args>${profiler.args} -classpath %classpath org.imirsel.mirex.eval.CombineReport 2011.report.qbt.txt</exec.args>
                 <profiler.action>profile</profiler.action>
                 <exec.executable>${profiler.java}</exec.executable>
             </properties>

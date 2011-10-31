@@ -1,0 +1,3 @@
+result/2011/qbt/CJ1.qbt.onset.QBT.txt		||qbt2	||CJ1||Task1b||key/qbt/QBTonset.list||key/qbt/QBTmidi.list|| CJ1 Task1 (symbolic input) (Show Hsiao's data)			||filekey2||key/qbt/QBTonset.list
+result/2011/qbt/CJ1.qbt.onset.MIR.txt		||qbt	||CJ1||Task1a||key/qbt/MIRqueryOnset.list||key/qbt/MIRmidi.list|| CJ1 Task1 (symbolic input) (Roger Jang's data)			||filekey||key/qbt/MIRqueryOnset.list
+result/2011/qbt/CJ1.qbt.wave.MIR.txt		||qbt	||CJ1||Task2||key/qbt/MIRqueryWave.list||key/qbt/MIRmidi.list|| CJ1 Task1 (wave input) (Roger Jang's data)				||filekey||key/qbt/MIRqueryWave.list

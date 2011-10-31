@@ -1,0 +1,24 @@
+qbt2_CJ1_Task1b
+Single Count (Simple Score Method):0.683
+Single Count (MRR method):0.508
+total count:410
+note:
+CJ1 Task1 (symbolic input) (Show Hsiao's data)file:result/2011/qbt/CJ1.qbt.onset.QBT.txt
+
+
+qbt_CJ1_Task1a
+Single Count (Simple Score Method):0.747
+Single Count (MRR method):0.599
+total count:890
+note:
+CJ1 Task1 (symbolic input) (Roger Jang's data)file:result/2011/qbt/CJ1.qbt.onset.MIR.txt
+
+
+qbt_CJ1_Task2
+Single Count (Simple Score Method):0.727
+Single Count (MRR method):0.588
+total count:890
+note:
+CJ1 Task1 (wave input) (Roger Jang's data)file:result/2011/qbt/CJ1.qbt.wave.MIR.txt
+
+

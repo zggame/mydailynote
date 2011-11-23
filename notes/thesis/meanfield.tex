@@ -1,9 +1,9 @@
 % !TeX root =thesis.tex
 \chapter{The variational approach for the two-channel problem using  the BCS-type ansatz\label{ch:mean}}
-We can also formulate the problem  using the  BCS-type ansatz.  It is not difficult to calculate  the expectation of the free energy and  the wave function that optimizes the free energy within the ansatz space.  The optimization process gives us gap equations, which determine the exact wave function with the constraint from number equations.   %with those common parameters as chemical potential, gap.  
-We will see that this method yields  the mean-field solution consistent with the path-integral approach.  However, this method is mean-field by nature and it is difficult  to extend it to study the collective excitation of the system.  
+We can also formulate the problem  using the  BCS-type ansatz.  It is not difficult to calculate  the expectation of the free energy as well as  the wave function that optimizes the free energy within this ansatz.  The optimization process gives us gap equations, which determine the  wave function with the constraint from number equations.   %with those common parameters as chemical potential, gap.  
+We will see that this method yields  the mean-field solution consistent with the one of the path-integral approach.  However, this method is mean-field by nature and  difficult  to be extended for studying collective excitations.  
 
-We put the Hamiltonian Eq. \ref{eq:pathInt2:ham2} into the momentum space, and restore the momentum dependence of the interaction coefficients
+We rewrite the Hamiltonian Eq. \ref{eq:pathInt2:ham2} in momentum space, and restore the momentum dependence of the interaction coefficients
 \begin{equation}\label{eq:uvw:hamiltonian}
 \begin{split}
  H=&\sum_\vk\epsilon^a_\vk{}a^+_\vk{}a^{}_\vk+\sum_\vk\epsilon^b_\vk{}b^+_\vk{}b^{}_\vk+\sum_\vk\epsilon^c_\vk{}c^+_\vk{}c^{}_\vk\\
@@ -17,15 +17,15 @@ Here we take the free atom at zero magnetic field as the  zero energy.
 \begin{equation*}
 \epsilon_{\vk}^i=k^2/(2m)+\eta^i, \qquad (i=a,b,c)
 \end{equation*}
- $\eta^i$ is the Zeeman energy of the $i^{\text{th}}$ atom at magnetic field $B$. By the hermition condition we have 
-\begin{equation}
+ $\eta^i$ is the Zeeman energy of the $i^{\text{th}}$ atom at magnetic field $B$. The hermiticity  of the Hamiltonian imposes
+ \begin{equation}
  U_{\vk'\vk}=U^*_{\vk\vk'},\qquad{} V_{\vk'\vk}=V^*_{\vk\vk'}
 \end{equation}
-  We introduce the BCS-type ansatz 
+  We then introduce the BCS-type ansatz 
 \begin{equation}\label{eq:ansatz}
  \ket{\Psi}=\prod_\vk\br{u_\vk+v_\vk{}a^\dg_\vk{}b^\dg_{-\vk}+w_\vk{}a^\dg_\vk{}c^\dg_{-\vk}}\ket{0}
 \end{equation}
-$\ket{0}$ is the particle vacuum state.  Here we require $\abs{u_\vk}^2+\abs{v_\vk}^2+\abs{w_\vk}^2=1$ for normalization.  This ansatz is closely modeled on the original BCS ansatz for superconductivity.  An alternative ansatz would be $\prod_\vk(u_\vk+v_\vk{}a^\dg_\vk{}b^\dg_{-\vk})(u^{'}_\vk+w_\vk{}a^\dg_\vk{}c^\dg_{-\vk})\ket{0}$, which is actually the same as Eq. \ref{eq:ansatz}, because  the cross term vanishes due to the Pauli exclusion of the common species.   Similarly to the original BCS ansatz, this ansatz does not have the fixed particle number.  We  will just require the expected value of number operator matches the total particle number. For all the interaction term, there are two types of contribution,
+$\ket{0}$ is the particle vacuum state.  We require $\abs{u_\vk}^2+\abs{v_\vk}^2+\abs{w_\vk}^2=1$ for normalization.  This ansatz is constructed like the original BCS ansatz for superconductivity.  An alternative ansatz would be $\prod_\vk(u_\vk+v_\vk{}a^\dg_\vk{}b^\dg_{-\vk})(u^{'}_\vk+w_\vk{}a^\dg_\vk{}c^\dg_{-\vk})\ket{0}$, which is actually the same as Eq. \ref{eq:ansatz}, because  the cross term vanishes due to the Pauli exclusion on the common species.   As the original BCS ansatz, this ansatz does not have the fixed particle number.  We  will just require the expected value of number operators match the total particle number. For all  interaction terms, we get  two types of contributions,
 for example, 
 \begin{equation*}
 \av{U_{\vk\vk'}a^\dg_\vk{}b^\dg_{-\vk}{}b^{}_{-\vk'}a^{}_{\vk'}}
@@ -34,7 +34,7 @@ for example,
 The first term is the Hatree term and the second term is the more interesting pairing term.  
 
 
-And the full free energy is 
+This gives the full free energy as 
 \begin{equation}\label{eq:uvw:F}
  \begin{split}
   &F\equiv\av{H-\mu{}N}\\
@@ -48,22 +48,22 @@ And the full free energy is
       -\sum_{\vk\neq\vk'}Y^*_{\vk\vk'}w^*_{\vk}{u^{}_{\vk}}v^{}_{\vk'}{}u^{*}_{\vk'}
  \end{split}
 \end{equation}
-Where 
+where we have set
 \begin{equation*}
  \xi^a_\vk=\epsilon^a_\vk-\mu^a,\qquad\xi^b_\vk=\epsilon^b_\vk-\mu^b,\qquad\xi^c_\vk=\epsilon^c_\vk-\mu^b
 \end{equation*}
- Two chemical potentials are added to make sure the $n_a=n_b+n_c=\nth{2}n$.  In principle, $\mu^{a}$ does not need to be equal to $\mu^{b}$  as there is no exchange/conversion between $(a)$ and $(b,c)$.  In fact, the structure of the ansatz guarantees that $n_a=n_b+n_c$. Therefore, we  set $\mu^{a}=\mu^{b}$ for simplicity and drop the superscript on chemical potential hereinafter. 
-We will also drop the Hatree terms because they  only relate to the density and thus can be absorbed into the chemical potentials.   In the second summation, we ignore the fact that the summation only go through $\vk\neq\vk'$ as the correction due to this is in the higher order. 
+ Two chemical potentials are added to make sure the $n_a=n_b+n_c=\nth{2}n$.  In principle, $\mu^{a}$ does not need to be equal to $\mu^{b}$  as there is no exchange or conversion between $(a)$ and $(b,c)$.  In fact, the structure of the ansatz guarantees that $n_a=n_b+n_c$. Therefore, we set $\mu^{a}=\mu^{b}$ for simplicity and drop the superscript on chemical potential hereinafter. 
+We will also drop the Hartree terms because they are  only related to the density and thus can be absorbed into the chemical potentials.   In the second summation, we will ignore the fact that the summation only go through $\vk\neq\vk'$ because the corrections due to this restriction lead to only the higher order terms. 
  
  \section{Exact gap equations and number equations}
-Introduce the new parameter $h_{1\vk}$ and $h_{2\vk}$, corresponding to the mean field value (equal time average) of the anomalous Green's functions,  (as $h_{1,2}$  in Sec \ref{sec:pathInt2:meanfield}), and solve $u_{\vk}$, $v_{\vk}$, $w_{\vk}$ with $h_{1\vk}$ and $h_{2\vk}$ (treat everything as real\footnote{It is not hard to prove that the parameters that optimize the free energy are real within an overall phase factor when the interactions are real. (See also footnote \ref{foot:pathInt2:real} in Chapter \ref{ch:path2}, page \pageref{foot:pathInt2:real}.)}
+We introduce two new parameters $h_{1\vk}$ and $h_{2\vk}$, which corresponds to the mean field values (equal time average) of the anomalous Green's functions,  (in the same way as  $h_{1,2}$  in Sec \ref{sec:pathInt2:meanfield}), 
 \begin{gather}
 u_{\vk}^2+v^{2}_{\vk}+w^{2}_{\vk}=1\\
 u_{\vk}v_{\vk}=h_{1\vk}\\
 u_{\vk}w_{\vk}=h_{2\vk}
 \end{gather}
-One complication in solving above equations is that $u_\vk$, $v_\vk$ and  $w_\vk$ are all  monotonic functions of $k$, while $h_{1\vk}$ or $h_{2\vk}$ is not in the BCS end.  So we need to be careful when taking the square root.  We introduce $\sgn_k$ for such purpose.  
-\begin{equation}
+We can solve $u_{\vk}$, $v_{\vk}$, $w_{\vk}$ in terms of  $h_{1\vk}$ and $h_{2\vk}$ (all parameters are taken as real)\footnote{It is not hard to prove that the parameters that optimize the free energy are real, within an overall phase factor, when the interactions are real. (See also footnote \ref{foot:pathInt2:real} in Chapter \ref{ch:path2}, page \pageref{foot:pathInt2:real}.)}.  One complication in solving above equations is that $u_\vk$, $v_\vk$ and  $w_\vk$ are all  monotonic functions of $k$, while $h_{1\vk}$ or $h_{2\vk}$ is not in the BCS end.  So, we need to be careful when taking the square root.  We introduce $\sgn_k$ for such purpose.  
+\begin{equation}\label{eq:uvw:uvwh12}
 \begin{split}
 u_{\vk}^2=&\frac{1}{2} \left(1+\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\right)\\
 v^{2}_{\vk}=&\frac{2 h_{1\vk}^2}{1+\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}}
@@ -72,11 +72,11 @@ w^{2}_{\vk}=&\frac{2 h_{2\vk}^2}{1+\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}}
 =\frac{h_{2\vk}^2}{2( h_{1\vk}^2+ h_{2\vk}^2)} \left(1-\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\right)
 \end{split}
 \end{equation}
-{\label{foot:20100909:sgn}  $\sgn_k=1$  for the whole region in BEC cases, or for large $k$ in BCS cases. In BCS cases,  $\sgn_{k}=-1$ when $k$ is small.  In the single-channel crossover, $\sgn_{k}=\sgn(\epsilon_{k}-\mu)$, the turning point is at $u_\vk^2=1/2$ (zero chemical potential $\mu=0$).  However, in the two-channel crossover, this is more delicate.  The turning point is still $u_\vk^2=1/2$, but no longer exactly at $\mu=0$.  This sign  is very important in number equations Eqs. \ref{eq:20100909:number}.  These $\sgn_{k}$ functions are absorbed after we convert the formulas back into notations of  $(u_{\vk},\,v_{\vk}, \,w_{\vk})$ or $\xi_{k}$ as it is possible $\xi_{k}<0$.}
+  where $\sgn_k=1$  for all $k$ in BEC cases, and  for large $k$ in BCS cases. In BCS cases,  $\sgn_{k}=-1$ when $k$ is small.  In the single-channel crossover, $\sgn_{k}=\sgn(\epsilon_{k}-\mu)$, and the turning point is at $u_\vk^2=1/2$ which corresponds to zero chemical potential, $\mu=0$.  The two-channel crossover is more delicate to treat.  The turning point is still at $u_\vk^2=1/2$, but it is no longer exactly at $\mu=0$.  The $\sgn_{k}$ function  is very important in number equations Eqs. \ref{eq:20100909:number}.  They however can be  absorbed later on, after we convert the formulas back into notations of  $(u_{\vk},\,v_{\vk}, \,w_{\vk})$ or $\xi_{k}$ as it is possible $\xi_{k}<0$.
 
 
 %Below, we adopt $\sgn_k=1$. (This works for BEC and most part of BCS; and in the final equations, the sign function is taken care of automatically by using $E_{\vk}$.  It is easy to verify that  we arrive at the same final result in the other cases where $\sgn_{k}=-1$. ) 
-Derivatives over $h_{1\vk}$ are\footnote{Here we follow the convention that takes $h_{1\vk}$ and $h_{2\vk}$ as real}
+Eq. \ref{eq:uvw:uvwh12}'s  derivatives over $h_{1\vk}$ are\footnote{Here we follow the same convention by taking $h_{1\vk}$ and $h_{2\vk}$ as real}
 \begin{equation}
 \begin{split}
 \pdiff{u_{\vk}^2}{h_{1\vk}}=&-\frac{2 h_{1\vk}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}}\sgn_{k}\\
@@ -85,7 +85,7 @@ Derivatives over $h_{1\vk}$ are\footnote{Here we follow the convention that take
 =&\sgn_{k}\frac{h_{1\vk} h_{2\vk}^2 \left(1-\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\right)^2}{2\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2} (h_{1\vk}^2 + h_{2\vk}^2)^2}
 \end{split}
 \end{equation}
-The second term is not as obvious, but can be obtained by $\pdiff{v_{\vk}^2}{h_{1\vk}}=-\pdiff{u_{\vk}^2}{h_{1\vk}}-\pdiff{w_{\vk}^2}{h_{1\vk}}$.   Similarly, the derivatives over $h_{2\vk}$ are
+The second equation is not very obvious, but can be obtained by noting that $\pdiff{v_{\vk}^2}{h_{1\vk}}=-\pdiff{u_{\vk}^2}{h_{1\vk}}-\pdiff{w_{\vk}^2}{h_{1\vk}}$.   Similarly, derivatives over $h_{2\vk}$ are
 \begin{equation}
 \begin{split}
 \pdiff{u_{\vk}^2}{h_{2\vk}}=&-\frac{2 h_{2\vk}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}}\sgn_{k}\\
@@ -94,7 +94,7 @@ The second term is not as obvious, but can be obtained by $\pdiff{v_{\vk}^2}{h_{
 \pdiff{w_{\vk}^2}{h_{2\vk}}=&\frac{2 h_{2\vk}\sgn_k}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}}-\frac{8 h_{1\vk} ^{2}h_{2\vk}\sgn_{k}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2} \left(1+\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\right)^2}
 \end{split}
 \end{equation}
-The gap equations are 
+The gap equations are then
 \begin{subequations}\label{eq:20100909:fullgap}
 \begin{multline}
 \frac{h_{1\vk}\sgn_k}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}} \xi^{ab}_{\vk}+\frac{4 h_{1\vk} h_{2\vk}^2\sgn_{k}}{\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2} \left(1+\sgn_{k}\sqrt{1-4 h_{1\vk}^2-4 h_{2\vk}^2}\right)^2}\eta\\
@@ -107,7 +107,7 @@ The gap equations are
 \label{eq:20100909:fullgapb}
 \end{multline}
 \end{subequations}
-where $\eta=\epsilon^{ac}_{\vk}-\epsilon^{ab}_{\vk}=\eta^{c}-\eta^{b}$ is the bare Zeeman energy difference and is large than most energy scales, such as $E_{F}$.  It is close to  the binding energy of the closed-channel bound state when it is not too far away from the resonance point.   We see one  disadvantages of the ansatz method: unlike the path integral approach, where $h_{1\vk}$ and $h_{2\vk}$ have a very specific forms, Eqs. (\ref{eq:pathInt2:h1}, \ref{eq:pathInt2:h2}), and ready for further approximation and analysis,  we do not have much guide for these two quantities here and need to make some guess.  
+where $\eta=\epsilon^{ac}_{\vk}-\epsilon^{ab}_{\vk}=\eta^{c}-\eta^{b}$ is the bare Zeeman energy difference and is larger than most energy scales, such as $E_{F}$.  It is close to  the binding energy of the closed-channel bound state when it is not too far away from the resonance point.   We see one  disadvantages of the ansatz method: unlike the path integral approach, where $h_{1\vk}$ and $h_{2\vk}$ have a very specific forms, Eqs. (\ref{eq:pathInt2:h1}, \ref{eq:pathInt2:h2}), and ready for further approximation and analysis,  we do not have much guide for these two quantities here and need to make some guess.  
 
 We can define order parameters
 \begin{gather}

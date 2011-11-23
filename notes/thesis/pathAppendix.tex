@@ -1,7 +1,7 @@
 % !TeX root =thesis.tex
 
 
-\section{Diagonalize the matrix Eq. (\ref{eq:pathInt2:G2})\label{sec:diagonalize}}
+\section{Diagonalization of  the matrix Eq. (\ref{eq:pathInt2:G2})\label{sec:diagonalize}}
 We need to find a unitary transformation $L$ to diagonalize matrix 
 \begin{equation}\tag{\ref{eq:pathInt2:G2}}
 T_k^{\dg}G_{\omega_{n},\vk}^{-1}T_k=i\omega_nI+\mtrx{-E_k&0&u_k\Delta_2\\0&+E_k&v_k\Delta_2\\u_k\Delta_2&v_k\Delta_2&+\xi_k+\eta}
@@ -60,7 +60,7 @@ In the above treatment, the small parameter $\tilde\zeta$ is momentum dependent.
 \begin{equation}
 \tilde\zeta=\frac{\Delta_{2}^{2}}{E_{\vk}(\xi_{\vk}+\eta)}
 \end{equation}
-A momentum-dependent small parameter is not very convenient to work with, so we take its maximum value in low momentum ($\lesssim{}E_{F}$). (\eef{eq:pathInt2:zetaDef})
+A momentum-dependent small parameter is not very convenient to work with, so we take its maximum value in low momentum ($\lesssim{}E_{F}$).  In the BCS-like states ($\mu>0$), $\min{E_{k}}=\Delta_{1}$, $\min{\xi_{\vk}}=0$; in the BEC-like states ($\mu<0$), $\min{E_{k}}=\sqrt{\Delta_{1}^{2}+\mu^{2}}$ and $\min{\xi_{\vk}}=\abs{\mu}$. We take the smaller values and have our expanding small parameter $\zeta$(\eef{eq:pathInt2:zetaDef})
 \begin{equation}
 \zeta=\max\tilde{\zeta}=\frac{\Delta_{2}^{2}}{\Delta_{1}\eta}
 \end{equation}
@@ -185,7 +185,7 @@ where $-\frac{\hbar^{2}\kappa^{2}}{2m}=E$.  Note that this behavior is for a dif
 
 
 
-\section{Evaluating $\pi^{(0)}$ and $\pi^{\perp}$\label{sec:calculatePi}}
+\section{Evaluation of $\pi^{(0)}(0)$ and $\pi^{\perp}(0)$\label{sec:calculatePi}}
 Here we  calculate $\pi^{(0)}$ and $\pi^{\perp}$ (Eqs. \ref{eq:pathInt2:GKGK2}, \ref{eq:pathInt2:pi}) to the first order of $\zeta$ (Eq. \ref{eq:pathInt2:zetaDef}) using the expansion of the Green's function (Eqs. \ref{eq:pathInt2:Gexpand}) described in Sec. \ref{sec:diagonalGreen}.
 \begin{equation}\label{eq:pathInt2:pi0long}
 \begin{split}
@@ -254,9 +254,11 @@ Combine Eq. \eqref{eq:pathInt2:pi0-1} and Eq. \eqref{eq:pathInt2:pi0-2}, we have
 
 $\pi^{\perp}(0)$ can actually be calculated   exactly
 \begin{equation}
+\pi_{ij}^{\perp}(0)=\sum_k(k_i)(k_j)\tr(\hat{G}_{0\,k}\hat{G}_{0\,k})
+\end{equation}
+\begin{equation}
 \begin{split}
-\pi^{\perp}(0)=&\sum_k\tr(\hat{G}_{0\,k}\hat{G}_{0\,k})\\
-	=&\sum_k\tr\big(T_{\vk}L_{\vk}B_{k}^{-1}L_{\vk}^{\dg}T_{\vk}^{\dg}T_{\vk}L_{\vk}B_{k}^{-1}L_{\vk}^{\dg}T_{\vk}^{\dg}\big)\\
+	\tr(\hat{G}_{0\,k}\hat{G}_{0\,k})=&\sum_k\tr\big(T_{\vk}L_{\vk}B_{k}^{-1}L_{\vk}^{\dg}T_{\vk}^{\dg}T_{\vk}L_{\vk}B_{k}^{-1}L_{\vk}^{\dg}T_{\vk}^{\dg}\big)\\
 	=&\sum_k\tr\big(B_{k}^{-1}B_{k}^{-1}\big)\\
 	=&\sum_{\vk,i}(\sum_{\omega_{n}}(i\omega_{k}-\xi_{i})^{-2})\\
 	=&0
@@ -264,7 +266,7 @@ $\pi^{\perp}(0)$ can actually be calculated   exactly
 \end{equation}
 
 
-\section{Check for consistency of the expansion\label{sec:pathApp:consistency}}
+\section{Consistency of the expansion over $\zeta$\label{sec:pathApp:consistency}}
 In our treatment here, one crucial assumption in expansion is the smallness of $\Delta_{2}/\eta$ comparing to $1$.  Here we check it.  We have the closed-channel gap equation (\eef{eq:pathInt2:mfclose})
 \begin{equation}
 \Delta_{2}=\sum{}Yh_{1\vk}+\sum{}Vh_{2\vk}\tag{\ref{eq:pathInt2:mfclose}}

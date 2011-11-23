@@ -634,30 +634,71 @@ In the many-body shift $2\mu\gg\lambda_1$, so now the formula for $\tilde{a}_s$ 
 \delta_{c}\equiv\frac{\mathcal{K}^{2}}{\hbar^{2}/m_{r}a_{bg}^{2}}=\frac{(\mathcal{K}a_{\text{bg}})^{2}}{\hbar^{2}/m_{r}}
 \end{equation}
 \end{unsure}
+In the narrow resonance, the weight of the closed-channel becomes substantial quickly.  We can calculate the weight of the closed-channel according to  Eq. \ref{eq:pathInt2:alpha}
+\begin{equation}\tag{\ref{eq:pathInt2:alpha}}
+\alpha=\frac{\sum_{\vk\vk'}{\phi_{\vk}^{*}}{Y_{\vk\vk'}}{h_{1\vk'}}}{\br{-E_{b}+\eta-2\mu-\lambda_{1}}}
+\end{equation}
+  $Y$, as a short-range interaction, in the above integral only picks up the short-range part of $h_{1}(r)$. The short-range part of $h_{1}$ is assumed to be proportional to the short-range of two-body wave function. Its normalization, however, comes from many-body physics. If we assume the zeroth order form of $h_{1}=\Delta_{1}/2E_{\vk}$,   Zhang has derived the form of  $h_{1}(\vr)$ in the real space, (Eq. (25) in \cite{shizhongSumRule})
+  \begin{equation}
+  h_{1}(r)=\frac{m\Delta_{1}}{4\pi\hbar^{2}}\frac{1-r/a_{s}}{r}
+  \end{equation}
+Comparing this one with the Bethe-Peierls boundary condition Eq. \ref{eq:intro:Bethe}, we find that $\frac{m\Delta_{1}}{4\pi\hbar^{2}}$ is the normalization factor.  And $\Delta_{1}$ is determined by the number equation for open-channel density $n_{0}$.  Similar to Eq. \ref{eq:intro:closeWeight}, we can write
+\begin{equation}
+\alpha^{2}=\frac{\abs{\sum_{\vk\vk'}{\phi_{\vk}^{*}}{Y_{\vk\vk'}}{h_{1\vk'}}}^{2}}{\br{-E_{b}+\eta-2\mu-\lambda_{1}}^{2}}
+\end{equation}
+Extracting the normalization factor of $h_{1}$, the integral then is just the same as that in the two-body physics and can be rewritten as $\mathcal{K}$ according to Eq. \ref{eq:intro:kappa}.  We further assume that the energy difference between the resonant point ($a_{s}\to\pm\infty$) and the level crossing point where the uncoupled closed-channel bound state level is at the threshold of the open-channel, $\mathcal{K}$, is in fact much larger than $\mu$ or $\delta_{c}$.  We can replace the denominator with $\mathcal{K}^{2}$, we have then 
+\begin{equation}
+{n_{c}}\approx\frac{m\Delta_{1}^{2}}{32\pi^{2}\hbar^{2}}\nth{\mathcal{K}a_{bg}}
+\end{equation}
+From Eq. \ref{eq:intro:deltaC} above, we can replace $\mathcal{K}a_{bg}$ with $\delta_{c}$, and we divide both side with the open-channel density $n_{o}=\br{\frac{mE_{F}^{(o)}}{\hbar^{2}}}^{2/3}\frac{\sqrt{2}}{3\pi^{2}}$, we find
+\begin{equation}
+\beta=\frac{n_{c}}{n_{o}}\approx\frac{3\sqrt2}{128}\frac{\Delta_{1}^{2}}{{E_{F}^{(o)}}^{3/2}\delta_{c}^{1/2}}
+\end{equation}
+Notice that here $E_{F}^{(o)}$ is the Fermi energy of the open-channel and might be substantially smaller than the total Fermi energy, $E_{F}^{(tot)}$ when moving toward the BEC end.   This form is consistent with the formula obtained by Zhang previously \cite{shizhongUniv}.  $\beta$ is proportional to $\Delta_{1}^{2}$.  At the BCS limit, $n_{o}\approx{}n_{tot}$ and $E_{F}^{(o)}$ equals the Fermi energy calculated by the total density.  $\Delta_{1}$ is exponentially small, there is only very small amount of atoms in the closed-channel.  Moving toward the BEC side, $\Delta_{1}$ increases and the closed-channel density increases as well.  Because the maximum of the $n_{c}$ is the total density $n_{tot}$, we can see that $\Delta_{1}$ saturates.  The narrower the resonance, the sooner it saturates.  In fact, at the universality point, $\Delta_{1}$ is in the order of the Fermi energy, and $\beta$ is already substantial if the resonance is very narrow, i.e. $\delta_{c}$ is much smaller than $E_{F}$.  
+
+We can see an example of the narrow resonance ($\delta_{c}=0.001E_{F}^{(tot)}$) in the Fig. \ref{fig:pathInt2:narrow}. $\Delta_{1}$ saturates at about $0.8E_{F}$. The relative weight of the open channel is defined as 
+\begin{equation}
+\beta_{o}=\frac{n_{o}}{n_{tot}}=\nth{1+\beta}
+\end{equation}
+
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[width=0.8\textwidth]{simpleNarrowMuDt}
-\caption{The chemical potential $\mu$ and gap $\Delta$  over crossover with the Feshbach resonance of different $\delta_{c}$} 
-\label{fig:pathInt2:simpleNarrowMuDt}
-\parbox{0.8\textwidth}{\small  Here $E_{0}=a_{\text{bg}}\mathcal{K}k_{F}$.  $\delta_{c}={E_{0}^{2}}/{E_{F}}$. So the two dashed lines correspond to $\delta_{c}=10E_{F}$ and $100E_{F}$. Notice that $E_{F}$ and $k_{F}$ here are referred to the open-channel quantities. }
+\includegraphics[width=0.8\textwidth]{narrow}
+\caption{The chemical potential $\mu$, gap $\Delta_{1}$ and open-channel relative weight $\beta_{o}$ over crossover with the Feshbach resonance} 
+\label{fig:pathInt2:narrow}
+\parbox{0.8\textwidth}{\small Note that here the detuning $\delta$, gap in the open-channel $\Delta_{1}$ and chemical potential $\mu$ are rescaled with the the Fermi energy of the total density, $E_{F}^{(tot)}$.  We have taken $\delta_{c}=0.001E_{F}^{(tot)}$. We used the detuning from the resonant point  instead of $1/a_{s}k_{F}$ in the single-channel because the additional shift considering in Eq. \ref{eq:pathInt2:simplenarrowAs}.}
 \end{center}
 \end{figure}
-In Fig. \ref{fig:pathInt2:simpleNarrowMuDt}, $\delta_{c}={E_{0}^{2}}/{E_{F}}$, we see the two lines correspond to $\delta_{c}=10E_{F}$ and $100E_{F}$.  Notice that all scales in Fig. \ref{fig:pathInt2:simpleNarrowMuDt} is related the Fermi energy and the Fermi momentum of atoms only in the open-channel.  It is important to find the relation between the open-channel density and the closed-channel density.   Let us look at the open-channel gap equation Eq. \ref{eq:pathInt2:mfopen} 
+
+
+%\begin{figure}[htbp]
+%\begin{center}
+%\includegraphics[width=0.8\textwidth]{simpleNarrowMuDt}
+%\caption{The chemical potential $\mu$ and gap $\Delta$  over crossover with the Feshbach resonance of different $\delta_{c}$} 
+%\label{fig:pathInt2:simpleNarrowMuDt}
+%\parbox{0.8\textwidth}{\small  Here $E_{0}=a_{\text{bg}}\mathcal{K}k_{F}$.  $\delta_{c}={E_{0}^{2}}/{E_{F}}$. So the two dashed lines correspond to $\delta_{c}=10E_{F}$ and $100E_{F}$. Notice that $E_{F}$ and $k_{F}$ here are referred to the open-channel quantities. }
+%\end{center}
+%\end{figure}
+%In Fig. \ref{fig:pathInt2:simpleNarrowMuDt}, $\delta_{c}={E_{0}^{2}}/{E_{F}}$, we see the two lines correspond to $\delta_{c}=10E_{F}$ and $100E_{F}$.  Notice that all scales in Fig. \ref{fig:pathInt2:simpleNarrowMuDt} is related the Fermi energy and the Fermi momentum of atoms only in the open-channel.  It is important to find the relation between the open-channel density and the closed-channel density.  
+ We can understand the saturation of $\Delta_{1}$ from another respect.  Let us look at the open-channel gap equation Eq. \ref{eq:pathInt2:mfopen} 
 \begin{equation}
 \Delta_{1\vp}=\sum_{\vk}{}U_{\vp\vk}h_{1\vk}+\sum_{\vk}{}Y_{\vp\vk}h_{2\vk}\tag{\ref{eq:pathInt2:mfopen}}
 \end{equation}
 Not far away from the resonance, the second term dominates the first term.  And considering Eq. \ref{eq:pathInt2:hphi}, $h_{2\vk}=\alpha\phi^{}_{0\vk}u_{\vk}^{2}$, it is not hard to see that the closed-channel normalization factor $\alpha$ is proportional to $\Delta_1$.   At the BEC end, i.e. negative detuning, the closed-channel density increases as $\Delta_1$ increases and eventually dominates the open-channel density.  In fact, for total density $n$, when the closed-channel dominates, $\alpha\approx\sqrt{N}$ and $\Delta_1$ saturates and is directly proportional to the square root of the total density.  
 \begin{equation}
-\Delta_1\approx\sqrt{N}\sum_{\vk}{}Y_{\vp=0,\,\vk}\phi^{}_{0\vk}u_{\vk}^{2}\approx{\sqrt{n_{\text{total}}}\Delta_{1,\text{sat}}^{(0)}}
+\Delta_1\approx\sqrt{N}\sum_{\vk}{}Y_{\vp=0,\,\vk}\phi^{}_{0\vk}u_{\vk}^{2}\approx{\sqrt{n_{\text{tot}}}\Delta_{1,\text{sat}}^{(0)}}
 \end{equation}
-Here the coefficient $\Delta_{1,\text{sat}}^{(0)}$ is common for one specific Feshbach resonance.   
- At such region, the open-channel density is very small.  Fig. \ref{fig:pathInt2:simpleNarrowMuDt} shows $\Delta_1/E_{F,\text{open}}$ increases toward BEC end.  Given the total density,  this increase is   not because $\Delta_{1}$ increases, but because the open-channel density decreases quickly.  Nevertheless, for the large negative detuning, where this formula applies, the chemical potential is most likely negative and the fermionic excitation modes are $\sqrt{\mu^{2}+\Delta_{1}^{2}}$ instead of simple $\Delta_{1}$.  Furthermore, the more important low-energy excitation modes in such systems are most likely to be the bosonic ones.    
+Here the coefficient $\Delta_{1,\text{sat}}^{(0)}$ is common for one specific Feshbach resonance.  It is possible to observe this saturation from experimentally by measuring the fermionic excitation spectrum.  
+
+
+
+ %At such region, the open-channel density is very small.  Fig. \ref{fig:pathInt2:simpleNarrowMuDt} shows $\Delta_1/E_{F,\text{open}}$ increases toward BEC end.  Given the total density,  this increase is   not because $\Delta_{1}$ increases, but because the open-channel density decreases quickly.  Nevertheless, for the large negative detuning, where this formula applies, the chemical potential is most likely negative and the fermionic excitation modes are $\sqrt{\mu^{2}+\Delta_{1}^{2}}$ instead of simple $\Delta_{1}$.  Furthermore, the more important low-energy excitation modes in such systems are most likely to be the bosonic ones.    
  
 Corrections to the equations in the second step are all in the order of $\zeta=\Delta_2^2/\eta\Delta_1$.  Given the non-singular nature of the crossover problem, we expect the correction to various quantities are in the same order of $\zeta$. 
 
 
 
-There are three distinct length scales in the problem.  The range of the potential, $r_c$, is the smallest.  The intra-channel and inter-channel potentials are  essentially zero outside this range. Potentials energy dominate the kinetic energy in this range and the correlation (wave function) is totally governed by the potential and might have large oscillation.   The two-body correlation follows the two-body wave function in this range.  The second range is the size of the closed-channel bound-state, $a_c$.  The closed-channel bound state only has negligible weight outside this range.  In this range, the many-body correlation still follow the two-body wave function in the closed-channel.  We assume that the closed-channel is high excitation state and therefore has most weight in this region.  The inter-channel Pauli exclusion are mostly accounted in this  region.  Not surprisingly, this region contributes most in the integral of $\lambda_{1}$ and $\lambda_{2}$. When much larger than $a_c$, many-body effect is important. However, the closed-channel has only negligible weight in it and therefore only the open-channel needs to be considered.  
+There are three distinct length scales in the problem.  The range of the potential, $r_c$, is the smallest.  The intra-channel and inter-channel potentials are  essentially zero outside this range. Potentials energy dominate the kinetic energy in this range and the correlation (wave function) is totally governed by the potential and might have large oscillation.   The two-body correlation follows the two-body wave function in this range.  The second range is the size of the closed-channel bound-state, $a_c$.  The closed-channel bound state  has only negligible weight outside this range.  In this range, the many-body correlation still follow the two-body wave function in the closed-channel.  We assume that the the closed-channel bound state is close to threshold  and therefore has most weight in this region.  The inter-channel Pauli exclusion are mostly accounted in this  region.  Not surprisingly, this region contributes most in the integral of $\lambda_{1}$ and $\lambda_{2}$. When much larger than $a_c$, many-body effect is important. However, the closed-channel has only negligible weight in it and therefore only the open-channel needs to be considered.  
 
 
 

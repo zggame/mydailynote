@@ -56,7 +56,9 @@
 
 %
 \begin{abstract}
-The BEC-BCS crossover problem was intensively studied both theoretically and experimentally largely thanks to the Feshbach resonance via which the effective interaction between alkali atoms is tuned.  In the Feshbach resonance, there is one characteristic energy scale, $\delta_c$. The closed-channel component only dominates when the detuning from resonance is more than $\delta_c$.  When the many-body scale (e.g. the Fermi energy, $E_{F}$) is larger than $\delta_c$, the closed channel is important enough to be included in the many-body theory.  Furthermore, when two channels share the same hyperfine species as in the two most available experimental systems (${}^6\text{Li}$ and ${}^{40}\text{K}$), the Pauli exclusion between two channels also needs to be taken into consideration in the many-body theory.  The current  thesis addresses this problem in detail. A set of gap equations and number equations  are derived at the mean-field level.  The fermionic and bosonic excitation spectra are also derived within this model.  In all the cases, assuming the bound-state of the closed-channel in resonance is much smaller than inter-particle distance, as well as the s-wave scattering length, $a_s$, we find that  the basic conclusion in the broad resonance is still valid. In every case, correction is  in the  order of ratio between the Fermi energy and the Zeeman energy difference between two channels, $E_F/\eta$.  
+The BEC-BCS crossover problem was intensively studied both theoretically and experimentally largely thanks to  Feshbach resonances which allows us to tune the effective interaction between alkali atoms.  In a Feshbach resonance, the effective s-wave scattering length grows as closing to the resonance point where it diverges.  There is one characteristic energy scale, $\delta_c$, defined as, in the negative side of the resonance point, the detuning energy at which the weight of the bound state shifts from predominated in the open-channel to predominated in the closed-channel.  When the many-body energy scale (e.g. the Fermi energy, $E_{F}$) is larger than $\delta_c$, the closed channel weight is significant and has to be included in the many-body theory.  Furthermore, when two channels share a hyperfine species, as in the two most available experimental systems (${}^6\text{Li}$ and ${}^{40}\text{K}$), the Pauli exclusion between fermions in two channels also needs to be taken into consideration in the many-body theory.  
+
+The current  thesis addresses this problem in detail. A set of gap equations and number equations  are derived at the mean-field level.  The fermionic and bosonic excitation spectra are then derived. Assuming that the bound-state of the closed-channel in resonance is much smaller than the inter-particle distance, as well as the s-wave scattering length, $a_s$, we find that  the basic conclusions in the broad resonance are still valid. In every case, correction is  in the  order of ratio between the Fermi energy and the Zeeman energy difference between two channels, $E_F/\eta$.  
 \end{abstract}
 
 %% Create a dedication in italics with no heading, centered vertically
@@ -68,8 +70,8 @@ To Jie, Ethan and Chloe
 %% Create an Acknowledgements page, many departments require you to
 %% include funding support in this.
 \chapter*{Acknowledgments}
-First I would like to thank my adviser, Prof. Anthony J. Leggett.  This thesis would not be possible without his guidance and patience.  I would like to thank Prof. Monique Combescot from Paris especially for her help, kindness and lots of invaluable advice.  Also, I would like to thank Dr. Wei-Cheng Lee, Dr. Shizhong Zhang, Dr. Parag Ghosh,  Douglas
-Packard  for their many discussions and suggestions.  Finally I would thank my wife and my family for the constant support and affection.  
+First I would like to deeply thank my adviser, Prof. Anthony J. Leggett.  This thesis would not have been possible without his guidance and patience.  I would like to thank Prof. Monique Combescot from Paris for her help, kindness and  invaluable advices.  My thanks also go to  Dr. Wei-Cheng Lee, Dr. Shizhong Zhang, Dr. Parag Ghosh and   Douglas
+Packard  for their many discussions and suggestions.  Finally I wish to  thank my wife and my family for their constant support and affection.  
 
 Part of this research presented in  this thesis  is supported  by NSF under grant No. DMR 09-06921. 
 
@@ -102,25 +104,26 @@ Part of this research presented in  this thesis  is supported  by NSF under gran
 
 \begin{symbollist}[0.7in]
 %\item[$\psi$] Wave function.
-\item[$\phi_{i}$] Bound-state wave functions of the isolated close-channel, especially, $\phi_{0}$ is the one in resonance. (Page \pageref{eq:pathInt2:phi})
-\item[$\Delta_{1,2}$] Order parameters for two channels. (Page \pageref{eq:pathInt2:identity})
-\item[$h_{1\vk}$, $ h_{2\vk}$] (Open, closed) (anomalous) two-body correlation in a many-body system. (Page \pageref{eq:pathInt2:h2})
-\item[$a_{s}$, $a_{s}^{(o)}$] (Open channel) s-wave scattering length. Subscript ${}^{(o)}$ is dropped when there is no ambiguity. (Page \pageref{sec:intro:as})
-\item[$\eta$] Absolute detuning between two channels. Notice that $\eta=0$ is not where $a_{s}$ diverges. (Page \pageref{eq:intro:ham})
-\item[$E_{b}$, $E_{b}^{(i)}$] Binding energy of the $i^{th}$ two-body (bound) eigen-wave-function in the isolated close-channel.  Superscript ${}^{(i)}$ is dropped when referring to the one in resonance. (Page \pageref{eq:intro:sch2})
-\item[$\kappa$] Momentum scale of the resonant bound-state in the isolated close-channel.  $\kappa^{2}/2m=E_{b}$.
-\item[$\delta_{c}$] Energy scale of the  detuning from resonance where the closed-channel takes substantial weight. (Page \pageref{eq:intro:deltaC})
+\item[$\phi_{i}$] Bound-state wave functions of the isolated close-channel; especially, $\phi_{0}$ is the one at resonance. (Page \pageref{eq:pathInt2:phi})
+\item[$\Delta_{1,2}$] Order parameters in the open-channel and closed-channel. (Page \pageref{eq:pathInt2:identity})
+\item[$h_{1\vk}$, $ h_{2\vk}$] (Open and closed)-channel anomalous two-body correlations of the many-body system. (Page \pageref{eq:pathInt2:h2})
+\item[$a_{s}$, $a_{s}^{(o)}$] The effective open-channel s-wave scattering length. Subscript ${}^{(o)}$ will be dropped when there is no ambiguity. Alternatively, it is  the single parameter in  the Bethe-Pierels boundary conditions. (Page \pageref{sec:intro:as}, \pageref{eq:intro:asK})
+\item[$a_{bg}$] The background s-wave scattering length in the open-channel when it does not coupled to the closed-channel. (Page \pageref{eq:intro:abg})
+\item[$\eta$] Absolute detuning between two channels. Note that $\eta=0$ is not where $a_{s}$ diverges. (Page \pageref{eq:intro:ham})
+\item[$E_{b}$, $E_{b}^{(i)}$] Binding energy of the $i^{th}$ two-body (bound) eigenstate in the isolated close-channel.  Superscript ${}^{(i)}$ is dropped when referring to the one in resonance. (Page \pageref{eq:intro:sch2})
+\item[$\kappa$] Momentum scale of the resonant bound state in the isolated close-channel, namely  $\kappa^{2}/2m=E_{b}$.
+\item[$\delta_{c}$] Energy scale of the  detuning from resonance when the closed-channel takes substantial weight. (Page \pageref{eq:intro:deltaC})
 \item[$a_{0}$] Average inter-particle distance, $a_{0}k_{F}\sim1$.
-\item[$r_{c}$] Potential range.  All  potentials are zero outside $r_{c}$.
-\item[$a_{c}$] Characteristic size of the bound state in resonance ($\phi_{0}$) if the close-channel is isolated. It is proportional  to the inverse of $\kappa$.
+\item[$r_{c}$] Potential extension:  All  potentials are taken as zero outside $r_{c}$.
+\item[$a_{c}$] Characteristic size of the bound state at resonance ($\phi_{0}$) if the close-channel is isolated. It is proportional  to the inverse of $\kappa$.
 \item[$k_{F}$] Fermi momentum. $k_{F}=\hbar(3\pi^{2}n)^{1/3}$ in 3D.
 \item[$\gamma_{i\vk}$] Correction of the fermionic excitation spectrum over $\pm{}E_{\vk}$ and $\epsilon_{\vk}+\eta$. (Page \pageref{eq:pathInt2:xiExpand})
 
-\item[$E_{\vk}$] $E_{\vk}$ corresponds the elementary fermionic excitation energy for $\vk$ in the single channel.  $E_{\vk}=\sqrt{\epsilon_{\vk}^{2}+\Delta^{2}}$, where $\epsilon_{\vk}=\hbar^{2}k^{2}/2m$ is the kinetic energy. In two-channel model, it is defined similarly, $E_{\vk}=\sqrt{\epsilon_{\vk}^{2}+\Delta_{1}^{2}}$. However, it is only the zeroth order   energy for the two elementary fermionic excitation modes. (Page \pageref{eq:pathInt:G0})
-\item[$\alpha$]  Ratio of the closed-channel correlation $h_{2\vk}$ to the normalized two-body closed-channel bound state wave function, $\phi_{\vk}$ at high momentum.  $h_{2\vk}\xrightarrow{\text{high momentum}}\alpha\phi_{\vk}$. (Page \pageref{eq:pathInt2:hphi})
-\item[$n_{o}$, $n_{c}$] Density of the open-channel (closed-channel) atoms. 
+\item[$E_{\vk}$] Defined as $E_{\vk}=\sqrt{\epsilon_{\vk}^{2}+\Delta^{2}}$, where $\epsilon_{\vk}=\hbar^{2}k^{2}/2m$ is the kinetic energy. $E_{\vk}$ corresponds the elementary fermionic excitation energy for $\vk$ in the single channel.   In the two-channel case, $E_{\vk}$ is defined in the similar way as, $E_{\vk}=\sqrt{\epsilon_{\vk}^{2}+\Delta_{1}^{2}}$, where $\Delta_1$ is the order parameters of the open-channel. However, it is then only the zeroth order   energy for the two elementary fermionic excitation modes. (Page \pageref{eq:pathInt:G0})
+\item[$\alpha$]  Ratio of the closed-channel correlation $h_{2\vk}$ to the normalized two-body closed-channel bound state wave function, $\phi_{\vk}$, at high momentum.  $h_{2\vk} \xrightarrow{\text{high momentum}}\alpha\phi_{\vk}$. (Page \pageref{eq:pathInt2:hphi})
+\item[$n_{o}$, $n_{c}$] Density of the open-channel and closed-channel atoms. 
 \item[$\mathcal{V}_{0}$]  Total volume of the system. 
-\item[$\zeta$] A characteristic dimensionless small parameter for the inter-channel Pauli exclusion, $\zeta=\frac{\Delta_{2}^{2}}{\Delta_{1}\eta}$. (Page \pageref{eq:pathInt2:zetaDef})
+\item[$\zeta$] Small characteristic dimensionless  parameter for the inter-channel Pauli exclusion, $\zeta=\frac{\Delta_{2}^{2}}{\Delta_{1}\eta}$. (Page \pageref{eq:pathInt2:zetaDef})
 \end{symbollist}
 
 \mainmatter
@@ -136,7 +139,7 @@ Part of this research presented in  this thesis  is supported  by NSF under gran
 
 %\include{Appendix.tex}
 \include{meanfield}
-\chapter{Appendix for Chapter \ref{ch:path2}}
+\chapter{Materials for Chapter \ref{ch:path2}}
 \input{pathAppendix}
 
 \backmatter

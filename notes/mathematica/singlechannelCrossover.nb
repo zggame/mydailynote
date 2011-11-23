@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[    266971,       5098]
-NotebookOptionsPosition[    263454,       4978]
-NotebookOutlinePosition[    263812,       4994]
-CellTagsIndexPosition[    263769,       4991]
+NotebookDataLength[    266887,       5093]
+NotebookOptionsPosition[    263443,       4975]
+NotebookOutlinePosition[    263801,       4991]
+CellTagsIndexPosition[    263758,       4988]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -4364,7 +4364,7 @@ OWcR7PPT3fvknxGI/wNPmps6
     StyleBox[RectangleBox[{0.4032684816417363, -2.841496871327084}, {2.8569383728520217`, -5.898188908733974}],
      RectangleBoxOptions->{RoundingRadius->0}]}, 
    {Hue[0.67, 0.6, 0.6], AbsoluteThickness[1], StrokeForm[Opacity[1.]], 
-    EdgeForm[None], 
+    EdgeForm[Opacity[1.]], EdgeForm[None], 
     LineBox[{{0.5972795893188279, -3.5165944992206324`}, {
      1.2591998390406722`, -3.5165944992206324`}}]}},
   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
@@ -4385,8 +4385,6 @@ OWcR7PPT3fvknxGI/wNPmps6
    3.5274745781596117`*^9, 3.527474612033218*^9}, {3.5274746666203117`*^9, 
    3.52747467440219*^9}, 3.527474836621146*^9, {3.5274748854195766`*^9, 
    3.527474991101678*^9}}],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"s", "=", 
@@ -4935,8 +4933,7 @@ OWcR7PPT3fvknxGI/wNPmps6
       TextAlignment->Left], {2.0165129243218085`, -1.1659467585012337`}, {
      Left, Baseline},
      Alignment->{Left, Top}]}}]], "Output",
- CellChangeTimes->{3.527474461614112*^9}]
-}, Open  ]],
+ CellChangeTimes->{3.527474461614112*^9}],
 
 Cell[BoxData[
  GraphicsBox[{},
@@ -4977,7 +4974,7 @@ Cell[BoxData[
  EmphasizeSyntaxErrors->True]
 },
 WindowSize->{1155, 1017},
-WindowMargins->{{65, Automatic}, {Automatic, 45}},
+WindowMargins->{{192, Automatic}, {8, Automatic}},
 FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 6, \
 2010)",
 StyleDefinitions->"Default.nb"
@@ -5071,7 +5068,7 @@ Cell[49675, 1202, 868, 21, 27, "Input"],
 Cell[50546, 1225, 14815, 253, 226, "Output"]
 }, Open  ]],
 Cell[65376, 1481, 16619, 311, 610, "Input"],
-Cell[81998, 1794, 94, 1, 27, InheritFromParent],
+Cell[81998, 1794, 94, 1, 27, "Input"],
 Cell[CellGroupData[{
 Cell[82117, 1799, 351, 7, 27, "Input"],
 Cell[82471, 1808, 1232, 26, 43, "Output"]
@@ -5085,21 +5082,19 @@ Cell[85267, 1878, 2439, 63, 103, "Input"],
 Cell[87709, 1943, 84936, 1425, 500, 58118, 984, "CachedBoxData", "BoxData", \
 "Output"]
 }, Open  ]],
-Cell[172660, 3371, 59558, 1015, 536, InheritFromParent],
+Cell[172660, 3371, 59581, 1015, 536, "Input"],
+Cell[232244, 4388, 15397, 283, 69, "Input"],
+Cell[247644, 4673, 14785, 262, 251, "Output"],
+Cell[262432, 4937, 196, 5, 375, "Input"],
 Cell[CellGroupData[{
-Cell[232243, 4390, 15397, 283, 69, InheritFromParent],
-Cell[247643, 4675, 14785, 262, 251, "Output"]
-}, Open  ]],
-Cell[262443, 4940, 196, 5, 375, InheritFromParent],
-Cell[CellGroupData[{
-Cell[262664, 4949, 146, 3, 27, "Input"],
-Cell[262813, 4954, 145, 3, 27, "Output"]
+Cell[262653, 4946, 146, 3, 27, "Input"],
+Cell[262802, 4951, 145, 3, 27, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[262995, 4962, 131, 2, 27, "Input"],
-Cell[263129, 4966, 120, 2, 27, "Output"]
+Cell[262984, 4959, 131, 2, 27, "Input"],
+Cell[263118, 4963, 120, 2, 27, "Output"]
 }, Open  ]],
-Cell[263264, 4971, 186, 5, 27, "Input"]
+Cell[263253, 4968, 186, 5, 27, "Input"]
 }
 ]
 *)

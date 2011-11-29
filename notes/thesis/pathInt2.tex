@@ -525,7 +525,7 @@ In summary, there are several difference of gap equation here comparing to singl
 \end{enumerate}
 Item \ref{item:pathInt2:mu} corresponds to a many-body effect  common to both three and four species problem.
 \begin{unsure}
-In a many-body system, most of the properties is obtained when considering what happens at the next extra particle or particle pair. In a two-body system,  we can pretend that the vacuum is the initial state and the next particle pair comes in from energy zero.  In a many-body system, this starting point is no longer the absolutely zero, but the chemical potential.  Excitations are counted from the chemical potential, $\mu$.  The energy detuning in Feshbach resonance is no exception.  In a many-body formula, the detuning is shifted by $2\mu$ (for a pair).  In the broad resonance, the Fermi energy is smaller comparing to the detuning during the relevant probing region.  Consequently, this shift is negligible.  In the narrow resonance, the Fermi energy is substantial and a detuning of the chemical potential needs to be taken into account.  At the BCS side, $\mu$ is positive and close to the Fermi energy. This shifting just confirms the fact that most interesting phenomenon in a fermion system happens around Fermi surface instead of absolute zero.  With an extra positive shift $\mu$, detuning is reduced; therefore the crossover region is actually reached earlier (i.e. by larger detuning) than in two-body cases.  On the other hand, moving toward to the resonance point and BEC side, chemical potential becomes smaller and finally flips sign to negative. Accordingly, the detuning is reduced lesser and lesser;  finally it is enhanced.  The Feshbach resonance in many-body cases is skewed toward BCS (positive detuning) side from two-body cases.  Interestingly, the crossing point, $\mu=0$, is not shifted from a model with simple  s-wave scattering length directly from two-body physics if only considering this shift alone.  This effect is also  studied extensively by \cite{GurarieNarrow}(Sec. 6.2). 
+In a many-body system, most of the properties is obtained when considering what happens at the next extra particle or particle pair. In a two-body system,  we can pretend that the vacuum is the initial state and the next particle pair comes in from energy zero.  In a many-body system, this starting point is no longer the absolutely zero, but the chemical potential.  Excitations are counted from the chemical potential, $\mu$.  The energy detuning in Feshbach resonance is no exception.  In a many-body formula, the detuning is shifted by $2\mu$ (for a pair).  In the broad resonance, the Fermi energy is smaller comparing to the detuning during the relevant probing region.  Consequently, this shift is negligible.  In the narrow resonance, the Fermi energy is substantial and a detuning of the chemical potential needs to be taken into account.  At the BCS side, $\mu$ is positive and close to the Fermi energy. This shifting just confirms the fact that most interesting phenomenon in a fermion system happens around Fermi surface instead of absolute zero.  With an extra positive shift $\mu$, detuning is reduced; therefore the crossover region is actually reached earlier (i.e. by larger detuning) than in two-body cases.  On the other hand, moving toward to the resonance point and BEC side, the chemical potential becomes smaller and finally flips sign to negative. Accordingly, the detuning is reduced lesser and lesser;  finally it is enhanced.  The Feshbach resonance in many-body cases is skewed toward BCS (positive detuning) side from two-body cases.  Interestingly, the crossing point, $\mu=0$, is not shifted from a model with simple  s-wave scattering length directly from two-body physics if only considering this shift alone (See Fig. \ref{fig:pathInt2:narrow}). This effect is also  studied extensively previously. (Sec. 6.2 of \cite{GurarieNarrow}). 
 
 
 
@@ -627,7 +627,9 @@ N_{\text{open}}=\sum_\vk\frac{E_\vk-\xi_\vk}{2E_\vk}
 \end{gather}
 In the many-body shift $2\mu\gg\lambda_1$, so now the formula for $\tilde{a}_s$ (Eq. \ref{eq:pathInt2:asKshift}) becomes
 \begin{equation}
-\tilde{a}_{s}=a_{\text{bg}}(1+\frac{\mathcal{K}}{\delta-2\mu})\approx{}\frac{a_{\text{bg}}\mathcal{K}}{\delta-2\mu}\label{eq:pathInt2:simplenarrowAs}
+\tilde{a}_{s}=a_{\text{bg}}(1+\frac{\mathcal{K}}{\delta-2\mu})\approx{}\frac{a_{\text{bg}}\mathcal{K}}{\delta-2\mu}
+=\frac{\sqrt{2\delta_{c}\hbar^{2}/m}}{\delta-2\mu}
+\label{eq:pathInt2:simplenarrowAs}
 \end{equation}
  In the last equation, we assume $a_{\text{bg}}\ll{}a_{0}$ and we only study situations close to resonance, where $\mathcal{K}\gg{}\delta \,\text{or}\,\mu$.  From the two-body analysis of the Feshbach resonance, we know the numerator in the Eq. \ref{eq:pathInt2:simplenarrowAs} is closely related to the characteristic scale $\delta_{c}$ defined in Eq. \ref{eq:intro:deltaC}
 \begin{equation}\tag{\ref{eq:intro:deltaC}}
@@ -654,22 +656,28 @@ From Eq. \ref{eq:intro:deltaC} above, we can replace $\mathcal{K}a_{bg}$ with $\
 \begin{equation}
 \beta=\frac{n_{c}}{n_{o}}\approx\frac{3\sqrt2}{128}\frac{\Delta_{1}^{2}}{{E_{F}^{(o)}}^{3/2}\delta_{c}^{1/2}}
 \end{equation}
-Notice that here $E_{F}^{(o)}$ is the Fermi energy of the open-channel and might be substantially smaller than the total Fermi energy, $E_{F}^{(tot)}$ when moving toward the BEC end.   This form is consistent with the formula obtained by Zhang previously \cite{shizhongUniv}.  $\beta$ is proportional to $\Delta_{1}^{2}$.  At the BCS limit, $n_{o}\approx{}n_{tot}$ and $E_{F}^{(o)}$ equals the Fermi energy calculated by the total density.  $\Delta_{1}$ is exponentially small, there is only very small amount of atoms in the closed-channel.  Moving toward the BEC side, $\Delta_{1}$ increases and the closed-channel density increases as well.  Because the maximum of the $n_{c}$ is the total density $n_{tot}$, we can see that $\Delta_{1}$ saturates.  The narrower the resonance, the sooner it saturates.  In fact, at the universality point, $\Delta_{1}$ is in the order of the Fermi energy, and $\beta$ is already substantial if the resonance is very narrow, i.e. $\delta_{c}$ is much smaller than $E_{F}$.  
-
-We can see an example of the narrow resonance ($\delta_{c}=0.001E_{F}^{(tot)}$) in the Fig. \ref{fig:pathInt2:narrow}. $\Delta_{1}$ saturates at about $0.8E_{F}$. The relative weight of the open channel is defined as 
-\begin{equation}
-\beta_{o}=\frac{n_{o}}{n_{tot}}=\nth{1+\beta}
-\end{equation}
+Notice that here $E_{F}^{(o)}$ is the Fermi energy of the open-channel and might be substantially smaller than the total Fermi energy, $E_{F}^{(tot)}$ when moving toward the BEC end.   $\beta$ is proportional to $\Delta_{1}^{2}$.  This form is consistent with the formula obtained by Zhang previously \cite{shizhongUniv}.   
 
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{narrow}
-\caption{The chemical potential $\mu$, gap $\Delta_{1}$ and open-channel relative weight $\beta_{o}$ over crossover with the Feshbach resonance} 
+\caption{The chemical potential $\mu$, the gap $\Delta_{1}$ and the open-channel relative weight $\beta_{o}$ over crossover with the narrow Feshbach resonance} 
 \label{fig:pathInt2:narrow}
-\parbox{0.8\textwidth}{\small Note that here the detuning $\delta$, gap in the open-channel $\Delta_{1}$ and chemical potential $\mu$ are rescaled with the the Fermi energy of the total density, $E_{F}^{(tot)}$.  We have taken $\delta_{c}=0.001E_{F}^{(tot)}$. We used the detuning from the resonant point  instead of $1/a_{s}k_{F}$ in the single-channel because the additional shift considering in Eq. \ref{eq:pathInt2:simplenarrowAs}.}
+\parbox{0.8\textwidth}{\small  The gap in the open-channel $\Delta_{1}$ and the chemical potential $\mu$ are rescaled with the the Fermi energy of the total density, $E_{F}^{(tot)}$.  While the detuning $\delta$ is rescaled with $E_{0}$ (see Eq. \ref{eq:pathInt2:E0}). We have taken $\delta_{c}=0.001E_{F}^{(tot)}$. We used the detuning from the resonant point  instead of $1/a_{s}k_{F}$ in the single-channel because the additional shift considering in Eq. \ref{eq:pathInt2:simplenarrowAs}.}
 \end{center}
 \end{figure}
 
+
+We can see an example of the narrow resonance ($\delta_{c}=0.001E_{F}^{(tot)}$) in the Fig. \ref{fig:pathInt2:narrow}. We rescale the detuning with $E_{0}$ \footnote{We choose this scale in order to make sure that $\tilde{a}_{s}k_{F}$ would match  $a_{s}k_{F}$ in the single channel discussion in Chapter \ref{sec:intro:1channel} if there was no $-2\mu$ shift as in Eq. \ref{eq:pathInt2:simplenarrowAs} in order to comparing with the single channel case as in Fig. \ref{fig:pathInt:meanField}.  When $\delta/E_{0}=1$, $\tilde{a}_{s}k_{F}=1$ if there was no extra $-2\mu$ shift.}
+\begin{equation}\label{eq:pathInt2:E0}
+E_{0}=\sqrt{2\delta_{c}\hbar^{2}/m}\cdot{}k_{F}=2\sqrt{\delta_{c}E_{F}}
+\end{equation}
+$\Delta_{1}$ saturates at about $0.8E_{F}$. The relative weight of the open channel is defined as 
+\begin{equation}
+\beta_{o}=\frac{n_{o}}{n_{tot}}=\nth{1+\beta}
+\end{equation}
+At the BCS limit, $n_{o}\approx{}n_{tot}$ and $E_{F}^{(o)}$ equals the Fermi energy calculated by the total density.  $\Delta_{1}$ is exponentially small, there is only very small amount of atoms in the closed-channel.  Moving toward the BEC side, $\Delta_{1}$ increases and the closed-channel density increases as well.  At the universality point, $\Delta_{1}$ is in the order of the Fermi energy, and $\beta$ is already substantially smaller than $1$ if the resonance is narrow.  
+Because the maximum of the $n_{c}$ is the total density $n_{tot}$, we can see that $\Delta_{1}$ saturates.  The narrower the resonance, the sooner it saturates.  
 
 %\begin{figure}[htbp]
 %\begin{center}

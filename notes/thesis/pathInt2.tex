@@ -555,9 +555,9 @@ In the above summation, $v_{\vk}^2$ is only non-zero below or not much higher th
 Furthermore, $\phi_{\vk}$ varies slowly  in this range, because the closed-channel bound state is much smaller than the interparticle distance.    It is a good approximation to replace $\phi_{\vk}$ with $\phi_{\vk=0}\approx\frac{A}{\kappa^{2}}$ and to take it out of the summation.  
 Put all these together, we can estimate $\lambda_{1}$ 
 \begin{equation}\label{eq:pathInt2:lambda1es}
-\lambda_{1}\approx-\eta\abs{\phi_{k=0}}^2\sum{}v_{\vk}^{2}=-\eta\abs{\phi_{k=0}}^2N	
+\lambda_{1}\approx-\eta\abs{\phi_{k=0}}^2\sum{}v_{\vk}^{2}=-\eta\abs{\phi_{k=0}}^2N_{o}	
 \end{equation}
-It is easy to see that $\abs{\lambda_{1}}$ is much smaller than $\eta$ as $\abs{\phi_{k=0}}^2N\ll1$.  Furthermore, using $\phi_{k=0}\approx\sqrt{\frac{8\pi\kappa}{\mathcal{V}_{0}}}\frac{1}{\kappa^{2}}$ (Eq. \ref{eq:pathInt2:phi2body} of Appendix \ref{sec:pathInt2:short-range}), we get $\lambda_{1}\sim\frac{a_{c}}{a_{0}}E_{F}\ll{}E_{F}$, where $a_{0}$ is the average interparticle distance and $a_{c}$ is size of the close-channel bound-state.   We have showed that $\lambda_{1}$ is indeed a minor correction over shift $\mu$.
+where $N_{o}$ is the total number of atoms in the open-channel. It is easy to see that $\abs{\lambda_{1}}$ is much smaller than $\eta$ as $\abs{\phi_{k=0}}^2N_{o}\ll1$.  Furthermore, using $\phi_{k=0}\approx\sqrt{\frac{8\pi\kappa}{\mathcal{V}_{0}}}\frac{1}{\kappa^{2}}$ (Eq. \ref{eq:pathInt2:phi2body} of Appendix \ref{sec:pathInt2:short-range}), we get $\lambda_{1}\sim\frac{a_{c}}{a_{0}}E_{F}\ll{}E_{F}$, where $a_{0}$ is the average interparticle distance and $a_{c}$ is size of the close-channel bound-state.   We have showed that $\lambda_{1}$ is indeed a minor correction over shift $\mu$.
 It is not easy to estimate $\lambda_{1}$ precisely from  microscopic parameters above because these parameters themselves are  in turn hard to  estimate precisely.  Nevertheless, a key observation is that $\lambda_1$ depends on the (open-channel) density ($n_{0}={\mathcal{V}_{0}^{-1}}\sum_{\vk}v_\vk^2$) linearly to the lowest order of $\frac{a_{c}}{a_{0}}$, $\lambda_1\approx\lambda_1^{(0)}n_{o}$.  We can perform the experiments at different densities and estimate the coefficient $\lambda_1^{(0)}$. 
 
 
@@ -613,7 +613,7 @@ N_{\text{open}}\approx&\sum_\vk\mbr{\frac{E_\vk-\xi_\vk}{2E_\vk}+\frac{\gamma_{1
 	}	
 \end{split}
 \end{equation}
-All terms behave well  in 3D and do not need any renormalization.   It is like the number equation in the single channel with  a few correction in the order of $\zeta=\Delta_2^2/\eta\Delta_{1}$.  The second term, except the factor $\frac{E_\vk-\xi_\vk}{2E_\vk}=v_{\vk}^{2}$, looks like the summand in the closed-channel number equation, Eq. \ref{eq:pathInt2:closeD1},  which can sum up in the order of $N$.  Nevertheless, the $v_{\vk}^{2}$ factor, decreases quickly in high momentum, becomes close to zero in high momentum, and limits the summation to only low momentum. This makes the sum  a small correction as we discussed before.    Similarly, $\frac{\Delta_{1}^{2}}{E_{\vk}^{2}}$ in the third term also limits the summation to low momentum and ensures the sum a small correction. At low momentum, this term is actually more important than the second term. 
+All terms behave well  in 3D and do not need any renormalization.   It is like the number equation in the single channel with  a few correction in the order of $\zeta=\Delta_2^2/\eta\Delta_{1}$.  The second term, except the factor $\frac{E_\vk-\xi_\vk}{2E_\vk}=v_{\vk}^{2}$, looks like the summand in the closed-channel number equation, Eq. \ref{eq:pathInt2:closeD1},  which can sum up in the order of $N$.  Nevertheless, the $v_{\vk}^{2}$ factor, decreases quickly in high momentum, becomes close to zero in high momentum, and limits the summation to only low momentum. This makes the sum  a small correction as we discussed before.    Similarly, $\frac{\Delta_{1}^{2}}{E_{\vk}^{2}}$ in the third term also limits the summation to low momentum and ensures that the sum is a small correction. At low momentum, this term is actually more important than the second term. 
 
 
 
@@ -631,12 +631,12 @@ In the many-body shift $2\mu\gg\lambda_1$, so now the formula for $\tilde{a}_s$ 
 =\frac{\sqrt{2\delta_{c}\hbar^{2}/m}}{\delta-2\mu}
 \label{eq:pathInt2:simplenarrowAs}
 \end{equation}
- In the last equation, we assume $a_{\text{bg}}\ll{}a_{0}$ and we only study situations close to resonance, where $\mathcal{K}\gg{}\delta \,\text{or}\,\mu$.  From the two-body analysis of the Feshbach resonance, we know the numerator in the Eq. \ref{eq:pathInt2:simplenarrowAs} is closely related to the characteristic scale $\delta_{c}$ defined in Eq. \ref{eq:intro:deltaC}
+ In the last equation, we assume $a_{\text{bg}}\ll{}a_{0}$ ($a_{0}$ is the average interparticle distance) and we only study situations close to resonance, where $\mathcal{K}\gg{}\delta \,\text{or}\,\mu$ ($\delta$ is the detuning from the resonant point in two-body physics).  From the two-body analysis of the Feshbach resonance, we know the numerator in the Eq. \ref{eq:pathInt2:simplenarrowAs} is closely related to the characteristic scale $\delta_{c}$ defined in Eq. \ref{eq:intro:deltaC}
 \begin{equation}\tag{\ref{eq:intro:deltaC}}
 \delta_{c}\equiv\frac{\mathcal{K}^{2}}{\hbar^{2}/m_{r}a_{bg}^{2}}=\frac{(\mathcal{K}a_{\text{bg}})^{2}}{\hbar^{2}/m_{r}}
 \end{equation}
 \end{unsure}
-In the narrow resonance, the weight of the closed-channel becomes substantial quickly.  We can calculate the weight of the closed-channel according to  Eq. \ref{eq:pathInt2:alpha}
+In the narrow resonance, the weight of the closed-channel becomes substantial quickly.  We can calculate the amplitude of the closed-channel according to  Eq. \ref{eq:pathInt2:alpha}
 \begin{equation}\tag{\ref{eq:pathInt2:alpha}}
 \alpha=\frac{\sum_{\vk\vk'}{\phi_{\vk}^{*}}{Y_{\vk\vk'}}{h_{1\vk'}}}{\br{-E_{b}+\eta-2\mu-\lambda_{1}}}
 \end{equation}
@@ -663,7 +663,7 @@ Notice that here $E_{F}^{(o)}$ is the Fermi energy of the open-channel and might
 \includegraphics[width=0.8\textwidth]{narrow}
 \caption{The chemical potential $\mu$, the gap $\Delta_{1}$ and the open-channel relative weight $\beta_{o}$ over crossover with the narrow Feshbach resonance} 
 \label{fig:pathInt2:narrow}
-\parbox{0.8\textwidth}{\small  The gap in the open-channel $\Delta_{1}$ and the chemical potential $\mu$ are rescaled with the the Fermi energy of the total density, $E_{F}^{(tot)}$.  While the detuning $\delta$ is rescaled with $E_{0}$ (see Eq. \ref{eq:pathInt2:E0}). We have taken $\delta_{c}=0.001E_{F}^{(tot)}$. We used the detuning from the resonant point  instead of $1/a_{s}k_{F}$ in the single-channel because the additional shift considering in Eq. \ref{eq:pathInt2:simplenarrowAs}.}
+\parbox{0.8\textwidth}{\small  The gap in the open-channel $\Delta_{1}$ and the chemical potential $\mu$ are rescaled with the the Fermi energy of the total density, $E_{F}^{(tot)}$.  The $x$-axis is the detuning $\delta$ rescaled with $E_{0}$ (see Eq. \ref{eq:pathInt2:E0}) for the narrow resonance; while it is $-1/a_{s}k_{F}$ for the single-channel figure. We have taken $\delta_{c}=0.001E_{F}^{(tot)}$ for the narrow resonance figure. We used the detuning from the resonant point  for the $x$-axis in the narrow resonance instead of $-1/a_{s}k_{F}$ in the single-channel because the additional shift considering in Eq. \ref{eq:pathInt2:simplenarrowAs}.  Consequently, the chemical potential lines in both cases cross the $x$-axis at the same point.  }
 \end{center}
 \end{figure}
 

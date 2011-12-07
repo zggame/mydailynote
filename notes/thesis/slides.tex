@@ -1,4 +1,11 @@
-\documentclass{beamer}
+\documentclass[handout]{beamer}
+\usepackage{epstopdf}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\usepackage{subfig}
+\input{../newCommand}
 
 % \usepackage{beamerthemesplit} // Activate for custom appearance
 
@@ -6,18 +13,20 @@
 \author[Guojun Zhu]{Guojun Zhu}
 \institute{University of Illinois at Urbana-Champaign}
 \date{Dec. 15th, 2011}
-%\usetheme[language=english,%titlepagelogo=logopolito, bullet=circle, pageofpages=of, titleline=true, color=blue%]{TorinoTh}
+%\usetheme[language=english,
+%titlepagelogo=logopolito, bullet=circle, pageofpages=of, titleline=true, color=blue
+%]{TorinoTh}
 %\rel{Anthony J. Leggett}
 %\usetheme{PaloAlto}
 \usetheme{Hannover}
 \usecolortheme{whale}
-\AtBeginSection[]
-{
-  \begin{frame}
-    \frametitle{Table of Contents}
-    \tableofcontents[currentsection]
-  \end{frame}
-}
+%\AtBeginSection[]
+%{
+%  \begin{frame}
+%    \frametitle{Table of Contents}
+%    \tableofcontents[currentsection]
+%  \end{frame}
+%}
 \begin{document}
 
 \frame{\titlepage}
@@ -26,18 +35,79 @@
 \frame{\tableofcontents}
 
 \section{Introduction}
-\subsection{Overview of the Beamer Class}
-\frame
-{
-  \frametitle{Features of the Beamer Class}
+%\frame
+%{
+%  \frametitle{Features of the Beamer Class}
+%
+%  \begin{itemize}
+%  \item<1-> Normal LaTeX class.
+%  \item<2-> Easy overlays.
+%  \item<3-> No external programs needed.      
+%  \end{itemize}
+%}
 
-  \begin{itemize}
-  \item<1-> Normal LaTeX class.
-  \item<2-> Easy overlays.
-  \item<3-> No external programs needed.      
-  \end{itemize}
+\frame{
+\frametitle{Problems}
+\begin{itemize}[<+->]
+\item General narrow vs broad
+\item Three species, interchannel Pauli exclusion
+\end{itemize}
+}
+\section[Atomic Ham.]{Dilute ultracold alkali gas}\label{sec:intro:one}
+\frame{
+Single Atom Hamiltonian (in spins)
+\begin{equation}
+\begin{split}\label{eq:intro:1atom}
+H_{spin}&=A \mathbf{I}\cdot\mathbf{S}-\mu_{e}\mathbf{B}\cdot\mathbf{S}-{\mu}_{n}\mathbf{B}\cdot\mathbf{I}\\
+&=A \mathbf{I}\cdot\mathbf{S}-\mu_{e}{B}{S_{z}}-{\mu}_{n}{B}{I_{z}}
+\end{split}
+\end{equation}
+\begin{itemize}[<+->]
+\item Diagonized by total angular momentum at the  zero magnetic field $(F,F_{z})$ 
+\begin{equation}
+\mathbf{F}=\mathbf{S}+\mathbf{I}
+\end{equation}
+
+\item $(F,F_{z})$  are no longer eigenstate at a finite magnetic field. 
+
+\end{itemize}
+}
+\frame{
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{hyperfineLi6}
+\caption{Hyperfine structure of a single \textsuperscript{6}Li atom } 
+Levels are marked with $F$ and $F_{z}$ {(see Footnote \ref{foot:intro:f} in page \pageref{foot:intro:f})} %Note that the energy of the $\ket{F=\nth{2},F_z=-\nth{2}}$ state first increases with the magnetic field, $B$, at low field then decrease at high field. In the same way, the energy of the $\ket{F=\frac{3}{2},F_z=-\nth{2}}$ state first decreases and then increases with the magnetic field.  
+\label{fig:intro:li6}
+\end{center}
+\end{figure}
 }
 
+\frame{
+\frametitle{Interaction between two atoms}
+
+\begin{itemize}[<+->]
+\item Channels: one  configuration of hyperfine spins for one atom pair in interaction, $\ket{F^{(1)},F_{z}^{(1)}}\otimes\ket{F^{(2)},F_{z}^{(2)}}$ 
+\item Interaction mostly due to electrons
+\begin{equation}\label{eq:intro:two}
+V=f(r)+g(r)\mathbf{S_{1}}\cdot\mathbf{S_{2}}
+\end{equation}
+\item Channels are mixed. 
+\item In high field, channels are good zeroth approximation
+\end{itemize}
+
+}
+ \section[2-body]{The  Feshbach resonance in two-body physics\label{sec:intro:twobody}}
+\frame{
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{levels}
+\caption{Energy levels in a Feshbach resonance\label{fig:intro:levels}} 
+\parbox{0.9\textwidth}{\small $\delta$ is the energy detuning from the resonance point, where the resonant point is defined as the point where the open-channel effective s-wave scattering length diverges, $a_s\to\pm\infty$.  The horizontal line stands for the zero energy s-wave scattering state, $\psi\sim\nth{r}-\nth{a_s}$, which exists for any detuning.  The lower line stands for the real bound state, which only exists for negative detuning ($\delta<0$, $a_s>0$). The dash line stands for the (uncoupled) closed-channel bound state.  An interesting point to notice is that the real bound state appears earlier than the cross point of the (uncoupled) closed-channel bound state level and zero energy. Another important point to notice is the negative detuning $-\delta_c$.  When the negative detuning is smaller than $\delta_c$, this real bound state is composed mostly with atoms in the open-channel and vice verse.  See Chapter \ref{sec:intro:twobody} for details about $\mathcal{K}$ and $\delta_c$.   }
+
+\end{center}
+\end{figure}
+}
 \begin{frame}
         \frametitle{`Hidden higher-order concepts?'}
         \begin{itemize}[<+->]
@@ -48,10 +118,48 @@
         \item That suggests stronger version of Isaacson's thesis. 
         \end{itemize}
 \end{frame}
+\frame{
+	\frametitle{No interchannel exclusion}
+	\begin{gather}
+1=-\mbr{\frac{4\pi{\tilde{a}_{s}(\mu)}}{m}\sum(\nth{2E_{\vk}}-\nth{2\epsilon_{\vk}})}\label{eq:pathInt2:narrowGapS}\\
+N_{\text{open}}=\sum_\vk\frac{E_\vk-\xi_\vk}{2E_\vk}\label{eq:pathInt2:narrowNumS}
+\end{gather}
+}
+\frame{
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{SingleChannelCrossoverMuDelta}
+\caption{The chemical potential $\mu$ and gap $\Delta$ in the mean field level over crossover} 
+\label{fig:pathInt:meanField}
+{\small All quantities in the unit of energy ($\mu$, $\Delta$) are rescaled with the Fermi energy $E_{F}$ and the s-wave scattering length $a_{s}$ is rescaled with $1/k_{F}$.  }
+\end{center}
+\end{figure}
+}
 \section{Mean-field result}
-\frame{}
+\frame{
+\begin{figure}[hhtb]
+	\centering
+	         \subfloat[$E_{F}<\tilde\delta$]{\label{fig:narrowFR:aboveSea}\includegraphics[width=.2\textwidth]{narrowFRabove.eps}}\quad
+		\subfloat[$0<\tilde\delta<E_{F}$]{\includegraphics[width=.30\textwidth]{narrowFRin.eps}\label{fig:narrowFR:inSea}}\quad
+		\subfloat[$\tilde\delta<0$]{\label{fig:narrowFR:belowSea}\includegraphics[width=.20\textwidth]{narrowFRbelow.eps}}
+	\caption{Extremely narrow resonance\label{fig:narrowFR}}
+	\small{The shaded area is occupied by atoms. }
+	%\parbox{0.7\textwidth}{\small{  In Fig. \subref{fig:narrowFR:inSea} chemical potential would be close to the closed-channel bound state level (besides small shift due to the open-channel intra-channel coupling) and the ``Fermi sea'' above is empty. }}
+\end{figure}}
+\frame{
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{narrow}
+\caption{The chemical potential $\mu$, the open-channel gap $\Delta_{1}$ and the open-channel relative weight $\beta_{o}$ over crossover with the narrow Feshbach resonance without considering the inter-channel Pauli exclusion  vs. the chemical potential and the gap in the single-channel model} 
+\label{fig:pathInt2:narrow}
+{\small  The gap in the open-channel $\Delta_{1}$ and the chemical potential $\mu$ are rescaled with the the Fermi energy of the total density, $E_{F}^{(tot)}$.  The $x$-axis is the detuning $\delta$ rescaled with $E_{0}$ (see Eq. \ref{eq:pathInt2:E0}) for the narrow resonance; while it is $-1/a_{s}k_{F}$ for the single-channel curves. We have taken $\delta_{c}=0.001E_{F}^{(tot)}$ for the narrow resonance figure. We used the detuning from the resonant point  for the $x$-axis in the narrow resonance instead of $-1/a_{s}k_{F}$ in the single-channel because the additional shift, $2\mu$, considering in Eq. \ref{eq:pathInt2:simplenarrowAs}.  Consequently, the chemical potential lines in both cases cross the $x$-axis at the same point where $\mu=0$.  }
+\end{center}
+\end{figure}
+}
 \section{Excitation Mode}
 \frame{}
 \section{Conclusion}
 \frame{}
+\bibliography{../citation}
+\bibliographystyle{apalike}
 \end{document}

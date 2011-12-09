@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70010" creator="Ipe 7.0.10">
-<info created="D:20111010173520" modified="D:20111120234527"/>
+<ipe version="70005" creator="Ipe 7.0.13">
+<info created="D:20111010173520" modified="D:20111209114347"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -252,10 +252,10 @@ h
 279.293 199.084 m
 448.431 367.953 l
 </path>
-<text matrix="1 0 0 1 1.40051 -1.05038" transformations="translations" pos="391.93 243.572" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="center">$0$</text>
-<text matrix="1 0 0 1 -1.40051 -3.50128" transformations="translations" pos="500.119 247.774" stroke="black" type="label" width="4.805" height="6.918" depth="0" valign="center">$\delta$</text>
-<text matrix="1 0 0 1 11.3415 20.5905" transformations="translations" pos="353.066 242.872" stroke="black" type="label" width="16.235" height="6.923" depth="1.49" valign="center">$-\delta_c$</text>
-<text matrix="1 0 0 1 -2.45089 7.35268" transformations="translations" pos="361.469 212.411" stroke="black" type="label" width="102.948" height="6.926" depth="1.93" valign="center">open-channel\\ dominated</text>
+<text matrix="1 0 0 1 7.05642 3.25889" transformations="translations" pos="391.93 243.572" stroke="black" type="label" width="7.895" height="11.097" depth="0" valign="center" size="LARGE">$0$</text>
+<text matrix="1 0 0 1 -1.40051 -3.50128" transformations="translations" pos="500.119 247.774" stroke="black" type="label" width="8.111" height="11.955" depth="0" valign="center" size="LARGE">$\delta$</text>
+<text matrix="1 0 0 1 11.3415 20.5905" transformations="translations" pos="353.066 242.872" stroke="black" type="label" width="26.392" height="11.957" depth="2.58" valign="center" size="LARGE">$-\delta_c$</text>
+<text matrix="1 0 0 1 -2.45089 7.35268" transformations="translations" pos="361.469 212.411" stroke="black" type="label" width="106.268" height="6.926" depth="1.93" valign="center">open-channel dominated</text>
 <text matrix="1 0 0 1 -17.1563 12.2545" transformations="translations" pos="208.813 209.26" stroke="black" type="label" width="111.582" height="6.918" depth="0" valign="center">closed-channel dominated</text>
 <path stroke="black" arrow="normal/normal">
 380.026 226.066 m
@@ -265,7 +265,7 @@ h
 404.184 282.086 m
 398.932 259.678 l
 </path>
-<text transformations="translations" pos="398.932 291.19" stroke="black" type="label" width="34.984" height="4.294" depth="1.49" valign="center">$a_s\rightarrow\infty$</text>
+<text transformations="translations" pos="398.932 291.19" stroke="black" type="label" width="58.856" height="7.415" depth="2.58" valign="center" size="LARGE">$a_s\rightarrow\infty$</text>
 <text transformations="translations" pos="147.891 293.29" stroke="black" type="label" width="120.022" height="6.661" depth="1.93" valign="center">zero energy scattering state</text>
 <text matrix="1 0 0 1 186.268 -15.7558" transformations="translations" pos="142.289 180.199" stroke="black" type="label" width="51.806" height="6.918" depth="0" valign="center">bound state</text>
 <path stroke="black" arrow="normal/normal">
@@ -276,14 +276,15 @@ h
 207.763 283.837 m
 224.569 256.877 l
 </path>
-<text transformations="translations" pos="172.682 351.061" stroke="black" type="label" width="56.947" height="6.926" depth="1.93" valign="baseline">$a_s&gt;0$, $\delta&lt;0$</text>
-<text transformations="translations" pos="448.513 349.241" stroke="black" type="label" width="56.947" height="6.926" depth="1.93" valign="baseline">$a_s&lt;0$, $\delta&gt;0$</text>
+<text transformations="translations" pos="172.682 351.061" stroke="black" type="label" width="66.544" height="8.307" depth="2.32" valign="baseline" size="large">$a_s&gt;0$, $\delta&lt;0$</text>
+<text matrix="1 0 0 1 -13.1971 -6.73323" transformations="translations" pos="448.513 349.241" stroke="black" type="label" width="66.544" height="8.307" depth="2.32" valign="baseline" size="large">$a_s&lt;0$, $\delta&gt;0$</text>
 <use matrix="1 0 0 1 -5.18553 -2.70923" name="mark/disk(sx)" pos="373.154 258.557" size="normal" stroke="black"/>
 <path matrix="1 0 0 1 40.8289 -73.9646" stroke="black" arrow="normal/normal">
 207.763 283.837 m
 224.569 256.877 l
 </path>
-<text matrix="1 0 0 1 -7.64958 -3.18733" transformations="translations" pos="329.256 262.739" stroke="black" type="label" width="15.484" height="6.808" depth="0.83" valign="baseline">$-\mathcal{K}$</text>
+<text matrix="1 0 0 1 -18.4227 -2.37934" transformations="translations" pos="329.256 262.739" stroke="black" type="label" width="26.756" height="11.768" depth="1.43" valign="baseline" size="LARGE">$-\mathcal{K}$</text>
 <use matrix="1 0 0 1 -35.9434 -2.70873" name="mark/disk(sx)" pos="373.154 258.557" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="400.119 256.149" size="normal" stroke="black"/>
 </page>
 </ipe>

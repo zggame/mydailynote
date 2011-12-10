@@ -1,7 +1,7 @@
 \documentclass[handout,notes=show]{beamer}
 %\documentclass[handout,notes=show]{beamer}
 \usepackage{pgfpages}
-\pgfpagesuselayout{4 on 1}[letterpaper,landscape, border shrink=5mm]
+%\pgfpagesuselayout{4 on 1}[letterpaper,landscape, border shrink=5mm]
 
 %\documentclass{beamer}
 \usepackage{epstopdf}
@@ -61,15 +61,15 @@
 
 
 \begin{itemize}[<+->]
-\item Single atom Hamiltonian:
+\item Single atom spin-part Hamiltonian:
 \begin{equation}
 H_{spin}=A \mathbf{I}\cdot\mathbf{S}-\mu_{e}\mathbf{B}\cdot\mathbf{S}-{\mu}_{n}\mathbf{B}\cdot\mathbf{I}
 \end{equation}
-One level splits into a few hyperfine spines, marked by  $(F,F_{z})$.  
+One level splits into a few hyperfine spins, marked by  $(F,F_{z})$.  
 $\mathbf{F}=\mathbf{S}+\mathbf{I}$
 
 
-\item Channels: one  configuration of hyperfine spins for one atom pair in interaction, $\ket{F^{(1)},F_{z}^{(1)}}\otimes\ket{F^{(2)},F_{z}^{(2)}}$ 
+\item Channels: one  configuration of hyperfine spins for one atom pair in interaction, $|{F_{ }^{(1)},F_{z}^{(1)}}\rangle\otimes|{F_{ }^{(2)},F_{z}^{(2)}}\rangle$ 
 \item Interaction mostly due to electrons
 \begin{equation}\label{eq:intro:two}
 V=f(r)+g(r)\mathbf{S_{1}}\cdot\mathbf{S_{2}}
@@ -143,8 +143,8 @@ $\delta=\tilde\delta-\mathcal{K}$
 \begin{frame}
 \frametitle{Broad and narrow Feshbach resonance }
 
-  Broad or narrow are \myemph{many-body} concepts. 
-        Comparing $\delta_c$ with the many-body scale, $E_F$
+   \myemph{Many-body} concepts. 
+         \myemph{$\delta_c$ vs. $E_F$}
  
        \myemph{Broad resonance}: $\mathemph{\delta_c\gg{}E_F}$
         \begin{itemize}
@@ -152,6 +152,7 @@ $\delta=\tilde\delta-\mathcal{K}$
 \item The closed channel weight is negligible everywhere.
 \item The closed channel is just like a simple knob for $a_{s}$
 \item The single-channel models' solutions are directly applied.
+\item Most literatures  integrate the closed-channel out at broad resonance limit. 
 \end{itemize}
    
 
@@ -173,7 +174,7 @@ $\delta=\tilde\delta-\mathcal{K}$
 \item Interchannel Pauli exclusion between two channels.
 \item No counterpart in the two-body physics.  
 \item Only important in narrow resonance. 
-\item Example: the resonance close to 834G in $^{6}$Li, open-channel: $\ket{\frac{1}{2},-\nth{2}}\otimes\ket{\nth{2},+\nth{2}}$; closed-channel: $\ket{\frac{3}{2},-\nth{2}}\otimes\ket{\nth{2},+\nth{2}}$
+\item Example: the resonance close to 834G in $^{6}$Li, open-channel: $\ket{\frac{1}{2},-\nth{2}}\otimes\ket{\nth{2},+\nth{2}}$; closed-channel: $\ket{\frac{3}{2},-\nth{2}}\otimes\ket{\nth{2},+\nth{2}}$.  It is a broad resonance though. 
 
 \end{itemize}
 }
@@ -182,7 +183,7 @@ $\delta=\tilde\delta-\mathcal{K}$
 \frame{
 \frametitle{Single-channel crossover}
 \begin{itemize}
-\item  $\prod_{\vk}(u_{vk}+v_{\vk}a^{\dg}_{\uparrow\vk}a^{\dg}_{\downarrow-\vk})\ket{0}=A\exp{}(\sum_{\vk}c_{\vk}a^{\dg}_{\uparrow\vk}a^{\dg}_{\downarrow-\vk})\ket{0}$
+\item  $\prod_{\vk}(u_{\vk}+v_{\vk}a^{\dg}_{\uparrow\vk}a^{\dg}_{\downarrow-\vk})\ket{0}=A\exp{}(\sum_{\vk}c_{\vk}a^{\dg}_{\uparrow\vk}a^{\dg}_{\downarrow-\vk})\ket{0}$
 \item Continuously varying interactions ($a_{s}$)
 \end{itemize}
 \begin{figure}[htbp]
@@ -196,13 +197,13 @@ $\delta=\tilde\delta-\mathcal{K}$
 \frametitle{The gap equation and the number equation}
  \myemph{The renormalized gap equation}
 \begin{equation}\label{eq:pathInt:gapRenormalized}
-\boxed{-\frac{m\mathcal{V}_{0}}{4\pi{}a_{s}}=\sum_{\vk}\mbr{\frac{\tanh{(E_k/2T)}}{2E_k}-\nth{2\epsilon_{\vk}}}}
+\boxed{-\frac{m\mathcal{V}_{0}}{4\pi{}a_{s}}=\sum_{\vk}\mbr{\frac{1}{2E_k}-\nth{2\epsilon_{\vk}}}}
 \end{equation}
-$E_\vp=\sqrt{\xi_\vp^2+\abs{\Delta_0}^2}$
+$E_\vk=\sqrt{(\epsilon_\vk-\mu)^2+\abs{\Delta_0}^2}$
 
 \myemph{The number equation}
 \begin{equation}
-\boxed{N=\nth{L^{d}}\sum_{\vk}\mbr{1-\frac{\epsilon_{\vk}}{E_{\vk}}\tanh{(\frac{E_{\vk}}{2T})}}}
+\boxed{N=\nth{L^{d}}\sum_{\vk}\mbr{1-\frac{\epsilon_{\vk}}{E_{\vk}}}}
 \end{equation}
 
 }
@@ -220,9 +221,9 @@ $E_\vp=\sqrt{\xi_\vp^2+\abs{\Delta_0}^2}$
 }
 
 
-\section[Two-channel]{Two-channel crossover model}
+\section[Two-channel]{Two-channel three-species crossover model}
 \frame{
-\frametitle{Two-channel model}
+\frametitle{Two-channel three-species model}
 \begin{itemize}
 \item Two order parameters 
  \begin{equation}\label{eq:pathInt2:mf}
@@ -271,9 +272,9 @@ The coupling between two channels is assumed to be extremely weak ($Y\to0$). $\m
 \end{gather}
 \item Extra counting for the closed-channel. 
 \begin{gather}
-\mathemph{N_{\text{open}}}=\sum_\vk\frac{E_\vk-\xi_\vk}{2E_\vk}\label{eq:pathInt2:narrowNumS}
+\mathemph{N_{\text{open}}}=\sum_\vk\mbr{1-\frac{\epsilon_{\vk}}{E_{\vk}}}\label{eq:pathInt2:narrowNumS}
 \end{gather}
-\item  Studied by Gurarie and Radzihovsky \footnote{[Gurarie and Radzihovsky, Annals of Physics, 322(1):2 Ð 119.  2007]}
+\item  Also studied by Gurarie and Radzihovsky \footnote{[Gurarie and Radzihovsky, Annals of Physics, 322(1):2 Ð 119.  2007]}
 \end{itemize}
 }
 \frame{
@@ -309,7 +310,7 @@ The coupling between two channels is assumed to be extremely weak ($Y\to0$). $\m
 \end{itemize}
 }
 \frame{
-\frametitle{Fermionic modes and Bogoliubov transformation}
+\frametitle{Fermionic modes}
 \begin{align*}
 E_{1\vk}&\approx{}E_{\vk}+u_{\vk}^{2}\Delta_{1}\zeta\\
 E_{2\vk}&\approx{}E_{\vk}-v_{\vk}^{2}\Delta_{1}\zeta\\

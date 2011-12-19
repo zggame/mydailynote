@@ -213,7 +213,7 @@ TB^{\dg}_{\mathbf{k}^{ },\nu,\nu}|0\rangle=-\tau{}w_{\vk}\beta^{\dg}_{-\nu,-\nu}
 \end{equation}
 
 We now look for the one-pair expectation of $\mathcal{H}_0+V+T$ as 
-\begin{equation}
+\begin{equation}\label{eq:Psi1}
 |\Psi_1\rangle=\sum_{\nu=\pm1}\sum_{\vk}\phi_{\vk,\nu}B^{\dg}_{\mathbf{k}^{ },\nu,\nu}|0\rangle
 \end{equation}
 The above equations allow us to write the Schr\"odinger equation for one-pair $0=(\mathcal{H}_0+V+T)|\Psi_1\rangle$ as 
@@ -236,13 +236,13 @@ This equation imposes the prefactor to be zero.
 (i) For $v_{\nu}=0=\tau$, the solution is $2\epsilon_{\vk}+\eta_{\nu_{\alpha}}^{(\alpha)}+\eta_{\nu_{\beta}}^{(\beta)}=E_1$, i.e. $\phi_{\vk^{'}\nu}=0$ for $\vk^{'}\neq\vk$ while $\phi_{\vk^{'}\nu}$ can differ from zero for  $\vk^{'}\neq\vk$. This result just corresponds to free fermion pairs in two uncoupled subbands, as expected. 
 
 For $v_{\nu}$ or $\tau$ different from zero, the solution of Eq. \ref{eq:schOne} reads
-\begin{equation}
-\phi_{\vk^{}\nu}=\Big(v_{\nu}\sum_{\vp}w_{\vp}\phi_{\vp,\nu}-\tau{}\sum_{\vp}w_{\vp}\phi_{\vp,-\nu}\Big)
+\begin{equation}\label{eq:phi}
+\phi_{\vk^{}\nu}=\Big(v_{\nu}\sum_{\vp}w_{\vp}\phi_{\vp,\nu}+\tau{}\sum_{\vp}w_{\vp}\phi_{\vp,-\nu}\Big)
 \frac{w_{\vk}}{2\epsilon_{\vk}+\eta_{\nu_{\alpha}}^{(\alpha)}+\eta_{\nu_{\beta}}^{(\beta)}-E_1}
 \end{equation}
 To get the equation fullfilled by the energy, we multiply the above equation by $w_{\vk}$ and we sum over $\vk$.  This gives 
-\begin{equation}
-\sum_{\vk}w_{\vk}\phi_{\vk^{}\nu}=\Big(v_{\nu}\sum_{\vp}w_{\vp}\phi_{\vp,\nu}-\tau{}\sum_{\vp}w_{\vp}\phi_{\vp,-\nu}\Big)
+\begin{equation}\label{eq:phiS}
+\sum_{\vk}w_{\vk}\phi_{\vk^{}\nu}=\Big(v_{\nu}\sum_{\vp}w_{\vp}\phi_{\vp,\nu}+\tau{}\sum_{\vp}w_{\vp}\phi_{\vp,-\nu}\Big)
 S(E_1-\eta_{\nu_{\alpha}}^{(\alpha)}-\eta_{\nu_{\beta}}^{(\beta)})
 \end{equation}
 where we have 
@@ -251,7 +251,7 @@ S(E)=\sum_{\vk}\frac{w_{\vk}}{2\epsilon_{\vk}-E}
 \end{equation}
 
 This gives two homogeneous equations for $\sum_{\vk}w_{\vk}\phi_{\vk\nu}$ with $\nu=\pm1$. They read
-\begin{equation}
+\begin{equation}\label{eq:tauEq}
 [1-v_{\nu}S(E_1-\eta_{\nu_{\alpha}}^{(\alpha)}-\eta_{\nu_{\beta}}^{(\beta)})]\sum_{\vk}w_{\vk}\phi_{\vk^{}\nu}
 =\tau{}S(E_1-\eta_{\nu_{\alpha}}^{(\alpha)}-\eta_{\nu_{\beta}}^{(\beta)})\sum_{\vk}w_{\vk}\phi_{\vk^{}-\nu}
 \end{equation}
@@ -260,8 +260,15 @@ These equations have a non-zero solution \ns{found} that their determent is equa
 [1-v_{1}S(E_1-\eta_{1}^{(\alpha)}-\eta_{1}^{(\beta)})][1-v_{-1}S(E_1-\eta_{-1}^{(\alpha)}-\eta_{-1}^{(\beta)})]\\
 =\tau^2S(E_1-\eta_{1}^{(\alpha)}-\eta_{1}^{(\beta)})S(E_1-\eta_{-1}^{(\alpha)}-\eta_{-1}^{(\beta)})
 \end{multline}
-
-
+Using Eq. \ref{eq:phi}, we get the one-pair eigenstate given in Eq. \ref{eq:Psi1} as
+\begin{equation}
+|\Psi_1\rangle=\sum_{\nu=\pm1}\Big(v_{\nu}\sum_{\vp}w_{\vp}\phi_{\vp,\nu}+\tau{}\sum_{\vp}w_{\vp}\phi_{\vp,-\nu}\Big)B^{\dg}_{\nu,\nu}(E_{1})|0\rangle
+\end{equation}
+where $B^{\dg}_{\nu,\nu}(E_{1})|0\rangle=\sum_{\vk}\frac{w_{\vk}}{2\epsilon_{\vk}+\eta_{\nu_{\alpha}}^{(\alpha)}+\eta_{\nu_{\beta}}^{(\beta)}-E_1}\beta^{\dg}_{\nu,\nu}|0\rangle$ by Cooper, namely Eq. \ref{eq:phiS} allows us to rewrite this equation as 
+\begin{equation}
+|\Psi_1\rangle=\sum_{\nu=\pm1}\frac{\sum_{\vp}w_{\vp}\phi_{\vp\nu}}{S(E_1-\eta_{\nu_{}}^{(\alpha)}-\eta_{\nu_{}}^{(\beta)})}B^{\dg}_{\nu,\nu}(E_{1})|0\rangle
+\end{equation}
+It is actually possible to transform this symmetrical expression in $\nu=\pm1$ in order to have the transfer coupling $\tau$ appearing \ns{effectively} in $|\Psi_1\rangle$.  To do it, we rewrite the $\sum_{\vp}w_{\vp}\phi_{\vp\nu}$ sum according to Eq. \ref{eq:tauEq} taken for $\nu=-1$.  We then first write an {irrelevant} prefector $\frac{\sum_{\vp}w_{\vp}\phi_{\vp\nu}}{S(E_1-\eta_{\nu_{}}^{(\alpha)}-\eta_{\nu_{}}^{(\beta)})}$ that $|\Psi_1\rangle$ also reads
 
 
 \bibliography{../citation}

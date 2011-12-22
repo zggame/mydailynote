@@ -246,7 +246,7 @@ To get the equation fullfilled by the energy, we multiply the above equation by 
 S(E_1-\eta_{\nu_{\alpha}}^{(\alpha)}-\eta_{\nu_{\beta}}^{(\beta)})
 \end{equation}
 where we have 
-\begin{equation}
+\begin{equation}\label{eq:Sdef}
 S(E)=\sum_{\vk}\frac{w_{\vk}}{2\epsilon_{\vk}-E}
 \end{equation}
 
@@ -269,6 +269,129 @@ where $B^{\dg}_{\nu,\nu}(E_{1})|0\rangle=\sum_{\vk}\frac{w_{\vk}}{2\epsilon_{\vk
 |\Psi_1\rangle=\sum_{\nu=\pm1}\frac{\sum_{\vp}w_{\vp}\phi_{\vp\nu}}{S(E_1-\eta_{\nu_{}}^{(\alpha)}-\eta_{\nu_{}}^{(\beta)})}B^{\dg}_{\nu,\nu}(E_{1})|0\rangle
 \end{equation}
 It is actually possible to transform this symmetrical expression in $\nu=\pm1$ in order to have the transfer coupling $\tau$ appearing \ns{effectively} in $|\Psi_1\rangle$.  To do it, we rewrite the $\sum_{\vp}w_{\vp}\phi_{\vp\nu}$ sum according to Eq. \ref{eq:tauEq} taken for $\nu=-1$.  We then first write an {irrelevant} prefector $\frac{\sum_{\vp}w_{\vp}\phi_{\vp\nu}}{S(E_1-\eta_{\nu_{}}^{(\alpha)}-\eta_{\nu_{}}^{(\beta)})}$ that $|\Psi_1\rangle$ also reads
+\begin{equation}\label{eq:Psi1B}
+|\Psi_1\rangle=B^{\dg}_{1,1}(E_{1})|0\rangle+X_{1,-1}B^{\dg}_{-1,-1}(E_{1})|0\rangle
+\end{equation}
+$X_{1,-1}$ the subband mixing introduced by the potential transfer $\tau$.  It precisely reads
+\begin{equation}
+X_{1,-1}=\frac{\tau{}S(E_1-\eta_{1}^{(\alpha)}-\eta_{1}^{(\beta)})}{1-v_{\nu}S(E_1-\eta_{-1}^{(\alpha)}-\eta_{-1}^{(\beta)})}
+\end{equation}
+Eqs. (\ref{eq:tauEq}, \ref{eq:Psi1B}) readily shows that, as expected, the one-pair eigenstates reduces, in the absence of transfer $\tau=0$, to the one-pair eigenstate obtained by Cooper, the pairs being made of fermions $\alpha$ and $\beta$ which either belong to the subbands $1$ with energy $\eta^{(\alpha)}_{1}+\eta^{(\beta}_{1}$ or to the subband $-1$ with energy $\eta^{(\alpha)}_{-1}+\eta^{(\beta}_{-1}$.  For finite transfer $\tau$, the two independent pair solutions which are moreover taken for slightly different energy $E_{1}$ if $\tau$ is small. 
+
+\subsection{Pair made of $P^{\dg}_{\vk,1,1}$ and $P^{\dg}_{\vk,1,-1}$}
+We now consider $(\alpha,\beta)$ pairs sharing their fermion $\alpha$, this fermion being in the $\nu=1$ subband only.  The relevant part of the interaction potential $\mathcal{V}$ in Eq. \ref{eq:V} reduces to $V+T$ with a diagonal part now given by  
+\begin{equation}
+V=-\sum_{\nu=\pm1}v_{\nu}\sum_{\vk,\vk^{'}}
+w_{\vk}w_{\vk'}
+B^{\dg}_{\mathbf{k}^{'},1,\gamma}
+B^{}_{\mathbf{k}^{ },1,\nu}
+\end{equation}
+and a transfer part given by 
+\begin{equation}
+T=-\tau\sum_{\nu=\pm1}\sum_{\vk,\vk^{'}}
+w_{\vk}w_{\vk'}
+B^{\dg}_{\mathbf{k}^{'},1,-\nu}
+B^{}_{\mathbf{k}^{ },1,\nu}
+\end{equation}
+Calculations to derive the single pair eigenstates made of $B^{\dg}_{\mathbf{k}^{'},1,-\nu}$ and $B^{\dg}_{\mathbf{k}^{'},-1,\nu}$ pairs is just the same as the one we did for eigenstates made of $B^{\dg}_{\mathbf{k}^{'},\nu,\nu}$ and $B^{\dg}_{\mathbf{k}^{'},-\nu,-\nu}$ pairs, except that, in Eqs. (\ref{eq:tauEq} \ref{eq:Psi1B}), the fermion $\alpha$ energy $\eta^{(\alpha)}_{\nu}$ is always equal to   $\eta^{(\alpha)}_1$.  The fact that the $B^{\dg}_{\mathbf{k}^{'},1,-\nu}$ and $B^{\dg}_{\mathbf{k}^{'},-1,\nu}$ pairs share a common fermion $\alpha$ is going to be of importance when Pauli blocking enters into the problem, i.e., when we will consider more than one $(\alpha,\beta)$ pair.  
+
+\subsection{Study of $S(E)$}
+As seen from the above equations, the one-pair eigenstates are ruled by $S(E)$ defined in Eq. \ref{eq:Sdef}. 
+
+For $3D$ problem with no frozen core, i.e., $w_{\vk}=1$ for $0<\epsilon_{\vk}<\Omega$ and a density of state in $\sqrt{\epsilon_{\vk}}$, we can write $S(E)$ for $E=0$ as 
+\begin{equation}
+S(E=0)\approx\int_0^{\Omega}\rho(\Omega)\frac{\sqrt{\epsilon/\Omega}}{2\epsilon}d\epsilon
+=\frac{\rho(\Omega)}{2}\int_0^1\frac{\sqrt{u}du}{u}=\rho(\Omega)\equiv\rho
+\end{equation}
+while for finite negative $E$, we find
+\begin{equation}
+S(E<0)\approx\frac{\rho}{2}\int_0^1\frac{\sqrt{u}du}{u-E/2\Omega}
+=\rho\Big(1+\frac{E}{2\Omega}\int_0^1\frac{dx}{x^2-E/2\Omega}\Big)
+\end{equation}
+which reduces to 
+\begin{equation}\label{eq:seNeg}
+S(E<0)=\rho\Big(1-\sqrt{\frac{-E}{2\Omega}}\text{Arctg}\sqrt{\frac{2\Omega}{-E}}\Big)
+\end{equation}
+We can check that $S(E\to0_{-})$ is equal to $\rho$ and $\text{Arctg}(\infty)=\Omega/2$.  Note that for finite positive $E$, we cannot replace the discrete sum over $\vk$ by an integral due to possible divergences for $\epsilon_{\vk}=E$, so that Eq. \ref{eq:seNeg} is not valid anymore.  this actually is unimportant since we are interested in bound states, i.e., negative $E$.
+
+By noting that $1-\sqrt{x}\text{Arctg}(1/\sqrt{x})$ behaves as $1-\pi\sqrt{x}/2$ when $x\to0$ and $1/3x$ when $x\to\infty$, we get 
+\begin{gather}
+S(E\to0_{-})\approx1-\frac{\pi}{2}\sqrt{\frac{-E}{2\Omega}}\\
+S(E\to-\infty)\approx\frac{2\Omega}{-3E}
+\end{gather}
+$S(E)$ in $3D$ is shown in Fig. (\ref{fig:S3d})
+\begin{figure}[hhtb]
+	\centering
+	         \subfloat{\label{fig:S3d}\includegraphics[width=.4\textwidth]{s3d}}\quad
+		\subfloat{\label{fig:S2d}\includegraphics[width=.40\textwidth]{s2d}}\quad
+		\caption{$S(E)$ function in $3D$ and $2D$\label{fig:narrowFR}}
+\end{figure}
+In $2D$ system with no frozen core, we do have since the density of states in the independent of the energy
+\begin{equation}
+S(E<0)=\int_{0}^{\Omega}\rho\frac{d\epsilon}{2\epsilon-E}=\frac{\rho}{2}\text{Ln}\frac{2\Omega-E}{-E}
+\end{equation}
+which is again valid in negative $E$ only, due to the replacement of the discrete sum over $\vk$ by an integral and the possible divergences at $\epsilon_{\vk}=E$ for positive $E$. 
+
+The $S(E)$ curves for $3D$ and $2D$ systems are rather similar except that $S(E)$ diverges as $-1/2\text{Ln}(-E/2\Omega)$ when $E$ approaches $0_{-}$ in $2D$ while it stays finite in $3D$.  As a direct consequence, a bound state always exists for a single pair in $2D$, no matter how weak the attractive potential is, while a potential larger than a threshold is necessary in $3D$.
+
+\subsection{Analysis of the one-pair energy}
+The one-pair energy follows from 
+\begin{equation}\label{eq:ssEq}
+[1-v_{1}S(E_1-\epsilon_{1})][1-v_{-1}S(E_1-\epsilon_{-1})]
+=\tau^2S(E_1-\epsilon_{1})S(E_1-\epsilon_{-1})
+\end{equation}
+in which we have set $\epsilon_{-1}=\eta_{-1}^{(\alpha)}+\eta_{-1}^{(\beta)}$ for pairs made of $(B^{\dg}_{\mathbf{k}^{},1,1},B^{\dg}_{\mathbf{k}^{},-1,-1})$ and $\epsilon_{-1}=\eta_{1}^{(\alpha)}+\eta_{-1}^{(\beta)}$ for pairs made of $(B^{\dg}_{\mathbf{k}^{},1,1},B^{\dg}_{\mathbf{k}^{},1,-1})$.
+
+\subsubsection{In the absence of transfer $\tau=0$}
+The two types of pairs are then \ns{unrelated}. Pairs in the subband $(\nu_{\alpha}=1,\nu_{\beta}=1)$ have a bound state founded that $1-v_{1}S(E_1-\eta_{1})=0$ has a solution for $E<\epsilon_{1}$.  This always happen in $2D$, no matter how weak $v_{1}$ is since $S(E)$ diverges when $E$ approach $0$. By contrast, $v_{1}$ must be large than a threshold for a bound state to exact in $3D$.  This threshold potential is given by 
+\begin{equation}
+0=1-v_{\text{th}}S(0)=1-v_{\text{th}}\rho
+\end{equation}
+Another threshold potential is of physical interest. It corresponds to the bound state for the subbands $(1,1)$ crossing the energy of a free pair with energy $\epsilon_{-1}$ in the subbands $(-1,-1)$ or $(1,-1)$.  This potential threshold $v^{*}$ corresponds to
+\begin{equation}
+0=1-v^{*}S(\epsilon_{-1}-\epsilon_{1})
+\end{equation}
+
+So we end in $3D$ with
+\begin{itemize}
+\item no bound state below $\epsilon_{1}$ for $0<v_{1}<v_{\text{th}}$;
+\item a bound state below $\epsilon_{1}$ for $E$, such that $1-v^{*}S(\epsilon_{-1}-\epsilon_{1})=0$, this bound state being above $\epsilon_{-1}$ for $v_{\text{th}}<v<v^{{*}}$ and below $\epsilon_{-1}$ for $v^{*}<v_{1}$ (see Fig \ref{fig:sDetail})
+\end{itemize}
+\begin{figure}[htb]
+	\centering
+	       \includegraphics[width=.6\textwidth]{sDetail}
+			\caption{Diagonal and non-diagonal subband interaction with shared species \label{fig:sDetail}}
+\end{figure}
+\subsubsection{With transfer $\tau$ but in the absence of potential within $(-1)$ subband, $v_{-1}=0$}
+Eq.  \ref{eq:ssEq} for the one-pair energy follows from 
+\begin{equation}
+1-v_{1}S(E_1-\epsilon_{1})
+=\tau^2S(E_1-\epsilon_{1})S(E_1-\epsilon_{-1})
+\end{equation}
+which also reads
+\begin{equation}
+S(E_1-\epsilon_{1})=\frac{1}{v_{1}+\tau^{2}S(E-\epsilon_{-1})}
+\end{equation}
+${v_{1}+\tau^{2}S(E-\epsilon_{-1})}$ can be seen as the potential of the subband $1$ dressed by its coupling to subband $-1$.  Since $S(E-\epsilon_{-1})$ varies from $\rho$ to zero when $E$ decreases from $\epsilon_{-1}$, ${1}/{\rho{}[v_{1}+\tau^{2}S(E-\epsilon_{-1})]}$ varies from $1/\rho{}v_{1}$ to $1/(\rho{}v_{1}+\rho^{2}\tau^{2})$ (see Fig \ref{fig:1rhov}). It has to be compared to $S(E-\epsilon_{1})/\rho$ shown in Fig. \ref{fig:sDetail}.  these regimes can be distinguished.  
+\begin{figure}[htb]
+	\centering
+	       \includegraphics[width=.6\textwidth]{1rhov}
+			\caption{Diagonal and non-diagonal subband interaction with shared species \label{fig:1rhov}}
+\end{figure}
+
+For $v_{\text{th}}$
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \bibliography{../citation}

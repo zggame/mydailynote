@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.0.13">
-<info created="D:20111221143722" modified="D:20111222174257"/>
+<ipe version="70010" creator="Ipe 7.0.10">
+<info created="D:20111221143722" modified="D:20111226002608"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -240,7 +240,7 @@ h
 384.145 127.666 m
 384.386 302.67 l
 </path>
-<text matrix="1 0 0 1 -51.6072 -33.3828" transformations="translations" pos="395 365.989" stroke="black" type="label" width="74.594" height="10.756" depth="3.59" valign="baseline" size="Large">$S(E-\epsilon_1)/\rho$</text>
+<text matrix="1 0 0 1 -51.6072 -33.3828" transformations="translations" pos="395 365.989" stroke="black" type="label" valign="baseline" size="Large">$S(E-\epsilon_1)/\rho$</text>
 <path matrix="0.933895 0 0 0.554053 25.4969 86.0205" stroke="black" dash="dashed">
 384 256 m
 165.696 255.645 l
@@ -252,8 +252,8 @@ h
 364.155 157.112
 365.499 157.718 s
 </path>
-<text matrix="1 0 0 1 261.861 -94.9958" transformations="translations" pos="128 320" stroke="black" type="label" width="33.563" height="10.756" depth="3.59" valign="baseline" size="Large">${1}/{\rho{}v_{1}}$</text>
-<text matrix="1.00469 0 0 -0.948964 -1.69445 332.805" transformations="translations" pos="389.485 191.625" stroke="black" type="label" width="87.697" height="11.623" depth="3.59" valign="baseline" size="Large">$1/(\rho{}v_{1}+\rho^{2}\tau^{2})$</text>
+<text matrix="1 0 0 1 261.861 -94.9958" transformations="translations" pos="128 320" stroke="black" type="label" valign="baseline" size="Large">${1}/{\rho{}v_{1}}$</text>
+<text matrix="1.00469 0 0 -0.948964 -1.69445 332.805" transformations="translations" pos="389.485 191.625" stroke="black" type="label" valign="baseline" size="Large">$1/(\rho{}v_{1}+\rho^{2}\tau^{2})$</text>
 <path matrix="-0.137498 0 0 0.229125 410.566 98.6084" stroke="black" dash="dashed">
 335.243 256.094 m
 335.506 127.774 l
@@ -262,9 +262,9 @@ h
 268.21 191.348 m
 268.21 127.835 l
 </path>
-<text matrix="1 0 0 1 102.912 2.17607" transformations="translations" pos="253.445 110.844" stroke="black" type="label" width="26.849" height="8.891" depth="4.3" valign="baseline" size="huge">$\epsilon_{-1}$</text>
-<use matrix="0.210619 0 0 1.48404 294.726 -57.4162" name="mark/circle(sx)" pos="268.032 192.066" size="normal" stroke="black"/>
-<text matrix="1 0 0 1 -28.0856 -22.8408" transformations="translations" pos="327.854 112.076" stroke="black" type="label" width="60.425" height="10.756" depth="3.59" valign="baseline" size="Large">$E_1(\tau=0)$</text>
+<text matrix="1 0 0 1 102.912 2.17607" transformations="translations" pos="253.445 110.844" stroke="black" type="label" valign="baseline" size="huge">$\epsilon_{-1}$</text>
+<use matrix="0.210619 0 0 1.48404 294.726 -57.4162" name="mark/circle(sx)" pos="268.032 192.066" size="large" stroke="black"/>
+<text matrix="1 0 0 1 -28.0856 -22.8408" transformations="translations" pos="327.854 112.076" stroke="black" type="label" valign="baseline" size="Large">$E_1(\tau=0)$</text>
 <path stroke="black" pen="fat">
 383.583 291.096 m
 342.238 208.601
@@ -273,7 +273,7 @@ h
 170.832 135.838
 164.166 135.005 s
 </path>
-<text matrix="0.801401 0 0 0.581865 183.722 47.0208" transformations="translations" pos="253.445 110.844" stroke="black" type="label" width="15.691" height="8.896" depth="3.1" valign="baseline" size="huge">$\epsilon_{1}$</text>
+<text matrix="0.801401 0 0 0.581865 183.722 47.0208" transformations="translations" pos="253.445 110.844" stroke="black" type="label" valign="baseline" size="huge">$\epsilon_{1}$</text>
 <path matrix="0.97165 0 0 0.91008 -3.94367 8.58824" stroke="black" pen="fat" rarrow="normal/normal">
 363.758 127.135 m
 350.834 113.309
@@ -285,7 +285,7 @@ h
 384 192 m
 160 192 l
 </path>
-<text matrix="1 0 0 1 1.99496 -7.69484" transformations="translations" pos="450.479 131.676" stroke="black" type="label" width="11.239" height="9.803" depth="0" valign="baseline" size="Large">$E$</text>
+<text matrix="1 0 0 1 1.99496 -7.69484" transformations="translations" pos="450.479 131.676" stroke="black" type="label" valign="baseline" size="Large">$E$</text>
 <path matrix="1 0 0 0.889402 -15.0219 12.6902" stroke="black" dash="dashed">
 287.392 162.381 m
 287.392 127.993 l
@@ -317,14 +317,20 @@ h
 287.392 127.993 l
 </path>
 <use matrix="1 0 0 0.889402 -42.135 11.9573" name="mark/disk(sx)" pos="287.938 161.29" size="normal" stroke="black"/>
-<text matrix="1 0 0 1 49.4192 0.710434" transformations="translations" pos="253.445 110.844" stroke="black" type="label" width="26.849" height="8.891" depth="4.3" valign="baseline" size="huge">$\epsilon_{-1}$</text>
-<text matrix="1 0 0 1 6.91811 -1.4879" transformations="translations" pos="253.445 110.844" stroke="black" type="label" width="26.849" height="14.167" depth="6.31" valign="baseline" size="huge">$\epsilon_{-1}^{*}$</text>
-<text matrix="1 0 0 1 -26.4233 -2.95345" transformations="translations" pos="253.445 110.844" stroke="black" type="label" width="26.849" height="8.891" depth="4.3" valign="baseline" size="huge">$\epsilon_{-1}$</text>
-<text matrix="1 0 0 1 262.814 -33.0763" transformations="translations" pos="128 320" stroke="black" type="label" width="7.024" height="9.245" depth="0" valign="baseline" size="Large">${1}$</text>
-<text transformations="translations" pos="321.949 205.967" stroke="black" type="label" width="12.934" height="7.473" depth="2.49" valign="baseline">$(d)$</text>
-<text transformations="translations" pos="289.084 177.865" stroke="black" type="label" width="12.06" height="7.473" depth="2.49" valign="baseline">$(c)$</text>
-<text transformations="translations" pos="244.788 175.96" stroke="black" type="label" width="12.024" height="7.473" depth="2.49" valign="baseline">$(b)$</text>
-<text transformations="translations" pos="197.633 175.96" stroke="black" type="label" width="13.015" height="7.473" depth="2.49" valign="baseline">$(a)$</text>
+<text matrix="1 0 0 1 49.4192 0.710434" transformations="translations" pos="253.445 110.844" stroke="black" type="label" valign="baseline" size="huge">$\epsilon_{-1}$</text>
+<text matrix="1 0 0 1 6.91811 -1.4879" transformations="translations" pos="253.445 110.844" stroke="black" type="label" valign="baseline" size="huge">$\epsilon_{-1}^{*}$</text>
+<text matrix="1 0 0 1 -26.4233 -2.95345" transformations="translations" pos="253.445 110.844" stroke="black" type="label" valign="baseline" size="huge">$\epsilon_{-1}$</text>
+<text matrix="1 0 0 1 262.814 -33.0763" transformations="translations" pos="128 320" stroke="black" type="label" valign="baseline" size="Large">${1}$</text>
+<text transformations="translations" pos="321.949 205.967" stroke="black" type="label" valign="baseline">$(d)$</text>
+<text transformations="translations" pos="289.084 177.865" stroke="black" type="label" valign="baseline">$(c)$</text>
+<text transformations="translations" pos="244.788 175.96" stroke="black" type="label" valign="baseline">$(b)$</text>
+<text transformations="translations" pos="197.633 175.96" stroke="black" type="label" valign="baseline">$(a)$</text>
 <use name="mark/disk(sx)" pos="383.869 290.75" size="normal" stroke="black"/>
+<path matrix="-0.137498 0 0 0.229125 386.736 97.9373" stroke="black" dash="dashed">
+335.243 256.094 m
+335.506 127.774 l
+</path>
+<use matrix="1 0 0 0.889402 52.7767 12.6905" name="mark/disk(sx)" pos="287.938 161.29" size="normal" stroke="black"/>
+<use matrix="1 0 0 0.889402 77.2781 12.6905" name="mark/disk(sx)" pos="287.938 161.29" size="normal" stroke="black"/>
 </page>
 </ipe>

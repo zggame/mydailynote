@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.0.13">
-<info created="D:20111030101351" modified="D:20111206180324"/>
+<ipe version="70010" creator="Ipe 7.0.10">
+<info created="D:20111030101351" modified="D:20111223121424"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -498,7 +498,7 @@ h
 495.767 560.469 l
 </path>
 </group>
-<text matrix="1 0 0 1 -269.077 87.7465" transformations="translations" pos="560 560" stroke="black" type="label" width="10.222" height="11.955" depth="0" valign="baseline" size="LARGE">$\mathbf{k}$</text>
+<text matrix="1 0 0 1 -269.077 87.7465" transformations="translations" pos="560 560" stroke="black" type="label" valign="baseline" size="LARGE">$\mathbf{k}$</text>
 <group matrix="1 0 0 1 -318.428 63.7461">
 <path stroke="black">
 496.335 591.714 m
@@ -513,13 +513,13 @@ h
 495.767 560.469 l
 </path>
 </group>
-<text matrix="1 0 0 1 -413.428 87.7461" transformations="translations" pos="560 560" stroke="black" type="label" width="14.007" height="12.889" depth="0" valign="baseline" size="LARGE">$\mathbf{k}&apos;$</text>
-<text matrix="1 0 0 1 -422.127 24.508" transformations="translations" pos="560 560" stroke="black" type="label" width="27.397" height="12.894" depth="1.43" valign="baseline" size="LARGE">$-\mathbf{k}&apos;$</text>
-<text transformations="translations" pos="213.593 613.468" stroke="black" type="label" width="22.338" height="10.67" depth="3.72" valign="baseline" size="Huge">$\tau_{\nu}$</text>
-<text matrix="1 0 0 1 -272.188 25.5243" transformations="translations" pos="560 560" stroke="black" type="label" width="23.611" height="11.96" depth="1.43" valign="baseline" size="LARGE">$-\mathbf{k}$</text>
-<text matrix="1 0 0 1 -172.403 11.1138" transformations="translations" pos="560 560" stroke="black" type="label" width="9.415" height="7.412" depth="0" valign="baseline" size="LARGE">$\nu$</text>
-<text matrix="1 0 0 1 -477.621 76.9563" transformations="translations" pos="560 560" stroke="black" type="label" width="7.895" height="11.097" depth="0" valign="baseline" size="LARGE">$1$</text>
-<text matrix="1 0 0 1 -475.947 8.3236" transformations="translations" pos="560 560" stroke="black" type="label" width="22.804" height="10.047" depth="1.43" valign="baseline" size="LARGE">$-\nu$</text>
-<text matrix="1 0 0 1 -174.077 79.7465" transformations="translations" pos="560 560" stroke="black" type="label" width="7.895" height="11.097" depth="0" valign="baseline" size="LARGE">$1$</text>
+<text matrix="1 0 0 1 -413.428 87.7461" transformations="translations" pos="560 560" stroke="black" type="label" valign="baseline" size="LARGE">$\mathbf{k}&apos;$</text>
+<text matrix="1 0 0 1 -422.127 24.508" transformations="translations" pos="560 560" stroke="black" type="label" valign="baseline" size="LARGE">$-\mathbf{k}&apos;$</text>
+<text transformations="translations" pos="213.593 613.468" stroke="black" type="label" valign="baseline" size="Huge">$\tau_{\nu}$</text>
+<text matrix="1 0 0 1 -272.188 25.5243" transformations="translations" pos="560 560" stroke="black" type="label" valign="baseline" size="LARGE">$-\mathbf{k}$</text>
+<text matrix="1 0 0 1 -172.403 11.1138" transformations="translations" pos="560 560" stroke="black" type="label" valign="baseline" size="LARGE">$\nu$</text>
+<text matrix="1 0 0 1 -477.621 76.9563" transformations="translations" pos="560 560" stroke="black" type="label" valign="baseline" size="LARGE">$1$</text>
+<text matrix="1 0 0 1 -475.947 8.3236" transformations="translations" pos="560 560" stroke="black" type="label" valign="baseline" size="LARGE">$-\nu$</text>
+<text matrix="1 0 0 1 -174.077 79.7465" transformations="translations" pos="560 560" stroke="black" type="label" valign="baseline" size="LARGE">$1$</text>
 </page>
 </ipe>

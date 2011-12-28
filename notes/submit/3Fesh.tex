@@ -1,0 +1,71 @@
+
+\documentclass[reprint,pra]{revtex4-1}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{graphicx}% Include figure files
+\usepackage{epstopdf}
+\usepackage{subfig}
+\usepackage{makeidx}
+\usepackage[page,toc,title,titletoc]{appendix}
+
+
+%\usepackage{comment}
+%%\includecomment{mycomment}
+%\specialcomment{mycommentzhu} {\begingroup\ttfamily\footnotesize}{\endgroup}
+%%\excludecomment{mycomment}
+
+%%adding comment, use the next line for disable comment
+\newcommand{\mycomment}[1]{\textit{#1}}
+%\newcommand{\mycomment}[1]{}
+
+\input{../newCommand}
+
+%\newenvironment{unsure}
+%	{\begin{itshape}}% begin code
+%	{\end{itshape}}%                    end code
+\newenvironment{unsure}{}{}
+
+
+
+\begin{document}
+
+
+\title{BEC-BCS Crossover with Feshbach Resonance for a Three-Hyperfine-Species Model}
+\author{Guojun Zhu}
+\email{gzhu1@illinois.edu}
+\affiliation{Department of physics, University of Illinois at Urbana-Champaign}
+\author{Anthony J. Leggett}
+\affiliation{Department of physics, University of Illinois at Urbana-Champaign}
+
+%
+\begin{abstract}
+The BEC-BCS crossover problem has been intensively studied both theoretically and experimentally largely thanks to  Feshbach resonances which allow us to tune the effective interaction between alkali atoms.  In a Feshbach resonance, the effective s-wave scattering length grows when one moves toward the resonance point, and eventually diverges at this point.  There is one characteristic energy scale, $\delta_c$, defined as, in the negative side of the resonance point, the detuning energy at which the weight of the bound state shifts from predominately in the open-channel to predominated in the closed-channel.  When the many-body energy scale (e.g. the Fermi energy, $E_{F}$) is larger than $\delta_c$, the closed-channel weight is significant and has to be included in the many-body theory.  Furthermore, when two channels share a hyperfine species, the Pauli exclusion between fermions from two channels also needs to be taken into consideration in the many-body theory.  
+
+The current  paper addresses the above problem in detail. A set of gap equations and number equations  are derived at the mean-field level.  The fermionic and bosonic excitation spectra are then derived. Assuming that the uncoupled bound-state of the closed-channel in resonance is much smaller than the inter-particle distance, as well as the s-wave scattering length, $a_s$, we find that  the basic equations in the single-channel crossover model are still valid. The correction first comes from the existing of the finite chemical potential and additional counting complication due to the closed-channel.  These two corrections need to be included into the mean-field equations, i.e. the gap equations and the number equations, and be solved self-consistently.  Then the correction due to the inter-channel Pauli exclusion is in the  order of the ratio of the Fermi energy and the Zeeman energy difference between two channels, $E_F/\eta$, which can be analyzed perturbatively over the previous corrections.  
+\end{abstract}
+\pacs{67.85.Lm}
+\maketitle
+%% Create a dedication in italics with no heading, centered vertically
+%% on the page.
+
+
+%% Create an Acknowledgements page, many departments require you to
+%% include funding support in this.
+\section{Introduction}
+
+\section{Model and order parameters}
+\section{Mean-field result and renormalization}
+\section{Excitation modes}
+\section{Conclusion}
+
+\begin{acknowledgements}
+We thank  Professor Monique Combescot, Dr. Shizhong Zhang and  Dr. Wei-Cheng Lee for many inspiring discussions. Part of this research  is supported  by NSF under grant No. DMR 09-06921. 
+\end{acknowledgements}
+\bibliography{../citation}
+
+\end{document}
+\endinput
+%%
+%% End of file `thesis-ex.tex'.

@@ -1,0 +1,476 @@
+\documentclass[]{beamer}
+%t\documentclass[handout,notes=show]{beamer}
+\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[letterpaper,landscape, border shrink=5mm]
+
+%\documentclass{beamer}
+\usepackage{epstopdf}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\usepackage{subfig}
+
+
+
+\input{newCommand}
+\newcommand{\myemph}[1]{\textbf{\textcolor{blue!100}{#1}}}
+\newcommand{\mathemph}[1]{{\color{red}#1}}
+
+
+% \usepackage{beamerthemesplit} // Activate for custom appearance
+
+\title[Crossover w/ 3-species]{BEC-BCS Crossover with the Feshbach Resonance for a Three-Hyperfine-Species Model}
+\author[Guojun Zhu]{Guojun Zhu}
+\institute{University of Illinois at Urbana-Champaign}
+\date{Dec. 15th, 2011}
+\pgfdeclareimage[height=1cm]{university-logo}{uiucLogo2.jpg}
+\logo{\pgfuseimage{university-logo}}
+%\usetheme[language=english,
+%titlepagelogo=logopolito, bullet=circle, pageofpages=of, titleline=true, color=blue
+%]{TorinoTh}
+%\rel{Anthony J. Leggett}
+%\usetheme[hideothersubsections, width=2cm]{PaloAlto}
+\usetheme[hideothersubsections]{Berkeley}
+
+%\usetheme{Hannover}
+\usecolortheme{sidebartab}
+\usefonttheme[onlymath]{serif}
+%\usecolortheme{lily}
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+
+\frame{
+%\frametitle{Dissertation}
+\titlepage}
+
+\section[Outline]{}
+\frame{
+\frametitle{Outline}
+\tableofcontents
+}
+
+\section[Problem]{Three-species narrow Feshbach resonance}\label{sec:intro:one}
+%\frame{
+%
+%\frametitle{Single-atom Hamiltonian and two-atom interaction}
+%
+%\begin{itemize}[<+->]
+%\item Single atom spin-part Hamiltonian:
+%\begin{equation}
+%H_{spin}=A \mathbf{I}\cdot\mathbf{S}-\mu_{e}\mathbf{B}\cdot\mathbf{S}-{\mu}_{n}\mathbf{B}\cdot\mathbf{I}
+%\end{equation}
+%One level splits into a few hyperfine spins, marked by  $(F,F_{z})$.  
+%$\mathbf{F}=\mathbf{S}+\mathbf{I}$
+%
+%
+%\item Channels: one  configuration of hyperfine spins for one atom pair in interaction, $|{F_{ }^{(1)},F_{z}^{(1)}}\rangle\otimes|{F_{ }^{(2)},F_{z}^{(2)}}\rangle$ 
+%\item Interaction mostly due to electrons
+%\begin{equation}\label{eq:intro:two}
+%V=f(r)+g(r)\mathbf{S_{1}}\cdot\mathbf{S_{2}}
+%\end{equation}
+%\item Short-range potential \& low-energy:  characterized with single parameter, s-wave scattering length, $a_{s}$
+%
+%\item Channels are mixed.  Resonance are possible. 
+%\end{itemize}
+%}
+
+
+
+\frame{
+ \frametitle{Dilute ultracold alkali gas}
+ \begin{itemize}[<+->]
+\item
+
+
+ Dilute ultraold alkali gas: \myemph{short-range potential} \& \myemph{low-energy}:  characterized with a \myemph{single parameter}, s-wave scattering length, \myemph{ $a_{s}$}
+ \item
+ Feshbach resonance: effective open-channel s-wave scattering length
+\begin{equation}
+a_{s}(B)=a_{bg}\br{1+\frac{\Delta{B}}{B-B_{0}}}
+\end{equation}
+ \begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{FeshbachAs}
+%\caption{S-wave scattering length in Feshbach resonance} 
+\label{fig:intro:Feshbach}
+
+\end{center}
+\end{figure}
+\end{itemize}
+
+ }
+ 
+ 
+ \frame{
+ \frametitle{Potentials in a Feshbach resonance} 
+  Channel: one  configuration of hyperfine spins for \myemph{one atom pair} in interaction, $|{F_{ }^{(1)},F_{z}^{(1)}}\rangle\otimes|{F_{ }^{(2)},F_{z}^{(2)}}\rangle$ 
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{2potential}
+
+%Levels are marked with $F$ and $F_{z}$ {(see Footnote \ref{foot:intro:f} in page \pageref{foot:intro:f})} %Note that the energy of the $\ket{F=\nth{2},F_z=-\nth{2}}$ state first increases with the magnetic field, $B$, at low field then decrease at high field. In the same way, the energy of the $\ket{F=\frac{3}{2},F_z=-\nth{2}}$ state first decreases and then increases with the magnetic field.  
+\label{fig:intro:li6}
+\end{center}
+\end{figure}
+}
+
+
+ \frame{
+\frametitle{Scattering state and the bound state in a Feshbach resonance}
+%\begin{columns}
+%
+%\begin{column}{0.6\textwidth}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{levels}
+%\caption{Energy levels in a Feshbach resonance\label{fig:intro:levels}} 
+\end{center}
+\end{figure}
+Resonant point is not the level crossing point. The shift $\mathcal{K}$ is large than most energy scales.
+$\delta=\tilde\delta-\mathcal{K}$
+
+\pause
+\begin{tabular}{|p{4cm}|p{4cm}|}
+\hline
+ $\mathemph{\abs{\delta}\ll\delta_{c}}$&$\mathemph{\abs{\delta}\gg\delta_{c}}$\\\hline
+ Atoms are predominantly in the open-channel.&Atoms are predominantly in the closed-channel.\\
+ \hline
+\end{tabular}
+%\end{column}
+%\begin{column}{0.35\textwidth}
+
+%\end{column}
+%\end{columns}
+}
+
+
+\begin{frame}
+\frametitle{Broad and narrow Feshbach resonance }
+
+   \myemph{Many-body} introduce an important scale: 
+         \myemph{ $E_F$}
+         
+ \pause
+       \myemph{Broad resonance}: $\mathemph{\delta_c\gg{}E_F}$
+        \begin{itemize}
+
+\item The closed channel weight is negligible everywhere.
+\item The closed channel is just like a simple knob for $a_{s}$
+\item \myemph{The solutions of the single-channel model   applies.}
+\item Most literatures  integrate the closed-channel out at broad resonance limit. 
+\end{itemize}
+   
+
+              \pause
+ 
+       \myemph{Narrow resonance}:  $\mathemph{\delta_c\ll{}E_F}$
+        \begin{itemize}
+
+\item The closed channel weight is substantial or even dominant close to the resonance.
+\item \myemph{A two-channel  many-body model is necessary}. 
+\item Studied by Gurarie and Radzihovsky \footnote{[Gurarie and Radzihovsky, Annals of Physics, 322(1):2 � 119.  2007]}
+\end{itemize}
+\end{frame}
+
+\frame{
+\frametitle{Three species problem}
+
+\begin{itemize}
+\item <1-> Two channels might share a \myemph{common} hyperfine species.
+\item <2-> Interchannel Pauli exclusion between two channels.
+\item <2->No counterpart in the two-body physics.  
+\item <3->Only important in the narrow resonance. 
+\item <3->No study on this subject in the literature. 
+\item <1->Example: the resonance close to 834G in $^{6}$Li, 
+\begin{itemize}
+\item open-channel: $\ket{\frac{1}{2},-\nth{2}}\otimes\mathemph{\ket{\nth{2},+\nth{2}}}$;
+\item closed-channel: $\ket{\frac{3}{2},-\nth{2}}\otimes\mathemph{\ket{\nth{2},+\nth{2}}}$.
+\end{itemize}    It is a broad resonance though. 
+
+\end{itemize}
+}
+
+\section[Single-channel]{Single-channel crossover}
+\frame{
+\frametitle{Single-channel crossover}
+\begin{itemize}
+\item  $\prod_{\vk}(u_{\vk}+v_{\vk}a^{\dg}_{\uparrow\vk}a^{\dg}_{\downarrow-\vk})\ket{0}=A\exp{}(\sum_{\vk}\frac{v_{\vk}}{u_{\vk}}a^{\dg}_{\uparrow\vk}a^{\dg}_{\downarrow-\vk})\ket{0}$
+\item Continuously varying interactions ($a_{s}$)
+\end{itemize}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.7\textwidth]{crossover}
+%\caption{Energy levels in a Feshbach resonance\label{fig:intro:levels}} 
+\end{center}
+\end{figure}
+}
+\frame{
+\frametitle{The gap equation and the number equation}
+ \myemph{The renormalized gap equation}
+\begin{equation}\label{eq:pathInt:gapRenormalized}
+\boxed{-\frac{m\mathcal{V}_{0}}{4\pi{}a_{s}}=\sum_{\vk}\mbr{\frac{1}{2E_k}-\nth{2\epsilon_{\vk}}}}
+\end{equation}
+$E_\vk=\sqrt{(\epsilon_\vk-\mu)^2+\abs{\Delta_0}^2}$;  $\mathcal{V}_0$: total volume.
+
+\myemph{The number equation}
+\begin{equation}
+\boxed{N=\nth{\mathcal{V}_0}\sum_{\vk}\mbr{1-\frac{\epsilon_{\vk}}{E_{\vk}}}}
+\end{equation}
+
+}
+
+\frame{
+\frametitle{$\mu$ and $\Delta$ in the crossover}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{SingleChannelCrossoverMuDelta}
+\caption{The chemical potential $\mu$ and gap $\Delta$ in the mean field level over crossover} 
+\label{fig:pathInt:meanField}
+{\small All quantities in the unit of energy ($\mu$, $\Delta$) are rescaled with the Fermi energy $E_{F}$ and the s-wave scattering length $a_{s}$ is rescaled with $1/k_{F}$.  }
+\end{center}
+\end{figure}
+}
+
+
+\section[Two-channel]{Two-channel three-species crossover model}
+
+\frame{
+\frametitle{Extremely narrow resonance}
+The coupling between two channels is assumed to be extremely weak ($Y\to0$). $\mathcal{K}\to0$, $\delta_{c}\to0$. Infinitely narrow resonance.  Two channels share the same chemical potentials. 
+\begin{figure}[hhtb]
+	\centering
+	         \subfloat[$E_{F}<\tilde\delta$]{\label{fig:narrowFR:aboveSea}\includegraphics[width=.2\textwidth]{narrowFRabove.eps}}\quad
+		\subfloat[$0<\tilde\delta<E_{F}$]{\includegraphics[width=.30\textwidth]{narrowFRin.eps}\label{fig:narrowFR:inSea}}\quad
+		\subfloat[$\tilde\delta<0$]{\label{fig:narrowFR:belowSea}\includegraphics[width=.20\textwidth]{narrowFRbelow.eps}}
+	%\caption{Extremely narrow resonance\label{fig:narrowFR}}
+	%\small{The shaded area is occupied by atoms. }
+	%\parbox{0.7\textwidth}{\small{  In Fig. \subref{fig:narrowFR:inSea} chemical potential would be close to the closed-channel bound state level (besides small shift due to the open-channel intra-channel coupling) and the ``Fermi sea'' above is empty. }}
+\end{figure}
+\begin{itemize}
+\item Energy is counted from Fermi surface;
+\item Atoms distributed in both channels in (b); 
+\item The inter-channel Pauli exclusion persists in (b).
+\end{itemize}
+}
+
+\frame{
+\frametitle{Interchannel Pauli exclusion: handwave discussion}
+\begin{itemize}[<+->]
+\item Determined by the overlap between two channels
+\item One simplification: \myemph{the uncoupled closed-channel bound state, $\phi_{0}$, is much smaller than the interparticle distance in size}. 
+\item Size of $\phi_{0}$ in the closed-channel: $\sim{E_{b}}^{-1/2}$
+\item Size of atoms in the open-channel: interparticle distance $a_{0}\sim{}E_{F}^{-1/2}$
+\item Controlling parameter
+\begin{equation}\label{eq:pathInt2:zetaDef}
+\boxed{\zeta=\frac{\Delta_{2}^{2}}{\Delta_{1}\eta}\sim\br{\frac{E_{F}}{E_{b}}}^{1/2}\ll1}
+\end{equation}
+\item Small $\zeta$ dictates a \myemph{perturbative} treatment. 
+\end{itemize}
+}
+
+\frame{
+\frametitle{Hamiltonian and Hubbard-Strotonovich trans.}
+\begin{equation}
+\begin{split}\label{eq:pathInt2:actionFermi}
+&S(\bar\psi,\psi)=\int^{\beta}_{0}d\tau\int{d^{d}r}\\
+&\Big[\sum_{j}\bar\psi_{j}(\partial_\tau-\nth{2m}\nabla^{2}-\mu+\eta_{j})\psi_{j}
+-(\bar\psi\bar\psi)\tilde{U}(\psi\psi)\Big]
+\end{split}
+\end{equation}
+Hubbard-Strotonovich transformation: introduce a two-component auxiliary field (order parameters)
+\begin{equation*}
+\mtrx{\Delta_{1}\\\Delta_{2}}\longrightarrow
+	\mtrx{\Delta_{1}\\\Delta_{2}}-
+	\mtrx{U&Y\\Y^{*}&V}
+	\mtrx{\psi_{b}\psi_{a}\\\psi_{c}\psi_{a}}
+\end{equation*}\pause
+The action can then be rewritten in a more compact form with respect to $\Psi$ and $\bar\Psi$
+\begin{equation}\label{eq:pathInt2:actionMixCompact}
+S(\bar\Delta,\Delta,\bar\psi_{i},\psi_{i})=\int^{\beta}_{0}d\tau\int{d^{d}r}
+	\mbr{\Delta^{\dg}\tilde{U}^{-1}\Delta-\bar\Psi\mathcal{G}^{-1}\Psi}
+\end{equation}
+%It is bilinear of $\Psi$.  We can integrate it out,
+%\begin{equation}\label{eq:pathInt2:actionD}
+%S(\bar{\Delta},\Delta)=\int{dx}\br{\bar{\Delta}\tilde{U}^{-1}\Delta-\tr\ln\nG}
+%\end{equation}
+
+
+
+}
+\note{$\Delta_{1}$  $\Delta_{2}$ do not correspond to open-/closed-channel.}
+
+\frame{
+\frametitle{Mean-field equations}
+ Integrate out $\psi_{i}$
+\begin{equation}\label{eq:pathInt2:actionD}
+S(\bar{\Delta},\Delta)=\int{dx}\br{\bar{\Delta}\tilde{U}^{-1}\Delta-\tr\ln\nG}
+\end{equation}
+Mean field equation:
+
+  \begin{equation}\label{eq:pathInt2:mf}
+\mtrx{\Delta_1\\\Delta_2}=\mtrx{U&Y\\Y^{*}&V}\sum_{\vk}\mtrx{h_{1\vk}\\h_{2\vk}}
+\end{equation}
+  where 
+  \begin{gather}
+  h_{1\vk}=\av{\psi_{a,-{\vk}}\psi_{b,+{\vk}}}
+  =\Delta_{1}\frac{E_{1\,\vk}+\xi_{\vk}+\eta}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}\label{eq:pathInt2:h1}\\
+  h_{2\vk}=\av{\psi_{a,-{\vk}}\psi_{c,+{\vk}}}
+  =\Delta_{2}\frac{E_{1\,\vk}+\xi_{\vk}}{(E_{1\,\vk}+E_{2\,\vk})(E_{1\,\vk}+E_{3\,\vk})}\label{eq:pathInt2:h2}
+  \end{gather}
+
+}
+\frame{
+\frametitle{Order parameters}
+\begin{itemize}
+
+\item Gor'kov Green function for $\bar\Psi=\mtrx{\bar\psi_{a}&\psi_{b}&\psi_{c}}$, fermionic correlation
+\begin{equation}\label{eq:pathInt2:nGDeltaK}
+\mathcal{G}^{-1}=
+\begin{pmatrix}
+i\omega_{n}-\xi_{k}&\Delta_{1}&{\mathemph{\Delta_{2}}}\\
+\bar\Delta_{1}&i\omega_{n}+\xi_{k}&0\\
+\mathemph{\bar\Delta_{2}}&0&i\omega_{n}+\xi_{k}+\eta
+\end{pmatrix}
+\end{equation}
+\item $\Delta_{1}$ includes the coupling with the closed-channel, $Y$; 
+
+\item $\mathemph{\Delta_2}$ terms describe the inter-channel Pauli exclusion. 
+\pause
+\item Solved the three-species two-channel problem in two steps:
+\begin{enumerate}
+\item Treat effects other than the inter-channel Pauli exclusion in a non-perturbative way; ($\mathemph{\Delta_2=0}$)
+\item Treat the inter-channel Pauli exclusion perturbavtively. 
+
+\end{enumerate}
+\end{itemize}
+
+}
+
+%\frame{
+%\frametitle{Two-channel three-species model}
+%\begin{itemize}
+%\item Two order parameters 
+% \begin{equation}\label{eq:pathInt2:mf}
+%\mtrx{\Delta_1\\\Delta_2}=\mtrx{U&Y\\Y^{*}&V}\sum_{\vk}\mtrx{<{\psi_{a,-{\vk}}\psi_{b,+{\vk}}}>\\<{\psi_{a,-{\vk}}\psi_{c,+{\vk}}}>}
+%\end{equation}
+%\item Order parameters are result of mixed channel;
+%\item $\Delta_{1}$ corresponds to the single channel gap;
+%\item $\Delta_{1}$ includes the broad resonance limit effect (the $Y$ coupling with the closed-channel); 
+%\item Reduced to the single-channel by two steps:
+%\begin{enumerate}
+%\item Treat effects other than the inter-channel Pauli exclusion in a non-perturbative way;
+%\item Treat the inter-channel Pauli exclusion perturbavtively. 
+%\end{enumerate}
+%\end{itemize}
+%}
+
+
+\frame{
+	\frametitle{Narrow resonance w/o interchannel Pauli exclusion}
+	
+	\begin{itemize}
+\item Energy zero moves to the Fermi surface
+\begin{gather}
+1=-\mbr{\frac{4\pi{\mathemph{\tilde{a}_{s}}(\mu)}}{m}\sum(\nth{2E_{\vk}}-\nth{2\epsilon_{\vk}})}\label{eq:pathInt2:narrowGapS}\\
+\tilde{a}_{s}=a_{\text{bg}}(1+\frac{\mathcal{K}}{\delta-\mathemph{2\mu}})\approx{}\frac{a_{\text{bg}}\mathcal{K}}{\delta-\mathemph{2\mu}}
+\end{gather}
+\item Extra counting for the closed-channel. 
+\begin{gather}
+\mathemph{N_{\text{open}}}=\sum_\vk\mbr{1-\frac{\epsilon_{\vk}}{E_{\vk}}}\label{eq:pathInt2:narrowNumS}
+\end{gather}
+\item  Consistent with  the study by Gurarie and Radzihovsky \footnote{[Gurarie and Radzihovsky, Annals of Physics, 322(1):2 � 119.  2007]}
+\end{itemize}
+}
+\frame{
+\frametitle{Narrow resonance w/o interchannel Pauli exclusion}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{narrow}
+%\caption{The chemical potential $\mu$, the open-channel gap $\Delta_{1}$ and the open-channel relative weight $\beta_{o}$ over crossover with the narrow Feshbach resonance without considering the inter-channel Pauli exclusion  vs. the chemical potential and the gap in the single-channel model} 
+\label{fig:pathInt2:narrow}
+%{\small  The gap in the open-channel $\Delta_{1}$ and the chemical potential $\mu$ are rescaled with the the Fermi energy of the total density, $E_{F}^{(tot)}$.  The $x$-axis is the detuning $\delta$ rescaled with $E_{0}$ (see Eq. \ref{eq:pathInt2:E0}) for the narrow resonance; while it is $-1/a_{s}k_{F}$ for the single-channel curves. We have taken $\delta_{c}=0.001E_{F}^{(tot)}$ for the narrow resonance figure. We used the detuning from the resonant point  for the $x$-axis in the narrow resonance instead of $-1/a_{s}k_{F}$ in the single-channel because the additional shift, $2\mu$, considering in Eq. \ref{eq:pathInt2:simplenarrowAs}.  Consequently, the chemical potential lines in both cases cross the $x$-axis at the same point where $\mu=0$.  }
+\end{center}
+\end{figure}
+\begin{itemize}
+\item $\Delta_{1}$ saturates in BEC side
+\item $\tilde{a}_{s}$ differs from two-body $a_{s}$ with special shift $2\mu$
+\item $\beta_{o}=\frac{n_{open}}{n_{total}}$ deviates from 1 substantially at universality
+
+\end{itemize}
+}
+
+
+
+
+\frame{
+\frametitle{Fermionic modes}
+Diagonalize Gor'kov Greens function
+\begin{columns}
+\column{0.55\textwidth}
+\begin{align*}
+E_{1\vk}&\approx{}E_{\vk}+\mathemph{u_{\vk}^{2}\Delta_{1}\zeta}\\
+E_{2\vk}&\approx{}E_{\vk}-\mathemph{v_{\vk}^{2}\Delta_{1}\zeta}\\
+E_{3\vk}&\approx{}\epsilon_{\vk}+\eta+\mathemph{\frac{\zeta}{2}\Delta_{1}}
+\end{align*}
+\column{0.45\textwidth}
+\begin{equation*}
+\boxed{\zeta=\frac{\Delta_{2}^{2}}{\Delta_{1}\eta}}
+\end{equation*}
+$E_\vk=\sqrt{(\epsilon_\vk-\mu)^2+\abs{\Delta_1}^2}$
+\end{columns}
+\begin{itemize}
+\item $E_{1\vk}$ and $E_{2\vk}$ are like Bogoliubov quasi-paticle; 
+\item $E_{1\vk}$ and $E_{2\vk}$ now split by $\Delta_1\zeta$;
+\item $E_{3\vk}$ is the free fermionic excitation in the close-channel;
+\pause
+\item The correction is in the order of $\zeta\ll1$;
+\item The correction is due to the inter-channel Pauli exclusion and does not disappear even at the extremely narrow limit. 
+\end{itemize}
+
+}
+
+
+
+\frame{
+\frametitle{Bosonic modes}
+Fluctuations of the order parameters;
+\begin{itemize}
+\item<1-> Order parameters describe the collective properties of atoms;
+\item<2-> Four possible modes for two complex order parameters ($\Delta_1$, $\Delta_2$);
+\item<3-> The overall phase fluctuation mode is the Goldstone mode;
+\item<3-> The other three modes are massive;
+\item<4-> The inter-channel out-of-sync phase mode is gapped at pair-breaking energy;
+\item<5-> Corrections due to the inter-channel Pauli exclusion is in the order of $\zeta$.
+\end{itemize}
+}
+
+\section{Discussion}
+\frame{
+\frametitle{Discussion}
+\begin{itemize}
+\item<1-> The inter-channel Pauli exclusion can be handled by perturbation method;
+\item<1-> Handling two-channel problem, especially the inter-channel Pauli exclusion effect, self-consistently;
+\item<2-> Using the BCS-approach (non-perturbative) as the zeroth order, building narrow resonance with the  inter-channel Pauli exclusion upon it;
+\item<2-> The methodology about narrow resonance is still valid for non-simple-BCS treatment about crossover;
+
+\item<3-> Finite temperature: BCS $\Rightarrow$ Fermi liquid; BEC $\Rightarrow$ normal dimer gas.  
+\end{itemize}
+}
+\frame{
+\begin{center}
+ \Huge Thank you!
+\end{center}
+
+}
+\end{document}
+

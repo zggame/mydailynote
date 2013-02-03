@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70010" creator="Ipe 7.0.10">
-<info created="D:20111030101351" modified="D:20111030110746"/>
+<info created="D:20111030101351" modified="D:20120412212217"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -202,13 +202,13 @@ h
 <dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
 <dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
 <textsize name="large" value="\large"/>
+<textsize name="small" value="\small"/>
+<textsize name="tiny" value="\tiny"/>
 <textsize name="Large" value="\Large"/>
 <textsize name="LARGE" value="\LARGE"/>
 <textsize name="huge" value="\huge"/>
 <textsize name="Huge" value="\Huge"/>
-<textsize name="small" value="\small"/>
 <textsize name="footnote" value="\footnotesize"/>
-<textsize name="tiny" value="\tiny"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
 <textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
 <textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
@@ -290,10 +290,10 @@ h
 495.767 560.469 l
 </path>
 </group>
-<text matrix="1 0 0 1 98.8496 -2.84051" transformations="translations" pos="203.195 593.419" stroke="black" type="label" valign="baseline" size="LARGE">$\mathbf{ k}_{1}^{&apos;}$</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="560 560" stroke="black" type="label" valign="baseline" size="LARGE">$\mathbf{k}_1$</text>
-<text matrix="1 0 0 1 0 -48" transformations="translations" pos="560 560" stroke="black" type="label" valign="baseline" size="LARGE">$-\mathbf{k}_1$</text>
-<text matrix="1 0 0 1 -257.136 -41.1828" transformations="translations" pos="560 560" stroke="black" type="label" valign="baseline" size="LARGE">$-\mathbf{k}_1^{&apos;}$</text>
+<text matrix="1 0 0 1 98.8496 -2.84051" transformations="translations" pos="203.195 593.419" stroke="black" type="label" width="24.692" height="26.055" depth="6.13" valign="baseline" size="Huge">$\mathbf{ k}_{1}^{&apos;}$</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="560 560" stroke="black" type="label" width="24.692" height="17.215" depth="4.78" valign="baseline" size="Huge">$\mathbf{k}_1$</text>
+<text matrix="1 0 0 1 0 -48" transformations="translations" pos="560 560" stroke="black" type="label" width="43.971" height="17.215" depth="4.78" valign="baseline" size="Huge">$-\mathbf{k}_1$</text>
+<text matrix="1 0 0 1 -257.136 -41.1828" transformations="translations" pos="560 560" stroke="black" type="label" width="43.971" height="26.055" depth="6.13" valign="baseline" size="Huge">$-\mathbf{k}_1^{&apos;}$</text>
 <path matrix="1 0 0 1 13.2953 -3.01786" stroke="black" fill="white" dash="dashed" pen="heavier">
 51 386 m
 539 386 l
@@ -352,10 +352,10 @@ h
 495.767 560.469 l
 </path>
 </group>
-<text matrix="1 0 0 1 98.2811 -131.231" transformations="translations" pos="203.195 593.419" stroke="black" type="label" valign="baseline" size="LARGE">$\mathbf{ k}_{2}^{&apos;}$</text>
-<text matrix="1 0 0 1 -0.568473 -112.391" transformations="translations" pos="560 560" stroke="black" type="label" valign="baseline" size="LARGE">$\mathbf{k}_2$</text>
-<text matrix="1 0 0 1 -0.568473 -176.391" transformations="translations" pos="560 560" stroke="black" type="label" valign="baseline" size="LARGE">$-\mathbf{k}_2$</text>
-<text matrix="1 0 0 1 -257.704 -169.574" transformations="translations" pos="560 560" stroke="black" type="label" valign="baseline" size="LARGE">$-\mathbf{k}_2^{&apos;}$</text>
+<text matrix="1 0 0 1 98.2811 -131.231" transformations="translations" pos="203.195 593.419" stroke="black" type="label" width="24.692" height="26.055" depth="6.13" valign="baseline" size="Huge">$\mathbf{ k}_{2}^{&apos;}$</text>
+<text matrix="1 0 0 1 -0.568473 -112.391" transformations="translations" pos="560 560" stroke="black" type="label" width="24.692" height="17.215" depth="4.78" valign="baseline" size="Huge">$\mathbf{k}_2$</text>
+<text matrix="1 0 0 1 -0.568473 -176.391" transformations="translations" pos="560 560" stroke="black" type="label" width="43.971" height="17.215" depth="4.78" valign="baseline" size="Huge">$-\mathbf{k}_2$</text>
+<text matrix="1 0 0 1 -257.704 -169.574" transformations="translations" pos="560 560" stroke="black" type="label" width="43.971" height="26.055" depth="6.13" valign="baseline" size="Huge">$-\mathbf{k}_2^{&apos;}$</text>
 <group matrix="1 0 0 1 118.165 -63.6269">
 <path stroke="black" fill="white" pen="heavier" cap="1">
 125.365 575.24 m

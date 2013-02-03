@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.0.13">
-<info created="D:20111030110900" modified="D:20111130103400"/>
+<ipe version="70010" creator="Ipe 7.0.10">
+<info created="D:20111030110900" modified="D:20120412211459"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -202,13 +202,13 @@ h
 <dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
 <dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
 <textsize name="large" value="\large"/>
+<textsize name="small" value="\small"/>
+<textsize name="tiny" value="\tiny"/>
 <textsize name="Large" value="\Large"/>
 <textsize name="LARGE" value="\LARGE"/>
 <textsize name="huge" value="\huge"/>
 <textsize name="Huge" value="\Huge"/>
-<textsize name="small" value="\small"/>
 <textsize name="footnote" value="\footnotesize"/>
-<textsize name="tiny" value="\tiny"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
 <textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
 <textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
@@ -250,7 +250,7 @@ h
 479.976 386.923
 481.342 386.923 s
 </path>
-<path stroke="black" cap="1">
+<path matrix="0.995192 0 0 1.10911 2.77334 -77.961" stroke="black" cap="1">
 290.991 714.491 m
 290.991 518.633 l
 576.79 518.633 l
@@ -276,10 +276,10 @@ h
 418.305 668.027 m
 464.171 668.027 l
 </path>
-<text matrix="1 0 0 1 -3.15115 -1.75064" transformations="translations" pos="444.914 678.181" stroke="black" type="label" valign="baseline" size="Large">$\Delta$</text>
-<text transformations="translations" pos="310.115 692.536" stroke="black" type="label" valign="baseline" size="Large">$F_{\mathbf{k}}$</text>
-<text transformations="translations" pos="436.161 528.677" stroke="black" type="label" valign="baseline" size="Large">$\epsilon_{ F_0}+\frac{\Omega}2$</text>
-<text transformations="translations" pos="548.902 536.379" stroke="black" type="label" valign="baseline" size="LARGE">$\epsilon_{\mathbf{k}}$</text>
+<text matrix="1 0 0 1 -3.15115 -1.75064" transformations="translations" pos="444.914 678.181" stroke="black" type="label" width="19.138" height="16.934" depth="0" valign="baseline" size="Huge">$\Delta$</text>
+<text matrix="1 0 0 1 -8.19299 -0.910332" transformations="translations" pos="310.115 692.536" stroke="black" type="label" width="28.478" height="16.939" depth="5.81" valign="baseline" size="Huge">$F_{\mathbf{k}}$</text>
+<text matrix="1 0 0 1 -274.01 -162.494" transformations="translations" pos="436.161 528.677" stroke="black" type="label" width="13.555" height="5.582" depth="4.89" valign="baseline" size="LARGE">${}_{ F_0}$</text>
+<text matrix="1 0 0 1 -8.64816 23.2135" transformations="translations" pos="548.902 536.379" stroke="black" type="label" width="22.566" height="10.673" depth="5.81" valign="baseline" size="Huge">$\epsilon_{\mathbf{k}}$</text>
 <path stroke="black" dash="dashed" cap="1">
 159.938 634.228 m
 159.938 390.441 l
@@ -288,11 +288,15 @@ h
 418.305 668.027 m
 464.171 668.027 l
 </path>
-<text matrix="1 0 0 1 -99.6008 -253.822" transformations="translations" pos="444.914 678.181" stroke="black" type="label" valign="baseline" size="Large">$\Delta$</text>
-<text matrix="1 0 0 1 -101.888 -162.109" transformations="translations" pos="436.161 528.677" stroke="black" type="label" valign="baseline" size="Large">$\epsilon_{ F_0}+\frac{\Omega}2$</text>
-<text matrix="1 0 0 1 29.7605 -162.109" transformations="translations" pos="436.161 528.677" stroke="black" type="label" valign="baseline" size="Large">$\epsilon_{ F_0}+{\Omega}$</text>
-<text matrix="1 0 0 1 -1.40101 -155.457" transformations="translations" pos="548.902 536.379" stroke="black" type="label" valign="baseline" size="huge">$\epsilon_{\mathbf{k}}$</text>
-<text matrix="1 0 0 1 -283.254 -162.109" transformations="translations" pos="436.161 528.677" stroke="black" type="label" valign="baseline" size="Large">$\epsilon_{ F_0}$</text>
-<text matrix="1 0 0 1 14.3552 -0.350128" transformations="translations" pos="57.278 700.71" stroke="black" type="label" valign="baseline" size="LARGE">$\varphi_{\mathbf{k}}$</text>
+<text matrix="1 0 0 1 -99.6008 -253.822" transformations="translations" pos="444.914 678.181" stroke="black" type="label" width="19.138" height="16.934" depth="0" valign="baseline" size="Huge">$\Delta$</text>
+<text matrix="1 0 0 1 22.0227 -164.385" transformations="translations" pos="436.161 528.677" stroke="black" type="label" width="45.092" height="11.756" depth="4.89" valign="baseline" size="LARGE">${}_{ F_0}+{\Omega}$</text>
+<text matrix="1 0 0 1 -1.40101 -155.457" transformations="translations" pos="548.902 536.379" stroke="black" type="label" width="22.566" height="10.673" depth="5.81" valign="baseline" size="Huge">$\epsilon_{\mathbf{k}}$</text>
+<text matrix="1 0 0 1 -283.254 -162.109" transformations="translations" pos="436.161 528.677" stroke="black" type="label" width="9.8" height="10.672" depth="0" valign="baseline" size="Huge">$\epsilon$</text>
+<text matrix="1 0 0 1 2.06571 -3.08112" transformations="translations" pos="57.278 700.71" stroke="black" type="label" width="28.666" height="10.673" depth="5.81" valign="baseline" size="Huge">$\varphi_{\mathbf{k}}$</text>
+<text matrix="1 0 0 1 12.6044 -161.199" transformations="translations" pos="436.161 528.677" stroke="black" type="label" width="9.8" height="10.672" depth="0" valign="baseline" size="Huge">$\epsilon$</text>
+<text matrix="1 0 0 1 -91.769 -164.84" transformations="translations" pos="436.161 528.677" stroke="black" type="label" width="61.415" height="12.906" depth="4.89" valign="baseline" size="LARGE">${}_{ F_0}+{\Omega}/2$</text>
+<text matrix="1 0 0 1 -101.187 -161.654" transformations="translations" pos="436.161 528.677" stroke="black" type="label" width="9.8" height="10.672" depth="0" valign="baseline" size="Huge">$\epsilon$</text>
+<text matrix="1 0 0 1 -15.7562 -5.98677" transformations="translations" pos="436.161 528.677" stroke="black" type="label" width="61.415" height="12.906" depth="4.89" valign="baseline" size="LARGE">${}_{ F_0}+{\Omega}/2$</text>
+<text matrix="1 0 0 1 -25.1742 -2.80077" transformations="translations" pos="436.161 528.677" stroke="black" type="label" width="9.8" height="10.672" depth="0" valign="baseline" size="Huge">$\epsilon$</text>
 </page>
 </ipe>
